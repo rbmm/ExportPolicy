@@ -1,0 +1,557 @@
+EXPORTS
+
+BindMoniker
+CLIPFORMAT_UserFree = COMBASE.CLIPFORMAT_UserFree
+CLIPFORMAT_UserFree64 = COMBASE.CLIPFORMAT_UserFree64
+CLIPFORMAT_UserFreeExt
+CLIPFORMAT_UserMarshal = COMBASE.CLIPFORMAT_UserMarshal
+CLIPFORMAT_UserMarshal64 = COMBASE.CLIPFORMAT_UserMarshal64
+CLIPFORMAT_UserMarshalExt
+CLIPFORMAT_UserSize = COMBASE.CLIPFORMAT_UserSize
+CLIPFORMAT_UserSize64 = COMBASE.CLIPFORMAT_UserSize64
+CLIPFORMAT_UserSizeExt
+CLIPFORMAT_UserUnmarshal = COMBASE.CLIPFORMAT_UserUnmarshal
+CLIPFORMAT_UserUnmarshal64 = COMBASE.CLIPFORMAT_UserUnmarshal64
+CLIPFORMAT_UserUnmarshalExt
+CLSIDFromOle1Class = api-ms-win-core-com-private-l1-1-1.CLSIDFromOle1Class
+CLSIDFromProgID = api-ms-win-core-com-l1-1-0.CLSIDFromProgID
+CLSIDFromProgIDEx = api-ms-win-core-com-l1-1-2.CLSIDFromProgIDEx
+CLSIDFromString = api-ms-win-core-com-l1-1-0.CLSIDFromString
+CStdAsyncStubBuffer2_Connect = api-ms-win-core-com-midlproxystub-l1-1-0.CStdAsyncStubBuffer2_Connect
+CStdAsyncStubBuffer2_Disconnect = api-ms-win-core-com-midlproxystub-l1-1-0.CStdAsyncStubBuffer2_Disconnect
+CStdAsyncStubBuffer2_Release = api-ms-win-core-com-midlproxystub-l1-1-0.CStdAsyncStubBuffer2_Release
+CStdAsyncStubBuffer_AddRef = api-ms-win-core-com-midlproxystub-l1-1-0.CStdAsyncStubBuffer_AddRef
+CStdAsyncStubBuffer_Connect = api-ms-win-core-com-midlproxystub-l1-1-0.CStdAsyncStubBuffer_Connect
+CStdAsyncStubBuffer_Disconnect = api-ms-win-core-com-midlproxystub-l1-1-0.CStdAsyncStubBuffer_Disconnect
+CStdAsyncStubBuffer_Invoke = api-ms-win-core-com-midlproxystub-l1-1-0.CStdAsyncStubBuffer_Invoke
+CStdAsyncStubBuffer_QueryInterface = api-ms-win-core-com-midlproxystub-l1-1-0.CStdAsyncStubBuffer_QueryInterface
+CStdAsyncStubBuffer_Release = api-ms-win-core-com-midlproxystub-l1-1-0.CStdAsyncStubBuffer_Release
+CStdStubBuffer2_Connect = api-ms-win-core-com-midlproxystub-l1-1-0.CStdStubBuffer2_Connect
+CStdStubBuffer2_CountRefs = api-ms-win-core-com-midlproxystub-l1-1-0.CStdStubBuffer2_CountRefs
+CStdStubBuffer2_Disconnect = api-ms-win-core-com-midlproxystub-l1-1-0.CStdStubBuffer2_Disconnect
+CStdStubBuffer2_QueryInterface = api-ms-win-core-com-midlproxystub-l1-1-0.CStdStubBuffer2_QueryInterface
+CheckInitDde
+CleanROTForApartment
+ClipboardProcessUninitialize
+CoAddRefServerProcess = api-ms-win-core-com-l1-1-0.CoAddRefServerProcess
+CoAicGetTokenForCOM
+CoAllowSetForegroundWindow
+CoAllowUnmarshalerCLSID = api-ms-win-core-com-l1-1-0.CoAllowUnmarshalerCLSID
+CoBuildVersion
+CoCancelCall = api-ms-win-core-com-l1-1-0.CoCancelCall
+CoCheckElevationEnabled
+CoCopyProxy = api-ms-win-core-com-l1-1-0.CoCopyProxy
+CoCreateFreeThreadedMarshaler = api-ms-win-core-com-l1-1-0.CoCreateFreeThreadedMarshaler
+CoCreateGuid = api-ms-win-core-com-l1-1-0.CoCreateGuid
+CoCreateInstance = api-ms-win-core-com-l1-1-0.CoCreateInstance
+CoCreateInstanceEx = api-ms-win-core-com-l1-1-0.CoCreateInstanceEx
+CoCreateInstanceFromApp = api-ms-win-core-com-l1-1-0.CoCreateInstanceFromApp
+CoCreateObjectInContext = api-ms-win-core-com-private-l1-1-1.CoCreateObjectInContext
+CoDeactivateObject = api-ms-win-core-com-private-l1-1-1.CoDeactivateObject
+CoDecodeProxy = COMBASE.CoDecodeProxy
+CoDecrementMTAUsage = api-ms-win-core-com-l1-1-0.CoDecrementMTAUsage
+CoDisableCallCancellation = api-ms-win-core-com-l1-1-0.CoDisableCallCancellation
+CoDisconnectContext = api-ms-win-core-com-l1-1-0.CoDisconnectContext
+CoDisconnectObject = api-ms-win-core-com-l1-1-0.CoDisconnectObject
+CoDosDateTimeToFileTime
+CoEnableCallCancellation = api-ms-win-core-com-l1-1-0.CoEnableCallCancellation
+CoFileTimeNow = api-ms-win-core-com-l1-1-2.CoFileTimeNow
+CoFileTimeToDosDateTime
+CoFreeAllLibraries
+CoFreeLibrary
+CoFreeUnusedLibraries = api-ms-win-core-com-l1-1-0.CoFreeUnusedLibraries
+CoFreeUnusedLibrariesEx = api-ms-win-core-com-l1-1-0.CoFreeUnusedLibrariesEx
+CoGetActivationState = api-ms-win-core-com-private-l1-1-1.CoGetActivationState
+CoGetApartmentID = api-ms-win-core-com-private-l1-1-1.CoGetApartmentID
+CoGetApartmentType = api-ms-win-core-com-l1-1-0.CoGetApartmentType
+CoGetCallContext = api-ms-win-core-com-l1-1-0.CoGetCallContext
+CoGetCallState = api-ms-win-core-com-private-l1-1-1.CoGetCallState
+CoGetCallerTID = api-ms-win-core-com-l1-1-0.CoGetCallerTID
+CoGetCancelObject = api-ms-win-core-com-l1-1-0.CoGetCancelObject
+CoGetClassObject = api-ms-win-core-com-l1-1-0.CoGetClassObject
+CoGetClassVersion = api-ms-win-core-com-private-l1-1-1.CoGetClassVersion
+CoGetComCatalog = api-ms-win-core-com-private-l1-1-1.GetCatalogHelper
+CoGetContextToken = api-ms-win-core-com-l1-1-0.CoGetContextToken
+CoGetCurrentLogicalThreadId = api-ms-win-core-com-l1-1-0.CoGetCurrentLogicalThreadId
+CoGetCurrentProcess = api-ms-win-core-com-l1-1-0.CoGetCurrentProcess
+CoGetDefaultContext = api-ms-win-core-com-l1-1-0.CoGetDefaultContext
+CoGetInstanceFromFile = api-ms-win-core-com-private-l1-1-1.CoGetInstanceFromFile
+CoGetInstanceFromIStorage = api-ms-win-core-com-private-l1-1-1.CoGetInstanceFromIStorage
+CoGetInterceptor
+CoGetInterceptorForOle32
+CoGetInterceptorFromTypeInfo
+CoGetInterfaceAndReleaseStream = api-ms-win-core-com-l1-1-0.CoGetInterfaceAndReleaseStream
+CoGetMalloc = api-ms-win-core-com-l1-1-0.CoGetMalloc
+CoGetMarshalSizeMax = api-ms-win-core-com-l1-1-0.CoGetMarshalSizeMax
+CoGetModuleType = api-ms-win-core-com-private-l1-1-1.CoGetModuleType
+CoGetObject
+CoGetObjectContext = api-ms-win-core-com-l1-1-0.CoGetObjectContext
+CoGetPSClsid = api-ms-win-core-com-l1-1-0.CoGetPSClsid
+CoGetProcessIdentifier = api-ms-win-core-com-private-l1-1-1.CoGetProcessIdentifier
+CoGetStandardMarshal = api-ms-win-core-com-l1-1-0.CoGetStandardMarshal
+CoGetStdMarshalEx = api-ms-win-core-com-l1-1-0.CoGetStdMarshalEx
+CoGetSystemSecurityPermissions = api-ms-win-core-com-private-l1-1-1.CoGetSystemSecurityPermissions
+CoGetSystemWow64DirectoryW
+CoGetTreatAsClass = api-ms-win-core-com-l1-1-0.CoGetTreatAsClass
+CoHandlePriorityEventsFromMessagePump = COMBASE.#111
+CoImpersonateClient = api-ms-win-core-com-l1-1-0.CoImpersonateClient
+CoIncrementMTAUsage = api-ms-win-core-com-l1-1-0.CoIncrementMTAUsage
+CoInitialize
+CoInitializeEx = api-ms-win-core-com-l1-1-0.CoInitializeEx
+CoInitializeSecurity = api-ms-win-core-com-l1-1-0.CoInitializeSecurity
+CoInitializeWOW
+CoInstall
+CoInvalidateRemoteMachineBindings = api-ms-win-core-com-private-l1-1-1.CoInvalidateRemoteMachineBindings
+CoIsHandlerConnected = api-ms-win-core-com-l1-1-0.CoIsHandlerConnected
+CoIsOle1Class = api-ms-win-core-com-private-l1-3-1.CoIsOle1Class
+CoLoadLibrary
+CoLockObjectExternal = api-ms-win-core-com-l1-1-0.CoLockObjectExternal
+CoMarshalHresult = api-ms-win-core-com-l1-1-0.CoMarshalHresult
+CoMarshalInterThreadInterfaceInStream = api-ms-win-core-com-l1-1-0.CoMarshalInterThreadInterfaceInStream
+CoMarshalInterface = api-ms-win-core-com-l1-1-0.CoMarshalInterface
+CoPopServiceDomain = api-ms-win-core-com-private-l1-1-1.CoPopServiceDomain
+CoPushServiceDomain = api-ms-win-core-com-private-l1-1-1.CoPushServiceDomain
+CoQueryAuthenticationServices = api-ms-win-core-com-l1-1-0.CoQueryAuthenticationServices
+CoQueryClientBlanket = api-ms-win-core-com-l1-1-0.CoQueryClientBlanket
+CoQueryProxyBlanket = api-ms-win-core-com-l1-1-0.CoQueryProxyBlanket
+CoQueryReleaseObject
+CoReactivateObject = api-ms-win-core-com-private-l1-1-1.CoReactivateObject
+CoRegisterActivationFilter = api-ms-win-core-com-l1-1-0.CoRegisterActivationFilter
+CoRegisterChannelHook = COMBASE.#112
+CoRegisterClassObject = api-ms-win-core-com-l1-1-0.CoRegisterClassObject
+CoRegisterInitializeSpy = api-ms-win-core-com-private-l1-1-1.CoRegisterInitializeSpy
+CoRegisterMallocSpy = api-ms-win-core-com-private-l1-1-1.CoRegisterMallocSpy
+CoRegisterMessageFilter
+CoRegisterPSClsid = api-ms-win-core-com-l1-1-0.CoRegisterPSClsid
+CoRegisterSurrogate = api-ms-win-core-com-l1-1-0.CoRegisterSurrogate
+CoRegisterSurrogateEx
+CoReleaseMarshalData = api-ms-win-core-com-l1-1-0.CoReleaseMarshalData
+CoReleaseServerProcess = api-ms-win-core-com-l1-1-0.CoReleaseServerProcess
+CoResumeClassObjects = api-ms-win-core-com-l1-1-0.CoResumeClassObjects
+CoRetireServer = api-ms-win-core-com-private-l1-1-1.CoRetireServer
+CoRevertToSelf = api-ms-win-core-com-l1-1-0.CoRevertToSelf
+CoRevokeClassObject = api-ms-win-core-com-l1-1-0.CoRevokeClassObject
+CoRevokeInitializeSpy = api-ms-win-core-com-private-l1-1-1.CoRevokeInitializeSpy
+CoRevokeMallocSpy = api-ms-win-core-com-private-l1-1-1.CoRevokeMallocSpy
+CoSetCancelObject = api-ms-win-core-com-l1-1-0.CoSetCancelObject
+CoSetMessageDispatcher = COMBASE.#110
+CoSetProxyBlanket = api-ms-win-core-com-l1-1-0.CoSetProxyBlanket
+CoSetState
+CoSuspendClassObjects = api-ms-win-core-com-l1-1-0.CoSuspendClassObjects
+CoSwitchCallContext = api-ms-win-core-com-l1-1-0.CoSwitchCallContext
+CoTaskMemAlloc = api-ms-win-core-com-l1-1-0.CoTaskMemAlloc
+CoTaskMemFree = api-ms-win-core-com-l1-1-0.CoTaskMemFree
+CoTaskMemRealloc = api-ms-win-core-com-l1-1-0.CoTaskMemRealloc
+CoTestCancel = api-ms-win-core-com-l1-1-0.CoTestCancel
+CoTreatAsClass = api-ms-win-core-com-private-l1-3-1.CoTreatAsClass
+CoTryGetInterceptorForAppModelVirtualization
+CoUninitialize = api-ms-win-core-com-l1-1-0.CoUninitialize
+CoUnloadingWOW
+CoUnmarshalHresult = api-ms-win-core-com-l1-1-0.CoUnmarshalHresult
+CoUnmarshalInterface = api-ms-win-core-com-l1-1-0.CoUnmarshalInterface
+CoVrfCheckThreadState = api-ms-win-core-com-private-l1-1-1.CoVrfCheckThreadState
+CoVrfGetThreadState = api-ms-win-core-com-private-l1-1-1.CoVrfGetThreadState
+CoVrfReleaseThreadState = api-ms-win-core-com-private-l1-1-1.CoVrfReleaseThreadState
+CoWaitForMultipleHandles = api-ms-win-core-com-l1-1-0.CoWaitForMultipleHandles
+CoWaitForMultipleObjects = api-ms-win-core-com-l1-1-0.CoWaitForMultipleObjects
+ComPs_NdrDllCanUnloadNow
+ComPs_NdrDllGetClassObject
+ComPs_NdrDllRegisterProxy
+ComPs_NdrDllUnregisterProxy
+CreateAntiMoniker
+CreateBindCtx
+CreateClassMoniker
+CreateDataAdviseHolder
+CreateDataCache
+CreateErrorInfo = api-ms-win-core-com-private-l1-1-1.CoCreateErrorInfo
+CreateFileMoniker
+CreateGenericComposite
+CreateILockBytesOnHGlobal = CreateILockBytesOnHGlobalStub
+CreateItemMoniker
+CreateObjrefMoniker
+CreateOleAdviseHolder
+CreatePointerMoniker
+CreateStdProgressIndicator
+CreateStreamOnHGlobal = api-ms-win-core-com-l1-1-0.CreateStreamOnHGlobal
+DcomChannelSetHResult = COMBASE.DcomChannelSetHResult
+DdeBindToObject
+DeletePatternAndExtensionTables
+DestroyRunningObjectTable
+DllDebugObjectRPCHook = api-ms-win-core-com-private-l1-1-1.DllDebugObjectRPCHook
+DllGetClassObject PRIVATE
+DllGetClassObjectWOW = DllGetClassObject
+DllRegisterServer PRIVATE
+DoDragDrop
+DragDropSetFDT
+EnableHookObject = api-ms-win-core-com-private-l1-1-1.EnableHookObject
+FindExt
+FmtIdToPropStgName = FmtIdToPropStgNameStub
+FreePropVariantArray = api-ms-win-core-com-l1-1-0.FreePropVariantArray
+GetActiveObjectExt
+GetClassFile
+GetConvertStg = GetConvertStgStub
+GetDocumentBitStg = GetDocumentBitStgStub
+GetErrorInfo = api-ms-win-core-com-private-l1-1-1.CoGetErrorInfo
+GetHGlobalFromILockBytes = GetHGlobalFromILockBytesStub
+GetHGlobalFromStream = api-ms-win-core-com-l1-1-0.GetHGlobalFromStream
+GetHookInterface = api-ms-win-core-com-private-l1-1-1.GetHookInterface
+GetObjectFromRotByPath
+GetRunningObjectTable
+HACCEL_UserFree = COMBASE.HACCEL_UserFree
+HACCEL_UserFree64 = COMBASE.HACCEL_UserFree64
+HACCEL_UserMarshal = COMBASE.HACCEL_UserMarshal
+HACCEL_UserMarshal64 = COMBASE.HACCEL_UserMarshal64
+HACCEL_UserSize = COMBASE.HACCEL_UserSize
+HACCEL_UserSize64 = COMBASE.HACCEL_UserSize64
+HACCEL_UserUnmarshal = COMBASE.HACCEL_UserUnmarshal
+HACCEL_UserUnmarshal64 = COMBASE.HACCEL_UserUnmarshal64
+HBITMAP_UserFree = COMBASE.HBITMAP_UserFree
+HBITMAP_UserFree64 = COMBASE.HBITMAP_UserFree64
+HBITMAP_UserMarshal = COMBASE.HBITMAP_UserMarshal
+HBITMAP_UserMarshal64 = COMBASE.HBITMAP_UserMarshal64
+HBITMAP_UserSize = COMBASE.HBITMAP_UserSize
+HBITMAP_UserSize64 = COMBASE.HBITMAP_UserSize64
+HBITMAP_UserUnmarshal = COMBASE.HBITMAP_UserUnmarshal
+HBITMAP_UserUnmarshal64 = COMBASE.HBITMAP_UserUnmarshal64
+HBRUSH_UserFree = COMBASE.HBRUSH_UserFree
+HBRUSH_UserFree64 = COMBASE.HBRUSH_UserFree64
+HBRUSH_UserMarshal = COMBASE.HBRUSH_UserMarshal
+HBRUSH_UserMarshal64 = COMBASE.HBRUSH_UserMarshal64
+HBRUSH_UserSize = COMBASE.HBRUSH_UserSize
+HBRUSH_UserSize64 = COMBASE.HBRUSH_UserSize64
+HBRUSH_UserUnmarshal = COMBASE.HBRUSH_UserUnmarshal
+HBRUSH_UserUnmarshal64 = COMBASE.HBRUSH_UserUnmarshal64
+HDC_UserFree = COMBASE.HDC_UserFree
+HDC_UserFree64 = COMBASE.HDC_UserFree64
+HDC_UserMarshal = COMBASE.HDC_UserMarshal
+HDC_UserMarshal64 = COMBASE.HDC_UserMarshal64
+HDC_UserSize = COMBASE.HDC_UserSize
+HDC_UserSize64 = COMBASE.HDC_UserSize64
+HDC_UserUnmarshal = COMBASE.HDC_UserUnmarshal
+HDC_UserUnmarshal64 = COMBASE.HDC_UserUnmarshal64
+HENHMETAFILE_UserFree
+HENHMETAFILE_UserFree64
+HENHMETAFILE_UserMarshal
+HENHMETAFILE_UserMarshal64
+HENHMETAFILE_UserSize
+HENHMETAFILE_UserSize64
+HENHMETAFILE_UserUnmarshal
+HENHMETAFILE_UserUnmarshal64
+HGLOBAL_UserFree = COMBASE.HGLOBAL_UserFree
+HGLOBAL_UserFree64 = COMBASE.HGLOBAL_UserFree64
+HGLOBAL_UserMarshal = COMBASE.HGLOBAL_UserMarshal
+HGLOBAL_UserMarshal64 = COMBASE.HGLOBAL_UserMarshal64
+HGLOBAL_UserSize = COMBASE.HGLOBAL_UserSize
+HGLOBAL_UserSize64 = COMBASE.HGLOBAL_UserSize64
+HGLOBAL_UserUnmarshal = COMBASE.HGLOBAL_UserUnmarshal
+HGLOBAL_UserUnmarshal64 = COMBASE.HGLOBAL_UserUnmarshal64
+HICON_UserFree = COMBASE.HICON_UserFree
+HICON_UserFree64 = COMBASE.HICON_UserFree64
+HICON_UserMarshal = COMBASE.HICON_UserMarshal
+HICON_UserMarshal64 = COMBASE.HICON_UserMarshal64
+HICON_UserSize = COMBASE.HICON_UserSize
+HICON_UserSize64 = COMBASE.HICON_UserSize64
+HICON_UserUnmarshal = COMBASE.HICON_UserUnmarshal
+HICON_UserUnmarshal64 = COMBASE.HICON_UserUnmarshal64
+HMENU_UserFree = COMBASE.HMENU_UserFree
+HMENU_UserFree64 = COMBASE.HMENU_UserFree64
+HMENU_UserMarshal = COMBASE.HMENU_UserMarshal
+HMENU_UserMarshal64 = COMBASE.HMENU_UserMarshal64
+HMENU_UserSize = COMBASE.HMENU_UserSize
+HMENU_UserSize64 = COMBASE.HMENU_UserSize64
+HMENU_UserUnmarshal = COMBASE.HMENU_UserUnmarshal
+HMENU_UserUnmarshal64 = COMBASE.HMENU_UserUnmarshal64
+HMETAFILEPICT_UserFree
+HMETAFILEPICT_UserFree64
+HMETAFILEPICT_UserMarshal
+HMETAFILEPICT_UserMarshal64
+HMETAFILEPICT_UserSize
+HMETAFILEPICT_UserSize64
+HMETAFILEPICT_UserUnmarshal
+HMETAFILEPICT_UserUnmarshal64
+HMETAFILE_UserFree
+HMETAFILE_UserFree64
+HMETAFILE_UserMarshal
+HMETAFILE_UserMarshal64
+HMETAFILE_UserSize
+HMETAFILE_UserSize64
+HMETAFILE_UserUnmarshal
+HMETAFILE_UserUnmarshal64
+HMONITOR_UserFree = COMBASE.HMONITOR_UserFree
+HMONITOR_UserFree64 = COMBASE.HMONITOR_UserFree64
+HMONITOR_UserMarshal = COMBASE.HMONITOR_UserMarshal
+HMONITOR_UserMarshal64 = COMBASE.HMONITOR_UserMarshal64
+HMONITOR_UserSize = COMBASE.HMONITOR_UserSize
+HMONITOR_UserSize64 = COMBASE.HMONITOR_UserSize64
+HMONITOR_UserUnmarshal = COMBASE.HMONITOR_UserUnmarshal
+HMONITOR_UserUnmarshal64 = COMBASE.HMONITOR_UserUnmarshal64
+HPALETTE_UserFree = COMBASE.HPALETTE_UserFree
+HPALETTE_UserFree64 = COMBASE.HPALETTE_UserFree64
+HPALETTE_UserFreeExt
+HPALETTE_UserMarshal = COMBASE.HPALETTE_UserMarshal
+HPALETTE_UserMarshal64 = COMBASE.HPALETTE_UserMarshal64
+HPALETTE_UserMarshalExt
+HPALETTE_UserSize = COMBASE.HPALETTE_UserSize
+HPALETTE_UserSize64 = COMBASE.HPALETTE_UserSize64
+HPALETTE_UserSizeExt
+HPALETTE_UserUnmarshal = COMBASE.HPALETTE_UserUnmarshal
+HPALETTE_UserUnmarshal64 = COMBASE.HPALETTE_UserUnmarshal64
+HPALETTE_UserUnmarshalExt
+HRGN_UserFree = COMBASE.HRGN_UserFree
+HRGN_UserMarshal = COMBASE.HRGN_UserMarshal
+HRGN_UserSize = COMBASE.HRGN_UserSize
+HRGN_UserUnmarshal = COMBASE.HRGN_UserUnmarshal
+HWND_UserFree = COMBASE.HWND_UserFree
+HWND_UserFree64 = COMBASE.HWND_UserFree64
+HWND_UserFree64Ext
+HWND_UserFreeExt
+HWND_UserMarshal = COMBASE.HWND_UserMarshal
+HWND_UserMarshal64 = COMBASE.HWND_UserMarshal64
+HWND_UserMarshal64Ext
+HWND_UserMarshalExt
+HWND_UserSize = COMBASE.HWND_UserSize
+HWND_UserSize64 = COMBASE.HWND_UserSize64
+HWND_UserSize64Ext
+HWND_UserSizeExt
+HWND_UserUnmarshal = COMBASE.HWND_UserUnmarshal
+HWND_UserUnmarshal64 = COMBASE.HWND_UserUnmarshal64
+HWND_UserUnmarshal64Ext
+HWND_UserUnmarshalExt
+HkOleRegisterObject = api-ms-win-core-com-private-l1-1-1.HkOleRegisterObject
+IIDFromString = api-ms-win-core-com-l1-1-0.IIDFromString
+IsAccelerator
+IsEqualGUID
+IsRoInitializeASTAAllowedInDesktop
+IsValidIid
+IsValidInterface
+IsValidPtrIn = ExportedIsValidPtrIn
+IsValidPtrOut = ExportedIsValidPtrIn
+MkParseDisplayName
+MonikerCommonPrefixWith
+MonikerLoadTypeLib
+MonikerRelativePathTo
+NdrOleInitializeExtension = api-ms-win-core-com-private-l1-1-1.NdrOleInitializeExtension
+NdrProxyForwardingFunction10 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction10
+NdrProxyForwardingFunction11 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction11
+NdrProxyForwardingFunction12 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction12
+NdrProxyForwardingFunction13 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction13
+NdrProxyForwardingFunction14 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction14
+NdrProxyForwardingFunction15 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction15
+NdrProxyForwardingFunction16 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction16
+NdrProxyForwardingFunction17 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction17
+NdrProxyForwardingFunction18 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction18
+NdrProxyForwardingFunction19 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction19
+NdrProxyForwardingFunction20 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction20
+NdrProxyForwardingFunction21 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction21
+NdrProxyForwardingFunction22 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction22
+NdrProxyForwardingFunction23 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction23
+NdrProxyForwardingFunction24 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction24
+NdrProxyForwardingFunction25 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction25
+NdrProxyForwardingFunction26 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction26
+NdrProxyForwardingFunction27 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction27
+NdrProxyForwardingFunction28 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction28
+NdrProxyForwardingFunction29 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction29
+NdrProxyForwardingFunction3 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction3
+NdrProxyForwardingFunction30 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction30
+NdrProxyForwardingFunction31 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction31
+NdrProxyForwardingFunction32 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction32
+NdrProxyForwardingFunction4 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction4
+NdrProxyForwardingFunction5 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction5
+NdrProxyForwardingFunction6 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction6
+NdrProxyForwardingFunction7 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction7
+NdrProxyForwardingFunction8 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction8
+NdrProxyForwardingFunction9 = api-ms-win-core-com-midlproxystub-l1-1-0.NdrProxyForwardingFunction9
+ObjectStublessClient10 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient10
+ObjectStublessClient11 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient11
+ObjectStublessClient12 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient12
+ObjectStublessClient13 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient13
+ObjectStublessClient14 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient14
+ObjectStublessClient15 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient15
+ObjectStublessClient16 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient16
+ObjectStublessClient17 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient17
+ObjectStublessClient18 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient18
+ObjectStublessClient19 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient19
+ObjectStublessClient20 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient20
+ObjectStublessClient21 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient21
+ObjectStublessClient22 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient22
+ObjectStublessClient23 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient23
+ObjectStublessClient24 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient24
+ObjectStublessClient25 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient25
+ObjectStublessClient26 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient26
+ObjectStublessClient27 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient27
+ObjectStublessClient28 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient28
+ObjectStublessClient29 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient29
+ObjectStublessClient3 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient3
+ObjectStublessClient30 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient30
+ObjectStublessClient31 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient31
+ObjectStublessClient32 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient32
+ObjectStublessClient4 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient4
+ObjectStublessClient5 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient5
+ObjectStublessClient6 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient6
+ObjectStublessClient7 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient7
+ObjectStublessClient8 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient8
+ObjectStublessClient9 = api-ms-win-core-com-midlproxystub-l1-1-0.ObjectStublessClient9
+Ole32DllGetClassObject
+OleBuildVersion = CoBuildVersion
+OleConvertIStorageToOLESTREAM
+OleConvertIStorageToOLESTREAMEx
+OleConvertOLESTREAMToIStorage
+OleConvertOLESTREAMToIStorageEx
+OleCreate
+OleCreateDefaultHandler
+OleCreateEmbeddingHelper
+OleCreateEx
+OleCreateFontIndirectExt
+OleCreateFromData
+OleCreateFromDataEx
+OleCreateFromFile
+OleCreateFromFileEx
+OleCreateLink
+OleCreateLinkEx
+OleCreateLinkFromData
+OleCreateLinkFromDataEx
+OleCreateLinkToFile
+OleCreateLinkToFileEx
+OleCreateMenuDescriptor
+OleCreatePictureIndirectExt
+OleCreatePropertyFrameIndirectExt
+OleCreateStaticFromData
+OleDestroyMenuDescriptor
+OleDoAutoConvert
+OleDraw
+OleDuplicateData
+OleFlushClipboard
+OleGetAutoConvert
+OleGetClipboard
+OleGetClipboardWithEnterpriseInfo
+OleGetIconOfClass
+OleGetIconOfFile
+OleGetPackageClipboardOwner
+OleIconToCursorExt
+OleInitialize
+OleInitializeWOW
+OleIsCurrentClipboard
+OleIsRunning
+OleLoad
+OleLoadFromStream
+OleLoadPictureExt
+OleLoadPictureFileExt
+OleLoadPicturePathExt
+OleLockRunning
+OleMetafilePictFromIconAndLabel
+OleNoteObjectVisible
+OleQueryCreateFromData
+OleQueryLinkFromData
+OleRegEnumFormatEtc
+OleRegEnumVerbs
+OleRegGetMiscStatus
+OleRegGetUserType
+OleReleaseEnumVerbCache
+OleRun
+OleSave
+OleSavePictureFileExt
+OleSaveToStream
+OleSetAutoConvert
+OleSetClipboard
+OleSetContainedObject
+OleSetMenuDescriptor
+OleTranslateAccelerator
+OleTranslateColorExt
+OleUninitialize
+OpenOrCreateStream
+ProgIDFromCLSID = api-ms-win-core-com-l1-1-0.ProgIDFromCLSID
+PropStgNameToFmtId = PropStgNameToFmtIdStub
+PropSysAllocString = PropSysAllocStringStub
+PropSysFreeString = PropSysFreeStringStub
+PropVariantChangeType = PropVariantChangeTypeStub
+PropVariantClear = api-ms-win-core-com-l1-1-0.PropVariantClear
+PropVariantCopy = api-ms-win-core-com-l1-1-0.PropVariantCopy
+ReadClassStg = ReadClassStgStub
+ReadClassStm = ReadClassStmStub
+ReadFmtUserTypeStg
+ReadOleStg
+ReadStorageProperties = ReadClassStgStub
+ReadStringStream
+RegisterActiveObjectExt
+RegisterDragDrop
+ReleaseStgMedium
+RevokeActiveObjectExt
+RevokeDragDrop
+RoGetAgileReference = api-ms-win-core-com-l1-1-1.RoGetAgileReference
+SNB_UserFree
+SNB_UserFree64
+SNB_UserMarshal
+SNB_UserMarshal64
+SNB_UserSize
+SNB_UserSize64
+SNB_UserUnmarshal
+SNB_UserUnmarshal64
+STGMEDIUM_UserFree
+STGMEDIUM_UserFree64
+STGMEDIUM_UserFreeExt
+STGMEDIUM_UserMarshal
+STGMEDIUM_UserMarshal64
+STGMEDIUM_UserMarshalExt
+STGMEDIUM_UserSize
+STGMEDIUM_UserSize64
+STGMEDIUM_UserSizeExt
+STGMEDIUM_UserUnmarshal
+STGMEDIUM_UserUnmarshal64
+STGMEDIUM_UserUnmarshalExt
+SetConvertStg
+SetDocumentBitStg
+SetErrorInfo = api-ms-win-core-com-private-l1-1-1.CoSetErrorInfo
+SetOleautModule
+SetWOWThunkGlobalPtr
+StdTypesGetClassObject
+StdTypesRegisterServer
+StgConvertPropertyToVariant = StgConvertPropertyToVariantStub
+StgConvertVariantToProperty = StgConvertVariantToPropertyStub
+StgCreateDocfile = StgCreateDocfileStub
+StgCreateDocfileOnILockBytes = StgCreateDocfileOnILockBytesStub
+StgCreatePropSetStg = StgCreatePropSetStgStub
+StgCreatePropStg = StgCreatePropStgStub
+StgCreateStorageEx = StgCreateStorageExStub
+StgGetIFillLockBytesOnFile = StgGetIFillLockBytesOnFileStub
+StgGetIFillLockBytesOnILockBytes = StgGetIFillLockBytesOnILockBytesStub
+StgIsStorageFile = StgIsStorageFileStub
+StgIsStorageILockBytes = StgIsStorageILockBytesStub
+StgOpenAsyncDocfileOnIFillLockBytes = StgOpenAsyncDocfileOnIFillLockBytesStub
+StgOpenPropStg = StgOpenPropStgStub
+StgOpenStorage = StgOpenStorageStub
+StgOpenStorageEx = StgOpenStorageExStub
+StgOpenStorageOnHandle = StgOpenStorageOnHandleStub
+StgOpenStorageOnILockBytes = StgOpenStorageOnILockBytesStub
+StgPropertyLengthAsVariant = StgPropertyLengthAsVariantStub
+StgSetTimes = StgSetTimesStub
+StringFromCLSID = api-ms-win-core-com-l1-1-0.StringFromCLSID
+StringFromGUID2 = api-ms-win-core-com-l1-1-0.StringFromGUID2
+StringFromIID = api-ms-win-core-com-l1-1-0.StringFromIID
+UpdateDCOMSettings = api-ms-win-core-com-private-l1-1-1.UpdateDCOMSettings
+UpdateProcessTracing = api-ms-win-core-com-private-l1-1-1.UpdateProcessTracing
+UtConvertDvtd16toDvtd32
+UtConvertDvtd32toDvtd16
+UtGetDvtd16Info
+UtGetDvtd32Info
+WdtpInterfacePointer_UserFree = COMBASE.WdtpInterfacePointer_UserFree
+WdtpInterfacePointer_UserFree64 = COMBASE.WdtpInterfacePointer_UserFree64
+WdtpInterfacePointer_UserMarshal = COMBASE.WdtpInterfacePointer_UserMarshal
+WdtpInterfacePointer_UserMarshal64 = COMBASE.WdtpInterfacePointer_UserMarshal64
+WdtpInterfacePointer_UserSize = COMBASE.WdtpInterfacePointer_UserSize
+WdtpInterfacePointer_UserSize64 = COMBASE.WdtpInterfacePointer_UserSize64
+WdtpInterfacePointer_UserUnmarshal = COMBASE.WdtpInterfacePointer_UserUnmarshal
+WdtpInterfacePointer_UserUnmarshal64 = COMBASE.WdtpInterfacePointer_UserUnmarshal64
+WriteClassStg = WriteClassStgStub
+WriteClassStm = WriteClassStmStub
+WriteFmtUserTypeStg
+WriteOleStg
+WriteStorageProperties
+WriteStringStream
+OleStartDragOperationInternal @823 NONAME
+OleCreateDragOperationInternal @822 NONAME
+OleRevokeDropTargetInternal @821 NONAME
+OleRegisterDropTargetInternal @820 NONAME
+OleGetSessionClipboardBroker @804 NONAME
+OleInitClipboardBroker @803 NONAME
+OleRundownClipboardBroker @801 NONAME
+OleGetClipboardBroker @800 NONAME

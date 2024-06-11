@@ -1,0 +1,73 @@
+API MACRO name
+name proc
+name endp
+ENDM
+
+.code
+
+API AcceptEx
+API EnumProtocolsA
+API EnumProtocolsW
+API GetAcceptExSockaddrs
+API GetAddressByNameA
+API GetAddressByNameW
+API GetNameByTypeA
+API GetNameByTypeW
+API GetServiceA
+API GetServiceW
+API GetSocketErrorMessageW
+API GetTypeByNameA
+API GetTypeByNameW
+API MigrateWinsockConfiguration
+API MigrateWinsockConfigurationEx
+API NPLoadNameSpaces
+API NSPStartup
+API ProcessSocketNotifications
+API SetServiceA
+API SetServiceW
+API StartWsdpService
+API StopWsdpService
+API Tcpip4_WSHAddressToString
+API Tcpip4_WSHEnumProtocols
+API Tcpip4_WSHGetBroadcastSockaddr
+API Tcpip4_WSHGetProviderGuid
+API Tcpip4_WSHGetSockaddrType
+API Tcpip6_WSHGetSocketInformation ; -> Tcpip4_WSHGetSocketInformation
+API Tcpip4_WSHGetWSAProtocolInfo
+API Tcpip4_WSHGetWildcardSockaddr
+API Tcpip4_WSHGetWinsockMapping
+API Tcpip4_WSHIoctl
+API Tcpip4_WSHJoinLeaf
+API Tcpip4_WSHNotify
+API Tcpip4_WSHOpenSocket
+API Tcpip4_WSHOpenSocket2
+API Tcpip4_WSHSetSocketInformation
+API Tcpip4_WSHStringToAddress
+API Tcpip6_WSHAddressToString
+API Tcpip6_WSHEnumProtocols
+API Tcpip6_WSHGetProviderGuid
+API Tcpip6_WSHGetSockaddrType
+API Tcpip6_WSHGetSocketInformation
+API Tcpip6_WSHGetWSAProtocolInfo
+API Tcpip6_WSHGetWildcardSockaddr
+API Tcpip6_WSHGetWinsockMapping
+API Tcpip4_WSHIoctl ; -> Tcpip6_WSHIoctl
+API Tcpip6_WSHJoinLeaf
+API Tcpip6_WSHNotify
+API Tcpip6_WSHOpenSocket
+API Tcpip6_WSHOpenSocket2
+API Tcpip4_WSHSetSocketInformation ; -> Tcpip6_WSHSetSocketInformation
+API Tcpip6_WSHStringToAddress
+API TransmitFile
+API WSARecvEx
+API WSPStartup
+API dn_expand
+API getnetbyname
+API inet_network
+API rexec ; -> rcmd
+API rexec
+API rresvport
+API s_perror
+API sethostname
+
+end

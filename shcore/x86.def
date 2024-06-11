@@ -1,0 +1,200 @@
+EXPORTS
+
+CommandLineToArgvW = CommandLineToArgvWStub
+CreateRandomAccessStreamOnFile
+CreateRandomAccessStreamOverStream
+CreateStreamOverRandomAccessStream
+DllCanUnloadNow PRIVATE
+DllGetActivationFactory
+DllGetClassObject PRIVATE
+GetCurrentProcessExplicitAppUserModelID
+GetDpiForMonitor
+GetDpiForShellUIComponent
+GetFeatureEnabledState
+GetFeatureVariant
+GetProcessDpiAwareness
+GetProcessReference
+GetScaleFactorForDevice
+GetScaleFactorForMonitor
+IStream_Copy
+IStream_Read
+IStream_ReadStr
+IStream_Reset
+IStream_Size
+IStream_Write
+IStream_WriteStr
+IUnknown_AtomicRelease
+IUnknown_GetSite
+IUnknown_QueryService
+IUnknown_Set
+IUnknown_SetSite
+IsOS
+IsProcessInIsolatedContainer
+IsProcessInWDAGContainer
+RecordFeatureError = ?WilApiImpl_RecordFeatureError@details@wil@@YGXIPBUFEATURE_ERROR@@@Z
+RecordFeatureUsage
+RegisterScaleChangeEvent
+RegisterScaleChangeNotifications
+RevokeScaleChangeNotifications
+SHAnsiToAnsi
+SHAnsiToUnicode
+SHCopyKeyA
+SHCopyKeyW
+SHCreateMemStream
+SHCreateStreamOnFileA
+SHCreateStreamOnFileEx
+SHCreateStreamOnFileW
+SHCreateThread
+SHCreateThreadRef
+SHCreateThreadWithHandle
+SHDeleteEmptyKeyA
+SHDeleteEmptyKeyW
+SHDeleteKeyA
+SHDeleteKeyW
+SHDeleteValueA
+SHDeleteValueW
+SHEnumKeyExA
+SHEnumKeyExW
+SHEnumValueA
+SHEnumValueW
+SHGetThreadRef
+SHGetValueA
+SHGetValueW
+SHOpenRegStream2A
+SHOpenRegStream2W
+SHOpenRegStreamA
+SHOpenRegStreamW
+SHQueryInfoKeyA
+SHQueryInfoKeyW
+SHQueryValueExA
+SHQueryValueExW
+SHRegDuplicateHKey
+SHRegGetIntW
+SHRegGetPathA
+SHRegGetPathW
+SHRegGetValueA
+SHRegGetValueFromHKCUHKLM
+SHRegGetValueW
+SHRegSetPathA
+SHRegSetPathW
+SHReleaseThreadRef
+SHSetThreadRef
+SHSetValueA
+SHSetValueW
+SHStrDupA
+SHStrDupW
+SHTaskPoolAllowThreadReuse
+SHTaskPoolDoNotWaitForMoreTasks
+SHTaskPoolGetCurrentThreadLifetime
+SHTaskPoolGetUniqueContext
+SHTaskPoolQueueTask
+SHTaskPoolSetThreadReuseAllowed
+SHUnicodeToAnsi
+SHUnicodeToUnicode
+SetCurrentProcessExplicitAppUserModelID
+SetProcessDpiAwareness
+SetProcessReference
+SubscribeFeatureStateChangeNotification
+UnregisterScaleChangeEvent
+UnsubscribeFeatureStateChangeNotification
+SHCreateDirectory @292 NONAME
+SHCreateDirectoryExA @291 NONAME
+SHCreateDirectoryExW @290 NONAME
+IsNotifySuspended @284 NONAME
+ResumeSHNotify @283 NONAME
+SuspendSHNotify @282 NONAME
+Win32CreateDirectory @281 NONAME
+_CreateDirectoryHelper @280 NONAME
+SHCreateMemoryStreamOnSharedBuffer @270 NONAME
+GetScaleFactorForCoreWindow @265 NONAME
+GetScaleFactorForMonitor_Uncached @264 NONAME
+GetLegacyModernScaleFactor @263 NONAME
+GetMonitorSizeOverride @262 NONAME
+RelativeRectFromPhysicalRectWithScales @261 NONAME
+PhysicalRectFromRelativeRectWithScales @260 NONAME
+GetCurrentWindow @255 NONAME
+AddCurrentWindowCandidate @254 NONAME
+UnregisterWindowMonitorChangeListener @253 NONAME
+UnregisterCurrentWindowChangeListener @252 NONAME
+RegisterWindowMonitorChangeListener @251 NONAME
+RegisterCurrentWindowChangeListener @250 NONAME
+UpdateScalingInfoCache @249 NONAME
+GetSystemScaleFactorForWindow @248 NONAME
+GetOverrideScaleFactorForWindow @247 NONAME
+RevokeScaleChangeNotificationsForWindow @246 NONAME
+RegisterScaleChangeNotificationsForWindow @245 NONAME
+GetScaleFactorForWindow @244 NONAME
+RelativeRectFromPhysicalRectWithScale @242 NONAME
+ScaleAndMapRelativeRect @241 NONAME
+RegisterScaleChangeSinkForWindow @240 NONAME
+SHRegisterClassW @234 NONAME
+SHDefSubclassProc @233 NONAME
+SHRemoveWindowSubclass @232 NONAME
+SHGetWindowSubclassData @231 NONAME
+SHSetWindowSubclass @230 NONAME
+GetProposedScaleFactorForWindow @229 NONAME
+SetDesignModeScaleFactor @228 NONAME
+ScaleAndMapRelativeRectForDevice @224 NONAME
+PhysicalRectFromScaledRect @223 NONAME
+ScaleRelativePixelsForDevice @222 NONAME
+GetPhysicalDpiForDevice @220 NONAME
+GUIDFromStringW @200 NONAME
+SHGetObjectCompatFlags @193 NONAME
+IsAppCompatModeEnabled @192 NONAME
+SHWindowsPolicyGetValue @191 NONAME
+SHWindowsPolicy @190 NONAME
+SHCreateOplockProvider @189 NONAME
+SHCreateWorkerWindowW @188 NONAME
+SHFreeShared @187 NONAME
+SHUnlockShared @186 NONAME
+SHGetSizeShared @185 NONAME
+SHLockShared @184 NONAME
+SHLockSharedEx @183 NONAME
+SHAllocShared @182 NONAME
+SHMapHandle @181 NONAME
+IsNetDrive @175 NONAME
+DriveType @174 NONAME
+PathBuildRootA @173 NONAME
+PathBuildRootW @172 NONAME
+PathIsNetworkPathA @171 NONAME
+PathIsNetworkPathW @170 NONAME
+SHQueueUserWorkItem @162 NONAME
+SHWaitForThreadWithWakeMask @161 NONAME
+SHWaitForSendMessageThread @160 NONAME
+SHAnsiToUnicodeCPAlloc @153 NONAME
+SHUnicodeToAnsiCPAlloc @152 NONAME
+SHUnicodeToAnsiCP @151 NONAME
+SHAnsiToUnicodeCP @150 NONAME
+StrRetToBufW @145 NONAME
+StrRetToBSTR @144 NONAME
+StrRetToStrW @143 NONAME
+IUnknown_GetClassID @142 NONAME
+IUnknown_RemoveBackReferences @141 NONAME
+IUnknown_ProfferService @140 NONAME
+SHGlobalCounterSetValue @133 NONAME
+SHGlobalCounterDecrement @132 NONAME
+SHGlobalCounterIncrement @131 NONAME
+SHGlobalCounterGetValue @130 NONAME
+QuerySourceCreateFromKeyEx @127 NONAME
+SHLoadRegUIStringW @126 NONAME
+SHGetValueGoodBootW @125 NONAME
+SHGetValueGoodBootA @124 NONAME
+SHRegGetBoolValueFromHKCUHKLM @123 NONAME
+SHRegSetValue @121 NONAME
+SHRegGetCLSIDKey @120 NONAME
+CreateRandomAccessStreamOnPlaceholderFile @117 NONAME
+RandomAccessStreamCopyAsync @116 NONAME
+CreateRandomAccessStreamOnFileWithOptions @115 NONAME
+CreateWritableSharedMemoryStream @111 NONAME
+SHCreateStreamOnDllResourceW @110 NONAME
+SHCreateStreamOnModuleResourceW @109 NONAME
+IStream_WriteStrLong @108 NONAME
+IStream_ReadStrLong @107 NONAME
+StreamCopyTo @106 NONAME
+CreateTempStreamName @105 NONAME
+ModeToCreateFileFlags @104 NONAME
+MapWin32ErrorToSTG @103 NONAME
+SHIsEmptyStream @102 NONAME
+SHManagedCreateFile @101 NONAME
+SHManagedCreateStreamOnFile @100 NONAME
+SHCreateReadOnlySharedMemoryStream @1 NONAME

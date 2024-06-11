@@ -1,0 +1,927 @@
+EXPORTS
+
+AssocCreate
+AssocGetPerceivedType
+AssocIsDangerous
+AssocQueryKeyA
+AssocQueryKeyW
+AssocQueryStringA
+AssocQueryStringByKeyA
+AssocQueryStringByKeyW
+AssocQueryStringW
+ChrCmpIA = ChrCmpIAStub
+ChrCmpIW = ChrCmpIWStub
+ColorAdjustLuma
+ColorHLSToRGB
+ColorRGBToHLS
+ConnectToConnectionPoint
+DelayLoadFailureHook = Downlevel_DelayLoadFailureHook
+DllGetClassObject PRIVATE
+DllGetVersion = CCDllGetVersion
+GUIDFromStringW = SHCORE.#200
+GetAcceptLanguagesA = GetAcceptLanguagesAStub
+GetAcceptLanguagesW = GetAcceptLanguagesWStub
+GetMenuPosFromID
+HashData = HashDataStub
+IStream_Copy = IStream_CopyStub
+IStream_Read = IStream_ReadStub
+IStream_ReadPidl
+IStream_ReadStr = IStream_ReadStrStub
+IStream_Reset = IStream_ResetStub
+IStream_Size = IStream_SizeStub
+IStream_Write = IStream_WriteStub
+IStream_WritePidl
+IStream_WriteStr = IStream_WriteStrStub
+IUnknown_AtomicRelease = IUnknown_AtomicReleaseStub
+IUnknown_Exec
+IUnknown_GetSite = IUnknown_GetSiteStub
+IUnknown_GetWindow
+IUnknown_QueryService = IUnknown_QueryServiceStub
+IUnknown_QueryStatus
+IUnknown_Set = IUnknown_SetStub
+IUnknown_SetSite = IUnknown_SetSiteStub
+IntlStrEqWorkerA = StrIsIntlEqualAStub
+IntlStrEqWorkerW = StrIsIntlEqualWStub
+IsCharSpaceA = IsCharSpaceAStub
+IsCharSpaceW = IsCharSpaceWStub
+IsInternetESCEnabled = IsInternetESCEnabledStub
+IsOS = IsOSStub
+MLLoadLibraryA
+MLLoadLibraryW
+ParseURLA = ParseURLAStub
+ParseURLW = ParseURLWStub
+PathAddBackslashA = PathAddBackslashAStub
+PathAddBackslashW = PathAddBackslashWStub
+PathAddExtensionA = PathAddExtensionAStub
+PathAddExtensionW = PathAddExtensionWStub
+PathAppendA = PathAppendAStub
+PathAppendW = PathAppendWStub
+PathBuildRootA = PathBuildRootAStub
+PathBuildRootW = PathBuildRootWStub
+PathCanonicalizeA = PathCanonicalizeAStub
+PathCanonicalizeW = PathCanonicalizeWStub
+PathCombineA = PathCombineAStub
+PathCombineW = PathCombineWStub
+PathCommonPrefixA = PathCommonPrefixAStub
+PathCommonPrefixW = PathCommonPrefixWStub
+PathCompactPathA
+PathCompactPathExA
+PathCompactPathExW
+PathCompactPathW
+PathCreateFromUrlA = PathCreateFromUrlAStub
+PathCreateFromUrlAlloc = PathCreateFromUrlAllocStub
+PathCreateFromUrlW = PathCreateFromUrlWStub
+PathFileExistsA = PathFileExistsAStub
+PathFileExistsAndAttributesW
+PathFileExistsW = PathFileExistsWStub
+PathFindExtensionA = PathFindExtensionAStub
+PathFindExtensionW = PathFindExtensionWStub
+PathFindFileNameA = PathFindFileNameAStub
+PathFindFileNameW = PathFindFileNameWStub
+PathFindNextComponentA = PathFindNextComponentAStub
+PathFindNextComponentW = PathFindNextComponentWStub
+PathFindOnPathA
+PathFindOnPathW
+PathFindSuffixArrayA
+PathFindSuffixArrayW
+PathGetArgsA = PathGetArgsAStub
+PathGetArgsW = PathGetArgsWStub
+PathGetCharTypeA = PathGetCharTypeAStub
+PathGetCharTypeW = PathGetCharTypeWStub
+PathGetDriveNumberA = PathGetDriveNumberAStub
+PathGetDriveNumberW = PathGetDriveNumberWStub
+PathIsContentTypeA
+PathIsContentTypeW
+PathIsDirectoryA
+PathIsDirectoryEmptyA
+PathIsDirectoryEmptyW
+PathIsDirectoryW
+PathIsFileSpecA = PathIsFileSpecAStub
+PathIsFileSpecW = PathIsFileSpecWStub
+PathIsLFNFileSpecA = PathIsLFNFileSpecAStub
+PathIsLFNFileSpecW = PathIsLFNFileSpecWStub
+PathIsNetworkPathA = PathIsNetworkPathAStub
+PathIsNetworkPathW = PathIsNetworkPathWStub
+PathIsPrefixA = PathIsPrefixAStub
+PathIsPrefixW = PathIsPrefixWStub
+PathIsRelativeA = PathIsRelativeAStub
+PathIsRelativeW = PathIsRelativeWStub
+PathIsRootA = PathIsRootAStub
+PathIsRootW = PathIsRootWStub
+PathIsSameRootA = PathIsSameRootAStub
+PathIsSameRootW = PathIsSameRootWStub
+PathIsSystemFolderA
+PathIsSystemFolderW
+PathIsUNCA = PathIsUNCAStub
+PathIsUNCServerA = PathIsUNCServerAStub
+PathIsUNCServerShareA = PathIsUNCServerShareAStub
+PathIsUNCServerShareW = PathIsUNCServerShareWStub
+PathIsUNCServerW = PathIsUNCServerWStub
+PathIsUNCW = PathIsUNCWStub
+PathIsURLA = PathIsURLAStub
+PathIsURLW = PathIsURLWStub
+PathMakePrettyA
+PathMakePrettyW
+PathMakeSystemFolderA
+PathMakeSystemFolderW
+PathMatchSpecA = PathMatchSpecAStub
+PathMatchSpecExA = PathMatchSpecExAStub
+PathMatchSpecExW = PathMatchSpecExWStub
+PathMatchSpecW = PathMatchSpecWStub
+PathParseIconLocationA = PathParseIconLocationAStub
+PathParseIconLocationW = PathParseIconLocationWStub
+PathQuoteSpacesA = PathQuoteSpacesAStub
+PathQuoteSpacesW = PathQuoteSpacesWStub
+PathRelativePathToA = PathRelativePathToAStub
+PathRelativePathToW = PathRelativePathToWStub
+PathRemoveArgsA
+PathRemoveArgsW
+PathRemoveBackslashA = PathRemoveBackslashAStub
+PathRemoveBackslashW = PathRemoveBackslashWStub
+PathRemoveBlanksA = PathRemoveBlanksAStub
+PathRemoveBlanksW = PathRemoveBlanksWStub
+PathRemoveExtensionA = PathRemoveExtensionAStub
+PathRemoveExtensionW = PathRemoveExtensionWStub
+PathRemoveFileSpecA = PathRemoveFileSpecAStub
+PathRemoveFileSpecW = PathRemoveFileSpecWStub
+PathRenameExtensionA = PathRenameExtensionAStub
+PathRenameExtensionW = PathRenameExtensionWStub
+PathSearchAndQualifyA = PathSearchAndQualifyAStub
+PathSearchAndQualifyW = PathSearchAndQualifyWStub
+PathSetDlgItemPathA
+PathSetDlgItemPathW
+PathSkipRootA = PathSkipRootAStub
+PathSkipRootW = PathSkipRootWStub
+PathStripPathA = PathStripPathAStub
+PathStripPathW = PathStripPathWStub
+PathStripToRootA = PathStripToRootAStub
+PathStripToRootW = PathStripToRootWStub
+PathUnExpandEnvStringsA = PathUnExpandEnvStringsAStub
+PathUnExpandEnvStringsW = PathUnExpandEnvStringsWStub
+PathUndecorateA
+PathUndecorateW
+PathUnmakeSystemFolderA
+PathUnmakeSystemFolderW
+PathUnquoteSpacesA = PathUnquoteSpacesAStub
+PathUnquoteSpacesW = PathUnquoteSpacesWStub
+QISearch = QISearchStub
+SHAllocShared = SHAllocSharedStub
+SHAnsiToAnsi = SHAnsiToAnsiStub
+SHAnsiToUnicode = SHAnsiToUnicodeStub
+SHAutoComplete
+SHCopyKeyA = SHCopyKeyAStub
+SHCopyKeyW = SHCopyKeyWStub
+SHCreateMemStream = SHCreateMemStreamStub
+SHCreateShellPalette
+SHCreateStreamOnFileA = SHCreateStreamOnFileAStub
+SHCreateStreamOnFileEx = SHCreateStreamOnFileExStub
+SHCreateStreamOnFileW = SHCreateStreamOnFileWStub
+SHCreateStreamWrapper = SHUNIMPL.#471
+SHCreateThread = SHCreateThreadStub
+SHCreateThreadRef = SHCreateThreadRefStub
+SHCreateThreadWithHandle = SHCreateThreadWithHandleStub
+SHCreateWorkerWindowW = SHCreateWorkerWindowWStub
+SHDeleteEmptyKeyA = SHDeleteEmptyKeyAStub
+SHDeleteEmptyKeyW = SHDeleteEmptyKeyWStub
+SHDeleteKeyA = SHDeleteKeyAStub
+SHDeleteKeyW = SHDeleteKeyWStub
+SHDeleteOrphanKeyA = SHUNIMPL.#446
+SHDeleteOrphanKeyW = SHUNIMPL.#447
+SHDeleteValueA = SHDeleteValueAStub
+SHDeleteValueW = SHDeleteValueWStub
+SHEnumKeyExA = SHEnumKeyExAStub
+SHEnumKeyExW = SHEnumKeyExWStub
+SHEnumValueA = SHEnumValueAStub
+SHEnumValueW = SHEnumValueWStub
+SHFormatDateTimeA
+SHFormatDateTimeW
+SHFreeShared = SHFreeSharedStub
+SHGetInverseCMAP
+SHGetThreadRef = SHGetThreadRefStub
+SHGetValueA = SHGetValueAStub
+SHGetValueW = SHGetValueWStub
+SHGetViewStatePropertyBag
+SHIsChildOrSelf
+SHIsLowMemoryMachine = ?endDocument@CStubSaxParser2@CXMLPropStoreSaxParser@@UAGJXZ
+SHLoadIndirectString = SHLoadIndirectStringStub
+SHLockShared = SHLockSharedStub
+SHMessageBoxCheckA
+SHMessageBoxCheckW
+SHOpenRegStream2A = SHOpenRegStream2AStub
+SHOpenRegStream2W = SHOpenRegStream2WStub
+SHOpenRegStreamA = SHOpenRegStreamAStub
+SHOpenRegStreamW = SHOpenRegStreamWStub
+SHPackDispParamsV
+SHPinDllOfCLSID
+SHPropertyBag_ReadStrAlloc
+SHPropertyBag_WriteBSTR
+SHQueryInfoKeyA = SHQueryInfoKeyAStub
+SHQueryInfoKeyW = SHQueryInfoKeyWStub
+SHQueryValueExA = SHQueryValueExAStub
+SHQueryValueExW = SHQueryValueExWStub
+SHRegCloseUSKey = SHRegCloseUSKeyStub
+SHRegCreateUSKeyA = SHRegCreateUSKeyAStub
+SHRegCreateUSKeyW = SHRegCreateUSKeyWStub
+SHRegDeleteEmptyUSKeyA = SHRegDeleteEmptyUSKeyAStub
+SHRegDeleteEmptyUSKeyW = SHRegDeleteEmptyUSKeyWStub
+SHRegDeleteUSValueA = SHRegDeleteUSValueAStub
+SHRegDeleteUSValueW = SHRegDeleteUSValueWStub
+SHRegDuplicateHKey = SHRegDuplicateHKeyStub
+SHRegEnumUSKeyA = SHRegEnumUSKeyAStub
+SHRegEnumUSKeyW = SHRegEnumUSKeyWStub
+SHRegEnumUSValueA = SHRegEnumUSValueAStub
+SHRegEnumUSValueW = SHRegEnumUSValueWStub
+SHRegGetBoolUSValueA = SHRegGetBoolUSValueAStub
+SHRegGetBoolUSValueW = SHRegGetBoolUSValueWStub
+SHRegGetBoolValueFromHKCUHKLM
+SHRegGetIntW = SHRegGetIntWStub
+SHRegGetPathA = SHRegGetPathAStub
+SHRegGetPathW = SHRegGetPathWStub
+SHRegGetUSValueA = SHRegGetUSValueAStub
+SHRegGetUSValueW = SHRegGetUSValueWStub
+SHRegGetValueA = SHRegGetValueAStub
+SHRegGetValueFromHKCUHKLM
+SHRegGetValueW = SHRegGetValueWStub
+SHRegOpenUSKeyA = SHRegOpenUSKeyAStub
+SHRegOpenUSKeyW = SHRegOpenUSKeyWStub
+SHRegQueryInfoUSKeyA = SHRegQueryInfoUSKeyAStub
+SHRegQueryInfoUSKeyW = SHRegQueryInfoUSKeyWStub
+SHRegQueryUSValueA = SHRegQueryUSValueAStub
+SHRegQueryUSValueW = SHRegQueryUSValueWStub
+SHRegSetPathA = SHRegSetPathAStub
+SHRegSetPathW = SHRegSetPathWStub
+SHRegSetUSValueA = SHRegSetUSValueAStub
+SHRegSetUSValueW = SHRegSetUSValueWStub
+SHRegWriteUSValueA = SHRegWriteUSValueAStub
+SHRegWriteUSValueW = SHRegWriteUSValueWStub
+SHRegisterValidateTemplate
+SHReleaseThreadRef = SHReleaseThreadRefStub
+SHRunIndirectRegClientCommand
+SHSendMessageBroadcastA
+SHSendMessageBroadcastW
+SHSetThreadRef = SHSetThreadRefStub
+SHSetValueA = SHSetValueAStub
+SHSetValueW = SHSetValueWStub
+SHSkipJunction
+SHStrDupA = SHStrDupAStub
+SHStrDupW = SHStrDupWStub
+SHStripMneumonicA
+SHStripMneumonicW
+SHUnicodeToAnsi = SHUnicodeToAnsiStub
+SHUnicodeToAnsiCP = SHCORE.#151
+SHUnicodeToUnicode = SHUnicodeToUnicodeStub
+SHUnlockShared = SHUnlockSharedStub
+ShellMessageBoxA
+ShellMessageBoxW
+StrCSpnA = StrCSpnAStub
+StrCSpnIA = StrCSpnIAStub
+StrCSpnIW = StrCSpnIWStub
+StrCSpnW = StrCSpnWStub
+StrCatBuffA = StrCatBuffAStub
+StrCatBuffW = StrCatBuffWStub
+StrCatChainW = StrCatChainWStub
+StrCatW = Shlwapi_StrCatW
+StrChrA = StrChrAStub
+StrChrIA = StrChrIAStub
+StrChrIW = StrChrIWStub
+StrChrNIW = StrChrNIWStub
+StrChrNW = StrChrNWStub
+StrChrW = StrChrWStub
+StrCmpCA = StrCmpCAStub
+StrCmpCW = StrCmpCWStub
+StrCmpICA = StrCmpICAStub
+StrCmpICW = StrCmpICWStub
+StrCmpIW = StrCmpIWStub
+StrCmpLogicalW = StrCmpLogicalWStub
+StrCmpNA = StrCmpNAStub
+StrCmpNCA = StrCmpNCAStub
+StrCmpNCW = StrCmpNCWStub
+StrCmpNIA = StrCmpNIAStub
+StrCmpNICA = StrCmpNICAStub
+StrCmpNICW = StrCmpNICWStub
+StrCmpNIW = StrCmpNIWStub
+StrCmpNW = StrCmpNWStub
+StrCmpW = StrCmpWStub
+StrCpyNW = StrCpyNWStub
+StrCpyW = Shlwapi_StrCpyW
+StrDupA = StrDupAStub
+StrDupW = StrDupWStub
+StrFormatByteSize64A
+StrFormatByteSizeA
+StrFormatByteSizeEx
+StrFormatByteSizeW
+StrFormatKBSizeA
+StrFormatKBSizeW
+StrFromTimeIntervalA
+StrFromTimeIntervalW
+StrIsIntlEqualA = StrIsIntlEqualAStub
+StrIsIntlEqualW = StrIsIntlEqualWStub
+StrNCatA = Shlwapi_StrNCatA
+StrNCatW = Shlwapi_StrNCatW
+StrPBrkA = StrPBrkAStub
+StrPBrkW = StrPBrkWStub
+StrRChrA = StrRChrAStub
+StrRChrIA = StrRChrIAStub
+StrRChrIW = StrRChrIWStub
+StrRChrW = StrRChrWStub
+StrRStrIA = StrRStrIAStub
+StrRStrIW = StrRStrIWStub
+StrRetToBSTR = StrRetToBSTRStub
+StrRetToBufA
+StrRetToBufW = StrRetToBufWStub
+StrRetToStrA
+StrRetToStrW = StrRetToStrWStub
+StrSpnA = StrSpnAStub
+StrSpnW = StrSpnWStub
+StrStrA = StrStrAStub
+StrStrIA = StrStrIAStub
+StrStrIW = StrStrIWStub
+StrStrNIW = StrStrNIWStub
+StrStrNW = StrStrNWStub
+StrStrW = StrStrWStub
+StrToInt64ExA = StrToInt64ExAStub
+StrToInt64ExW = StrToInt64ExWStub
+StrToIntA = StrToIntAStub
+StrToIntExA = StrToIntExAStub
+StrToIntExW = StrToIntExWStub
+StrToIntW = StrToIntWStub
+StrTrimA = StrTrimAStub
+StrTrimW = StrTrimWStub
+UrlApplySchemeA = UrlApplySchemeAStub
+UrlApplySchemeW = UrlApplySchemeWStub
+UrlCanonicalizeA = UrlCanonicalizeAStub
+UrlCanonicalizeW = UrlCanonicalizeWStub
+UrlCombineA = UrlCombineAStub
+UrlCombineW = UrlCombineWStub
+UrlCompareA = UrlCompareAStub
+UrlCompareW = UrlCompareWStub
+UrlCreateFromPathA = UrlCreateFromPathAStub
+UrlCreateFromPathW = UrlCreateFromPathWStub
+UrlEscapeA = UrlEscapeAStub
+UrlEscapeW = UrlEscapeWStub
+UrlFixupW = UrlFixupWStub
+UrlGetLocationA = UrlGetLocationAStub
+UrlGetLocationW = UrlGetLocationWStub
+UrlGetPartA = UrlGetPartAStub
+UrlGetPartW = UrlGetPartWStub
+UrlHashA = UrlHashAStub
+UrlHashW = UrlHashWStub
+UrlIsA = UrlIsAStub
+UrlIsNoHistoryA = UrlIsNoHistoryAStub
+UrlIsNoHistoryW = UrlIsNoHistoryWStub
+UrlIsOpaqueA = UrlIsOpaqueAStub
+UrlIsOpaqueW = UrlIsOpaqueWStub
+UrlIsW = UrlIsWStub
+UrlUnescapeA = UrlUnescapeAStub
+UrlUnescapeW = UrlUnescapeWStub
+WhichPlatform
+wnsprintfA
+wnsprintfW
+wvnsprintfA
+wvnsprintfW
+SHLWAPI_NONAME_648 = SHCORE.#161 @648 NONAME
+SHLWAPI_NONAME_647 = SHCORE.#100 @647 NONAME
+SHLWAPI_NONAME_646 = SHCORE.#101 @646 NONAME
+SHLWAPI_NONAME_645 = SHCORE.#108 @645 NONAME
+SHLWAPI_NONAME_644 = SHCORE.#107 @644 NONAME
+PathUnExpandSystemEnvStringsW @643 NONAME
+SHLWAPI_NONAME_642 = SHUNIMPL.#442 @642 NONAME
+SHGetSizeSharedStub @641 NONAME
+SHInvokeCommandsOnContextMenuEx @640 NONAME
+SHInvokeCommandOnContextMenuEx @639 NONAME
+IUnknown_TranslateAcceleratorGlobal @638 NONAME
+SHPropertyBag_WriteUnknown @637 NONAME
+SHPropertyBag_ReadUnknown @636 NONAME
+SHGetShellKeyEx @635 NONAME
+SHLWAPI_NONAME_634 = SHCORE.#132 @634 NONAME
+SHLWAPI_NONAME_633 = SHCORE.#131 @633 NONAME
+SHLWAPI_NONAME_632 = SHCORE.#130 @632 NONAME
+SHRegSetValue @631 NONAME
+SHLWAPI_NONAME_628 = SHCORE.#109 @628 NONAME
+SHLWAPI_NONAME_627 = SHCORE.#110 @627 NONAME
+SHCreatePropertyBagOnCachedProfileSection @626 NONAME
+SHCreatePropertyStoreOnXML @621 NONAME
+SHLWAPI_NONAME_619 = SHCORE.#192 @619 NONAME
+SHLWAPI_NONAME_618 = SHCORE.#190 @618 NONAME
+DupWideToAnsi @617 NONAME
+SHClearViewStatePropertyBag @616 NONAME
+SHPropertyBag_ReadPropertyKey @614 NONAME
+SHPropertyBag_WritePropertyKey @613 NONAME
+SHLWAPI_NONAME_611 = SHCORE.#141 @611 NONAME
+SHLWAPI_NONAME_606 = SHUNIMPL.#356 @606 NONAME
+SHLWAPI_NONAME_605 = SHUNIMPL.#355 @605 NONAME
+SHLWAPI_NONAME_604 = SHUNIMPL.#354 @604 NONAME
+SHLWAPI_NONAME_603 = SHUNIMPL.#353 @603 NONAME
+SHLWAPI_NONAME_602 = SHUNIMPL.#351 @602 NONAME
+SHLWAPI_NONAME_601 = SHUNIMPL.#352 @601 NONAME
+SHLWAPI_NONAME_600 = SHCORE.#153 @600 NONAME
+SHLWAPI_NONAME_599 = SHCORE.#152 @599 NONAME
+SHLWAPI_NONAME_598 = SHUNIMPL.#210 @598 NONAME
+CreateSizedDIBSECTION @583 NONAME
+FactorAspectRatio @582 NONAME
+CalculateAspectRatio @581 NONAME
+ConvertDIBSECTIONToThumbnail @580 NONAME
+SHPropertyBag_WriteULONGLONG @578 NONAME
+SHPropertyBag_ReadULONGLONG @577 NONAME
+SHLWAPI_NONAME_576 = SHCORE.#127 @576 NONAME
+IWebBrowser_Navigate2 @575 NONAME
+SHLWAPI_NONAME_574 = SHUNIMPL.#350 @574 NONAME
+SHLWAPI_NONAME_573 = SHUNIMPL.#349 @573 NONAME
+SHExpandEnvironmentStringsAlloc @572 NONAME
+SHInvokeCommandWithFlagsAndSite @571 NONAME
+SHLWAPI_NONAME_566 = SHUNIMPL.#180 @566 NONAME
+SHLWAPI_NONAME_565 = SHUNIMPL.#183 @565 NONAME
+SHLWAPI_NONAME_564 = SHUNIMPL.#182 @564 NONAME
+SHLWAPI_NONAME_563 = SHUNIMPL.#167 @563 NONAME
+IsInternetESCEnabledStub @562 NONAME
+AssocGetUrlAction @561 NONAME
+SHLWAPI_NONAME_560 = SHCORE.#191 @560 NONAME
+SHLWAPI_NONAME_559 = SHUNIMPL.#443 @559 NONAME
+SHLWAPI_NONAME_558 = SHUNIMPL.#181 @558 NONAME
+SHLWAPI_NONAME_557 = SHUNIMPL.#180 @557 NONAME
+SHLWAPI_NONAME_556 = SHUNIMPL.#179 @556 NONAME
+SHLWAPI_NONAME_555 = SHUNIMPL.#178 @555 NONAME
+SHLWAPI_NONAME_554 = SHUNIMPL.#177 @554 NONAME
+SHLWAPI_NONAME_552 = SHUNIMPL.#176 @552 NONAME
+SHLWAPI_NONAME_551 = SHUNIMPL.#175 @551 NONAME
+SHLWAPI_NONAME_550 = SHUNIMPL.#174 @550 NONAME
+SHCoCreateInstanceAC @549 NONAME
+SHAreIconsEqual @548 NONAME
+SHLWAPI_NONAME_547 = SHUNIMPL.#173 @547 NONAME
+IUnknown_DoContextMenuPopup @546 NONAME
+SHForwardContextMenuMsg @545 NONAME
+QuerySourceCreateFromKey @544 NONAME
+SHLWAPI_NONAME_543 = GDI32.CreateColorSpaceW @543 NONAME
+GetUIVersion @542 NONAME
+SHInvokeCommandsOnContextMenu @541 NONAME
+SHInvokeCommandOnContextMenu @540 NONAME
+IUnknown_ShowBrowserBar @539 NONAME
+IUnknown_QueryServiceForWebBrowserApp @538 NONAME
+SHBoolSystemParametersInfo @537 NONAME
+IUnknown_QueryServicePropertyBag @536 NONAME
+SHPropertyBag_Delete @535 NONAME
+SHPropertyBag_ReadBOOL @534 NONAME
+SHGetPerScreenResName @533 NONAME
+SHPropertyBag_WriteStream @532 NONAME
+SHPropertyBag_ReadStream @531 NONAME
+SHPropertyBag_WriteLONG @530 NONAME
+SHPropertyBag_ReadLONG @529 NONAME
+SHPropertyBag_WriteSHORT @528 NONAME
+SHPropertyBag_ReadSHORT @527 NONAME
+SHPropertyBag_WritePOINTS @526 NONAME
+SHPropertyBag_ReadPOINTS @525 NONAME
+SHPropertyBag_WriteRECTL @524 NONAME
+SHPropertyBag_ReadRECTL @523 NONAME
+SHPropertyBag_WritePOINTL @522 NONAME
+SHPropertyBag_ReadPOINTL @521 NONAME
+SHPropertyBag_ReadBSTR @520 NONAME
+SKAllocValueW @519 NONAME
+SKDeleteValueW @518 NONAME
+SKSetValueW @517 NONAME
+SKGetValueW @516 NONAME
+SHLWAPI_NONAME_514 = SHCORE.#140 @514 NONAME
+PathFileExistsDefExtAndAttributesW @511 NONAME
+SHLockSharedExStub @510 NONAME
+IUnknown_OnFocusChangeIS @509 NONAME
+SHPropertyBag_WriteDWORD @508 NONAME
+SHPropertyBag_ReadDWORD @507 NONAME
+SHPropertyBag_WriteGUID @506 NONAME
+SHPropertyBag_ReadGUID @505 NONAME
+SHPropertyBag_WriteBOOL @499 NONAME
+SHLWAPI_NONAME_498 = SHUNIMPL.#348 @498 NONAME
+SHPropertyBag_WriteInt @497 NONAME
+SHPropertyBag_ReadInt @496 NONAME
+SHPropertyBag_WriteStr @495 NONAME
+SHPropertyBag_ReadStr @494 NONAME
+SHPropertyBag_ReadType @493 NONAME
+SHLWAPI_NONAME_492 = SHUNIMPL.#357 @492 NONAME
+SHGetShellKey @491 NONAME
+SHLWAPI_NONAME_490 = KERNEL32.GlobalFindAtomW @490 NONAME
+SHLWAPI_NONAME_489 = KERNEL32.GlobalAddAtomW @489 NONAME
+SHLWAPI_NONAME_488 = SHUNIMPL.#347 @488 NONAME
+SHLWAPI_NONAME_486 = SHCORE.#104 @486 NONAME
+SHLWAPI_NONAME_485 = SHCORE.#103 @485 NONAME
+IUnknown_QueryServiceExec @484 NONAME
+SHLWAPI_NONAME_483 = SHUNIMPL.#370 @483 NONAME
+SHLWAPI_NONAME_482 = SHUNIMPL.#369 @482 NONAME
+IUnknown_HasFocusIO @481 NONAME
+SHLWAPI_NONAME_480 = SHUNIMPL.#341 @480 NONAME
+IUnknown_UIActivateIO @479 NONAME
+IUnknown_TranslateAcceleratorIO @478 NONAME
+SHCreatePropertyBagOnMemory @477 NONAME
+SHLWAPI_NONAME_476 = SHCORE.#193 @476 NONAME
+SHLWAPI_NONAME_475 = SHUNIMPL.#211 @475 NONAME
+SHLWAPI_NONAME_474 = SHUNIMPL.#172 @474 NONAME
+SHLWAPI_NONAME_473 = SHUNIMPL.#171 @473 NONAME
+SHCreatePropertyBagOnProfileSection @472 NONAME
+SHCreatePropertyBagOnRegKey @471 NONAME
+SHLWAPI_NONAME_470 = SHUNIMPL.#346 @470 NONAME
+RunRegCommand @469 NONAME
+RunIndirectRegCommand @468 NONAME
+PathUnExpandEnvStringsForUserW @466 NONAME
+PathUnExpandEnvStringsForUserA @465 NONAME
+SHExpandEnvironmentStringsForUserW @464 NONAME
+SHExpandEnvironmentStringsForUserA @463 NONAME
+SHLWAPI_NONAME_461 = SHUNIMPL.#428 @461 NONAME
+SHExpandEnvironmentStringsWStub @460 NONAME
+SHExpandEnvironmentStringsAStub @459 NONAME
+SHLWAPI_NONAME_458 = KERNEL32.GetLongPathNameA @458 NONAME
+SHLWAPI_NONAME_457 = KERNEL32.GetLongPathNameW @457 NONAME
+PathIsValidCharWStub @456 NONAME
+PathIsValidCharAStub @455 NONAME
+CharLowerNoDBCSW @454 NONAME
+CharLowerNoDBCSA @453 NONAME
+CharUpperNoDBCSW @452 NONAME
+CharUpperNoDBCSA @451 NONAME
+NextPathW @450 NONAME
+NextPathA @449 NONAME
+FixSlashesAndColonW @448 NONAME
+FixSlashesAndColonA @447 NONAME
+PathFileExistsAndAttributesA @445 NONAME
+SHLWAPI_NONAME_444 = KERNEL32.GetSystemWindowsDirectoryW @444 NONAME
+SHLWAPI_NONAME_443 = KERNEL32.GetSystemWindowsDirectoryA @443 NONAME
+SHLWAPI_NONAME_442 = KERNEL32.GetEnvironmentVariableW @442 NONAME
+SHLWAPI_NONAME_441 = SHUNIMPL.#470 @441 NONAME
+SHLWAPI_NONAME_440 = SHUNIMPL.#469 @440 NONAME
+SHLWAPI_NONAME_439 = SHCORE.#126 @439 NONAME
+SHLoadRegUIStringA @438 NONAME
+CLSIDFromStringWrap @436 NONAME
+CLSIDFromProgIDWrap @435 NONAME
+SHLWAPI_NONAME_434 = USER32.SendMessageTimeoutW @434 NONAME
+SHLWAPI_NONAME_431 = SHUNIMPL.#333 @431 NONAME
+SHLWAPI_NONAME_430 = SHUNIMPL.#332 @430 NONAME
+SHLWAPI_NONAME_429 = SHUNIMPL.#331 @429 NONAME
+SHLWAPI_NONAME_428 = USER32.TrackPopupMenuEx @428 NONAME
+SHLWAPI_NONAME_427 = USER32.TrackPopupMenu @427 NONAME
+SHLWAPI_NONAME_426 = USER32.DestroyMenu @426 NONAME
+SHLWAPI_NONAME_425 = USER32.DeleteMenu @425 NONAME
+SHLWAPI_NONAME_424 = SHUNIMPL.#170 @424 NONAME
+SHLWAPI_NONAME_423 = SHUNIMPL.#169 @423 NONAME
+SHLWAPI_NONAME_422 = SHUNIMPL.#168 @422 NONAME
+SHLWAPI_NONAME_421 = SHUNIMPL.#242 @421 NONAME
+SHLWAPI_NONAME_420 = SHUNIMPL.#241 @420 NONAME
+SHLWAPI_NONAME_419 = SHELL32.SHFlushSFCache @419 NONAME
+SHLWAPI_NONAME_418 = SHUNIMPL.#468 @418 NONAME
+SHLWAPI_NONAME_417 = SHUNIMPL.#324 @417 NONAME
+SHLWAPI_NONAME_416 = SHUNIMPL.#325 @416 NONAME
+SHLWAPI_NONAME_415 = SHUNIMPL.#322 @415 NONAME
+SHLWAPI_NONAME_414 = SHUNIMPL.#323 @414 NONAME
+SHGetMachineInfo @413 NONAME
+SHLWAPI_NONAME_412 = SHUNIMPL.#239 @412 NONAME
+SHLWAPI_NONAME_411 = SHUNIMPL.#238 @411 NONAME
+AssocMakeApplicationByKeyA @410 NONAME
+AssocMakeApplicationByKeyW @409 NONAME
+AssocMakeShell @408 NONAME
+AssocMakeProgid @407 NONAME
+SHLWAPI_NONAME_406 = SHUNIMPL.#467 @406 NONAME
+SHLWAPI_NONAME_405 = SHUNIMPL.#466 @405 NONAME
+SHLWAPI_NONAME_404 = SHUNIMPL.#313 @404 NONAME
+SHLWAPI_NONAME_403 = COMDLG32.GetOpenFileNameW @403 NONAME
+SHLWAPI_NONAME_402 = COMDLG32.PrintDlgW @402 NONAME
+SHLWAPI_NONAME_401 = COMDLG32.PageSetupDlgW @401 NONAME
+StrCpyNXWStub @400 NONAME
+StrCpyNXAStub @399 NONAME
+SHLWAPI_NONAME_398 = SHUNIMPL.#321 @398 NONAME
+SHLWAPI_NONAME_397 = USER32.WinHelpW @397 NONAME
+SHLWAPI_NONAME_396 = SHUNIMPL.#320 @396 NONAME
+SHLWAPI_NONAME_395 = USER32.WinHelpA @395 NONAME
+SHLWAPI_NONAME_394 = SHELL32.SHChangeNotify @394 NONAME
+SHLWAPI_NONAME_393 = USER32.CreateDialogIndirectParamW @393 NONAME
+SHLWAPI_NONAME_392 = USER32.EndDialog @392 NONAME
+SHLWAPI_NONAME_391 = MPR.WNetGetLastErrorW @391 NONAME
+SHLWAPI_NONAME_390 = SHUNIMPL.#209 @390 NONAME
+SHLWAPI_NONAME_389 = COMDLG32.GetSaveFileNameW @389 NONAME
+SHLWAPI_NONAME_387 = SHUNIMPL.#340 @387 NONAME
+SHLWAPI_NONAME_386 = SHUNIMPL.#339 @386 NONAME
+SHLWAPI_NONAME_385 = SHUNIMPL.#338 @385 NONAME
+SHRestrictedMessageBox @384 NONAME
+ZoneConfigureW @383 NONAME
+ZoneComputePaneSize @382 NONAME
+AssocCopyVerbs @381 NONAME
+SHLWAPI_NONAME_380 = SHELL32.Shell_GetCachedImageIndexA @380 NONAME
+SHLWAPI_NONAME_379 = SHELL32.Shell_GetCachedImageIndexW @379 NONAME
+SHLWAPI_NONAME_376 = KERNEL32.GetThreadUILanguage @376 NONAME
+SHLWAPI_NONAME_375 = SHUNIMPL.#345 @375 NONAME
+SHLWAPI_NONAME_374 = SHUNIMPL.#344 @374 NONAME
+SHLWAPI_NONAME_373 = USER32.DdeQueryStringW @373 NONAME
+SHLWAPI_NONAME_372 = USER32.DdeCreateStringHandleW @372 NONAME
+SHLWAPI_NONAME_371 = USER32.DdeInitializeW @371 NONAME
+SHLWAPI_NONAME_370 = SHELL32.ExtractIconW @370 NONAME
+SHLWAPI_NONAME_369 = KERNEL32.CreateProcessW @369 NONAME
+SHLWAPI_NONAME_368 = KERNEL32.GetPrivateProfileStructW @368 NONAME
+SHLWAPI_NONAME_367 = KERNEL32.WritePrivateProfileStructW @367 NONAME
+RegEnumValueWrapW @366 NONAME
+DoesStringRoundTripW @365 NONAME
+DoesStringRoundTripA @364 NONAME
+SHInvokeCommand @363 NONAME
+SHLWAPI_NONAME_362 = SHUNIMPL.#465 @362 NONAME
+SHLWAPI_NONAME_361 = KERNEL32.GetShortPathNameW @361 NONAME
+SHLWAPI_NONAME_360 = KERNEL32.RemoveDirectoryW @360 NONAME
+SHLWAPI_NONAME_359 = KERNEL32.OpenEventW @359 NONAME
+SHLWAPI_NONAME_358 = SHELL32.SHDefExtractIconW @358 NONAME
+SHLWAPI_NONAME_357 = SHELL32.SHGetNewLinkInfoW @357 NONAME
+SHLWAPI_NONAME_356 = SHUNIMPL.#167 @356 NONAME
+IUnknown_EnableModeless @355 NONAME
+VerQueryValueWrapW @352 NONAME
+GetFileVersionInfoWrapW @351 NONAME
+GetFileVersionInfoSizeWrapW @350 NONAME
+SHGetFileDescriptionA @349 NONAME
+SHGetFileDescriptionW @348 NONAME
+RegDeleteValueWrapW @347 NONAME
+SHRegGetCLSIDKey @344 NONAME
+SHLWAPI_NONAME_343 = SHUNIMPL.#166 @343 NONAME
+SHLWAPI_NONAME_342 = KERNEL32.InterlockedCompareExchange @342 NONAME
+SHLWAPI_NONAME_341 = KERNEL32.FindNextFileW @341 NONAME
+SHLWAPI_NONAME_340 = USER32.MessageBoxW @340 NONAME
+SHLWAPI_NONAME_339 = KERNEL32.GetNumberFormatW @339 NONAME
+SHLWAPI_NONAME_338 = KERNEL32.SetFileAttributesW @338 NONAME
+SHLWAPI_NONAME_337 = SHELL32.ExtractIconExW @337 NONAME
+SHLWAPI_NONAME_336 = SHELL32.SHFileOperationW @336 NONAME
+SHLWAPI_NONAME_335 = SHELL32.ShellExecuteExW @335 NONAME
+SHLWAPI_NONAME_334 = SHELL32.SHGetPathFromIDListW @334 NONAME
+SHLWAPI_NONAME_333 = SHELL32.SHBrowseForFolderW @333 NONAME
+SHLWAPI_NONAME_332 = USER32.CallMsgFilterW @332 NONAME
+MIME_GetExtensionW @331 NONAME
+SHLWAPI_NONAME_330 = SHUNIMPL.#464 @330 NONAME
+SHLWAPI_NONAME_329 = SHUNIMPL.#463 @329 NONAME
+SHLWAPI_NONAME_328 = SHUNIMPL.#462 @328 NONAME
+SHLWAPI_NONAME_327 = SHUNIMPL.#461 @327 NONAME
+SHLWAPI_NONAME_326 = SHUNIMPL.#460 @326 NONAME
+SHLWAPI_NONAME_325 = SHUNIMPL.#459 @325 NONAME
+SHLWAPI_NONAME_324 = SHUNIMPL.#458 @324 NONAME
+SHLWAPI_NONAME_323 = SHUNIMPL.#457 @323 NONAME
+SHLWAPI_NONAME_322 = SHUNIMPL.#456 @322 NONAME
+SHLWAPI_NONAME_321 = SHUNIMPL.#455 @321 NONAME
+SHLWAPI_NONAME_320 = SHUNIMPL.#454 @320 NONAME
+SHLWAPI_NONAME_319 = USER32.FindWindowExW @319 NONAME
+SHLWAPI_NONAME_318 = SHELL32.DragQueryFileW @318 NONAME
+IShellFolder_ParseDisplayName @317 NONAME
+IShellFolder_GetDisplayNameOf @316 NONAME
+SHLWAPI_NONAME_315 = USER32.GetClassInfoExW @315 NONAME
+SHLWAPI_NONAME_314 = USER32.RegisterClassExW @314 NONAME
+SHLWAPI_NONAME_313 = SHELL32.SHGetFileInfoW @313 NONAME
+SHLWAPI_NONAME_312 = KERNEL32.GetPrivateProfileStringW @312 NONAME
+SHLWAPI_NONAME_311 = KERNEL32.GetDateFormatW @311 NONAME
+SHLWAPI_NONAME_310 = KERNEL32.GetTimeFormatW @310 NONAME
+SHLWAPI_NONAME_309 = KERNEL32.LoadLibraryW @309 NONAME
+SHLWAPI_NONAME_308 = KERNEL32.IsBadStringPtrW @308 NONAME
+SHLWAPI_NONAME_307 = KERNEL32.CreateSemaphoreW @307 NONAME
+SHLWAPI_NONAME_306 = KERNEL32.ExpandEnvironmentStringsW @306 NONAME
+SHLWAPI_NONAME_305 = KERNEL32.CreateMutexW @305 NONAME
+SHLWAPI_NONAME_304 = GDI32.CreateMetaFileW @304 NONAME
+SHLWAPI_NONAME_303 = USER32.InsertMenuItemW @303 NONAME
+SHLWAPI_NONAME_302 = USER32.GetMenuItemInfoW @302 NONAME
+SHLWAPI_NONAME_301 = USER32.DrawTextExW @301 NONAME
+SHLWAPI_NONAME_300 = GDI32.CreateFontW @300 NONAME
+SHLWAPI_NONAME_299 = GDI32.ExtTextOutW @299 NONAME
+SHLWAPI_NONAME_298 = KERNEL32.WritePrivateProfileStringW @298 NONAME
+SHLWAPI_NONAME_297 = SHUNIMPL.#315 @297 NONAME
+SHLWAPI_NONAME_296 = SHUNIMPL.#314 @296 NONAME
+SHSetIniStringW @295 NONAME
+SHGetIniStringW @294 NONAME
+SHLWAPI_NONAME_293 = SHUNIMPL.#165 @293 NONAME
+SHMessageBoxCheckExW @292 NONAME
+SHMessageBoxCheckExA @291 NONAME
+SHLWAPI_NONAME_290 = SHUNIMPL.#247 @290 NONAME
+SHLWAPI_NONAME_289 = WINMM.PlaySoundW @289 NONAME
+IUnknown_CPContainerInvokeIndirect @288 NONAME
+IUnknown_CPContainerOnChanged @287 NONAME
+IUnknown_CPContainerInvokeParam @286 NONAME
+IConnectionPoint_OnChanged @285 NONAME
+IConnectionPoint_SimpleInvoke @284 NONAME
+IConnectionPoint_InvokeWithCancel @283 NONAME
+SHPackDispParams @282 NONAME
+SHInvokeDefaultCommand @279 NONAME
+SHLWAPI_NONAME_277 = SHUNIMPL.#240 @277 NONAME
+SHLWAPI_NONAME_275 = SHUNIMPL.#317 @275 NONAME
+SHLWAPI_NONAME_274 = SHUNIMPL.#316 @274 NONAME
+SHLWAPI_NONAME_273 = SHUNIMPL.#164 @273 NONAME
+SHLWAPI_NONAME_272 = SHUNIMPL.#163 @272 NONAME
+SHGetRestriction @271 NONAME
+GUIDFromStringA @269 NONAME
+SHWeakReleaseInterface @268 NONAME
+SHWeakQueryInterface @267 NONAME
+SHRestrictionLookup @266 NONAME
+SHCancelTimerQueueTimer @265 NONAME
+SHLWAPI_NONAME_264 = SHUNIMPL.#162 @264 NONAME
+SHSetTimerQueueTimer @263 NONAME
+SHLWAPI_NONAME_262 = SHUNIMPL.#161 @262 NONAME
+SHLWAPI_NONAME_261 = SHUNIMPL.#160 @261 NONAME
+SHLWAPI_NONAME_260 = SHCORE.#162 @260 NONAME
+SHLWAPI_NONAME_259 = SHUNIMPL.#159 @259 NONAME
+SHLWAPI_NONAME_258 = SHUNIMPL.#158 @258 NONAME
+SHCreateWorkerWindowA @257 NONAME
+SHLWAPI_NONAME_255 = SHUNIMPL.#157 @255 NONAME
+SHLWAPI_NONAME_254 = SHUNIMPL.#156 @254 NONAME
+SHLWAPI_NONAME_253 = SHUNIMPL.#155 @253 NONAME
+SHLWAPI_NONAME_252 = SHUNIMPL.#154 @252 NONAME
+SHLWAPI_NONAME_251 = SHUNIMPL.#153 @251 NONAME
+SHLWAPI_NONAME_250 = SHUNIMPL.#152 @250 NONAME
+SHLWAPI_NONAME_249 = SHUNIMPL.#150 @249 NONAME
+SHLWAPI_NONAME_248 = SHUNIMPL.#149 @248 NONAME
+SHLWAPI_NONAME_247 = SHUNIMPL.#148 @247 NONAME
+SHLWAPI_NONAME_246 = SHUNIMPL.#147 @246 NONAME
+SHLWAPI_NONAME_245 = SHUNIMPL.#146 @245 NONAME
+SHLWAPI_NONAME_244 = SHUNIMPL.#145 @244 NONAME
+SHLWAPI_NONAME_243 = SHUNIMPL.#144 @243 NONAME
+SHLWAPI_NONAME_242 = SHUNIMPL.#143 @242 NONAME
+SHLWAPI_NONAME_241 = SHUNIMPL.#142 @241 NONAME
+SHDefWindowProc @240 NONAME
+SHUnregisterClassesW @239 NONAME
+SHUnregisterClassesA @238 NONAME
+SHRegisterClassWStub @237 NONAME
+ZoneCheckHostEx @235 NONAME
+ZoneCheckHost @234 NONAME
+ZoneCheckUrlExCacheW @233 NONAME
+ZoneCheckUrlExCacheA @232 NONAME
+ZoneCheckUrlExW @231 NONAME
+ZoneCheckUrlExA @230 NONAME
+ZoneCheckUrlW @229 NONAME
+ZoneCheckUrlA @228 NONAME
+SHLWAPI_NONAME_227 = SHUNIMPL.#245 @227 NONAME
+SHLWAPI_NONAME_226 = SHUNIMPL.#244 @226 NONAME
+SHLWAPI_NONAME_224 = SHUNIMPL.#141 @224 NONAME
+SHLWAPI_NONAME_223 = SHUNIMPL.#140 @223 NONAME
+SHLWAPI_NONAME_222 = SHUNIMPL.#139 @222 NONAME
+SHRemoveDefaultDialogFont @221 NONAME
+SHSetDefaultDialogFont @220 NONAME
+SHLWAPI_NONAME_216 = SHCORE.#150 @216 NONAME
+FDSA_DeleteItem @211 NONAME
+FDSA_InsertItem @210 NONAME
+FDSA_Destroy @209 NONAME
+FDSA_Initialize @208 NONAME
+SHLWAPI_NONAME_207 = SHUNIMPL.#453 @207 NONAME
+SHLWAPI_NONAME_206 = SHCORE.#125 @206 NONAME
+SHLWAPI_NONAME_205 = SHCORE.#124 @205 NONAME
+IsQSForward @202 NONAME
+MayExecForward @201 NONAME
+MayQSForward @200 NONAME
+SHSearchMapInt @198 NONAME
+SHFillRectClr @197 NONAME
+SHLWAPI_NONAME_196 = SHUNIMPL.#243 @196 NONAME
+SHIsExpandableFolder @195 NONAME
+SHLWAPI_NONAME_194 = SHCORE.#160 @194 NONAME
+SHGetCurColorRes @193 NONAME
+SHGetMenuFromID @192 NONAME
+IUnknown_HandleIRestrict @190 NONAME
+SHLWAPI_NONAME_189 = SHUNIMPL.#452 @189 NONAME
+SHLWAPI_NONAME_188 = SHUNIMPL.#451 @188 NONAME
+SHLoadFromPropertyBag @187 NONAME
+SHSimulateDrop @186 NONAME
+SHRegisterClassA @183 NONAME
+SHCheckMenuItem @182 NONAME
+SHEnableMenuItem @181 NONAME
+SHRemoveAllSubMenus @180 NONAME
+SHMenuIndexFromID @179 NONAME
+SHPropagateMessage @178 NONAME
+SHLoadMenuPopup @177 NONAME
+SHLWAPI_NONAME_175 = SHCORE.#142 @175 NONAME
+IUnknown_SetOwner @173 NONAME
+SHLWAPI_NONAME_171 = SHUNIMPL.#246 @171 NONAME
+PathSkipLeadingSlashesA @170 NONAME
+SHSetParentHwnd @167 NONAME
+SHLWAPI_NONAME_166 = SHCORE.#102 @166 NONAME
+SHSetWindowBits @165 NONAME
+SHTruncateStringStub @162 NONAME
+SHLWAPI_NONAME_161 = SHUNIMPL.#472 @161 NONAME
+?SHAboutInfoA@@YGHPADK@Z @160 NONAME
+SHLWAPI_NONAME_159 = KERNEL32.CompareStringW @159 NONAME
+SHLWAPI_NONAME_150 = USER32.wvsprintfW @150 NONAME
+SHLWAPI_NONAME_149 = USER32.WinHelpW @149 NONAME
+SHLWAPI_NONAME_148 = USER32.VkKeyScanW @148 NONAME
+SHLWAPI_NONAME_147 = USER32.UnregisterClassW @147 NONAME
+SHLWAPI_NONAME_146 = USER32.TranslateAcceleratorW @146 NONAME
+SHLWAPI_NONAME_145 = USER32.SystemParametersInfoW @145 NONAME
+SHLWAPI_NONAME_144 = GDI32.StartDocW @144 NONAME
+SHLWAPI_NONAME_143 = USER32.SetWindowTextW @143 NONAME
+SHLWAPI_NONAME_142 = USER32.SetWindowsHookExW @142 NONAME
+SHLWAPI_NONAME_141 = USER32.SetWindowLongW @141 NONAME
+SHLWAPI_NONAME_140 = USER32.SetPropW @140 NONAME
+SHLWAPI_NONAME_139 = USER32.SetMenuItemInfoW @139 NONAME
+SHLWAPI_NONAME_138 = USER32.SetDlgItemTextW @138 NONAME
+SHLWAPI_NONAME_137 = KERNEL32.SetCurrentDirectoryW @137 NONAME
+SHLWAPI_NONAME_136 = USER32.SendMessageW @136 NONAME
+SHLWAPI_NONAME_135 = USER32.SendDlgItemMessageW @135 NONAME
+SHLWAPI_NONAME_134 = USER32.RemovePropW @134 NONAME
+SHLWAPI_NONAME_133 = USER32.RegisterWindowMessageW @133 NONAME
+SHLWAPI_NONAME_132 = USER32.RegisterClipboardFormatW @132 NONAME
+SHLWAPI_NONAME_131 = USER32.RegisterClassW @131 NONAME
+RegSetValueExWrapW @130 NONAME
+SHLWAPI_NONAME_129 = SHUNIMPL.#450 @129 NONAME
+RegQueryValueExWrapW @128 NONAME
+RegQueryValueWrapW @127 NONAME
+RegQueryInfoKeyWrapW @126 NONAME
+RegOpenKeyExWrapW @125 NONAME
+RegOpenKeyWrapW @124 NONAME
+RegEnumKeyExWrapW @123 NONAME
+SHLWAPI_NONAME_122 = SHUNIMPL.#449 @122 NONAME
+RegDeleteKeyWrapW @121 NONAME
+RegCreateKeyExWrapW @120 NONAME
+SHLWAPI_NONAME_119 = SHUNIMPL.#448 @119 NONAME
+SHLWAPI_NONAME_118 = USER32.PostThreadMessageW @118 NONAME
+SHLWAPI_NONAME_117 = USER32.PostMessageW @117 NONAME
+SHLWAPI_NONAME_116 = USER32.PeekMessageW @116 NONAME
+SHLWAPI_NONAME_115 = KERNEL32.OutputDebugStringW @115 NONAME
+SHLWAPI_NONAME_114 = USER32.OemToCharW @114 NONAME
+SHLWAPI_NONAME_113 = KERNEL32.MoveFileW @113 NONAME
+SHLWAPI_NONAME_112 = KERNEL32.CopyFileW @112 NONAME
+SHLWAPI_NONAME_111 = GDI32.GetCharacterPlacementW @111 NONAME
+SHLWAPI_NONAME_110 = GDI32.GetCharWidth32W @110 NONAME
+SHLWAPI_NONAME_109 = USER32.ModifyMenuW @109 NONAME
+SHLWAPI_NONAME_108 = USER32.MessageBoxIndirectW @108 NONAME
+SHLWAPI_NONAME_107 = USER32.LoadStringW @107 NONAME
+SHLWAPI_NONAME_106 = USER32.LoadMenuW @106 NONAME
+SHLWAPI_NONAME_105 = KERNEL32.LoadLibraryExW @105 NONAME
+SHLWAPI_NONAME_104 = USER32.LoadImageW @104 NONAME
+SHLWAPI_NONAME_103 = USER32.LoadIconW @103 NONAME
+SHLWAPI_NONAME_102 = USER32.LoadCursorW @102 NONAME
+SHLWAPI_NONAME_101 = USER32.LoadBitmapW @101 NONAME
+SHLWAPI_NONAME_100 = USER32.LoadAcceleratorsW @100 NONAME
+SHLWAPI_NONAME_99 = USER32.IsDialogMessageW @99 NONAME
+SHLWAPI_NONAME_98 = USER32.InsertMenuW @98 NONAME
+SHLWAPI_NONAME_97 = KERNEL32.GetWindowsDirectoryW @97 NONAME
+SHLWAPI_NONAME_96 = USER32.GetWindowTextLengthW @96 NONAME
+SHLWAPI_NONAME_95 = USER32.GetWindowTextW @95 NONAME
+SHLWAPI_NONAME_94 = USER32.GetWindowLongW @94 NONAME
+SHLWAPI_NONAME_93 = GDI32.GetTextMetricsW @93 NONAME
+SHLWAPI_NONAME_92 = GDI32.GetTextFaceW @92 NONAME
+SHLWAPI_NONAME_91 = GDI32.GetTextExtentPoint32W @91 NONAME
+SHLWAPI_NONAME_90 = KERNEL32.GetTempPathW @90 NONAME
+SHLWAPI_NONAME_89 = KERNEL32.GetTempFileNameW @89 NONAME
+SHLWAPI_NONAME_88 = KERNEL32.GetStringTypeExW @88 NONAME
+SHLWAPI_NONAME_87 = USER32.GetPropW @87 NONAME
+SHLWAPI_NONAME_86 = KERNEL32.GetProfileStringW @86 NONAME
+SHLWAPI_NONAME_85 = KERNEL32.GetPrivateProfileIntW @85 NONAME
+SHLWAPI_NONAME_84 = GDI32.GetObjectW @84 NONAME
+SHLWAPI_NONAME_83 = KERNEL32.GetModuleHandleW @83 NONAME
+SHLWAPI_NONAME_82 = KERNEL32.SearchPathW @82 NONAME
+SHLWAPI_NONAME_81 = KERNEL32.GetSystemDirectoryW @81 NONAME
+SHLWAPI_NONAME_80 = KERNEL32.GetModuleFileNameW @80 NONAME
+SHLWAPI_NONAME_79 = USER32.GetMessageW @79 NONAME
+SHLWAPI_NONAME_78 = USER32.GetMenuStringW @78 NONAME
+SHLWAPI_NONAME_77 = KERNEL32.GetLocaleInfoW @77 NONAME
+SHLWAPI_NONAME_76 = KERNEL32.GetFullPathNameW @76 NONAME
+SHLWAPI_NONAME_75 = KERNEL32.GetFileAttributesW @75 NONAME
+SHLWAPI_NONAME_74 = USER32.GetDlgItemTextW @74 NONAME
+SHLWAPI_NONAME_73 = KERNEL32.GetCurrentDirectoryW @73 NONAME
+SHLWAPI_NONAME_72 = USER32.GetClipboardFormatNameW @72 NONAME
+SHLWAPI_NONAME_71 = USER32.GetClassNameW @71 NONAME
+SHLWAPI_NONAME_70 = USER32.GetClassLongW @70 NONAME
+SHLWAPI_NONAME_69 = USER32.GetClassInfoW @69 NONAME
+SHLWAPI_NONAME_68 = KERNEL32.FormatMessageW @68 NONAME
+SHLWAPI_NONAME_67 = USER32.FindWindowW @67 NONAME
+SHLWAPI_NONAME_66 = KERNEL32.FindResourceW @66 NONAME
+SHLWAPI_NONAME_65 = KERNEL32.FindFirstFileW @65 NONAME
+SHLWAPI_NONAME_64 = KERNEL32.EnumResourceNamesW @64 NONAME
+SHLWAPI_NONAME_63 = GDI32.EnumFontFamiliesExW @63 NONAME
+SHLWAPI_NONAME_62 = GDI32.EnumFontFamiliesW @62 NONAME
+SHLWAPI_NONAME_61 = USER32.DrawTextW @61 NONAME
+SHLWAPI_NONAME_60 = USER32.DispatchMessageW @60 NONAME
+SHLWAPI_NONAME_59 = USER32.DialogBoxParamW @59 NONAME
+SHLWAPI_NONAME_58 = USER32.DialogBoxIndirectParamW @58 NONAME
+SHLWAPI_NONAME_57 = KERNEL32.DeleteFileW @57 NONAME
+SHLWAPI_NONAME_56 = USER32.DefWindowProcW @56 NONAME
+SHLWAPI_NONAME_55 = USER32.CreateWindowExW @55 NONAME
+SHLWAPI_NONAME_54 = GDI32.CreateICW @54 NONAME
+SHLWAPI_NONAME_53 = GDI32.CreateFontIndirectW @53 NONAME
+SHLWAPI_NONAME_52 = KERNEL32.CreateFileW @52 NONAME
+SHLWAPI_NONAME_51 = KERNEL32.CreateEventW @51 NONAME
+SHLWAPI_NONAME_50 = KERNEL32.CreateDirectoryW @50 NONAME
+SHLWAPI_NONAME_49 = USER32.CreateDialogParamW @49 NONAME
+SHLWAPI_NONAME_48 = GDI32.CreateDCW @48 NONAME
+SHLWAPI_NONAME_47 = USER32.CreateAcceleratorTableW @47 NONAME
+SHLWAPI_NONAME_46 = USER32.CopyAcceleratorTableW @46 NONAME
+SHLWAPI_NONAME_45 = KERNEL32.CompareStringW @45 NONAME
+SHLWAPI_NONAME_44 = USER32.CharUpperBuffW @44 NONAME
+SHLWAPI_NONAME_43 = USER32.CharUpperW @43 NONAME
+SHLWAPI_NONAME_42 = USER32.CharToOemW @42 NONAME
+SHLWAPI_NONAME_41 = USER32.CharPrevW @41 NONAME
+SHLWAPI_NONAME_40 = USER32.CharNextW @40 NONAME
+SHLWAPI_NONAME_39 = USER32.CharLowerBuffW @39 NONAME
+SHLWAPI_NONAME_38 = USER32.CharLowerW @38 NONAME
+SHLWAPI_NONAME_37 = USER32.CallWindowProcW @37 NONAME
+SHLWAPI_NONAME_36 = USER32.AppendMenuW @36 NONAME
+GetStringType3ExW @35 NONAME
+IsCharXDigitWStub @34 NONAME
+IsCharDigitWStub @33 NONAME
+IsCharCntrlWStub @32 NONAME
+IsCharPunctWStub @31 NONAME
+IsCharBlankWStub @30 NONAME
+SHLWAPI_NONAME_28 = user32.IsCharAlphaNumericW @28 NONAME
+SHLWAPI_NONAME_27 = user32.IsCharLowerW @27 NONAME
+SHLWAPI_NONAME_26 = user32.IsCharUpperW @26 NONAME
+SHLWAPI_NONAME_25 = user32.IsCharAlphaW @25 NONAME
+SHStringFromGUIDW @24 NONAME
+SHStringFromGUIDA @23 NONAME
+SHFindDataBlock @22 NONAME
+SHRemoveDataBlock @21 NONAME
+SHAddDataBlock @20 NONAME
+SHFreeDataBlockList @19 NONAME
+SHReadDataBlockList @18 NONAME
+SHWriteDataBlockList @17 NONAME
+SHLWAPI_NONAME_13 = SHUNIMPL.#429 @13 NONAME
+SHMapHandleStub @11 NONAME
+PathFindOnPathExW @6 NONAME
+PathFindOnPathExA @5 NONAME
+PathFileExistsDefExtW @4 NONAME
+PathFileExistsDefExtA @3 NONAME

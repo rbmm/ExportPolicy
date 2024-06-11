@@ -1,0 +1,181 @@
+EXPORTS
+
+CAAccessCheck
+CAAccessCheckEx
+CAAddCACertificateType
+CAAddCACertificateTypeEx
+CACertTypeAccessCheck
+CACertTypeAccessCheckEx
+CACertTypeAuthzAccessCheck
+CACertTypeGetSecurity
+CACertTypeQuery
+CACertTypeRegisterQuery
+CACertTypeSetSecurity
+CACertTypeUnregisterQuery
+CACloneCertType
+CACloseCA
+CACloseCertType
+CACountCAs
+CACountCertTypes
+CACreateAutoEnrollmentObjectEx
+CACreateCertType
+CACreateLocalAutoEnrollmentObject
+CACreateNewCA
+CADCSetCertTypePropertyEx
+CADeleteCA
+CADeleteCAEx
+CADeleteCertType
+CADeleteCertTypeEx
+CADeleteLocalAutoEnrollmentObject
+CAEnumCertTypes
+CAEnumCertTypesEx
+CAEnumCertTypesEx2
+CAEnumCertTypesForCA
+CAEnumCertTypesForCAEx
+CAEnumFirstCA
+CAEnumNextCA
+CAEnumNextCertType
+CAFindByCertType
+CAFindByIssuerDN
+CAFindByName
+CAFindCertTypeByName
+CAFindCertTypeByName2
+CAFreeCAProperty
+CAFreeCertTypeExtensions
+CAFreeCertTypeProperty
+CAGetCACertificate
+CAGetCAExpiration
+CAGetCAFlags
+CAGetCAProperty
+CAGetCASecurity
+CAGetCertTypeExpiration
+CAGetCertTypeExtensions
+CAGetCertTypeExtensionsEx
+CAGetCertTypeFlags
+CAGetCertTypeFlagsEx
+CAGetCertTypeKeySpec
+CAGetCertTypeProperty
+CAGetCertTypePropertyEx
+CAGetDN
+CAInstallDefaultCertType
+CAInstallDefaultCertTypeEx
+CAIsCertTypeCurrent
+CAIsCertTypeCurrentEx
+CAOIDAdd
+CAOIDAddEx
+CAOIDCreateNew
+CAOIDCreateNewEx
+CAOIDDelete
+CAOIDDeleteEx
+CAOIDFreeLdapURL
+CAOIDFreeProperty
+CAOIDGetLdapURL
+CAOIDGetProperty
+CAOIDGetPropertyEx
+CAOIDSetProperty
+CAOIDSetPropertyEx
+CARemoveCACertificateType
+CARemoveCACertificateTypeEx
+CASetCACertificate
+CASetCAExpiration
+CASetCAFlags
+CASetCAProperty
+CASetCASecurity
+CASetCertTypeExpiration
+CASetCertTypeExtension
+CASetCertTypeFlags
+CASetCertTypeFlagsEx
+CASetCertTypeKeySpec
+CASetCertTypeProperty
+CASetCertTypePropertyEx
+CAUpdateCA
+CAUpdateCAEx
+CAUpdateCertType
+CAUpdateCertTypeEx
+CCFindCertificateBuildFilter
+CCFindCertificateFreeFilter
+CCFindCertificateFromFilter
+CCFreeStringArray
+CCGetCertNameList
+?myVerifyEKOrAIKCertContext@@YGJHPBU_CERT_CONTEXT@@KPAX@Z @875 NONAME
+?myHResultToStringRawEx@@YGPBGPAGIJ@Z @874 NONAME
+?myHResultToStringEx@@YGPBGPAGIJ@Z @873 NONAME
+?myVerifyCertContext@@YGJPBU_CERT_CONTEXT@@KKPBQBDPAX2PAPAG@Z @872 NONAME
+?myVerifyEKPub@@YGJPBG0PAH@Z @871 NONAME
+?myVerifyEKCertContext@@YGJPBU_CERT_CONTEXT@@KPAX@Z @870 NONAME
+?LoadTpmTestEnumErrorMessages@@YGJW4TestKeyAttResult@@PAPAG@Z @869 NONAME
+?myFileTimeToDate@@YGJPBU_FILETIME@@PAN@Z @868 NONAME
+?myGetAlgorithmNameFromPubKey@@YGJPBU_CERT_PUBLIC_KEY_INFO@@HPAHPAPAG@Z @867 NONAME
+?myGetIsSigningCertificate@@YGJPBU_CERT_CONTEXT@@KKPA_N@Z @866 NONAME
+?myCryptGetDefaultProvider@@YGJKPBG0KPAPAG1@Z @865 NONAME
+?CSPrintErrorInit@@YGXP6GXPBU_SYSTEMTIME@@PBG11KJ@Z@Z @859 NONAME
+?CertcliGetDetailedCertcliVersionString@@YGJPAPBG@Z @858 NONAME
+?myFreeColumnDisplayNames2@@YGXXZ @857 NONAME
+?GetDetailedVersionString@@YGJPBGPAPAG@Z @856 NONAME
+?myEnablePrivilege@@YGJJH@Z @855 NONAME
+?myGetHashAlgorithmOIDInfoFromSignatureAlgorithm@@YGJPBU_CRYPT_ALGORITHM_IDENTIFIER@@PAPBU_CRYPT_OID_INFO@@@Z @854 NONAME
+myNetLogonUser @853 NONAME
+?myGetTargetMachineDomainDnsName@@YGJPBGPAPAG11@Z @852 NONAME
+?IsISAPIExtensionEnabled@@YGJPBGAA_N@Z @851 NONAME
+?SplitConfigString@@YGJPBGPAPAG1@Z @850 NONAME
+?IsISAPIExtensionEnabled@@YGJPBGAA_N@Z @849 NONAME
+?EnableASPInIIS@@YGJPAH@Z @848 NONAME
+?DbgLogStringInit2@@YG?AW4LogPriority@@P6GXPBD@ZW41@@Z @847 NONAME
+CAIsCertTypeValid @846 NONAME
+CAGetCertTypeAccessRights @845 NONAME
+CAIsValid @844 NONAME
+CAGetAccessRights @843 NONAME
+?CSPrintErrorLineFileData2@@YGXPBGKJJ@Z @842 NONAME
+?CSPrintErrorLineFileData@@YGXPBGKJ@Z @841 NONAME
+?CSPrintErrorLineFile2@@YGXKJJ@Z @840 NONAME
+?CSPrintErrorLineFile@@YGXKJ@Z @839 NONAME
+?myHGetLastError@@YGJXZ @838 NONAME
+?mylstrcmpiL@@YGHPBG0@Z @837 NONAME
+?myGenerateGuidSerialNumber@@YGXPAU_GUID@@@Z @836 NONAME
+?myGenerateGuidString@@YGJPAPAG@Z @835 NONAME
+?myRevertSanitizeName@@YGJPBGPAPAG@Z @834 NONAME
+?mySanitizedNameToShortName@@YGJPBGHPAPAG@Z @833 NONAME
+?mySanitizedNameToDSName@@YGJPBGPAPAG@Z @832 NONAME
+?mySanitizeName@@YGJPBGPAPAG@Z @831 NONAME
+?EnableASPInIIS@@YGJPAH@Z @830 NONAME
+?myGetSidFromDomain@@YGKPAGPAPAX@Z @829 NONAME
+?IsISAPIExtensionEnabled@@YGJPBGAA_N@Z @828 NONAME
+?IsISAPIExtensionEnabled@@YGJPBGAA_N@Z @827 NONAME
+?EnableASPInIIS@@YGJPAH@Z @826 NONAME
+?EnableASPInIIS@@YGJPAH@Z @825 NONAME
+?DbgPrintfW@@YAHKPBGZZ @824 NONAME
+?myHExceptionCodePrint@@YGJPBU_EXCEPTION_POINTERS@@PBDKK@Z @823 NONAME
+?myLogExceptionInit@@YGXP6GXJPBU_EXCEPTION_POINTERS@@PBDKK@Z@Z @822 NONAME
+?myOIDHashOIDToString@@YGJPBGPAPAG@Z @821 NONAME
+caTranslateFileTimePeriodToPeriodUnits @820 NONAME
+myRobustLdapBindEx @819 NONAME
+?myCAPropInfoLookup@@YGJPBU_CAPROP@@JJPAPBU1@@Z @818 NONAME
+?myCAPropInfoUnmarshal@@YGJPBU_CATRANSPROP@@JKPAPAU_CAPROP@@@Z @817 NONAME
+?myCAPropGetDisplayName@@YGJJPAPBG@Z @816 NONAME
+?myGetErrorMessageTextEx@@YGPAGJKPAPBGK@Z @815 NONAME
+?myGetErrorMessageText1@@YGPAGJKPBG@Z @814 NONAME
+?WszToMultiByteInteger@@YGJKPBGPAKPAPAE@Z @813 NONAME
+?WszToMultiByteIntegerBuf@@YGJKPBGPAKPAE@Z @812 NONAME
+?DbgLogStringInit@@YGXP6GXPBD@Z@Z @811 NONAME
+?myModifyVirtualRootsAndFileShares@@YGJKW4ENUM_CATYPES@@KPAK1@Z @810 NONAME
+?EncodeToFileW@@YGJPBGPBEKK@Z @809 NONAME
+?DecodeFileW@@YGJPBGPAPAEPAKK@Z @808 NONAME
+?myModifyVirtualRootsAndFileShares@@YGJKW4ENUM_CATYPES@@KPAK1@Z @807 NONAME
+?myJetHResult@@YGJJ@Z @806 NONAME
+?myHExceptionCode@@YGJPBU_EXCEPTION_POINTERS@@@Z @805 NONAME
+?myIsDelayLoadHResult@@YGHJ@Z @804 NONAME
+myRobustLdapBind @803 NONAME
+?myFreeColumnDisplayNames@@YGXXZ @802 NONAME
+?myDoesDSExist@@YGJH@Z @801 NONAME
+?myHResultToStringRaw_old@@YGPBGPAGJ@Z @708 NONAME
+?myGetErrorMessageText@@YGPAGJK@Z @707 NONAME
+?myHResultToString_old@@YGPBGPAGJ@Z @706 NONAME
+?DbgIsSSActive@@YGHK@Z @705 NONAME
+?DbgPrintfInit@@YGXPBD@Z @704 NONAME
+?DbgPrintf@@YAHKPBDZZ @703 NONAME
+?CSPrintError@@YGXPBDPBG0KJJ@Z @702 NONAME
+?CSPrintAssert@@YGXPBD0K0@Z @701 NONAME
+?myCryptBinaryToStringA@@YGJPBEKKPAPAD@Z @604 NONAME
+?myCryptStringToBinaryA@@YGJPBDKKPAPAEPAK22@Z @603 NONAME
+?myCryptBinaryToString@@YGJPBEKKPAPAG@Z @602 NONAME
+?myCryptStringToBinary@@YGJPBGKKPAPAEPAK22@Z @601 NONAME

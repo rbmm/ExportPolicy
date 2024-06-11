@@ -1,0 +1,602 @@
+EXPORTS
+
+CLIPFORMAT_UserFree
+CLIPFORMAT_UserFree64 = CLIPFORMAT_UserFree
+CLIPFORMAT_UserMarshal
+CLIPFORMAT_UserMarshal64
+CLIPFORMAT_UserSize
+CLIPFORMAT_UserSize64
+CLIPFORMAT_UserUnmarshal
+CLIPFORMAT_UserUnmarshal64
+CLSIDFromOle1Class
+CLSIDFromProgID
+CLSIDFromProgIDEx
+CLSIDFromString
+CStdAsyncStubBuffer2_Connect
+CStdAsyncStubBuffer2_Disconnect = CStdStubBuffer2_Disconnect
+CStdAsyncStubBuffer2_Release
+CStdAsyncStubBuffer_AddRef = ?AddRef@DeviceCatalogs@@UEAAKXZ
+CStdAsyncStubBuffer_Connect
+CStdAsyncStubBuffer_Disconnect = CStdStubBuffer_Disconnect
+CStdAsyncStubBuffer_Invoke
+CStdAsyncStubBuffer_QueryInterface
+CStdAsyncStubBuffer_Release
+CStdStubBuffer2_Connect
+CStdStubBuffer2_CountRefs
+CStdStubBuffer2_Disconnect
+CStdStubBuffer2_QueryInterface
+CStdStubBuffer_AddRef = ?AddRef@DeviceCatalogs@@UEAAKXZ
+CStdStubBuffer_Connect
+CStdStubBuffer_CountRefs
+CStdStubBuffer_DebugServerQueryInterface
+CStdStubBuffer_DebugServerRelease
+CStdStubBuffer_Disconnect
+CStdStubBuffer_Invoke
+CStdStubBuffer_IsIIDSupported
+CStdStubBuffer_QueryInterface
+CleanupComl2StateInAllTls
+CleanupOleStateInAllTls
+CleanupTlsComl2State
+CleanupTlsOleState
+ClearCleanupFlag
+CoAddRefServerProcess
+CoAllowUnmarshalerCLSID
+CoCancelCall
+CoCopyProxy
+CoCreateErrorInfo
+CoCreateFreeThreadedMarshaler
+CoCreateGuid
+CoCreateInstance
+CoCreateInstanceEx
+CoCreateInstanceFromApp
+CoCreateObjectInContext
+CoDeactivateObject
+CoDecodeProxy
+CoDecrementMTAUsage
+CoDisableCallCancellation
+CoDisconnectContext
+CoDisconnectObject
+CoEnableCallCancellation
+CoFileTimeNow
+CoFreeUnusedLibraries
+CoFreeUnusedLibrariesEx
+CoGetActivationState
+CoGetApartmentID
+CoGetApartmentType
+CoGetCallContext
+CoGetCallState
+CoGetCallerTID
+CoGetCancelObject
+CoGetClassObject
+CoGetClassVersion
+CoGetContextToken
+CoGetCurrentLogicalThreadId
+CoGetCurrentProcess
+CoGetDefaultContext
+CoGetErrorInfo
+CoGetInstanceFromFile
+CoGetInstanceFromIStorage
+CoGetInterfaceAndReleaseStream
+CoGetMalloc
+CoGetMarshalSizeMax
+CoGetModuleArchitecture
+CoGetModuleType
+CoGetObjectContext
+CoGetPSClsid
+CoGetProcessIdentifier
+CoGetStandardMarshal
+CoGetStdMarshalEx
+CoGetSystemSecurityPermissions
+CoGetTreatAsClass
+CoImpersonateClient
+CoIncrementMTAUsage
+CoInitializeEx
+CoInitializeSecurity
+CoInitializeWOW
+CoInvalidateRemoteMachineBindings
+CoIsHandlerConnected
+CoIsOle1Class
+CoLockObjectExternal
+CoMarshalHresult
+CoMarshalInterThreadInterfaceInStream
+CoMarshalInterface
+CoPopServiceDomain
+CoPushServiceDomain
+CoQueryAuthenticationServices
+CoQueryClientBlanket
+CoQueryProxyBlanket
+CoReactivateObject
+CoRegisterActivationFilter
+CoRegisterClassObject
+CoRegisterConsoleHandles
+CoRegisterDeviceCatalog
+CoRegisterInitializeSpy
+CoRegisterMallocSpy
+CoRegisterMessageFilter
+CoRegisterPSClsid
+CoRegisterRacActivationToken
+CoRegisterSurrogate
+CoRegisterSurrogateEx
+CoReleaseMarshalData
+CoReleaseServerProcess
+CoResumeClassObjects
+CoRetireServer
+CoRevertToSelf
+CoRevokeClassObject
+CoRevokeConsoleHandles
+CoRevokeDeviceCatalog
+CoRevokeInitializeSpy
+CoRevokeMallocSpy
+CoRevokeRacActivationToken
+CoSetCancelObject
+CoSetErrorInfo
+CoSetProxyBlanket
+CoSuspendClassObjects
+CoSwitchCallContext
+CoTaskMemAlloc
+CoTaskMemFree
+CoTaskMemRealloc
+CoTestCancel
+CoTreatAsClass
+CoUninitialize
+CoUnloadingWOW
+CoUnmarshalHresult
+CoUnmarshalInterface
+CoVrfCheckThreadState
+CoVrfGetThreadState
+CoVrfReleaseThreadState
+CoWaitForMultipleHandles
+CoWaitForMultipleObjects
+CreateErrorInfo = CoCreateErrorInfo
+CreateStreamOnHGlobal
+DcomChannelSetHResult
+DllDebugObjectRPCHook
+DllGetActivationFactory
+DllGetClassObject PRIVATE
+EnableHookObject
+FreePropVariantArray
+FreePropVariantArrayWorker
+GetCatalogHelper
+GetErrorInfo = CoGetErrorInfo
+GetFuncDescs
+GetHGlobalFromStream
+GetHookInterface
+GetRestrictedErrorInfo
+HACCEL_UserFree
+HACCEL_UserFree64 = HACCEL_UserFree
+HACCEL_UserMarshal = HACCEL_UserMarshal64
+HACCEL_UserMarshal64
+HACCEL_UserSize
+HACCEL_UserSize64 = HACCEL_UserSize
+HACCEL_UserUnmarshal = HACCEL_UserUnmarshal64
+HACCEL_UserUnmarshal64
+HBITMAP_UserFree
+HBITMAP_UserFree64 = HBITMAP_UserFree
+HBITMAP_UserMarshal
+HBITMAP_UserMarshal64
+HBITMAP_UserSize
+HBITMAP_UserSize64
+HBITMAP_UserUnmarshal
+HBITMAP_UserUnmarshal64
+HBRUSH_UserFree = HBRUSH_UserFree64
+HBRUSH_UserFree64
+HBRUSH_UserMarshal = HBRUSH_UserMarshal64
+HBRUSH_UserMarshal64
+HBRUSH_UserSize = HBRUSH_UserSize64
+HBRUSH_UserSize64
+HBRUSH_UserUnmarshal
+HBRUSH_UserUnmarshal64 = HBRUSH_UserUnmarshal
+HDC_UserFree
+HDC_UserFree64
+HDC_UserMarshal = HDC_UserMarshal64
+HDC_UserMarshal64
+HDC_UserSize
+HDC_UserSize64 = HDC_UserSize
+HDC_UserUnmarshal
+HDC_UserUnmarshal64 = HDC_UserUnmarshal
+HGLOBAL_UserFree
+HGLOBAL_UserFree64
+HGLOBAL_UserMarshal
+HGLOBAL_UserMarshal64
+HGLOBAL_UserSize
+HGLOBAL_UserSize64
+HGLOBAL_UserUnmarshal
+HGLOBAL_UserUnmarshal64
+HICON_UserFree
+HICON_UserFree64 = HICON_UserFree
+HICON_UserMarshal = HICON_UserMarshal64
+HICON_UserMarshal64
+HICON_UserSize = HICON_UserSize64
+HICON_UserSize64
+HICON_UserUnmarshal = HICON_UserUnmarshal64
+HICON_UserUnmarshal64
+HMENU_UserFree
+HMENU_UserFree64 = HMENU_UserFree
+HMENU_UserMarshal
+HMENU_UserMarshal64 = HMENU_UserMarshal
+HMENU_UserSize
+HMENU_UserSize64 = HMENU_UserSize
+HMENU_UserUnmarshal = HMENU_UserUnmarshal64
+HMENU_UserUnmarshal64
+HMONITOR_UserFree = HMONITOR_UserFree64
+HMONITOR_UserFree64
+HMONITOR_UserMarshal
+HMONITOR_UserMarshal64
+HMONITOR_UserSize
+HMONITOR_UserSize64
+HMONITOR_UserUnmarshal
+HMONITOR_UserUnmarshal64
+HPALETTE_UserFree
+HPALETTE_UserFree64 = HPALETTE_UserFree
+HPALETTE_UserMarshal
+HPALETTE_UserMarshal64
+HPALETTE_UserSize
+HPALETTE_UserSize64
+HPALETTE_UserUnmarshal
+HPALETTE_UserUnmarshal64
+HRGN_UserFree
+HRGN_UserFree64
+HRGN_UserMarshal
+HRGN_UserMarshal64 = ?HRGN_UserMarshal@@YAPEAEPEAKPEAEPEAPEAUHRGN__@@@Z
+HRGN_UserSize
+HRGN_UserSize64 = ?HRGN_UserSize@@YAKPEAKKPEAPEAUHRGN__@@@Z
+HRGN_UserUnmarshal = ?HRGN_UserUnmarshal64@@YAPEAEPEAKPEAEPEAPEAUHRGN__@@@Z
+HRGN_UserUnmarshal64
+HSTRING_UserFree
+HSTRING_UserFree64
+HSTRING_UserMarshal
+HSTRING_UserMarshal64
+HSTRING_UserSize
+HSTRING_UserSize64
+HSTRING_UserUnmarshal
+HSTRING_UserUnmarshal64
+HWND_UserFree
+HWND_UserFree64 = HWND_UserFree
+HWND_UserMarshal
+HWND_UserMarshal64 = HWND_UserMarshal
+HWND_UserSize
+HWND_UserSize64 = HWND_UserSize
+HWND_UserUnmarshal
+HWND_UserUnmarshal64 = HWND_UserUnmarshal
+HkOleRegisterObject
+IIDFromString
+InternalAppInvokeExceptionFilter
+InternalCAggIdRelease
+InternalCAggIdSetHandler
+InternalCCFreeUnused
+InternalCCGetClassInformationForDde
+InternalCCGetClassInformationFromKey
+InternalCCSetDdeServerWindow
+InternalCMLSendReceive
+InternalCMLSendReceive2
+InternalCStdIdentityGetIProxyManager
+InternalCStdIdentityGetInternalUnk
+InternalCStdIdentityUpdateFlags
+InternalCallAsProxyExceptionFilter
+InternalCallFrameExceptionFilter
+InternalCallerIsAppContainer
+InternalCanMakeOutCall
+InternalCanMakeOutCall2
+InternalCoIsSurrogateProcess
+InternalCoRegisterDisconnectCallback
+InternalCoRegisterSurrogatedObject
+InternalCoStdMarshalObject
+InternalCoUnregisterDisconnectCallback
+InternalCompleteObjRef
+InternalCreateCAggId
+InternalCreateIdentityHandler
+InternalDoATClassCreate
+InternalFillLocalOXIDInfo
+InternalFreeObjRef
+InternalGetWindowPropInterface
+InternalGetWindowPropInterface2
+InternalIrotEnumRunning
+InternalIrotEnumRunning2
+InternalIrotGetObject
+InternalIrotGetObject2
+InternalIrotGetObject3
+InternalIrotGetTimeOfLastChange
+InternalIrotGetTimeOfLastChange2
+InternalIrotIsRunning
+InternalIrotIsRunning2
+InternalIrotNoteChangeTime
+InternalIrotRegister
+InternalIrotRevoke
+InternalIsApartmentInitialized
+InternalIsProcessInitialized
+InternalMarshalObjRef
+InternalNotifyDDStartOrStop
+InternalOle1ClassFromCLSID2
+InternalOleModalLoopBlockFn
+InternalRegOpenClassKey
+InternalRegisterWindowPropInterface
+InternalRegisterWindowPropInterface2
+InternalReleaseMarshalObjRef
+InternalRevokeWindowPropInterface
+InternalSTAInvoke
+InternalServerExceptionFilter = InternalCallAsProxyExceptionFilter
+InternalSetAptCallCtrlOnTlsIfRequired
+InternalSetOleThunkWowPtr
+InternalStubInvoke
+InternalTlsAllocData
+InternalUnmarshalObjRef
+IsErrorPropagationEnabled
+NdrCStdStubBuffer2_Release
+NdrCStdStubBuffer_Release
+NdrExtStubInitialize
+NdrOleDllGetClassObject
+NdrOleInitializeExtension
+NdrProxyForwardingFunction10
+NdrProxyForwardingFunction11
+NdrProxyForwardingFunction12
+NdrProxyForwardingFunction13
+NdrProxyForwardingFunction14
+NdrProxyForwardingFunction15
+NdrProxyForwardingFunction16
+NdrProxyForwardingFunction17
+NdrProxyForwardingFunction18
+NdrProxyForwardingFunction19
+NdrProxyForwardingFunction20
+NdrProxyForwardingFunction21
+NdrProxyForwardingFunction22
+NdrProxyForwardingFunction23
+NdrProxyForwardingFunction24
+NdrProxyForwardingFunction25
+NdrProxyForwardingFunction26
+NdrProxyForwardingFunction27
+NdrProxyForwardingFunction28
+NdrProxyForwardingFunction29
+NdrProxyForwardingFunction3
+NdrProxyForwardingFunction30
+NdrProxyForwardingFunction31
+NdrProxyForwardingFunction32
+NdrProxyForwardingFunction4
+NdrProxyForwardingFunction5
+NdrProxyForwardingFunction6
+NdrProxyForwardingFunction7
+NdrProxyForwardingFunction8
+NdrProxyForwardingFunction9
+NdrpFindInterface
+ObjectStublessClient10
+ObjectStublessClient11
+ObjectStublessClient12
+ObjectStublessClient13
+ObjectStublessClient14
+ObjectStublessClient15
+ObjectStublessClient16
+ObjectStublessClient17
+ObjectStublessClient18
+ObjectStublessClient19
+ObjectStublessClient20
+ObjectStublessClient21
+ObjectStublessClient22
+ObjectStublessClient23
+ObjectStublessClient24
+ObjectStublessClient25
+ObjectStublessClient26
+ObjectStublessClient27
+ObjectStublessClient28
+ObjectStublessClient29
+ObjectStublessClient3
+ObjectStublessClient30
+ObjectStublessClient31
+ObjectStublessClient32
+ObjectStublessClient4
+ObjectStublessClient5
+ObjectStublessClient6
+ObjectStublessClient7
+ObjectStublessClient8
+ObjectStublessClient9
+ProgIDFromCLSID
+PropVariantClear
+PropVariantCopy
+ReleaseFuncDescs
+RoActivateInstance
+RoCaptureErrorContext
+RoClearError
+RoFailFastWithErrorContext
+RoFailFastWithErrorContextInternal
+RoFailFastWithErrorContextInternal2
+RoFreeParameterizedTypeExtra
+RoGetActivatableClassRegistration
+RoGetActivationFactory
+RoGetAgileReference
+RoGetApartmentIdentifier
+RoGetErrorReportingFlags
+RoGetMatchingRestrictedErrorInfo
+RoGetParameterizedTypeInstanceIID
+RoGetServerActivatableClasses
+RoInitialize
+RoInspectCapturedStackBackTrace
+RoInspectThreadErrorInfo
+RoOriginateError
+RoOriginateErrorW
+RoOriginateLanguageException
+RoParameterizedTypeExtraGetTypeSignature
+RoRegisterActivationFactories
+RoRegisterForApartmentShutdown
+RoReportCapabilityCheckFailure
+RoReportFailedDelegate
+RoReportUnhandledError
+RoResolveRestrictedErrorInfoReference
+RoRevokeActivationFactories
+RoSetErrorReportingFlags
+RoTransformError
+RoTransformErrorW
+RoUninitialize
+RoUnregisterForApartmentShutdown
+SetCleanupFlag
+SetErrorInfo = CoSetErrorInfo
+SetRestrictedErrorInfo
+StringFromCLSID
+StringFromGUID2
+StringFromIID
+UpdateDCOMSettings
+UpdateProcessTracing
+WdtpInterfacePointer_UserFree = WdtpInterfacePointer_UserFree64
+WdtpInterfacePointer_UserFree64
+WdtpInterfacePointer_UserMarshal
+WdtpInterfacePointer_UserMarshal64
+WdtpInterfacePointer_UserSize
+WdtpInterfacePointer_UserSize64
+WdtpInterfacePointer_UserUnmarshal
+WdtpInterfacePointer_UserUnmarshal64
+WindowsCompareStringOrdinal
+WindowsConcatString
+WindowsCreateString
+WindowsCreateStringReference
+WindowsDeleteString
+WindowsDeleteStringBuffer
+WindowsDuplicateString
+WindowsGetStringLen
+WindowsGetStringRawBuffer
+WindowsInspectString
+WindowsInspectString2
+WindowsIsStringEmpty
+WindowsPreallocateStringBuffer
+WindowsPromoteStringBuffer
+WindowsReplaceString
+WindowsStringHasEmbeddedNull
+WindowsSubstring
+WindowsSubstringWithSpecifiedLength
+WindowsTrimStringEnd
+WindowsTrimStringStart
+CoTestDisableCatalogPackageRegistrationChecks @229 NONAME
+CoTestSetExtensionsDestCtxOverrideForActivation @228 NONAME
+CoGetClassObjectOfPackagedImplementationClass @227 NONAME
+CoGetTreatAsClassInternal @226 NONAME
+SetMockRunningIn16Bit @225 NONAME
+STGMEDIUM_UserFree64 @224 NONAME
+STGMEDIUM_UserUnmarshal64 @223 NONAME
+STGMEDIUM_UserMarshal64 @222 NONAME
+STGMEDIUM_UserSize64 @221 NONAME
+SNB_UserFree64 @220 NONAME
+SNB_UserUnmarshal64 @219 NONAME
+SNB_UserMarshal64 @218 NONAME
+SNB_UserSize64 @217 NONAME
+HMETAFILE_UserFree @216 NONAME
+HMETAFILE_UserUnmarshal64 @215 NONAME
+HMETAFILE_UserMarshal64 @214 NONAME
+HMETAFILE_UserSize64 @213 NONAME
+HMETAFILEPICT_UserFree64 @212 NONAME
+HMETAFILEPICT_UserUnmarshal64 @211 NONAME
+HMETAFILEPICT_UserMarshal64 @210 NONAME
+HMETAFILEPICT_UserSize64 @209 NONAME
+HENHMETAFILE_UserFree64 @208 NONAME
+HENHMETAFILE_UserUnmarshal64 @207 NONAME
+HENHMETAFILE_UserMarshal64 @206 NONAME
+HENHMETAFILE_UserSize64 @205 NONAME
+STGMEDIUM_UserFree @204 NONAME
+STGMEDIUM_UserUnmarshal @203 NONAME
+STGMEDIUM_UserMarshal @202 NONAME
+STGMEDIUM_UserSize @201 NONAME
+SNB_UserFree64 @200 NONAME
+SNB_UserUnmarshal @199 NONAME
+SNB_UserMarshal @198 NONAME
+SNB_UserSize @197 NONAME
+HMETAFILE_UserFree @196 NONAME
+HMETAFILE_UserUnmarshal @195 NONAME
+HMETAFILE_UserMarshal @194 NONAME
+HMETAFILE_UserSize @193 NONAME
+HMETAFILEPICT_UserFree64 @192 NONAME
+HMETAFILEPICT_UserUnmarshal @191 NONAME
+HMETAFILEPICT_UserMarshal @190 NONAME
+HMETAFILEPICT_UserSize @189 NONAME
+HENHMETAFILE_UserFree64 @188 NONAME
+HENHMETAFILE_UserUnmarshal @187 NONAME
+HENHMETAFILE_UserMarshal @186 NONAME
+HENHMETAFILE_UserSize @185 NONAME
+CoGetCallLocality @184 NONAME
+?CoTestDcomContainerProtocolVersionNumber@@3IB @183 NONAME
+CoTestSetUseContainerErrorInformationLocalPropagation @182 NONAME
+CoDoesOtherSideSupportUDTMarshaling @181 NONAME
+CoDoesOtherSideVariantMarshalingNeedTrailingPadding @180 NONAME
+RoInitializeStrict @179 NONAME
+ClearChainRestrictedErrors @178 NONAME
+SetChainRestrictedErrors @177 NONAME
+OriginateOrTransformError @176 NONAME
+CoTestGetResponseContainerPassthroughData @175 NONAME
+CoTestSetResponseContainerPassthroughData @174 NONAME
+CoTestGetRequestContainerPassthroughData @173 NONAME
+CoTestSetRequestContainerPassthroughData @172 NONAME
+SetRuntimeBrokerActivationTestHook @171 NONAME
+RoDisableDebuggingForPackageEx @170 NONAME
+RoEnableDebuggingForPackageEx @169 NONAME
+CoImpersonateClientOfObject @168 NONAME
+CoGetCallContextOfObject @167 NONAME
+RpcUnmarshalRestrictedErrorToTls @166 NONAME
+RpcMarshalRestrictedErrorFromTls @165 NONAME
+RpcMarshalRestrictedErrorFromTlsToExtent @164 NONAME
+CoEnableAutomaticClientDependencyCreation @163 NONAME
+RoInitializeBridgeSTA @162 NONAME
+CoTestWaitForCallTracingEnabled @161 NONAME
+RoGetExtensionRegistrationForCurrentApplicationLaunchContract @160 NONAME
+RoGetExtensionRegistrationForLaunchContracts @159 NONAME
+CoTestIssueRundown @158 NONAME
+RoGetDesignModeV2 @157 NONAME
+CoTestSetPointOfRandomDelay @156 NONAME
+CoIsExceptionReportingSuppressed @155 NONAME
+CoCreateInstanceAsUser @154 NONAME
+RoGetRegistrationStoreContext @153 NONAME
+CoTestSimulatedRpcSendFailure @152 NONAME
+CoReleaseCachedRuntimeBrokerReferences @151 NONAME
+CoSuppressExceptionReporting @150 NONAME
+CoTestInjectedDelayForIncomingOutofprocCall @149 NONAME
+RoGetActivationFactoryAsUser @148 NONAME
+RoActivateInstanceAsUser @147 NONAME
+CoVrfSetMockApplicationVerifierStop @146 NONAME
+CoVrfComVerifierIsEnabled @145 NONAME
+?CoGetSystemSecurityPermissionsTestHook@@YAJQEAKPEAKPEAPEAE@Z @143 NONAME
+CoSetContainerIdListenerTestHook @142 NONAME
+CoSetAsyncCallCancelListenerTestHook @141 NONAME
+CoAllowSetForegroundWindow @140 NONAME
+RoGetMachineGlobalObjectTable @139 NONAME
+CoGetRundownInstrumentationData @138 NONAME
+CoDisableASTACallReentrancyGuardForSTAByDefault @137 NONAME
+RoGetAgileMarshaler @136 NONAME
+RoActivateInstanceInPackage @135 NONAME
+RoInitializeASTA @134 NONAME
+RoIsASTAWorkScheduledAtPriorityOrHigher @133 NONAME
+CoSetBulkUpdateRate @130 NONAME
+CoSetFastRundownTimeout @129 NONAME
+CoSetNonFastRundownTimeout @128 NONAME
+CoSetForcedBulkUpdateForAllOutofprocProxiesTestMode @127 NONAME
+CoSetInprocDirectMarshalingMitigationTestMode @126 NONAME
+CoSetOutofprocOutParameterMitigationTestMode @125 NONAME
+CoSetInprocOutParameterMitigationTestMode @124 NONAME
+CoSetInParameterMitigationTestMode @123 NONAME
+CoGetApartmentIdentifier @122 NONAME
+CoUnregisterForApartmentShutdown @121 NONAME
+CoRegisterForApartmentShutdown @120 NONAME
+CoRegisterChannelHook @112 NONAME
+CoHandlePriorityEventsFromMessagePump @111 NONAME
+CoSetMessageDispatcher @110 NONAME
+?CoVrfNotifyExtraOleUninit@@YAXXZ @104 NONAME
+?CoVrfShouldCallOleInit@@YAXPEBD@Z @103 NONAME
+?CoVrfNotifyOleUninit@@YAXXZ @102 NONAME
+?CoVrfNotifyOleInit@@YAXXZ @101 NONAME
+CoSetASTATestMode @100 NONAME
+CoEnableASTACallReentrancyGuardForSTAByDefault @99 NONAME
+CoSetRetryForReentrancyGuardTimeout @98 NONAME
+CoIsHandlingIncomingTouchedASTACall @97 NONAME
+CoEnableASTACallReentrancyGuardForSTA @96 NONAME
+CoSignalPendingGitRegistrationWaits @95 NONAME
+NdrOleGetComMarshalingContextAttribute @93 NONAME
+CoSetASTAQueuedCallTimeout @92 NONAME
+RoGetDesignMode @90 NONAME
+CoEndProcessEvents @88 NONAME
+CoMsgWaitInProcessEvents @87 NONAME
+CoBeginProcessEvents @86 NONAME
+RoDisableDebuggingForPackage @81 NONAME
+RoEnableDebuggingForPackage @80 NONAME
+RoGetExtensionRegistrationByExtensionId @79 NONAME
+CoWaitMTACompletion @71 NONAME
+CoGetMTAUsageInfo @70 NONAME
+CoRegisterServerShutdownDelay @69 NONAME
+CoReleaseSharedService @68 NONAME
+CoAddRefSharedService @67 NONAME
+CoGetSharedServiceId @66 NONAME
+RoGetExtensionRegistration @65 NONAME
+GetStringCount @64 NONAME
+GetStringRefCount @63 NONAME
+WinRTNotifyChangedStore @1 NONAME

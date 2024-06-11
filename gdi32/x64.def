@@ -1,0 +1,1002 @@
+EXPORTS
+
+AbortDoc
+AbortPath
+AddFontMemResourceEx
+AddFontResourceA = AddFontResourceAStub
+AddFontResourceExA
+AddFontResourceExW
+AddFontResourceTracking
+AddFontResourceW
+AngleArc
+AnimatePalette = AnimatePaletteStub
+AnyLinkedFonts
+Arc = ArcStub
+ArcTo
+BRUSHOBJ_hGetColorTransform = NtGdiBRUSHOBJ_hGetColorTransform
+BRUSHOBJ_pvAllocRbrush = NtGdiBRUSHOBJ_pvAllocRbrush
+BRUSHOBJ_pvGetRbrush = NtGdiBRUSHOBJ_pvGetRbrush
+BRUSHOBJ_ulGetBrushColor = NtGdiBRUSHOBJ_ulGetBrushColor
+BeginGdiRendering = NtGdiBeginGdiRendering
+BeginPath
+BitBlt = BitBltStub
+CLIPOBJ_bEnum = NtGdiCLIPOBJ_bEnum
+CLIPOBJ_cEnumStart = NtGdiCLIPOBJ_cEnumStart
+CLIPOBJ_ppoGetPath = NtGdiCLIPOBJ_ppoGetPath
+CancelDC
+CheckColorsInGamut
+ChoosePixelFormat
+Chord
+ClearBitmapAttributes
+ClearBrushAttributes
+CloseEnhMetaFile = CloseEnhMetaFileStub
+CloseFigure
+CloseMetaFile = CloseMetaFileStub
+ColorCorrectPalette
+ColorMatchToTarget
+CombineRgn
+CombineTransform
+ConfigureOPMProtectedOutput = NtGdiConfigureOPMProtectedOutput
+CopyEnhMetaFileA
+CopyEnhMetaFileW
+CopyMetaFileA
+CopyMetaFileW
+CreateBitmap = CreateBitmapStub
+CreateBitmapFromDxSurface = NtGdiCreateBitmapFromDxSurface
+CreateBitmapFromDxSurface2 = NtGdiCreateBitmapFromDxSurface2
+CreateBitmapIndirect = CreateBitmapIndirectStub
+CreateBrushIndirect = CreateBrushIndirectStub
+CreateColorSpaceA
+CreateColorSpaceW
+CreateCompatibleBitmap = CreateCompatibleBitmapStub
+CreateCompatibleDC = CreateCompatibleDCStub
+CreateDCA
+CreateDCExW
+CreateDCW
+CreateDIBPatternBrush
+CreateDIBPatternBrushPt
+CreateDIBSection = CreateDIBSectionStub
+CreateDIBitmap = CreateDIBitmapStub
+CreateDPIScaledDIBSection
+CreateDiscardableBitmap
+CreateEllipticRgn
+CreateEllipticRgnIndirect = CreateEllipticRgnIndirectStub
+CreateEnhMetaFileA = CreateEnhMetaFileAStub
+CreateEnhMetaFileW
+CreateFontA = CreateFontAStub
+CreateFontIndirectA = CreateFontIndirectAStub
+CreateFontIndirectExA
+CreateFontIndirectExW
+CreateFontIndirectW
+CreateFontW = CreateFontWStub
+CreateHalftonePalette
+CreateHatchBrush
+CreateICA
+CreateICW
+CreateMetaFileA = CreateMetaFileAStub
+CreateMetaFileW
+CreateOPMProtectedOutput = NtGdiCreateOPMProtectedOutput
+CreateOPMProtectedOutputs = NtGdiCreateOPMProtectedOutputs
+CreatePalette = CreatePaletteStub
+CreatePatternBrush = CreatePatternBrushStub
+CreatePen = CreatePenStub
+CreatePenIndirect = CreatePenIndirectStub
+CreatePolyPolygonRgn = CreatePolyPolygonRgnStub
+CreatePolygonRgn
+CreateRectRgn
+CreateRectRgnIndirect
+CreateRoundRectRgn = CreateRoundRectRgnStub
+CreateScalableFontResourceA
+CreateScalableFontResourceW
+CreateScaledCompatibleBitmap
+CreateSessionMappedDIBSection
+CreateSolidBrush = CreateSolidBrushStub
+D3DKMTAbandonSwapChain = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#154
+D3DKMTAcquireKeyedMutex = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#73
+D3DKMTAcquireKeyedMutex2 = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#74
+D3DKMTAcquireSwapChain = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#151
+D3DKMTAddSurfaceToSwapChain = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#194
+D3DKMTAdjustFullscreenGamma = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#123
+D3DKMTCacheHybridQueryValue = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#92
+D3DKMTCancelPresents = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#227
+D3DKMTChangeVideoMemoryReservation = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#132
+D3DKMTCheckExclusiveOwnership = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#63
+D3DKMTCheckMonitorPowerState = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#62
+D3DKMTCheckMultiPlaneOverlaySupport = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#137
+D3DKMTCheckMultiPlaneOverlaySupport2 = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#139
+D3DKMTCheckMultiPlaneOverlaySupport3 = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#147
+D3DKMTCheckOcclusion = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#60
+D3DKMTCheckSharedResourceAccess = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#79
+D3DKMTCheckSinglePlaneForMultiPlaneOverlaySupport = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#226
+D3DKMTCheckVidPnExclusiveOwnership = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#64
+D3DKMTCloseAdapter = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#36
+D3DKMTConfigureSharedResource = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#77
+D3DKMTConnectDoorbell = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#232
+D3DKMTCreateAllocation = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#1
+D3DKMTCreateAllocation2 = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#2
+D3DKMTCreateBundleObject = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#189
+D3DKMTCreateContext = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#16
+D3DKMTCreateContextVirtual = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#119
+D3DKMTCreateDCFromMemory = WIN32U.NtGdiDdDDICreateDCFromMemory
+D3DKMTCreateDevice = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#14
+D3DKMTCreateDoorbell = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#231
+D3DKMTCreateHwContext = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#158
+D3DKMTCreateHwQueue = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#160
+D3DKMTCreateKeyedMutex = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#68
+D3DKMTCreateKeyedMutex2 = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#69
+D3DKMTCreateNativeFence = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#229
+D3DKMTCreateOutputDupl = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#82
+D3DKMTCreateOverlay = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#43
+D3DKMTCreatePagingQueue = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#109
+D3DKMTCreateProtectedSession = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#184
+D3DKMTCreateSwapChain = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#149
+D3DKMTCreateSynchronizationObject = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#18
+D3DKMTCreateSynchronizationObject2 = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#19
+D3DKMTCreateTrackedWorkload = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#207
+D3DKMTDDisplayEnum = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#178
+D3DKMTDestroyAllocation = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#11
+D3DKMTDestroyAllocation2 = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#100
+D3DKMTDestroyContext = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#17
+D3DKMTDestroyDCFromMemory = WIN32U.NtGdiDdDDIDestroyDCFromMemory
+D3DKMTDestroyDevice = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#15
+D3DKMTDestroyDoorbell = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#233
+D3DKMTDestroyHwContext = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#159
+D3DKMTDestroyHwQueue = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#161
+D3DKMTDestroyKeyedMutex = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#72
+D3DKMTDestroyOutputDupl = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#83
+D3DKMTDestroyOverlay = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#46
+D3DKMTDestroyPagingQueue = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#110
+D3DKMTDestroyProtectedSession = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#185
+D3DKMTDestroySynchronizationObject = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#21
+D3DKMTDestroyTrackedWorkload = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#208
+D3DKMTDispMgrCreate = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#179
+D3DKMTDispMgrOperation = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#215
+D3DKMTDispMgrSourceOperation = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#181
+D3DKMTDispMgrTargetOperation = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#180
+D3DKMTDisplayPortOperation = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#222
+D3DKMTDuplicateHandle = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#216
+D3DKMTEnumAdapters = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#143
+D3DKMTEnumAdapters2 = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#144
+D3DKMTEnumAdapters3 = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#217
+D3DKMTEnumProcesses = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#228
+D3DKMTEscape = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#38
+D3DKMTEvict = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#102
+D3DKMTExtractBundleObject = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#190
+D3DKMTFlipOverlay = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#45
+D3DKMTFlushHeapTransitions = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#127
+D3DKMTFreeGpuVirtualAddress = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#116
+D3DKMTGetAllocationPriority = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#169
+D3DKMTGetAvailableTrackedWorkloadIndex = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#209
+D3DKMTGetCachedHybridQueryValue = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#91
+D3DKMTGetContextInProcessSchedulingPriority = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#50
+D3DKMTGetContextSchedulingPriority = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#52
+D3DKMTGetDWMVerticalBlankEvent = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#168
+D3DKMTGetDeviceState = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#49
+D3DKMTGetDisplayModeList = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#28
+D3DKMTGetMemoryBudgetTarget = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#177
+D3DKMTGetMultiPlaneOverlayCaps = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#170
+D3DKMTGetMultisampleMethodList = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#30
+D3DKMTGetOverlayState = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#78
+D3DKMTGetPostCompositionCaps = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#171
+D3DKMTGetPresentHistory = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#41
+D3DKMTGetPresentQueueEvent = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#42
+D3DKMTGetProcessDeviceRemovalSupport = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#192
+D3DKMTGetProcessList = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#203
+D3DKMTGetProcessSchedulingPriorityBand = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#176
+D3DKMTGetProcessSchedulingPriorityClass = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#54
+D3DKMTGetProperties = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#224
+D3DKMTGetResourcePresentPrivateDriverData = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#118
+D3DKMTGetRuntimeData = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#33
+D3DKMTGetScanLine = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#56
+D3DKMTGetSetSwapChainMetadata = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#153
+D3DKMTGetSharedPrimaryHandle = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#37
+D3DKMTGetSharedResourceAdapterLuid = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#89
+D3DKMTGetSwapChainSurfacePhysicalAddress = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#225
+D3DKMTGetTrackedWorkloadStatistics = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#212
+D3DKMTGetYieldPercentage = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#175
+D3DKMTInvalidateActiveVidPn = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#59
+D3DKMTInvalidateCache = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#113
+D3DKMTLock = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#26
+D3DKMTLock2 = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#111
+D3DKMTMakeResident = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#101
+D3DKMTMapGpuVirtualAddress = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#114
+D3DKMTMarkDeviceAsError = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#126
+D3DKMTNetDispGetNextChunkInfo = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#93
+D3DKMTNetDispQueryMiracastDisplayDeviceStatus = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#99
+D3DKMTNetDispQueryMiracastDisplayDeviceSupport = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#94
+D3DKMTNetDispStartMiracastDisplayDevice = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#95
+D3DKMTNetDispStartMiracastDisplayDevice2 = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#96
+D3DKMTNetDispStartMiracastDisplayDeviceEx = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#97
+D3DKMTNetDispStopMiracastDisplayDevice = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#98
+D3DKMTNotifyWorkSubmission = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#234
+D3DKMTOfferAllocations = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#80
+D3DKMTOpenAdapterFromDeviceName = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#35
+D3DKMTOpenAdapterFromGdiDisplayName
+D3DKMTOpenAdapterFromHdc
+D3DKMTOpenAdapterFromLuid = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#124
+D3DKMTOpenBundleObjectNtHandleFromName = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#204
+D3DKMTOpenKeyedMutex = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#70
+D3DKMTOpenKeyedMutex2 = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#71
+D3DKMTOpenKeyedMutexFromNtHandle = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#197
+D3DKMTOpenNativeFenceFromNtHandle = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#230
+D3DKMTOpenNtHandleFromName = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#6
+D3DKMTOpenProtectedSessionFromNtHandle = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#188
+D3DKMTOpenResource = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#9
+D3DKMTOpenResource2 = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#10
+D3DKMTOpenResourceFromNtHandle = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#7
+D3DKMTOpenSwapChain = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#150
+D3DKMTOpenSyncObjectFromNtHandle = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#8
+D3DKMTOpenSyncObjectFromNtHandle2 = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#129
+D3DKMTOpenSyncObjectNtHandleFromName = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#130
+D3DKMTOpenSynchronizationObject = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#20
+D3DKMTOutputDuplGetFrameInfo = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#84
+D3DKMTOutputDuplGetMetaData = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#85
+D3DKMTOutputDuplGetPointerShapeData = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#86
+D3DKMTOutputDuplPresent = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#88
+D3DKMTOutputDuplPresentToHwQueue = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#214
+D3DKMTOutputDuplReleaseFrame = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#87
+D3DKMTPinDirectFlipResources = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#135
+D3DKMTPinResources = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#220
+D3DKMTPollDisplayChildren = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#58
+D3DKMTPresent = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#31
+D3DKMTPresentMultiPlaneOverlay = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#138
+D3DKMTPresentMultiPlaneOverlay2 = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#140
+D3DKMTPresentMultiPlaneOverlay3 = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#148
+D3DKMTPresentRedirected = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#193
+D3DKMTQueryAdapterInfo = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#34
+D3DKMTQueryAllocationResidency = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#13
+D3DKMTQueryClockCalibration = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#142
+D3DKMTQueryFSEBlock = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#157
+D3DKMTQueryProcessOfferInfo = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#145
+D3DKMTQueryProtectedSessionInfoFromNtHandle = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#187
+D3DKMTQueryProtectedSessionStatus = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#186
+D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName = WIN32U.NtGdiDdDDIQueryRemoteVidPnSourceFromGdiDisplayName
+D3DKMTQueryResourceInfo = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#3
+D3DKMTQueryResourceInfoFromNtHandle = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#4
+D3DKMTQueryStatistics = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#39
+D3DKMTQueryVidPnExclusiveOwnership = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#122
+D3DKMTQueryVideoMemoryInfo = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#131
+D3DKMTReclaimAllocations = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#81
+D3DKMTReclaimAllocations2 = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#121
+D3DKMTRegisterTrimNotification = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#133
+D3DKMTRegisterVailProcess = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#198
+D3DKMTReleaseKeyedMutex = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#75
+D3DKMTReleaseKeyedMutex2 = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#76
+D3DKMTReleaseProcessVidPnSourceOwners = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#55
+D3DKMTReleaseSwapChain = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#152
+D3DKMTRemoveSurfaceFromSwapChain = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#195
+D3DKMTRender = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#32
+D3DKMTReserveGpuVirtualAddress = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#115
+D3DKMTResetTrackedWorkloadStatistics = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#213
+D3DKMTSetAllocationPriority = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#12
+D3DKMTSetContextInProcessSchedulingPriority = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#205
+D3DKMTSetContextSchedulingPriority = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#51
+D3DKMTSetDisplayMode = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#29
+D3DKMTSetDisplayPrivateDriverFormat = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#65
+D3DKMTSetDodIndirectSwapchain = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#155
+D3DKMTSetFSEBlock = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#156
+D3DKMTSetGammaRamp = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#48
+D3DKMTSetHwProtectionTeardownRecovery = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#128
+D3DKMTSetMemoryBudgetTarget = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#174
+D3DKMTSetMonitorColorSpaceTransform = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#183
+D3DKMTSetProcessDeviceRemovalSupport = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#191
+D3DKMTSetProcessSchedulingPriorityBand = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#173
+D3DKMTSetProcessSchedulingPriorityClass = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#53
+D3DKMTSetProperties = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#223
+D3DKMTSetQueuedLimit = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#57
+D3DKMTSetStablePowerState = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#141
+D3DKMTSetStereoEnabled = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#90
+D3DKMTSetSyncRefreshCountWaitTarget = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#167
+D3DKMTSetVidPnSourceHwProtection = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#125
+D3DKMTSetVidPnSourceOwner = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#40
+D3DKMTSetVidPnSourceOwner1 = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#165
+D3DKMTSetVidPnSourceOwner2 = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#182
+D3DKMTSetYieldPercentage = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#172
+D3DKMTShareObjects = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#5
+D3DKMTSharedPrimaryLockNotification = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#66
+D3DKMTSharedPrimaryUnLockNotification = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#67
+D3DKMTSignalSynchronizationObject = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#24
+D3DKMTSignalSynchronizationObject2 = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#25
+D3DKMTSignalSynchronizationObjectFromCpu = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#105
+D3DKMTSignalSynchronizationObjectFromGpu = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#107
+D3DKMTSignalSynchronizationObjectFromGpu2 = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#108
+D3DKMTSubmitCommand = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#120
+D3DKMTSubmitCommandToHwQueue = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#162
+D3DKMTSubmitPresentBltToHwQueue = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#202
+D3DKMTSubmitPresentToHwQueue = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#206
+D3DKMTSubmitSignalSyncObjectsToHwQueue = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#164
+D3DKMTSubmitWaitForSyncObjectsToHwQueue = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#163
+D3DKMTTrimProcessCommitment = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#146
+D3DKMTUnOrderedPresentSwapChain = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#196
+D3DKMTUnlock = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#27
+D3DKMTUnlock2 = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#112
+D3DKMTUnpinDirectFlipResources = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#136
+D3DKMTUnpinResources = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#221
+D3DKMTUnregisterTrimNotification = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#134
+D3DKMTUpdateAllocationProperty = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#103
+D3DKMTUpdateGpuVirtualAddress = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#117
+D3DKMTUpdateOverlay = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#44
+D3DKMTUpdateTrackedWorkload = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#210
+D3DKMTVailConnect = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#199
+D3DKMTVailDisconnect = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#200
+D3DKMTVailPromoteCompositionSurface = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#201
+D3DKMTWaitForIdle = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#61
+D3DKMTWaitForSynchronizationObject = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#22
+D3DKMTWaitForSynchronizationObject2 = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#23
+D3DKMTWaitForSynchronizationObjectFromCpu = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#104
+D3DKMTWaitForSynchronizationObjectFromGpu = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#106
+D3DKMTWaitForVerticalBlankEvent = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#47
+D3DKMTWaitForVerticalBlankEvent2 = ext-ms-win-dx-d3dkmt-dxcore-l1-1-3.#166
+DDCCIGetCapabilitiesString = NtGdiDDCCIGetCapabilitiesString
+DDCCIGetCapabilitiesStringLength = NtGdiDDCCIGetCapabilitiesStringLength
+DDCCIGetTimingReport = NtGdiDDCCIGetTimingReport
+DDCCIGetVCPFeature = NtGdiDDCCIGetVCPFeature
+DDCCISaveCurrentSettings = NtGdiDDCCISaveCurrentSettings
+DDCCISetVCPFeature = NtGdiDDCCISetVCPFeature
+DPtoLP = DPtoLPStub
+DdCreateFullscreenSprite = NtGdiDdCreateFullscreenSprite
+DdDestroyFullscreenSprite = NtGdiDdDestroyFullscreenSprite
+DdEntry0 = NtGdiDxgGenericThunk
+DdEntry1 = NtGdiD3dContextCreate
+DdEntry10 = NtGdiDdBeginMoCompFrame
+DdEntry11 = NtGdiDdBlt
+DdEntry12 = NtGdiDdCanCreateSurface
+DdEntry13 = NtGdiDdCanCreateD3DBuffer
+DdEntry14 = NtGdiDdColorControl
+DdEntry15 = NtGdiDdCreateDirectDrawObject
+DdEntry16 = NtGdiDdCreateSurface
+DdEntry17 = NtGdiDdCreateD3DBuffer
+DdEntry18 = NtGdiDdCreateMoComp
+DdEntry19 = NtGdiDdCreateSurfaceObject
+DdEntry2 = NtGdiD3dContextDestroy
+DdEntry20 = NtGdiDdDeleteDirectDrawObject
+DdEntry21 = NtGdiDdDeleteSurfaceObject
+DdEntry22 = NtGdiDdDestroyMoComp
+DdEntry23 = NtGdiDdDestroySurface
+DdEntry24 = NtGdiDdDestroyD3DBuffer
+DdEntry25 = NtGdiDdEndMoCompFrame
+DdEntry26 = NtGdiDdFlip
+DdEntry27 = NtGdiDdFlipToGDISurface
+DdEntry28 = NtGdiDdGetAvailDriverMemory
+DdEntry29 = NtGdiDdGetBltStatus
+DdEntry3 = NtGdiD3dContextDestroyAll
+DdEntry30 = NtGdiDdGetDC
+DdEntry31 = NtGdiDdGetDriverInfo
+DdEntry32 = NtGdiDdGetDxHandle
+DdEntry33 = NtGdiDdGetFlipStatus
+DdEntry34 = NtGdiDdGetInternalMoCompInfo
+DdEntry35 = NtGdiDdGetMoCompBuffInfo
+DdEntry36 = NtGdiDdGetMoCompGuids
+DdEntry37 = NtGdiDdGetMoCompFormats
+DdEntry38 = NtGdiDdGetScanLine
+DdEntry39 = NtGdiDdLock
+DdEntry4 = NtGdiD3dValidateTextureStageState
+DdEntry40 = NtGdiDdLockD3D
+DdEntry41 = NtGdiDdQueryDirectDrawObject
+DdEntry42 = NtGdiDdQueryMoCompStatus
+DdEntry43 = NtGdiDdReenableDirectDrawObject
+DdEntry44 = NtGdiDdReleaseDC
+DdEntry45 = NtGdiDdRenderMoComp
+DdEntry46 = NtGdiDdResetVisrgn
+DdEntry47 = NtGdiDdSetColorKey
+DdEntry48 = NtGdiDdSetExclusiveMode
+DdEntry49 = NtGdiDdSetGammaRamp
+DdEntry5 = NtGdiD3dDrawPrimitives2
+DdEntry50 = NtGdiDdCreateSurfaceEx
+DdEntry51 = NtGdiDdSetOverlayPosition
+DdEntry52 = NtGdiDdUnattachSurface
+DdEntry53 = NtGdiDdUnlock
+DdEntry54 = NtGdiDdUnlockD3D
+DdEntry55 = NtGdiDdUpdateOverlay
+DdEntry56 = NtGdiDdWaitForVerticalBlank
+DdEntry6 = NtGdiDdGetDriverState
+DdEntry7 = NtGdiDdAddAttachedSurface
+DdEntry8 = NtGdiDdAlphaBlt
+DdEntry9 = NtGdiDdAttachSurface
+DdNotifyFullscreenSpriteUpdate = NtGdiDdNotifyFullscreenSpriteUpdate
+DdQueryVisRgnUniqueness = NtGdiDdQueryVisRgnUniqueness
+DeleteColorSpace
+DeleteDC
+DeleteEnhMetaFile = DeleteEnhMetaFileStub
+DeleteMetaFile = DeleteMetaFileStub
+DeleteObject
+DescribePixelFormat
+DestroyOPMProtectedOutput = NtGdiDestroyOPMProtectedOutput
+DestroyPhysicalMonitorInternal = NtGdiDestroyPhysicalMonitor
+DeviceCapabilitiesExA
+DeviceCapabilitiesExW = ext-ms-win-gdi-desktop-l1-1-0.DeviceCapabilitiesExA
+DrawEscape
+DwmCreatedBitmapRemotingOutput
+Ellipse = EllipseStub
+EnableEUDC = NtGdiEnableEudc
+EndDoc
+EndFormPage
+EndGdiRendering = NtGdiEndGdiRendering
+EndPage
+EndPath
+EngAcquireSemaphore
+EngAlphaBlend = NtGdiEngAlphaBlend
+EngAssociateSurface = NtGdiEngAssociateSurface
+EngBitBlt = NtGdiEngBitBlt
+EngCheckAbort = NtGdiEngCheckAbort
+EngComputeGlyphSet
+EngCopyBits = NtGdiEngCopyBits
+EngCreateBitmap = NtGdiEngCreateBitmap
+EngCreateClip = NtGdiEngCreateClip
+EngCreateDeviceBitmap = NtGdiEngCreateDeviceBitmap
+EngCreateDeviceSurface = NtGdiEngCreateDeviceSurface
+EngCreatePalette = NtGdiEngCreatePalette
+EngCreateSemaphore
+EngDeleteClip = NtGdiEngDeleteClip
+EngDeletePalette = NtGdiEngDeletePalette
+EngDeletePath = NtGdiEngDeletePath
+EngDeleteSemaphore
+EngDeleteSurface = NtGdiEngDeleteSurface
+EngEraseSurface = NtGdiEngEraseSurface
+EngFillPath = NtGdiEngFillPath
+EngFindResource
+EngFreeModule
+EngGetCurrentCodePage
+EngGetDriverName
+EngGetPrinterDataFileName
+EngGradientFill = NtGdiEngGradientFill
+EngLineTo = NtGdiEngLineTo
+EngLoadModule
+EngLockSurface = NtGdiEngLockSurface
+EngMarkBandingSurface = NtGdiEngMarkBandingSurface
+EngMultiByteToUnicodeN
+EngMultiByteToWideChar
+EngPaint = NtGdiEngPaint
+EngPlgBlt = NtGdiEngPlgBlt
+EngQueryEMFInfo
+EngQueryLocalTime
+EngReleaseSemaphore
+EngStretchBlt = NtGdiEngStretchBlt
+EngStretchBltROP = NtGdiEngStretchBltROP
+EngStrokeAndFillPath = NtGdiEngStrokeAndFillPath
+EngStrokePath = NtGdiEngStrokePath
+EngTextOut = NtGdiEngTextOut
+EngTransparentBlt = NtGdiEngTransparentBlt
+EngUnicodeToMultiByteN
+EngUnlockSurface = NtGdiEngUnlockSurface
+EngWideCharToMultiByte
+EnumEnhMetaFile = EnumEnhMetaFileStub
+EnumFontFamiliesA = EnumFontFamiliesAStub
+EnumFontFamiliesExA = EnumFontFamiliesExAStub
+EnumFontFamiliesExW
+EnumFontFamiliesW
+EnumFontsA
+EnumFontsW
+EnumICMProfilesA
+EnumICMProfilesW
+EnumMetaFile = EnumMetaFileStub
+EnumObjects
+EqualRgn
+Escape
+EudcLoadLinkW
+EudcUnloadLinkW
+ExcludeClipRect
+ExtCreatePen
+ExtCreateRegion
+ExtEscape
+ExtFloodFill
+ExtSelectClipRgn
+ExtTextOutA
+ExtTextOutW
+FONTOBJ_cGetAllGlyphHandles = NtGdiFONTOBJ_cGetAllGlyphHandles
+FONTOBJ_cGetGlyphs = NtGdiFONTOBJ_cGetGlyphs
+FONTOBJ_pQueryGlyphAttrs = NtGdiFONTOBJ_pQueryGlyphAttrs
+FONTOBJ_pfdg = NtGdiFONTOBJ_pfdg
+FONTOBJ_pifi = NtGdiFONTOBJ_pifi
+FONTOBJ_pvTrueTypeFontFile = NtGdiFONTOBJ_pvTrueTypeFontFile
+FONTOBJ_pxoGetXform = NtGdiFONTOBJ_pxoGetXform
+FONTOBJ_vGetInfo = NtGdiFONTOBJ_vGetInfo
+FillPath
+FillRgn = FillRgnStub
+FixBrushOrgEx
+FlattenPath
+FloodFill
+FontIsLinked
+FrameRgn = FrameRgnStub
+Gdi32DllInitialize
+GdiAddFontResourceW
+GdiAddGlsBounds
+GdiAddGlsRecord
+GdiAddInitialFonts
+GdiAlphaBlend
+GdiArtificialDecrementDriver
+GdiBatchLimit
+GdiCleanCacheDC
+GdiComment = GdiCommentStub
+GdiConsoleTextOut
+GdiConvertAndCheckDC
+GdiConvertBitmap
+GdiConvertBitmapV5
+GdiConvertBrush
+GdiConvertDC
+GdiConvertEnhMetaFile
+GdiConvertFont
+GdiConvertMetaFilePict
+GdiConvertPalette
+GdiConvertRegion
+GdiConvertToDevmodeW
+GdiCreateLocalEnhMetaFile
+GdiCreateLocalMetaFilePict
+GdiCurrentProcessSplWow64
+GdiDeleteLocalDC
+GdiDeleteSpoolFileHandle
+GdiDescribePixelFormat
+GdiDisableUMPDSandboxing
+GdiDllInitialize
+GdiDrawStream
+GdiEndDocEMF
+GdiEndPageEMF
+GdiEntry1
+GdiEntry10
+GdiEntry11
+GdiEntry12
+GdiEntry13 = DdQueryDisplaySettingsUniqueness
+GdiEntry14
+GdiEntry15
+GdiEntry16
+GdiEntry2
+GdiEntry3
+GdiEntry4
+GdiEntry5
+GdiEntry6
+GdiEntry7
+GdiEntry8
+GdiEntry9
+GdiFixUpHandle
+GdiFlush
+GdiFullscreenControl = NtGdiFullscreenControl
+GdiGetBatchLimit
+GdiGetBitmapBitsSize
+GdiGetCharDimensions
+GdiGetCodePage = GetCodePage
+GdiGetDC
+GdiGetDevmodeForPage
+GdiGetEntry
+GdiGetLocalBrush
+GdiGetLocalDC
+GdiGetLocalFont
+GdiGetPageCount
+GdiGetPageHandle
+GdiGetSpoolFileHandle
+GdiGetSpoolMessage = NtGdiGetSpoolMessage
+GdiGetVariationStoreDelta
+GdiGradientFill
+GdiInitSpool = NtGdiInitSpool
+GdiInitializeLanguagePack
+GdiIsMetaFileDC
+GdiIsMetaPrintDC
+GdiIsPlayMetafileDC
+GdiIsScreenDC
+GdiIsTrackingEnabled
+GdiIsUMPDSandboxingEnabled
+GdiLoadType1Fonts
+GdiPlayDCScript
+GdiPlayEMF
+GdiPlayJournal
+GdiPlayPageEMF
+GdiPlayPrivatePageEMF
+GdiPlayScript
+GdiPrinterThunk
+GdiProcessSetup
+GdiQueryFonts = NtGdiQueryFonts
+GdiQueryTable
+GdiRealizationInfo
+GdiReleaseDC
+GdiReleaseLocalDC
+GdiResetDCEMF
+GdiSetAttrs
+GdiSetBatchLimit
+GdiSetLastError
+GdiSetPixelFormat
+GdiSetServerAttr
+GdiStartDocEMF
+GdiStartPageEMF
+GdiSupportsFontChangeEvent
+GdiSwapBuffers
+GdiTrackHCreate
+GdiTrackHDelete
+GdiTransparentBlt
+GdiValidateHandle
+GdiWaitForTextReady
+GditGetCallerTLStorage
+GditPopCallerInfo
+GditPushCallerInfo
+GetArcDirection
+GetAspectRatioFilterEx
+GetBitmapAttributes
+GetBitmapBits = GetBitmapBitsStub
+GetBitmapDimensionEx
+GetBitmapDpiScaleValue = NtGdiGetBitmapDpiScaleValue
+GetBkColor = GetBkColorStub
+GetBkMode
+GetBoundsRect
+GetBrushAttributes
+GetBrushOrgEx
+GetCOPPCompatibleOPMInformation = NtGdiGetCOPPCompatibleOPMInformation
+GetCertificate = NtGdiGetCertificate
+GetCertificateByHandle = NtGdiGetCertificateByHandle
+GetCertificateSize = NtGdiGetCertificateSize
+GetCertificateSizeByHandle = NtGdiGetCertificateSizeByHandle
+GetCharABCWidthsA
+GetCharABCWidthsFloatA
+GetCharABCWidthsFloatI
+GetCharABCWidthsFloatW
+GetCharABCWidthsI
+GetCharABCWidthsW
+GetCharWidth32A
+GetCharWidth32W
+GetCharWidthA = GetCharWidthAStub
+GetCharWidthFloatA
+GetCharWidthFloatW
+GetCharWidthI
+GetCharWidthInfo = NtGdiGetCharWidthInfo
+GetCharWidthW
+GetCharacterPlacementA
+GetCharacterPlacementW
+GetClipBox
+GetClipRgn = GetClipRgnStub
+GetColorAdjustment
+GetColorSpace
+GetCurrentDpiInfo
+GetCurrentObject = GetCurrentObjectStub
+GetCurrentPositionEx = GetCurrentPositionExStub
+GetDCBrushColor
+GetDCDpiScaleValue
+GetDCOrgEx
+GetDCPenColor
+GetDIBColorTable
+GetDIBits = GetDIBitsStub
+GetDeviceCaps
+GetDeviceGammaRamp
+GetETM
+GetEUDCTimeStamp
+GetEUDCTimeStampExW
+GetEnhMetaFileA = GetEnhMetaFileAStub
+GetEnhMetaFileBits = GetEnhMetaFileBitsStub
+GetEnhMetaFileDescriptionA = GetEnhMetaFileDescriptionAStub
+GetEnhMetaFileDescriptionW
+GetEnhMetaFileHeader
+GetEnhMetaFilePaletteEntries
+GetEnhMetaFilePixelFormat
+GetEnhMetaFileW
+GetFontAssocStatus
+GetFontData
+GetFontFileData
+GetFontFileInfo
+GetFontLanguageInfo
+GetFontRealizationInfo
+GetFontResourceInfoW
+GetFontUnicodeRanges = NtGdiGetFontUnicodeRanges
+GetGlyphIndicesA
+GetGlyphIndicesW
+GetGlyphOutline
+GetGlyphOutlineA = GetGlyphOutlineAStub
+GetGlyphOutlineW = GetGlyphOutlineWStub
+GetGlyphOutlineWow
+GetGraphicsMode
+GetHFONT
+GetICMProfileA
+GetICMProfileW
+GetKerningPairs = GetKerningPairsAStub
+GetKerningPairsA = GetKerningPairsAStub
+GetKerningPairsW
+GetLayout
+GetLogColorSpaceA
+GetLogColorSpaceW
+GetMapMode
+GetMetaFileA
+GetMetaFileBitsEx = GetMetaFileBitsExStub
+GetMetaFileW
+GetMetaRgn
+GetMiterLimit
+GetNearestColor
+GetNearestPaletteIndex = GetNearestPaletteIndexStub
+GetNumberOfPhysicalMonitors = NtGdiGetNumberOfPhysicalMonitors
+GetOPMInformation = NtGdiGetOPMInformation
+GetOPMRandomNumber = NtGdiGetOPMRandomNumber
+GetObjectA = GetObjectAStub
+GetObjectType = GetObjectTypeStub
+GetObjectW = GetObjectWStub
+GetOutlineTextMetricsA = GetOutlineTextMetricsAStub
+GetOutlineTextMetricsW
+GetPaletteEntries = GetPaletteEntriesStub
+GetPath
+GetPhysicalMonitorDescription = NtGdiGetPhysicalMonitorDescription
+GetPhysicalMonitors = NtGdiGetPhysicalMonitors
+GetPixel = GetPixelStub
+GetPixelFormat
+GetPolyFillMode
+GetProcessSessionFonts
+GetROP2 = GetROP2Stub
+GetRandomRgn
+GetRasterizerCaps = GetRasterizerCapsStub
+GetRegionData
+GetRelAbs
+GetRgnBox
+GetStockObject = GetStockObjectStub
+GetStretchBltMode
+GetStringBitmapA
+GetStringBitmapW = NtGdiGetStringBitmapW
+GetSuggestedOPMProtectedOutputArraySize = NtGdiGetSuggestedOPMProtectedOutputArraySize
+GetSystemPaletteEntries = GetSystemPaletteEntriesStub
+GetSystemPaletteUse
+GetTextAlign = GetTextAlignStub
+GetTextCharacterExtra = GetTextCharacterExtraStub
+GetTextCharset
+GetTextCharsetInfo = NtGdiGetTextCharsetInfo
+GetTextColor = GetTextColorStub
+GetTextExtentExPointA = GetTextExtentExPointAStub
+GetTextExtentExPointI = GetTextExtentExPointIStub
+GetTextExtentExPointW = GetTextExtentExPointWStub
+GetTextExtentExPointWPri
+GetTextExtentPoint32A = GetTextExtentPoint32AStub
+GetTextExtentPoint32W = GetTextExtentPoint32WStub
+GetTextExtentPointA = GetTextExtentPointAStub
+GetTextExtentPointI = GetTextExtentPointIStub
+GetTextExtentPointW = GetTextExtentPointWStub
+GetTextFaceA = GetTextFaceAStub
+GetTextFaceAliasW
+GetTextFaceW
+GetTextMetricsA
+GetTextMetricsW = GetTextMetricsWStub
+GetTransform
+GetViewportExtEx
+GetViewportOrgEx = GetViewportOrgExStub
+GetWinMetaFileBits
+GetWindowExtEx
+GetWindowOrgEx
+GetWorldTransform
+HT_Get8BPPFormatPalette = NtGdiHT_Get8BPPFormatPalette
+HT_Get8BPPMaskPalette = NtGdiHT_Get8BPPMaskPalette
+InternalDeleteDC
+InternalDeleteObject
+IntersectClipRect
+InvertRgn = InvertRgnStub
+IsValidEnhMetaRecord
+IsValidEnhMetaRecordOffExt
+LPtoDP = LPtoDPStub
+LineDDA
+LineTo
+LpkDrawTextEx = ext-ms-win-gdi-internal-desktop-l1-1-0.LpkDrawTextEx
+LpkEditControl
+LpkExtTextOut = ext-ms-win-gdi-internal-desktop-l1-1-0.LpkExtTextOut
+LpkGetCharacterPlacement = ext-ms-win-gdi-internal-desktop-l1-1-0.LpkGetCharacterPlacement
+LpkGetEditControl
+LpkGetTextExtentExPoint = ext-ms-win-gdi-internal-desktop-l1-1-0.LpkGetTextExtentExPoint
+LpkInitialize = ext-ms-win-gdi-internal-desktop-l1-1-0.LpkInitialize
+LpkPSMTextOut = ext-ms-win-gdi-internal-desktop-l1-1-0.LpkPSMTextOut
+LpkPresent = ext-ms-win-gdi-internal-desktop-l1-1-0.LpkPresent
+LpkTabbedTextOut = ext-ms-win-gdi-internal-desktop-l1-1-0.LpkTabbedTextOut
+LpkUseGDIWidthCache = ext-ms-win-gdi-internal-desktop-l1-1-0.LpkUseGDIWidthCache
+LpkpEditControlSize
+LpkpInitializeEditControl
+MaskBlt
+MirrorRgn
+ModerncoreCreateICW
+ModerncoreDeleteDC
+ModerncoreGdiInit
+ModifyWorldTransform
+MoveToEx
+NamedEscape
+OffsetClipRgn
+OffsetRgn
+OffsetViewportOrgEx
+OffsetWindowOrgEx
+PATHOBJ_bEnum = NtGdiPATHOBJ_bEnum
+PATHOBJ_bEnumClipLines = NtGdiPATHOBJ_bEnumClipLines
+PATHOBJ_vEnumStart = NtGdiPATHOBJ_vEnumStart
+PATHOBJ_vEnumStartClipLines = NtGdiPATHOBJ_vEnumStartClipLines
+PATHOBJ_vGetBounds = NtGdiPATHOBJ_vGetBounds
+PaintRgn
+PatBlt = PatBltStub
+PathToRegion
+Pie = PieStub
+PlayEnhMetaFile = PlayEnhMetaFileStub
+PlayEnhMetaFileRecord
+PlayMetaFile = PlayMetaFileStub
+PlayMetaFileRecord
+PlgBlt
+PolyBezier = PolyBezierStub
+PolyBezierTo
+PolyDraw
+PolyPatBlt
+PolyPolygon = PolyPolygonStub
+PolyPolyline
+PolyTextOutA
+PolyTextOutW
+Polygon = PolygonStub
+Polyline = PolylineStub
+PolylineTo
+PtInRegion
+PtVisible
+QueryFontAssocStatus
+RealizePalette = RealizePaletteStub
+RectInRegion
+RectVisible = RectVisibleStub
+Rectangle
+RemoveFontMemResourceEx
+RemoveFontResourceA = RemoveFontResourceAStub
+RemoveFontResourceExA
+RemoveFontResourceExW
+RemoveFontResourceTracking
+RemoveFontResourceW
+ResetDCA
+ResetDCW
+ResizePalette = ResizePaletteStub
+RestoreDC
+RoundRect = RoundRectStub
+STROBJ_bEnum = NtGdiSTROBJ_bEnum
+STROBJ_bEnumPositionsOnly = NtGdiSTROBJ_bEnumPositionsOnly
+STROBJ_bGetAdvanceWidths = NtGdiSTROBJ_bGetAdvanceWidths
+STROBJ_dwGetCodePage = NtGdiSTROBJ_dwGetCodePage
+STROBJ_vEnumStart = NtGdiSTROBJ_vEnumStart
+SaveDC
+ScaleRgn = NtGdiScaleRgn
+ScaleValues = NtGdiScaleValues
+ScaleViewportExtEx
+ScaleWindowExtEx
+ScriptApplyDigitSubstitution = ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptApplyDigitSubstitution
+ScriptApplyLogicalWidth = ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptApplyLogicalWidth
+ScriptBreak = ext-ms-win-usp10-l1-1-0.ScriptBreak
+ScriptCPtoX = ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptCPtoX
+ScriptCacheGetHeight = ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptCacheGetHeight
+ScriptFreeCache = ext-ms-win-usp10-l1-1-0.ScriptFreeCache
+ScriptGetCMap = ext-ms-win-usp10-l1-1-0.ScriptGetCMap
+ScriptGetFontAlternateGlyphs = ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptGetFontAlternateGlyphs
+ScriptGetFontFeatureTags = ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptGetFontFeatureTags
+ScriptGetFontLanguageTags = ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptGetFontLanguageTags
+ScriptGetFontProperties = ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptGetFontProperties
+ScriptGetFontScriptTags = ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptGetFontScriptTags
+ScriptGetGlyphABCWidth = ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptGetGlyphABCWidth
+ScriptGetLogicalWidths = ext-ms-win-usp10-l1-1-0.ScriptGetLogicalWidths
+ScriptGetProperties = ext-ms-win-usp10-l1-1-0.ScriptGetProperties
+ScriptIsComplex = ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptIsComplex
+ScriptItemize = ext-ms-win-usp10-l1-1-0.ScriptItemize
+ScriptItemizeOpenType = ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptItemizeOpenType
+ScriptJustify = ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptJustify
+ScriptLayout = ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptLayout
+ScriptPlace = ext-ms-win-usp10-l1-1-0.ScriptPlace
+ScriptPlaceOpenType = ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptPlaceOpenType
+ScriptPositionSingleGlyph = ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptPositionSingleGlyph
+ScriptRecordDigitSubstitution = ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptRecordDigitSubstitution
+ScriptShape = ext-ms-win-usp10-l1-1-0.ScriptShape
+ScriptShapeOpenType = ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptShapeOpenType
+ScriptStringAnalyse = ext-ms-win-usp10-l1-1-0.ScriptStringAnalyse
+ScriptStringCPtoX = ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptStringCPtoX
+ScriptStringFree = ext-ms-win-usp10-l1-1-0.ScriptStringFree
+ScriptStringGetLogicalWidths = ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptStringGetLogicalWidths
+ScriptStringGetOrder = ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptStringGetOrder
+ScriptStringOut = ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptStringOut
+ScriptStringValidate = ext-ms-win-usp10-l1-1-0.ScriptStringValidate
+ScriptStringXtoCP = ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptStringXtoCP
+ScriptString_pLogAttr = ext-ms-win-usp10-l1-1-0.ScriptString_pLogAttr
+ScriptString_pSize = ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptString_pSize
+ScriptString_pcOutChars = ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptString_pcOutChars
+ScriptSubstituteSingleGlyph = ext-ms-win-usp10-l1-1-0.ScriptSubstituteSingleGlyph
+ScriptTextOut = ext-ms-win-usp10-l1-1-0.ScriptTextOut
+ScriptXtoCP = ext-ms-win-gdi-internal-desktop-l1-1-0.ScriptXtoCP
+SelectBrushLocal
+SelectClipPath
+SelectClipRgn
+SelectFontLocal
+SelectObject
+SelectPalette = SelectPaletteStub
+SetAbortProc
+SetArcDirection
+SetBitmapAttributes
+SetBitmapBits = SetBitmapBitsStub
+SetBitmapDimensionEx
+SetBkColor = SetBkColorStub
+SetBkMode
+SetBoundsRect
+SetBrushAttributes
+SetBrushOrgEx
+SetColorAdjustment
+SetColorSpace
+SetDCBrushColor
+SetDCPenColor
+SetDIBColorTable
+SetDIBits = SetDIBitsStub
+SetDIBitsToDevice = SetDIBitsToDeviceStub
+SetDeviceGammaRamp
+SetEnhMetaFileBits
+SetFontEnumeration
+SetGraphicsMode
+SetICMMode
+SetICMProfileA
+SetICMProfileW
+SetLayout
+SetLayoutWidth
+SetMagicColors = NtGdiSetMagicColors
+SetMapMode = SetMapModeStub
+SetMapperFlags
+SetMetaFileBitsEx = SetMetaFileBitsExStub
+SetMetaRgn
+SetMiterLimit
+SetOPMSigningKeyAndSequenceNumbers = NtGdiSetOPMSigningKeyAndSequenceNumbers
+SetPaletteEntries = SetPaletteEntriesStub
+SetPixel = SetPixelStub
+SetPixelFormat
+SetPixelV
+SetPolyFillMode
+SetROP2 = SetROP2Stub
+SetRectRgn
+SetRelAbs
+SetStretchBltMode
+SetSystemPaletteUse
+SetTextAlign
+SetTextCharacterExtra
+SetTextColor
+SetTextJustification
+SetViewportExtEx = SetViewportExtExStub
+SetViewportOrgEx = SetViewportOrgExStub
+SetVirtualResolution
+SetWinMetaFileBits
+SetWindowExtEx = SetWindowExtExStub
+SetWindowOrgEx = SetWindowOrgExStub
+SetWorldTransform
+StartDocA = StartDocAStub
+StartDocW
+StartFormPage
+StartPage
+StretchBlt = StretchBltStub
+StretchDIBits
+StrokeAndFillPath
+StrokePath
+SwapBuffers
+TextOutA = TextOutAStub
+TextOutW
+TranslateCharsetInfo = TranslateCharsetInfoStub
+UnloadNetworkFonts
+UnrealizeObject = UnrealizeObjectStub
+UpdateColors = UpdateColorsStub
+UpdateICMRegKeyA
+UpdateICMRegKeyW
+UspAllocCache = ext-ms-win-gdi-internal-desktop-l1-1-0.UspAllocCache
+UspAllocTemp = ext-ms-win-gdi-internal-desktop-l1-1-0.UspAllocTemp
+UspFreeMem = ext-ms-win-gdi-internal-desktop-l1-1-0.UspFreeMem
+WidenPath
+XFORMOBJ_bApplyXform = NtGdiXFORMOBJ_bApplyXform
+XFORMOBJ_iGetXform = NtGdiXFORMOBJ_iGetXform
+XLATEOBJ_cGetPalette = NtGdiXLATEOBJ_cGetPalette
+XLATEOBJ_hGetColorTransform = NtGdiXLATEOBJ_hGetColorTransform
+XLATEOBJ_iXlate = NtGdiXLATEOBJ_iXlate
+XLATEOBJ_piVector
+bCreateDCW
+bDeleteLDC
+bInitSystemAndFontsDirectoriesW
+bMakePathNameW
+cGetTTFFromFOT
+fpClosePrinter
+ftsWordBreak = ext-ms-win-gdi-internal-desktop-l1-1-0.ftsWordBreak
+gCookie
+gMaxGdiHandleCount
+gW32PID
+g_systemCallFilterId
+gdiPlaySpoolStream
+ghICM
+hGetPEBHandle
+pGdiDevCaps
+pGdiSharedHandleTable
+pGdiSharedMemory
+pldcGet
+vSetPldc
+DrvQueryMonitorUniqueness @1016 NONAME
+DrvQueryPrivateDisplayChangeUniqueness @1015 NONAME
+DwmGenerateMoveData @1013 NONAME
+DwmHLSurfCloseCompositorRef @1010 NONAME
+DwmHLSurfOpenCompositorRef @1009 NONAME
+DwmGetDirtyRgn @1008 NONAME
+DwmHLSurfGetDirtyRgn @1007 NONAME
+DwmGetRedirectionStyle @1006 NONAME
+DwmQueryCompositionId @1005 NONAME
+DrvQueryAdapterPopulationUniqueness @1004 NONAME
+DwmGetSurfaceData @1003 NONAME
+DwmHLsurfSetUpdatedId @1002 NONAME
+DwmHLsurfSetPresentFlags @1001 NONAME
+DwmHLSurfSetSignalOnDirty @1000 NONAME

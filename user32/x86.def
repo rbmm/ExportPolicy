@@ -1,0 +1,1159 @@
+EXPORTS
+
+ActivateKeyboardLayout = ActivateKeyboardLayoutStub
+AddClipboardFormatListener = AddClipboardFormatListenerStub
+AddVisualIdentifier = NtUserAddVisualIdentifier
+AdjustWindowRect
+AdjustWindowRectEx
+AdjustWindowRectExForDpi
+AlignRects
+AllowForegroundActivation
+AllowSetForegroundWindow
+AnimateWindow
+AnyPopup
+AppendMenuA
+AppendMenuW
+AreDpiAwarenessContextsEqual
+ArrangeIconicWindows
+AttachThreadInput = NtUserAttachThreadInput
+BeginDeferWindowPos
+BeginPaint = NtUserBeginPaint
+BlockInput = NtUserBlockInput
+BringWindowToTop
+BroadcastSystemMessage = BroadcastSystemMessageA
+BroadcastSystemMessageA
+BroadcastSystemMessageExA
+BroadcastSystemMessageExW
+BroadcastSystemMessageW
+BuildReasonArray
+CalcMenuBar = NtUserCalcMenuBar
+CalculatePopupWindowPosition = NtUserCalculatePopupWindowPosition
+CallMsgFilter = CallMsgFilterA
+CallMsgFilterA
+CallMsgFilterW
+CallNextHookEx
+CallWindowProcA
+CallWindowProcW
+CancelShutdown
+CascadeChildWindows
+CascadeWindows
+ChangeClipboardChain = ChangeClipboardChainStub
+ChangeDisplaySettingsA
+ChangeDisplaySettingsExA
+ChangeDisplaySettingsExW
+ChangeDisplaySettingsW
+ChangeMenuA
+ChangeMenuW
+ChangeWindowMessageFilter
+ChangeWindowMessageFilterEx = NtUserChangeWindowMessageFilterEx
+CharLowerA = CharLowerAStub
+CharLowerBuffA = CharLowerBuffAStub
+CharLowerBuffW = CharLowerBuffWStub
+CharLowerW = CharLowerWStub
+CharNextA = CharNextAStub
+CharNextExA = CharNextExAStub
+CharNextW = CharNextWStub
+CharPrevA = CharPrevAStub
+CharPrevExA = CharPrevExAStub
+CharPrevW = CharPrevWStub
+CharToOemA
+CharToOemBuffA
+CharToOemBuffW
+CharToOemW
+CharUpperA = CharUpperAStub
+CharUpperBuffA = CharUpperBuffAStub
+CharUpperBuffW = CharUpperBuffWStub
+CharUpperW = CharUpperWStub
+CheckBannedOneCoreTransformApi
+CheckDBCSEnabledExt
+CheckDlgButton
+CheckMenuItem
+CheckMenuRadioItem
+CheckProcessForClipboardAccess = NtUserCheckProcessForClipboardAccess
+CheckProcessSession = NtUserCheckProcessSession
+CheckRadioButton
+CheckWindowThreadDesktop = NtUserCheckWindowThreadDesktop
+ChildWindowFromPoint
+ChildWindowFromPointEx = NtUserChildWindowFromPointEx
+CliImmSetHotKey
+ClientThreadSetup
+ClientToScreen
+ClipCursor = NtUserClipCursor
+CloseClipboard = CloseClipboardStub
+CloseDesktop = NtUserCloseDesktop
+CloseGestureInfoHandle
+CloseTouchInputHandle
+CloseWindow
+CloseWindowStation = NtUserCloseWindowStation
+ConsoleControl
+ControlMagnification = NtUserMagControl
+CopyAcceleratorTableA
+CopyAcceleratorTableW = NtUserCopyAcceleratorTable
+CopyIcon
+CopyImage
+CopyRect
+CountClipboardFormats = CountClipboardFormatsStub
+CreateAcceleratorTableA
+CreateAcceleratorTableW = NtUserCreateAcceleratorTable
+CreateCaret = CreateCaretStub
+CreateCursor
+CreateDCompositionHwndTarget = NtUserCreateDCompositionHwndTarget
+CreateDesktopA
+CreateDesktopExA
+CreateDesktopExW
+CreateDesktopW
+CreateDialogIndirectParamA
+CreateDialogIndirectParamAorW
+CreateDialogIndirectParamW
+CreateDialogParamA
+CreateDialogParamW
+CreateIcon
+CreateIconFromResource
+CreateIconFromResourceEx
+CreateIconIndirect
+CreateMDIWindowA
+CreateMDIWindowW
+CreateMenu
+CreatePopupMenu
+CreateSyntheticPointerDevice
+CreateSystemThreads
+CreateWindowExA
+CreateWindowExW
+CreateWindowInBand
+CreateWindowInBandEx
+CreateWindowIndirect
+CreateWindowStationA
+CreateWindowStationW
+CsrBroadcastSystemMessageExW
+CtxInitUser32
+DdeAbandonTransaction
+DdeAccessData
+DdeAddData
+DdeClientTransaction
+DdeCmpStringHandles
+DdeConnect
+DdeConnectList
+DdeCreateDataHandle
+DdeCreateStringHandleA
+DdeCreateStringHandleW
+DdeDisconnect
+DdeDisconnectList
+DdeEnableCallback
+DdeFreeDataHandle
+DdeFreeStringHandle
+DdeGetData
+DdeGetLastError
+DdeGetQualityOfService
+DdeImpersonateClient
+DdeInitializeA
+DdeInitializeW
+DdeKeepStringHandle
+DdeNameService
+DdePostAdvise
+DdeQueryConvInfo
+DdeQueryNextServer
+DdeQueryStringA
+DdeQueryStringW
+DdeReconnect
+DdeSetQualityOfService
+DdeSetUserHandle
+DdeUnaccessData
+DdeUninitialize
+DefDlgProcA = NTDLL.NtdllDialogWndProc_A
+DefDlgProcW = NTDLL.NtdllDialogWndProc_W
+DefFrameProcA
+DefFrameProcW
+DefMDIChildProcA
+DefMDIChildProcW
+DefRawInputProc
+DefWindowProcA = NTDLL.NtdllDefWindowProc_A
+DefWindowProcW = NTDLL.NtdllDefWindowProc_W
+DeferWindowPos
+DeferWindowPosAndBand
+DelegateInput = NtUserDelegateInput
+DeleteMenu = NtUserDeleteMenu
+DeregisterShellHookWindow
+DestroyAcceleratorTable
+DestroyCaret
+DestroyCursor
+DestroyDCompositionHwndTarget = NtUserDestroyDCompositionHwndTarget
+DestroyIcon = DestroyCursor
+DestroyMenu = NtUserDestroyMenu
+DestroyReasons
+DestroySyntheticPointerDevice = NtUserRemoveInjectionDevice
+DestroyWindow = NtUserDestroyWindow
+DialogBoxIndirectParamA
+DialogBoxIndirectParamAorW
+DialogBoxIndirectParamW
+DialogBoxParamA
+DialogBoxParamW
+DisableProcessWindowsGhosting
+DispatchMessageA
+DispatchMessageW
+DisplayConfigGetDeviceInfo
+DisplayConfigSetDeviceInfo
+DisplayExitWindowsWarnings
+DlgDirListA
+DlgDirListComboBoxA
+DlgDirListComboBoxW
+DlgDirListW
+DlgDirSelectComboBoxExA
+DlgDirSelectComboBoxExW
+DlgDirSelectExA
+DlgDirSelectExW
+DoSoundConnect = NtUserDoSoundConnect
+DoSoundDisconnect = NtUserDoSoundDisconnect
+DragDetect = NtUserDragDetect
+DragObject = NtUserDragObject
+DrawAnimatedRects = NtUserDrawAnimatedRects
+DrawCaption
+DrawCaptionTempA
+DrawCaptionTempW
+DrawEdge
+DrawFocusRect
+DrawFrame
+DrawFrameControl
+DrawIcon
+DrawIconEx
+DrawMenuBar
+DrawMenuBarTemp
+DrawStateA
+DrawStateW
+DrawTextA
+DrawTextExA
+DrawTextExW
+DrawTextW
+DwmGetDxRgn
+DwmGetDxSharedSurface
+DwmGetRemoteSessionOcclusionEvent = NtUserDwmGetRemoteSessionOcclusionEvent
+DwmGetRemoteSessionOcclusionState = NtUserDwmGetRemoteSessionOcclusionState
+DwmKernelShutdown = NtUserDwmKernelShutdown
+DwmKernelStartup = NtUserDwmKernelStartup
+DwmLockScreenUpdates
+DwmValidateWindow = NtUserDwmValidateWindow
+EditWndProc
+EmptyClipboard = EmptyClipboardStub
+EnableMenuItem
+EnableMouseInPointer = NtUserEnableMouseInPointer
+EnableNonClientDpiScaling = NtUserEnableNonClientDpiScaling
+EnableOneCoreTransformMode = NtEnableOneCoreTransformMode
+EnableScrollBar
+EnableSessionForMMCSS
+EnableWindow
+EndDeferWindowPos
+EndDeferWindowPosEx = NtUserEndDeferWindowPosEx
+EndDialog
+EndMenu = NtUserEndMenu
+EndPaint = NtUserEndPaint
+EndTask
+EnterReaderModeHelper
+EnumChildWindows
+EnumClipboardFormats
+EnumDesktopWindows
+EnumDesktopsA
+EnumDesktopsW
+EnumDisplayDevicesA
+EnumDisplayDevicesW
+EnumDisplayMonitors = NtUserEnumDisplayMonitors
+EnumDisplaySettingsA
+EnumDisplaySettingsExA
+EnumDisplaySettingsExW
+EnumDisplaySettingsW
+EnumPropsA
+EnumPropsExA
+EnumPropsExW
+EnumPropsW
+EnumThreadWindows
+EnumWindowStationsA
+EnumWindowStationsW
+EnumWindows
+EqualRect
+EvaluateProximityToPolygon
+EvaluateProximityToRect
+ExcludeUpdateRgn = NtUserExcludeUpdateRgn
+ExitWindowsEx
+FillRect
+FindWindowA
+FindWindowExA
+FindWindowExW
+FindWindowW
+FlashWindow
+FlashWindowEx = NtUserFlashWindowEx
+FrameRect
+FreeDDElParam
+FrostCrashedWindow = NtUserFrostCrashedWindow
+GetActiveWindow
+GetAltTabInfo = GetAltTabInfoA
+GetAltTabInfoA
+GetAltTabInfoW
+GetAncestor = NtUserGetAncestor
+GetAppCompatFlags
+GetAppCompatFlags2
+GetAsyncKeyState
+GetAutoRotationState = NtUserGetAutoRotationState
+GetAwarenessFromDpiAwarenessContext
+GetCIMSSM = NtUserGetCIMSSM
+GetCapture
+GetCaretBlinkTime = NtUserGetCaretBlinkTime
+GetCaretPos = NtUserGetCaretPos
+GetClassInfoA
+GetClassInfoExA
+GetClassInfoExW
+GetClassInfoW
+GetClassLongA
+GetClassLongW
+GetClassNameA
+GetClassNameW
+GetClassWord
+GetClientRect
+GetClipCursor = NtUserGetClipCursor
+GetClipboardAccessToken = NtUserGetClipboardAccessToken
+GetClipboardData
+GetClipboardFormatNameA
+GetClipboardFormatNameW
+GetClipboardMetadata = NtUserGetClipboardMetadata
+GetClipboardOwner = GetClipboardOwnerStub
+GetClipboardSequenceNumber = GetClipboardSequenceNumberStub
+GetClipboardViewer = GetClipboardViewerStub
+GetComboBoxInfo = NtUserGetComboBoxInfo
+GetCurrentInputMessageSource = NtUserGetCurrentInputMessageSource
+GetCursor = NtUserGetCursor
+GetCursorFrameInfo
+GetCursorInfo = NtUserGetCursorInfo
+GetCursorPos
+GetDC
+GetDCEx = NtUserGetDCEx
+GetDCompositionHwndBitmap = NtUserGetDCompositionHwndBitmap
+GetDesktopID = NtUserGetDesktopID
+GetDesktopWindow = GetCurrentThreadDesktopHwnd
+GetDialogBaseUnits
+GetDialogControlDpiChangeBehavior
+GetDialogDpiChangeBehavior
+GetDisplayAutoRotationPreferences = NtUserGetDisplayAutoRotationPreferences
+GetDisplayConfigBufferSizes
+GetDlgCtrlID
+GetDlgItem
+GetDlgItemInt
+GetDlgItemTextA
+GetDlgItemTextW
+GetDoubleClickTime = NtUserGetDoubleClickTime
+GetDpiAwarenessContextForProcess
+GetDpiForMonitorInternal
+GetDpiForSystem
+GetDpiForWindow
+GetDpiFromDpiAwarenessContext
+GetExtendedPointerDeviceProperty = NtUserGetExtendedPointerDeviceProperty
+GetFocus
+GetForegroundWindow = NtUserGetForegroundWindow
+GetGUIThreadInfo = NtUserGetGUIThreadInfo
+GetGestureConfig = NtUserGetGestureConfig
+GetGestureExtraArgs
+GetGestureInfo
+GetGuiResources = NtUserGetGuiResources
+GetIconInfo
+GetIconInfoExA
+GetIconInfoExW
+GetInputDesktop
+GetInputLocaleInfo = NtUserGetInputLocaleInfo
+GetInputState
+GetInternalWindowPos = NtUserGetInternalWindowPos
+GetKBCodePage
+GetKeyNameTextA
+GetKeyNameTextW
+GetKeyState
+GetKeyboardLayout
+GetKeyboardLayoutList = NtUserGetKeyboardLayoutList
+GetKeyboardLayoutNameA
+GetKeyboardLayoutNameW
+GetKeyboardState = NtUserGetKeyboardState
+GetKeyboardType
+GetLastActivePopup
+GetLastInputInfo
+GetLayeredWindowAttributes = NtUserGetLayeredWindowAttributes
+GetListBoxInfo = NtUserGetListBoxInfo
+GetMagnificationDesktopColorEffect
+GetMagnificationDesktopMagnification
+GetMagnificationDesktopSamplingMode
+GetMagnificationLensCtxInformation = NtUserMagGetContextInformation
+GetMenu
+GetMenuBarInfo = NtUserGetMenuBarInfo
+GetMenuCheckMarkDimensions
+GetMenuContextHelpId
+GetMenuDefaultItem
+GetMenuInfo
+GetMenuItemCount
+GetMenuItemID
+GetMenuItemInfoA
+GetMenuItemInfoW
+GetMenuItemRect = NtUserGetMenuItemRect
+GetMenuState
+GetMenuStringA
+GetMenuStringW
+GetMessageA
+GetMessageExtraInfo
+GetMessagePos
+GetMessageTime
+GetMessageW
+GetMonitorInfoA
+GetMonitorInfoW
+GetMouseMovePointsEx = NtUserGetMouseMovePointsEx
+GetNextDlgGroupItem
+GetNextDlgTabItem
+GetOpenClipboardWindow = GetOpenClipboardWindowStub
+GetParent
+GetPhysicalCursorPos = GetCursorPos
+GetPointerCursorId = NtUserGetPointerCursorId
+GetPointerDevice = NtUserGetPointerDevice
+GetPointerDeviceCursors = NtUserGetPointerDeviceCursors
+GetPointerDeviceInputSpace = NtUserGetPointerDeviceInputSpace
+GetPointerDeviceOrientation = NtUserGetPointerDeviceOrientation
+GetPointerDeviceProperties = NtUserGetPointerDeviceProperties
+GetPointerDeviceRects = NtUserGetPointerDeviceRects
+GetPointerDevices = NtUserGetPointerDevices
+GetPointerFrameArrivalTimes
+GetPointerFrameInfo
+GetPointerFrameInfoHistory
+GetPointerFramePenInfo
+GetPointerFramePenInfoHistory
+GetPointerFrameTimes = NtUserGetPointerFrameTimes
+GetPointerFrameTouchInfo
+GetPointerFrameTouchInfoHistory
+GetPointerInfo
+GetPointerInfoHistory
+GetPointerInputTransform = NtUserGetPointerInputTransform
+GetPointerPenInfo
+GetPointerPenInfoHistory
+GetPointerTouchInfo
+GetPointerTouchInfoHistory
+GetPointerType = NtUserGetPointerType
+GetPriorityClipboardFormat = GetPriorityClipboardFormatStub
+GetProcessDefaultLayout
+GetProcessDpiAwarenessInternal
+GetProcessUIContextInformation = NtUserGetProcessUIContextInformation
+GetProcessWindowStation = NtUserGetProcessWindowStation
+GetProgmanWindow
+GetPropA
+GetPropW
+GetQueueStatus
+GetRawInputBuffer
+GetRawInputData = NtUserGetRawInputData
+GetRawInputDeviceInfoA
+GetRawInputDeviceInfoW
+GetRawInputDeviceList = NtUserGetRawInputDeviceList
+GetRawPointerDeviceData = NtUserGetRawPointerDeviceData
+GetReasonTitleFromReasonCode
+GetRegisteredRawInputDevices = NtUserGetRegisteredRawInputDevices
+GetScrollBarInfo = NtUserGetScrollBarInfo
+GetScrollInfo
+GetScrollPos
+GetScrollRange
+GetSendMessageReceiver
+GetShellChangeNotifyWindow
+GetShellWindow
+GetSubMenu
+GetSysColor
+GetSysColorBrush
+GetSystemDpiForProcess = NtUserGetSystemDpiForProcess
+GetSystemMenu = NtUserGetSystemMenu
+GetSystemMetrics
+GetSystemMetricsForDpi
+GetTabbedTextExtentA
+GetTabbedTextExtentW
+GetTaskmanWindow
+GetThreadDesktop = NtUserGetThreadDesktop
+GetThreadDpiAwarenessContext
+GetThreadDpiHostingBehavior
+GetTitleBarInfo = NtUserGetTitleBarInfo
+GetTopLevelWindow = NtUserGetTopLevelWindow
+GetTopWindow
+GetTouchInputInfo
+GetUnpredictedMessagePos
+GetUpdateRect
+GetUpdateRgn
+GetUpdatedClipboardFormats = GetUpdatedClipboardFormatsStub
+GetUserObjectInformationA
+GetUserObjectInformationW = NtUserGetObjectInformation
+GetUserObjectSecurity
+GetWinStationInfo
+GetWindow
+GetWindowBand = NtUserGetWindowBand
+GetWindowCompositionAttribute = NtUserGetWindowCompositionAttribute
+GetWindowCompositionInfo = NtUserGetWindowCompositionInfo
+GetWindowContextHelpId
+GetWindowDC = NtUserGetWindowDC
+GetWindowDisplayAffinity = NtUserGetWindowDisplayAffinity
+GetWindowDpiAwarenessContext
+GetWindowDpiHostingBehavior
+GetWindowFeedbackSetting = NtUserGetWindowFeedbackSetting
+GetWindowInfo
+GetWindowLongA
+GetWindowLongW
+GetWindowMinimizeRect = NtUserGetWindowMinimizeRect
+GetWindowModuleFileName = GetWindowModuleFileNameA
+GetWindowModuleFileNameA
+GetWindowModuleFileNameW
+GetWindowPlacement = NtUserGetWindowPlacement
+GetWindowProcessHandle = NtUserGetWindowProcessHandle
+GetWindowRect
+GetWindowRgn
+GetWindowRgnBox
+GetWindowRgnEx = NtUserGetWindowRgnEx
+GetWindowTextA
+GetWindowTextLengthA
+GetWindowTextLengthW
+GetWindowTextW
+GetWindowThreadProcessId
+GetWindowWord
+GhostWindowFromHungWindow = NtUserGhostWindowFromHungWindow
+GrayStringA
+GrayStringW
+HandleDelegatedInput = NtUserHandleDelegatedInput
+HideCaret = HideCaretStub
+HiliteMenuItem = NtUserHiliteMenuItem
+HungWindowFromGhostWindow = NtUserHungWindowFromGhostWindow
+IMPGetIMEA
+IMPGetIMEW
+IMPQueryIMEA
+IMPQueryIMEW
+IMPSetIMEA
+IMPSetIMEW
+ImpersonateDdeClientWindow = NtUserImpersonateDdeClientWindow
+InSendMessage
+InSendMessageEx
+InflateRect
+InheritWindowMonitor = NtUserInheritWindowMonitor
+InitDManipHook
+InitializeGenericHidInjection = NtUserInitializeGenericHidInjection
+InitializeInputDeviceInjection = NtUserInitializeInputDeviceInjection
+InitializeLpkHooks
+InitializePointerDeviceInjection = NtUserInitializePointerDeviceInjection
+InitializePointerDeviceInjectionEx = NtUserInitializePointerDeviceInjectionEx
+InitializeTouchInjection = NtUserInitializeTouchInjection
+InjectDeviceInput = NtUserInjectDeviceInput
+InjectGenericHidInput = NtUserInjectGenericHidInput
+InjectKeyboardInput = NtUserInjectKeyboardInput
+InjectMouseInput = NtUserInjectMouseInput
+InjectPointerInput = NtUserInjectPointerInput
+InjectSyntheticPointerInput = NtUserInjectPointerInput
+InjectTouchInput = NtUserInjectTouchInput
+InputSpaceRegionFromPoint = NtInputSpaceRegionFromPoint
+InsertMenuA
+InsertMenuItemA
+InsertMenuItemW
+InsertMenuW
+InternalGetWindowIcon
+InternalGetWindowText
+IntersectRect
+InvalidateRect = NtUserInvalidateRect
+InvalidateRgn = NtUserInvalidateRgn
+InvertRect
+IsCharAlphaA = IsCharAlphaAStub
+IsCharAlphaNumericA = IsCharAlphaNumericAStub
+IsCharAlphaNumericW = IsCharAlphaNumericWStub
+IsCharAlphaW = IsCharAlphaWStub
+IsCharLowerA = IsCharLowerAStub
+IsCharLowerW = IsCharLowerWStub
+IsCharUpperA = IsCharUpperAStub
+IsCharUpperW = IsCharUpperWStub
+IsChild
+IsClipboardFormatAvailable = IsClipboardFormatAvailableStub
+IsDialogMessage = IsDialogMessageA
+IsDialogMessageA
+IsDialogMessageW
+IsDlgButtonChecked
+IsGUIThread
+IsHungAppWindow
+IsIconic
+IsImmersiveProcess
+IsInDesktopWindowBand
+IsMenu
+IsMouseInPointerEnabled = NtUserIsMouseInPointerEnabled
+IsOneCoreTransformMode = NtIsOneCoreTransformMode
+IsProcessDPIAware
+IsRectEmpty
+IsSETEnabled
+IsServerSideWindow
+IsThreadDesktopComposited
+IsThreadMessageQueueAttached
+IsThreadTSFEventAware
+IsTopLevelWindow = NtUserIsTopLevelWindow
+IsTouchWindow = NtUserIsTouchWindow
+IsValidDpiAwarenessContext
+IsWinEventHookInstalled
+IsWindow
+IsWindowArranged
+IsWindowEnabled
+IsWindowInDestroy
+IsWindowRedirectedForPrint
+IsWindowUnicode
+IsWindowVisible
+IsWow64Message
+IsZoomed
+KillTimer = NtUserKillTimer
+LoadAcceleratorsA
+LoadAcceleratorsW
+LoadBitmapA
+LoadBitmapW
+LoadCursorA
+LoadCursorFromFileA
+LoadCursorFromFileW
+LoadCursorW
+LoadIconA
+LoadIconW
+LoadImageA
+LoadImageW
+LoadKeyboardLayoutA
+LoadKeyboardLayoutEx
+LoadKeyboardLayoutW
+LoadLocalFonts
+LoadMenuA
+LoadMenuIndirectA = CreateMenuFromResource
+LoadMenuIndirectW = CreateMenuFromResource
+LoadMenuW
+LoadRemoteFonts
+LoadStringA
+LoadStringW
+LockSetForegroundWindow
+LockWindowStation = NtUserLockWindowStation
+LockWindowUpdate = NtUserLockWindowUpdate
+LockWorkStation = NtUserLockWorkStation
+LogicalToPhysicalPoint = NtUserLogicalToPhysicalPoint
+LogicalToPhysicalPointForPerMonitorDPI = NtUserLogicalToPerMonitorDPIPhysicalPoint
+LookupIconIdFromDirectory
+LookupIconIdFromDirectoryEx
+MBToWCSEx
+MBToWCSExt
+MB_GetString
+MITGetCursorUpdateHandle
+MITSetLastInputRecipient
+MITSynthesizeTouchInput
+MakeThreadTSFEventAware
+MapDialogRect
+MapPointsByVisualIdentifier = NtUserMapPointsByVisualIdentifier
+MapVirtualKeyA
+MapVirtualKeyExA
+MapVirtualKeyExW
+MapVirtualKeyW
+MapVisualRelativePoints = NtMapVisualRelativePoints
+MapWindowPoints
+MenuItemFromPoint = NtUserMenuItemFromPoint
+MenuWindowProcA
+MenuWindowProcW
+MessageBeep
+MessageBoxA
+MessageBoxExA
+MessageBoxExW
+MessageBoxIndirectA
+MessageBoxIndirectW
+MessageBoxTimeoutA
+MessageBoxTimeoutW
+MessageBoxW
+ModifyMenuA
+ModifyMenuW
+MonitorFromPoint
+MonitorFromRect
+MonitorFromWindow
+MoveWindow = NtUserMoveWindow
+MsgWaitForMultipleObjects
+MsgWaitForMultipleObjectsEx
+NotifyOverlayWindow
+NotifyWinEvent
+OemKeyScan
+OemToCharA
+OemToCharBuffA
+OemToCharBuffW
+OemToCharW
+OffsetRect
+OpenClipboard
+OpenDesktopA
+OpenDesktopW
+OpenIcon
+OpenInputDesktop = NtUserOpenInputDesktop
+OpenThreadDesktop = NtUserOpenThreadDesktop
+OpenWindowStationA
+OpenWindowStationW
+PackDDElParam
+PackTouchHitTestingProximityEvaluation
+PaintDesktop
+PaintMenuBar = NtUserPaintMenuBar
+PaintMonitor = NtUserPaintMonitor
+PeekMessageA
+PeekMessageW
+PhysicalToLogicalPoint = NtUserPhysicalToLogicalPoint
+PhysicalToLogicalPointForPerMonitorDPI = NtUserPerMonitorDPIPhysicalToLogicalPoint
+PostMessageA
+PostMessageW
+PostQuitMessage
+PostThreadMessageA
+PostThreadMessageW
+PrintWindow = NtUserPrintWindow
+PrivateExtractIconExA
+PrivateExtractIconExW
+PrivateExtractIconsA
+PrivateExtractIconsW
+PrivateRegisterICSProc
+PtInRect
+QueryBSDRWindow = NtUserQueryBSDRWindow
+QueryDisplayConfig
+QuerySendMessage = NtUserQuerySendMessage
+RIMAddInputObserver = NtRIMAddInputObserver
+RIMAreSiblingDevices = NtRIMAreSiblingDevices
+RIMDeviceIoControl = NtRIMDeviceIoControl
+RIMEnableMonitorMappingForDevice = NtRIMEnableMonitorMappingForDevice
+RIMFreeInputBuffer = NtRIMFreeInputBuffer
+RIMGetDevicePreparsedData = NtRIMGetDevicePreparsedData
+RIMGetDevicePreparsedDataLockfree = NtRIMGetDevicePreparsedDataLockfree
+RIMGetDeviceProperties = NtRIMGetDeviceProperties
+RIMGetDevicePropertiesLockfree = NtRIMGetDevicePropertiesLockfree
+RIMGetPhysicalDeviceRect = NtRIMGetPhysicalDeviceRect
+RIMGetSourceProcessId = NtRIMGetSourceProcessId
+RIMObserveNextInput = NtRIMObserveNextInput
+RIMOnAsyncPnpWorkNotification = NtRIMOnAsyncPnpWorkNotification
+RIMOnPnpNotification = NtRIMOnPnpNotification
+RIMOnTimerNotification = NtRIMOnTimerNotification
+RIMQueryDevicePath = NtRIMQueryDevicePath
+RIMReadInput = NtRIMReadInput
+RIMRegisterForInput
+RIMRegisterForInputEx = NtRIMRegisterForInputEx
+RIMRemoveInputObserver = NtRIMRemoveInputObserver
+RIMSetExtendedDeviceProperty = NtRIMSetExtendedDeviceProperty
+RIMSetTestModeStatus = NtRIMSetTestModeStatus
+RIMUnregisterForInput = NtRIMUnregisterForInput
+RIMUpdateInputObserverRegistration = NtRIMUpdateInputObserverRegistration
+RealChildWindowFromPoint = NtUserRealChildWindowFromPoint
+RealGetWindowClass = RealGetWindowClassA
+RealGetWindowClassA
+RealGetWindowClassW
+ReasonCodeNeedsBugID
+ReasonCodeNeedsComment
+RecordShutdownReason
+RedrawWindow = NtUserRedrawWindow
+RegisterBSDRWindow = NtUserRegisterBSDRWindow
+RegisterClassA
+RegisterClassExA
+RegisterClassExW
+RegisterClassW
+RegisterClipboardFormatA = RegisterWindowMessageA
+RegisterClipboardFormatW = RegisterWindowMessageW
+RegisterDManipHook = NtUserRegisterDManipHook
+RegisterDeviceNotificationA
+RegisterDeviceNotificationW
+RegisterErrorReportingDialog = NtUserRegisterErrorReportingDialog
+RegisterForCustomDockTargets = NtUserRegisterForCustomDockTargets
+RegisterForTooltipDismissNotification = NtUserRegisterForTooltipDismissNotification
+RegisterFrostWindow
+RegisterGhostWindow
+RegisterHotKey = NtUserRegisterHotKey
+RegisterLogonProcess
+RegisterMessagePumpHook
+RegisterPointerDeviceNotifications = NtUserRegisterPointerDeviceNotifications
+RegisterPointerInputTarget
+RegisterPointerInputTargetEx
+RegisterPowerSettingNotification
+RegisterRawInputDevices = NtUserRegisterRawInputDevices
+RegisterServicesProcess = NtUserRegisterServicesProcess
+RegisterSessionPort = NtUserRegisterSessionPort
+RegisterShellHookWindow
+RegisterSuspendResumeNotification
+RegisterSystemThread
+RegisterTasklist = NtUserRegisterTasklist
+RegisterTouchHitTestingWindow = NtUserRegisterTouchHitTestingWindow
+RegisterTouchWindow
+RegisterUserApiHook
+RegisterWindowMessageA
+RegisterWindowMessageW
+ReleaseCapture
+ReleaseDC
+ReleaseDwmHitTestWaiters = NtUserReleaseDwmHitTestWaiters
+RemoveClipboardFormatListener = RemoveClipboardFormatListenerStub
+RemoveInjectionDevice = NtUserRemoveInjectionDevice
+RemoveMenu = NtUserRemoveMenu
+RemovePropA
+RemovePropW
+RemoveThreadTSFEventAwareness
+RemoveVisualIdentifier = NtUserRemoveVisualIdentifier
+ReplyMessage
+ReportInertia
+ResolveDesktopForWOW = NtUserResolveDesktopForWOW
+ReuseDDElParam
+ScreenToClient
+ScrollChildren
+ScrollDC
+ScrollWindow
+ScrollWindowEx
+SendDlgItemMessageA
+SendDlgItemMessageW
+SendIMEMessageExA
+SendIMEMessageExW
+SendInput = NtUserSendInput
+SendMessageA
+SendMessageCallbackA
+SendMessageCallbackW
+SendMessageTimeoutA
+SendMessageTimeoutW
+SendMessageW
+SendNotifyMessageA
+SendNotifyMessageW
+SetActiveWindow = NtUserSetActiveWindow
+SetAdditionalForegroundBoostProcesses = NtUserSetAdditionalForegroundBoostProcesses
+SetCapture = NtUserSetCapture
+SetCaretBlinkTime
+SetCaretPos
+SetClassLongA
+SetClassLongW
+SetClassWord = NtUserSetClassWord
+SetClipboardData
+SetClipboardViewer = SetClipboardViewerStub
+SetCoalescableTimer = NtUserSetTimer
+SetCoreWindow = NtUserSetCoreWindow
+SetCursor = SetCursorStub
+SetCursorContents
+SetCursorPos = NtUserSetCursorPos
+SetDebugErrorLevel
+SetDeskWallpaper
+SetDesktopColorTransform = NtUserSetDesktopColorTransform
+SetDialogControlDpiChangeBehavior = NtUserSetDialogControlDpiChangeBehavior
+SetDialogDpiChangeBehavior
+SetDisplayAutoRotationPreferences = NtUserSetDisplayAutoRotationPreferences
+SetDisplayConfig
+SetDlgItemInt
+SetDlgItemTextA
+SetDlgItemTextW
+SetDoubleClickTime
+SetFeatureReportResponse = NtUserSetFeatureReportResponse
+SetFocus = NtUserSetFocus
+SetForegroundRedirectionForActivationObject = NtUserSetForegroundRedirectionForActivationObject
+SetForegroundWindow
+SetFullscreenMagnifierOffsetsDWMUpdated = NtUserSetFullscreenMagnifierOffsetsDWMUpdated
+SetGestureConfig = NtUserSetGestureConfig
+SetInternalWindowPos = NtUserSetInternalWindowPos
+SetKeyboardState = NtUserSetKeyboardState
+SetLastErrorEx
+SetLayeredWindowAttributes = NtUserSetLayeredWindowAttributes
+SetMagnificationDesktopColorEffect
+SetMagnificationDesktopMagnification
+SetMagnificationDesktopMagnifierOffsetsDWMUpdated = NtUserSetMagnificationDesktopMagnifierOffsetsDWMUpdated
+SetMagnificationDesktopSamplingMode
+SetMagnificationLensCtxInformation = NtUserMagSetContextInformation
+SetMenu
+SetMenuContextHelpId = NtUserSetMenuContextHelpId
+SetMenuDefaultItem = NtUserSetMenuDefaultItem
+SetMenuInfo
+SetMenuItemBitmaps
+SetMenuItemInfoA
+SetMenuItemInfoW
+SetMessageExtraInfo
+SetMessageQueue
+SetMirrorRendering = NtUserSetMirrorRendering
+SetParent = SetParentStub
+SetPhysicalCursorPos = NtUserSetCursorPos
+SetPointerDeviceInputSpace = NtSetPointerDeviceInputSpace
+SetProcessDPIAware
+SetProcessDefaultLayout
+SetProcessDpiAwarenessContext
+SetProcessDpiAwarenessInternal
+SetProcessLaunchForegroundPolicy = NtUserSetProcessLaunchForegroundPolicy
+SetProcessRestrictionExemption = NtUserSetProcessRestrictionExemption
+SetProcessWindowStation = NtUserSetProcessWindowStation
+SetProgmanWindow
+SetPropA
+SetPropW
+SetRect
+SetRectEmpty
+SetScrollInfo
+SetScrollPos
+SetScrollRange
+SetShellChangeNotifyWindow
+SetShellWindow
+SetShellWindowEx = NtUserSetShellWindowEx
+SetSysColors
+SetSysColorsTemp
+SetSystemCursor
+SetSystemMenu = NtUserSetSystemMenu
+SetTaskmanWindow
+SetThreadCursorCreationScaling
+SetThreadDesktop = SetThreadDesktopStub
+SetThreadDpiAwarenessContext
+SetThreadDpiHostingBehavior
+SetThreadInputBlocked = NtUserSetThreadInputBlocked
+SetTimer
+SetUserObjectInformationA
+SetUserObjectInformationW
+SetUserObjectSecurity
+SetWinEventHook
+SetWindowBand = NtUserSetWindowBand
+SetWindowCompositionAttribute = SetWindowCompositionAttributeStub
+SetWindowCompositionTransition = NtUserSetWindowCompositionTransition
+SetWindowContextHelpId
+SetWindowDisplayAffinity = NtUserSetWindowDisplayAffinity
+SetWindowFeedbackSetting = NtUserSetWindowFeedbackSetting
+SetWindowLongA
+SetWindowLongW
+SetWindowPlacement = NtUserSetWindowPlacement
+SetWindowPos = NtUserSetWindowPos
+SetWindowRgn
+SetWindowRgnEx
+SetWindowStationUser
+SetWindowTextA
+SetWindowTextW
+SetWindowWord = NtUserSetWindowWord
+SetWindowsHookA
+SetWindowsHookExA
+SetWindowsHookExAW
+SetWindowsHookExW
+SetWindowsHookW
+ShellMigrateWindow = NtUserShellMigrateWindow
+ShellSetWindowPos = NtUserShellSetWindowPos
+ShowCaret = ShowCaretStub
+ShowCursor = NtUserShowCursor
+ShowOwnedPopups
+ShowScrollBar = NtUserShowScrollBar
+ShowStartGlass
+ShowSystemCursor = NtUserShowSystemCursor
+ShowWindow = NtUserShowWindow
+ShowWindowAsync = NtUserShowWindowAsync
+ShutdownBlockReasonCreate
+ShutdownBlockReasonDestroy = NtUserShutdownReasonDestroy
+ShutdownBlockReasonQuery = NtUserShutdownBlockReasonQuery
+SignalRedirectionStartComplete = NtUserSignalRedirectionStartComplete
+SkipPointerFrameMessages = NtUserDiscardPointerFrameMessages
+SoftModalMessageBox
+SoundSentry = NtUserSoundSentry
+SubtractRect
+SwapMouseButton
+SwitchDesktop
+SwitchDesktopWithFade
+SwitchToThisWindow
+SystemParametersInfoA
+SystemParametersInfoForDpi
+SystemParametersInfoW
+TabbedTextOutA
+TabbedTextOutW
+TileChildWindows
+TileWindows
+ToAscii
+ToAsciiEx
+ToUnicode
+ToUnicodeEx
+TrackMouseEvent = NtUserTrackMouseEvent
+TrackPopupMenu
+TrackPopupMenuEx = NtUserTrackPopupMenuEx
+TranslateAccelerator = TranslateAcceleratorA
+TranslateAcceleratorA
+TranslateAcceleratorW
+TranslateMDISysAccel
+TranslateMessage
+TranslateMessageEx
+UndelegateInput = NtUserUndelegateInput
+UnhookWinEvent = NtUserUnhookWinEvent
+UnhookWindowsHook
+UnhookWindowsHookEx
+UnionRect
+UnloadKeyboardLayout
+UnlockWindowStation = NtUserUnlockWindowStation
+UnpackDDElParam
+UnregisterClassA
+UnregisterClassW
+UnregisterDeviceNotification
+UnregisterHotKey = NtUserUnregisterHotKey
+UnregisterMessagePumpHook
+UnregisterPointerInputTarget
+UnregisterPointerInputTargetEx
+UnregisterPowerSettingNotification
+UnregisterSessionPort = NtUserUnregisterSessionPort
+UnregisterSuspendResumeNotification
+UnregisterTouchWindow
+UnregisterUserApiHook = NtUserUnregisterUserApiHook
+UpdateDefaultDesktopThumbnail = NtUserUpdateDefaultDesktopThumbnail
+UpdateLayeredWindow
+UpdateLayeredWindowIndirect
+UpdatePerUserSystemParameters
+UpdateWindow
+UpdateWindowInputSinkHints = NtUserUpdateWindowInputSinkHints
+User32InitializeImmEntryTable
+UserClientDllInitialize
+UserHandleGrantAccess = NtUserUserHandleGrantAccess
+UserLpkPSMTextOut
+UserLpkTabbedTextOut
+UserRealizePalette
+UserRegisterWowHandlers
+VRipOutput
+VTagOutput
+ValidateRect = NtUserValidateRect
+ValidateRgn
+VkKeyScanA
+VkKeyScanExA
+VkKeyScanExW
+VkKeyScanW
+WCSToMBEx
+WINNLSEnableIME
+WINNLSGetEnableStatus
+WINNLSGetIMEHotkey
+WaitForInputIdle
+WaitForRedirectionStartComplete = NtUserWaitForRedirectionStartComplete
+WaitMessage = NtUserWaitMessage
+WinHelpA
+WinHelpW
+WindowFromDC = NtUserWindowFromDC
+WindowFromPhysicalPoint = NtUserWindowFromPhysicalPoint
+WindowFromPoint = NtUserWindowFromPoint
+Wow64Transition
+_UserTestTokenForInteractive
+gSharedInfo
+gapfnScSendMessage
+keybd_event
+mouse_event
+wsprintfA
+wsprintfW
+wvsprintfA
+wvsprintfW
+NtUserPhysicalToLogicalDpiPointForWindow @2716 NONAME
+NtUserLogicalToPhysicalDpiPointForWindow @2715 NONAME
+GetOemCheckboxSize @2714 NONAME
+GetDpiForSession @2713 NONAME
+GetRealWindowOwner @2712 NONAME
+NtUserGetActiveProcessesDpis @2711 NONAME
+NtUserIsWindowGDIScaledDpiMessageEnabled @2710 NONAME
+NtUserEnableWindowGDIScaledDpiMessage @2709 NONAME
+NtUserBroadcastThemeChangeEvent @2708 NONAME
+GetWindowDPI @2707 NONAME
+NtUserIsWindowBroadcastingDpiToChildren @2706 NONAME
+NtUserIsChildWindowDpiMessageEnabled @2705 NONAME
+NtUserEnableChildWindowDpiMessage @2704 NONAME
+NtUserIsNonClientDpiScalingEnabled @2703 NONAME
+GetDialogBaseUnits96 @2700 NONAME
+NtUserSetDpiForWindow @2661 NONAME
+SetOCTBannedApiExemption @2659 NONAME
+NtUserSetDesktopVisualInputSink @2658 NONAME
+NtUserSetProcessMousewheelRoutingMode @2657 NONAME
+NtUserEnableMouseInPointerForWindow @2656 NONAME
+NtUserGetPointerProprietaryId @2653 NONAME
+NtUserGetUniformSpaceMapping @2652 NONAME
+NtUserDownlevelTouchpad @2651 NONAME
+NtUserGetInputContainerId @2650 NONAME
+NtUserSetForegroundWindowForApplication @2649 NONAME
+NtUserDestroyActivationObject @2648 NONAME
+NtUserConfigureActivationObject @2647 NONAME
+DestroyPalmRejectionDelayZone @2645 NONAME
+NtUserDeferWindowDpiChanges @2644 NONAME
+NtUserRestoreWindowDpiChanges @2643 NONAME
+NtUserForceWindowToDpiForTest @2642 NONAME
+CreatePalmRejectionDelayZoneWithViewportClipping @2641 NONAME
+CreatePalmRejectionDelayZone @2640 NONAME
+NtSetCursorInputSpace @2639 NONAME
+NtConfigureInputSpace @2638 NONAME
+NtSetShellCursorState @2637 NONAME
+GetCurrentDpiInfoForWindow @2636 NONAME
+IsWindowGdiScaledX @2635 NONAME
+SetTSFEventState @2634 NONAME
+NtUserCreateActivationObject @2633 NONAME
+NtUserSetBridgeWindowChild @2627 NONAME
+NtUserSetTargetForResourceBrokering @2622 NONAME
+NtUserConfirmResizeCommit @2621 NONAME
+FunctionalizeDisplayConfig @2620 NONAME
+QueryDisplayConfig2 @2619 NONAME
+SetDisplayConfig2 @2618 NONAME
+NtUserIsResizeLayoutSynchronizationEnabled @2617 NONAME
+NtUserBeginLayoutUpdate @2616 NONAME
+NtUserEnableResizeLayoutSynchronization @2615 NONAME
+NtUserGetResizeDCompositionSynchronizationObject @2614 NONAME
+DrainThreadCoreMessagingCompletions @2613 NONAME
+InitThreadCoreMessagingIocp @2612 NONAME
+NtUserEnableWindowResizeOptimization @2611 NONAME
+NtUserCompositionInputSinkViewInstanceIdFromPoint @2610 NONAME
+NtUserGetInteractiveCtrlSupportedWaveforms @2609 NONAME
+NtUserProcessInkFeedbackCommand @2608 NONAME
+NtUserEnableSoftwareCursorForScreenCapture @2606 NONAME
+ForceEnableNumpadTranslation @2600 NONAME
+HasDeferredKeyboardInput @2599 NONAME
+DisableDpiCursorScalingForProcess @2598 NONAME
+SetCITInfo @2597 NONAME
+NtUserSetProcessInteractionFlags @2595 NONAME
+NtUserSetInteractiveCtrlRotationAngle @2594 NONAME
+NtUserInteractiveControlQueryUsage @2593 NONAME
+NtUserSetInteractiveControlFocus @2592 NONAME
+NtUserSendInteractiveControlHapticsReport @2591 NONAME
+NtUserGetInteractiveControlDeviceInfo @2590 NONAME
+NtUserGetInteractiveControlInfo @2589 NONAME
+NtUserAcquireInteractiveControlBackgroundAccess @2588 NONAME
+InitDManipHookEx @2587 NONAME
+NtUserSetInputServiceState @2586 NONAME
+NtUserUpdateWindowTrackingInfo @2585 NONAME
+EnableModernAppWindowKeyboardIntercept @2584 NONAME
+ScheduleDispatchNotification @2582 NONAME
+GetWindowTrackInfoAsync @2581 NONAME
+NtUserSetWindowShowState @2579 NONAME
+NtUserNavigateFocus @2578 NONAME
+NtUserSetCoreWindowPartner @2576 NONAME
+ForceFocusBasedMouseWheelRouting @2575 NONAME
+IsShellManagedWindow @2574 NONAME
+IsShellFrameWindow @2573 NONAME
+IsCoreWindow @2572 NONAME
+SetThreadQueueMergeSetting @2570 NONAME
+GetModernAppWindow @2569 NONAME
+SetModernAppWindow @2568 NONAME
+EnableShellWindowManagementBehavior @2567 NONAME
+SetWindowArrangement @2566 NONAME
+IsCurrentProcessGdiScaledX @2565 NONAME
+RegisterWindowArrangementCallout @2564 NONAME
+NtUserClearForeground @2563 NONAME
+EnableMouseInPointerForThread @2561 NONAME
+GetHimetricScaleFactorFromPixelLocation @2560 NONAME
+NtUserGetOwnerTransformedMonitorRect @2559 NONAME
+TransformRect @2558 NONAME
+TransformPoint @2557 NONAME
+NtUserSetActivationFilter @2556 NONAME
+GetPrefixCount @2555 NONAME
+PostUIActions @2554 NONAME
+ToUnicodeExNonDestructive @2553 NONAME
+RegisterKeyboardCorrectionCallout @2552 NONAME
+NtUserCompositionInputSinkLuidFromPoint @2550 NONAME
+NtUserSetPrecisionTouchPadConfiguration @2549 NONAME
+NtUserGetPrecisionTouchPadConfiguration @2548 NONAME
+NtUserRegisterTouchPadCapable @2546 NONAME
+NtUserGetPhysicalDeviceRect @2545 NONAME
+NtUserEnableTouchPad @2544 NONAME
+NtUserRegisterShellPTPListener @2542 NONAME
+NtUserGetQueueStatusReadonly @2541 NONAME
+SetCancelRotationDelayHintWindow @2540 NONAME
+NtUserHidePointerContactVisualization @2539 NONAME
+NtUserLayoutCompleted @2538 NONAME
+NtUserSendEventMessage @2537 NONAME
+SetWindowServicesDestroyCallback @2536 NONAME
+DeferredDesktopRotation @2535 NONAME
+InternalClipCursor @2534 NONAME
+NtUserCanBrokerForceForeground @2533 NONAME
+NtUserSetDisplayMapping @2532 NONAME
+NtUserSetCalibrationData @2531 NONAME
+NtUserWaitAvailableMessageEx @2530 NONAME
+NtUserDisableImmersiveOwner @2529 NONAME
+InternalEnumDesktopWindows @2527 NONAME
+InternalEnumThreadWindows @2526 NONAME
+InternalEnumChildWindows @2525 NONAME
+InternalEnumWindows @2524 NONAME
+InternalGetWindow @2523 NONAME
+NtUserSetBrokeredForeground @2522 NONAME
+NtUserIsMouseInputEnabled @2520 NONAME
+NtUserEnableMouseInputForCursorSuppression @2519 NONAME
+RegisterNaturalInputHandler @2518 NONAME
+NtUserGetTouchValidationStatus @2517 NONAME
+NtUserDelegateCapturePointers @2516 NONAME
+UnregisterEdgy @2515 NONAME
+RegisterEdgy @2514 NONAME
+NtUserSetActiveProcessForMonitor @2513 NONAME
+NtUserGetDisplayAutoRotationPreferencesByProcessId @2512 NONAME
+NtUserSetFallbackForeground @2511 NONAME
+EnableIAMAccess @2510 NONAME
+NtUserAcquireIAMKey @2509 NONAME
+NtUserPromotePointer @2508 NONAME
+NtUserSetAutoRotation @2507 NONAME
+SendGesture @2506 NONAME
+NtUserSlicerControl @2010 NONAME
+NtUserSetChildWindowNoActivate @2005 NONAME
+GetMagnificationInputTransform @2002 NONAME
+SetMagnificationInputTransform @2001 NONAME
+DwmHintDxUpdate @1554 NONAME
+DwmGetRedirSurfacePresentFlags @1552 NONAME
+DwmSetRedirSurfacePresentFlags @1551 NONAME
+DwmGetRedirSurfaceUpdateId @1550 NONAME
+SendTouchFrame @1502 NONAME
