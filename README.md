@@ -78,17 +78,17 @@ AAA = mod.BBB  │  [p]BBB[s]  >  __imp_[p]AAA[s]   │  AAA ─> mod.BBB
 
 examples with input (DEF/OBJ) and output (LIB/EXP)
 
-DEF: ChrCmpIA = ChrCmpIAStub ───┐     ┌── ChrCmpIA          : EXP
+DEF: ChrCmpIA = ChrCmpIAStub ───┐     ┌──        ChrCmpIA   : EXP
                                 ├──>──┤ 
 OBJ:           _ChrCmpIAStub@8──┘     └── __imp__ChrCmpIA@8 : LIB
 
 
-DEF: HRGN_UserUnmarshal = HRGN_UserUnmarshal64 ────────────────────────────────────┐     ┌── HRGN_UserUnmarshal                                         : EXP                    														   
+DEF: HRGN_UserUnmarshal = HRGN_UserUnmarshal64 ────────────────────────────────────┐     ┌──        HRGN_UserUnmarshal                                  : EXP                    														   
                                                                                    ├──>──┤ 
 OBJ:                     ?HRGN_UserUnmarshal64@@YAPEAEPEAKPEAEPEAPEAUHRGN__@@@Z ───┘     └── __imp_?HRGN_UserUnmarshal@@YAPEAEPEAKPEAEPEAPEAUHRGN__@@@Z : LIB
 
 
-DEF: D3DKMTCreateDCFromMemory = NtGdiDdDDICreateDCFromMemory ─────┐     ┌── D3DKMTCreateDCFromMemory          : EXP
+DEF: D3DKMTCreateDCFromMemory = NtGdiDdDDICreateDCFromMemory ─────┐     ┌──        D3DKMTCreateDCFromMemory   : EXP
                                                                   ├──>──┤ 
 OBJ:                           _NtGdiDdDDICreateDCFromMemory@4 ───┘     └── __imp__D3DKMTCreateDCFromMemory@4 : LIB
 
@@ -107,8 +107,8 @@ kernel32 used many API-..dlls, some of it recursive point to kernel32.dll back (
 
 and only in h files was one funny case - `myDoesDSExist@209`
 
-resulted name ?myDoesDSExist@209@@YAJH@Z can not be undecorated due @
-however `long __cdecl myDoesDSExist(int);` if remove `@209` (more exactly only @)
+resulted name `?myDoesDSExist@209@@YAJH@Z` can not be undecorated due `@`
+however `long __cdecl myDoesDSExist(int);` if remove `@209` (more exactly only `@`)
 
 for parsing **mandatory** have PDB files for dll itself and all it forwards export dll ( you can use my tool [getpdb](https://github.com/rbmm/GetPdb/tree/main/X64) for easy download this)
 
