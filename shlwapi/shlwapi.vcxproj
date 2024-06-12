@@ -13,7 +13,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{7A1AB857-397d-68FB-5A54-DB6C1EAB08C4}</ProjectGuid>
+    <ProjectGuid>{E0107641-71b7-881D-6967-C11A7DFE3B01}</ProjectGuid>
     <RootNamespace>shlwapi</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>

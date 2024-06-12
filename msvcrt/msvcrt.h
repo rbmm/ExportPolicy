@@ -1,3 +1,5 @@
+#pragma once
+
 DECLSPEC_IMPORT
 protected: virtual void bad_cast::_Doraise(void)const ;
 

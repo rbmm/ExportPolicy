@@ -1,3 +1,5 @@
+#pragma once
+
 DECLSPEC_IMPORT
 int Nfp::FreeResource(void *);
 

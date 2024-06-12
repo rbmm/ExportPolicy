@@ -13,7 +13,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{B6370793-df96-81C0-0732-09B23064171A}</ProjectGuid>
+    <ProjectGuid>{54E37AFC-bbaa-C70F-E323-B3340C8E4698}</ProjectGuid>
     <RootNamespace>certca</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>

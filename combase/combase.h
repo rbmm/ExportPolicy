@@ -1,3 +1,5 @@
+#pragma once
+
 DECLSPEC_IMPORT
 public: virtual unsigned long DeviceCatalogs::CStdAsyncStubBuffer_AddRef(void);
 

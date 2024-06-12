@@ -13,7 +13,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{D45349B2-7b84-6F5F-1009-E17F18E5989B}</ProjectGuid>
+    <ProjectGuid>{7AB53C50-f25e-BA43-BD74-59507BBCD9D0}</ProjectGuid>
     <RootNamespace>ucrtbase</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>

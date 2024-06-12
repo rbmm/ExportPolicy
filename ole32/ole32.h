@@ -1,3 +1,5 @@
+#pragma once
+
 DECLSPEC_IMPORT
 void CLIPFORMAT_UserFreeExt(unsigned long *,unsigned short *);
 

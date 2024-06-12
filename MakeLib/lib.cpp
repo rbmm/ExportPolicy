@@ -338,6 +338,7 @@ HRESULT CreateExportDef(CLib** plib,
 		".code\r\n\r\n");
 
 	PrintToFile(hDef, "EXPORTS\r\n\r\n");
+	PrintToFile(hHxx, "#pragma once\r\n\r\n");
 
 	union {
 		PCSTR pcsz;

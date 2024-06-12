@@ -13,7 +13,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{DA2D9CD3-36bb-50AA-837E-43C9D30F6FE8}</ProjectGuid>
+    <ProjectGuid>{F253B671-3915-2693-4957-F1E99B751026}</ProjectGuid>
     <RootNamespace>shunimpl</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>

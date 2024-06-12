@@ -13,7 +13,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{1B31CF5A-5934-F38E-45EC-852DB34EE944}</ProjectGuid>
+    <ProjectGuid>{E4031D39-afe1-0E7F-0C6A-3A2E2892E091}</ProjectGuid>
     <RootNamespace>certcli</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
