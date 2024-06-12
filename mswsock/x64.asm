@@ -32,7 +32,7 @@ API Tcpip4_WSHEnumProtocols
 API Tcpip4_WSHGetBroadcastSockaddr
 API Tcpip4_WSHGetProviderGuid
 API Tcpip4_WSHGetSockaddrType
-API Tcpip6_WSHGetSocketInformation ; -> Tcpip4_WSHGetSocketInformation
+API Tcpip6_WSHGetSocketInformation
 API Tcpip4_WSHGetWSAProtocolInfo
 API Tcpip4_WSHGetWildcardSockaddr
 API Tcpip4_WSHGetWinsockMapping
@@ -51,12 +51,12 @@ API Tcpip6_WSHGetSocketInformation
 API Tcpip6_WSHGetWSAProtocolInfo
 API Tcpip6_WSHGetWildcardSockaddr
 API Tcpip6_WSHGetWinsockMapping
-API Tcpip4_WSHIoctl ; -> Tcpip6_WSHIoctl
+API Tcpip4_WSHIoctl
 API Tcpip6_WSHJoinLeaf
 API Tcpip6_WSHNotify
 API Tcpip6_WSHOpenSocket
 API Tcpip6_WSHOpenSocket2
-API Tcpip4_WSHSetSocketInformation ; -> Tcpip6_WSHSetSocketInformation
+API Tcpip4_WSHSetSocketInformation
 API Tcpip6_WSHStringToAddress
 API TransmitFile
 API WSARecvEx
@@ -64,7 +64,7 @@ API WSPStartup
 API dn_expand
 API getnetbyname
 API inet_network
-API rexec ; -> rcmd
+API rexec
 API rexec
 API rresvport
 API s_perror

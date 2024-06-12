@@ -13,7 +13,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{97A8095E-1d1a-2A3C-0DAA-6B49B7D56E76}</ProjectGuid>
+    <ProjectGuid>{10F8A45F-fbfa-5554-DD6F-91909D88DEAA}</ProjectGuid>
     <RootNamespace>mswsock</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>

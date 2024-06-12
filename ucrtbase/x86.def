@@ -81,7 +81,7 @@ __current_exception
 __current_exception_context
 __daylight
 __dcrt_get_wide_environment_from_os
-__dcrt_initial_narrow_environment
+_dcrt_initial_narrow_environment
 __doserrno
 __dstbias
 __fpe_flt_rounds
@@ -575,7 +575,7 @@ _mbbtombc
 _mbbtombc_l
 _mbbtype
 _mbbtype_l
-_mbcasemap
+mbcasemap
 _mbccpy
 _mbccpy_l
 _mbccpy_s

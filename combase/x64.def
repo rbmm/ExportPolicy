@@ -15,7 +15,7 @@ CLSIDFromString
 CStdAsyncStubBuffer2_Connect
 CStdAsyncStubBuffer2_Disconnect = CStdStubBuffer2_Disconnect
 CStdAsyncStubBuffer2_Release
-CStdAsyncStubBuffer_AddRef = ?AddRef@DeviceCatalogs@@UEAAKXZ
+CStdAsyncStubBuffer_AddRef = AddRef
 CStdAsyncStubBuffer_Connect
 CStdAsyncStubBuffer_Disconnect = CStdStubBuffer_Disconnect
 CStdAsyncStubBuffer_Invoke
@@ -25,7 +25,7 @@ CStdStubBuffer2_Connect
 CStdStubBuffer2_CountRefs
 CStdStubBuffer2_Disconnect
 CStdStubBuffer2_QueryInterface
-CStdStubBuffer_AddRef = ?AddRef@DeviceCatalogs@@UEAAKXZ
+CStdStubBuffer_AddRef = AddRef
 CStdStubBuffer_Connect
 CStdStubBuffer_CountRefs
 CStdStubBuffer_DebugServerQueryInterface
@@ -237,10 +237,10 @@ HPALETTE_UserUnmarshal64
 HRGN_UserFree
 HRGN_UserFree64
 HRGN_UserMarshal
-HRGN_UserMarshal64 = ?HRGN_UserMarshal@@YAPEAEPEAKPEAEPEAPEAUHRGN__@@@Z
+HRGN_UserMarshal64 = HRGN_UserMarshal
 HRGN_UserSize
-HRGN_UserSize64 = ?HRGN_UserSize@@YAKPEAKKPEAPEAUHRGN__@@@Z
-HRGN_UserUnmarshal = ?HRGN_UserUnmarshal64@@YAPEAEPEAKPEAEPEAPEAUHRGN__@@@Z
+HRGN_UserSize64 = HRGN_UserSize
+HRGN_UserUnmarshal = HRGN_UserUnmarshal64
 HRGN_UserUnmarshal64
 HSTRING_UserFree
 HSTRING_UserFree64
@@ -507,7 +507,7 @@ HENHMETAFILE_UserUnmarshal @187 NONAME
 HENHMETAFILE_UserMarshal @186 NONAME
 HENHMETAFILE_UserSize @185 NONAME
 CoGetCallLocality @184 NONAME
-?CoTestDcomContainerProtocolVersionNumber@@3IB @183 NONAME
+CoTestDcomContainerProtocolVersionNumber @183 NONAME
 CoTestSetUseContainerErrorInformationLocalPropagation @182 NONAME
 CoDoesOtherSideSupportUDTMarshaling @181 NONAME
 CoDoesOtherSideVariantMarshalingNeedTrailingPadding @180 NONAME
@@ -546,7 +546,7 @@ RoGetActivationFactoryAsUser @148 NONAME
 RoActivateInstanceAsUser @147 NONAME
 CoVrfSetMockApplicationVerifierStop @146 NONAME
 CoVrfComVerifierIsEnabled @145 NONAME
-?CoGetSystemSecurityPermissionsTestHook@@YAJQEAKPEAKPEAPEAE@Z @143 NONAME
+CoGetSystemSecurityPermissionsTestHook @143 NONAME
 CoSetContainerIdListenerTestHook @142 NONAME
 CoSetAsyncCallCancelListenerTestHook @141 NONAME
 CoAllowSetForegroundWindow @140 NONAME
@@ -571,10 +571,10 @@ CoRegisterForApartmentShutdown @120 NONAME
 CoRegisterChannelHook @112 NONAME
 CoHandlePriorityEventsFromMessagePump @111 NONAME
 CoSetMessageDispatcher @110 NONAME
-?CoVrfNotifyExtraOleUninit@@YAXXZ @104 NONAME
-?CoVrfShouldCallOleInit@@YAXPEBD@Z @103 NONAME
-?CoVrfNotifyOleUninit@@YAXXZ @102 NONAME
-?CoVrfNotifyOleInit@@YAXXZ @101 NONAME
+CoVrfNotifyExtraOleUninit @104 NONAME
+CoVrfShouldCallOleInit @103 NONAME
+CoVrfNotifyOleUninit @102 NONAME
+CoVrfNotifyOleInit @101 NONAME
 CoSetASTATestMode @100 NONAME
 CoEnableASTACallReentrancyGuardForSTAByDefault @99 NONAME
 CoSetRetryForReentrancyGuardTimeout @98 NONAME

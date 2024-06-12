@@ -13,7 +13,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{FB560E0F-a67d-182A-2700-980B41AF36E1}</ProjectGuid>
+    <ProjectGuid>{65729FDA-6b81-CD36-65B9-AC66D591807E}</ProjectGuid>
     <RootNamespace>gdi32</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>

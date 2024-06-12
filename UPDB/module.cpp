@@ -240,6 +240,8 @@ NTSTATUS CModule::Create(_In_ PCUNICODE_STRING Name, _In_ HMODULE hmod, _In_ ULO
 	{
 		if (pModule = new(0, 0) CModule)
 		{
+			pModule->_status = status;
+
 			if (CV_INFO_PDB* lpcvh = ss._lpcvh)
 			{
 				PCSTR PdbFileName = lpcvh->PdbFileName;

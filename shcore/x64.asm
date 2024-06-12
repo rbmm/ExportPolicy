@@ -5,7 +5,7 @@ ENDM
 
 .code
 
-API CommandLineToArgvWStub ; -> CommandLineToArgvW
+API CommandLineToArgvWStub
 API CreateRandomAccessStreamOnFile
 API CreateRandomAccessStreamOverStream
 API CreateStreamOverRandomAccessStream

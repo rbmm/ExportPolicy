@@ -13,7 +13,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9FB199D7-9586-F531-DC7B-56E35012FF90}</ProjectGuid>
+    <ProjectGuid>{EE54A26E-b9fe-BF0C-8773-06FFA0310617}</ProjectGuid>
     <RootNamespace>dpapi</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>

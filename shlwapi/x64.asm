@@ -14,303 +14,303 @@ API AssocQueryStringA
 API AssocQueryStringByKeyA
 API AssocQueryStringByKeyW
 API AssocQueryStringW
-API ChrCmpIAStub ; -> ChrCmpIA
-API ChrCmpIWStub ; -> ChrCmpIW
+API ChrCmpIAStub
+API ChrCmpIWStub
 API ColorAdjustLuma
 API ColorHLSToRGB
 API ColorRGBToHLS
 API ConnectToConnectionPoint
-API Downlevel_DelayLoadFailureHook ; -> DelayLoadFailureHook
+API Downlevel_DelayLoadFailureHook
 API DllGetClassObject
-API CCDllGetVersion ; -> DllGetVersion
+API CCDllGetVersion
 API GUIDFromStringW
-API GetAcceptLanguagesAStub ; -> GetAcceptLanguagesA
-API GetAcceptLanguagesWStub ; -> GetAcceptLanguagesW
+API GetAcceptLanguagesAStub
+API GetAcceptLanguagesWStub
 API GetMenuPosFromID
-API HashDataStub ; -> HashData
-API IStream_CopyStub ; -> IStream_Copy
-API IStream_ReadStub ; -> IStream_Read
+API HashDataStub
+API IStream_CopyStub
+API IStream_ReadStub
 API IStream_ReadPidl
-API IStream_ReadStrStub ; -> IStream_ReadStr
-API IStream_ResetStub ; -> IStream_Reset
-API IStream_SizeStub ; -> IStream_Size
-API IStream_WriteStub ; -> IStream_Write
+API IStream_ReadStrStub
+API IStream_ResetStub
+API IStream_SizeStub
+API IStream_WriteStub
 API IStream_WritePidl
-API IStream_WriteStrStub ; -> IStream_WriteStr
-API IUnknown_AtomicReleaseStub ; -> IUnknown_AtomicRelease
+API IStream_WriteStrStub
+API IUnknown_AtomicReleaseStub
 API IUnknown_Exec
-API IUnknown_GetSiteStub ; -> IUnknown_GetSite
+API IUnknown_GetSiteStub
 API IUnknown_GetWindow
-API IUnknown_QueryServiceStub ; -> IUnknown_QueryService
+API IUnknown_QueryServiceStub
 API IUnknown_QueryStatus
-API IUnknown_SetStub ; -> IUnknown_Set
-API IUnknown_SetSiteStub ; -> IUnknown_SetSite
-API StrIsIntlEqualAStub ; -> IntlStrEqWorkerA
-API StrIsIntlEqualWStub ; -> IntlStrEqWorkerW
-API IsCharSpaceAStub ; -> IsCharSpaceA
-API IsCharSpaceWStub ; -> IsCharSpaceW
-API IsInternetESCEnabledStub ; -> IsInternetESCEnabled
-API IsOSStub ; -> IsOS
+API IUnknown_SetStub
+API IUnknown_SetSiteStub
+API StrIsIntlEqualAStub
+API StrIsIntlEqualWStub
+API IsCharSpaceAStub
+API IsCharSpaceWStub
+API IsInternetESCEnabledStub
+API IsOSStub
 API MLLoadLibraryA
 API MLLoadLibraryW
-API ParseURLAStub ; -> ParseURLA
-API ParseURLWStub ; -> ParseURLW
-API PathAddBackslashAStub ; -> PathAddBackslashA
-API PathAddBackslashWStub ; -> PathAddBackslashW
-API PathAddExtensionAStub ; -> PathAddExtensionA
-API PathAddExtensionWStub ; -> PathAddExtensionW
-API PathAppendAStub ; -> PathAppendA
-API PathAppendWStub ; -> PathAppendW
-API PathBuildRootAStub ; -> PathBuildRootA
-API PathBuildRootWStub ; -> PathBuildRootW
-API PathCanonicalizeAStub ; -> PathCanonicalizeA
-API PathCanonicalizeWStub ; -> PathCanonicalizeW
-API PathCombineAStub ; -> PathCombineA
-API PathCombineWStub ; -> PathCombineW
-API PathCommonPrefixAStub ; -> PathCommonPrefixA
-API PathCommonPrefixWStub ; -> PathCommonPrefixW
+API ParseURLAStub
+API ParseURLWStub
+API PathAddBackslashAStub
+API PathAddBackslashWStub
+API PathAddExtensionAStub
+API PathAddExtensionWStub
+API PathAppendAStub
+API PathAppendWStub
+API PathBuildRootAStub
+API PathBuildRootWStub
+API PathCanonicalizeAStub
+API PathCanonicalizeWStub
+API PathCombineAStub
+API PathCombineWStub
+API PathCommonPrefixAStub
+API PathCommonPrefixWStub
 API PathCompactPathA
 API PathCompactPathExA
 API PathCompactPathExW
 API PathCompactPathW
-API PathCreateFromUrlAStub ; -> PathCreateFromUrlA
-API PathCreateFromUrlAllocStub ; -> PathCreateFromUrlAlloc
-API PathCreateFromUrlWStub ; -> PathCreateFromUrlW
-API PathFileExistsAStub ; -> PathFileExistsA
+API PathCreateFromUrlAStub
+API PathCreateFromUrlAllocStub
+API PathCreateFromUrlWStub
+API PathFileExistsAStub
 API PathFileExistsAndAttributesW
-API PathFileExistsWStub ; -> PathFileExistsW
-API PathFindExtensionAStub ; -> PathFindExtensionA
-API PathFindExtensionWStub ; -> PathFindExtensionW
-API PathFindFileNameAStub ; -> PathFindFileNameA
-API PathFindFileNameWStub ; -> PathFindFileNameW
-API PathFindNextComponentAStub ; -> PathFindNextComponentA
-API PathFindNextComponentWStub ; -> PathFindNextComponentW
+API PathFileExistsWStub
+API PathFindExtensionAStub
+API PathFindExtensionWStub
+API PathFindFileNameAStub
+API PathFindFileNameWStub
+API PathFindNextComponentAStub
+API PathFindNextComponentWStub
 API PathFindOnPathA
 API PathFindOnPathW
 API PathFindSuffixArrayA
 API PathFindSuffixArrayW
-API PathGetArgsAStub ; -> PathGetArgsA
-API PathGetArgsWStub ; -> PathGetArgsW
-API PathGetCharTypeAStub ; -> PathGetCharTypeA
-API PathGetCharTypeWStub ; -> PathGetCharTypeW
-API PathGetDriveNumberAStub ; -> PathGetDriveNumberA
-API PathGetDriveNumberWStub ; -> PathGetDriveNumberW
+API PathGetArgsAStub
+API PathGetArgsWStub
+API PathGetCharTypeAStub
+API PathGetCharTypeWStub
+API PathGetDriveNumberAStub
+API PathGetDriveNumberWStub
 API PathIsContentTypeA
 API PathIsContentTypeW
 API PathIsDirectoryA
 API PathIsDirectoryEmptyA
 API PathIsDirectoryEmptyW
 API PathIsDirectoryW
-API PathIsFileSpecAStub ; -> PathIsFileSpecA
-API PathIsFileSpecWStub ; -> PathIsFileSpecW
-API PathIsLFNFileSpecAStub ; -> PathIsLFNFileSpecA
-API PathIsLFNFileSpecWStub ; -> PathIsLFNFileSpecW
-API PathIsNetworkPathAStub ; -> PathIsNetworkPathA
-API PathIsNetworkPathWStub ; -> PathIsNetworkPathW
-API PathIsPrefixAStub ; -> PathIsPrefixA
-API PathIsPrefixWStub ; -> PathIsPrefixW
-API PathIsRelativeAStub ; -> PathIsRelativeA
-API PathIsRelativeWStub ; -> PathIsRelativeW
-API PathIsRootAStub ; -> PathIsRootA
-API PathIsRootWStub ; -> PathIsRootW
-API PathIsSameRootAStub ; -> PathIsSameRootA
-API PathIsSameRootWStub ; -> PathIsSameRootW
+API PathIsFileSpecAStub
+API PathIsFileSpecWStub
+API PathIsLFNFileSpecAStub
+API PathIsLFNFileSpecWStub
+API PathIsNetworkPathAStub
+API PathIsNetworkPathWStub
+API PathIsPrefixAStub
+API PathIsPrefixWStub
+API PathIsRelativeAStub
+API PathIsRelativeWStub
+API PathIsRootAStub
+API PathIsRootWStub
+API PathIsSameRootAStub
+API PathIsSameRootWStub
 API PathIsSystemFolderA
 API PathIsSystemFolderW
-API PathIsUNCAStub ; -> PathIsUNCA
-API PathIsUNCServerAStub ; -> PathIsUNCServerA
-API PathIsUNCServerShareAStub ; -> PathIsUNCServerShareA
-API PathIsUNCServerShareWStub ; -> PathIsUNCServerShareW
-API PathIsUNCServerWStub ; -> PathIsUNCServerW
-API PathIsUNCWStub ; -> PathIsUNCW
-API PathIsURLAStub ; -> PathIsURLA
-API PathIsURLWStub ; -> PathIsURLW
+API PathIsUNCAStub
+API PathIsUNCServerAStub
+API PathIsUNCServerShareAStub
+API PathIsUNCServerShareWStub
+API PathIsUNCServerWStub
+API PathIsUNCWStub
+API PathIsURLAStub
+API PathIsURLWStub
 API PathMakePrettyA
 API PathMakePrettyW
 API PathMakeSystemFolderA
 API PathMakeSystemFolderW
-API PathMatchSpecAStub ; -> PathMatchSpecA
-API PathMatchSpecExAStub ; -> PathMatchSpecExA
-API PathMatchSpecExWStub ; -> PathMatchSpecExW
-API PathMatchSpecWStub ; -> PathMatchSpecW
-API PathParseIconLocationAStub ; -> PathParseIconLocationA
-API PathParseIconLocationWStub ; -> PathParseIconLocationW
-API PathQuoteSpacesAStub ; -> PathQuoteSpacesA
-API PathQuoteSpacesWStub ; -> PathQuoteSpacesW
-API PathRelativePathToAStub ; -> PathRelativePathToA
-API PathRelativePathToWStub ; -> PathRelativePathToW
+API PathMatchSpecAStub
+API PathMatchSpecExAStub
+API PathMatchSpecExWStub
+API PathMatchSpecWStub
+API PathParseIconLocationAStub
+API PathParseIconLocationWStub
+API PathQuoteSpacesAStub
+API PathQuoteSpacesWStub
+API PathRelativePathToAStub
+API PathRelativePathToWStub
 API PathRemoveArgsA
 API PathRemoveArgsW
-API PathRemoveBackslashAStub ; -> PathRemoveBackslashA
-API PathRemoveBackslashWStub ; -> PathRemoveBackslashW
-API PathRemoveBlanksAStub ; -> PathRemoveBlanksA
-API PathRemoveBlanksWStub ; -> PathRemoveBlanksW
-API PathRemoveExtensionAStub ; -> PathRemoveExtensionA
-API PathRemoveExtensionWStub ; -> PathRemoveExtensionW
-API PathRemoveFileSpecAStub ; -> PathRemoveFileSpecA
-API PathRemoveFileSpecWStub ; -> PathRemoveFileSpecW
-API PathRenameExtensionAStub ; -> PathRenameExtensionA
-API PathRenameExtensionWStub ; -> PathRenameExtensionW
-API PathSearchAndQualifyAStub ; -> PathSearchAndQualifyA
-API PathSearchAndQualifyWStub ; -> PathSearchAndQualifyW
+API PathRemoveBackslashAStub
+API PathRemoveBackslashWStub
+API PathRemoveBlanksAStub
+API PathRemoveBlanksWStub
+API PathRemoveExtensionAStub
+API PathRemoveExtensionWStub
+API PathRemoveFileSpecAStub
+API PathRemoveFileSpecWStub
+API PathRenameExtensionAStub
+API PathRenameExtensionWStub
+API PathSearchAndQualifyAStub
+API PathSearchAndQualifyWStub
 API PathSetDlgItemPathA
 API PathSetDlgItemPathW
-API PathSkipRootAStub ; -> PathSkipRootA
-API PathSkipRootWStub ; -> PathSkipRootW
-API PathStripPathAStub ; -> PathStripPathA
-API PathStripPathWStub ; -> PathStripPathW
-API PathStripToRootAStub ; -> PathStripToRootA
-API PathStripToRootWStub ; -> PathStripToRootW
-API PathUnExpandEnvStringsAStub ; -> PathUnExpandEnvStringsA
-API PathUnExpandEnvStringsWStub ; -> PathUnExpandEnvStringsW
+API PathSkipRootAStub
+API PathSkipRootWStub
+API PathStripPathAStub
+API PathStripPathWStub
+API PathStripToRootAStub
+API PathStripToRootWStub
+API PathUnExpandEnvStringsAStub
+API PathUnExpandEnvStringsWStub
 API PathUndecorateA
 API PathUndecorateW
 API PathUnmakeSystemFolderA
 API PathUnmakeSystemFolderW
-API PathUnquoteSpacesAStub ; -> PathUnquoteSpacesA
-API PathUnquoteSpacesWStub ; -> PathUnquoteSpacesW
-API QISearchStub ; -> QISearch
-API SHAllocSharedStub ; -> SHAllocShared
-API SHAnsiToAnsiStub ; -> SHAnsiToAnsi
-API SHAnsiToUnicodeStub ; -> SHAnsiToUnicode
+API PathUnquoteSpacesAStub
+API PathUnquoteSpacesWStub
+API QISearchStub
+API SHAllocSharedStub
+API SHAnsiToAnsiStub
+API SHAnsiToUnicodeStub
 API SHAutoComplete
-API SHCopyKeyAStub ; -> SHCopyKeyA
-API SHCopyKeyWStub ; -> SHCopyKeyW
-API SHCreateMemStreamStub ; -> SHCreateMemStream
+API SHCopyKeyAStub
+API SHCopyKeyWStub
+API SHCreateMemStreamStub
 API SHCreateShellPalette
-API SHCreateStreamOnFileAStub ; -> SHCreateStreamOnFileA
-API SHCreateStreamOnFileExStub ; -> SHCreateStreamOnFileEx
-API SHCreateStreamOnFileWStub ; -> SHCreateStreamOnFileW
-API SHCreateStreamWrapper
-API SHCreateThreadStub ; -> SHCreateThread
-API SHCreateThreadRefStub ; -> SHCreateThreadRef
-API SHCreateThreadWithHandleStub ; -> SHCreateThreadWithHandle
-API SHCreateWorkerWindowWStub ; -> SHCreateWorkerWindowW
-API SHDeleteEmptyKeyAStub ; -> SHDeleteEmptyKeyA
-API SHDeleteEmptyKeyWStub ; -> SHDeleteEmptyKeyW
-API SHDeleteKeyAStub ; -> SHDeleteKeyA
-API SHDeleteKeyWStub ; -> SHDeleteKeyW
-API SHDeleteOrphanKeyA
-API SHDeleteOrphanKeyW
-API SHDeleteValueAStub ; -> SHDeleteValueA
-API SHDeleteValueWStub ; -> SHDeleteValueW
-API SHEnumKeyExAStub ; -> SHEnumKeyExA
-API SHEnumKeyExWStub ; -> SHEnumKeyExW
-API SHEnumValueAStub ; -> SHEnumValueA
-API SHEnumValueWStub ; -> SHEnumValueW
+API SHCreateStreamOnFileAStub
+API SHCreateStreamOnFileExStub
+API SHCreateStreamOnFileWStub
+API RETIRED_SHCreateStreamWrapper
+API SHCreateThreadStub
+API SHCreateThreadRefStub
+API SHCreateThreadWithHandleStub
+API SHCreateWorkerWindowWStub
+API SHDeleteEmptyKeyAStub
+API SHDeleteEmptyKeyWStub
+API SHDeleteKeyAStub
+API SHDeleteKeyWStub
+API RETIRED_SHDeleteOrphanKeyA
+API RETIRED_SHDeleteOrphanKeyW
+API SHDeleteValueAStub
+API SHDeleteValueWStub
+API SHEnumKeyExAStub
+API SHEnumKeyExWStub
+API SHEnumValueAStub
+API SHEnumValueWStub
 API SHFormatDateTimeA
 API SHFormatDateTimeW
-API SHFreeSharedStub ; -> SHFreeShared
+API SHFreeSharedStub
 API SHGetInverseCMAP
-API SHGetThreadRefStub ; -> SHGetThreadRef
-API SHGetValueAStub ; -> SHGetValueA
-API SHGetValueWStub ; -> SHGetValueW
+API SHGetThreadRefStub
+API SHGetValueAStub
+API SHGetValueWStub
 API SHGetViewStatePropertyBag
 API SHIsChildOrSelf
 API SHIsLowMemoryMachine
-API SHLoadIndirectStringStub ; -> SHLoadIndirectString
-API SHLockSharedStub ; -> SHLockShared
+API SHLoadIndirectStringStub
+API SHLockSharedStub
 API SHMessageBoxCheckA
 API SHMessageBoxCheckW
-API SHOpenRegStream2AStub ; -> SHOpenRegStream2A
-API SHOpenRegStream2WStub ; -> SHOpenRegStream2W
-API SHOpenRegStreamAStub ; -> SHOpenRegStreamA
-API SHOpenRegStreamWStub ; -> SHOpenRegStreamW
+API SHOpenRegStream2AStub
+API SHOpenRegStream2WStub
+API SHOpenRegStreamAStub
+API SHOpenRegStreamWStub
 API SHPackDispParamsV
 API SHPinDllOfCLSID
 API SHPropertyBag_ReadStrAlloc
 API SHPropertyBag_WriteBSTR
-API SHQueryInfoKeyAStub ; -> SHQueryInfoKeyA
-API SHQueryInfoKeyWStub ; -> SHQueryInfoKeyW
-API SHQueryValueExAStub ; -> SHQueryValueExA
-API SHQueryValueExWStub ; -> SHQueryValueExW
-API SHRegCloseUSKeyStub ; -> SHRegCloseUSKey
-API SHRegCreateUSKeyAStub ; -> SHRegCreateUSKeyA
-API SHRegCreateUSKeyWStub ; -> SHRegCreateUSKeyW
-API SHRegDeleteEmptyUSKeyAStub ; -> SHRegDeleteEmptyUSKeyA
-API SHRegDeleteEmptyUSKeyWStub ; -> SHRegDeleteEmptyUSKeyW
-API SHRegDeleteUSValueAStub ; -> SHRegDeleteUSValueA
-API SHRegDeleteUSValueWStub ; -> SHRegDeleteUSValueW
-API SHRegDuplicateHKeyStub ; -> SHRegDuplicateHKey
-API SHRegEnumUSKeyAStub ; -> SHRegEnumUSKeyA
-API SHRegEnumUSKeyWStub ; -> SHRegEnumUSKeyW
-API SHRegEnumUSValueAStub ; -> SHRegEnumUSValueA
-API SHRegEnumUSValueWStub ; -> SHRegEnumUSValueW
-API SHRegGetBoolUSValueAStub ; -> SHRegGetBoolUSValueA
-API SHRegGetBoolUSValueWStub ; -> SHRegGetBoolUSValueW
+API SHQueryInfoKeyAStub
+API SHQueryInfoKeyWStub
+API SHQueryValueExAStub
+API SHQueryValueExWStub
+API SHRegCloseUSKeyStub
+API SHRegCreateUSKeyAStub
+API SHRegCreateUSKeyWStub
+API SHRegDeleteEmptyUSKeyAStub
+API SHRegDeleteEmptyUSKeyWStub
+API SHRegDeleteUSValueAStub
+API SHRegDeleteUSValueWStub
+API SHRegDuplicateHKeyStub
+API SHRegEnumUSKeyAStub
+API SHRegEnumUSKeyWStub
+API SHRegEnumUSValueAStub
+API SHRegEnumUSValueWStub
+API SHRegGetBoolUSValueAStub
+API SHRegGetBoolUSValueWStub
 API SHRegGetBoolValueFromHKCUHKLM
-API SHRegGetIntWStub ; -> SHRegGetIntW
-API SHRegGetPathAStub ; -> SHRegGetPathA
-API SHRegGetPathWStub ; -> SHRegGetPathW
-API SHRegGetUSValueAStub ; -> SHRegGetUSValueA
-API SHRegGetUSValueWStub ; -> SHRegGetUSValueW
-API SHRegGetValueAStub ; -> SHRegGetValueA
+API SHRegGetIntWStub
+API SHRegGetPathAStub
+API SHRegGetPathWStub
+API SHRegGetUSValueAStub
+API SHRegGetUSValueWStub
+API SHRegGetValueAStub
 API SHRegGetValueFromHKCUHKLM
-API SHRegGetValueWStub ; -> SHRegGetValueW
-API SHRegOpenUSKeyAStub ; -> SHRegOpenUSKeyA
-API SHRegOpenUSKeyWStub ; -> SHRegOpenUSKeyW
-API SHRegQueryInfoUSKeyAStub ; -> SHRegQueryInfoUSKeyA
-API SHRegQueryInfoUSKeyWStub ; -> SHRegQueryInfoUSKeyW
-API SHRegQueryUSValueAStub ; -> SHRegQueryUSValueA
-API SHRegQueryUSValueWStub ; -> SHRegQueryUSValueW
-API SHRegSetPathAStub ; -> SHRegSetPathA
-API SHRegSetPathWStub ; -> SHRegSetPathW
-API SHRegSetUSValueAStub ; -> SHRegSetUSValueA
-API SHRegSetUSValueWStub ; -> SHRegSetUSValueW
-API SHRegWriteUSValueAStub ; -> SHRegWriteUSValueA
-API SHRegWriteUSValueWStub ; -> SHRegWriteUSValueW
+API SHRegGetValueWStub
+API SHRegOpenUSKeyAStub
+API SHRegOpenUSKeyWStub
+API SHRegQueryInfoUSKeyAStub
+API SHRegQueryInfoUSKeyWStub
+API SHRegQueryUSValueAStub
+API SHRegQueryUSValueWStub
+API SHRegSetPathAStub
+API SHRegSetPathWStub
+API SHRegSetUSValueAStub
+API SHRegSetUSValueWStub
+API SHRegWriteUSValueAStub
+API SHRegWriteUSValueWStub
 API SHRegisterValidateTemplate
-API SHReleaseThreadRefStub ; -> SHReleaseThreadRef
+API SHReleaseThreadRefStub
 API SHRunIndirectRegClientCommand
 API SHSendMessageBroadcastA
 API SHSendMessageBroadcastW
-API SHSetThreadRefStub ; -> SHSetThreadRef
-API SHSetValueAStub ; -> SHSetValueA
-API SHSetValueWStub ; -> SHSetValueW
+API SHSetThreadRefStub
+API SHSetValueAStub
+API SHSetValueWStub
 API SHSkipJunction
-API SHStrDupAStub ; -> SHStrDupA
-API SHStrDupWStub ; -> SHStrDupW
+API SHStrDupAStub
+API SHStrDupWStub
 API SHStripMneumonicA
 API SHStripMneumonicW
-API SHUnicodeToAnsiStub ; -> SHUnicodeToAnsi
+API SHUnicodeToAnsiStub
 API SHUnicodeToAnsiCP
-API SHUnicodeToUnicodeStub ; -> SHUnicodeToUnicode
-API SHUnlockSharedStub ; -> SHUnlockShared
+API SHUnicodeToUnicodeStub
+API SHUnlockSharedStub
 API ShellMessageBoxA
 API ShellMessageBoxW
-API StrCSpnAStub ; -> StrCSpnA
-API StrCSpnIAStub ; -> StrCSpnIA
-API StrCSpnIWStub ; -> StrCSpnIW
-API StrCSpnWStub ; -> StrCSpnW
-API StrCatBuffAStub ; -> StrCatBuffA
-API StrCatBuffWStub ; -> StrCatBuffW
-API StrCatChainWStub ; -> StrCatChainW
-API Shlwapi_StrCatW ; -> StrCatW
-API StrChrAStub ; -> StrChrA
-API StrChrIAStub ; -> StrChrIA
-API StrChrIWStub ; -> StrChrIW
-API StrChrNIWStub ; -> StrChrNIW
-API StrChrNWStub ; -> StrChrNW
-API StrChrWStub ; -> StrChrW
-API StrCmpCAStub ; -> StrCmpCA
-API StrCmpCWStub ; -> StrCmpCW
-API StrCmpICAStub ; -> StrCmpICA
-API StrCmpICWStub ; -> StrCmpICW
-API StrCmpIWStub ; -> StrCmpIW
-API StrCmpLogicalWStub ; -> StrCmpLogicalW
-API StrCmpNAStub ; -> StrCmpNA
-API StrCmpNCAStub ; -> StrCmpNCA
-API StrCmpNCWStub ; -> StrCmpNCW
-API StrCmpNIAStub ; -> StrCmpNIA
-API StrCmpNICAStub ; -> StrCmpNICA
-API StrCmpNICWStub ; -> StrCmpNICW
-API StrCmpNIWStub ; -> StrCmpNIW
-API StrCmpNWStub ; -> StrCmpNW
-API StrCmpWStub ; -> StrCmpW
-API StrCpyNWStub ; -> StrCpyNW
-API Shlwapi_StrCpyW ; -> StrCpyW
-API StrDupAStub ; -> StrDupA
-API StrDupWStub ; -> StrDupW
+API StrCSpnAStub
+API StrCSpnIAStub
+API StrCSpnIWStub
+API StrCSpnWStub
+API StrCatBuffAStub
+API StrCatBuffWStub
+API StrCatChainWStub
+API Shlwapi_StrCatW
+API StrChrAStub
+API StrChrIAStub
+API StrChrIWStub
+API StrChrNIWStub
+API StrChrNWStub
+API StrChrWStub
+API StrCmpCAStub
+API StrCmpCWStub
+API StrCmpICAStub
+API StrCmpICWStub
+API StrCmpIWStub
+API StrCmpLogicalWStub
+API StrCmpNAStub
+API StrCmpNCAStub
+API StrCmpNCWStub
+API StrCmpNIAStub
+API StrCmpNICAStub
+API StrCmpNICWStub
+API StrCmpNIWStub
+API StrCmpNWStub
+API StrCmpWStub
+API StrCpyNWStub
+API Shlwapi_StrCpyW
+API StrDupAStub
+API StrDupWStub
 API StrFormatByteSize64A
 API StrFormatByteSizeA
 API StrFormatByteSizeEx
@@ -319,78 +319,78 @@ API StrFormatKBSizeA
 API StrFormatKBSizeW
 API StrFromTimeIntervalA
 API StrFromTimeIntervalW
-API StrIsIntlEqualAStub ; -> StrIsIntlEqualA
-API StrIsIntlEqualWStub ; -> StrIsIntlEqualW
-API Shlwapi_StrNCatA ; -> StrNCatA
-API Shlwapi_StrNCatW ; -> StrNCatW
-API StrPBrkAStub ; -> StrPBrkA
-API StrPBrkWStub ; -> StrPBrkW
-API StrRChrAStub ; -> StrRChrA
-API StrRChrIAStub ; -> StrRChrIA
-API StrRChrIWStub ; -> StrRChrIW
-API StrRChrWStub ; -> StrRChrW
-API StrRStrIAStub ; -> StrRStrIA
-API StrRStrIWStub ; -> StrRStrIW
-API StrRetToBSTRStub ; -> StrRetToBSTR
+API StrIsIntlEqualAStub
+API StrIsIntlEqualWStub
+API Shlwapi_StrNCatA
+API Shlwapi_StrNCatW
+API StrPBrkAStub
+API StrPBrkWStub
+API StrRChrAStub
+API StrRChrIAStub
+API StrRChrIWStub
+API StrRChrWStub
+API StrRStrIAStub
+API StrRStrIWStub
+API StrRetToBSTRStub
 API StrRetToBufA
-API StrRetToBufWStub ; -> StrRetToBufW
+API StrRetToBufWStub
 API StrRetToStrA
-API StrRetToStrWStub ; -> StrRetToStrW
-API StrSpnAStub ; -> StrSpnA
-API StrSpnWStub ; -> StrSpnW
-API StrStrAStub ; -> StrStrA
-API StrStrIAStub ; -> StrStrIA
-API StrStrIWStub ; -> StrStrIW
-API StrStrNIWStub ; -> StrStrNIW
-API StrStrNWStub ; -> StrStrNW
-API StrStrWStub ; -> StrStrW
-API StrToInt64ExAStub ; -> StrToInt64ExA
-API StrToInt64ExWStub ; -> StrToInt64ExW
-API StrToIntAStub ; -> StrToIntA
-API StrToIntExAStub ; -> StrToIntExA
-API StrToIntExWStub ; -> StrToIntExW
-API StrToIntWStub ; -> StrToIntW
-API StrTrimAStub ; -> StrTrimA
-API StrTrimWStub ; -> StrTrimW
-API UrlApplySchemeAStub ; -> UrlApplySchemeA
-API UrlApplySchemeWStub ; -> UrlApplySchemeW
-API UrlCanonicalizeAStub ; -> UrlCanonicalizeA
-API UrlCanonicalizeWStub ; -> UrlCanonicalizeW
-API UrlCombineAStub ; -> UrlCombineA
-API UrlCombineWStub ; -> UrlCombineW
-API UrlCompareAStub ; -> UrlCompareA
-API UrlCompareWStub ; -> UrlCompareW
-API UrlCreateFromPathAStub ; -> UrlCreateFromPathA
-API UrlCreateFromPathWStub ; -> UrlCreateFromPathW
-API UrlEscapeAStub ; -> UrlEscapeA
-API UrlEscapeWStub ; -> UrlEscapeW
-API UrlFixupWStub ; -> UrlFixupW
-API UrlGetLocationAStub ; -> UrlGetLocationA
-API UrlGetLocationWStub ; -> UrlGetLocationW
-API UrlGetPartAStub ; -> UrlGetPartA
-API UrlGetPartWStub ; -> UrlGetPartW
-API UrlHashAStub ; -> UrlHashA
-API UrlHashWStub ; -> UrlHashW
-API UrlIsAStub ; -> UrlIsA
-API UrlIsNoHistoryAStub ; -> UrlIsNoHistoryA
-API UrlIsNoHistoryWStub ; -> UrlIsNoHistoryW
-API UrlIsOpaqueAStub ; -> UrlIsOpaqueA
-API UrlIsOpaqueWStub ; -> UrlIsOpaqueW
-API UrlIsWStub ; -> UrlIsW
-API UrlUnescapeAStub ; -> UrlUnescapeA
-API UrlUnescapeWStub ; -> UrlUnescapeW
+API StrRetToStrWStub
+API StrSpnAStub
+API StrSpnWStub
+API StrStrAStub
+API StrStrIAStub
+API StrStrIWStub
+API StrStrNIWStub
+API StrStrNWStub
+API StrStrWStub
+API StrToInt64ExAStub
+API StrToInt64ExWStub
+API StrToIntAStub
+API StrToIntExAStub
+API StrToIntExWStub
+API StrToIntWStub
+API StrTrimAStub
+API StrTrimWStub
+API UrlApplySchemeAStub
+API UrlApplySchemeWStub
+API UrlCanonicalizeAStub
+API UrlCanonicalizeWStub
+API UrlCombineAStub
+API UrlCombineWStub
+API UrlCompareAStub
+API UrlCompareWStub
+API UrlCreateFromPathAStub
+API UrlCreateFromPathWStub
+API UrlEscapeAStub
+API UrlEscapeWStub
+API UrlFixupWStub
+API UrlGetLocationAStub
+API UrlGetLocationWStub
+API UrlGetPartAStub
+API UrlGetPartWStub
+API UrlHashAStub
+API UrlHashWStub
+API UrlIsAStub
+API UrlIsNoHistoryAStub
+API UrlIsNoHistoryWStub
+API UrlIsOpaqueAStub
+API UrlIsOpaqueWStub
+API UrlIsWStub
+API UrlUnescapeAStub
+API UrlUnescapeWStub
 API WhichPlatform
 API wnsprintfA
 API wnsprintfW
 API wvnsprintfA
 API wvnsprintfW
-API SHLWAPI_NONAME_648
-API SHLWAPI_NONAME_647
-API SHLWAPI_NONAME_646
-API SHLWAPI_NONAME_645
-API SHLWAPI_NONAME_644
+API SHWaitForThreadWithWakeMask
+API SHManagedCreateStreamOnFile
+API SHManagedCreateFile
+API IStream_WriteStrLong
+API IStream_ReadStrLong
 API PathUnExpandSystemEnvStringsW
-API SHLWAPI_NONAME_642
+API RETIRED_SHGetSignatureInfoEx
 API SHGetSizeSharedStub
 API SHInvokeCommandsOnContextMenuEx
 API SHInvokeCommandOnContextMenuEx
@@ -398,61 +398,61 @@ API IUnknown_TranslateAcceleratorGlobal
 API SHPropertyBag_WriteUnknown
 API SHPropertyBag_ReadUnknown
 API SHGetShellKeyEx
-API SHLWAPI_NONAME_634
-API SHLWAPI_NONAME_633
-API SHLWAPI_NONAME_632
+API SHGlobalCounterDecrement
+API SHGlobalCounterIncrement
+API SHGlobalCounterGetValue
 API SHRegSetValue
-API SHLWAPI_NONAME_628
-API SHLWAPI_NONAME_627
+API SHCreateStreamOnModuleResourceW
+API SHCreateStreamOnDllResourceW
 API SHCreatePropertyBagOnCachedProfileSection
 API SHCreatePropertyStoreOnXML
-API SHLWAPI_NONAME_619
-API SHLWAPI_NONAME_618
+API IsAppCompatModeEnabled
+API SHWindowsPolicy
 API DupWideToAnsi
 API SHClearViewStatePropertyBag
 API SHPropertyBag_ReadPropertyKey
 API SHPropertyBag_WritePropertyKey
-API SHLWAPI_NONAME_611
-API SHLWAPI_NONAME_606
-API SHLWAPI_NONAME_605
-API SHLWAPI_NONAME_604
-API SHLWAPI_NONAME_603
-API SHLWAPI_NONAME_602
-API SHLWAPI_NONAME_601
-API SHLWAPI_NONAME_600
-API SHLWAPI_NONAME_599
-API SHLWAPI_NONAME_598
+API IUnknown_RemoveBackReferences
+API RETIRED_StrIsCanonicalEqualW
+API RETIRED_StrIsCanonicalEqualA
+API RETIRED_StrIsCanonicalEqualNW
+API RETIRED_StrIsCanonicalEqualNA
+API RETIRED_IUnknown_QueryServiceQueryStatus
+API RETIRED_SHSafeQueryInterface
+API SHAnsiToUnicodeCPAlloc
+API SHUnicodeToAnsiCPAlloc
+API RETIRED_SHGetUserToken_shlwapi
 API CreateSizedDIBSECTION
 API FactorAspectRatio
 API CalculateAspectRatio
 API ConvertDIBSECTIONToThumbnail
 API SHPropertyBag_WriteULONGLONG
 API SHPropertyBag_ReadULONGLONG
-API SHLWAPI_NONAME_576
+API QuerySourceCreateFromKeyEx
 API IWebBrowser_Navigate2
-API SHLWAPI_NONAME_574
-API SHLWAPI_NONAME_573
+API RETIRED_IWebBrowser_Navigate
+API RETIRED_IShellFolder_ParseDisplayNameC
 API SHExpandEnvironmentStringsAlloc
 API SHInvokeCommandWithFlagsAndSite
-API SHLWAPI_NONAME_566
-API SHLWAPI_NONAME_565
-API SHLWAPI_NONAME_564
-API SHLWAPI_NONAME_563
+API RETIRED_SHGetPrivateProfileStruct
+API RETIRED_SHCoCreateExtension
+API RETIRED_SHCoExtensionAllowed
+API RETIRED_SHGetAllAccessSA
 API IsInternetESCEnabledStub
 API AssocGetUrlAction
-API SHLWAPI_NONAME_560
-API SHLWAPI_NONAME_559
-API SHLWAPI_NONAME_558
-API SHLWAPI_NONAME_557
-API SHLWAPI_NONAME_556
-API SHLWAPI_NONAME_555
-API SHLWAPI_NONAME_554
-API SHLWAPI_NONAME_552
-API SHLWAPI_NONAME_551
-API SHLWAPI_NONAME_550
+API SHWindowsPolicyGetValue
+API RETIRED_SHGetSignatureInfo
+API RETIRED_SHCoExtensionCollectStats
+API RETIRED_SHGetPrivateProfileStruct
+API RETIRED_SHGetPrivateProfileString
+API RETIRED_SHGetPrivateProfileSectionNames
+API RETIRED_SHGetPrivateProfileSection
+API RETIRED_SHEvaluateSystemCommandTemplate
+API RETIRED_IShellFolder_CompareIDs
+API RETIRED_GetTemplateInfoFromHandle
 API SHCoCreateInstanceAC
 API SHAreIconsEqual
-API SHLWAPI_NONAME_547
+API RETIRED_DelayLoadFailureHook
 API IUnknown_DoContextMenuPopup
 API SHForwardContextMenuMsg
 API QuerySourceCreateFromKey
@@ -484,7 +484,7 @@ API SKAllocValueW
 API SKDeleteValueW
 API SKSetValueW
 API SKGetValueW
-API SHLWAPI_NONAME_514
+API IUnknown_ProfferService
 API PathFileExistsDefExtAndAttributesW
 API SHLockSharedExStub
 API IUnknown_OnFocusChangeIS
@@ -493,46 +493,46 @@ API SHPropertyBag_ReadDWORD
 API SHPropertyBag_WriteGUID
 API SHPropertyBag_ReadGUID
 API ualstrcpyW
-API SHLWAPI_NONAME_503
-API SHLWAPI_NONAME_502
-API SHLWAPI_NONAME_501
-API SHLWAPI_NONAME_500
+API ualstrlenW
+API ualstrcmpW
+API ualstrcmpiW
+API ualstrcpynW
 API SHPropertyBag_WriteBOOL
-API SHLWAPI_NONAME_498
+API RETIRED_SHPropertyBag_ReadBOOLOld
 API SHPropertyBag_WriteInt
 API SHPropertyBag_ReadInt
 API SHPropertyBag_WriteStr
 API SHPropertyBag_ReadStr
 API SHPropertyBag_ReadType
-API SHLWAPI_NONAME_492
+API RETIRED_PrettifyFileDescriptionW
 API SHGetShellKey
 API GlobalFindAtomW
 API GlobalAddAtomW
-API SHLWAPI_NONAME_488
-API SHLWAPI_NONAME_486
-API SHLWAPI_NONAME_485
+API RETIRED_SHConvertGraphicsFile
+API ModeToCreateFileFlags
+API MapWin32ErrorToSTG
 API IUnknown_QueryServiceExec
-API SHLWAPI_NONAME_483
-API SHLWAPI_NONAME_482
+API RETIRED_SHMessageBoxHelpW
+API RETIRED_SHMessageBoxHelpA
 API IUnknown_HasFocusIO
-API SHLWAPI_NONAME_480
+API RETIRED_UrlCrackW
 API IUnknown_UIActivateIO
 API IUnknown_TranslateAcceleratorIO
 API SHCreatePropertyBagOnMemory
-API SHLWAPI_NONAME_476
-API SHLWAPI_NONAME_475
-API SHLWAPI_NONAME_474
-API SHLWAPI_NONAME_473
+API SHGetObjectCompatFlags
+API RETIRED_GetShellSecurityDescriptor
+API RETIRED_SHSetIniStringUTF7W
+API RETIRED_SHGetIniStringUTF7W
 API SHCreatePropertyBagOnProfileSection
 API SHCreatePropertyBagOnRegKey
-API SHLWAPI_NONAME_470
+API RETIRED_IUnknown_ProfferServiceOld
 API RunRegCommand
 API RunIndirectRegCommand
 API PathUnExpandEnvStringsForUserW
 API PathUnExpandEnvStringsForUserA
 API SHExpandEnvironmentStringsForUserW
 API SHExpandEnvironmentStringsForUserA
-API SHLWAPI_NONAME_461
+API RETIRED_SHGetAppCompatFlags
 API SHExpandEnvironmentStringsWStub
 API SHExpandEnvironmentStringsAStub
 API GetLongPathNameA
@@ -548,89 +548,89 @@ API NextPathA
 API FixSlashesAndColonW
 API FixSlashesAndColonA
 API PathFileExistsAndAttributesA
-API GetSystemWindowsDirectoryW
-API GetSystemWindowsDirectoryA
-API GetEnvironmentVariableW
-API SHLWAPI_NONAME_441
-API SHLWAPI_NONAME_440
-API SHLWAPI_NONAME_439
+API GetSystemWindowsDirectoryWStub
+API GetSystemWindowsDirectoryAStub
+API GetEnvironmentVariableWStub
+API RETIRED_SHGetWebFolderFilePathW
+API RETIRED_SHGetWebFolderFilePathA
+API SHLoadRegUIStringW
 API SHLoadRegUIStringA
 API CLSIDFromStringWrap
 API CLSIDFromProgIDWrap
 API SendMessageTimeoutW
-API SHLWAPI_NONAME_431
-API SHLWAPI_NONAME_430
-API SHLWAPI_NONAME_429
-API TrackPopupMenuEx
+API RETIRED_MLClearMLHInstance
+API RETIRED_MLSetMLHInstance
+API RETIRED_MLIsMLHInstance
+API NtUserTrackPopupMenuEx
 API TrackPopupMenu
-API DestroyMenu
-API DeleteMenu
-API SHLWAPI_NONAME_424
-API SHLWAPI_NONAME_423
-API SHLWAPI_NONAME_422
-API SHLWAPI_NONAME_421
-API SHLWAPI_NONAME_420
+API NtUserDestroyMenu
+API NtUserDeleteMenu
+API RETIRED_SHGlobalCounterDecrement
+API RETIRED_SHGlobalCounterCreateNamedW
+API RETIRED_SHGlobalCounterCreateNamedA
+API RETIRED_SHLoadPersistedDataObject
+API RETIRED_SHPersistDataObject
 API SHFlushSFCache
-API SHLWAPI_NONAME_418
-API SHLWAPI_NONAME_417
-API SHLWAPI_NONAME_416
-API SHLWAPI_NONAME_415
-API SHLWAPI_NONAME_414
+API RETIRED_MLFreeLibrary
+API RETIRED_SHWinHelpOnDemandA
+API RETIRED_SHWinHelpOnDemandW
+API RETIRED_SHHtmlHelpOnDemandA
+API RETIRED_SHHtmlHelpOnDemandW
 API SHGetMachineInfo
-API SHLWAPI_NONAME_412
-API SHLWAPI_NONAME_411
+API RETIRED_AssocMakeFileExtsToApplicationA
+API RETIRED_AssocMakeFileExtsToApplicationW
 API AssocMakeApplicationByKeyA
 API AssocMakeApplicationByKeyW
 API AssocMakeShell
 API AssocMakeProgid
-API SHLWAPI_NONAME_406
-API SHLWAPI_NONAME_405
-API SHLWAPI_NONAME_404
+API RETIRED_MLBuildResURLW
+API RETIRED_MLBuildResURLA
+API RETIRED_IShellFolder_EnumObjects
 API GetOpenFileNameW
 API PrintDlgW
 API PageSetupDlgW
 API StrCpyNXWStub
 API StrCpyNXAStub
-API SHLWAPI_NONAME_398
+API RETIRED_MLHtmlHelpW
 API WinHelpW
-API SHLWAPI_NONAME_396
+API RETIRED_MLHtmlHelpA
 API WinHelpA
-API SHChangeNotify
+API SHChangeNotifyStub
 API CreateDialogIndirectParamW
 API EndDialog
 API WNetGetLastErrorW
-API SHLWAPI_NONAME_390
+API RETIRED_WNetRestoreConnectionWrapW
 API GetSaveFileNameW
-API SHLWAPI_NONAME_387
-API SHLWAPI_NONAME_386
-API SHLWAPI_NONAME_385
+API RETIRED_SHQueryRawAcceleratorMsg
+API RETIRED_SHQueryRawAccelerator
+API RETIRED_SHLoadRawAccelerators
 API SHRestrictedMessageBox
 API ZoneConfigureW
 API ZoneComputePaneSize
 API AssocCopyVerbs
 API Shell_GetCachedImageIndexA
 API Shell_GetCachedImageIndexW
-API GetThreadUILanguage
-API SHLWAPI_NONAME_375
-API SHLWAPI_NONAME_374
+API GetThreadUILanguageStub
+API RETIRED_SHCheckDiskForMediaW
+API RETIRED_SHCheckDiskForMediaA
 API DdeQueryStringW
 API DdeCreateStringHandleW
 API DdeInitializeW
 API ExtractIconW
-API CreateProcessW
+API CreateProcessWStub
 API GetPrivateProfileStructW
 API WritePrivateProfileStructW
 API RegEnumValueWrapW
 API DoesStringRoundTripW
 API DoesStringRoundTripA
 API SHInvokeCommand
-API SHLWAPI_NONAME_362
+API RETIRED_GetUserNameWrapW
 API GetShortPathNameW
 API RemoveDirectoryW
 API OpenEventW
 API SHDefExtractIconW
 API SHGetNewLinkInfoW
-API SHLWAPI_NONAME_356
+API RETIRED_SHGetAllAccessSA
 API IUnknown_EnableModeless
 API VerQueryValueWrapW
 API GetFileVersionInfoWrapW
@@ -639,11 +639,11 @@ API SHGetFileDescriptionA
 API SHGetFileDescriptionW
 API RegDeleteValueWrapW
 API SHRegGetCLSIDKey
-API SHLWAPI_NONAME_343
+API RETIRED_SHRegGetCLSIDKeyA
 API SHInterlockedCompareExchange
 API FindNextFileW
 API MessageBoxW
-API GetNumberFormatW
+API GetNumberFormatWStub
 API SetFileAttributesW
 API ExtractIconExW
 API SHFileOperationW
@@ -652,47 +652,47 @@ API SHGetPathFromIDListW
 API SHBrowseForFolderW
 API CallMsgFilterW
 API MIME_GetExtensionW
-API SHLWAPI_NONAME_330
-API SHLWAPI_NONAME_329
-API SHLWAPI_NONAME_328
-API SHLWAPI_NONAME_327
-API SHLWAPI_NONAME_326
-API SHLWAPI_NONAME_325
-API SHLWAPI_NONAME_324
-API SHLWAPI_NONAME_323
-API SHLWAPI_NONAME_322
-API SHLWAPI_NONAME_321
-API SHLWAPI_NONAME_320
+API RETIRED_MIME_GetExtensionA
+API RETIRED_GetMIMETypeSubKeyW
+API RETIRED_GetMIMETypeSubKeyA
+API RETIRED_UnregisterExtensionForMIMETypeW
+API RETIRED_UnregisterExtensionForMIMETypeA
+API RETIRED_RegisterExtensionForMIMETypeW
+API RETIRED_RegisterExtensionForMIMETypeA
+API RETIRED_UnregisterMIMETypeForExtensionW
+API RETIRED_UnregisterMIMETypeForExtensionA
+API RETIRED_RegisterMIMETypeForExtensionW
+API RETIRED_RegisterMIMETypeForExtensionA
 API FindWindowExW
 API DragQueryFileW
 API IShellFolder_ParseDisplayName
 API IShellFolder_GetDisplayNameOf
 API GetClassInfoExW
 API RegisterClassExW
-API SHGetFileInfoW
+API SHGetFileInfoWStub
 API GetPrivateProfileStringW
-API GetDateFormatW
-API GetTimeFormatW
-API LoadLibraryW
+API GetDateFormatWStub
+API GetTimeFormatWStub
+API LoadLibraryWStub
 API IsBadStringPtrW
 API CreateSemaphoreW
-API ExpandEnvironmentStringsW
+API ExpandEnvironmentStringsWStub
 API CreateMutexW
 API CreateMetaFileW
 API InsertMenuItemW
 API GetMenuItemInfoW
 API DrawTextExW
-API CreateFontW
+API CreateFontWStub
 API ExtTextOutW
 API WritePrivateProfileStringW
-API SHLWAPI_NONAME_297
-API SHLWAPI_NONAME_296
+API RETIRED_CreateURLFileContentsA
+API RETIRED_CreateURLFileContentsW
 API SHSetIniStringW
 API SHGetIniStringW
-API SHLWAPI_NONAME_293
+API RETIRED_SHCancelUserWorkItems
 API SHMessageBoxCheckExW
 API SHMessageBoxCheckExA
-API SHLWAPI_NONAME_290
+API RETIRED_SHMirrorIcon
 API PlaySoundW
 API IUnknown_CPContainerInvokeIndirect
 API IUnknown_CPContainerOnChanged
@@ -702,40 +702,40 @@ API IConnectionPoint_SimpleInvoke
 API IConnectionPoint_InvokeWithCancel
 API SHPackDispParams
 API SHInvokeDefaultCommand
-API SHLWAPI_NONAME_277
-API SHLWAPI_NONAME_275
-API SHLWAPI_NONAME_274
-API SHLWAPI_NONAME_273
-API SHLWAPI_NONAME_272
+API RETIRED_SHDialogBox
+API RETIRED_RegisterGlobalHotkeyA
+API RETIRED_RegisterGlobalHotkeyW
+API RETIRED_SHTerminateThreadPool
+API RETIRED_SHSetThreadPoolLimits
 API SHGetRestriction
 API GUIDFromStringA
 API SHWeakReleaseInterface
 API SHWeakQueryInterface
 API SHRestrictionLookup
 API SHCancelTimerQueueTimer
-API SHLWAPI_NONAME_264
+API RETIRED_SHChangeTimerQueueTimer
 API SHSetTimerQueueTimer
-API SHLWAPI_NONAME_262
-API SHLWAPI_NONAME_261
-API SHLWAPI_NONAME_260
-API SHLWAPI_NONAME_259
-API SHLWAPI_NONAME_258
+API RETIRED_SHDeleteTimerQueue
+API RETIRED_SHCreateTimerQueue
+API SHQueueUserWorkItem
+API RETIRED_SHUnregisterWait
+API RETIRED_SHRegisterWaitForSingleObject
 API SHCreateWorkerWindowA
-API SHLWAPI_NONAME_255
-API SHLWAPI_NONAME_254
-API SHLWAPI_NONAME_253
-API SHLWAPI_NONAME_252
-API SHLWAPI_NONAME_251
-API SHLWAPI_NONAME_250
-API SHLWAPI_NONAME_249
-API SHLWAPI_NONAME_248
-API SHLWAPI_NONAME_247
-API SHLWAPI_NONAME_246
-API SHLWAPI_NONAME_245
-API SHLWAPI_NONAME_244
-API SHLWAPI_NONAME_243
-API SHLWAPI_NONAME_242
-API SHLWAPI_NONAME_241
+API RETIRED_EventTraceHandler
+API RETIRED_StopWatchExW
+API RETIRED_StopWatchExA
+API RETIRED_StopWatch_SetMsgLastLocation
+API RETIRED_StopWatch_DispatchTime
+API RETIRED_GetPerfTime
+API RETIRED_StopWatch_MarkJavaStop
+API RETIRED_StopWatch_MarkSameFrameStart
+API RETIRED_StopWatch_MarkFrameStart
+API RETIRED_StopWatch_CheckMsg
+API RETIRED_StopWatch_TimerHandler
+API RETIRED_StopWatchW
+API RETIRED_StopWatchA
+API RETIRED_StopWatchFlush
+API RETIRED_StopWatchMode
 API SHDefWindowProc
 API SHUnregisterClassesW
 API SHUnregisterClassesA
@@ -748,34 +748,34 @@ API ZoneCheckUrlExW
 API ZoneCheckUrlExA
 API ZoneCheckUrlW
 API ZoneCheckUrlA
-API SHLWAPI_NONAME_227
-API SHLWAPI_NONAME_226
-API SHLWAPI_NONAME_224
-API SHLWAPI_NONAME_223
-API SHLWAPI_NONAME_222
+API RETIRED_ZoneCheckPathW
+API RETIRED_ZoneCheckPathA
+API RETIRED_SHGlobalCounterIncrement
+API RETIRED_SHGlobalCounterGetValue
+API RETIRED_SHGlobalCounterCreate
 API SHRemoveDefaultDialogFont
 API SHSetDefaultDialogFont
-API SHLWAPI_NONAME_216
+API SHAnsiToUnicodeCP
 API FDSA_DeleteItem
 API FDSA_InsertItem
 API FDSA_Destroy
 API FDSA_Initialize
-API SHLWAPI_NONAME_207
-API SHLWAPI_NONAME_206
-API SHLWAPI_NONAME_205
+API RETIRED_IContextMenu_Invoke
+API SHGetValueGoodBootW
+API SHGetValueGoodBootA
 API IsQSForward
 API MayExecForward
 API MayQSForward
 API SHSearchMapInt
 API SHFillRectClr
-API SHLWAPI_NONAME_196
+API RETIRED_SHVerbExistsNA
 API SHIsExpandableFolder
-API SHLWAPI_NONAME_194
+API SHWaitForSendMessageThread
 API SHGetCurColorRes
 API SHGetMenuFromID
 API IUnknown_HandleIRestrict
-API SHLWAPI_NONAME_189
-API SHLWAPI_NONAME_188
+API RETIRED_IUnknown_OnFocusOCS
+API RETIRED_IUnknown_TranslateAcceleratorOCS
 API SHLoadFromPropertyBag
 API SHSimulateDrop
 API SHRegisterClassA
@@ -785,17 +785,17 @@ API SHRemoveAllSubMenus
 API SHMenuIndexFromID
 API SHPropagateMessage
 API SHLoadMenuPopup
-API SHLWAPI_NONAME_175
+API IUnknown_GetClassID
 API IUnknown_SetOwner
-API SHLWAPI_NONAME_171
+API RETIRED_SHIsSameObject
 API PathSkipLeadingSlashesA
 API SHSetParentHwnd
-API SHLWAPI_NONAME_166
+API SHIsEmptyStream
 API SHSetWindowBits
 API SHTruncateStringStub
-API SHLWAPI_NONAME_161
+API RETIRED_SHAboutInfoW
 API ?SHAboutInfoA@@YAHPEADK@Z
-API CompareStringW
+API CompareStringWStub
 API wvsprintfW
 API WinHelpW
 API VkKeyScanW
@@ -809,29 +809,29 @@ API SetWindowLongW
 API SetPropW
 API SetMenuItemInfoW
 API SetDlgItemTextW
-API SetCurrentDirectoryW
+API SetCurrentDirectoryWStub
 API SendMessageW
 API SendDlgItemMessageW
 API RemovePropW
 API RegisterWindowMessageW
-API RegisterClipboardFormatW
+API RegisterWindowMessageW
 API RegisterClassW
 API RegSetValueExWrapW
-API SHLWAPI_NONAME_129
+API RETIRED_RegSetValueWrapW
 API RegQueryValueExWrapW
 API RegQueryValueWrapW
 API RegQueryInfoKeyWrapW
 API RegOpenKeyExWrapW
 API RegOpenKeyWrapW
 API RegEnumKeyExWrapW
-API SHLWAPI_NONAME_122
+API RETIRED_RegEnumKeyWrapW
 API RegDeleteKeyWrapW
 API RegCreateKeyExWrapW
-API SHLWAPI_NONAME_119
+API RETIRED_RegCreateKeyWrapW
 API PostThreadMessageW
 API PostMessageW
 API PeekMessageW
-API OutputDebugStringW
+API OutputDebugStringWStub
 API OemToCharW
 API MoveFileW
 API CopyFileW
@@ -841,7 +841,7 @@ API ModifyMenuW
 API MessageBoxIndirectW
 API LoadStringW
 API LoadMenuW
-API LoadLibraryExW
+API LoadLibraryExWStub
 API LoadImageW
 API LoadIconW
 API LoadCursorW
@@ -849,38 +849,38 @@ API LoadBitmapW
 API LoadAcceleratorsW
 API IsDialogMessageW
 API InsertMenuW
-API GetWindowsDirectoryW
+API GetWindowsDirectoryWStub
 API GetWindowTextLengthW
 API GetWindowTextW
 API GetWindowLongW
-API GetTextMetricsW
+API GetTextMetricsWStub
 API GetTextFaceW
-API GetTextExtentPoint32W
+API GetTextExtentPoint32WStub
 API GetTempPathW
 API GetTempFileNameW
-API GetStringTypeExW
+API GetStringTypeExWStub
 API GetPropW
 API GetProfileStringW
 API GetPrivateProfileIntW
-API GetObjectW
-API GetModuleHandleW
-API SearchPathW
-API GetSystemDirectoryW
-API GetModuleFileNameW
+API GetObjectWStub
+API GetModuleHandleWStub
+API SearchPathWStub
+API GetSystemDirectoryWStub
+API GetModuleFileNameWStub
 API GetMessageW
 API GetMenuStringW
-API GetLocaleInfoW
+API GetLocaleInfoWStub
 API GetFullPathNameW
 API GetFileAttributesW
 API GetDlgItemTextW
-API GetCurrentDirectoryW
+API GetCurrentDirectoryWStub
 API GetClipboardFormatNameW
 API GetClassNameW
 API GetClassLongW
 API GetClassInfoW
-API FormatMessageW
+API FormatMessageWStub
 API FindWindowW
-API FindResourceW
+API FindResourceWStub
 API FindFirstFileW
 API EnumResourceNamesW
 API EnumFontFamiliesExW
@@ -890,7 +890,7 @@ API DispatchMessageW
 API DialogBoxParamW
 API DialogBoxIndirectParamW
 API DeleteFileW
-API DefWindowProcW
+API NtdllDefWindowProc_W
 API CreateWindowExW
 API CreateICW
 API CreateFontIndirectW
@@ -899,16 +899,16 @@ API CreateEventW
 API CreateDirectoryW
 API CreateDialogParamW
 API CreateDCW
-API CreateAcceleratorTableW
-API CopyAcceleratorTableW
-API CompareStringW
-API CharUpperBuffW
-API CharUpperW
+API NtUserCreateAcceleratorTable
+API NtUserCopyAcceleratorTable
+API CompareStringWStub
+API CharUpperBuffWStub
+API CharUpperWStub
 API CharToOemW
-API CharPrevW
-API CharNextW
-API CharLowerBuffW
-API CharLowerW
+API CharPrevWStub
+API CharNextWStub
+API CharLowerBuffWStub
+API CharLowerWStub
 API CallWindowProcW
 API AppendMenuW
 API GetStringType3ExW
@@ -917,10 +917,10 @@ API IsCharDigitWStub
 API IsCharCntrlWStub
 API IsCharPunctWStub
 API IsCharBlankWStub
-API IsCharAlphaNumericW
-API IsCharLowerW
-API IsCharUpperW
-API IsCharAlphaW
+API IsCharAlphaNumericWStub
+API IsCharLowerWStub
+API IsCharUpperWStub
+API IsCharAlphaWStub
 API SHStringFromGUIDW
 API SHStringFromGUIDA
 API SHFindDataBlock
@@ -929,7 +929,7 @@ API SHAddDataBlock
 API SHFreeDataBlockList
 API SHReadDataBlockList
 API SHWriteDataBlockList
-API SHLWAPI_NONAME_13
+API RETIRED_RegisterDefaultAcceptHeaders
 API SHMapHandleStub
 API PathFindOnPathExW
 API PathFindOnPathExA

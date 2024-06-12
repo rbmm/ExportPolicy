@@ -1,10 +1,8 @@
-#pragma once
+DECLSPEC_IMPORT
+public: virtual unsigned long DeviceCatalogs::CStdAsyncStubBuffer_AddRef(void);
 
 DECLSPEC_IMPORT
-public: virtual unsigned long DeviceCatalogs::AddRef(void);
-
-DECLSPEC_IMPORT
-public: virtual unsigned long DeviceCatalogs::AddRef(void);
+public: virtual unsigned long DeviceCatalogs::CStdStubBuffer_AddRef(void);
 
 DECLSPEC_IMPORT
 void HRGN_UserFree(unsigned long *,struct HRGN__ * *);
@@ -16,16 +14,16 @@ DECLSPEC_IMPORT
 unsigned char * HRGN_UserMarshal(unsigned long *,unsigned char *,struct HRGN__ * *);
 
 DECLSPEC_IMPORT
-unsigned char * HRGN_UserMarshal(unsigned long *,unsigned char *,struct HRGN__ * *);
+unsigned char * HRGN_UserMarshal64(unsigned long *,unsigned char *,struct HRGN__ * *);
 
 DECLSPEC_IMPORT
 unsigned long HRGN_UserSize(unsigned long *,unsigned long,struct HRGN__ * *);
 
 DECLSPEC_IMPORT
-unsigned long HRGN_UserSize(unsigned long *,unsigned long,struct HRGN__ * *);
+unsigned long HRGN_UserSize64(unsigned long *,unsigned long,struct HRGN__ * *);
 
 DECLSPEC_IMPORT
-unsigned char * HRGN_UserUnmarshal64(unsigned long *,unsigned char *,struct HRGN__ * *);
+unsigned char * HRGN_UserUnmarshal(unsigned long *,unsigned char *,struct HRGN__ * *);
 
 DECLSPEC_IMPORT
 unsigned char * HRGN_UserUnmarshal64(unsigned long *,unsigned char *,struct HRGN__ * *);

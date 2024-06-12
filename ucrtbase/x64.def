@@ -2152,7 +2152,7 @@ ctanh
 ctanhf
 ctanhl
 ctanl
-;div
+div = $div
 erf
 erfc
 erfcf
@@ -2168,7 +2168,7 @@ expf
 expm1
 expm1f
 expm1l = expm1
-;fabs
+fabs = $fabs
 fclose
 fdim = fdiml
 fdimf

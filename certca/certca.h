@@ -1,5 +1,3 @@
-#pragma once
-
 DECLSPEC_IMPORT
 long CCFindCertificateBuildFilter(unsigned short const *,void * *);
 

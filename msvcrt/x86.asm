@@ -91,31 +91,31 @@ API __CItanh
 API ?_CallMemberFunction0@@YGXQAX0@Z
 API ?_CallMemberFunction1@@YGXQAX00@Z
 API ?_CallMemberFunction2@@YGXQAX00H@Z
-API ?length@charNode@@UBEHXZ ; -> _CrtCheckMemory
-API __CrtDoForAllClientObjects ; -> _CrtDbgBreak
-API __crtBreakAlloc ; -> _CrtDbgReport
-API __crtBreakAlloc ; -> _CrtDbgReportV
-API __crtBreakAlloc ; -> _CrtDbgReportW
-API __crtBreakAlloc ; -> _CrtDbgReportWV
+API ?length@charNode@@UBEHXZ
 API __CrtDoForAllClientObjects
-API __crtBreakAlloc ; -> _CrtDumpMemoryLeaks
-API __crtBreakAlloc ; -> _CrtIsMemoryBlock
-API ?length@charNode@@UBEHXZ ; -> _CrtIsValidHeapPointer
-API ?_ValidateRead@@YAHPBXI@Z ; -> _CrtIsValidPointer
-API __CrtDoForAllClientObjects ; -> _CrtMemCheckpoint
-API __crtBreakAlloc ; -> _CrtMemDifference
-API __CrtDoForAllClientObjects ; -> _CrtMemDumpAllObjectsSince
-API __CrtDoForAllClientObjects ; -> _CrtMemDumpStatistics
-API __crtBreakAlloc ; -> _CrtReportBlockType
-API __crtBreakAlloc ; -> _CrtSetAllocHook
-API __crtBreakAlloc ; -> _CrtSetBreakAlloc
-API __CrtDoForAllClientObjects ; -> _CrtSetDbgBlockType
-API __crtBreakAlloc ; -> _CrtSetDbgFlag
-API __crtBreakAlloc ; -> _CrtSetDumpClient
-API __crtBreakAlloc ; -> _CrtSetReportFile
-API __crtBreakAlloc ; -> _CrtSetReportHook
-API __crtBreakAlloc ; -> _CrtSetReportHook2
-API __crtBreakAlloc ; -> _CrtSetReportMode
+API __crtBreakAlloc
+API __crtBreakAlloc
+API __crtBreakAlloc
+API __crtBreakAlloc
+API __CrtDoForAllClientObjects
+API __crtBreakAlloc
+API __crtBreakAlloc
+API ?length@charNode@@UBEHXZ
+API ?_ValidateRead@@YAHPBXI@Z
+API __CrtDoForAllClientObjects
+API __crtBreakAlloc
+API __CrtDoForAllClientObjects
+API __CrtDoForAllClientObjects
+API __crtBreakAlloc
+API __crtBreakAlloc
+API __crtBreakAlloc
+API __CrtDoForAllClientObjects
+API __crtBreakAlloc
+API __crtBreakAlloc
+API __crtBreakAlloc
+API __crtBreakAlloc
+API __crtBreakAlloc
+API __crtBreakAlloc
 API __CxxThrowException@8
 API __EH_prolog
 API __Getdays
@@ -131,14 +131,14 @@ API __XcptFilter
 API ___AdjustPointer
 API ___BuildCatchObject
 API ___BuildCatchObjectHelper
-API ___CppXcptFilter_Export ; -> __CppXcptFilter
+API ___CppXcptFilter_Export
 API ___CxxCallUnwindDelDtor
 API ___CxxCallUnwindDtor
 API ___CxxCallUnwindVecDtor
 API ___CxxDetectRethrow
 API ___CxxExceptionFilter
-API ___CxxFrameHandler3 ; -> __CxxFrameHandler
-API ___CxxFrameHandler3 ; -> __CxxFrameHandler2
+API ___CxxFrameHandler3
+API ___CxxFrameHandler3
 API ___CxxFrameHandler3
 API ___CxxLongjmpUnwind@4
 API ___CxxQueryExceptionSize
@@ -166,8 +166,8 @@ API ____lc_handle_func
 API ____mb_cur_max_func
 API ____setlc_active_func
 API ____unguarded_readlc_active_add_func
-API ___argc
-API ___argv
+API __argc
+API __argv
 API ___badioinfo
 API ___crtCompareStringA
 API ___crtCompareStringW
@@ -175,15 +175,15 @@ API ___crtGetLocaleInfoW
 API ___crtGetStringTypeW
 API ___crtLCMapStringA
 API ___crtLCMapStringW
-API ___p__daylight ; -> __daylight
+API ___p__daylight
 API ___dllonexit
 API ___doserrno
 API ___dstbias
 API ___fpecode
 API __freefls@4
 API ___getmainargs
-API ___initenv
-API ___p__iob ; -> __iob_func
+API __initenv
+API ___p__iob
 API ___isascii
 API ___iscsym
 API ___iscsymf
@@ -223,7 +223,7 @@ API ___p__acmdln
 API ___p__amblksiz
 API ___p__commode
 API ___p__daylight
-API ___dstbias ; -> __p__dstbias
+API ___dstbias
 API ___p__environ
 API ___p__fileinfo
 API ___p__fmode
@@ -243,11 +243,11 @@ API ___p__winminor
 API ___p__winver
 API ___p__wpgmptr
 API ___pctype_func
-API ___pioinfo
+API __pioinfo
 API ___pwctype_func
 API ___pxcptinfoptrs
 API ___set_app_type
-API ___setlc_active
+API __setlc_active
 API ___setusermatherr
 API ___strncnt
 API ___threadhandle
@@ -256,13 +256,13 @@ API ___toascii
 API ___unDName
 API ___unDNameEx
 API ?__uncaught_exception@@YA_NXZ
-API ___unguarded_readlc_active
-API ___wargv
+API __unguarded_readlc_active
+API __wargv
 API ___wcserror
 API ___wcserror_s
 API ___wcsncnt
 API ___wgetmainargs
-API ___winitenv
+API __winitenv
 API __abnormal_termination
 API __abs64
 API __access
@@ -281,18 +281,18 @@ API __adj_fpatan
 API __adj_fprem
 API __adj_fprem1
 API __adj_fptan
-API __adjust_fdiv
+API _adjust_fdiv
 API __aexit_rtn
 API __aligned_free
 API __aligned_free_dbg
-API __aligned_malloc_dbg ; -> _aligned_malloc
+API __aligned_malloc_dbg
 API __aligned_malloc_dbg
 API __aligned_offset_malloc
 API __aligned_offset_malloc_dbg
 API __aligned_offset_realloc
 API __aligned_offset_realloc_dbg
 API __aligned_realloc
-API __aligned_realloc ; -> _aligned_realloc_dbg
+API __aligned_realloc
 API __amsg_exit
 API __assert
 API __atodbl
@@ -329,7 +329,7 @@ API __chvalidator_l
 API __clearfp
 API __close
 API __commit
-API __commode
+API _commode
 API __control87
 API __controlfp
 API __controlfp_s
@@ -344,9 +344,9 @@ API __cputs
 API __cputws
 API __creat
 API __create_locale
-API __crtBreakAlloc ; -> _crtAssertBusy
 API __crtBreakAlloc
-API __crtBreakAlloc ; -> _crtDbgFlag
+API __crtBreakAlloc
+API __crtBreakAlloc
 API __cscanf
 API __cscanf_l
 API __cscanf_s
@@ -377,7 +377,7 @@ API __ecvt
 API __ecvt_s
 API __endthread
 API __endthreadex
-API __environ
+API _environ
 API __eof
 API __errno
 API __except_handler2
@@ -399,7 +399,7 @@ API __fcvt
 API __fcvt_s
 API __fdopen
 API __fgetchar
-API _getwchar ; -> _fgetwchar
+API _getwchar
 API __filbuf
 API __fileinfo
 API __filelength
@@ -428,7 +428,7 @@ API __fputwchar
 API __free_dbg
 API __free_locale
 API __freea
-API __freea ; -> _freea_s
+API __freea
 API __fscanf_l
 API __fscanf_s_l
 API __fseeki64
@@ -437,7 +437,7 @@ API __fstat
 API __fstat64
 API __fstati64
 API __ftime
-API __ftime ; -> _ftime32
+API __ftime
 API __ftime32_s
 API __ftime64
 API __ftime64_s
@@ -602,10 +602,10 @@ API __iswspace_l
 API __iswupper_l
 API __iswxdigit_l
 API __isxdigit_l
-API __ltoa ; -> _itoa
+API __ltoa
 API __itoa_s
 API __itow
-API __ltow_s ; -> _itow_s
+API __ltow_s
 API __j0
 API __j1
 API __jn
@@ -641,8 +641,8 @@ API __lsearch_s
 API __lseek
 API __lseeki64
 API __ltoa
-API __itoa_s ; -> _ltoa_s
-API __itow ; -> _ltow
+API __itoa_s
+API __itow
 API __ltow_s
 API __makepath
 API __makepath_s
@@ -675,7 +675,7 @@ API __mbctype
 API __mblen_l
 API __mbsbtype
 API __mbsbtype_l
-API _strcat ; -> _mbscat
+API _strcat
 API __mbscat_s
 API __mbscat_s_l
 API __mbschr
@@ -684,14 +684,14 @@ API __mbscmp
 API __mbscmp_l
 API __mbscoll
 API __mbscoll_l
-API _strcpy ; -> _mbscpy
+API _strcpy
 API __mbscpy_s
 API __mbscpy_s_l
 API __mbscspn
 API __mbscspn_l
 API __mbsdec
 API __mbsdec_l
-API __strdup ; -> _mbsdup
+API __strdup
 API __mbsicmp
 API __mbsicmp_l
 API __mbsicoll
@@ -797,19 +797,19 @@ API __mktemp_s
 API __mktime32
 API __mktime64
 API __msize
-API __msize_dbg ; -> _msize_debug
+API __msize_dbg
 API __nextafter
 API __onexit
 API __open
 API __open_osfhandle
-API __osplatform
-API __osver
+API _osplatform
+API _osver
 API __outp
 API __outpd
 API __outpw
 API __pclose
 API __pctype
-API __pgmptr
+API _pgmptr
 API __pipe
 API __popen
 API __printf_l
@@ -829,9 +829,9 @@ API __realloc_dbg
 API __resetstkoflw
 API __rmdir
 API __rmtmp
-API __lrotl ; -> _rotl
+API __lrotl
 API __rotl64
-API __lrotr ; -> _rotr
+API __lrotr
 API __rotr64
 API __safe_fdiv
 API __safe_fdivr
@@ -906,7 +906,7 @@ API __stat
 API __stat64
 API __stati64
 API __statusfp
-API __stricmp ; -> _strcmpi
+API __stricmp
 API __strcoll_l
 API __strdate
 API __strdate_s
@@ -1100,7 +1100,7 @@ API __wctime64_s
 API __wctomb_l
 API __wctomb_s_l
 API __wctype
-API __wenviron
+API _wenviron
 API __wexecl
 API __wexecle
 API __wexeclp
@@ -1127,10 +1127,10 @@ API __wgetcwd
 API __wgetdcwd
 API __wgetenv
 API __wgetenv_s
-API __winmajor
-API __winminor
+API _winmajor
+API _winminor
 API __winput_s
-API __winver
+API _winver
 API __wmakepath
 API __wmakepath_s
 API __wmkdir
@@ -1139,7 +1139,7 @@ API __wmktemp_s
 API __wopen
 API __woutput_s
 API __wperror
-API __wpgmptr
+API _wpgmptr
 API __wpopen
 API __wprintf_l
 API __wprintf_p
@@ -1227,7 +1227,7 @@ API _fclose
 API _feof
 API _ferror
 API _fflush
-API _getc ; -> fgetc
+API _getc
 API _fgetpos
 API _fgets
 API _fgetwc
@@ -1258,7 +1258,7 @@ API _fwrite
 API _fwscanf
 API _fwscanf_s
 API _getc
-API __fgetchar ; -> getchar
+API __fgetchar
 API _getenv
 API _getenv_s
 API _gets
@@ -1291,9 +1291,9 @@ API _iswspace
 API _iswupper
 API _iswxdigit
 API _isxdigit
-API _abs ; -> labs
+API _abs
 API _ldexp
-API _div ; -> ldiv
+API _div
 API _localeconv
 API _localtime
 API _log
@@ -1303,7 +1303,7 @@ API _malloc
 API _mblen
 API _mbrlen
 API _mbrtowc
-API __strdup_dbg ; -> mbsdup_dbg
+API __strdup_dbg
 API _mbsrtowcs
 API _mbsrtowcs_s
 API _mbstowcs
@@ -1322,7 +1322,7 @@ API _perror
 API _pow
 API _printf
 API _printf_s
-API _fputc ; -> putc
+API _fputc
 API _putchar
 API _puts
 API _putwc
@@ -1378,7 +1378,7 @@ API _strtok_s
 API _strtol
 API _strtoul
 API _strxfrm
-API __swprintf ; -> swprintf
+API __swprintf
 API _swprintf_s
 API _swscanf
 API _swscanf_s
@@ -1403,7 +1403,7 @@ API _vfwprintf
 API _vfwprintf_s
 API _vprintf
 API _vprintf_s
-API __vsnprintf ; -> vsnprintf
+API __vsnprintf
 API _vsprintf
 API _vsprintf_s
 API _vswprintf

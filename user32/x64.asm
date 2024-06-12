@@ -5,9 +5,9 @@ ENDM
 
 .code
 
-API ActivateKeyboardLayoutStub ; -> ActivateKeyboardLayout
-API AddClipboardFormatListenerStub ; -> AddClipboardFormatListener
-API NtUserAddVisualIdentifier ; -> AddVisualIdentifier
+API ActivateKeyboardLayoutStub
+API AddClipboardFormatListenerStub
+API NtUserAddVisualIdentifier
 API AdjustWindowRect
 API AdjustWindowRectEx
 API AdjustWindowRectExForDpi
@@ -20,20 +20,20 @@ API AppendMenuA
 API AppendMenuW
 API AreDpiAwarenessContextsEqual
 API ArrangeIconicWindows
-API NtUserAttachThreadInput ; -> AttachThreadInput
+API NtUserAttachThreadInput
 API BeginDeferWindowPos
-API NtUserBeginPaint ; -> BeginPaint
-API NtUserBlockInput ; -> BlockInput
+API NtUserBeginPaint
+API NtUserBlockInput
 API BringWindowToTop
-API BroadcastSystemMessageA ; -> BroadcastSystemMessage
+API BroadcastSystemMessageA
 API BroadcastSystemMessageA
 API BroadcastSystemMessageExA
 API BroadcastSystemMessageExW
 API BroadcastSystemMessageW
 API BuildReasonArray
-API NtUserCalcMenuBar ; -> CalcMenuBar
-API NtUserCalculatePopupWindowPosition ; -> CalculatePopupWindowPosition
-API CallMsgFilterA ; -> CallMsgFilter
+API NtUserCalcMenuBar
+API NtUserCalculatePopupWindowPosition
+API CallMsgFilterA
 API CallMsgFilterA
 API CallMsgFilterW
 API CallNextHookEx
@@ -42,7 +42,7 @@ API CallWindowProcW
 API CancelShutdown
 API CascadeChildWindows
 API CascadeWindows
-API ChangeClipboardChainStub ; -> ChangeClipboardChain
+API ChangeClipboardChainStub
 API ChangeDisplaySettingsA
 API ChangeDisplaySettingsExA
 API ChangeDisplaySettingsExW
@@ -50,59 +50,59 @@ API ChangeDisplaySettingsW
 API ChangeMenuA
 API ChangeMenuW
 API ChangeWindowMessageFilter
-API NtUserChangeWindowMessageFilterEx ; -> ChangeWindowMessageFilterEx
-API CharLowerAStub ; -> CharLowerA
-API CharLowerBuffAStub ; -> CharLowerBuffA
-API CharLowerBuffWStub ; -> CharLowerBuffW
-API CharLowerWStub ; -> CharLowerW
-API CharNextAStub ; -> CharNextA
-API CharNextExAStub ; -> CharNextExA
-API CharNextWStub ; -> CharNextW
-API CharPrevAStub ; -> CharPrevA
-API CharPrevExAStub ; -> CharPrevExA
-API CharPrevWStub ; -> CharPrevW
+API NtUserChangeWindowMessageFilterEx
+API CharLowerAStub
+API CharLowerBuffAStub
+API CharLowerBuffWStub
+API CharLowerWStub
+API CharNextAStub
+API CharNextExAStub
+API CharNextWStub
+API CharPrevAStub
+API CharPrevExAStub
+API CharPrevWStub
 API CharToOemA
 API CharToOemBuffA
 API CharToOemBuffW
 API CharToOemW
-API CharUpperAStub ; -> CharUpperA
-API CharUpperBuffAStub ; -> CharUpperBuffA
-API CharUpperBuffWStub ; -> CharUpperBuffW
-API CharUpperWStub ; -> CharUpperW
+API CharUpperAStub
+API CharUpperBuffAStub
+API CharUpperBuffWStub
+API CharUpperWStub
 API CheckBannedOneCoreTransformApi
 API CheckDBCSEnabledExt
 API CheckDlgButton
 API CheckMenuItem
 API CheckMenuRadioItem
-API NtUserCheckProcessForClipboardAccess ; -> CheckProcessForClipboardAccess
-API NtUserCheckProcessSession ; -> CheckProcessSession
+API NtUserCheckProcessForClipboardAccess
+API NtUserCheckProcessSession
 API CheckRadioButton
-API NtUserCheckWindowThreadDesktop ; -> CheckWindowThreadDesktop
+API NtUserCheckWindowThreadDesktop
 API ChildWindowFromPoint
-API NtUserChildWindowFromPointEx ; -> ChildWindowFromPointEx
+API NtUserChildWindowFromPointEx
 API CliImmSetHotKey
 API ClientThreadSetup
 API ClientToScreen
-API NtUserClipCursor ; -> ClipCursor
-API CloseClipboardStub ; -> CloseClipboard
-API NtUserCloseDesktop ; -> CloseDesktop
+API NtUserClipCursor
+API CloseClipboardStub
+API NtUserCloseDesktop
 API CloseGestureInfoHandle
 API CloseTouchInputHandle
 API CloseWindow
-API NtUserCloseWindowStation ; -> CloseWindowStation
+API NtUserCloseWindowStation
 API ConsoleControl
-API NtUserMagControl ; -> ControlMagnification
+API NtUserMagControl
 API CopyAcceleratorTableA
-API NtUserCopyAcceleratorTable ; -> CopyAcceleratorTableW
+API NtUserCopyAcceleratorTable
 API CopyIcon
 API CopyImage
 API CopyRect
-API CountClipboardFormatsStub ; -> CountClipboardFormats
+API CountClipboardFormatsStub
 API CreateAcceleratorTableA
-API NtUserCreateAcceleratorTable ; -> CreateAcceleratorTableW
-API CreateCaretStub ; -> CreateCaret
+API NtUserCreateAcceleratorTable
+API CreateCaretStub
 API CreateCursor
-API NtUserCreateDCompositionHwndTarget ; -> CreateDCompositionHwndTarget
+API NtUserCreateDCompositionHwndTarget
 API CreateDesktopA
 API CreateDesktopExA
 API CreateDesktopExW
@@ -175,18 +175,18 @@ API NtdllDefWindowProc_A
 API NtdllDefWindowProc_W
 API DeferWindowPos
 API DeferWindowPosAndBand
-API NtUserDelegateInput ; -> DelegateInput
-API NtUserDeleteMenu ; -> DeleteMenu
+API NtUserDelegateInput
+API NtUserDeleteMenu
 API DeregisterShellHookWindow
 API DestroyAcceleratorTable
 API DestroyCaret
 API DestroyCursor
-API NtUserDestroyDCompositionHwndTarget ; -> DestroyDCompositionHwndTarget
-API DestroyCursor ; -> DestroyIcon
-API NtUserDestroyMenu ; -> DestroyMenu
+API NtUserDestroyDCompositionHwndTarget
+API DestroyCursor
+API NtUserDestroyMenu
 API DestroyReasons
-API NtUserRemoveInjectionDevice ; -> DestroySyntheticPointerDevice
-API NtUserDestroyWindow ; -> DestroyWindow
+API NtUserRemoveInjectionDevice
+API NtUserDestroyWindow
 API DialogBoxIndirectParamA
 API DialogBoxIndirectParamAorW
 API DialogBoxIndirectParamW
@@ -206,11 +206,11 @@ API DlgDirSelectComboBoxExA
 API DlgDirSelectComboBoxExW
 API DlgDirSelectExA
 API DlgDirSelectExW
-API NtUserDoSoundConnect ; -> DoSoundConnect
-API NtUserDoSoundDisconnect ; -> DoSoundDisconnect
-API NtUserDragDetect ; -> DragDetect
-API NtUserDragObject ; -> DragObject
-API NtUserDrawAnimatedRects ; -> DrawAnimatedRects
+API NtUserDoSoundConnect
+API NtUserDoSoundDisconnect
+API NtUserDragDetect
+API NtUserDragObject
+API NtUserDrawAnimatedRects
 API DrawCaption
 API DrawCaptionTempA
 API DrawCaptionTempW
@@ -230,26 +230,26 @@ API DrawTextExW
 API DrawTextW
 API DwmGetDxRgn
 API DwmGetDxSharedSurface
-API NtUserDwmGetRemoteSessionOcclusionEvent ; -> DwmGetRemoteSessionOcclusionEvent
-API NtUserDwmGetRemoteSessionOcclusionState ; -> DwmGetRemoteSessionOcclusionState
-API NtUserDwmKernelShutdown ; -> DwmKernelShutdown
-API NtUserDwmKernelStartup ; -> DwmKernelStartup
+API NtUserDwmGetRemoteSessionOcclusionEvent
+API NtUserDwmGetRemoteSessionOcclusionState
+API NtUserDwmKernelShutdown
+API NtUserDwmKernelStartup
 API DwmLockScreenUpdates
-API NtUserDwmValidateWindow ; -> DwmValidateWindow
+API NtUserDwmValidateWindow
 API EditWndProc
-API EmptyClipboardStub ; -> EmptyClipboard
+API EmptyClipboardStub
 API EnableMenuItem
-API NtUserEnableMouseInPointer ; -> EnableMouseInPointer
-API NtUserEnableNonClientDpiScaling ; -> EnableNonClientDpiScaling
-API NtEnableOneCoreTransformMode ; -> EnableOneCoreTransformMode
+API NtUserEnableMouseInPointer
+API NtUserEnableNonClientDpiScaling
+API NtEnableOneCoreTransformMode
 API EnableScrollBar
 API EnableSessionForMMCSS
 API EnableWindow
 API EndDeferWindowPos
-API NtUserEndDeferWindowPosEx ; -> EndDeferWindowPosEx
+API NtUserEndDeferWindowPosEx
 API EndDialog
-API NtUserEndMenu ; -> EndMenu
-API NtUserEndPaint ; -> EndPaint
+API NtUserEndMenu
+API NtUserEndPaint
 API EndTask
 API EnterReaderModeHelper
 API EnumChildWindows
@@ -259,7 +259,7 @@ API EnumDesktopsA
 API EnumDesktopsW
 API EnumDisplayDevicesA
 API EnumDisplayDevicesW
-API NtUserEnumDisplayMonitors ; -> EnumDisplayMonitors
+API NtUserEnumDisplayMonitors
 API EnumDisplaySettingsA
 API EnumDisplaySettingsExA
 API EnumDisplaySettingsExW
@@ -275,7 +275,7 @@ API EnumWindows
 API EqualRect
 API EvaluateProximityToPolygon
 API EvaluateProximityToRect
-API NtUserExcludeUpdateRgn ; -> ExcludeUpdateRgn
+API NtUserExcludeUpdateRgn
 API ExitWindowsEx
 API FillRect
 API FindWindowA
@@ -283,24 +283,24 @@ API FindWindowExA
 API FindWindowExW
 API FindWindowW
 API FlashWindow
-API NtUserFlashWindowEx ; -> FlashWindowEx
+API NtUserFlashWindowEx
 API FrameRect
 API FreeDDElParam
-API NtUserFrostCrashedWindow ; -> FrostCrashedWindow
+API NtUserFrostCrashedWindow
 API GetActiveWindow
-API GetAltTabInfoA ; -> GetAltTabInfo
+API GetAltTabInfoA
 API GetAltTabInfoA
 API GetAltTabInfoW
-API NtUserGetAncestor ; -> GetAncestor
+API NtUserGetAncestor
 API GetAppCompatFlags
 API GetAppCompatFlags2
 API GetAsyncKeyState
-API NtUserGetAutoRotationState ; -> GetAutoRotationState
+API NtUserGetAutoRotationState
 API GetAwarenessFromDpiAwarenessContext
-API NtUserGetCIMSSM ; -> GetCIMSSM
+API NtUserGetCIMSSM
 API GetCapture
-API NtUserGetCaretBlinkTime ; -> GetCaretBlinkTime
-API NtUserGetCaretPos ; -> GetCaretPos
+API NtUserGetCaretBlinkTime
+API NtUserGetCaretPos
 API GetClassInfoA
 API GetClassInfoExA
 API GetClassInfoExW
@@ -313,77 +313,77 @@ API GetClassNameA
 API GetClassNameW
 API GetClassWord
 API GetClientRect
-API NtUserGetClipCursor ; -> GetClipCursor
-API NtUserGetClipboardAccessToken ; -> GetClipboardAccessToken
+API NtUserGetClipCursor
+API NtUserGetClipboardAccessToken
 API GetClipboardData
 API GetClipboardFormatNameA
 API GetClipboardFormatNameW
-API NtUserGetClipboardMetadata ; -> GetClipboardMetadata
-API GetClipboardOwnerStub ; -> GetClipboardOwner
-API GetClipboardSequenceNumberStub ; -> GetClipboardSequenceNumber
-API GetClipboardViewerStub ; -> GetClipboardViewer
-API NtUserGetComboBoxInfo ; -> GetComboBoxInfo
-API NtUserGetCurrentInputMessageSource ; -> GetCurrentInputMessageSource
-API NtUserGetCursor ; -> GetCursor
+API NtUserGetClipboardMetadata
+API GetClipboardOwnerStub
+API GetClipboardSequenceNumberStub
+API GetClipboardViewerStub
+API NtUserGetComboBoxInfo
+API NtUserGetCurrentInputMessageSource
+API NtUserGetCursor
 API GetCursorFrameInfo
-API NtUserGetCursorInfo ; -> GetCursorInfo
+API NtUserGetCursorInfo
 API GetCursorPos
 API GetDC
-API NtUserGetDCEx ; -> GetDCEx
-API NtUserGetDCompositionHwndBitmap ; -> GetDCompositionHwndBitmap
-API NtUserGetDesktopID ; -> GetDesktopID
-API GetCurrentThreadDesktopHwnd ; -> GetDesktopWindow
+API NtUserGetDCEx
+API NtUserGetDCompositionHwndBitmap
+API NtUserGetDesktopID
+API GetCurrentThreadDesktopHwnd
 API GetDialogBaseUnits
 API GetDialogControlDpiChangeBehavior
 API GetDialogDpiChangeBehavior
-API NtUserGetDisplayAutoRotationPreferences ; -> GetDisplayAutoRotationPreferences
+API NtUserGetDisplayAutoRotationPreferences
 API GetDisplayConfigBufferSizes
 API GetDlgCtrlID
 API GetDlgItem
 API GetDlgItemInt
 API GetDlgItemTextA
 API GetDlgItemTextW
-API NtUserGetDoubleClickTime ; -> GetDoubleClickTime
+API NtUserGetDoubleClickTime
 API GetDpiAwarenessContextForProcess
 API GetDpiForMonitorInternal
 API GetDpiForSystem
 API GetDpiForWindow
 API GetDpiFromDpiAwarenessContext
-API NtUserGetExtendedPointerDeviceProperty ; -> GetExtendedPointerDeviceProperty
+API NtUserGetExtendedPointerDeviceProperty
 API GetFocus
-API NtUserGetForegroundWindow ; -> GetForegroundWindow
-API NtUserGetGUIThreadInfo ; -> GetGUIThreadInfo
-API NtUserGetGestureConfig ; -> GetGestureConfig
+API NtUserGetForegroundWindow
+API NtUserGetGUIThreadInfo
+API NtUserGetGestureConfig
 API GetGestureExtraArgs
 API GetGestureInfo
-API NtUserGetGuiResources ; -> GetGuiResources
+API NtUserGetGuiResources
 API GetIconInfo
 API GetIconInfoExA
 API GetIconInfoExW
 API GetInputDesktop
-API NtUserGetInputLocaleInfo ; -> GetInputLocaleInfo
+API NtUserGetInputLocaleInfo
 API GetInputState
-API NtUserGetInternalWindowPos ; -> GetInternalWindowPos
+API NtUserGetInternalWindowPos
 API GetKBCodePage
 API GetKeyNameTextA
 API GetKeyNameTextW
 API GetKeyState
 API GetKeyboardLayout
-API NtUserGetKeyboardLayoutList ; -> GetKeyboardLayoutList
+API NtUserGetKeyboardLayoutList
 API GetKeyboardLayoutNameA
 API GetKeyboardLayoutNameW
-API NtUserGetKeyboardState ; -> GetKeyboardState
+API NtUserGetKeyboardState
 API GetKeyboardType
 API GetLastActivePopup
 API GetLastInputInfo
-API NtUserGetLayeredWindowAttributes ; -> GetLayeredWindowAttributes
-API NtUserGetListBoxInfo ; -> GetListBoxInfo
+API NtUserGetLayeredWindowAttributes
+API NtUserGetListBoxInfo
 API GetMagnificationDesktopColorEffect
 API GetMagnificationDesktopMagnification
 API GetMagnificationDesktopSamplingMode
-API NtUserMagGetContextInformation ; -> GetMagnificationLensCtxInformation
+API NtUserMagGetContextInformation
 API GetMenu
-API NtUserGetMenuBarInfo ; -> GetMenuBarInfo
+API NtUserGetMenuBarInfo
 API GetMenuCheckMarkDimensions
 API GetMenuContextHelpId
 API GetMenuDefaultItem
@@ -392,7 +392,7 @@ API GetMenuItemCount
 API GetMenuItemID
 API GetMenuItemInfoA
 API GetMenuItemInfoW
-API NtUserGetMenuItemRect ; -> GetMenuItemRect
+API NtUserGetMenuItemRect
 API GetMenuState
 API GetMenuStringA
 API GetMenuStringW
@@ -403,54 +403,54 @@ API GetMessageTime
 API GetMessageW
 API GetMonitorInfoA
 API GetMonitorInfoW
-API NtUserGetMouseMovePointsEx ; -> GetMouseMovePointsEx
+API NtUserGetMouseMovePointsEx
 API GetNextDlgGroupItem
 API GetNextDlgTabItem
-API GetOpenClipboardWindowStub ; -> GetOpenClipboardWindow
+API GetOpenClipboardWindowStub
 API GetParent
-API GetCursorPos ; -> GetPhysicalCursorPos
-API NtUserGetPointerCursorId ; -> GetPointerCursorId
-API NtUserGetPointerDevice ; -> GetPointerDevice
-API NtUserGetPointerDeviceCursors ; -> GetPointerDeviceCursors
-API NtUserGetPointerDeviceInputSpace ; -> GetPointerDeviceInputSpace
-API NtUserGetPointerDeviceOrientation ; -> GetPointerDeviceOrientation
-API NtUserGetPointerDeviceProperties ; -> GetPointerDeviceProperties
-API NtUserGetPointerDeviceRects ; -> GetPointerDeviceRects
-API NtUserGetPointerDevices ; -> GetPointerDevices
+API GetCursorPos
+API NtUserGetPointerCursorId
+API NtUserGetPointerDevice
+API NtUserGetPointerDeviceCursors
+API NtUserGetPointerDeviceInputSpace
+API NtUserGetPointerDeviceOrientation
+API NtUserGetPointerDeviceProperties
+API NtUserGetPointerDeviceRects
+API NtUserGetPointerDevices
 API ?GetPointerFrameArrivalTimes@@YAHIIPEA_K@Z
 API GetPointerFrameInfo
 API GetPointerFrameInfoHistory
 API GetPointerFramePenInfo
 API GetPointerFramePenInfoHistory
-API NtUserGetPointerFrameTimes ; -> GetPointerFrameTimes
+API NtUserGetPointerFrameTimes
 API GetPointerFrameTouchInfo
 API GetPointerFrameTouchInfoHistory
 API GetPointerInfo
 API GetPointerInfoHistory
-API NtUserGetPointerInputTransform ; -> GetPointerInputTransform
+API NtUserGetPointerInputTransform
 API GetPointerPenInfo
 API GetPointerPenInfoHistory
 API GetPointerTouchInfo
 API GetPointerTouchInfoHistory
-API NtUserGetPointerType ; -> GetPointerType
-API GetPriorityClipboardFormatStub ; -> GetPriorityClipboardFormat
+API NtUserGetPointerType
+API GetPriorityClipboardFormatStub
 API GetProcessDefaultLayout
 API GetProcessDpiAwarenessInternal
-API NtUserGetProcessUIContextInformation ; -> GetProcessUIContextInformation
-API NtUserGetProcessWindowStation ; -> GetProcessWindowStation
+API NtUserGetProcessUIContextInformation
+API NtUserGetProcessWindowStation
 API GetProgmanWindow
 API GetPropA
 API GetPropW
 API GetQueueStatus
 API GetRawInputBuffer
-API NtUserGetRawInputData ; -> GetRawInputData
+API NtUserGetRawInputData
 API GetRawInputDeviceInfoA
 API GetRawInputDeviceInfoW
-API NtUserGetRawInputDeviceList ; -> GetRawInputDeviceList
-API NtUserGetRawPointerDeviceData ; -> GetRawPointerDeviceData
+API NtUserGetRawInputDeviceList
+API NtUserGetRawPointerDeviceData
 API GetReasonTitleFromReasonCode
-API NtUserGetRegisteredRawInputDevices ; -> GetRegisteredRawInputDevices
-API NtUserGetScrollBarInfo ; -> GetScrollBarInfo
+API NtUserGetRegisteredRawInputDevices
+API NtUserGetScrollBarInfo
 API GetScrollInfo
 API GetScrollPos
 API GetScrollRange
@@ -460,92 +460,92 @@ API GetShellWindow
 API GetSubMenu
 API GetSysColor
 API GetSysColorBrush
-API NtUserGetSystemDpiForProcess ; -> GetSystemDpiForProcess
-API NtUserGetSystemMenu ; -> GetSystemMenu
+API NtUserGetSystemDpiForProcess
+API NtUserGetSystemMenu
 API GetSystemMetrics
 API GetSystemMetricsForDpi
 API GetTabbedTextExtentA
 API GetTabbedTextExtentW
 API GetTaskmanWindow
-API NtUserGetThreadDesktop ; -> GetThreadDesktop
+API NtUserGetThreadDesktop
 API GetThreadDpiAwarenessContext
 API GetThreadDpiHostingBehavior
-API NtUserGetTitleBarInfo ; -> GetTitleBarInfo
-API NtUserGetTopLevelWindow ; -> GetTopLevelWindow
+API NtUserGetTitleBarInfo
+API NtUserGetTopLevelWindow
 API GetTopWindow
 API GetTouchInputInfo
 API GetUnpredictedMessagePos
 API GetUpdateRect
 API GetUpdateRgn
-API GetUpdatedClipboardFormatsStub ; -> GetUpdatedClipboardFormats
+API GetUpdatedClipboardFormatsStub
 API GetUserObjectInformationA
-API NtUserGetObjectInformation ; -> GetUserObjectInformationW
+API NtUserGetObjectInformation
 API GetUserObjectSecurity
 API GetWinStationInfo
 API GetWindow
-API NtUserGetWindowBand ; -> GetWindowBand
-API NtUserGetWindowCompositionAttribute ; -> GetWindowCompositionAttribute
-API NtUserGetWindowCompositionInfo ; -> GetWindowCompositionInfo
+API NtUserGetWindowBand
+API NtUserGetWindowCompositionAttribute
+API NtUserGetWindowCompositionInfo
 API GetWindowContextHelpId
-API NtUserGetWindowDC ; -> GetWindowDC
-API NtUserGetWindowDisplayAffinity ; -> GetWindowDisplayAffinity
+API NtUserGetWindowDC
+API NtUserGetWindowDisplayAffinity
 API GetWindowDpiAwarenessContext
 API GetWindowDpiHostingBehavior
-API NtUserGetWindowFeedbackSetting ; -> GetWindowFeedbackSetting
+API NtUserGetWindowFeedbackSetting
 API GetWindowInfo
 API GetWindowLongA
 API GetWindowLongPtrA
 API GetWindowLongPtrW
 API GetWindowLongW
-API NtUserGetWindowMinimizeRect ; -> GetWindowMinimizeRect
-API GetWindowModuleFileNameA ; -> GetWindowModuleFileName
+API NtUserGetWindowMinimizeRect
+API GetWindowModuleFileNameA
 API GetWindowModuleFileNameA
 API GetWindowModuleFileNameW
-API NtUserGetWindowPlacement ; -> GetWindowPlacement
-API NtUserGetWindowProcessHandle ; -> GetWindowProcessHandle
+API NtUserGetWindowPlacement
+API NtUserGetWindowProcessHandle
 API GetWindowRect
 API GetWindowRgn
 API GetWindowRgnBox
-API NtUserGetWindowRgnEx ; -> GetWindowRgnEx
+API NtUserGetWindowRgnEx
 API GetWindowTextA
 API GetWindowTextLengthA
 API GetWindowTextLengthW
 API GetWindowTextW
 API GetWindowThreadProcessId
 API GetWindowWord
-API NtUserGhostWindowFromHungWindow ; -> GhostWindowFromHungWindow
+API NtUserGhostWindowFromHungWindow
 API GrayStringA
 API GrayStringW
-API NtUserHandleDelegatedInput ; -> HandleDelegatedInput
-API HideCaretStub ; -> HideCaret
-API NtUserHiliteMenuItem ; -> HiliteMenuItem
-API NtUserHungWindowFromGhostWindow ; -> HungWindowFromGhostWindow
+API NtUserHandleDelegatedInput
+API HideCaretStub
+API NtUserHiliteMenuItem
+API NtUserHungWindowFromGhostWindow
 API IMPGetIMEA
 API IMPGetIMEW
 API IMPQueryIMEA
 API IMPQueryIMEW
 API IMPSetIMEA
 API IMPSetIMEW
-API NtUserImpersonateDdeClientWindow ; -> ImpersonateDdeClientWindow
+API NtUserImpersonateDdeClientWindow
 API InSendMessage
 API InSendMessageEx
 API InflateRect
-API NtUserInheritWindowMonitor ; -> InheritWindowMonitor
+API NtUserInheritWindowMonitor
 API InitDManipHook
-API NtUserInitializeGenericHidInjection ; -> InitializeGenericHidInjection
-API NtUserInitializeInputDeviceInjection ; -> InitializeInputDeviceInjection
+API NtUserInitializeGenericHidInjection
+API NtUserInitializeInputDeviceInjection
 API InitializeLpkHooks
-API NtUserInitializePointerDeviceInjection ; -> InitializePointerDeviceInjection
-API NtUserInitializePointerDeviceInjectionEx ; -> InitializePointerDeviceInjectionEx
-API NtUserInitializeTouchInjection ; -> InitializeTouchInjection
-API NtUserInjectDeviceInput ; -> InjectDeviceInput
-API NtUserInjectGenericHidInput ; -> InjectGenericHidInput
-API NtUserInjectKeyboardInput ; -> InjectKeyboardInput
-API NtUserInjectMouseInput ; -> InjectMouseInput
-API NtUserInjectPointerInput ; -> InjectPointerInput
-API NtUserInjectPointerInput ; -> InjectSyntheticPointerInput
-API NtUserInjectTouchInput ; -> InjectTouchInput
-API NtInputSpaceRegionFromPoint ; -> InputSpaceRegionFromPoint
+API NtUserInitializePointerDeviceInjection
+API NtUserInitializePointerDeviceInjectionEx
+API NtUserInitializeTouchInjection
+API NtUserInjectDeviceInput
+API NtUserInjectGenericHidInput
+API NtUserInjectKeyboardInput
+API NtUserInjectMouseInput
+API NtUserInjectPointerInput
+API NtUserInjectPointerInput
+API NtUserInjectTouchInput
+API NtInputSpaceRegionFromPoint
 API InsertMenuA
 API InsertMenuItemA
 API InsertMenuItemW
@@ -553,20 +553,20 @@ API InsertMenuW
 API InternalGetWindowIcon
 API InternalGetWindowText
 API IntersectRect
-API NtUserInvalidateRect ; -> InvalidateRect
-API NtUserInvalidateRgn ; -> InvalidateRgn
+API NtUserInvalidateRect
+API NtUserInvalidateRgn
 API InvertRect
-API IsCharAlphaAStub ; -> IsCharAlphaA
-API IsCharAlphaNumericAStub ; -> IsCharAlphaNumericA
-API IsCharAlphaNumericWStub ; -> IsCharAlphaNumericW
-API IsCharAlphaWStub ; -> IsCharAlphaW
-API IsCharLowerAStub ; -> IsCharLowerA
-API IsCharLowerWStub ; -> IsCharLowerW
-API IsCharUpperAStub ; -> IsCharUpperA
-API IsCharUpperWStub ; -> IsCharUpperW
+API IsCharAlphaAStub
+API IsCharAlphaNumericAStub
+API IsCharAlphaNumericWStub
+API IsCharAlphaWStub
+API IsCharLowerAStub
+API IsCharLowerWStub
+API IsCharUpperAStub
+API IsCharUpperWStub
 API IsChild
-API IsClipboardFormatAvailableStub ; -> IsClipboardFormatAvailable
-API IsDialogMessageA ; -> IsDialogMessage
+API IsClipboardFormatAvailableStub
+API IsDialogMessageA
 API IsDialogMessageA
 API IsDialogMessageW
 API IsDlgButtonChecked
@@ -576,8 +576,8 @@ API IsIconic
 API IsImmersiveProcess
 API IsInDesktopWindowBand
 API IsMenu
-API NtUserIsMouseInPointerEnabled ; -> IsMouseInPointerEnabled
-API NtIsOneCoreTransformMode ; -> IsOneCoreTransformMode
+API NtUserIsMouseInPointerEnabled
+API NtIsOneCoreTransformMode
 API IsProcessDPIAware
 API IsRectEmpty
 API IsSETEnabled
@@ -585,8 +585,8 @@ API IsServerSideWindow
 API IsThreadDesktopComposited
 API IsThreadMessageQueueAttached
 API IsThreadTSFEventAware
-API NtUserIsTopLevelWindow ; -> IsTopLevelWindow
-API NtUserIsTouchWindow ; -> IsTouchWindow
+API NtUserIsTopLevelWindow
+API NtUserIsTouchWindow
 API IsValidDpiAwarenessContext
 API IsWinEventHookInstalled
 API IsWindow
@@ -598,7 +598,7 @@ API IsWindowUnicode
 API IsWindowVisible
 API IsWow64Message
 API IsZoomed
-API NtUserKillTimer ; -> KillTimer
+API NtUserKillTimer
 API LoadAcceleratorsA
 API LoadAcceleratorsW
 API LoadBitmapA
@@ -616,18 +616,18 @@ API LoadKeyboardLayoutEx
 API LoadKeyboardLayoutW
 API LoadLocalFonts
 API LoadMenuA
-API CreateMenuFromResource ; -> LoadMenuIndirectA
-API CreateMenuFromResource ; -> LoadMenuIndirectW
+API CreateMenuFromResource
+API CreateMenuFromResource
 API LoadMenuW
 API LoadRemoteFonts
 API LoadStringA
 API LoadStringW
 API LockSetForegroundWindow
-API NtUserLockWindowStation ; -> LockWindowStation
-API NtUserLockWindowUpdate ; -> LockWindowUpdate
-API NtUserLockWorkStation ; -> LockWorkStation
-API NtUserLogicalToPhysicalPoint ; -> LogicalToPhysicalPoint
-API NtUserLogicalToPerMonitorDPIPhysicalPoint ; -> LogicalToPhysicalPointForPerMonitorDPI
+API NtUserLockWindowStation
+API NtUserLockWindowUpdate
+API NtUserLockWorkStation
+API NtUserLogicalToPhysicalPoint
+API NtUserLogicalToPerMonitorDPIPhysicalPoint
 API LookupIconIdFromDirectory
 API LookupIconIdFromDirectoryEx
 API MBToWCSEx
@@ -638,14 +638,14 @@ API MITSetLastInputRecipient
 API MITSynthesizeTouchInput
 API MakeThreadTSFEventAware
 API MapDialogRect
-API NtUserMapPointsByVisualIdentifier ; -> MapPointsByVisualIdentifier
+API NtUserMapPointsByVisualIdentifier
 API MapVirtualKeyA
 API MapVirtualKeyExA
 API MapVirtualKeyExW
 API MapVirtualKeyW
-API NtMapVisualRelativePoints ; -> MapVisualRelativePoints
+API NtMapVisualRelativePoints
 API MapWindowPoints
-API NtUserMenuItemFromPoint ; -> MenuItemFromPoint
+API NtUserMenuItemFromPoint
 API MenuWindowProcA
 API MenuWindowProcW
 API MessageBeep
@@ -662,7 +662,7 @@ API ModifyMenuW
 API MonitorFromPoint
 API MonitorFromRect
 API MonitorFromWindow
-API NtUserMoveWindow ; -> MoveWindow
+API NtUserMoveWindow
 API MsgWaitForMultipleObjects
 API MsgWaitForMultipleObjectsEx
 API NotifyOverlayWindow
@@ -677,113 +677,113 @@ API OpenClipboard
 API OpenDesktopA
 API OpenDesktopW
 API OpenIcon
-API NtUserOpenInputDesktop ; -> OpenInputDesktop
-API NtUserOpenThreadDesktop ; -> OpenThreadDesktop
+API NtUserOpenInputDesktop
+API NtUserOpenThreadDesktop
 API OpenWindowStationA
 API OpenWindowStationW
 API PackDDElParam
 API PackTouchHitTestingProximityEvaluation
 API PaintDesktop
-API NtUserPaintMenuBar ; -> PaintMenuBar
-API NtUserPaintMonitor ; -> PaintMonitor
+API NtUserPaintMenuBar
+API NtUserPaintMonitor
 API PeekMessageA
 API PeekMessageW
-API NtUserPhysicalToLogicalPoint ; -> PhysicalToLogicalPoint
-API NtUserPerMonitorDPIPhysicalToLogicalPoint ; -> PhysicalToLogicalPointForPerMonitorDPI
+API NtUserPhysicalToLogicalPoint
+API NtUserPerMonitorDPIPhysicalToLogicalPoint
 API PostMessageA
 API PostMessageW
 API PostQuitMessage
 API PostThreadMessageA
 API PostThreadMessageW
-API NtUserPrintWindow ; -> PrintWindow
+API NtUserPrintWindow
 API PrivateExtractIconExA
 API PrivateExtractIconExW
 API PrivateExtractIconsA
 API PrivateExtractIconsW
 API PrivateRegisterICSProc
 API PtInRect
-API NtUserQueryBSDRWindow ; -> QueryBSDRWindow
+API NtUserQueryBSDRWindow
 API QueryDisplayConfig
-API NtUserQuerySendMessage ; -> QuerySendMessage
-API NtRIMAddInputObserver ; -> RIMAddInputObserver
-API NtRIMAreSiblingDevices ; -> RIMAreSiblingDevices
-API NtRIMDeviceIoControl ; -> RIMDeviceIoControl
-API NtRIMEnableMonitorMappingForDevice ; -> RIMEnableMonitorMappingForDevice
-API NtRIMFreeInputBuffer ; -> RIMFreeInputBuffer
-API NtRIMGetDevicePreparsedData ; -> RIMGetDevicePreparsedData
-API NtRIMGetDevicePreparsedDataLockfree ; -> RIMGetDevicePreparsedDataLockfree
-API NtRIMGetDeviceProperties ; -> RIMGetDeviceProperties
-API NtRIMGetDevicePropertiesLockfree ; -> RIMGetDevicePropertiesLockfree
-API NtRIMGetPhysicalDeviceRect ; -> RIMGetPhysicalDeviceRect
-API NtRIMGetSourceProcessId ; -> RIMGetSourceProcessId
-API NtRIMObserveNextInput ; -> RIMObserveNextInput
-API NtRIMOnAsyncPnpWorkNotification ; -> RIMOnAsyncPnpWorkNotification
-API NtRIMOnPnpNotification ; -> RIMOnPnpNotification
-API NtRIMOnTimerNotification ; -> RIMOnTimerNotification
-API NtRIMQueryDevicePath ; -> RIMQueryDevicePath
-API NtRIMReadInput ; -> RIMReadInput
+API NtUserQuerySendMessage
+API NtRIMAddInputObserver
+API NtRIMAreSiblingDevices
+API NtRIMDeviceIoControl
+API NtRIMEnableMonitorMappingForDevice
+API NtRIMFreeInputBuffer
+API NtRIMGetDevicePreparsedData
+API NtRIMGetDevicePreparsedDataLockfree
+API NtRIMGetDeviceProperties
+API NtRIMGetDevicePropertiesLockfree
+API NtRIMGetPhysicalDeviceRect
+API NtRIMGetSourceProcessId
+API NtRIMObserveNextInput
+API NtRIMOnAsyncPnpWorkNotification
+API NtRIMOnPnpNotification
+API NtRIMOnTimerNotification
+API NtRIMQueryDevicePath
+API NtRIMReadInput
 API RIMRegisterForInput
-API NtRIMRegisterForInputEx ; -> RIMRegisterForInputEx
-API NtRIMRemoveInputObserver ; -> RIMRemoveInputObserver
-API NtRIMSetExtendedDeviceProperty ; -> RIMSetExtendedDeviceProperty
-API NtRIMSetTestModeStatus ; -> RIMSetTestModeStatus
-API NtRIMUnregisterForInput ; -> RIMUnregisterForInput
-API NtRIMUpdateInputObserverRegistration ; -> RIMUpdateInputObserverRegistration
-API NtUserRealChildWindowFromPoint ; -> RealChildWindowFromPoint
-API RealGetWindowClassA ; -> RealGetWindowClass
+API NtRIMRegisterForInputEx
+API NtRIMRemoveInputObserver
+API NtRIMSetExtendedDeviceProperty
+API NtRIMSetTestModeStatus
+API NtRIMUnregisterForInput
+API NtRIMUpdateInputObserverRegistration
+API NtUserRealChildWindowFromPoint
+API RealGetWindowClassA
 API RealGetWindowClassA
 API RealGetWindowClassW
 API ReasonCodeNeedsBugID
 API ReasonCodeNeedsComment
 API RecordShutdownReason
-API NtUserRedrawWindow ; -> RedrawWindow
-API NtUserRegisterBSDRWindow ; -> RegisterBSDRWindow
+API NtUserRedrawWindow
+API NtUserRegisterBSDRWindow
 API RegisterClassA
 API RegisterClassExA
 API RegisterClassExW
 API RegisterClassW
-API RegisterWindowMessageA ; -> RegisterClipboardFormatA
-API RegisterWindowMessageW ; -> RegisterClipboardFormatW
-API NtUserRegisterDManipHook ; -> RegisterDManipHook
+API RegisterWindowMessageA
+API RegisterWindowMessageW
+API NtUserRegisterDManipHook
 API RegisterDeviceNotificationA
 API RegisterDeviceNotificationW
-API NtUserRegisterErrorReportingDialog ; -> RegisterErrorReportingDialog
-API NtUserRegisterForCustomDockTargets ; -> RegisterForCustomDockTargets
-API NtUserRegisterForTooltipDismissNotification ; -> RegisterForTooltipDismissNotification
+API NtUserRegisterErrorReportingDialog
+API NtUserRegisterForCustomDockTargets
+API NtUserRegisterForTooltipDismissNotification
 API RegisterFrostWindow
 API RegisterGhostWindow
-API NtUserRegisterHotKey ; -> RegisterHotKey
+API NtUserRegisterHotKey
 API RegisterLogonProcess
 API RegisterMessagePumpHook
-API NtUserRegisterPointerDeviceNotifications ; -> RegisterPointerDeviceNotifications
+API NtUserRegisterPointerDeviceNotifications
 API RegisterPointerInputTarget
 API RegisterPointerInputTargetEx
 API RegisterPowerSettingNotification
-API NtUserRegisterRawInputDevices ; -> RegisterRawInputDevices
-API NtUserRegisterServicesProcess ; -> RegisterServicesProcess
-API NtUserRegisterSessionPort ; -> RegisterSessionPort
+API NtUserRegisterRawInputDevices
+API NtUserRegisterServicesProcess
+API NtUserRegisterSessionPort
 API RegisterShellHookWindow
 API RegisterSuspendResumeNotification
 API RegisterSystemThread
-API NtUserRegisterTasklist ; -> RegisterTasklist
-API NtUserRegisterTouchHitTestingWindow ; -> RegisterTouchHitTestingWindow
+API NtUserRegisterTasklist
+API NtUserRegisterTouchHitTestingWindow
 API RegisterTouchWindow
 API RegisterUserApiHook
 API RegisterWindowMessageA
 API RegisterWindowMessageW
 API ReleaseCapture
 API ReleaseDC
-API NtUserReleaseDwmHitTestWaiters ; -> ReleaseDwmHitTestWaiters
-API RemoveClipboardFormatListenerStub ; -> RemoveClipboardFormatListener
-API NtUserRemoveInjectionDevice ; -> RemoveInjectionDevice
-API NtUserRemoveMenu ; -> RemoveMenu
+API NtUserReleaseDwmHitTestWaiters
+API RemoveClipboardFormatListenerStub
+API NtUserRemoveInjectionDevice
+API NtUserRemoveMenu
 API RemovePropA
 API RemovePropW
 API RemoveThreadTSFEventAwareness
-API NtUserRemoveVisualIdentifier ; -> RemoveVisualIdentifier
+API NtUserRemoveVisualIdentifier
 API ReplyMessage
 API ReportInertia
-API NtUserResolveDesktopForWOW ; -> ResolveDesktopForWOW
+API NtUserResolveDesktopForWOW
 API ReuseDDElParam
 API ScreenToClient
 API ScrollChildren
@@ -794,7 +794,7 @@ API SendDlgItemMessageA
 API SendDlgItemMessageW
 API SendIMEMessageExA
 API SendIMEMessageExW
-API NtUserSendInput ; -> SendInput
+API NtUserSendInput
 API SendMessageA
 API SendMessageCallbackA
 API SendMessageCallbackW
@@ -803,69 +803,69 @@ API SendMessageTimeoutW
 API SendMessageW
 API SendNotifyMessageA
 API SendNotifyMessageW
-API NtUserSetActiveWindow ; -> SetActiveWindow
-API NtUserSetAdditionalForegroundBoostProcesses ; -> SetAdditionalForegroundBoostProcesses
-API NtUserSetCapture ; -> SetCapture
+API NtUserSetActiveWindow
+API NtUserSetAdditionalForegroundBoostProcesses
+API NtUserSetCapture
 API SetCaretBlinkTime
 API SetCaretPos
 API SetClassLongA
 API SetClassLongPtrA
 API SetClassLongPtrW
 API SetClassLongW
-API NtUserSetClassWord ; -> SetClassWord
+API NtUserSetClassWord
 API SetClipboardData
-API SetClipboardViewerStub ; -> SetClipboardViewer
-API NtUserSetTimer ; -> SetCoalescableTimer
-API NtUserSetCoreWindow ; -> SetCoreWindow
-API SetCursorStub ; -> SetCursor
+API SetClipboardViewerStub
+API NtUserSetTimer
+API NtUserSetCoreWindow
+API SetCursorStub
 API SetCursorContents
-API NtUserSetCursorPos ; -> SetCursorPos
-API dummyCtfImmRestoreToolbarWnd ; -> SetDebugErrorLevel
+API NtUserSetCursorPos
+API dummyCtfImmRestoreToolbarWnd
 API SetDeskWallpaper
-API NtUserSetDesktopColorTransform ; -> SetDesktopColorTransform
-API NtUserSetDialogControlDpiChangeBehavior ; -> SetDialogControlDpiChangeBehavior
+API NtUserSetDesktopColorTransform
+API NtUserSetDialogControlDpiChangeBehavior
 API SetDialogDpiChangeBehavior
-API NtUserSetDisplayAutoRotationPreferences ; -> SetDisplayAutoRotationPreferences
+API NtUserSetDisplayAutoRotationPreferences
 API SetDisplayConfig
 API SetDlgItemInt
 API SetDlgItemTextA
 API SetDlgItemTextW
 API SetDoubleClickTime
-API NtUserSetFeatureReportResponse ; -> SetFeatureReportResponse
-API NtUserSetFocus ; -> SetFocus
-API NtUserSetForegroundRedirectionForActivationObject ; -> SetForegroundRedirectionForActivationObject
+API NtUserSetFeatureReportResponse
+API NtUserSetFocus
+API NtUserSetForegroundRedirectionForActivationObject
 API SetForegroundWindow
-API NtUserSetFullscreenMagnifierOffsetsDWMUpdated ; -> SetFullscreenMagnifierOffsetsDWMUpdated
-API NtUserSetGestureConfig ; -> SetGestureConfig
-API NtUserSetInternalWindowPos ; -> SetInternalWindowPos
-API NtUserSetKeyboardState ; -> SetKeyboardState
+API NtUserSetFullscreenMagnifierOffsetsDWMUpdated
+API NtUserSetGestureConfig
+API NtUserSetInternalWindowPos
+API NtUserSetKeyboardState
 API SetLastErrorEx
-API NtUserSetLayeredWindowAttributes ; -> SetLayeredWindowAttributes
+API NtUserSetLayeredWindowAttributes
 API SetMagnificationDesktopColorEffect
 API SetMagnificationDesktopMagnification
-API NtUserSetMagnificationDesktopMagnifierOffsetsDWMUpdated ; -> SetMagnificationDesktopMagnifierOffsetsDWMUpdated
+API NtUserSetMagnificationDesktopMagnifierOffsetsDWMUpdated
 API SetMagnificationDesktopSamplingMode
-API NtUserMagSetContextInformation ; -> SetMagnificationLensCtxInformation
+API NtUserMagSetContextInformation
 API SetMenu
-API NtUserSetMenuContextHelpId ; -> SetMenuContextHelpId
-API NtUserSetMenuDefaultItem ; -> SetMenuDefaultItem
+API NtUserSetMenuContextHelpId
+API NtUserSetMenuDefaultItem
 API SetMenuInfo
 API SetMenuItemBitmaps
 API SetMenuItemInfoA
 API SetMenuItemInfoW
 API SetMessageExtraInfo
 API SetMessageQueue
-API NtUserSetMirrorRendering ; -> SetMirrorRendering
-API SetParentStub ; -> SetParent
-API NtUserSetCursorPos ; -> SetPhysicalCursorPos
-API NtSetPointerDeviceInputSpace ; -> SetPointerDeviceInputSpace
+API NtUserSetMirrorRendering
+API SetParentStub
+API NtUserSetCursorPos
+API NtSetPointerDeviceInputSpace
 API SetProcessDPIAware
 API SetProcessDefaultLayout
 API SetProcessDpiAwarenessContext
 API SetProcessDpiAwarenessInternal
-API NtUserSetProcessLaunchForegroundPolicy ; -> SetProcessLaunchForegroundPolicy
-API NtUserSetProcessRestrictionExemption ; -> SetProcessRestrictionExemption
-API NtUserSetProcessWindowStation ; -> SetProcessWindowStation
+API NtUserSetProcessLaunchForegroundPolicy
+API NtUserSetProcessRestrictionExemption
+API NtUserSetProcessWindowStation
 API SetProgmanWindow
 API SetPropA
 API SetPropW
@@ -876,62 +876,62 @@ API SetScrollPos
 API SetScrollRange
 API SetShellChangeNotifyWindow
 API SetShellWindow
-API NtUserSetShellWindowEx ; -> SetShellWindowEx
+API NtUserSetShellWindowEx
 API SetSysColors
 API SetSysColorsTemp
 API SetSystemCursor
-API NtUserSetSystemMenu ; -> SetSystemMenu
+API NtUserSetSystemMenu
 API SetTaskmanWindow
 API ?SetThreadCursorCreationScaling@@YAKK@Z
-API SetThreadDesktopStub ; -> SetThreadDesktop
+API SetThreadDesktopStub
 API SetThreadDpiAwarenessContext
 API SetThreadDpiHostingBehavior
-API NtUserSetThreadInputBlocked ; -> SetThreadInputBlocked
+API NtUserSetThreadInputBlocked
 API SetTimer
 API SetUserObjectInformationA
 API SetUserObjectInformationW
 API SetUserObjectSecurity
 API SetWinEventHook
-API NtUserSetWindowBand ; -> SetWindowBand
-API SetWindowCompositionAttributeStub ; -> SetWindowCompositionAttribute
-API NtUserSetWindowCompositionTransition ; -> SetWindowCompositionTransition
+API NtUserSetWindowBand
+API SetWindowCompositionAttributeStub
+API NtUserSetWindowCompositionTransition
 API SetWindowContextHelpId
-API NtUserSetWindowDisplayAffinity ; -> SetWindowDisplayAffinity
-API NtUserSetWindowFeedbackSetting ; -> SetWindowFeedbackSetting
+API NtUserSetWindowDisplayAffinity
+API NtUserSetWindowFeedbackSetting
 API SetWindowLongA
 API SetWindowLongPtrA
 API SetWindowLongPtrW
 API SetWindowLongW
-API NtUserSetWindowPlacement ; -> SetWindowPlacement
-API NtUserSetWindowPos ; -> SetWindowPos
+API NtUserSetWindowPlacement
+API NtUserSetWindowPos
 API SetWindowRgn
 API SetWindowRgnEx
 API SetWindowStationUser
 API SetWindowTextA
 API SetWindowTextW
-API NtUserSetWindowWord ; -> SetWindowWord
+API NtUserSetWindowWord
 API SetWindowsHookA
 API SetWindowsHookExA
 API SetWindowsHookExAW
 API SetWindowsHookExW
 API SetWindowsHookW
-API NtUserShellMigrateWindow ; -> ShellMigrateWindow
-API NtUserShellSetWindowPos ; -> ShellSetWindowPos
-API ShowCaretStub ; -> ShowCaret
-API NtUserShowCursor ; -> ShowCursor
+API NtUserShellMigrateWindow
+API NtUserShellSetWindowPos
+API ShowCaretStub
+API NtUserShowCursor
 API ShowOwnedPopups
-API NtUserShowScrollBar ; -> ShowScrollBar
+API NtUserShowScrollBar
 API ShowStartGlass
-API NtUserShowSystemCursor ; -> ShowSystemCursor
-API NtUserShowWindow ; -> ShowWindow
-API NtUserShowWindowAsync ; -> ShowWindowAsync
+API NtUserShowSystemCursor
+API NtUserShowWindow
+API NtUserShowWindowAsync
 API ShutdownBlockReasonCreate
-API NtUserShutdownReasonDestroy ; -> ShutdownBlockReasonDestroy
-API NtUserShutdownBlockReasonQuery ; -> ShutdownBlockReasonQuery
-API NtUserSignalRedirectionStartComplete ; -> SignalRedirectionStartComplete
-API NtUserDiscardPointerFrameMessages ; -> SkipPointerFrameMessages
+API NtUserShutdownReasonDestroy
+API NtUserShutdownBlockReasonQuery
+API NtUserSignalRedirectionStartComplete
+API NtUserDiscardPointerFrameMessages
 API SoftModalMessageBox
-API NtUserSoundSentry ; -> SoundSentry
+API NtUserSoundSentry
 API SubtractRect
 API SwapMouseButton
 API SwitchDesktop
@@ -948,51 +948,51 @@ API ToAscii
 API ToAsciiEx
 API ToUnicode
 API ToUnicodeEx
-API NtUserTrackMouseEvent ; -> TrackMouseEvent
+API NtUserTrackMouseEvent
 API TrackPopupMenu
-API NtUserTrackPopupMenuEx ; -> TrackPopupMenuEx
-API TranslateAcceleratorA ; -> TranslateAccelerator
+API NtUserTrackPopupMenuEx
+API TranslateAcceleratorA
 API TranslateAcceleratorA
 API TranslateAcceleratorW
 API TranslateMDISysAccel
 API TranslateMessage
 API TranslateMessageEx
-API NtUserUndelegateInput ; -> UndelegateInput
-API NtUserUnhookWinEvent ; -> UnhookWinEvent
+API NtUserUndelegateInput
+API NtUserUnhookWinEvent
 API UnhookWindowsHook
 API UnhookWindowsHookEx
 API UnionRect
 API UnloadKeyboardLayout
-API NtUserUnlockWindowStation ; -> UnlockWindowStation
+API NtUserUnlockWindowStation
 API UnpackDDElParam
 API UnregisterClassA
 API UnregisterClassW
 API UnregisterDeviceNotification
-API NtUserUnregisterHotKey ; -> UnregisterHotKey
+API NtUserUnregisterHotKey
 API UnregisterMessagePumpHook
 API UnregisterPointerInputTarget
 API UnregisterPointerInputTargetEx
 API UnregisterPowerSettingNotification
-API NtUserUnregisterSessionPort ; -> UnregisterSessionPort
+API NtUserUnregisterSessionPort
 API UnregisterSuspendResumeNotification
 API UnregisterTouchWindow
-API NtUserUnregisterUserApiHook ; -> UnregisterUserApiHook
-API NtUserUpdateDefaultDesktopThumbnail ; -> UpdateDefaultDesktopThumbnail
+API NtUserUnregisterUserApiHook
+API NtUserUpdateDefaultDesktopThumbnail
 API UpdateLayeredWindow
 API UpdateLayeredWindowIndirect
 API UpdatePerUserSystemParameters
 API UpdateWindow
-API NtUserUpdateWindowInputSinkHints ; -> UpdateWindowInputSinkHints
+API NtUserUpdateWindowInputSinkHints
 API User32InitializeImmEntryTable
 API UserClientDllInitialize
-API NtUserUserHandleGrantAccess ; -> UserHandleGrantAccess
+API NtUserUserHandleGrantAccess
 API UserLpkPSMTextOut
 API UserLpkTabbedTextOut
 API UserRealizePalette
 API UserRegisterWowHandlers
 API VRipOutput
 API VTagOutput
-API NtUserValidateRect ; -> ValidateRect
+API NtUserValidateRect
 API ValidateRgn
 API VkKeyScanA
 API VkKeyScanExA
@@ -1003,13 +1003,13 @@ API WINNLSEnableIME
 API WINNLSGetEnableStatus
 API WINNLSGetIMEHotkey
 API WaitForInputIdle
-API NtUserWaitForRedirectionStartComplete ; -> WaitForRedirectionStartComplete
-API NtUserWaitMessage ; -> WaitMessage
+API NtUserWaitForRedirectionStartComplete
+API NtUserWaitMessage
 API WinHelpA
 API WinHelpW
-API NtUserWindowFromDC ; -> WindowFromDC
-API NtUserWindowFromPhysicalPoint ; -> WindowFromPhysicalPoint
-API NtUserWindowFromPoint ; -> WindowFromPoint
+API NtUserWindowFromDC
+API NtUserWindowFromPhysicalPoint
+API NtUserWindowFromPoint
 API _UserTestTokenForInteractive
 API gSharedInfo
 API gapfnScSendMessage

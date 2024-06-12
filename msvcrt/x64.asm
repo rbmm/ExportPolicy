@@ -62,7 +62,7 @@ API ?terminate@@YAXXZ
 API ?unexpected@@YAXXZ
 API ?what@exception@@UEBAPEBDXZ
 API _CrtCheckMemory
-API _fpclear ; -> _CrtDbgBreak
+API _fpclear
 API _CrtDbgReport
 API _CrtDbgReportV
 API _CrtDbgReportW
@@ -74,7 +74,7 @@ API _CrtIsValidHeapPointer
 API _CrtIsValidPointer
 API _CrtMemCheckpoint
 API _CrtMemDifference
-API _CrtMemDumpStatistics ; -> _CrtMemDumpAllObjectsSince
+API _CrtMemDumpStatistics
 API _CrtMemDumpStatistics
 API _CrtReportBlockType
 API _CrtSetAllocHook
@@ -101,9 +101,9 @@ API __AdjustPointer
 API __BuildCatchObject
 API __BuildCatchObjectHelper
 API __C_specific_handler
-API __CppXcptFilter_Export ; -> __CppXcptFilter
+API __CppXcptFilter_Export
 API __CxxFrameHandler
-API __CxxFrameHandler ; -> __CxxFrameHandler2
+API __CxxFrameHandler
 API __CxxFrameHandler3
 API __CxxFrameHandler4
 API __DestructExceptionObject
@@ -242,7 +242,7 @@ API _cputws
 API _creat
 API _create_locale
 API _crtAssertBusy
-API _crtAssertBusy ; -> _crtBreakAlloc
+API _crtAssertBusy
 API _crtDbgFlag
 API _cscanf
 API _cscanf_l
@@ -293,7 +293,7 @@ API _fcvt
 API _fcvt_s
 API _fdopen
 API _fgetchar
-API getwchar ; -> _fgetwchar
+API getwchar
 API _filbuf
 API _fileinfo
 API _filelength
@@ -318,12 +318,12 @@ API _fprintf_l
 API _fprintf_p
 API _fprintf_p_l
 API _fprintf_s_l
-API putchar ; -> _fputchar
-API putwchar ; -> _fputwchar
+API putchar
+API putwchar
 API _free_dbg
 API _free_locale
 API _freea
-API _freea ; -> _freea_s
+API _freea
 API _freefls
 API _fscanf_l
 API _fscanf_s_l
@@ -549,7 +549,7 @@ API _mbctype
 API _mblen_l
 API _mbsbtype
 API _mbsbtype_l
-API strcat ; -> _mbscat
+API strcat
 API _mbscat_s
 API _mbscat_s_l
 API _mbschr
@@ -558,14 +558,14 @@ API _mbscmp
 API _mbscmp_l
 API _mbscoll
 API _mbscoll_l
-API strcpy ; -> _mbscpy
+API strcpy
 API _mbscpy_s
 API _mbscpy_s_l
 API _mbscspn
 API _mbscspn_l
 API _mbsdec
 API _mbsdec_l
-API _strdup ; -> _mbsdup
+API _strdup
 API _mbsicmp
 API _mbsicmp_l
 API _mbsicoll
@@ -772,7 +772,7 @@ API _stat
 API _stat64
 API _stati64
 API _statusfp
-API _stricmp ; -> _strcmpi
+API _stricmp
 API _strcoll_l
 API _strdate
 API _strdate_s
@@ -1092,16 +1092,16 @@ API cosh
 API coshf
 API ctime
 API difftime
-;API div
+API $div
 API exit
 API exp
 API expf
-;API fabs
+API $fabs
 API fclose
 API feof
 API ferror
 API fflush
-API getc ; -> fgetc
+API getc
 API fgetpos
 API fgets
 API fgetwc
@@ -1134,7 +1134,7 @@ API fwrite
 API fwscanf
 API fwscanf_s
 API getc
-API _fgetchar ; -> getchar
+API _fgetchar
 API getenv
 API getenv_s
 API gets
@@ -1181,7 +1181,7 @@ API malloc
 API mblen
 API mbrlen
 API mbrtowc
-API _strdup_dbg ; -> mbsdup_dbg
+API _strdup_dbg
 API mbsrtowcs
 API mbsrtowcs_s
 API mbstowcs
@@ -1189,11 +1189,11 @@ API mbstowcs_s
 API mbtowc
 API memchr
 API memcmp
-API memmove ; -> memcpy
+API memmove
 API memcpy_s
 API memmove
 API memmove_s
-API memset$thunk$772440563353939046 ; -> memset
+API memset$thunk$772440563353939046
 API mktime
 API modf
 API modff
@@ -1202,7 +1202,7 @@ API pow
 API powf
 API printf
 API printf_s
-API fputc ; -> putc
+API fputc
 API putchar
 API puts
 API putwc
@@ -1262,7 +1262,7 @@ API strtok_s
 API strtol
 API strtoul
 API strxfrm
-API _swprintf ; -> swprintf
+API _swprintf
 API swprintf_s
 API swscanf
 API swscanf_s
@@ -1289,10 +1289,10 @@ API vfwprintf
 API vfwprintf_s
 API vprintf
 API vprintf_s
-API _vsnprintf ; -> vsnprintf
+API _vsnprintf
 API vsprintf
 API vsprintf_s
-API _vswprintf ; -> vswprintf
+API _vswprintf
 API vswprintf_s
 API vwprintf
 API vwprintf_s

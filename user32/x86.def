@@ -159,15 +159,15 @@ DdeSetQualityOfService
 DdeSetUserHandle
 DdeUnaccessData
 DdeUninitialize
-DefDlgProcA = NTDLL.NtdllDialogWndProc_A
-DefDlgProcW = NTDLL.NtdllDialogWndProc_W
+DefDlgProcA = NtdllDialogWndProc_A
+DefDlgProcW = NtdllDialogWndProc_W
 DefFrameProcA
 DefFrameProcW
 DefMDIChildProcA
 DefMDIChildProcW
 DefRawInputProc
-DefWindowProcA = NTDLL.NtdllDefWindowProc_A
-DefWindowProcW = NTDLL.NtdllDefWindowProc_W
+DefWindowProcA = NtdllDefWindowProc_A
+DefWindowProcW = NtdllDefWindowProc_W
 DeferWindowPos
 DeferWindowPosAndBand
 DelegateInput = NtUserDelegateInput

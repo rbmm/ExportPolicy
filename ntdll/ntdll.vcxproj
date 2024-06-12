@@ -13,7 +13,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{CE7AA8D0-fc7f-B799-020F-1EC9E531C3B6}</ProjectGuid>
+    <ProjectGuid>{E44DCBCA-df74-63B6-038D-18C11992E897}</ProjectGuid>
     <RootNamespace>ntdll</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>

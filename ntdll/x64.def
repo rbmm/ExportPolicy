@@ -2385,7 +2385,7 @@ bsearch
 bsearch_s
 ceil
 cos
-;fabs
+fabs = $fabs
 floor
 isalnum
 isalpha

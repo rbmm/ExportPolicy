@@ -10,8 +10,8 @@ ENDM
 .code
 
 API _FreeAddrInfoEx@4
-API _FreeAddrInfoEx@4 ; -> FreeAddrInfoExW
-API _freeaddrinfo@4 ; -> FreeAddrInfoW
+API _FreeAddrInfoEx@4
+API _freeaddrinfo@4
 API _GetAddrInfoExA@40
 API _GetAddrInfoExCancel@4
 API _GetAddrInfoExOverlappedResult@4
@@ -21,10 +21,10 @@ API _GetHostNameW@8
 API _GetNameInfoW@28
 API _InetNtopW@16
 API _InetPtonW@12
-API ProcessSocketNotifications
+API _ProcessSocketNotifications@28
 API _SetAddrInfoExA@48
 API _SetAddrInfoExW@48
-API @_guard_check_icall_nop@4 ; -> WEP
+API @_guard_check_icall_nop@4
 API _WPUCompleteOverlappedRequest@20
 API _WPUGetProviderPathEx@20
 API _WSAAccept@20
@@ -113,7 +113,7 @@ API _WSCEnumProtocolsEx@20
 API _WSCGetApplicationCategory@24
 API _WSCGetApplicationCategoryEx@28
 API _WSCGetProviderInfo@24
-API _WPUGetProviderPath@16 ; -> WSCGetProviderPath
+API _WPUGetProviderPath@16
 API _WSCInstallNameSpace@20
 API _WSCInstallNameSpaceEx@24
 API _WSCInstallNameSpaceEx2@28
@@ -172,7 +172,7 @@ API _getservbyname@8
 API _getservbyport@8
 API _getsockname@12
 API _getsockopt@20
-API _ntohl@4 ; -> htonl
+API _ntohl@4
 API _htons@4
 API _inet_addr@4
 API _inet_ntoa@4
@@ -181,7 +181,7 @@ API _inet_pton@12
 API _ioctlsocket@12
 API _listen@8
 API _ntohl@4
-API _htons@4 ; -> ntohs
+API _htons@4
 API _recv@16
 API _recvfrom@24
 API _select@20

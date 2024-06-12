@@ -8,94 +8,94 @@ ENDM
 API AbortDoc
 API AbortPath
 API AddFontMemResourceEx
-API AddFontResourceAStub ; -> AddFontResourceA
+API AddFontResourceAStub
 API AddFontResourceExA
 API AddFontResourceExW
 API AddFontResourceTracking
 API AddFontResourceW
 API AngleArc
-API AnimatePaletteStub ; -> AnimatePalette
+API AnimatePaletteStub
 API AnyLinkedFonts
-API ArcStub ; -> Arc
+API ArcStub
 API ArcTo
-API NtGdiBRUSHOBJ_hGetColorTransform ; -> BRUSHOBJ_hGetColorTransform
-API NtGdiBRUSHOBJ_pvAllocRbrush ; -> BRUSHOBJ_pvAllocRbrush
-API NtGdiBRUSHOBJ_pvGetRbrush ; -> BRUSHOBJ_pvGetRbrush
-API NtGdiBRUSHOBJ_ulGetBrushColor ; -> BRUSHOBJ_ulGetBrushColor
-API NtGdiBeginGdiRendering ; -> BeginGdiRendering
+API NtGdiBRUSHOBJ_hGetColorTransform
+API NtGdiBRUSHOBJ_pvAllocRbrush
+API NtGdiBRUSHOBJ_pvGetRbrush
+API NtGdiBRUSHOBJ_ulGetBrushColor
+API NtGdiBeginGdiRendering
 API BeginPath
-API BitBltStub ; -> BitBlt
-API NtGdiCLIPOBJ_bEnum ; -> CLIPOBJ_bEnum
-API NtGdiCLIPOBJ_cEnumStart ; -> CLIPOBJ_cEnumStart
-API NtGdiCLIPOBJ_ppoGetPath ; -> CLIPOBJ_ppoGetPath
+API BitBltStub
+API NtGdiCLIPOBJ_bEnum
+API NtGdiCLIPOBJ_cEnumStart
+API NtGdiCLIPOBJ_ppoGetPath
 API CancelDC
 API CheckColorsInGamut
 API ChoosePixelFormat
 API Chord
 API ClearBitmapAttributes
 API ClearBrushAttributes
-API CloseEnhMetaFileStub ; -> CloseEnhMetaFile
+API CloseEnhMetaFileStub
 API CloseFigure
-API CloseMetaFileStub ; -> CloseMetaFile
+API CloseMetaFileStub
 API ColorCorrectPalette
 API ColorMatchToTarget
 API CombineRgn
 API CombineTransform
-API NtGdiConfigureOPMProtectedOutput ; -> ConfigureOPMProtectedOutput
+API NtGdiConfigureOPMProtectedOutput
 API CopyEnhMetaFileA
 API CopyEnhMetaFileW
 API CopyMetaFileA
 API CopyMetaFileW
-API CreateBitmapStub ; -> CreateBitmap
-API NtGdiCreateBitmapFromDxSurface ; -> CreateBitmapFromDxSurface
-API NtGdiCreateBitmapFromDxSurface2 ; -> CreateBitmapFromDxSurface2
-API CreateBitmapIndirectStub ; -> CreateBitmapIndirect
-API CreateBrushIndirectStub ; -> CreateBrushIndirect
+API CreateBitmapStub
+API NtGdiCreateBitmapFromDxSurface
+API NtGdiCreateBitmapFromDxSurface2
+API CreateBitmapIndirectStub
+API CreateBrushIndirectStub
 API CreateColorSpaceA
 API CreateColorSpaceW
-API CreateCompatibleBitmapStub ; -> CreateCompatibleBitmap
-API CreateCompatibleDCStub ; -> CreateCompatibleDC
+API CreateCompatibleBitmapStub
+API CreateCompatibleDCStub
 API CreateDCA
 API CreateDCExW
 API CreateDCW
 API CreateDIBPatternBrush
 API CreateDIBPatternBrushPt
-API CreateDIBSectionStub ; -> CreateDIBSection
-API CreateDIBitmapStub ; -> CreateDIBitmap
+API CreateDIBSectionStub
+API CreateDIBitmapStub
 API CreateDPIScaledDIBSection
 API CreateDiscardableBitmap
 API CreateEllipticRgn
-API CreateEllipticRgnIndirectStub ; -> CreateEllipticRgnIndirect
-API CreateEnhMetaFileAStub ; -> CreateEnhMetaFileA
+API CreateEllipticRgnIndirectStub
+API CreateEnhMetaFileAStub
 API CreateEnhMetaFileW
-API CreateFontAStub ; -> CreateFontA
-API CreateFontIndirectAStub ; -> CreateFontIndirectA
+API CreateFontAStub
+API CreateFontIndirectAStub
 API CreateFontIndirectExA
 API CreateFontIndirectExW
 API CreateFontIndirectW
-API CreateFontWStub ; -> CreateFontW
+API CreateFontWStub
 API CreateHalftonePalette
 API CreateHatchBrush
 API CreateICA
 API CreateICW
-API CreateMetaFileAStub ; -> CreateMetaFileA
+API CreateMetaFileAStub
 API CreateMetaFileW
-API NtGdiCreateOPMProtectedOutput ; -> CreateOPMProtectedOutput
-API NtGdiCreateOPMProtectedOutputs ; -> CreateOPMProtectedOutputs
-API CreatePaletteStub ; -> CreatePalette
-API CreatePatternBrushStub ; -> CreatePatternBrush
-API CreatePenStub ; -> CreatePen
-API CreatePenIndirectStub ; -> CreatePenIndirect
-API CreatePolyPolygonRgnStub ; -> CreatePolyPolygonRgn
+API NtGdiCreateOPMProtectedOutput
+API NtGdiCreateOPMProtectedOutputs
+API CreatePaletteStub
+API CreatePatternBrushStub
+API CreatePenStub
+API CreatePenIndirectStub
+API CreatePolyPolygonRgnStub
 API CreatePolygonRgn
 API CreateRectRgn
 API CreateRectRgnIndirect
-API CreateRoundRectRgnStub ; -> CreateRoundRectRgn
+API CreateRoundRectRgnStub
 API CreateScalableFontResourceA
 API CreateScalableFontResourceW
 API CreateScaledCompatibleBitmap
 API CreateSessionMappedDIBSection
-API CreateSolidBrushStub ; -> CreateSolidBrush
+API CreateSolidBrushStub
 API D3DKMTAbandonSwapChain
 API D3DKMTAcquireKeyedMutex
 API D3DKMTAcquireKeyedMutex2
@@ -142,7 +142,7 @@ API D3DKMTDDisplayEnum
 API D3DKMTDestroyAllocation
 API D3DKMTDestroyAllocation2
 API D3DKMTDestroyContext
-API NtGdiDdDDIDestroyDCFromMemory
+API ZwGdiDdDDIDestroyDCFromMemory
 API D3DKMTDestroyDevice
 API D3DKMTDestroyDoorbell
 API D3DKMTDestroyHwContext
@@ -255,7 +255,7 @@ API D3DKMTQueryFSEBlock
 API D3DKMTQueryProcessOfferInfo
 API D3DKMTQueryProtectedSessionInfoFromNtHandle
 API D3DKMTQueryProtectedSessionStatus
-API NtGdiDdDDIQueryRemoteVidPnSourceFromGdiDisplayName
+API ZwGdiDdDDIQueryRemoteVidPnSourceFromGdiDisplayName
 API D3DKMTQueryResourceInfo
 API D3DKMTQueryResourceInfoFromNtHandle
 API D3DKMTQueryStatistics
@@ -332,149 +332,149 @@ API D3DKMTWaitForSynchronizationObjectFromCpu
 API D3DKMTWaitForSynchronizationObjectFromGpu
 API D3DKMTWaitForVerticalBlankEvent
 API D3DKMTWaitForVerticalBlankEvent2
-API NtGdiDDCCIGetCapabilitiesString ; -> DDCCIGetCapabilitiesString
-API NtGdiDDCCIGetCapabilitiesStringLength ; -> DDCCIGetCapabilitiesStringLength
-API NtGdiDDCCIGetTimingReport ; -> DDCCIGetTimingReport
-API NtGdiDDCCIGetVCPFeature ; -> DDCCIGetVCPFeature
-API NtGdiDDCCISaveCurrentSettings ; -> DDCCISaveCurrentSettings
-API NtGdiDDCCISetVCPFeature ; -> DDCCISetVCPFeature
-API DPtoLPStub ; -> DPtoLP
-API NtGdiDdCreateFullscreenSprite ; -> DdCreateFullscreenSprite
-API NtGdiDdDestroyFullscreenSprite ; -> DdDestroyFullscreenSprite
-API NtGdiDxgGenericThunk ; -> DdEntry0
-API NtGdiD3dContextCreate ; -> DdEntry1
-API NtGdiDdBeginMoCompFrame ; -> DdEntry10
-API NtGdiDdBlt ; -> DdEntry11
-API NtGdiDdCanCreateSurface ; -> DdEntry12
-API NtGdiDdCanCreateD3DBuffer ; -> DdEntry13
-API NtGdiDdColorControl ; -> DdEntry14
-API NtGdiDdCreateDirectDrawObject ; -> DdEntry15
-API NtGdiDdCreateSurface ; -> DdEntry16
-API NtGdiDdCreateD3DBuffer ; -> DdEntry17
-API NtGdiDdCreateMoComp ; -> DdEntry18
-API NtGdiDdCreateSurfaceObject ; -> DdEntry19
-API NtGdiD3dContextDestroy ; -> DdEntry2
-API NtGdiDdDeleteDirectDrawObject ; -> DdEntry20
-API NtGdiDdDeleteSurfaceObject ; -> DdEntry21
-API NtGdiDdDestroyMoComp ; -> DdEntry22
-API NtGdiDdDestroySurface ; -> DdEntry23
-API NtGdiDdDestroyD3DBuffer ; -> DdEntry24
-API NtGdiDdEndMoCompFrame ; -> DdEntry25
-API NtGdiDdFlip ; -> DdEntry26
-API NtGdiDdFlipToGDISurface ; -> DdEntry27
-API NtGdiDdGetAvailDriverMemory ; -> DdEntry28
-API NtGdiDdGetBltStatus ; -> DdEntry29
-API NtGdiD3dContextDestroyAll ; -> DdEntry3
-API NtGdiDdGetDC ; -> DdEntry30
-API NtGdiDdGetDriverInfo ; -> DdEntry31
-API NtGdiDdGetDxHandle ; -> DdEntry32
-API NtGdiDdGetFlipStatus ; -> DdEntry33
-API NtGdiDdGetInternalMoCompInfo ; -> DdEntry34
-API NtGdiDdGetMoCompBuffInfo ; -> DdEntry35
-API NtGdiDdGetMoCompGuids ; -> DdEntry36
-API NtGdiDdGetMoCompFormats ; -> DdEntry37
-API NtGdiDdGetScanLine ; -> DdEntry38
-API NtGdiDdLock ; -> DdEntry39
-API NtGdiD3dValidateTextureStageState ; -> DdEntry4
-API NtGdiDdLockD3D ; -> DdEntry40
-API NtGdiDdQueryDirectDrawObject ; -> DdEntry41
-API NtGdiDdQueryMoCompStatus ; -> DdEntry42
-API NtGdiDdReenableDirectDrawObject ; -> DdEntry43
-API NtGdiDdReleaseDC ; -> DdEntry44
-API NtGdiDdRenderMoComp ; -> DdEntry45
-API NtGdiDdResetVisrgn ; -> DdEntry46
-API NtGdiDdSetColorKey ; -> DdEntry47
-API NtGdiDdSetExclusiveMode ; -> DdEntry48
-API NtGdiDdSetGammaRamp ; -> DdEntry49
-API NtGdiD3dDrawPrimitives2 ; -> DdEntry5
-API NtGdiDdCreateSurfaceEx ; -> DdEntry50
-API NtGdiDdSetOverlayPosition ; -> DdEntry51
-API NtGdiDdUnattachSurface ; -> DdEntry52
-API NtGdiDdUnlock ; -> DdEntry53
-API NtGdiDdUnlockD3D ; -> DdEntry54
-API NtGdiDdUpdateOverlay ; -> DdEntry55
-API NtGdiDdWaitForVerticalBlank ; -> DdEntry56
-API NtGdiDdGetDriverState ; -> DdEntry6
-API NtGdiDdAddAttachedSurface ; -> DdEntry7
-API NtGdiDdAlphaBlt ; -> DdEntry8
-API NtGdiDdAttachSurface ; -> DdEntry9
-API NtGdiDdNotifyFullscreenSpriteUpdate ; -> DdNotifyFullscreenSpriteUpdate
-API NtGdiDdQueryVisRgnUniqueness ; -> DdQueryVisRgnUniqueness
+API NtGdiDDCCIGetCapabilitiesString
+API NtGdiDDCCIGetCapabilitiesStringLength
+API NtGdiDDCCIGetTimingReport
+API NtGdiDDCCIGetVCPFeature
+API NtGdiDDCCISaveCurrentSettings
+API NtGdiDDCCISetVCPFeature
+API DPtoLPStub
+API NtGdiDdCreateFullscreenSprite
+API NtGdiDdDestroyFullscreenSprite
+API NtGdiDxgGenericThunk
+API NtGdiD3dContextCreate
+API NtGdiDdBeginMoCompFrame
+API NtGdiDdBlt
+API NtGdiDdCanCreateSurface
+API NtGdiDdCanCreateD3DBuffer
+API NtGdiDdColorControl
+API NtGdiDdCreateDirectDrawObject
+API NtGdiDdCreateSurface
+API NtGdiDdCreateD3DBuffer
+API NtGdiDdCreateMoComp
+API NtGdiDdCreateSurfaceObject
+API NtGdiD3dContextDestroy
+API NtGdiDdDeleteDirectDrawObject
+API NtGdiDdDeleteSurfaceObject
+API NtGdiDdDestroyMoComp
+API NtGdiDdDestroySurface
+API NtGdiDdDestroyD3DBuffer
+API NtGdiDdEndMoCompFrame
+API NtGdiDdFlip
+API NtGdiDdFlipToGDISurface
+API NtGdiDdGetAvailDriverMemory
+API NtGdiDdGetBltStatus
+API NtGdiD3dContextDestroyAll
+API NtGdiDdGetDC
+API NtGdiDdGetDriverInfo
+API NtGdiDdGetDxHandle
+API NtGdiDdGetFlipStatus
+API NtGdiDdGetInternalMoCompInfo
+API NtGdiDdGetMoCompBuffInfo
+API NtGdiDdGetMoCompGuids
+API NtGdiDdGetMoCompFormats
+API NtGdiDdGetScanLine
+API NtGdiDdLock
+API NtGdiD3dValidateTextureStageState
+API NtGdiDdLockD3D
+API NtGdiDdQueryDirectDrawObject
+API NtGdiDdQueryMoCompStatus
+API NtGdiDdReenableDirectDrawObject
+API NtGdiDdReleaseDC
+API NtGdiDdRenderMoComp
+API NtGdiDdResetVisrgn
+API NtGdiDdSetColorKey
+API NtGdiDdSetExclusiveMode
+API NtGdiDdSetGammaRamp
+API NtGdiD3dDrawPrimitives2
+API NtGdiDdCreateSurfaceEx
+API NtGdiDdSetOverlayPosition
+API NtGdiDdUnattachSurface
+API NtGdiDdUnlock
+API NtGdiDdUnlockD3D
+API NtGdiDdUpdateOverlay
+API NtGdiDdWaitForVerticalBlank
+API NtGdiDdGetDriverState
+API NtGdiDdAddAttachedSurface
+API NtGdiDdAlphaBlt
+API NtGdiDdAttachSurface
+API NtGdiDdNotifyFullscreenSpriteUpdate
+API NtGdiDdQueryVisRgnUniqueness
 API DeleteColorSpace
 API DeleteDC
-API DeleteEnhMetaFileStub ; -> DeleteEnhMetaFile
-API DeleteMetaFileStub ; -> DeleteMetaFile
+API DeleteEnhMetaFileStub
+API DeleteMetaFileStub
 API DeleteObject
 API DescribePixelFormat
-API NtGdiDestroyOPMProtectedOutput ; -> DestroyOPMProtectedOutput
-API NtGdiDestroyPhysicalMonitor ; -> DestroyPhysicalMonitorInternal
+API NtGdiDestroyOPMProtectedOutput
+API NtGdiDestroyPhysicalMonitor
 API DeviceCapabilitiesExA
-API DeviceCapabilitiesExA
+API DeviceCapabilitiesExW
 API DrawEscape
 API DwmCreatedBitmapRemotingOutput
-API EllipseStub ; -> Ellipse
-API NtGdiEnableEudc ; -> EnableEUDC
+API EllipseStub
+API NtGdiEnableEudc
 API EndDoc
 API EndFormPage
-API NtGdiEndGdiRendering ; -> EndGdiRendering
+API NtGdiEndGdiRendering
 API EndPage
 API EndPath
 API EngAcquireSemaphore
-API NtGdiEngAlphaBlend ; -> EngAlphaBlend
-API NtGdiEngAssociateSurface ; -> EngAssociateSurface
-API NtGdiEngBitBlt ; -> EngBitBlt
-API NtGdiEngCheckAbort ; -> EngCheckAbort
+API NtGdiEngAlphaBlend
+API NtGdiEngAssociateSurface
+API NtGdiEngBitBlt
+API NtGdiEngCheckAbort
 API EngComputeGlyphSet
-API NtGdiEngCopyBits ; -> EngCopyBits
-API NtGdiEngCreateBitmap ; -> EngCreateBitmap
-API NtGdiEngCreateClip ; -> EngCreateClip
-API NtGdiEngCreateDeviceBitmap ; -> EngCreateDeviceBitmap
-API NtGdiEngCreateDeviceSurface ; -> EngCreateDeviceSurface
-API NtGdiEngCreatePalette ; -> EngCreatePalette
+API NtGdiEngCopyBits
+API NtGdiEngCreateBitmap
+API NtGdiEngCreateClip
+API NtGdiEngCreateDeviceBitmap
+API NtGdiEngCreateDeviceSurface
+API NtGdiEngCreatePalette
 API EngCreateSemaphore
-API NtGdiEngDeleteClip ; -> EngDeleteClip
-API NtGdiEngDeletePalette ; -> EngDeletePalette
-API NtGdiEngDeletePath ; -> EngDeletePath
+API NtGdiEngDeleteClip
+API NtGdiEngDeletePalette
+API NtGdiEngDeletePath
 API EngDeleteSemaphore
-API NtGdiEngDeleteSurface ; -> EngDeleteSurface
-API NtGdiEngEraseSurface ; -> EngEraseSurface
-API NtGdiEngFillPath ; -> EngFillPath
+API NtGdiEngDeleteSurface
+API NtGdiEngEraseSurface
+API NtGdiEngFillPath
 API EngFindResource
 API EngFreeModule
 API EngGetCurrentCodePage
 API EngGetDriverName
 API EngGetPrinterDataFileName
-API NtGdiEngGradientFill ; -> EngGradientFill
-API NtGdiEngLineTo ; -> EngLineTo
+API NtGdiEngGradientFill
+API NtGdiEngLineTo
 API EngLoadModule
-API NtGdiEngLockSurface ; -> EngLockSurface
-API NtGdiEngMarkBandingSurface ; -> EngMarkBandingSurface
+API NtGdiEngLockSurface
+API NtGdiEngMarkBandingSurface
 API EngMultiByteToUnicodeN
 API EngMultiByteToWideChar
-API NtGdiEngPaint ; -> EngPaint
-API NtGdiEngPlgBlt ; -> EngPlgBlt
+API NtGdiEngPaint
+API NtGdiEngPlgBlt
 API EngQueryEMFInfo
 API EngQueryLocalTime
 API EngReleaseSemaphore
-API NtGdiEngStretchBlt ; -> EngStretchBlt
-API NtGdiEngStretchBltROP ; -> EngStretchBltROP
-API NtGdiEngStrokeAndFillPath ; -> EngStrokeAndFillPath
-API NtGdiEngStrokePath ; -> EngStrokePath
-API NtGdiEngTextOut ; -> EngTextOut
-API NtGdiEngTransparentBlt ; -> EngTransparentBlt
+API NtGdiEngStretchBlt
+API NtGdiEngStretchBltROP
+API NtGdiEngStrokeAndFillPath
+API NtGdiEngStrokePath
+API NtGdiEngTextOut
+API NtGdiEngTransparentBlt
 API EngUnicodeToMultiByteN
-API NtGdiEngUnlockSurface ; -> EngUnlockSurface
+API NtGdiEngUnlockSurface
 API EngWideCharToMultiByte
-API EnumEnhMetaFileStub ; -> EnumEnhMetaFile
-API EnumFontFamiliesAStub ; -> EnumFontFamiliesA
-API EnumFontFamiliesExAStub ; -> EnumFontFamiliesExA
+API EnumEnhMetaFileStub
+API EnumFontFamiliesAStub
+API EnumFontFamiliesExAStub
 API EnumFontFamiliesExW
 API EnumFontFamiliesW
 API EnumFontsA
 API EnumFontsW
 API EnumICMProfilesA
 API EnumICMProfilesW
-API EnumMetaFileStub ; -> EnumMetaFile
+API EnumMetaFileStub
 API EnumObjects
 API EqualRgn
 API Escape
@@ -488,21 +488,21 @@ API ExtFloodFill
 API ExtSelectClipRgn
 API ExtTextOutA
 API ExtTextOutW
-API NtGdiFONTOBJ_cGetAllGlyphHandles ; -> FONTOBJ_cGetAllGlyphHandles
-API NtGdiFONTOBJ_cGetGlyphs ; -> FONTOBJ_cGetGlyphs
-API NtGdiFONTOBJ_pQueryGlyphAttrs ; -> FONTOBJ_pQueryGlyphAttrs
-API NtGdiFONTOBJ_pfdg ; -> FONTOBJ_pfdg
-API NtGdiFONTOBJ_pifi ; -> FONTOBJ_pifi
-API NtGdiFONTOBJ_pvTrueTypeFontFile ; -> FONTOBJ_pvTrueTypeFontFile
-API NtGdiFONTOBJ_pxoGetXform ; -> FONTOBJ_pxoGetXform
-API NtGdiFONTOBJ_vGetInfo ; -> FONTOBJ_vGetInfo
+API NtGdiFONTOBJ_cGetAllGlyphHandles
+API NtGdiFONTOBJ_cGetGlyphs
+API NtGdiFONTOBJ_pQueryGlyphAttrs
+API NtGdiFONTOBJ_pfdg
+API NtGdiFONTOBJ_pifi
+API NtGdiFONTOBJ_pvTrueTypeFontFile
+API NtGdiFONTOBJ_pxoGetXform
+API NtGdiFONTOBJ_vGetInfo
 API FillPath
-API FillRgnStub ; -> FillRgn
+API FillRgnStub
 API FixBrushOrgEx
 API FlattenPath
 API FloodFill
 API FontIsLinked
-API FrameRgnStub ; -> FrameRgn
+API FrameRgnStub
 API Gdi32DllInitialize
 API GdiAddFontResourceW
 API GdiAddGlsBounds
@@ -512,7 +512,7 @@ API GdiAlphaBlend
 API GdiArtificialDecrementDriver
 API GdiBatchLimit
 API GdiCleanCacheDC
-API GdiCommentStub ; -> GdiComment
+API GdiCommentStub
 API GdiConsoleTextOut
 API GdiConvertAndCheckDC
 API GdiConvertBitmap
@@ -540,7 +540,7 @@ API GdiEntry1
 API GdiEntry10
 API GdiEntry11
 API GdiEntry12
-API DdQueryDisplaySettingsUniqueness ; -> GdiEntry13
+API DdQueryDisplaySettingsUniqueness
 API GdiEntry14
 API GdiEntry15
 API GdiEntry16
@@ -554,11 +554,11 @@ API GdiEntry8
 API GdiEntry9
 API GdiFixUpHandle
 API GdiFlush
-API NtGdiFullscreenControl ; -> GdiFullscreenControl
+API NtGdiFullscreenControl
 API GdiGetBatchLimit
 API GdiGetBitmapBitsSize
 API GdiGetCharDimensions
-API GetCodePage ; -> GdiGetCodePage
+API GetCodePage
 API GdiGetDC
 API GdiGetDevmodeForPage
 API GdiGetEntry
@@ -568,10 +568,10 @@ API GdiGetLocalFont
 API GdiGetPageCount
 API GdiGetPageHandle
 API GdiGetSpoolFileHandle
-API NtGdiGetSpoolMessage ; -> GdiGetSpoolMessage
+API NtGdiGetSpoolMessage
 API GdiGetVariationStoreDelta
 API GdiGradientFill
-API NtGdiInitSpool ; -> GdiInitSpool
+API NtGdiInitSpool
 API GdiInitializeLanguagePack
 API GdiIsMetaFileDC
 API GdiIsMetaPrintDC
@@ -588,7 +588,7 @@ API GdiPlayPrivatePageEMF
 API GdiPlayScript
 API GdiPrinterThunk
 API GdiProcessSetup
-API NtGdiQueryFonts ; -> GdiQueryFonts
+API NtGdiQueryFonts
 API GdiQueryTable
 API GdiRealizationInfo
 API GdiReleaseDC
@@ -614,19 +614,19 @@ API GditPushCallerInfo
 API GetArcDirection
 API GetAspectRatioFilterEx
 API GetBitmapAttributes
-API GetBitmapBitsStub ; -> GetBitmapBits
+API GetBitmapBitsStub
 API GetBitmapDimensionEx
-API NtGdiGetBitmapDpiScaleValue ; -> GetBitmapDpiScaleValue
-API GetBkColorStub ; -> GetBkColor
+API NtGdiGetBitmapDpiScaleValue
+API GetBkColorStub
 API GetBkMode
 API GetBoundsRect
 API GetBrushAttributes
 API GetBrushOrgEx
-API NtGdiGetCOPPCompatibleOPMInformation ; -> GetCOPPCompatibleOPMInformation
-API NtGdiGetCertificate ; -> GetCertificate
-API NtGdiGetCertificateByHandle ; -> GetCertificateByHandle
-API NtGdiGetCertificateSize ; -> GetCertificateSize
-API NtGdiGetCertificateSizeByHandle ; -> GetCertificateSizeByHandle
+API NtGdiGetCOPPCompatibleOPMInformation
+API NtGdiGetCertificate
+API NtGdiGetCertificateByHandle
+API NtGdiGetCertificateSize
+API NtGdiGetCertificateSizeByHandle
 API GetCharABCWidthsA
 API GetCharABCWidthsFloatA
 API GetCharABCWidthsFloatI
@@ -635,35 +635,35 @@ API GetCharABCWidthsI
 API GetCharABCWidthsW
 API GetCharWidth32A
 API GetCharWidth32W
-API GetCharWidthAStub ; -> GetCharWidthA
+API GetCharWidthAStub
 API GetCharWidthFloatA
 API GetCharWidthFloatW
 API GetCharWidthI
-API NtGdiGetCharWidthInfo ; -> GetCharWidthInfo
+API NtGdiGetCharWidthInfo
 API GetCharWidthW
 API GetCharacterPlacementA
 API GetCharacterPlacementW
 API GetClipBox
-API GetClipRgnStub ; -> GetClipRgn
+API GetClipRgnStub
 API GetColorAdjustment
 API GetColorSpace
 API GetCurrentDpiInfo
-API GetCurrentObjectStub ; -> GetCurrentObject
-API GetCurrentPositionExStub ; -> GetCurrentPositionEx
+API GetCurrentObjectStub
+API GetCurrentPositionExStub
 API GetDCBrushColor
 API GetDCDpiScaleValue
 API GetDCOrgEx
 API GetDCPenColor
 API GetDIBColorTable
-API GetDIBitsStub ; -> GetDIBits
+API GetDIBitsStub
 API GetDeviceCaps
 API GetDeviceGammaRamp
 API GetETM
 API GetEUDCTimeStamp
 API GetEUDCTimeStampExW
-API GetEnhMetaFileAStub ; -> GetEnhMetaFileA
-API GetEnhMetaFileBitsStub ; -> GetEnhMetaFileBits
-API GetEnhMetaFileDescriptionAStub ; -> GetEnhMetaFileDescriptionA
+API GetEnhMetaFileAStub
+API GetEnhMetaFileBitsStub
+API GetEnhMetaFileDescriptionAStub
 API GetEnhMetaFileDescriptionW
 API GetEnhMetaFileHeader
 API GetEnhMetaFilePaletteEntries
@@ -676,95 +676,95 @@ API GetFontFileInfo
 API GetFontLanguageInfo
 API GetFontRealizationInfo
 API GetFontResourceInfoW
-API NtGdiGetFontUnicodeRanges ; -> GetFontUnicodeRanges
+API NtGdiGetFontUnicodeRanges
 API GetGlyphIndicesA
 API GetGlyphIndicesW
 API GetGlyphOutline
-API GetGlyphOutlineAStub ; -> GetGlyphOutlineA
-API GetGlyphOutlineWStub ; -> GetGlyphOutlineW
+API GetGlyphOutlineAStub
+API GetGlyphOutlineWStub
 API GetGlyphOutlineWow
 API GetGraphicsMode
 API GetHFONT
 API GetICMProfileA
 API GetICMProfileW
-API GetKerningPairsAStub ; -> GetKerningPairs
-API GetKerningPairsAStub ; -> GetKerningPairsA
+API GetKerningPairsAStub
+API GetKerningPairsAStub
 API GetKerningPairsW
 API GetLayout
 API GetLogColorSpaceA
 API GetLogColorSpaceW
 API GetMapMode
 API GetMetaFileA
-API GetMetaFileBitsExStub ; -> GetMetaFileBitsEx
+API GetMetaFileBitsExStub
 API GetMetaFileW
 API GetMetaRgn
 API GetMiterLimit
 API GetNearestColor
-API GetNearestPaletteIndexStub ; -> GetNearestPaletteIndex
-API NtGdiGetNumberOfPhysicalMonitors ; -> GetNumberOfPhysicalMonitors
-API NtGdiGetOPMInformation ; -> GetOPMInformation
-API NtGdiGetOPMRandomNumber ; -> GetOPMRandomNumber
-API GetObjectAStub ; -> GetObjectA
-API GetObjectTypeStub ; -> GetObjectType
-API GetObjectWStub ; -> GetObjectW
-API GetOutlineTextMetricsAStub ; -> GetOutlineTextMetricsA
+API GetNearestPaletteIndexStub
+API NtGdiGetNumberOfPhysicalMonitors
+API NtGdiGetOPMInformation
+API NtGdiGetOPMRandomNumber
+API GetObjectAStub
+API GetObjectTypeStub
+API GetObjectWStub
+API GetOutlineTextMetricsAStub
 API GetOutlineTextMetricsW
-API GetPaletteEntriesStub ; -> GetPaletteEntries
+API GetPaletteEntriesStub
 API GetPath
-API NtGdiGetPhysicalMonitorDescription ; -> GetPhysicalMonitorDescription
-API NtGdiGetPhysicalMonitors ; -> GetPhysicalMonitors
-API GetPixelStub ; -> GetPixel
+API NtGdiGetPhysicalMonitorDescription
+API NtGdiGetPhysicalMonitors
+API GetPixelStub
 API GetPixelFormat
 API GetPolyFillMode
 API GetProcessSessionFonts
-API GetROP2Stub ; -> GetROP2
+API GetROP2Stub
 API GetRandomRgn
-API GetRasterizerCapsStub ; -> GetRasterizerCaps
+API GetRasterizerCapsStub
 API GetRegionData
 API GetRelAbs
 API GetRgnBox
-API GetStockObjectStub ; -> GetStockObject
+API GetStockObjectStub
 API GetStretchBltMode
 API GetStringBitmapA
-API NtGdiGetStringBitmapW ; -> GetStringBitmapW
-API NtGdiGetSuggestedOPMProtectedOutputArraySize ; -> GetSuggestedOPMProtectedOutputArraySize
-API GetSystemPaletteEntriesStub ; -> GetSystemPaletteEntries
+API NtGdiGetStringBitmapW
+API NtGdiGetSuggestedOPMProtectedOutputArraySize
+API GetSystemPaletteEntriesStub
 API GetSystemPaletteUse
-API GetTextAlignStub ; -> GetTextAlign
-API GetTextCharacterExtraStub ; -> GetTextCharacterExtra
+API GetTextAlignStub
+API GetTextCharacterExtraStub
 API GetTextCharset
-API NtGdiGetTextCharsetInfo ; -> GetTextCharsetInfo
-API GetTextColorStub ; -> GetTextColor
-API GetTextExtentExPointAStub ; -> GetTextExtentExPointA
-API GetTextExtentExPointIStub ; -> GetTextExtentExPointI
-API GetTextExtentExPointWStub ; -> GetTextExtentExPointW
+API NtGdiGetTextCharsetInfo
+API GetTextColorStub
+API GetTextExtentExPointAStub
+API GetTextExtentExPointIStub
+API GetTextExtentExPointWStub
 API GetTextExtentExPointWPri
-API GetTextExtentPoint32AStub ; -> GetTextExtentPoint32A
-API GetTextExtentPoint32WStub ; -> GetTextExtentPoint32W
-API GetTextExtentPointAStub ; -> GetTextExtentPointA
-API GetTextExtentPointIStub ; -> GetTextExtentPointI
-API GetTextExtentPointWStub ; -> GetTextExtentPointW
-API GetTextFaceAStub ; -> GetTextFaceA
+API GetTextExtentPoint32AStub
+API GetTextExtentPoint32WStub
+API GetTextExtentPointAStub
+API GetTextExtentPointIStub
+API GetTextExtentPointWStub
+API GetTextFaceAStub
 API GetTextFaceAliasW
 API GetTextFaceW
 API GetTextMetricsA
-API GetTextMetricsWStub ; -> GetTextMetricsW
+API GetTextMetricsWStub
 API GetTransform
 API GetViewportExtEx
-API GetViewportOrgExStub ; -> GetViewportOrgEx
+API GetViewportOrgExStub
 API GetWinMetaFileBits
 API GetWindowExtEx
 API GetWindowOrgEx
 API GetWorldTransform
-API NtGdiHT_Get8BPPFormatPalette ; -> HT_Get8BPPFormatPalette
-API NtGdiHT_Get8BPPMaskPalette ; -> HT_Get8BPPMaskPalette
+API NtGdiHT_Get8BPPFormatPalette
+API NtGdiHT_Get8BPPMaskPalette
 API InternalDeleteDC
 API InternalDeleteObject
 API IntersectClipRect
-API InvertRgnStub ; -> InvertRgn
+API InvertRgnStub
 API IsValidEnhMetaRecord
 API IsValidEnhMetaRecordOffExt
-API LPtoDPStub ; -> LPtoDP
+API LPtoDPStub
 API LineDDA
 API LineTo
 API LpkDrawTextEx
@@ -775,7 +775,7 @@ API LpkGetEditControl
 API LpkGetTextExtentExPoint
 API LpkInitialize
 API LpkPSMTextOut
-API LpkPresent
+API GdiDllInitializeWrapper
 API LpkTabbedTextOut
 API LpkUseGDIWidthCache
 API LpkpEditControlSize
@@ -792,57 +792,57 @@ API OffsetClipRgn
 API OffsetRgn
 API OffsetViewportOrgEx
 API OffsetWindowOrgEx
-API NtGdiPATHOBJ_bEnum ; -> PATHOBJ_bEnum
-API NtGdiPATHOBJ_bEnumClipLines ; -> PATHOBJ_bEnumClipLines
-API NtGdiPATHOBJ_vEnumStart ; -> PATHOBJ_vEnumStart
-API NtGdiPATHOBJ_vEnumStartClipLines ; -> PATHOBJ_vEnumStartClipLines
-API NtGdiPATHOBJ_vGetBounds ; -> PATHOBJ_vGetBounds
+API NtGdiPATHOBJ_bEnum
+API NtGdiPATHOBJ_bEnumClipLines
+API NtGdiPATHOBJ_vEnumStart
+API NtGdiPATHOBJ_vEnumStartClipLines
+API NtGdiPATHOBJ_vGetBounds
 API PaintRgn
-API PatBltStub ; -> PatBlt
+API PatBltStub
 API PathToRegion
-API PieStub ; -> Pie
-API PlayEnhMetaFileStub ; -> PlayEnhMetaFile
+API PieStub
+API PlayEnhMetaFileStub
 API PlayEnhMetaFileRecord
-API PlayMetaFileStub ; -> PlayMetaFile
+API PlayMetaFileStub
 API PlayMetaFileRecord
 API PlgBlt
-API PolyBezierStub ; -> PolyBezier
+API PolyBezierStub
 API PolyBezierTo
 API PolyDraw
 API PolyPatBlt
-API PolyPolygonStub ; -> PolyPolygon
+API PolyPolygonStub
 API PolyPolyline
 API PolyTextOutA
 API PolyTextOutW
-API PolygonStub ; -> Polygon
-API PolylineStub ; -> Polyline
+API PolygonStub
+API PolylineStub
 API PolylineTo
 API PtInRegion
 API PtVisible
 API QueryFontAssocStatus
-API RealizePaletteStub ; -> RealizePalette
+API RealizePaletteStub
 API RectInRegion
-API RectVisibleStub ; -> RectVisible
+API RectVisibleStub
 API Rectangle
 API RemoveFontMemResourceEx
-API RemoveFontResourceAStub ; -> RemoveFontResourceA
+API RemoveFontResourceAStub
 API RemoveFontResourceExA
 API RemoveFontResourceExW
 API RemoveFontResourceTracking
 API RemoveFontResourceW
 API ResetDCA
 API ResetDCW
-API ResizePaletteStub ; -> ResizePalette
+API ResizePaletteStub
 API RestoreDC
-API RoundRectStub ; -> RoundRect
-API NtGdiSTROBJ_bEnum ; -> STROBJ_bEnum
-API NtGdiSTROBJ_bEnumPositionsOnly ; -> STROBJ_bEnumPositionsOnly
-API NtGdiSTROBJ_bGetAdvanceWidths ; -> STROBJ_bGetAdvanceWidths
-API NtGdiSTROBJ_dwGetCodePage ; -> STROBJ_dwGetCodePage
-API NtGdiSTROBJ_vEnumStart ; -> STROBJ_vEnumStart
+API RoundRectStub
+API NtGdiSTROBJ_bEnum
+API NtGdiSTROBJ_bEnumPositionsOnly
+API NtGdiSTROBJ_bGetAdvanceWidths
+API NtGdiSTROBJ_dwGetCodePage
+API NtGdiSTROBJ_vEnumStart
 API SaveDC
-API NtGdiScaleRgn ; -> ScaleRgn
-API NtGdiScaleValues ; -> ScaleValues
+API NtGdiScaleRgn
+API NtGdiScaleValues
 API ScaleViewportExtEx
 API ScaleWindowExtEx
 API ScriptApplyDigitSubstitution
@@ -890,13 +890,13 @@ API SelectClipPath
 API SelectClipRgn
 API SelectFontLocal
 API SelectObject
-API SelectPaletteStub ; -> SelectPalette
+API SelectPaletteStub
 API SetAbortProc
 API SetArcDirection
 API SetBitmapAttributes
-API SetBitmapBitsStub ; -> SetBitmapBits
+API SetBitmapBitsStub
 API SetBitmapDimensionEx
-API SetBkColorStub ; -> SetBkColor
+API SetBkColorStub
 API SetBkMode
 API SetBoundsRect
 API SetBrushAttributes
@@ -906,8 +906,8 @@ API SetColorSpace
 API SetDCBrushColor
 API SetDCPenColor
 API SetDIBColorTable
-API SetDIBitsStub ; -> SetDIBits
-API SetDIBitsToDeviceStub ; -> SetDIBitsToDevice
+API SetDIBitsStub
+API SetDIBitsToDeviceStub
 API SetDeviceGammaRamp
 API SetEnhMetaFileBits
 API SetFontEnumeration
@@ -917,19 +917,19 @@ API SetICMProfileA
 API SetICMProfileW
 API SetLayout
 API SetLayoutWidth
-API NtGdiSetMagicColors ; -> SetMagicColors
-API SetMapModeStub ; -> SetMapMode
+API NtGdiSetMagicColors
+API SetMapModeStub
 API SetMapperFlags
-API SetMetaFileBitsExStub ; -> SetMetaFileBitsEx
+API SetMetaFileBitsExStub
 API SetMetaRgn
 API SetMiterLimit
-API NtGdiSetOPMSigningKeyAndSequenceNumbers ; -> SetOPMSigningKeyAndSequenceNumbers
-API SetPaletteEntriesStub ; -> SetPaletteEntries
-API SetPixelStub ; -> SetPixel
+API NtGdiSetOPMSigningKeyAndSequenceNumbers
+API SetPaletteEntriesStub
+API SetPixelStub
 API SetPixelFormat
 API SetPixelV
 API SetPolyFillMode
-API SetROP2Stub ; -> SetROP2
+API SetROP2Stub
 API SetRectRgn
 API SetRelAbs
 API SetStretchBltMode
@@ -938,39 +938,39 @@ API SetTextAlign
 API SetTextCharacterExtra
 API SetTextColor
 API SetTextJustification
-API SetViewportExtExStub ; -> SetViewportExtEx
-API SetViewportOrgExStub ; -> SetViewportOrgEx
+API SetViewportExtExStub
+API SetViewportOrgExStub
 API SetVirtualResolution
 API SetWinMetaFileBits
-API SetWindowExtExStub ; -> SetWindowExtEx
-API SetWindowOrgExStub ; -> SetWindowOrgEx
+API SetWindowExtExStub
+API SetWindowOrgExStub
 API SetWorldTransform
-API StartDocAStub ; -> StartDocA
+API StartDocAStub
 API StartDocW
 API StartFormPage
 API StartPage
-API StretchBltStub ; -> StretchBlt
+API StretchBltStub
 API StretchDIBits
 API StrokeAndFillPath
 API StrokePath
 API SwapBuffers
-API TextOutAStub ; -> TextOutA
+API TextOutAStub
 API TextOutW
-API TranslateCharsetInfoStub ; -> TranslateCharsetInfo
+API TranslateCharsetInfoStub
 API UnloadNetworkFonts
-API UnrealizeObjectStub ; -> UnrealizeObject
-API UpdateColorsStub ; -> UpdateColors
+API UnrealizeObjectStub
+API UpdateColorsStub
 API UpdateICMRegKeyA
 API UpdateICMRegKeyW
 API UspAllocCache
 API UspAllocTemp
 API UspFreeMem
 API WidenPath
-API NtGdiXFORMOBJ_bApplyXform ; -> XFORMOBJ_bApplyXform
-API NtGdiXFORMOBJ_iGetXform ; -> XFORMOBJ_iGetXform
-API NtGdiXLATEOBJ_cGetPalette ; -> XLATEOBJ_cGetPalette
-API NtGdiXLATEOBJ_hGetColorTransform ; -> XLATEOBJ_hGetColorTransform
-API NtGdiXLATEOBJ_iXlate ; -> XLATEOBJ_iXlate
+API NtGdiXFORMOBJ_bApplyXform
+API NtGdiXFORMOBJ_iGetXform
+API NtGdiXLATEOBJ_cGetPalette
+API NtGdiXLATEOBJ_hGetColorTransform
+API NtGdiXLATEOBJ_iXlate
 API XLATEOBJ_piVector
 API bCreateDCW
 API bDeleteLDC

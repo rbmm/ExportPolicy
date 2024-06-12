@@ -6,7 +6,7 @@ ENDM
 .code
 
 API CLIPFORMAT_UserFree
-API CLIPFORMAT_UserFree ; -> CLIPFORMAT_UserFree64
+API CLIPFORMAT_UserFree
 API CLIPFORMAT_UserMarshal
 API CLIPFORMAT_UserMarshal64
 API CLIPFORMAT_UserSize
@@ -18,11 +18,11 @@ API CLSIDFromProgID
 API CLSIDFromProgIDEx
 API CLSIDFromString
 API CStdAsyncStubBuffer2_Connect
-API CStdStubBuffer2_Disconnect ; -> CStdAsyncStubBuffer2_Disconnect
+API CStdStubBuffer2_Disconnect
 API CStdAsyncStubBuffer2_Release
-API ?AddRef@DeviceCatalogs@@UEAAKXZ ; -> CStdAsyncStubBuffer_AddRef
+API ?AddRef@DeviceCatalogs@@UEAAKXZ
 API CStdAsyncStubBuffer_Connect
-API CStdStubBuffer_Disconnect ; -> CStdAsyncStubBuffer_Disconnect
+API CStdStubBuffer_Disconnect
 API CStdAsyncStubBuffer_Invoke
 API CStdAsyncStubBuffer_QueryInterface
 API CStdAsyncStubBuffer_Release
@@ -30,7 +30,7 @@ API CStdStubBuffer2_Connect
 API CStdStubBuffer2_CountRefs
 API CStdStubBuffer2_Disconnect
 API CStdStubBuffer2_QueryInterface
-API ?AddRef@DeviceCatalogs@@UEAAKXZ ; -> CStdStubBuffer_AddRef
+API ?AddRef@DeviceCatalogs@@UEAAKXZ
 API CStdStubBuffer_Connect
 API CStdStubBuffer_CountRefs
 API CStdStubBuffer_DebugServerQueryInterface
@@ -152,7 +152,7 @@ API CoVrfGetThreadState
 API CoVrfReleaseThreadState
 API CoWaitForMultipleHandles
 API CoWaitForMultipleObjects
-API CoCreateErrorInfo ; -> CreateErrorInfo
+API CoCreateErrorInfo
 API CreateStreamOnHGlobal
 API DcomChannelSetHResult
 API DllDebugObjectRPCHook
@@ -162,43 +162,43 @@ API EnableHookObject
 API FreePropVariantArray
 API FreePropVariantArrayWorker
 API GetCatalogHelper
-API CoGetErrorInfo ; -> GetErrorInfo
+API CoGetErrorInfo
 API GetFuncDescs
 API GetHGlobalFromStream
 API GetHookInterface
 API GetRestrictedErrorInfo
 API HACCEL_UserFree
-API HACCEL_UserFree ; -> HACCEL_UserFree64
-API HACCEL_UserMarshal64 ; -> HACCEL_UserMarshal
+API HACCEL_UserFree
+API HACCEL_UserMarshal64
 API HACCEL_UserMarshal64
 API HACCEL_UserSize
-API HACCEL_UserSize ; -> HACCEL_UserSize64
-API HACCEL_UserUnmarshal64 ; -> HACCEL_UserUnmarshal
+API HACCEL_UserSize
+API HACCEL_UserUnmarshal64
 API HACCEL_UserUnmarshal64
 API HBITMAP_UserFree
-API HBITMAP_UserFree ; -> HBITMAP_UserFree64
+API HBITMAP_UserFree
 API HBITMAP_UserMarshal
 API HBITMAP_UserMarshal64
 API HBITMAP_UserSize
 API HBITMAP_UserSize64
 API HBITMAP_UserUnmarshal
 API HBITMAP_UserUnmarshal64
-API HBRUSH_UserFree64 ; -> HBRUSH_UserFree
 API HBRUSH_UserFree64
-API HBRUSH_UserMarshal64 ; -> HBRUSH_UserMarshal
+API HBRUSH_UserFree64
 API HBRUSH_UserMarshal64
-API HBRUSH_UserSize64 ; -> HBRUSH_UserSize
+API HBRUSH_UserMarshal64
+API HBRUSH_UserSize64
 API HBRUSH_UserSize64
 API HBRUSH_UserUnmarshal
-API HBRUSH_UserUnmarshal ; -> HBRUSH_UserUnmarshal64
+API HBRUSH_UserUnmarshal
 API HDC_UserFree
 API HDC_UserFree64
-API HDC_UserMarshal64 ; -> HDC_UserMarshal
+API HDC_UserMarshal64
 API HDC_UserMarshal64
 API HDC_UserSize
-API HDC_UserSize ; -> HDC_UserSize64
+API HDC_UserSize
 API HDC_UserUnmarshal
-API HDC_UserUnmarshal ; -> HDC_UserUnmarshal64
+API HDC_UserUnmarshal
 API HGLOBAL_UserFree
 API HGLOBAL_UserFree64
 API HGLOBAL_UserMarshal
@@ -208,22 +208,22 @@ API HGLOBAL_UserSize64
 API HGLOBAL_UserUnmarshal
 API HGLOBAL_UserUnmarshal64
 API HICON_UserFree
-API HICON_UserFree ; -> HICON_UserFree64
-API HICON_UserMarshal64 ; -> HICON_UserMarshal
+API HICON_UserFree
 API HICON_UserMarshal64
-API HICON_UserSize64 ; -> HICON_UserSize
+API HICON_UserMarshal64
 API HICON_UserSize64
-API HICON_UserUnmarshal64 ; -> HICON_UserUnmarshal
+API HICON_UserSize64
+API HICON_UserUnmarshal64
 API HICON_UserUnmarshal64
 API HMENU_UserFree
-API HMENU_UserFree ; -> HMENU_UserFree64
+API HMENU_UserFree
 API HMENU_UserMarshal
-API HMENU_UserMarshal ; -> HMENU_UserMarshal64
+API HMENU_UserMarshal
 API HMENU_UserSize
-API HMENU_UserSize ; -> HMENU_UserSize64
-API HMENU_UserUnmarshal64 ; -> HMENU_UserUnmarshal
+API HMENU_UserSize
 API HMENU_UserUnmarshal64
-API HMONITOR_UserFree64 ; -> HMONITOR_UserFree
+API HMENU_UserUnmarshal64
+API HMONITOR_UserFree64
 API HMONITOR_UserFree64
 API HMONITOR_UserMarshal
 API HMONITOR_UserMarshal64
@@ -232,7 +232,7 @@ API HMONITOR_UserSize64
 API HMONITOR_UserUnmarshal
 API HMONITOR_UserUnmarshal64
 API HPALETTE_UserFree
-API HPALETTE_UserFree ; -> HPALETTE_UserFree64
+API HPALETTE_UserFree
 API HPALETTE_UserMarshal
 API HPALETTE_UserMarshal64
 API HPALETTE_UserSize
@@ -242,10 +242,10 @@ API HPALETTE_UserUnmarshal64
 API ?HRGN_UserFree@@YAXPEAKPEAPEAUHRGN__@@@Z
 API ?HRGN_UserFree64@@YAXPEAKPEAPEAUHRGN__@@@Z
 API ?HRGN_UserMarshal@@YAPEAEPEAKPEAEPEAPEAUHRGN__@@@Z
-API ?HRGN_UserMarshal@@YAPEAEPEAKPEAEPEAPEAUHRGN__@@@Z ; -> HRGN_UserMarshal64
+API ?HRGN_UserMarshal@@YAPEAEPEAKPEAEPEAPEAUHRGN__@@@Z
 API ?HRGN_UserSize@@YAKPEAKKPEAPEAUHRGN__@@@Z
-API ?HRGN_UserSize@@YAKPEAKKPEAPEAUHRGN__@@@Z ; -> HRGN_UserSize64
-API ?HRGN_UserUnmarshal64@@YAPEAEPEAKPEAEPEAPEAUHRGN__@@@Z ; -> HRGN_UserUnmarshal
+API ?HRGN_UserSize@@YAKPEAKKPEAPEAUHRGN__@@@Z
+API ?HRGN_UserUnmarshal64@@YAPEAEPEAKPEAEPEAPEAUHRGN__@@@Z
 API ?HRGN_UserUnmarshal64@@YAPEAEPEAKPEAEPEAPEAUHRGN__@@@Z
 API HSTRING_UserFree
 API HSTRING_UserFree64
@@ -256,13 +256,13 @@ API HSTRING_UserSize64
 API HSTRING_UserUnmarshal
 API HSTRING_UserUnmarshal64
 API HWND_UserFree
-API HWND_UserFree ; -> HWND_UserFree64
+API HWND_UserFree
 API HWND_UserMarshal
-API HWND_UserMarshal ; -> HWND_UserMarshal64
+API HWND_UserMarshal
 API HWND_UserSize
-API HWND_UserSize ; -> HWND_UserSize64
+API HWND_UserSize
 API HWND_UserUnmarshal
-API HWND_UserUnmarshal ; -> HWND_UserUnmarshal64
+API HWND_UserUnmarshal
 API HkOleRegisterObject
 API IIDFromString
 API InternalAppInvokeExceptionFilter
@@ -319,7 +319,7 @@ API InternalRegisterWindowPropInterface2
 API InternalReleaseMarshalObjRef
 API InternalRevokeWindowPropInterface
 API InternalSTAInvoke
-API InternalCallAsProxyExceptionFilter ; -> InternalServerExceptionFilter
+API InternalCallAsProxyExceptionFilter
 API InternalSetAptCallCtrlOnTlsIfRequired
 API InternalSetOleThunkWowPtr
 API InternalStubInvoke
@@ -431,14 +431,14 @@ API RoTransformErrorW
 API RoUninitialize
 API RoUnregisterForApartmentShutdown
 API SetCleanupFlag
-API CoSetErrorInfo ; -> SetErrorInfo
+API CoSetErrorInfo
 API SetRestrictedErrorInfo
 API StringFromCLSID
 API StringFromGUID2
 API StringFromIID
 API UpdateDCOMSettings
 API ?UpdateProcessTracing@@YAJKH@Z
-API WdtpInterfacePointer_UserFree64 ; -> WdtpInterfacePointer_UserFree
+API WdtpInterfacePointer_UserFree64
 API WdtpInterfacePointer_UserFree64
 API WdtpInterfacePointer_UserMarshal
 API WdtpInterfacePointer_UserMarshal64

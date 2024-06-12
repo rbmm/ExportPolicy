@@ -6,8 +6,8 @@ ENDM
 .code
 
 API FreeAddrInfoEx
-API FreeAddrInfoEx ; -> FreeAddrInfoExW
-API freeaddrinfo ; -> FreeAddrInfoW
+API FreeAddrInfoEx
+API freeaddrinfo
 API GetAddrInfoExA
 API GetAddrInfoExCancel
 API GetAddrInfoExOverlappedResult
@@ -115,7 +115,7 @@ API WSCGetApplicationCategory
 API WSCGetApplicationCategoryEx
 API WSCGetProviderInfo
 API WSCGetProviderInfo32
-API WPUGetProviderPath ; -> WSCGetProviderPath
+API WPUGetProviderPath
 API WSCGetProviderPath32
 API WSCInstallNameSpace
 API WSCInstallNameSpace32
@@ -183,7 +183,7 @@ API getservbyname
 API getservbyport
 API getsockname
 API getsockopt
-API ntohl ; -> htonl
+API ntohl
 API htons
 API inet_addr
 API inet_ntoa
@@ -192,7 +192,7 @@ API inet_pton
 API ioctlsocket
 API listen
 API ntohl
-API htons ; -> ntohs
+API htons
 API recv
 API recvfrom
 API select

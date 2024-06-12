@@ -9,7 +9,7 @@ ENDM
 
 .code
 
-API _CommandLineToArgvWStub@8 ; -> CommandLineToArgvW
+API _CommandLineToArgvWStub@8
 API _CreateRandomAccessStreamOnFile@16
 API _CreateRandomAccessStreamOverStream@16
 API _CreateStreamOverRandomAccessStream@12
@@ -40,7 +40,7 @@ API _IUnknown_SetSite@8
 API _IsOS@4
 API _IsProcessInIsolatedContainer@4
 API _IsProcessInWDAGContainer@8
-API ?WilApiImpl_RecordFeatureError@details@wil@@YGXIPBUFEATURE_ERROR@@@Z ; -> RecordFeatureError
+API ?WilApiImpl_RecordFeatureError@details@wil@@YGXIPBUFEATURE_ERROR@@@Z
 API _RecordFeatureUsage@16
 API _RegisterScaleChangeEvent@8
 API _RegisterScaleChangeNotifications@16

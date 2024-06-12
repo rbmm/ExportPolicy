@@ -12,7 +12,7 @@ GetHostNameW
 GetNameInfoW
 InetNtopW
 InetPtonW
-ProcessSocketNotifications = mswsock.ProcessSocketNotifications
+ProcessSocketNotifications
 SetAddrInfoExA
 SetAddrInfoExW
 WEP = _guard_check_icall_nop

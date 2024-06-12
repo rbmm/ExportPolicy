@@ -1,0 +1,1645 @@
+EXPORTS
+
+AcquireSRWLockExclusive = RtlAcquireSRWLockExclusive
+AcquireSRWLockShared = RtlAcquireSRWLockShared
+ActivateActCtx = ActivateActCtxStub
+ActivateActCtxWorker
+ActivatePackageVirtualizationContext
+AddAtomA
+AddAtomW
+AddConsoleAliasA
+AddConsoleAliasW
+AddDllDirectory
+AddIntegrityLabelToBoundaryDescriptor
+AddLocalAlternateComputerNameA
+AddLocalAlternateComputerNameW
+AddRefActCtx = AddRefActCtxStub
+AddRefActCtxWorker
+AddResourceAttributeAce = AddResourceAttributeAceStub
+AddSIDToBoundaryDescriptor = AddSIDToBoundaryDescriptorStub
+AddScopedPolicyIDAce = AddScopedPolicyIDAceStub
+AddSecureMemoryCacheCallback
+AddVectoredContinueHandler = RtlAddVectoredContinueHandler
+AddVectoredExceptionHandler = RtlAddVectoredExceptionHandler
+AdjustCalendarDate
+AllocConsole
+AllocateUserPhysicalPages = AllocateUserPhysicalPagesStub
+AllocateUserPhysicalPagesNuma = AllocateUserPhysicalPagesNumaStub
+AppPolicyGetClrCompat
+AppPolicyGetCreateFileAccess
+AppPolicyGetLifecycleManagement
+AppPolicyGetMediaFoundationCodecLoading
+AppPolicyGetProcessTerminationMethod
+AppPolicyGetShowDeveloperDiagnostic
+AppPolicyGetThreadInitializationType
+AppPolicyGetWindowingModel
+AppXGetOSMaxVersionTested
+ApplicationRecoveryFinished
+ApplicationRecoveryInProgress
+AreFileApisANSI = AreFileApisANSIStub
+AreShortNamesEnabled
+AssignProcessToJobObject
+AttachConsole
+BackupRead
+BackupSeek
+BackupWrite
+BaseCheckAppcompatCache = BaseCheckAppcompatCacheStub
+BaseCheckAppcompatCacheEx = BaseCheckAppcompatCacheExStub
+BaseCheckAppcompatCacheExWorker
+BaseCheckAppcompatCacheWorker
+BaseCheckElevation
+BaseCleanupAppcompatCacheSupport = BaseCleanupAppcompatCacheSupportStub
+BaseCleanupAppcompatCacheSupportWorker
+BaseDestroyVDMEnvironment
+BaseDllReadWriteIniFile
+BaseDumpAppcompatCache = BaseDumpAppcompatCacheStub
+BaseDumpAppcompatCacheWorker
+BaseElevationPostProcessing
+BaseFlushAppcompatCache = BaseFlushAppcompatCacheStub
+BaseFlushAppcompatCacheWorker
+BaseFormatObjectAttributes
+BaseFormatTimeOut
+BaseFreeAppCompatDataForProcessWorker
+BaseGenerateAppCompatData
+BaseGetNamedObjectDirectory = BaseGetNamedObjectDirectoryStub
+BaseInitAppcompatCacheSupport = BaseInitAppcompatCacheSupportStub
+BaseInitAppcompatCacheSupportWorker = LZStart
+BaseIsAppcompatInfrastructureDisabled = BaseIsAppcompatInfrastructureDisabledWorker
+BaseIsAppcompatInfrastructureDisabledWorker
+BaseIsDosApplication
+BaseQueryModuleData
+BaseReadAppCompatDataForProcessWorker
+BaseSetLastNTError
+BaseThreadInitThunk
+BaseUpdateAppcompatCache = BaseUpdateAppcompatCacheStub
+BaseUpdateAppcompatCacheWorker
+BaseUpdateVDMEntry
+BaseVerifyUnicodeString
+BaseWriteErrorElevationRequiredEvent
+Basep8BitStringToDynamicUnicodeString
+BasepAllocateActivationContextActivationBlock
+BasepAnsiStringToDynamicUnicodeString
+BasepAppContainerEnvironmentExtension
+BasepAppXExtension
+BasepCheckAppCompat
+BasepCheckWebBladeHashes
+BasepCheckWinSaferRestrictions
+BasepConstructSxsCreateProcessMessage
+BasepCopyEncryption
+BasepFinishPackageActivation
+BasepFinishPackageActivationForSxS
+BasepFreeActivationContextActivationBlock
+BasepFreeAppCompatData
+BasepGetAppCompatData
+BasepGetComputerNameFromNtPath
+BasepGetExeArchType
+BasepGetPackageActivationTokenForFilePath
+BasepGetPackageActivationTokenForSxS
+BasepGetPackagedAppInfoForFile
+BasepInitAppCompatData
+BasepIsProcessAllowed
+BasepMapModuleHandle
+BasepNotifyLoadStringResource = WerpNotifyLoadStringResourceWorker
+BasepPostSuccessAppXExtension
+BasepProcessInvalidImage
+BasepQueryAppCompat
+BasepQueryModuleChpeSettings
+BasepReleaseAppXContext
+BasepReleasePackagedAppInfo
+BasepReleaseSxsCreateProcessUtilityStruct
+BasepReportFault
+BasepSetFileEncryptionCompression
+Beep = BeepImplementation
+BeginUpdateResourceA
+BeginUpdateResourceW
+BindIoCompletionCallback
+BuildCommDCBA
+BuildCommDCBAndTimeoutsA
+BuildCommDCBAndTimeoutsW
+BuildCommDCBW
+BuildIoRingCancelRequest
+BuildIoRingFlushFile
+BuildIoRingReadFile
+BuildIoRingRegisterBuffers
+BuildIoRingRegisterFileHandles
+BuildIoRingWriteFile
+CallNamedPipeA
+CallNamedPipeW
+CallbackMayRunLong = CallbackMayRunLongStub
+CancelDeviceWakeupRequest = RequestWakeupLatency
+CancelIo = CancelIoStub
+CancelIoEx = CancelIoExStub
+CancelSynchronousIo = CancelSynchronousIoStub
+CancelThreadpoolIo = TpCancelAsyncIoOperation
+CancelTimerQueueTimer
+CancelWaitableTimer
+CeipIsOptedIn
+ChangeTimerQueueTimer = ChangeTimerQueueTimerStub
+CheckAllowDecryptedRemoteDestinationPolicy = CheckAllowDecryptedRemoteDestinationPolicyStub
+CheckElevation
+CheckElevationEnabled
+CheckForReadOnlyResource
+CheckForReadOnlyResourceFilter
+CheckNameLegalDOS8Dot3A
+CheckNameLegalDOS8Dot3W
+CheckRemoteDebuggerPresent = CheckRemoteDebuggerPresentStub
+CheckTokenCapability = CheckTokenCapabilityStub
+CheckTokenMembershipEx = CheckTokenMembershipExStub
+ClearCommBreak
+ClearCommError
+CloseConsoleHandle
+CloseHandle
+CloseIoRing
+ClosePackageInfo
+ClosePrivateNamespace = ClosePrivateNamespaceStub
+CloseProfileUserMapping = LZStart
+ClosePseudoConsole
+CloseState
+CloseThreadpool = TpReleasePool
+CloseThreadpoolCleanupGroup = TpReleaseCleanupGroup
+CloseThreadpoolCleanupGroupMembers = TpReleaseCleanupGroupMembers
+CloseThreadpoolIo = TpReleaseIoCompletion
+CloseThreadpoolTimer = TpReleaseTimer
+CloseThreadpoolWait = TpReleaseWait
+CloseThreadpoolWork = TpReleaseWork
+CmdBatNotification = UTUnRegister
+CommConfigDialogA
+CommConfigDialogW
+CompareCalendarDates
+CompareFileTime
+CompareStringA = CompareStringAStub
+CompareStringEx = CompareStringExStub
+CompareStringOrdinal = CompareStringOrdinalStub
+CompareStringW = CompareStringWStub
+ConnectNamedPipe = ConnectNamedPipeStub
+ConsoleMenuControl
+ContinueDebugEvent = ContinueDebugEventStub
+ConvertCalDateTimeToSystemTime
+ConvertDefaultLocale = ConvertDefaultLocaleStub
+ConvertFiberToThread
+ConvertNLSDayOfWeekToWin32DayOfWeek
+ConvertSystemTimeToCalDateTime
+ConvertThreadToFiber
+ConvertThreadToFiberEx
+CopyContext = CopyContextStub
+CopyFile2 = CopyFile2Stub
+CopyFileA
+CopyFileExA
+CopyFileExW = CopyFileExWStub
+CopyFileTransactedA
+CopyFileTransactedW
+CopyFileW
+CopyLZFile
+CreateActCtxA
+CreateActCtxW = CreateActCtxWStub
+CreateActCtxWWorker
+CreateBoundaryDescriptorA
+CreateBoundaryDescriptorW = CreateBoundaryDescriptorWStub
+CreateConsoleScreenBuffer
+CreateDirectoryA
+CreateDirectoryExA
+CreateDirectoryExW = CreateDirectoryExWStub
+CreateDirectoryTransactedA
+CreateDirectoryTransactedW
+CreateDirectoryW
+CreateEnclave
+CreateEventA
+CreateEventExA
+CreateEventExW
+CreateEventW
+CreateFiber
+CreateFiberEx
+CreateFile2
+CreateFileA
+CreateFileMappingA
+CreateFileMappingFromApp
+CreateFileMappingNumaA
+CreateFileMappingNumaW = CreateFileMappingNumaWStub
+CreateFileMappingW = CreateFileMappingWStub
+CreateFileTransactedA
+CreateFileTransactedW
+CreateFileW
+CreateHardLinkA = CreateHardLinkAStub
+CreateHardLinkTransactedA
+CreateHardLinkTransactedW
+CreateHardLinkW = CreateHardLinkWStub
+CreateIoCompletionPort = CreateIoCompletionPortStub
+CreateIoRing
+CreateJobObjectA
+CreateJobObjectW
+CreateJobSet
+CreateMailslotA
+CreateMailslotW
+CreateMemoryResourceNotification = CreateMemoryResourceNotificationStub
+CreateMutexA
+CreateMutexExA
+CreateMutexExW
+CreateMutexW
+CreateNamedPipeA
+CreateNamedPipeW = CreateNamedPipeWStub
+CreatePackageVirtualizationContext
+CreatePipe = CreatePipeStub
+CreatePrivateNamespaceA
+CreatePrivateNamespaceW = CreatePrivateNamespaceWStub
+CreateProcessA = CreateProcessAStub
+CreateProcessAsUserA = CreateProcessAsUserAStub
+CreateProcessAsUserW = CreateProcessAsUserWStub
+CreateProcessInternalA = CreateProcessInternalAStub
+CreateProcessInternalW = CreateProcessInternalWStub
+CreateProcessW = CreateProcessWStub
+CreatePseudoConsole
+CreateRemoteThread = CreateRemoteThreadStub
+CreateRemoteThreadEx
+CreateSemaphoreA
+CreateSemaphoreExA
+CreateSemaphoreExW
+CreateSemaphoreW
+CreateSocketHandle
+CreateSymbolicLinkA
+CreateSymbolicLinkTransactedA
+CreateSymbolicLinkTransactedW
+CreateSymbolicLinkW = CreateSymbolicLinkWStub
+CreateTapePartition
+CreateThread = CreateThreadStub
+CreateThreadpool = CreateThreadpoolStub
+CreateThreadpoolCleanupGroup = CreateThreadpoolCleanupGroupStub
+CreateThreadpoolIo = CreateThreadpoolIoStub
+CreateThreadpoolTimer = CreateThreadpoolTimerStub
+CreateThreadpoolWait = CreateThreadpoolWaitStub
+CreateThreadpoolWork = CreateThreadpoolWorkStub
+CreateTimerQueue = CreateTimerQueueStub
+CreateTimerQueueTimer = CreateTimerQueueTimerStub
+CreateToolhelp32Snapshot
+CreateWaitableTimerA
+CreateWaitableTimerExA
+CreateWaitableTimerExW
+CreateWaitableTimerW
+CtrlRoutine
+DeactivateActCtx = DeactivateActCtxStub
+DeactivateActCtxWorker
+DeactivatePackageVirtualizationContext
+DebugActiveProcess = DebugActiveProcessStub
+DebugActiveProcessStop = DebugActiveProcessStopStub
+DebugBreak = DebugBreakStub
+DebugBreakProcess
+DebugSetProcessKillOnExit
+DecodePointer = RtlDecodePointer
+DecodeSystemPointer = RtlDecodeSystemPointer
+DefineDosDeviceA
+DefineDosDeviceW
+DelayLoadFailureHook = DelayLoadFailureHookStub
+DeleteAtom
+DeleteBoundaryDescriptor = DeleteBoundaryDescriptorStub
+DeleteCriticalSection = RtlDeleteCriticalSection
+DeleteFiber
+DeleteFileA
+DeleteFileTransactedA
+DeleteFileTransactedW
+DeleteFileW
+DeleteProcThreadAttributeList = WerpAuxmdFree
+DeleteSynchronizationBarrier = DeleteSynchronizationBarrierStub
+DeleteTimerQueue
+DeleteTimerQueueEx = DeleteTimerQueueExStub
+DeleteTimerQueueTimer = DeleteTimerQueueTimerStub
+DeleteVolumeMountPointA
+DeleteVolumeMountPointW
+DeviceIoControl = DeviceIoControlImplementation
+DisableThreadLibraryCalls = DisableThreadLibraryCallsStub
+DisableThreadProfiling
+DisassociateCurrentThreadFromCallback = TpDisassociateCallback
+DiscardVirtualMemory
+DisconnectNamedPipe = DisconnectNamedPipeStub
+DnsHostnameToComputerNameA
+DnsHostnameToComputerNameExW = DnsHostnameToComputerNameExWStub
+DnsHostnameToComputerNameW
+DosDateTimeToFileTime
+DosPathToSessionPathA
+DosPathToSessionPathW
+DuplicateConsoleHandle
+DuplicateEncryptionInfoFileExt
+DuplicateHandle
+DuplicatePackageVirtualizationContext
+EnableProcessOptionalXStateFeatures = EnableProcessOptionalXStateFeaturesStub
+EnableThreadProfiling
+EncodePointer = RtlEncodePointer
+EncodeSystemPointer = RtlEncodeSystemPointer
+EndUpdateResourceA
+EndUpdateResourceW
+EnterCriticalSection = RtlEnterCriticalSection
+EnterSynchronizationBarrier = EnterSynchronizationBarrierStub
+EnumCalendarInfoA
+EnumCalendarInfoExA
+EnumCalendarInfoExEx = EnumCalendarInfoExExStub
+EnumCalendarInfoExW = EnumCalendarInfoExWStub
+EnumCalendarInfoW = EnumCalendarInfoWStub
+EnumDateFormatsA
+EnumDateFormatsExA
+EnumDateFormatsExEx = EnumDateFormatsExExStub
+EnumDateFormatsExW = EnumDateFormatsExWStub
+EnumDateFormatsW = EnumDateFormatsWStub
+EnumLanguageGroupLocalesA
+EnumLanguageGroupLocalesW = EnumLanguageGroupLocalesWStub
+EnumResourceLanguagesA
+EnumResourceLanguagesExA = EnumResourceLanguagesExAStub
+EnumResourceLanguagesExW = EnumResourceLanguagesExWStub
+EnumResourceLanguagesW
+EnumResourceNamesA
+EnumResourceNamesExA = EnumResourceNamesExAStub
+EnumResourceNamesExW = EnumResourceNamesExWStub
+EnumResourceNamesW
+EnumResourceTypesA
+EnumResourceTypesExA = EnumResourceTypesExAStub
+EnumResourceTypesExW = EnumResourceTypesExWStub
+EnumResourceTypesW
+EnumSystemCodePagesA
+EnumSystemCodePagesW = EnumSystemCodePagesWStub
+EnumSystemFirmwareTables = EnumSystemFirmwareTablesStub
+EnumSystemGeoID
+EnumSystemGeoNames
+EnumSystemLanguageGroupsA
+EnumSystemLanguageGroupsW = EnumSystemLanguageGroupsWStub
+EnumSystemLocalesA = EnumSystemLocalesAStub
+EnumSystemLocalesEx = EnumSystemLocalesExStub
+EnumSystemLocalesW = EnumSystemLocalesWStub
+EnumTimeFormatsA
+EnumTimeFormatsEx = EnumTimeFormatsExStub
+EnumTimeFormatsW = EnumTimeFormatsWStub
+EnumUILanguagesA
+EnumUILanguagesW = EnumUILanguagesWStub
+EnumerateLocalComputerNamesA
+EnumerateLocalComputerNamesW
+EraseTape
+EscapeCommFunction
+ExitProcess = ExitProcessImplementation
+ExitThread = RtlExitUserThread
+ExitVDM
+ExpandEnvironmentStringsA = ExpandEnvironmentStringsAStub
+ExpandEnvironmentStringsW = ExpandEnvironmentStringsWStub
+ExpungeConsoleCommandHistoryA
+ExpungeConsoleCommandHistoryW
+FatalAppExitA = FatalAppExitAStub
+FatalAppExitW = FatalAppExitWStub
+FatalExit
+FileTimeToDosDateTime
+FileTimeToLocalFileTime
+FileTimeToSystemTime
+FillConsoleOutputAttribute
+FillConsoleOutputCharacterA
+FillConsoleOutputCharacterW
+FindActCtxSectionGuid = FindActCtxSectionGuidStub
+FindActCtxSectionGuidWorker
+FindActCtxSectionStringA
+FindActCtxSectionStringW = FindActCtxSectionStringWStub
+FindActCtxSectionStringWWorker
+FindAtomA
+FindAtomW
+FindClose
+FindCloseChangeNotification
+FindFirstChangeNotificationA
+FindFirstChangeNotificationW
+FindFirstFileA
+FindFirstFileExA
+FindFirstFileExW
+FindFirstFileNameTransactedW
+FindFirstFileNameW
+FindFirstFileTransactedA
+FindFirstFileTransactedW
+FindFirstFileW
+FindFirstStreamTransactedW
+FindFirstStreamW
+FindFirstVolumeA
+FindFirstVolumeMountPointA
+FindFirstVolumeMountPointW
+FindFirstVolumeW
+FindNLSString = FindNLSStringStub
+FindNLSStringEx = FindNLSStringExStub
+FindNextChangeNotification
+FindNextFileA
+FindNextFileNameW
+FindNextFileW
+FindNextStreamW
+FindNextVolumeA
+FindNextVolumeMountPointA
+FindNextVolumeMountPointW
+FindNextVolumeW
+FindPackagesByPackageFamily
+FindResourceA
+FindResourceExA
+FindResourceExW = FindResourceExWStub
+FindResourceW = FindResourceWStub
+FindStringOrdinal = FindStringOrdinalStub
+FindVolumeClose
+FindVolumeMountPointClose
+FlsAlloc = FlsAllocStub
+FlsFree = FlsFreeStub
+FlsGetValue = FlsGetValueStub
+FlsSetValue = FlsSetValueStub
+FlushConsoleInputBuffer
+FlushFileBuffers
+FlushInstructionCache = FlushInstructionCacheStub
+FlushProcessWriteBuffers = ZwFlushProcessWriteBuffers
+FlushViewOfFile = FlushViewOfFileStub
+FoldStringA
+FoldStringW = FoldStringWStub
+FormatApplicationUserModelId
+FormatMessageA = FormatMessageAStub
+FormatMessageW = FormatMessageWStub
+FreeConsole
+FreeEnvironmentStringsA = FreeEnvironmentStringsAStub
+FreeEnvironmentStringsW = FreeEnvironmentStringsWStub
+FreeLibrary = FreeLibraryStub
+FreeLibraryAndExitThread = FreeLibraryAndExitThreadStub
+FreeLibraryWhenCallbackReturns = TpCallbackUnloadDllOnCompletion
+FreeMemoryJobObject
+FreeResource = FreeResourceStub
+FreeUserPhysicalPages = FreeUserPhysicalPagesStub
+GenerateConsoleCtrlEvent
+GetACP = GetACPStub
+GetActiveProcessorCount
+GetActiveProcessorGroupCount
+GetAppContainerAce = GetAppContainerAceStub
+GetAppContainerNamedObjectPath = GetAppContainerNamedObjectPathStub
+GetApplicationRecoveryCallback = GetApplicationRecoveryCallbackStub
+GetApplicationRecoveryCallbackWorker
+GetApplicationRestartSettings = GetApplicationRestartSettingsStub
+GetApplicationRestartSettingsWorker
+GetApplicationUserModelId
+GetAtomNameA
+GetAtomNameW
+GetBinaryType = GetBinaryTypeA
+GetBinaryTypeA
+GetBinaryTypeW
+GetCPInfo = GetCPInfoStub
+GetCPInfoExA
+GetCPInfoExW = GetCPInfoExWStub
+GetCachedSigningLevel = GetCachedSigningLevelStub
+GetCalendarDateFormat
+GetCalendarDateFormatEx
+GetCalendarDaysInMonth
+GetCalendarDifferenceInDays
+GetCalendarInfoA
+GetCalendarInfoEx
+GetCalendarInfoW
+GetCalendarMonthsInYear
+GetCalendarSupportedDateRange
+GetCalendarWeekNumber
+GetComPlusPackageInstallStatus
+GetCommConfig
+GetCommMask
+GetCommModemStatus
+GetCommProperties
+GetCommState
+GetCommTimeouts
+GetCommandLineA = GetCommandLineAStub
+GetCommandLineW = GetCommandLineWStub
+GetCompressedFileSizeA = GetCompressedFileSizeAStub
+GetCompressedFileSizeTransactedA
+GetCompressedFileSizeTransactedW
+GetCompressedFileSizeW = GetCompressedFileSizeWStub
+GetComputerNameA
+GetComputerNameExA = GetComputerNameExAStub
+GetComputerNameExW = GetComputerNameExWStub
+GetComputerNameW
+GetConsoleAliasA
+GetConsoleAliasExesA
+GetConsoleAliasExesLengthA
+GetConsoleAliasExesLengthW
+GetConsoleAliasExesW
+GetConsoleAliasW
+GetConsoleAliasesA
+GetConsoleAliasesLengthA
+GetConsoleAliasesLengthW
+GetConsoleAliasesW
+GetConsoleCP
+GetConsoleCharType
+GetConsoleCommandHistoryA
+GetConsoleCommandHistoryLengthA
+GetConsoleCommandHistoryLengthW
+GetConsoleCommandHistoryW
+GetConsoleCursorInfo
+GetConsoleCursorMode
+GetConsoleDisplayMode
+GetConsoleFontInfo
+GetConsoleFontSize
+GetConsoleHardwareState
+GetConsoleHistoryInfo
+GetConsoleInputExeNameA
+GetConsoleInputExeNameW
+GetConsoleInputWaitHandle
+GetConsoleKeyboardLayoutNameA
+GetConsoleKeyboardLayoutNameW
+GetConsoleMode
+GetConsoleNlsMode
+GetConsoleOriginalTitleA
+GetConsoleOriginalTitleW
+GetConsoleOutputCP
+GetConsoleProcessList
+GetConsoleScreenBufferInfo
+GetConsoleScreenBufferInfoEx
+GetConsoleSelectionInfo
+GetConsoleTitleA
+GetConsoleTitleW
+GetConsoleWindow
+GetCurrencyFormatA
+GetCurrencyFormatEx = GetCurrencyFormatExStub
+GetCurrencyFormatW = GetCurrencyFormatWStub
+GetCurrentActCtx = GetCurrentActCtxStub
+GetCurrentActCtxWorker
+GetCurrentApplicationUserModelId
+GetCurrentConsoleFont
+GetCurrentConsoleFontEx
+GetCurrentDirectoryA = GetCurrentDirectoryAStub
+GetCurrentDirectoryW = GetCurrentDirectoryWStub
+GetCurrentPackageFamilyName
+GetCurrentPackageFullName
+GetCurrentPackageId
+GetCurrentPackageInfo
+GetCurrentPackagePath
+GetCurrentPackageVirtualizationContext
+GetCurrentProcess
+GetCurrentProcessId
+GetCurrentProcessorNumber = RtlGetCurrentProcessorNumber
+GetCurrentProcessorNumberEx = RtlGetCurrentProcessorNumberEx
+GetCurrentThread
+GetCurrentThreadId
+GetCurrentThreadStackLimits
+GetDateFormatA = GetDateFormatAStub
+GetDateFormatAWorker
+GetDateFormatEx = GetDateFormatExStub
+GetDateFormatW = GetDateFormatWStub
+GetDateFormatWWorker
+GetDefaultCommConfigA
+GetDefaultCommConfigW
+GetDevicePowerState
+GetDiskFreeSpaceA
+GetDiskFreeSpaceExA
+GetDiskFreeSpaceExW
+GetDiskFreeSpaceW
+GetDiskSpaceInformationA
+GetDiskSpaceInformationW
+GetDllDirectoryA
+GetDllDirectoryW
+GetDriveTypeA
+GetDriveTypeW
+GetDurationFormat
+GetDurationFormatEx = GetDurationFormatExStub
+GetDynamicTimeZoneInformation = GetDynamicTimeZoneInformationStub
+GetEnabledXStateFeatures = GetEnabledXStateFeaturesStub
+GetEncryptedFileVersionExt
+GetEnvironmentStrings = GetEnvironmentStringsStub
+GetEnvironmentStringsA = GetEnvironmentStrings
+GetEnvironmentStringsW = GetEnvironmentStringsWStub
+GetEnvironmentVariableA = GetEnvironmentVariableAStub
+GetEnvironmentVariableW = GetEnvironmentVariableWStub
+GetEraNameCountedString = GetEraNameCountedStringStub
+GetErrorMode = GetErrorModeStub
+GetExitCodeProcess = GetExitCodeProcessImplementation
+GetExitCodeThread = GetExitCodeThreadStub
+GetExpandedNameA
+GetExpandedNameW
+GetFileAttributesA
+GetFileAttributesExA
+GetFileAttributesExW
+GetFileAttributesTransactedA
+GetFileAttributesTransactedW
+GetFileAttributesW
+GetFileBandwidthReservation
+GetFileInformationByHandle
+GetFileInformationByHandleEx = GetFileInformationByHandleExStub
+GetFileMUIInfo = GetFileMUIInfoStub
+GetFileMUIPath = GetFileMUIPathStub
+GetFileSize
+GetFileSizeEx
+GetFileTime
+GetFileType
+GetFinalPathNameByHandleA
+GetFinalPathNameByHandleW
+GetFirmwareEnvironmentVariableA
+GetFirmwareEnvironmentVariableExA
+GetFirmwareEnvironmentVariableExW
+GetFirmwareEnvironmentVariableW
+GetFirmwareType
+GetFullPathNameA
+GetFullPathNameTransactedA
+GetFullPathNameTransactedW
+GetFullPathNameW
+GetGeoInfoA
+GetGeoInfoEx
+GetGeoInfoW
+GetHandleContext
+GetHandleInformation
+GetIoRingInfo
+GetLargePageMinimum = GetLargePageMinimumStub
+GetLargestConsoleWindowSize
+GetLastError = GetLastErrorStub
+GetLocalTime = GetLocalTimeStub
+GetLocaleInfoA = GetLocaleInfoAStub
+GetLocaleInfoEx = GetLocaleInfoExStub
+GetLocaleInfoW = GetLocaleInfoWStub
+GetLogicalDriveStringsA
+GetLogicalDriveStringsW
+GetLogicalDrives
+GetLogicalProcessorInformation = GetLogicalProcessorInformationStub
+GetLogicalProcessorInformationEx
+GetLongPathNameA
+GetLongPathNameTransactedA
+GetLongPathNameTransactedW
+GetLongPathNameW
+GetMachineTypeAttributes
+GetMailslotInfo
+GetMaximumProcessorCount
+GetMaximumProcessorGroupCount
+GetMemoryErrorHandlingCapabilities = GetMemoryErrorHandlingCapabilitiesStub
+GetModuleFileNameA = GetModuleFileNameAStub
+GetModuleFileNameW = GetModuleFileNameWStub
+GetModuleHandleA = GetModuleHandleAStub
+GetModuleHandleExA = GetModuleHandleExAStub
+GetModuleHandleExW = GetModuleHandleExWStub
+GetModuleHandleW = GetModuleHandleWStub
+GetNLSVersion = GetNLSVersionStub
+GetNLSVersionEx = GetNLSVersionExStub
+GetNamedPipeAttribute = GetNamedPipeAttributeStub
+GetNamedPipeClientComputerNameA
+GetNamedPipeClientComputerNameW = GetNamedPipeClientComputerNameWStub
+GetNamedPipeClientProcessId
+GetNamedPipeClientSessionId
+GetNamedPipeHandleStateA
+GetNamedPipeHandleStateW = GetNamedPipeHandleStateWStub
+GetNamedPipeInfo
+GetNamedPipeServerProcessId
+GetNamedPipeServerSessionId
+GetNativeSystemInfo = GetNativeSystemInfoStub
+GetNextVDMCommand
+GetNumaAvailableMemoryNode
+GetNumaAvailableMemoryNodeEx
+GetNumaHighestNodeNumber = GetNumaHighestNodeNumberStub
+GetNumaNodeNumberFromHandle
+GetNumaNodeProcessorMask
+GetNumaNodeProcessorMask2
+GetNumaNodeProcessorMaskEx = GetNumaNodeProcessorMaskExStub
+GetNumaProcessorNode
+GetNumaProcessorNodeEx
+GetNumaProximityNode
+GetNumaProximityNodeEx = GetNumaProximityNodeExStub
+GetNumberFormatA
+GetNumberFormatEx = GetNumberFormatExStub
+GetNumberFormatW = GetNumberFormatWStub
+GetNumberOfConsoleFonts
+GetNumberOfConsoleInputEvents
+GetNumberOfConsoleMouseButtons
+GetOEMCP = GetOEMCPStub
+GetOverlappedResult = GetOverlappedResultStub
+GetOverlappedResultEx
+GetPackageApplicationIds
+GetPackageFamilyName
+GetPackageFullName
+GetPackageId
+GetPackageInfo
+GetPackagePath
+GetPackagePathByFullName
+GetPackagesByPackageFamily
+GetPhysicallyInstalledSystemMemory = GetPhysicallyInstalledSystemMemoryStub
+GetPriorityClass = GetPriorityClassStub
+GetPrivateProfileIntA
+GetPrivateProfileIntW
+GetPrivateProfileSectionA
+GetPrivateProfileSectionNamesA
+GetPrivateProfileSectionNamesW
+GetPrivateProfileSectionW
+GetPrivateProfileStringA
+GetPrivateProfileStringW
+GetPrivateProfileStructA
+GetPrivateProfileStructW
+GetProcAddress = GetProcAddressStub
+GetProcessAffinityMask
+GetProcessDEPPolicy
+GetProcessDefaultCpuSetMasks
+GetProcessDefaultCpuSets
+GetProcessGroupAffinity = GetProcessGroupAffinityStub
+GetProcessHandleCount = GetProcessHandleCountStub
+GetProcessHeap = GetProcessHeapStub
+GetProcessHeaps = GetProcessHeapsStub
+GetProcessId = GetProcessIdStub
+GetProcessIdOfThread = GetProcessIdOfThreadStub
+GetProcessInformation
+GetProcessIoCounters
+GetProcessMitigationPolicy
+GetProcessPreferredUILanguages = GetProcessPreferredUILanguagesStub
+GetProcessPriorityBoost = GetProcessPriorityBoostStub
+GetProcessShutdownParameters = GetProcessShutdownParametersStub
+GetProcessTimes = GetProcessTimesStub
+GetProcessVersion = GetProcessVersionStub
+GetProcessWorkingSetSize
+GetProcessWorkingSetSizeEx = GetProcessWorkingSetSizeExStub
+GetProcessesInVirtualizationContext
+GetProcessorSystemCycleTime
+GetProductInfo = GetProductInfoStub
+GetProfileIntA
+GetProfileIntW
+GetProfileSectionA
+GetProfileSectionW
+GetProfileStringA
+GetProfileStringW
+GetQueuedCompletionStatus = GetQueuedCompletionStatusStub
+GetQueuedCompletionStatusEx = GetQueuedCompletionStatusExStub
+GetShortPathNameA
+GetShortPathNameW
+GetStagedPackagePathByFullName
+GetStartupInfoA
+GetStartupInfoW = GetStartupInfoWStub
+GetStateFolder
+GetStdHandle = GetStdHandleStub
+GetStringScripts = GetStringScriptsStub
+GetStringTypeA = GetStringTypeExA
+GetStringTypeExA
+GetStringTypeExW = GetStringTypeExWStub
+GetStringTypeW = GetStringTypeWStub
+GetSystemAppDataKey
+GetSystemCpuSetInformation
+GetSystemDEPPolicy
+GetSystemDefaultLCID = GetSystemDefaultLCIDStub
+GetSystemDefaultLangID = GetSystemDefaultLangIDStub
+GetSystemDefaultLocaleName = GetSystemDefaultLocaleNameStub
+GetSystemDefaultUILanguage = GetSystemDefaultUILanguageStub
+GetSystemDirectoryA = GetSystemDirectoryAStub
+GetSystemDirectoryW = GetSystemDirectoryWStub
+GetSystemFileCacheSize = GetSystemFileCacheSizeStub
+GetSystemFirmwareTable = GetSystemFirmwareTableStub
+GetSystemInfo = GetSystemInfoStub
+GetSystemPowerStatus
+GetSystemPreferredUILanguages = GetSystemPreferredUILanguagesStub
+GetSystemRegistryQuota
+GetSystemTime = GetSystemTimeStub
+GetSystemTimeAdjustment = GetSystemTimeAdjustmentStub
+GetSystemTimeAsFileTime = GetSystemTimeAsFileTimeStub
+GetSystemTimePreciseAsFileTime
+GetSystemTimes = GetSystemTimesStub
+GetSystemWindowsDirectoryA = GetSystemWindowsDirectoryAStub
+GetSystemWindowsDirectoryW = GetSystemWindowsDirectoryWStub
+GetSystemWow64DirectoryA
+GetSystemWow64DirectoryW
+GetTapeParameters
+GetTapePosition
+GetTapeStatus
+GetTempFileNameA
+GetTempFileNameW
+GetTempPath2A
+GetTempPath2W
+GetTempPathA
+GetTempPathW
+GetThreadContext = GetThreadContextStub
+GetThreadDescription
+GetThreadEnabledXStateFeatures = GetThreadEnabledXStateFeaturesStub
+GetThreadErrorMode = GetThreadErrorModeStub
+GetThreadGroupAffinity = GetThreadGroupAffinityStub
+GetThreadIOPendingFlag = GetThreadIOPendingFlagStub
+GetThreadId = GetThreadIdStub
+GetThreadIdealProcessorEx = GetThreadIdealProcessorExStub
+GetThreadInformation
+GetThreadLocale = GetThreadLocaleStub
+GetThreadPreferredUILanguages = GetThreadPreferredUILanguagesStub
+GetThreadPriority = GetThreadPriorityStub
+GetThreadPriorityBoost = GetThreadPriorityBoostStub
+GetThreadSelectedCpuSetMasks
+GetThreadSelectedCpuSets
+GetThreadSelectorEntry
+GetThreadTimes = GetThreadTimesStub
+GetThreadUILanguage = GetThreadUILanguageStub
+GetTickCount = GetTickCountStub
+GetTickCount64 = GetTickCount64Kernel32
+GetTimeFormatA = GetTimeFormatAStub
+GetTimeFormatAWorker
+GetTimeFormatEx = GetTimeFormatExStub
+GetTimeFormatW = GetTimeFormatWStub
+GetTimeFormatWWorker
+GetTimeZoneInformation = GetTimeZoneInformationStub
+GetTimeZoneInformationForYear = GetTimeZoneInformationForYearStub
+GetUILanguageInfo = GetUILanguageInfoStub
+GetUserDefaultGeoName
+GetUserDefaultLCID = GetUserDefaultLCIDStub
+GetUserDefaultLangID = GetUserDefaultLangIDStub
+GetUserDefaultLocaleName = GetUserDefaultLocaleNameStub
+GetUserDefaultUILanguage = GetUserDefaultUILanguageStub
+GetUserGeoID
+GetUserPreferredUILanguages = GetUserPreferredUILanguagesStub
+GetVDMCurrentDirectories
+GetVersion = GetVersionStub
+GetVersionExA = GetVersionExAStub
+GetVersionExW = GetVersionExWStub
+GetVolumeInformationA
+GetVolumeInformationByHandleW
+GetVolumeInformationW
+GetVolumeNameForVolumeMountPointA
+GetVolumeNameForVolumeMountPointW
+GetVolumePathNameA
+GetVolumePathNameW
+GetVolumePathNamesForVolumeNameA
+GetVolumePathNamesForVolumeNameW
+GetWindowsDirectoryA = GetWindowsDirectoryAStub
+GetWindowsDirectoryW = GetWindowsDirectoryWStub
+GetWriteWatch = GetWriteWatchStub
+GetXStateFeaturesMask = GetXStateFeaturesMaskStub
+GlobalAddAtomA
+GlobalAddAtomExA
+GlobalAddAtomExW
+GlobalAddAtomW
+GlobalAlloc = GlobalAllocStub
+GlobalCompact = LocalCompact
+GlobalDeleteAtom
+GlobalFindAtomA
+GlobalFindAtomW
+GlobalFix
+GlobalFlags = GlobalFlagsStub
+GlobalFree = GlobalFreeStub
+GlobalGetAtomNameA
+GlobalGetAtomNameW
+GlobalHandle = GlobalHandleStub
+GlobalLock = GlobalWire
+GlobalMemoryStatus
+GlobalMemoryStatusEx = GlobalMemoryStatusExStub
+GlobalReAlloc = GlobalReAllocStub
+GlobalSize = GlobalSizeStub
+GlobalUnWire
+GlobalUnfix
+GlobalUnlock = GlobalUnWire
+GlobalWire
+Heap32First
+Heap32ListFirst
+Heap32ListNext
+Heap32Next
+HeapAlloc = RtlAllocateHeap
+HeapCompact = HeapCompactStub
+HeapCreate = HeapCreateStub
+HeapDestroy = HeapDestroyStub
+HeapFree = HeapFreeStub
+HeapLock = HeapLockStub
+HeapQueryInformation = HeapQueryInformationStub
+HeapReAlloc = RtlReAllocateHeap
+HeapSetInformation = HeapSetInformationStub
+HeapSize = RtlSizeHeap
+HeapSummary = HeapSummaryStub
+HeapUnlock = HeapUnlockStub
+HeapValidate = HeapValidateStub
+HeapWalk = HeapWalkStub
+IdnToAscii = IdnToAsciiStub
+IdnToNameprepUnicode = IdnToNameprepUnicodeStub
+IdnToUnicode = IdnToUnicodeStub
+InitAtomTable
+InitOnceBeginInitialize
+InitOnceComplete
+InitOnceExecuteOnce
+InitOnceInitialize = RtlInitializeConditionVariable
+InitializeConditionVariable = RtlInitializeConditionVariable
+InitializeContext = InitializeContextStub
+InitializeContext2 = InitializeContext2Stub
+InitializeCriticalSection = RtlInitializeCriticalSection
+InitializeCriticalSectionAndSpinCount
+InitializeCriticalSectionEx
+InitializeEnclave
+InitializeProcThreadAttributeList
+InitializeSListHead = RtlInitializeSListHead
+InitializeSRWLock = RtlInitializeConditionVariable
+InitializeSynchronizationBarrier = InitializeSynchronizationBarrierStub
+InstallELAMCertificateInfo
+InterlockedCompareExchange = InterlockedCompareExchangeStub
+InterlockedCompareExchange64
+InterlockedDecrement = InterlockedDecrementStub
+InterlockedExchange = InterlockedExchangeStub
+InterlockedExchangeAdd = InterlockedExchangeAddStub
+InterlockedFlushSList = RtlInterlockedFlushSList
+InterlockedIncrement = InterlockedIncrementStub
+InterlockedPopEntrySList = RtlInterlockedPopEntrySList
+InterlockedPushEntrySList = RtlInterlockedPushEntrySList
+InterlockedPushListSList
+InterlockedPushListSListEx = RtlInterlockedPushListSListEx
+InvalidateConsoleDIBits
+IsBadCodePtr
+IsBadHugeReadPtr
+IsBadHugeWritePtr
+IsBadReadPtr
+IsBadStringPtrA
+IsBadStringPtrW
+IsBadWritePtr
+IsCalendarLeapDay
+IsCalendarLeapMonth
+IsCalendarLeapYear
+IsDBCSLeadByte = IsDBCSLeadByteStub
+IsDBCSLeadByteEx = IsDBCSLeadByteExStub
+IsDebuggerPresent = IsDebuggerPresentStub
+IsEnclaveTypeSupported
+IsIoRingOpSupported
+IsNLSDefinedString = IsNLSDefinedStringStub
+IsNativeVhdBoot
+IsNormalizedString = IsNormalizedStringStub
+IsProcessCritical
+IsProcessInJob = IsProcessInJobStub
+IsProcessorFeaturePresent = IsProcessorFeaturePresentStub
+IsSystemResumeAutomatic
+IsThreadAFiber
+IsThreadpoolTimerSet = TpIsTimerSet
+IsUserCetAvailableInEnvironment = IsNetDrive
+IsValidCalDateTime
+IsValidCodePage = IsValidCodePageStub
+IsValidLanguageGroup = IsValidLanguageGroupStub
+IsValidLocale = IsValidLocaleStub
+IsValidLocaleName = IsValidLocaleNameStub
+IsValidNLSVersion = IsValidNLSVersionStub
+IsWow64GuestMachineSupported
+IsWow64Process = IsWow64ProcessStub
+IsWow64Process2
+K32EmptyWorkingSet = K32EmptyWorkingSetStub
+K32EnumDeviceDrivers = K32EnumDeviceDriversStub
+K32EnumPageFilesA = K32EnumPageFilesAStub
+K32EnumPageFilesW = K32EnumPageFilesWStub
+K32EnumProcessModules = K32EnumProcessModulesStub
+K32EnumProcessModulesEx = K32EnumProcessModulesExStub
+K32EnumProcesses = K32EnumProcessesStub
+K32GetDeviceDriverBaseNameA = K32GetDeviceDriverBaseNameAStub
+K32GetDeviceDriverBaseNameW = K32GetDeviceDriverBaseNameWStub
+K32GetDeviceDriverFileNameA = K32GetDeviceDriverFileNameAStub
+K32GetDeviceDriverFileNameW = K32GetDeviceDriverFileNameWStub
+K32GetMappedFileNameA = K32GetMappedFileNameAStub
+K32GetMappedFileNameW = K32GetMappedFileNameWStub
+K32GetModuleBaseNameA = K32GetModuleBaseNameAStub
+K32GetModuleBaseNameW = K32GetModuleBaseNameWStub
+K32GetModuleFileNameExA = K32GetModuleFileNameExAStub
+K32GetModuleFileNameExW = K32GetModuleFileNameExWStub
+K32GetModuleInformation = K32GetModuleInformationStub
+K32GetPerformanceInfo = K32GetPerformanceInfoStub
+K32GetProcessImageFileNameA = K32GetProcessImageFileNameAStub
+K32GetProcessImageFileNameW = K32GetProcessImageFileNameWStub
+K32GetProcessMemoryInfo = K32GetProcessMemoryInfoStub
+K32GetWsChanges = K32GetWsChangesStub
+K32GetWsChangesEx = K32GetWsChangesExStub
+K32InitializeProcessForWsWatch = K32InitializeProcessForWsWatchStub
+K32QueryWorkingSet = K32QueryWorkingSetStub
+K32QueryWorkingSetEx = K32QueryWorkingSetExStub
+LCIDToLocaleName = LCIDToLocaleNameStub
+LCMapStringA = LCMapStringAStub
+LCMapStringEx = LCMapStringExStub
+LCMapStringW = LCMapStringWStub
+LZClose
+LZCloseFile = LZClose
+LZCopy
+LZCreateFileW
+LZDone = BaseDumpAppcompatCacheWorker
+LZInit
+LZOpenFileA
+LZOpenFileW
+LZRead
+LZSeek
+LZStart
+LeaveCriticalSection = RtlLeaveCriticalSection
+LeaveCriticalSectionWhenCallbackReturns = TpCallbackLeaveCriticalSectionOnCompletion
+LoadAppInitDlls = LoadAppInitDllsImplementation
+LoadEnclaveData
+LoadLibraryA = LoadLibraryAStub
+LoadLibraryExA = LoadLibraryExAStub
+LoadLibraryExW = LoadLibraryExWStub
+LoadLibraryW = LoadLibraryWStub
+LoadModule
+LoadPackagedLibrary
+LoadResource = LoadResourceStub
+LoadStringBaseExW = LoadStringBaseExWStub
+LoadStringBaseW
+LocalAlloc = LocalAllocStub
+LocalCompact
+LocalFileTimeToFileTime
+LocalFileTimeToLocalSystemTime
+LocalFlags = LocalFlagsStub
+LocalFree = LocalFreeStub
+LocalHandle
+LocalLock = LocalLockStub
+LocalReAlloc = LocalReAllocStub
+LocalShrink
+LocalSize = LocalSizeStub
+LocalSystemTimeToLocalFileTime
+LocalUnlock = LocalUnlockStub
+LocaleNameToLCID = LocaleNameToLCIDStub
+LocateXStateFeature = LocateXStateFeatureStub
+LockFile
+LockFileEx
+LockResource = LockResourceStub
+MapUserPhysicalPages = MapUserPhysicalPagesStub
+MapUserPhysicalPagesScatter
+MapViewOfFile = MapViewOfFileStub
+MapViewOfFileEx = MapViewOfFileExStub
+MapViewOfFileExNuma = MapViewOfFileExNumaStub
+MapViewOfFileFromApp
+Module32First
+Module32FirstW
+Module32Next
+Module32NextW
+MoveFileA
+MoveFileExA
+MoveFileExW = MoveFileExWStub
+MoveFileTransactedA
+MoveFileTransactedW
+MoveFileW
+MoveFileWithProgressA
+MoveFileWithProgressW = MoveFileWithProgressWStub
+MulDiv
+MultiByteToWideChar = MultiByteToWideCharStub
+NeedCurrentDirectoryForExePathA = NeedCurrentDirectoryForExePathAStub
+NeedCurrentDirectoryForExePathW = NeedCurrentDirectoryForExePathWStub
+NlsCheckPolicy
+NlsGetCacheUpdateCount
+NlsUpdateLocale
+NlsUpdateSystemLocale
+NormalizeString = NormalizeStringStub
+NotifyMountMgr = NotifyMountMgrStub
+NotifyUILanguageChange
+NtVdm64CreateProcessInternalW
+OOBEComplete
+OfferVirtualMemory
+OpenConsoleW
+OpenConsoleWStub
+OpenEventA
+OpenEventW
+OpenFile
+OpenFileById = OpenFileByIdStub
+OpenFileMappingA
+OpenFileMappingW = OpenFileMappingWStub
+OpenJobObjectA
+OpenJobObjectW
+OpenMutexA
+OpenMutexW
+OpenPackageInfoByFullName
+OpenPrivateNamespaceA
+OpenPrivateNamespaceW = OpenPrivateNamespaceWStub
+OpenProcess = OpenProcessStub
+OpenProcessToken
+OpenProfileUserMapping = LZStart
+OpenSemaphoreA
+OpenSemaphoreW
+OpenState
+OpenStateExplicit
+OpenThread = OpenThreadStub
+OpenThreadToken
+OpenWaitableTimerA
+OpenWaitableTimerW
+OutputDebugStringA = OutputDebugStringAStub
+OutputDebugStringW = OutputDebugStringWStub
+PackageFamilyNameFromFullName
+PackageFamilyNameFromId
+PackageFullNameFromId
+PackageIdFromFullName
+PackageNameAndPublisherIdFromFamilyName
+ParseApplicationUserModelId
+PeekConsoleInputA
+PeekConsoleInputW
+PeekNamedPipe = PeekNamedPipeStub
+PopIoRingCompletion
+PostQueuedCompletionStatus = PostQueuedCompletionStatusStub
+PowerClearRequest
+PowerCreateRequest
+PowerSetRequest
+PrefetchVirtualMemory
+PrepareTape
+PrivCopyFileExW = PrivCopyFileExWStub
+PrivMoveFileIdentityW
+Process32First
+Process32FirstW
+Process32Next
+Process32NextW
+ProcessIdToSessionId = ProcessIdToSessionIdStub
+PssCaptureSnapshot = PssCaptureSnapshotStub
+PssDuplicateSnapshot = PssDuplicateSnapshotStub
+PssFreeSnapshot = PssFreeSnapshotStub
+PssQuerySnapshot = PssQuerySnapshotStub
+PssWalkMarkerCreate = PssWalkMarkerCreateStub
+PssWalkMarkerFree = PssWalkMarkerFreeStub
+PssWalkMarkerGetPosition = PssWalkMarkerGetPositionStub
+PssWalkMarkerRewind = PssWalkMarkerSeekToBeginningStub
+PssWalkMarkerSeek = PssWalkMarkerSetPositionStub
+PssWalkMarkerSeekToBeginning = PssWalkMarkerSeekToBeginningStub
+PssWalkMarkerSetPosition = PssWalkMarkerSetPositionStub
+PssWalkMarkerTell = PssWalkMarkerGetPositionStub
+PssWalkSnapshot = PssWalkSnapshotStub
+PulseEvent = PulseEventStub
+PurgeComm
+QueryActCtxSettingsW = QueryActCtxSettingsWStub
+QueryActCtxSettingsWWorker
+QueryActCtxW = QueryActCtxWStub
+QueryActCtxWWorker
+QueryDepthSList = RtlQueryDepthSList
+QueryDosDeviceA
+QueryDosDeviceW
+QueryFullProcessImageNameA = QueryFullProcessImageNameAStub
+QueryFullProcessImageNameW = QueryFullProcessImageNameWStub
+QueryIdleProcessorCycleTime = QueryIdleProcessorCycleTimeStub
+QueryIdleProcessorCycleTimeEx = QueryIdleProcessorCycleTimeExStub
+QueryInformationJobObject
+QueryIoRateControlInformationJobObject
+QueryIoRingCapabilities
+QueryMemoryResourceNotification = QueryMemoryResourceNotificationStub
+QueryPerformanceCounter = QueryPerformanceCounterStub
+QueryPerformanceFrequency = QueryPerformanceFrequencyStub
+QueryProcessAffinityUpdateMode = QueryProcessAffinityUpdateModeStub
+QueryProcessCycleTime = QueryProcessCycleTimeStub
+QueryProtectedPolicy
+QueryThreadCycleTime = QueryThreadCycleTimeStub
+QueryThreadProfiling
+QueryThreadpoolStackInformation = QueryThreadpoolStackInformationStub
+QueryUnbiasedInterruptTime = QueryUnbiasedInterruptTimeStub
+QueueUserAPC = QueueUserAPCStub
+QueueUserAPC2
+QueueUserWorkItem = QueueUserWorkItemStub
+QuirkGetData2Worker
+QuirkGetDataWorker
+QuirkIsEnabled2Worker
+QuirkIsEnabled3Worker
+QuirkIsEnabledForPackage2Worker
+QuirkIsEnabledForPackage3Worker
+QuirkIsEnabledForPackage4Worker
+QuirkIsEnabledForPackageWorker
+QuirkIsEnabledForProcessWorker
+QuirkIsEnabledWorker
+RaiseException = RaiseExceptionStub
+RaiseFailFastException
+RaiseInvalid16BitExeError
+ReOpenFile = ReOpenFileStub
+ReadConsoleA
+ReadConsoleInputA
+ReadConsoleInputExA
+ReadConsoleInputExW
+ReadConsoleInputW
+ReadConsoleOutputA
+ReadConsoleOutputAttribute
+ReadConsoleOutputCharacterA
+ReadConsoleOutputCharacterW
+ReadConsoleOutputW
+ReadConsoleW
+ReadDirectoryChangesExW = ReadDirectoryChangesExWStub
+ReadDirectoryChangesW = ReadDirectoryChangesWStub
+ReadFile
+ReadFileEx
+ReadFileScatter
+ReadProcessMemory = ReadProcessMemoryStub
+ReadThreadProfilingData
+ReclaimVirtualMemory
+RegCloseKey = RegCloseKeyStub
+RegCopyTreeW = RegCopyTreeWStub
+RegCreateKeyExA = RegCreateKeyExAStub
+RegCreateKeyExW = RegCreateKeyExWStub
+RegDeleteKeyExA = RegDeleteKeyExAStub
+RegDeleteKeyExW = RegDeleteKeyExWStub
+RegDeleteTreeA = RegDeleteTreeAStub
+RegDeleteTreeW = RegDeleteTreeWStub
+RegDeleteValueA = RegDeleteValueAStub
+RegDeleteValueW = RegDeleteValueWStub
+RegDisablePredefinedCacheEx = RegDisablePredefinedCacheExStub
+RegEnumKeyExA = RegEnumKeyExAStub
+RegEnumKeyExW = RegEnumKeyExWStub
+RegEnumValueA = RegEnumValueAStub
+RegEnumValueW = RegEnumValueWStub
+RegFlushKey = RegFlushKeyStub
+RegGetKeySecurity = RegGetKeySecurityStub
+RegGetValueA = RegGetValueAStub
+RegGetValueW = RegGetValueWStub
+RegLoadKeyA = RegLoadKeyAStub
+RegLoadKeyW = RegLoadKeyWStub
+RegLoadMUIStringA = RegLoadMUIStringAStub
+RegLoadMUIStringW = RegLoadMUIStringWStub
+RegNotifyChangeKeyValue = RegNotifyChangeKeyValueStub
+RegOpenCurrentUser = RegOpenCurrentUserStub
+RegOpenKeyExA = RegOpenKeyExAStub
+RegOpenKeyExW = RegOpenKeyExWStub
+RegOpenUserClassesRoot = RegOpenUserClassesRootStub
+RegQueryInfoKeyA = RegQueryInfoKeyAStub
+RegQueryInfoKeyW = RegQueryInfoKeyWStub
+RegQueryValueExA = RegQueryValueExAStub
+RegQueryValueExW = RegQueryValueExWStub
+RegRestoreKeyA = RegRestoreKeyAStub
+RegRestoreKeyW = RegRestoreKeyWStub
+RegSaveKeyExA = RegSaveKeyExAStub
+RegSaveKeyExW = RegSaveKeyExWStub
+RegSetKeySecurity = RegSetKeySecurityStub
+RegSetValueExA = RegSetValueExAStub
+RegSetValueExW = RegSetValueExWStub
+RegUnLoadKeyA = RegUnLoadKeyAStub
+RegUnLoadKeyW = RegUnLoadKeyWStub
+RegisterApplicationRecoveryCallback
+RegisterApplicationRestart = RegisterApplicationRestartStub
+RegisterBadMemoryNotification = RegisterBadMemoryNotificationStub
+RegisterConsoleIME
+RegisterConsoleOS2
+RegisterConsoleVDM
+RegisterWaitForInputIdle
+RegisterWaitForSingleObject
+RegisterWaitForSingleObjectEx = RegisterWaitForSingleObjectExStub
+RegisterWaitUntilOOBECompleted
+RegisterWowBaseHandlers
+RegisterWowExec
+ReleaseActCtx = ReleaseActCtxStub
+ReleaseActCtxWorker
+ReleaseMutex
+ReleaseMutexWhenCallbackReturns = TpCallbackReleaseMutexOnCompletion
+ReleasePackageVirtualizationContext
+ReleaseSRWLockExclusive = RtlReleaseSRWLockExclusive
+ReleaseSRWLockShared = RtlReleaseSRWLockShared
+ReleaseSemaphore
+ReleaseSemaphoreWhenCallbackReturns = TpCallbackReleaseSemaphoreOnCompletion
+RemoveDirectoryA
+RemoveDirectoryTransactedA
+RemoveDirectoryTransactedW
+RemoveDirectoryW
+RemoveDllDirectory
+RemoveLocalAlternateComputerNameA
+RemoveLocalAlternateComputerNameW
+RemoveSecureMemoryCacheCallback
+RemoveVectoredContinueHandler = RtlRemoveVectoredContinueHandler
+RemoveVectoredExceptionHandler = RtlRemoveVectoredExceptionHandler
+ReplaceFile = ReplaceFileWStub
+ReplaceFileA
+ReplaceFileW = ReplaceFileWStub
+ReplacePartitionUnit
+RequestDeviceWakeup = RequestWakeupLatency
+RequestWakeupLatency
+ResetEvent
+ResetWriteWatch = ResetWriteWatchStub
+ResizePseudoConsole
+ResolveDelayLoadedAPI = LdrResolveDelayLoadedAPI
+ResolveDelayLoadsFromDll = LdrResolveDelayLoadsFromDll
+ResolveLocaleName = ResolveLocaleNameStub
+RestoreLastError = RtlSetLastWin32Error
+ResumeThread = ResumeThreadStub
+RtlCaptureContext
+RtlCaptureStackBackTrace
+RtlFillMemory = RtlFillMemoryStub
+RtlMoveMemory
+RtlPcToFileHeader = RtlPcToFileHeaderStub
+RtlUnwind = RtlUnwindStub
+RtlZeroMemory
+ScrollConsoleScreenBufferA
+ScrollConsoleScreenBufferW
+SearchPathA = SearchPathAStub
+SearchPathW = SearchPathWStub
+SetCachedSigningLevel = SetCachedSigningLevelStub
+SetCalendarInfoA
+SetCalendarInfoW = SetCalendarInfoWStub
+SetComPlusPackageInstallStatus
+SetCommBreak
+SetCommConfig
+SetCommMask
+SetCommState
+SetCommTimeouts
+SetComputerNameA = SetComputerNameAStub
+SetComputerNameEx2W = SetComputerNameEx2WStub
+SetComputerNameExA = SetComputerNameExAStub
+SetComputerNameExW = SetComputerNameExWStub
+SetComputerNameW = SetComputerNameWStub
+SetConsoleActiveScreenBuffer
+SetConsoleCP
+SetConsoleCtrlHandler
+SetConsoleCursor
+SetConsoleCursorInfo
+SetConsoleCursorMode
+SetConsoleCursorPosition
+SetConsoleDisplayMode
+SetConsoleFont
+SetConsoleHardwareState
+SetConsoleHistoryInfo
+SetConsoleIcon
+SetConsoleInputExeNameA
+SetConsoleInputExeNameW
+SetConsoleKeyShortcuts
+SetConsoleLocalEUDC
+SetConsoleMaximumWindowSize
+SetConsoleMenuClose
+SetConsoleMode
+SetConsoleNlsMode
+SetConsoleNumberOfCommandsA
+SetConsoleNumberOfCommandsW
+SetConsoleOS2OemFormat
+SetConsoleOutputCP
+SetConsolePalette
+SetConsoleScreenBufferInfoEx
+SetConsoleScreenBufferSize
+SetConsoleTextAttribute
+SetConsoleTitleA
+SetConsoleTitleW
+SetConsoleWindowInfo
+SetCriticalSectionSpinCount = RtlSetCriticalSectionSpinCount
+SetCurrentConsoleFontEx
+SetCurrentDirectoryA = SetCurrentDirectoryAStub
+SetCurrentDirectoryW = SetCurrentDirectoryWStub
+SetDefaultCommConfigA
+SetDefaultCommConfigW
+SetDefaultDllDirectories
+SetDllDirectoryA
+SetDllDirectoryW
+SetDynamicTimeZoneInformation = SetDynamicTimeZoneInformationStub
+SetEndOfFile
+SetEnvironmentStringsA
+SetEnvironmentStringsW = SetEnvironmentStringsWStub
+SetEnvironmentVariableA = SetEnvironmentVariableAStub
+SetEnvironmentVariableW = SetEnvironmentVariableWStub
+SetErrorMode = SetErrorModeStub
+SetEvent
+SetEventWhenCallbackReturns = TpCallbackSetEventOnCompletion
+SetFileApisToANSI = SetFileApisToANSIStub
+SetFileApisToOEM = SetFileApisToOEMStub
+SetFileAttributesA
+SetFileAttributesTransactedA
+SetFileAttributesTransactedW
+SetFileAttributesW
+SetFileBandwidthReservation
+SetFileCompletionNotificationModes
+SetFileInformationByHandle
+SetFileIoOverlappedRange = SetFileIoOverlappedRangeStub
+SetFilePointer
+SetFilePointerEx
+SetFileShortNameA
+SetFileShortNameW
+SetFileTime
+SetFileValidData
+SetFirmwareEnvironmentVariableA
+SetFirmwareEnvironmentVariableExA
+SetFirmwareEnvironmentVariableExW
+SetFirmwareEnvironmentVariableW
+SetHandleContext = RegisterConsoleIME
+SetHandleCount
+SetHandleInformation
+SetInformationJobObject
+SetIoRateControlInformationJobObject
+SetIoRingCompletionEvent
+SetLastConsoleEventActive
+SetLastError = SetLastErrorStub
+SetLocalPrimaryComputerNameA
+SetLocalPrimaryComputerNameW
+SetLocalTime = SetLocalTimeStub
+SetLocaleInfoA
+SetLocaleInfoW = SetLocaleInfoWStub
+SetMailslotInfo
+SetMessageWaitingIndicator
+SetNamedPipeAttribute
+SetNamedPipeHandleState = SetNamedPipeHandleStateStub
+SetPriorityClass = SetPriorityClassStub
+SetProcessAffinityMask
+SetProcessAffinityUpdateMode = SetProcessAffinityUpdateModeStub
+SetProcessDEPPolicy
+SetProcessDefaultCpuSetMasks
+SetProcessDefaultCpuSets
+SetProcessDynamicEHContinuationTargets
+SetProcessDynamicEnforcedCetCompatibleRanges
+SetProcessInformation
+SetProcessMitigationPolicy
+SetProcessPreferredUILanguages = SetProcessPreferredUILanguagesStub
+SetProcessPriorityBoost = SetProcessPriorityBoostStub
+SetProcessShutdownParameters = SetProcessShutdownParametersStub
+SetProcessWorkingSetSize
+SetProcessWorkingSetSizeEx = SetProcessWorkingSetSizeExStub
+SetProtectedPolicy
+SetSearchPathMode
+SetStdHandle = SetStdHandleStub
+SetStdHandleEx = SetStdHandleExStub
+SetSystemFileCacheSize = SetSystemFileCacheSizeStub
+SetSystemPowerState
+SetSystemTime = SetSystemTimeStub
+SetSystemTimeAdjustment
+SetTapeParameters
+SetTapePosition
+SetTermsrvAppInstallMode
+SetThreadAffinityMask
+SetThreadContext = SetThreadContextStub
+SetThreadDescription
+SetThreadErrorMode = SetThreadErrorModeStub
+SetThreadExecutionState
+SetThreadGroupAffinity = SetThreadGroupAffinityStub
+SetThreadIdealProcessor = SetThreadIdealProcessorStub
+SetThreadIdealProcessorEx = SetThreadIdealProcessorExStub
+SetThreadInformation
+SetThreadLocale = SetThreadLocaleStub
+SetThreadPreferredUILanguages = SetThreadPreferredUILanguagesStub
+SetThreadPriority = SetThreadPriorityStub
+SetThreadPriorityBoost = SetThreadPriorityBoostStub
+SetThreadSelectedCpuSetMasks
+SetThreadSelectedCpuSets
+SetThreadStackGuarantee = SetThreadStackGuaranteeStub
+SetThreadToken
+SetThreadUILanguage = SetThreadUILanguageStub
+SetThreadpoolStackInformation = SetThreadpoolStackInformationStub
+SetThreadpoolThreadMaximum = TpSetPoolMaxThreads
+SetThreadpoolThreadMinimum = SetThreadpoolThreadMinimumStub
+SetThreadpoolTimer = TpSetTimer
+SetThreadpoolTimerEx = TpSetTimerEx
+SetThreadpoolWait = TpSetWait
+SetThreadpoolWaitEx = TpSetWaitEx
+SetTimeZoneInformation = SetTimeZoneInformationStub
+SetTimerQueueTimer
+SetUnhandledExceptionFilter = SetUnhandledExceptionFilterStub
+SetUserGeoID
+SetUserGeoName
+SetVDMCurrentDirectories
+SetVolumeLabelA
+SetVolumeLabelW
+SetVolumeMountPointA
+SetVolumeMountPointW
+SetVolumeMountPointWStub
+SetWaitableTimer
+SetWaitableTimerEx
+SetXStateFeaturesMask = SetXStateFeaturesMaskStub
+SetupComm
+ShowConsoleCursor
+SignalObjectAndWait = SignalObjectAndWaitStub
+SizeofResource = SizeofResourceStub
+Sleep = SleepStub
+SleepConditionVariableCS
+SleepConditionVariableSRW
+SleepEx
+SortCloseHandle = BaseFreeAppCompatDataForProcessWorker
+SortGetHandle
+StartThreadpoolIo = TpStartAsyncIoOperation
+SubmitIoRing
+SubmitThreadpoolWork = TpPostWork
+SuspendThread = SuspendThreadStub
+SwitchToFiber
+SwitchToThread = SwitchToThreadStub
+SystemTimeToFileTime = SystemTimeToFileTimeStub
+SystemTimeToTzSpecificLocalTime = SystemTimeToTzSpecificLocalTimeStub
+SystemTimeToTzSpecificLocalTimeEx
+TerminateJobObject
+TerminateProcess = TerminateProcessStub
+TerminateThread = TerminateThreadStub
+TermsrvAppInstallMode
+TermsrvConvertSysRootToUserDir
+TermsrvCreateRegEntry
+TermsrvDeleteKey
+TermsrvDeleteValue
+TermsrvGetPreSetValue
+TermsrvGetWindowsDirectoryA
+TermsrvGetWindowsDirectoryW
+TermsrvOpenRegEntry
+TermsrvOpenUserClasses
+TermsrvRestoreKey
+TermsrvSetKeySecurity
+TermsrvSetValueKey
+TermsrvSyncUserIniFileExt
+Thread32First
+Thread32Next
+TlsAlloc = TlsAllocStub
+TlsFree = TlsFreeStub
+TlsGetValue = TlsGetValueStub
+TlsSetValue = TlsSetValueStub
+Toolhelp32ReadProcessMemory
+TransactNamedPipe = TransactNamedPipeStub
+TransmitCommChar
+TryAcquireSRWLockExclusive = RtlTryAcquireSRWLockExclusive
+TryAcquireSRWLockShared = RtlTryAcquireSRWLockShared
+TryEnterCriticalSection = RtlTryEnterCriticalSection
+TrySubmitThreadpoolCallback = TrySubmitThreadpoolCallbackStub
+TzSpecificLocalTimeToSystemTime = TzSpecificLocalTimeToSystemTimeStub
+TzSpecificLocalTimeToSystemTimeEx
+UTRegister
+UTUnRegister
+UnhandledExceptionFilter = UnhandledExceptionFilterStub
+UnlockFile
+UnlockFileEx
+UnmapViewOfFile = UnmapViewOfFileStub
+UnmapViewOfFileEx
+UnregisterApplicationRecoveryCallback
+UnregisterApplicationRestart = UnregisterApplicationRestartStub
+UnregisterBadMemoryNotification = UnregisterBadMemoryNotificationStub
+UnregisterConsoleIME = CreateSocketHandle
+UnregisterWait
+UnregisterWaitEx = UnregisterWaitExStub
+UnregisterWaitUntilOOBECompleted
+UpdateCalendarDayOfWeek
+UpdateProcThreadAttribute
+UpdateResourceA
+UpdateResourceW
+VDMConsoleOperation
+VDMOperationStarted
+VerLanguageNameA = VerLanguageNameAStub
+VerLanguageNameW = VerLanguageNameWStub
+VerSetConditionMask
+VerifyConsoleIoHandle
+VerifyScripts = VerifyScriptsStub
+VerifyVersionInfoA
+VerifyVersionInfoW
+VirtualAlloc = VirtualAllocStub
+VirtualAllocEx = VirtualAllocExStub
+VirtualAllocExNuma = VirtualAllocExNumaStub
+VirtualFree = VirtualFreeStub
+VirtualFreeEx = VirtualFreeExStub
+VirtualLock = VirtualLockStub
+VirtualProtect = VirtualProtectStub
+VirtualProtectEx = VirtualProtectExStub
+VirtualQuery = VirtualQueryStub
+VirtualQueryEx = VirtualQueryExStub
+VirtualUnlock = VirtualUnlockStub
+WTSGetActiveConsoleSessionId
+WaitCommEvent
+WaitForDebugEvent = WaitForDebugEventStub
+WaitForDebugEventEx
+WaitForMultipleObjects
+WaitForMultipleObjectsEx
+WaitForSingleObject
+WaitForSingleObjectEx
+WaitForThreadpoolIoCallbacks = TpWaitForIoCompletion
+WaitForThreadpoolTimerCallbacks = TpWaitForTimer
+WaitForThreadpoolWaitCallbacks = TpWaitForWait
+WaitForThreadpoolWorkCallbacks = TpWaitForWork
+WaitNamedPipeA
+WaitNamedPipeW = WaitNamedPipeWStub
+WakeAllConditionVariable = RtlWakeAllConditionVariable
+WakeConditionVariable = RtlWakeConditionVariable
+WerGetFlags = WerGetFlagsWorker
+WerGetFlagsWorker
+WerRegisterAdditionalProcess = WerRegisterAdditionalProcessStub
+WerRegisterAppLocalDump = WerRegisterAppLocalDumpStub
+WerRegisterCustomMetadata = WerRegisterCustomMetadataStub
+WerRegisterExcludedMemoryBlock = WerRegisterExcludedMemoryBlockStub
+WerRegisterFile = WerRegisterFileStub
+WerRegisterFileWorker
+WerRegisterMemoryBlock = WerRegisterMemoryBlockStub
+WerRegisterMemoryBlockWorker
+WerRegisterRuntimeExceptionModule = WerRegisterRuntimeExceptionModuleStub
+WerRegisterRuntimeExceptionModuleWorker
+WerSetFlags
+WerSetFlagsWorker = WerSetFlags
+WerUnregisterAdditionalProcess = WerUnregisterAdditionalProcessStub
+WerUnregisterAppLocalDump = WerUnregisterAppLocalDumpStub
+WerUnregisterCustomMetadata = WerUnregisterCustomMetadataStub
+WerUnregisterExcludedMemoryBlock = WerUnregisterExcludedMemoryBlockStub
+WerUnregisterFile = WerUnregisterFileStub
+WerUnregisterFileWorker
+WerUnregisterMemoryBlock = WerUnregisterMemoryBlockStub
+WerUnregisterMemoryBlockWorker
+WerUnregisterRuntimeExceptionModule = WerUnregisterRuntimeExceptionModuleStub
+WerUnregisterRuntimeExceptionModuleWorker
+WerpGetDebugger
+WerpInitiateRemoteRecovery
+WerpLaunchAeDebug
+WerpNotifyLoadStringResourceWorker
+WerpNotifyUseStringResourceWorker
+WideCharToMultiByte = WideCharToMultiByteStub
+WinExec
+Wow64DisableWow64FsRedirection = Wow64DisableWow64FsRedirectionStub
+Wow64EnableWow64FsRedirection
+Wow64GetThreadContext = Wow64GetThreadContextStub
+Wow64GetThreadSelectorEntry
+Wow64RevertWow64FsRedirection = Wow64RevertWow64FsRedirectionStub
+Wow64SetThreadContext = Wow64SetThreadContextStub
+Wow64SuspendThread = Wow64SuspendThreadStub
+Wow64Transition
+WriteConsoleA
+WriteConsoleInputA
+WriteConsoleInputVDMA
+WriteConsoleInputVDMW
+WriteConsoleInputW
+WriteConsoleOutputA
+WriteConsoleOutputAttribute
+WriteConsoleOutputCharacterA
+WriteConsoleOutputCharacterW
+WriteConsoleOutputW
+WriteConsoleW
+WriteFile
+WriteFileEx
+WriteFileGather
+WritePrivateProfileSectionA
+WritePrivateProfileSectionW
+WritePrivateProfileStringA
+WritePrivateProfileStringW
+WritePrivateProfileStructA
+WritePrivateProfileStructW
+WriteProcessMemory = WriteProcessMemoryStub
+WriteProfileSectionA
+WriteProfileSectionW
+WriteProfileStringA
+WriteProfileStringW
+WriteTapemark
+ZombifyActCtx = ZombifyActCtxStub
+ZombifyActCtxWorker
+_hread = _lread
+_hwrite = _lwrite
+_lclose
+_lcreat
+_llseek
+_lopen
+_lread
+_lwrite
+lstrcat = lstrcatA
+lstrcatA
+lstrcatW
+lstrcmp = lstrcmpStub
+lstrcmpA = lstrcmpStub
+lstrcmpW = lstrcmpWStub
+lstrcmpi = lstrcmpiAStub
+lstrcmpiA = lstrcmpiAStub
+lstrcmpiW = lstrcmpiWStub
+lstrcpy = lstrcpyA
+lstrcpyA
+lstrcpyW
+lstrcpyn = lstrcpynAStub
+lstrcpynA = lstrcpynAStub
+lstrcpynW = lstrcpynWStub
+lstrlen = lstrlenAStub
+lstrlenA = lstrlenAStub
+lstrlenW = lstrlenWStub
+timeBeginPeriod
+timeEndPeriod
+timeGetDevCaps
+timeGetSystemTime
+timeGetTime

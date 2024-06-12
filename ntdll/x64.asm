@@ -101,10 +101,10 @@ API ExpInterlockedPopEntrySListEnd
 API ExpInterlockedPopEntrySListFault
 API ExpInterlockedPopEntrySListResume
 API KiRaiseUserExceptionDispatcher
-API KiUserApcDispatch ; -> KiUserApcDispatcher
-API KiUserCallbackDispatch ; -> KiUserCallbackDispatcher
-API KiUserExceptionDispatch ; -> KiUserExceptionDispatcher
-API LdrpInvertedFunctionTables ; -> KiUserInvertedFunctionTable
+API KiUserApcDispatch
+API KiUserCallbackDispatch
+API KiUserExceptionDispatch
+API LdrpInvertedFunctionTables
 API LdrAccessResource
 API LdrAddDllDirectory
 API LdrAddLoadAsDataTable
@@ -146,13 +146,13 @@ API LdrLoadAlternateResourceModuleEx
 API LdrLoadDll
 API LdrLoadEnclaveModule
 API LdrLockLoaderLock
-API RtlOpenImageFileOptionsKey ; -> LdrOpenImageFileOptionsKey
-API LdrpProcessInitializationComplete ; -> LdrProcessInitializationComplete
+API RtlOpenImageFileOptionsKey
+API LdrpProcessInitializationComplete
 API LdrProcessRelocationBlock
 API LdrProcessRelocationBlockEx
 API LdrQueryImageFileExecutionOptions
-API RtlQueryImageFileExecutionOptions ; -> LdrQueryImageFileExecutionOptionsEx
-API RtlQueryImageFileKeyOption ; -> LdrQueryImageFileKeyOption
+API RtlQueryImageFileExecutionOptions
+API RtlQueryImageFileKeyOption
 API LdrQueryModuleServiceTags
 API LdrQueryOptionalDelayLoadedAPI
 API LdrQueryProcessModuleInformation
@@ -197,332 +197,332 @@ API MicrosoftTelemetryAssertTriggeredUM
 API NlsAnsiCodePage
 API NlsMbCodePageTag
 API NlsMbOemCodePageTag
-API ZwAcceptConnectPort ; -> NtAcceptConnectPort
+API ZwAcceptConnectPort
 API NtAccessCheck
-API ZwAccessCheckAndAuditAlarm ; -> NtAccessCheckAndAuditAlarm
+API ZwAccessCheckAndAuditAlarm
 API NtAccessCheckByType
 API NtAccessCheckByTypeAndAuditAlarm
 API NtAccessCheckByTypeResultList
 API NtAccessCheckByTypeResultListAndAuditAlarm
-API ZwAccessCheckByTypeResultListAndAuditAlarmByHandle ; -> NtAccessCheckByTypeResultListAndAuditAlarmByHandle
+API ZwAccessCheckByTypeResultListAndAuditAlarmByHandle
 API NtAcquireCrossVmMutant
 API NtAcquireProcessActivityReference
 API NtAddAtom
-API ZwAddAtomEx ; -> NtAddAtomEx
+API ZwAddAtomEx
 API NtAddBootEntry
-API ZwAddDriverEntry ; -> NtAddDriverEntry
+API ZwAddDriverEntry
 API NtAdjustGroupsToken
-API ZwAdjustPrivilegesToken ; -> NtAdjustPrivilegesToken
+API ZwAdjustPrivilegesToken
 API NtAdjustTokenClaimsAndDeviceGroups
-API ZwAlertResumeThread ; -> NtAlertResumeThread
-API ZwAlertThread ; -> NtAlertThread
+API ZwAlertResumeThread
+API ZwAlertThread
 API NtAlertThreadByThreadId
 API NtAllocateLocallyUniqueId
-API ZwAllocateReserveObject ; -> NtAllocateReserveObject
+API ZwAllocateReserveObject
 API NtAllocateUserPhysicalPages
 API NtAllocateUserPhysicalPagesEx
-API ZwAllocateUuids ; -> NtAllocateUuids
-API ZwAllocateVirtualMemory ; -> NtAllocateVirtualMemory
+API ZwAllocateUuids
+API ZwAllocateVirtualMemory
 API NtAllocateVirtualMemoryEx
 API NtAlpcAcceptConnectPort
-API ZwAlpcCancelMessage ; -> NtAlpcCancelMessage
-API ZwAlpcConnectPort ; -> NtAlpcConnectPort
+API ZwAlpcCancelMessage
+API ZwAlpcConnectPort
 API NtAlpcConnectPortEx
 API NtAlpcCreatePort
 API NtAlpcCreatePortSection
-API ZwAlpcCreateResourceReserve ; -> NtAlpcCreateResourceReserve
+API ZwAlpcCreateResourceReserve
 API NtAlpcCreateSectionView
 API NtAlpcCreateSecurityContext
 API NtAlpcDeletePortSection
-API ZwAlpcDeleteResourceReserve ; -> NtAlpcDeleteResourceReserve
-API ZwAlpcDeleteSectionView ; -> NtAlpcDeleteSectionView
+API ZwAlpcDeleteResourceReserve
+API ZwAlpcDeleteSectionView
 API NtAlpcDeleteSecurityContext
-API ZwAlpcDisconnectPort ; -> NtAlpcDisconnectPort
-API ZwAlpcImpersonateClientContainerOfPort ; -> NtAlpcImpersonateClientContainerOfPort
-API ZwAlpcImpersonateClientOfPort ; -> NtAlpcImpersonateClientOfPort
+API ZwAlpcDisconnectPort
+API ZwAlpcImpersonateClientContainerOfPort
+API ZwAlpcImpersonateClientOfPort
 API NtAlpcOpenSenderProcess
 API NtAlpcOpenSenderThread
 API NtAlpcQueryInformation
 API NtAlpcQueryInformationMessage
 API NtAlpcRevokeSecurityContext
 API NtAlpcSendWaitReceivePort
-API ZwAlpcSetInformation ; -> NtAlpcSetInformation
+API ZwAlpcSetInformation
 API NtApphelpCacheControl
 API NtAreMappedFilesTheSame
-API ZwAssignProcessToJobObject ; -> NtAssignProcessToJobObject
+API ZwAssignProcessToJobObject
 API NtAssociateWaitCompletionPacket
-API ZwCallEnclave ; -> NtCallEnclave
+API ZwCallEnclave
 API NtCallbackReturn
 API NtCancelIoFile
 API NtCancelIoFileEx
 API NtCancelSynchronousIoFile
-API ZwCancelTimer ; -> NtCancelTimer
+API ZwCancelTimer
 API NtCancelTimer2
 API NtCancelWaitCompletionPacket
-API ZwChangeProcessState ; -> NtChangeProcessState
+API ZwChangeProcessState
 API NtChangeThreadState
-API ZwClearEvent ; -> NtClearEvent
+API ZwClearEvent
 API NtClose
 API NtCloseObjectAuditAlarm
 API NtCommitComplete
-API ZwCommitEnlistment ; -> NtCommitEnlistment
+API ZwCommitEnlistment
 API NtCommitRegistryTransaction
 API NtCommitTransaction
-API ZwCompactKeys ; -> NtCompactKeys
+API ZwCompactKeys
 API NtCompareObjects
-API ZwCompareSigningLevels ; -> NtCompareSigningLevels
+API ZwCompareSigningLevels
 API NtCompareTokens
-API ZwCompleteConnectPort ; -> NtCompleteConnectPort
-API ZwCompressKey ; -> NtCompressKey
-API ZwConnectPort ; -> NtConnectPort
-API ZwContinue ; -> NtContinue
-API ZwContinueEx ; -> NtContinueEx
-API ZwConvertBetweenAuxiliaryCounterAndPerformanceCounter ; -> NtConvertBetweenAuxiliaryCounterAndPerformanceCounter
+API ZwCompleteConnectPort
+API ZwCompressKey
+API ZwConnectPort
+API ZwContinue
+API ZwContinueEx
+API ZwConvertBetweenAuxiliaryCounterAndPerformanceCounter
 API NtCopyFileChunk
-API ZwCreateCpuPartition ; -> NtCreateCpuPartition
-API ZwCreateCrossVmEvent ; -> NtCreateCrossVmEvent
+API ZwCreateCpuPartition
+API ZwCreateCrossVmEvent
 API NtCreateCrossVmMutant
-API ZwCreateDebugObject ; -> NtCreateDebugObject
+API ZwCreateDebugObject
 API NtCreateDirectoryObject
-API ZwCreateDirectoryObjectEx ; -> NtCreateDirectoryObjectEx
+API ZwCreateDirectoryObjectEx
 API NtCreateEnclave
-API ZwCreateEnlistment ; -> NtCreateEnlistment
-API ZwCreateEvent ; -> NtCreateEvent
-API ZwCreateEventPair ; -> NtCreateEventPair
+API ZwCreateEnlistment
+API ZwCreateEvent
+API ZwCreateEventPair
 API NtCreateFile
 API NtCreateIRTimer
-API ZwCreateIoCompletion ; -> NtCreateIoCompletion
-API ZwCreateIoRing ; -> NtCreateIoRing
+API ZwCreateIoCompletion
+API ZwCreateIoRing
 API NtCreateJobObject
-API ZwCreateJobSet ; -> NtCreateJobSet
-API ZwCreateKey ; -> NtCreateKey
+API ZwCreateJobSet
+API ZwCreateKey
 API NtCreateKeyTransacted
-API ZwCreateKeyedEvent ; -> NtCreateKeyedEvent
+API ZwCreateKeyedEvent
 API NtCreateLowBoxToken
 API NtCreateMailslotFile
 API NtCreateMutant
-API ZwCreateNamedPipeFile ; -> NtCreateNamedPipeFile
-API ZwCreatePagingFile ; -> NtCreatePagingFile
+API ZwCreateNamedPipeFile
+API ZwCreatePagingFile
 API NtCreatePartition
-API ZwCreatePort ; -> NtCreatePort
-API ZwCreatePrivateNamespace ; -> NtCreatePrivateNamespace
+API ZwCreatePort
+API ZwCreatePrivateNamespace
 API NtCreateProcess
-API ZwCreateProcessEx ; -> NtCreateProcessEx
-API ZwCreateProcessStateChange ; -> NtCreateProcessStateChange
-API ZwCreateProfile ; -> NtCreateProfile
-API ZwCreateProfileEx ; -> NtCreateProfileEx
+API ZwCreateProcessEx
+API ZwCreateProcessStateChange
+API ZwCreateProfile
+API ZwCreateProfileEx
 API NtCreateRegistryTransaction
 API NtCreateResourceManager
 API NtCreateSection
 API NtCreateSectionEx
-API ZwCreateSemaphore ; -> NtCreateSemaphore
-API ZwCreateSymbolicLinkObject ; -> NtCreateSymbolicLinkObject
+API ZwCreateSemaphore
+API ZwCreateSymbolicLinkObject
 API NtCreateThread
 API NtCreateThreadEx
-API ZwCreateThreadStateChange ; -> NtCreateThreadStateChange
+API ZwCreateThreadStateChange
 API NtCreateTimer
 API NtCreateTimer2
-API ZwCreateToken ; -> NtCreateToken
-API ZwCreateTokenEx ; -> NtCreateTokenEx
+API ZwCreateToken
+API ZwCreateTokenEx
 API NtCreateTransaction
 API NtCreateTransactionManager
-API ZwCreateUserProcess ; -> NtCreateUserProcess
-API ZwCreateWaitCompletionPacket ; -> NtCreateWaitCompletionPacket
+API ZwCreateUserProcess
+API ZwCreateWaitCompletionPacket
 API NtCreateWaitablePort
-API ZwCreateWnfStateName ; -> NtCreateWnfStateName
+API ZwCreateWnfStateName
 API NtCreateWorkerFactory
-API ZwDebugActiveProcess ; -> NtDebugActiveProcess
-API ZwDebugContinue ; -> NtDebugContinue
+API ZwDebugActiveProcess
+API ZwDebugContinue
 API NtDelayExecution
 API NtDeleteAtom
-API ZwDeleteBootEntry ; -> NtDeleteBootEntry
-API ZwDeleteDriverEntry ; -> NtDeleteDriverEntry
-API ZwDeleteFile ; -> NtDeleteFile
+API ZwDeleteBootEntry
+API ZwDeleteDriverEntry
+API ZwDeleteFile
 API NtDeleteKey
-API ZwDeleteObjectAuditAlarm ; -> NtDeleteObjectAuditAlarm
-API ZwDeletePrivateNamespace ; -> NtDeletePrivateNamespace
+API ZwDeleteObjectAuditAlarm
+API ZwDeletePrivateNamespace
 API NtDeleteValueKey
-API ZwDeleteWnfStateData ; -> NtDeleteWnfStateData
-API ZwDeleteWnfStateName ; -> NtDeleteWnfStateName
+API ZwDeleteWnfStateData
+API ZwDeleteWnfStateName
 API NtDeviceIoControlFile
 API NtDirectGraphicsCall
-API ZwDisableLastKnownGood ; -> NtDisableLastKnownGood
+API ZwDisableLastKnownGood
 API NtDisplayString
-API ZwDrawText ; -> NtDrawText
+API ZwDrawText
 API NtDuplicateObject
 API NtDuplicateToken
 API NtEnableLastKnownGood
 API NtEnumerateBootEntries
-API ZwEnumerateDriverEntries ; -> NtEnumerateDriverEntries
+API ZwEnumerateDriverEntries
 API NtEnumerateKey
-API ZwEnumerateSystemEnvironmentValuesEx ; -> NtEnumerateSystemEnvironmentValuesEx
-API ZwEnumerateTransactionObject ; -> NtEnumerateTransactionObject
-API ZwEnumerateValueKey ; -> NtEnumerateValueKey
-API ZwExtendSection ; -> NtExtendSection
+API ZwEnumerateSystemEnvironmentValuesEx
+API ZwEnumerateTransactionObject
+API ZwEnumerateValueKey
+API ZwExtendSection
 API NtFilterBootOption
-API ZwFilterToken ; -> NtFilterToken
-API ZwFilterTokenEx ; -> NtFilterTokenEx
-API ZwFindAtom ; -> NtFindAtom
+API ZwFilterToken
+API ZwFilterTokenEx
+API ZwFindAtom
 API NtFlushBuffersFile
-API ZwFlushBuffersFileEx ; -> NtFlushBuffersFileEx
+API ZwFlushBuffersFileEx
 API NtFlushInstallUILanguage
 API NtFlushInstructionCache
 API NtFlushKey
 API NtFlushProcessWriteBuffers
-API ZwFlushVirtualMemory ; -> NtFlushVirtualMemory
-API ZwFlushWriteBuffer ; -> NtFlushWriteBuffer
+API ZwFlushVirtualMemory
+API ZwFlushWriteBuffer
 API NtFreeUserPhysicalPages
 API NtFreeVirtualMemory
 API NtFreezeRegistry
 API NtFreezeTransactions
-API ZwFsControlFile ; -> NtFsControlFile
-API ZwGetCachedSigningLevel ; -> NtGetCachedSigningLevel
-API ZwGetCompleteWnfStateSubscription ; -> NtGetCompleteWnfStateSubscription
+API ZwFsControlFile
+API ZwGetCachedSigningLevel
+API ZwGetCompleteWnfStateSubscription
 API NtGetContextThread
 API NtGetCurrentProcessorNumber
-API ZwGetCurrentProcessorNumberEx ; -> NtGetCurrentProcessorNumberEx
-API ZwGetDevicePowerState ; -> NtGetDevicePowerState
+API ZwGetCurrentProcessorNumberEx
+API ZwGetDevicePowerState
 API NtGetMUIRegistryInfo
 API NtGetNextProcess
-API ZwGetNextThread ; -> NtGetNextThread
+API ZwGetNextThread
 API NtGetNlsSectionPtr
 API NtGetNotificationResourceManager
-API RtlGetTickCount ; -> NtGetTickCount
-API ZwGetWriteWatch ; -> NtGetWriteWatch
-API ZwImpersonateAnonymousToken ; -> NtImpersonateAnonymousToken
+API RtlGetTickCount
+API ZwGetWriteWatch
+API ZwImpersonateAnonymousToken
 API NtImpersonateClientOfPort
 API NtImpersonateThread
-API ZwInitializeEnclave ; -> NtInitializeEnclave
+API ZwInitializeEnclave
 API NtInitializeNlsFiles
 API NtInitializeRegistry
-API ZwInitiatePowerAction ; -> NtInitiatePowerAction
-API ZwIsProcessInJob ; -> NtIsProcessInJob
+API ZwInitiatePowerAction
+API ZwIsProcessInJob
 API NtIsSystemResumeAutomatic
 API NtIsUILanguageComitted
 API NtListenPort
 API NtLoadDriver
 API NtLoadEnclaveData
 API NtLoadKey
-API ZwLoadKey2 ; -> NtLoadKey2
-API ZwLoadKey3 ; -> NtLoadKey3
-API ZwLoadKeyEx ; -> NtLoadKeyEx
+API ZwLoadKey2
+API ZwLoadKey3
+API ZwLoadKeyEx
 API NtLockFile
-API ZwLockProductActivationKeys ; -> NtLockProductActivationKeys
+API ZwLockProductActivationKeys
 API NtLockRegistryKey
 API NtLockVirtualMemory
-API ZwMakePermanentObject ; -> NtMakePermanentObject
+API ZwMakePermanentObject
 API NtMakeTemporaryObject
 API NtManageHotPatch
-API ZwManagePartition ; -> NtManagePartition
-API ZwMapCMFModule ; -> NtMapCMFModule
-API ZwMapUserPhysicalPages ; -> NtMapUserPhysicalPages
-API ZwMapUserPhysicalPagesScatter ; -> NtMapUserPhysicalPagesScatter
-API ZwMapViewOfSection ; -> NtMapViewOfSection
+API ZwManagePartition
+API ZwMapCMFModule
+API ZwMapUserPhysicalPages
+API ZwMapUserPhysicalPagesScatter
+API ZwMapViewOfSection
 API NtMapViewOfSectionEx
 API NtModifyBootEntry
 API NtModifyDriverEntry
-API ZwNotifyChangeDirectoryFile ; -> NtNotifyChangeDirectoryFile
-API ZwNotifyChangeDirectoryFileEx ; -> NtNotifyChangeDirectoryFileEx
+API ZwNotifyChangeDirectoryFile
+API ZwNotifyChangeDirectoryFileEx
 API NtNotifyChangeKey
 API NtNotifyChangeMultipleKeys
 API NtNotifyChangeSession
-API ZwOpenCpuPartition ; -> NtOpenCpuPartition
+API ZwOpenCpuPartition
 API NtOpenDirectoryObject
-API ZwOpenEnlistment ; -> NtOpenEnlistment
-API ZwOpenEvent ; -> NtOpenEvent
+API ZwOpenEnlistment
+API ZwOpenEvent
 API NtOpenEventPair
 API NtOpenFile
-API ZwOpenIoCompletion ; -> NtOpenIoCompletion
+API ZwOpenIoCompletion
 API NtOpenJobObject
-API ZwOpenKey ; -> NtOpenKey
-API ZwOpenKeyEx ; -> NtOpenKeyEx
+API ZwOpenKey
+API ZwOpenKeyEx
 API NtOpenKeyTransacted
 API NtOpenKeyTransactedEx
 API NtOpenKeyedEvent
 API NtOpenMutant
 API NtOpenObjectAuditAlarm
 API NtOpenPartition
-API ZwOpenPrivateNamespace ; -> NtOpenPrivateNamespace
+API ZwOpenPrivateNamespace
 API NtOpenProcess
 API NtOpenProcessToken
-API ZwOpenProcessTokenEx ; -> NtOpenProcessTokenEx
-API ZwOpenRegistryTransaction ; -> NtOpenRegistryTransaction
+API ZwOpenProcessTokenEx
+API ZwOpenRegistryTransaction
 API NtOpenResourceManager
-API ZwOpenSection ; -> NtOpenSection
+API ZwOpenSection
 API NtOpenSemaphore
-API ZwOpenSession ; -> NtOpenSession
-API ZwOpenSymbolicLinkObject ; -> NtOpenSymbolicLinkObject
-API ZwOpenThread ; -> NtOpenThread
+API ZwOpenSession
+API ZwOpenSymbolicLinkObject
+API ZwOpenThread
 API NtOpenThreadToken
-API ZwOpenThreadTokenEx ; -> NtOpenThreadTokenEx
-API ZwOpenTimer ; -> NtOpenTimer
-API ZwOpenTransaction ; -> NtOpenTransaction
+API ZwOpenThreadTokenEx
+API ZwOpenTimer
+API ZwOpenTransaction
 API NtOpenTransactionManager
 API NtPlugPlayControl
-API ZwPowerInformation ; -> NtPowerInformation
+API ZwPowerInformation
 API NtPrePrepareComplete
-API ZwPrePrepareEnlistment ; -> NtPrePrepareEnlistment
-API ZwPrepareComplete ; -> NtPrepareComplete
+API ZwPrePrepareEnlistment
+API ZwPrepareComplete
 API NtPrepareEnlistment
-API ZwPrivilegeCheck ; -> NtPrivilegeCheck
-API ZwPrivilegeObjectAuditAlarm ; -> NtPrivilegeObjectAuditAlarm
+API ZwPrivilegeCheck
+API ZwPrivilegeObjectAuditAlarm
 API NtPrivilegedServiceAuditAlarm
 API NtPropagationComplete
 API NtPropagationFailed
-API ZwProtectVirtualMemory ; -> NtProtectVirtualMemory
+API ZwProtectVirtualMemory
 API NtPssCaptureVaSpaceBulk
-API ZwPulseEvent ; -> NtPulseEvent
-API ZwQueryAttributesFile ; -> NtQueryAttributesFile
-API ZwQueryAuxiliaryCounterFrequency ; -> NtQueryAuxiliaryCounterFrequency
-API ZwQueryBootEntryOrder ; -> NtQueryBootEntryOrder
+API ZwPulseEvent
+API ZwQueryAttributesFile
+API ZwQueryAuxiliaryCounterFrequency
+API ZwQueryBootEntryOrder
 API NtQueryBootOptions
-API ZwQueryDebugFilterState ; -> NtQueryDebugFilterState
-API ZwQueryDefaultLocale ; -> NtQueryDefaultLocale
-API ZwQueryDefaultUILanguage ; -> NtQueryDefaultUILanguage
-API ZwQueryDirectoryFile ; -> NtQueryDirectoryFile
+API ZwQueryDebugFilterState
+API ZwQueryDefaultLocale
+API ZwQueryDefaultUILanguage
+API ZwQueryDirectoryFile
 API NtQueryDirectoryFileEx
-API ZwQueryDirectoryObject ; -> NtQueryDirectoryObject
+API ZwQueryDirectoryObject
 API NtQueryDriverEntryOrder
 API NtQueryEaFile
-API ZwQueryEvent ; -> NtQueryEvent
+API ZwQueryEvent
 API NtQueryFullAttributesFile
 API NtQueryInformationAtom
 API NtQueryInformationByName
 API NtQueryInformationCpuPartition
-API ZwQueryInformationEnlistment ; -> NtQueryInformationEnlistment
+API ZwQueryInformationEnlistment
 API NtQueryInformationFile
 API NtQueryInformationJobObject
 API NtQueryInformationPort
-API ZwQueryInformationProcess ; -> NtQueryInformationProcess
-API ZwQueryInformationResourceManager ; -> NtQueryInformationResourceManager
-API ZwQueryInformationThread ; -> NtQueryInformationThread
+API ZwQueryInformationProcess
+API ZwQueryInformationResourceManager
+API ZwQueryInformationThread
 API NtQueryInformationToken
 API NtQueryInformationTransaction
-API ZwQueryInformationTransactionManager ; -> NtQueryInformationTransactionManager
+API ZwQueryInformationTransactionManager
 API NtQueryInformationWorkerFactory
-API ZwQueryInstallUILanguage ; -> NtQueryInstallUILanguage
+API ZwQueryInstallUILanguage
 API NtQueryIntervalProfile
-API ZwQueryIoCompletion ; -> NtQueryIoCompletion
-API ZwQueryIoRingCapabilities ; -> NtQueryIoRingCapabilities
+API ZwQueryIoCompletion
+API ZwQueryIoRingCapabilities
 API NtQueryKey
-API ZwQueryLicenseValue ; -> NtQueryLicenseValue
-API ZwQueryMultipleValueKey ; -> NtQueryMultipleValueKey
+API ZwQueryLicenseValue
+API ZwQueryMultipleValueKey
 API NtQueryMutant
-API ZwQueryObject ; -> NtQueryObject
-API ZwQueryOpenSubKeys ; -> NtQueryOpenSubKeys
+API ZwQueryObject
+API ZwQueryOpenSubKeys
 API NtQueryOpenSubKeysEx
-API ZwQueryPerformanceCounter ; -> NtQueryPerformanceCounter
-API ZwQueryPortInformationProcess ; -> NtQueryPortInformationProcess
-API ZwQueryQuotaInformationFile ; -> NtQueryQuotaInformationFile
-API ZwQuerySection ; -> NtQuerySection
-API ZwQuerySecurityAttributesToken ; -> NtQuerySecurityAttributesToken
-API ZwQuerySecurityObject ; -> NtQuerySecurityObject
-API ZwQuerySecurityPolicy ; -> NtQuerySecurityPolicy
+API ZwQueryPerformanceCounter
+API ZwQueryPortInformationProcess
+API ZwQueryQuotaInformationFile
+API ZwQuerySection
+API ZwQuerySecurityAttributesToken
+API ZwQuerySecurityObject
+API ZwQuerySecurityPolicy
 API NtQuerySemaphore
 API NtQuerySymbolicLinkObject
-API ZwQuerySystemEnvironmentValue ; -> NtQuerySystemEnvironmentValue
+API ZwQuerySystemEnvironmentValue
 API NtQuerySystemEnvironmentValueEx
-API ZwQuerySystemInformation ; -> NtQuerySystemInformation
+API ZwQuerySystemInformation
 API NtQuerySystemInformationEx
 API NtQuerySystemTime
 API NtQueryTimer
@@ -530,159 +530,159 @@ API NtQueryTimerResolution
 API NtQueryValueKey
 API NtQueryVirtualMemory
 API NtQueryVolumeInformationFile
-API ZwQueryWnfStateData ; -> NtQueryWnfStateData
+API ZwQueryWnfStateData
 API NtQueryWnfStateNameInformation
-API ZwQueueApcThread ; -> NtQueueApcThread
-API ZwQueueApcThreadEx ; -> NtQueueApcThreadEx
-API ZwQueueApcThreadEx2 ; -> NtQueueApcThreadEx2
+API ZwQueueApcThread
+API ZwQueueApcThreadEx
+API ZwQueueApcThreadEx2
 API NtRaiseException
 API NtRaiseHardError
-API ZwReadFile ; -> NtReadFile
+API ZwReadFile
 API NtReadFileScatter
 API NtReadOnlyEnlistment
-API ZwReadRequestData ; -> NtReadRequestData
-API ZwReadVirtualMemory ; -> NtReadVirtualMemory
+API ZwReadRequestData
+API ZwReadVirtualMemory
 API NtReadVirtualMemoryEx
-API ZwRecoverEnlistment ; -> NtRecoverEnlistment
-API ZwRecoverResourceManager ; -> NtRecoverResourceManager
+API ZwRecoverEnlistment
+API ZwRecoverResourceManager
 API NtRecoverTransactionManager
-API ZwRegisterProtocolAddressInformation ; -> NtRegisterProtocolAddressInformation
+API ZwRegisterProtocolAddressInformation
 API NtRegisterThreadTerminatePort
-API ZwReleaseKeyedEvent ; -> NtReleaseKeyedEvent
+API ZwReleaseKeyedEvent
 API NtReleaseMutant
-API ZwReleaseSemaphore ; -> NtReleaseSemaphore
-API ZwReleaseWorkerFactoryWorker ; -> NtReleaseWorkerFactoryWorker
-API ZwRemoveIoCompletion ; -> NtRemoveIoCompletion
-API ZwRemoveIoCompletionEx ; -> NtRemoveIoCompletionEx
-API ZwRemoveProcessDebug ; -> NtRemoveProcessDebug
+API ZwReleaseSemaphore
+API ZwReleaseWorkerFactoryWorker
+API ZwRemoveIoCompletion
+API ZwRemoveIoCompletionEx
+API ZwRemoveProcessDebug
 API NtRenameKey
-API ZwRenameTransactionManager ; -> NtRenameTransactionManager
+API ZwRenameTransactionManager
 API NtReplaceKey
 API NtReplacePartitionUnit
 API NtReplyPort
 API NtReplyWaitReceivePort
 API NtReplyWaitReceivePortEx
 API NtReplyWaitReplyPort
-API ZwRequestPort ; -> NtRequestPort
-API ZwRequestWaitReplyPort ; -> NtRequestWaitReplyPort
-API ZwResetEvent ; -> NtResetEvent
-API ZwResetWriteWatch ; -> NtResetWriteWatch
-API ZwRestoreKey ; -> NtRestoreKey
+API ZwRequestPort
+API ZwRequestWaitReplyPort
+API ZwResetEvent
+API ZwResetWriteWatch
+API ZwRestoreKey
 API NtResumeProcess
 API NtResumeThread
-API ZwRevertContainerImpersonation ; -> NtRevertContainerImpersonation
-API ZwRollbackComplete ; -> NtRollbackComplete
-API ZwRollbackEnlistment ; -> NtRollbackEnlistment
+API ZwRevertContainerImpersonation
+API ZwRollbackComplete
+API ZwRollbackEnlistment
 API NtRollbackRegistryTransaction
 API NtRollbackTransaction
-API ZwRollforwardTransactionManager ; -> NtRollforwardTransactionManager
+API ZwRollforwardTransactionManager
 API NtSaveKey
-API ZwSaveKeyEx ; -> NtSaveKeyEx
+API ZwSaveKeyEx
 API NtSaveMergedKeys
 API NtSecureConnectPort
-API ZwSerializeBoot ; -> NtSerializeBoot
+API ZwSerializeBoot
 API NtSetBootEntryOrder
 API NtSetBootOptions
-API ZwSetCachedSigningLevel ; -> NtSetCachedSigningLevel
+API ZwSetCachedSigningLevel
 API NtSetCachedSigningLevel2
 API NtSetContextThread
 API NtSetDebugFilterState
-API ZwSetDefaultHardErrorPort ; -> NtSetDefaultHardErrorPort
-API ZwSetDefaultLocale ; -> NtSetDefaultLocale
-API ZwSetDefaultUILanguage ; -> NtSetDefaultUILanguage
-API ZwSetDriverEntryOrder ; -> NtSetDriverEntryOrder
-API ZwSetEaFile ; -> NtSetEaFile
-API ZwSetEvent ; -> NtSetEvent
+API ZwSetDefaultHardErrorPort
+API ZwSetDefaultLocale
+API ZwSetDefaultUILanguage
+API ZwSetDriverEntryOrder
+API ZwSetEaFile
+API ZwSetEvent
 API NtSetEventBoostPriority
-API ZwSetHighEventPair ; -> NtSetHighEventPair
-API ZwSetHighWaitLowEventPair ; -> NtSetHighWaitLowEventPair
+API ZwSetHighEventPair
+API ZwSetHighWaitLowEventPair
 API NtSetIRTimer
 API NtSetInformationCpuPartition
 API NtSetInformationDebugObject
-API ZwSetInformationEnlistment ; -> NtSetInformationEnlistment
-API ZwSetInformationFile ; -> NtSetInformationFile
-API ZwSetInformationIoRing ; -> NtSetInformationIoRing
-API ZwSetInformationJobObject ; -> NtSetInformationJobObject
-API ZwSetInformationKey ; -> NtSetInformationKey
-API ZwSetInformationObject ; -> NtSetInformationObject
+API ZwSetInformationEnlistment
+API ZwSetInformationFile
+API ZwSetInformationIoRing
+API ZwSetInformationJobObject
+API ZwSetInformationKey
+API ZwSetInformationObject
 API NtSetInformationProcess
 API NtSetInformationResourceManager
-API ZwSetInformationSymbolicLink ; -> NtSetInformationSymbolicLink
-API ZwSetInformationThread ; -> NtSetInformationThread
-API ZwSetInformationToken ; -> NtSetInformationToken
+API ZwSetInformationSymbolicLink
+API ZwSetInformationThread
+API ZwSetInformationToken
 API NtSetInformationTransaction
 API NtSetInformationTransactionManager
 API NtSetInformationVirtualMemory
-API ZwSetInformationWorkerFactory ; -> NtSetInformationWorkerFactory
-API ZwSetIntervalProfile ; -> NtSetIntervalProfile
+API ZwSetInformationWorkerFactory
+API ZwSetIntervalProfile
 API NtSetIoCompletion
 API NtSetIoCompletionEx
-API ZwSetLdtEntries ; -> NtSetLdtEntries
+API ZwSetLdtEntries
 API NtSetLowEventPair
-API ZwSetLowWaitHighEventPair ; -> NtSetLowWaitHighEventPair
+API ZwSetLowWaitHighEventPair
 API NtSetQuotaInformationFile
-API ZwSetSecurityObject ; -> NtSetSecurityObject
+API ZwSetSecurityObject
 API NtSetSystemEnvironmentValue
 API NtSetSystemEnvironmentValueEx
 API NtSetSystemInformation
 API NtSetSystemPowerState
-API ZwSetSystemTime ; -> NtSetSystemTime
+API ZwSetSystemTime
 API NtSetThreadExecutionState
 API NtSetTimer
-API ZwSetTimer2 ; -> NtSetTimer2
+API ZwSetTimer2
 API NtSetTimerEx
 API NtSetTimerResolution
-API ZwSetUuidSeed ; -> NtSetUuidSeed
-API ZwSetValueKey ; -> NtSetValueKey
+API ZwSetUuidSeed
+API ZwSetValueKey
 API NtSetVolumeInformationFile
 API NtSetWnfProcessNotificationEvent
 API NtShutdownSystem
-API ZwShutdownWorkerFactory ; -> NtShutdownWorkerFactory
+API ZwShutdownWorkerFactory
 API NtSignalAndWaitForSingleObject
 API NtSinglePhaseReject
 API NtStartProfile
 API NtStopProfile
 API NtSubmitIoRing
-API ZwSubscribeWnfStateChange ; -> NtSubscribeWnfStateChange
+API ZwSubscribeWnfStateChange
 API NtSuspendProcess
-API ZwSuspendThread ; -> NtSuspendThread
-API ZwSystemDebugControl ; -> NtSystemDebugControl
+API ZwSuspendThread
+API ZwSystemDebugControl
 API NtTerminateEnclave
-API ZwTerminateJobObject ; -> NtTerminateJobObject
-API ZwTerminateProcess ; -> NtTerminateProcess
-API ZwTerminateThread ; -> NtTerminateThread
+API ZwTerminateJobObject
+API ZwTerminateProcess
+API ZwTerminateThread
 API NtTestAlert
-API ZwThawRegistry ; -> NtThawRegistry
+API ZwThawRegistry
 API NtThawTransactions
 API NtTraceControl
 API NtTraceEvent
-API ZwTranslateFilePath ; -> NtTranslateFilePath
-API ZwUmsThreadYield ; -> NtUmsThreadYield
+API ZwTranslateFilePath
+API ZwUmsThreadYield
 API NtUnloadDriver
-API ZwUnloadKey ; -> NtUnloadKey
+API ZwUnloadKey
 API NtUnloadKey2
-API ZwUnloadKeyEx ; -> NtUnloadKeyEx
-API ZwUnlockFile ; -> NtUnlockFile
-API ZwUnlockVirtualMemory ; -> NtUnlockVirtualMemory
-API ZwUnmapViewOfSection ; -> NtUnmapViewOfSection
-API ZwUnmapViewOfSectionEx ; -> NtUnmapViewOfSectionEx
+API ZwUnloadKeyEx
+API ZwUnlockFile
+API ZwUnlockVirtualMemory
+API ZwUnmapViewOfSection
+API ZwUnmapViewOfSectionEx
 API NtUnsubscribeWnfStateChange
 API NtUpdateWnfStateData
 API NtVdmControl
 API NtWaitForAlertByThreadId
-API ZwWaitForDebugEvent ; -> NtWaitForDebugEvent
-API ZwWaitForKeyedEvent ; -> NtWaitForKeyedEvent
-API ZwWaitForMultipleObjects ; -> NtWaitForMultipleObjects
-API ZwWaitForMultipleObjects32 ; -> NtWaitForMultipleObjects32
-API ZwWaitForSingleObject ; -> NtWaitForSingleObject
-API ZwWaitForWorkViaWorkerFactory ; -> NtWaitForWorkViaWorkerFactory
+API ZwWaitForDebugEvent
+API ZwWaitForKeyedEvent
+API ZwWaitForMultipleObjects
+API ZwWaitForMultipleObjects32
+API ZwWaitForSingleObject
+API ZwWaitForWorkViaWorkerFactory
 API NtWaitHighEventPair
-API ZwWaitLowEventPair ; -> NtWaitLowEventPair
-API ZwWorkerFactoryWorkerReady ; -> NtWorkerFactoryWorkerReady
-API ZwWriteFile ; -> NtWriteFile
-API ZwWriteFileGather ; -> NtWriteFileGather
+API ZwWaitLowEventPair
+API ZwWorkerFactoryWorkerReady
+API ZwWriteFile
+API ZwWriteFileGather
 API NtWriteRequestData
-API ZwWriteVirtualMemory ; -> NtWriteVirtualMemory
+API ZwWriteVirtualMemory
 API NtYieldExecution
 API NtdllDefWindowProc_A
 API NtdllDefWindowProc_W
@@ -750,7 +750,7 @@ API RtlAllocateMemoryBlockLookaside
 API RtlAllocateMemoryZone
 API RtlAllocateWnfSerializationGroup
 API RtlAnsiCharToUnicodeChar
-API RtlxAnsiStringToUnicodeSize ; -> RtlAnsiStringToUnicodeSize
+API RtlxAnsiStringToUnicodeSize
 API RtlAnsiStringToUnicodeString
 API RtlAppendAsciizToString
 API RtlAppendPathElement
@@ -822,7 +822,7 @@ API RtlComputePrivatizedDllName_U
 API RtlConnectToSm
 API RtlConsoleMultiByteToUnicodeN
 API RtlConstructCrossVmEventPath
-API RtlConstructCrossVmEventPath ; -> RtlConstructCrossVmMutexPath
+API RtlConstructCrossVmEventPath
 API RtlContractHashTable
 API RtlConvertDeviceFamilyInfoToString
 API RtlConvertExclusiveToShared
@@ -838,10 +838,10 @@ API RtlCopyExtendedContext
 API RtlCopyLuid
 API RtlCopyLuidAndAttributesArray
 API RtlCopyMappedMemory
-API memcpy ; -> RtlCopyMemory
+API memcpy
 API RtlCopyMemoryNonTemporal
 API RtlCopyMemoryStreamTo
-API RtlCopyMemoryStreamTo ; -> RtlCopyOutOfProcessMemoryStreamTo
+API RtlCopyMemoryStreamTo
 API RtlCopySecurityDescriptor
 API RtlCopySid
 API RtlCopySidAndAttributesArray
@@ -892,7 +892,7 @@ API RtlDeCommitDebugInfo
 API RtlDeNormalizeProcessParams
 API RtlDeactivateActivationContext
 API RtlDeactivateActivationContextUnsafeFast
-API LdrQueryModuleInfoLocalLoaderLock32 ; -> RtlDebugPrintTimes
+API LdrQueryModuleInfoLocalLoaderLock32
 API RtlDecodePointer
 API RtlDecodeRemotePointer
 API RtlDecodeSystemPointer
@@ -960,7 +960,7 @@ API RtlDuplicateUnicodeString
 API RtlEmptyAtomTable
 API RtlEnableEarlyCriticalSectionEventCreation
 API RtlEnableThreadProfiling
-API RtlEnclaveCallDispatcher ; -> RtlEnclaveCallDispatch
+API RtlEnclaveCallDispatcher
 API RtlEnclaveCallDispatchReturn
 API RtlEncodePointer
 API RtlEncodeRemotePointer
@@ -990,7 +990,7 @@ API RtlEthernetAddressToStringA
 API RtlEthernetAddressToStringW
 API RtlEthernetStringToAddressA
 API RtlEthernetStringToAddressW
-API RtlDeleteUmsThreadContext ; -> RtlExecuteUmsThread
+API RtlDeleteUmsThreadContext
 API RtlExitUserProcess
 API RtlExitUserThread
 API RtlExpandEnvironmentStrings
@@ -1026,7 +1026,7 @@ API RtlFindSetBitsAndClear
 API RtlFindSetBitsAndClearEx
 API RtlFindSetBitsEx
 API RtlFindUnicodeSubstring
-API FirstEntrySList ; -> RtlFirstEntrySList
+API FirstEntrySList
 API RtlFirstFreeAce
 API RtlFlsAlloc
 API RtlFlsFree
@@ -1098,7 +1098,7 @@ API RtlGetLengthWithoutTrailingPathSeperators
 API RtlGetLocaleFileMappingAddress
 API RtlGetLongestNtPathLength
 API RtlGetMultiTimePrecise
-API ZwQuerySystemInformation ; -> RtlGetNativeSystemInformation
+API ZwQuerySystemInformation
 API RtlGetNextEntryHashTable
 API RtlGetNextUmsListItem
 API RtlGetNonVolatileToken
@@ -1153,16 +1153,16 @@ API RtlImageRvaToVa
 API RtlImpersonateSelf
 API RtlImpersonateSelfEx
 API RtlIncrementCorrelationVector
-API RtlInitString ; -> RtlInitAnsiString
+API RtlInitString
 API RtlInitAnsiStringEx
 API RtlInitBarrier
 API RtlInitCodePageTable
 API RtlInitEnumerationHashTable
-API RtlFinalReleaseOutOfProcessMemoryStream ; -> RtlInitMemoryStream
+API RtlFinalReleaseOutOfProcessMemoryStream
 API RtlInitNlsTables
-API RtlFinalReleaseOutOfProcessMemoryStream ; -> RtlInitOutOfProcessMemoryStream
+API RtlFinalReleaseOutOfProcessMemoryStream
 API RtlInitString
-API RtlInitUTF8StringEx ; -> RtlInitStringEx
+API RtlInitUTF8StringEx
 API RtlInitStrongEnumerationHashTable
 API RtlInitUTF8String
 API RtlInitUTF8StringEx
@@ -1186,7 +1186,7 @@ API RtlInitializeHandleTable
 API RtlInitializeNtUserPfn
 API RtlInitializeRXact
 API RtlInitializeResource
-API InitializeSListHead ; -> RtlInitializeSListHead
+API InitializeSListHead
 API RtlInitializeSRWLock
 API RtlInitializeSid
 API RtlInitializeSidEx
@@ -1204,7 +1204,7 @@ API RtlInterlockedClearBitRunEx
 API RtlInterlockedFlushSList
 API RtlInterlockedPopEntrySList
 API RtlInterlockedPushEntrySList
-API InterlockedPushListSList ; -> RtlInterlockedPushListSList
+API InterlockedPushListSList
 API RtlInterlockedPushListSListEx
 API RtlInterlockedSetBitRun
 API RtlIoDecodeMemIoResource
@@ -1283,7 +1283,7 @@ API RtlLockBootStatusData
 API RtlLockCurrentThread
 API RtlLockHeap
 API RtlLockMemoryBlockLookaside
-API RtlUnlockMemoryStreamRegion ; -> RtlLockMemoryStreamRegion
+API RtlUnlockMemoryStreamRegion
 API RtlLockMemoryZone
 API RtlLockModuleSection
 API RtlLogStackBackTrace
@@ -1299,7 +1299,7 @@ API RtlLookupFunctionTable
 API RtlMakeSelfRelativeSD
 API RtlMapGenericMask
 API RtlMapSecurityErrorToNtStatus
-API memcpy ; -> RtlMoveMemory
+API memcpy
 API RtlMultiAppendUnicodeStringBuffer
 API RtlMultiByteToUnicodeN
 API RtlMultiByteToUnicodeSize
@@ -1327,7 +1327,7 @@ API RtlNumberOfSetBits
 API RtlNumberOfSetBitsEx
 API RtlNumberOfSetBitsInRange
 API RtlNumberOfSetBitsUlongPtr
-API RtlxOemStringToUnicodeSize ; -> RtlOemStringToUnicodeSize
+API RtlxOemStringToUnicodeSize
 API RtlOemStringToUnicodeString
 API RtlOemToUnicodeN
 API RtlOpenCrossProcessEmulatorWorkConnection
@@ -1400,12 +1400,12 @@ API RtlRaiseException
 API RtlRaiseExceptionForReturnAddressHijack
 API RtlRaiseNoncontinuableException
 API RtlRaiseStatus
-API RtlRandomEx ; -> RtlRandom
+API RtlRandomEx
 API RtlRandomEx
 API RtlRbInsertNodeEx
 API RtlRbRemoveNode
 API RtlReAllocateHeap
-API RtlReadOutOfProcessMemoryStream ; -> RtlReadMemoryStream
+API RtlReadOutOfProcessMemoryStream
 API RtlReadOutOfProcessMemoryStream
 API RtlReadThreadProfilingData
 API RtlRealPredecessor
@@ -1416,7 +1416,7 @@ API RtlRegisterSecureMemoryCacheCallback
 API RtlRegisterThreadWithCsrss
 API RtlRegisterWait
 API RtlReleaseActivationContext
-API RtlAddRefMemoryStream ; -> RtlReleaseMemoryStream
+API RtlAddRefMemoryStream
 API RtlReleasePath
 API RtlReleasePebLock
 API RtlReleasePrivilege
@@ -1442,8 +1442,8 @@ API RtlResetMemoryZone
 API RtlResetNtUserPfn
 API RtlResetRtlTranslations
 API RtlRestoreBootStatusDefaults
-API RtlGuardRestoreContext ; -> RtlRestoreContext
-API RtlSetLastWin32Error ; -> RtlRestoreLastWin32Error
+API RtlGuardRestoreContext
+API RtlSetLastWin32Error
 API RtlRestoreSystemBootStatusDefaults
 API RtlRestoreThreadPreferredUILanguages
 API RtlRetrieveNtUserPfn
@@ -1567,11 +1567,11 @@ API RtlUdiv128
 API RtlUmsThreadYield
 API RtlUnhandledExceptionFilter
 API RtlUnhandledExceptionFilter2
-API RtlxUnicodeStringToOemSize ; -> RtlUnicodeStringToAnsiSize
+API RtlxUnicodeStringToOemSize
 API RtlUnicodeStringToAnsiString
 API RtlUnicodeStringToCountedOemString
 API RtlUnicodeStringToInteger
-API RtlxUnicodeStringToOemSize ; -> RtlUnicodeStringToOemSize
+API RtlxUnicodeStringToOemSize
 API RtlUnicodeStringToOemString
 API RtlUnicodeStringToUTF8String
 API RtlUnicodeToCustomCPN
@@ -1701,7 +1701,7 @@ API RtlpQueryProcessDebugInformationRemote
 API RtlpRefreshCachedUILanguage
 API RtlpSetInstallLanguage
 API RtlpSetPreferredUILanguages
-API RtlpSetPreferredUILanguages ; -> RtlpSetUserPreferredUILanguages
+API RtlpSetPreferredUILanguages
 API RtlpTimeFieldsToTime
 API RtlpTimeToTimeFields
 API RtlpUnWaitCriticalSection
@@ -1712,7 +1712,7 @@ API RtlpWow64GetContextOnAmd64
 API RtlpWow64SetContextOnAmd64
 API RtlxAnsiStringToUnicodeSize
 API RtlxOemStringToUnicodeSize
-API RtlxUnicodeStringToOemSize ; -> RtlxUnicodeStringToAnsiSize
+API RtlxUnicodeStringToOemSize
 API RtlxUnicodeStringToOemSize
 API SbExecuteProcedure
 API SbSelectProcedure
@@ -1788,7 +1788,7 @@ API TpWorkOnBehalfSetTicket
 API VerSetConditionMask
 API WerReportExceptionWorker
 API WerReportSQMEvent
-API WinSqmSetIfMaxDWORD ; -> WinSqmAddToAverageDWORD
+API WinSqmSetIfMaxDWORD
 API WinSqmAddToStream
 API WinSqmAddToStreamEx
 API WinSqmCheckEscalationAddToStreamEx
@@ -1805,332 +1805,332 @@ API WinSqmEventEnabled
 API WinSqmEventWrite
 API WinSqmGetEscalationRuleStatus
 API WinSqmGetInstrumentationProperty
-API WinSqmSetIfMaxDWORD ; -> WinSqmIncrementDWORD
-API SwitchedRtlGetVersion_Current ; -> WinSqmIsOptedIn
+API WinSqmSetIfMaxDWORD
+API SwitchedRtlGetVersion_Current
 API WinSqmIsOptedInEx
-API WinSqmCommonDatapointDelete ; -> WinSqmIsSessionDisabled
-API WinSqmSetIfMaxDWORD ; -> WinSqmSetDWORD
+API WinSqmCommonDatapointDelete
+API WinSqmSetIfMaxDWORD
 API WinSqmSetDWORD64
 API WinSqmSetEscalationInfo
 API WinSqmSetIfMaxDWORD
-API WinSqmSetIfMaxDWORD ; -> WinSqmSetIfMinDWORD
+API WinSqmSetIfMaxDWORD
 API WinSqmSetString
 API WinSqmStartSession
 API WinSqmStartSessionForPartner
-API CsrIdentifyAlertableThread ; -> WinSqmStartSqmOptinListener
+API CsrIdentifyAlertableThread
 API ZwAcceptConnectPort
-API NtAccessCheck ; -> ZwAccessCheck
+API NtAccessCheck
 API ZwAccessCheckAndAuditAlarm
-API NtAccessCheckByType ; -> ZwAccessCheckByType
-API NtAccessCheckByTypeAndAuditAlarm ; -> ZwAccessCheckByTypeAndAuditAlarm
-API NtAccessCheckByTypeResultList ; -> ZwAccessCheckByTypeResultList
-API NtAccessCheckByTypeResultListAndAuditAlarm ; -> ZwAccessCheckByTypeResultListAndAuditAlarm
+API NtAccessCheckByType
+API NtAccessCheckByTypeAndAuditAlarm
+API NtAccessCheckByTypeResultList
+API NtAccessCheckByTypeResultListAndAuditAlarm
 API ZwAccessCheckByTypeResultListAndAuditAlarmByHandle
-API NtAcquireCrossVmMutant ; -> ZwAcquireCrossVmMutant
-API NtAcquireProcessActivityReference ; -> ZwAcquireProcessActivityReference
-API NtAddAtom ; -> ZwAddAtom
+API NtAcquireCrossVmMutant
+API NtAcquireProcessActivityReference
+API NtAddAtom
 API ZwAddAtomEx
-API NtAddBootEntry ; -> ZwAddBootEntry
+API NtAddBootEntry
 API ZwAddDriverEntry
-API NtAdjustGroupsToken ; -> ZwAdjustGroupsToken
+API NtAdjustGroupsToken
 API ZwAdjustPrivilegesToken
-API NtAdjustTokenClaimsAndDeviceGroups ; -> ZwAdjustTokenClaimsAndDeviceGroups
+API NtAdjustTokenClaimsAndDeviceGroups
 API ZwAlertResumeThread
 API ZwAlertThread
-API NtAlertThreadByThreadId ; -> ZwAlertThreadByThreadId
-API NtAllocateLocallyUniqueId ; -> ZwAllocateLocallyUniqueId
+API NtAlertThreadByThreadId
+API NtAllocateLocallyUniqueId
 API ZwAllocateReserveObject
-API NtAllocateUserPhysicalPages ; -> ZwAllocateUserPhysicalPages
-API NtAllocateUserPhysicalPagesEx ; -> ZwAllocateUserPhysicalPagesEx
+API NtAllocateUserPhysicalPages
+API NtAllocateUserPhysicalPagesEx
 API ZwAllocateUuids
 API ZwAllocateVirtualMemory
-API NtAllocateVirtualMemoryEx ; -> ZwAllocateVirtualMemoryEx
-API NtAlpcAcceptConnectPort ; -> ZwAlpcAcceptConnectPort
+API NtAllocateVirtualMemoryEx
+API NtAlpcAcceptConnectPort
 API ZwAlpcCancelMessage
 API ZwAlpcConnectPort
-API NtAlpcConnectPortEx ; -> ZwAlpcConnectPortEx
-API NtAlpcCreatePort ; -> ZwAlpcCreatePort
-API NtAlpcCreatePortSection ; -> ZwAlpcCreatePortSection
+API NtAlpcConnectPortEx
+API NtAlpcCreatePort
+API NtAlpcCreatePortSection
 API ZwAlpcCreateResourceReserve
-API NtAlpcCreateSectionView ; -> ZwAlpcCreateSectionView
-API NtAlpcCreateSecurityContext ; -> ZwAlpcCreateSecurityContext
-API NtAlpcDeletePortSection ; -> ZwAlpcDeletePortSection
+API NtAlpcCreateSectionView
+API NtAlpcCreateSecurityContext
+API NtAlpcDeletePortSection
 API ZwAlpcDeleteResourceReserve
 API ZwAlpcDeleteSectionView
-API NtAlpcDeleteSecurityContext ; -> ZwAlpcDeleteSecurityContext
+API NtAlpcDeleteSecurityContext
 API ZwAlpcDisconnectPort
 API ZwAlpcImpersonateClientContainerOfPort
 API ZwAlpcImpersonateClientOfPort
-API NtAlpcOpenSenderProcess ; -> ZwAlpcOpenSenderProcess
-API NtAlpcOpenSenderThread ; -> ZwAlpcOpenSenderThread
-API NtAlpcQueryInformation ; -> ZwAlpcQueryInformation
-API NtAlpcQueryInformationMessage ; -> ZwAlpcQueryInformationMessage
-API NtAlpcRevokeSecurityContext ; -> ZwAlpcRevokeSecurityContext
-API NtAlpcSendWaitReceivePort ; -> ZwAlpcSendWaitReceivePort
+API NtAlpcOpenSenderProcess
+API NtAlpcOpenSenderThread
+API NtAlpcQueryInformation
+API NtAlpcQueryInformationMessage
+API NtAlpcRevokeSecurityContext
+API NtAlpcSendWaitReceivePort
 API ZwAlpcSetInformation
-API NtApphelpCacheControl ; -> ZwApphelpCacheControl
-API NtAreMappedFilesTheSame ; -> ZwAreMappedFilesTheSame
+API NtApphelpCacheControl
+API NtAreMappedFilesTheSame
 API ZwAssignProcessToJobObject
-API NtAssociateWaitCompletionPacket ; -> ZwAssociateWaitCompletionPacket
+API NtAssociateWaitCompletionPacket
 API ZwCallEnclave
-API NtCallbackReturn ; -> ZwCallbackReturn
-API NtCancelIoFile ; -> ZwCancelIoFile
-API NtCancelIoFileEx ; -> ZwCancelIoFileEx
-API NtCancelSynchronousIoFile ; -> ZwCancelSynchronousIoFile
+API NtCallbackReturn
+API NtCancelIoFile
+API NtCancelIoFileEx
+API NtCancelSynchronousIoFile
 API ZwCancelTimer
-API NtCancelTimer2 ; -> ZwCancelTimer2
-API NtCancelWaitCompletionPacket ; -> ZwCancelWaitCompletionPacket
+API NtCancelTimer2
+API NtCancelWaitCompletionPacket
 API ZwChangeProcessState
-API NtChangeThreadState ; -> ZwChangeThreadState
+API NtChangeThreadState
 API ZwClearEvent
-API NtClose ; -> ZwClose
-API NtCloseObjectAuditAlarm ; -> ZwCloseObjectAuditAlarm
-API NtCommitComplete ; -> ZwCommitComplete
+API NtClose
+API NtCloseObjectAuditAlarm
+API NtCommitComplete
 API ZwCommitEnlistment
-API NtCommitRegistryTransaction ; -> ZwCommitRegistryTransaction
-API NtCommitTransaction ; -> ZwCommitTransaction
+API NtCommitRegistryTransaction
+API NtCommitTransaction
 API ZwCompactKeys
-API NtCompareObjects ; -> ZwCompareObjects
+API NtCompareObjects
 API ZwCompareSigningLevels
-API NtCompareTokens ; -> ZwCompareTokens
+API NtCompareTokens
 API ZwCompleteConnectPort
 API ZwCompressKey
 API ZwConnectPort
 API ZwContinue
 API ZwContinueEx
 API ZwConvertBetweenAuxiliaryCounterAndPerformanceCounter
-API NtCopyFileChunk ; -> ZwCopyFileChunk
+API NtCopyFileChunk
 API ZwCreateCpuPartition
 API ZwCreateCrossVmEvent
-API NtCreateCrossVmMutant ; -> ZwCreateCrossVmMutant
+API NtCreateCrossVmMutant
 API ZwCreateDebugObject
-API NtCreateDirectoryObject ; -> ZwCreateDirectoryObject
+API NtCreateDirectoryObject
 API ZwCreateDirectoryObjectEx
-API NtCreateEnclave ; -> ZwCreateEnclave
+API NtCreateEnclave
 API ZwCreateEnlistment
 API ZwCreateEvent
 API ZwCreateEventPair
-API NtCreateFile ; -> ZwCreateFile
-API NtCreateIRTimer ; -> ZwCreateIRTimer
+API NtCreateFile
+API NtCreateIRTimer
 API ZwCreateIoCompletion
 API ZwCreateIoRing
-API NtCreateJobObject ; -> ZwCreateJobObject
+API NtCreateJobObject
 API ZwCreateJobSet
 API ZwCreateKey
-API NtCreateKeyTransacted ; -> ZwCreateKeyTransacted
+API NtCreateKeyTransacted
 API ZwCreateKeyedEvent
-API NtCreateLowBoxToken ; -> ZwCreateLowBoxToken
-API NtCreateMailslotFile ; -> ZwCreateMailslotFile
-API NtCreateMutant ; -> ZwCreateMutant
+API NtCreateLowBoxToken
+API NtCreateMailslotFile
+API NtCreateMutant
 API ZwCreateNamedPipeFile
 API ZwCreatePagingFile
-API NtCreatePartition ; -> ZwCreatePartition
+API NtCreatePartition
 API ZwCreatePort
 API ZwCreatePrivateNamespace
-API NtCreateProcess ; -> ZwCreateProcess
+API NtCreateProcess
 API ZwCreateProcessEx
 API ZwCreateProcessStateChange
 API ZwCreateProfile
 API ZwCreateProfileEx
-API NtCreateRegistryTransaction ; -> ZwCreateRegistryTransaction
-API NtCreateResourceManager ; -> ZwCreateResourceManager
-API NtCreateSection ; -> ZwCreateSection
-API NtCreateSectionEx ; -> ZwCreateSectionEx
+API NtCreateRegistryTransaction
+API NtCreateResourceManager
+API NtCreateSection
+API NtCreateSectionEx
 API ZwCreateSemaphore
 API ZwCreateSymbolicLinkObject
-API NtCreateThread ; -> ZwCreateThread
-API NtCreateThreadEx ; -> ZwCreateThreadEx
+API NtCreateThread
+API NtCreateThreadEx
 API ZwCreateThreadStateChange
-API NtCreateTimer ; -> ZwCreateTimer
-API NtCreateTimer2 ; -> ZwCreateTimer2
+API NtCreateTimer
+API NtCreateTimer2
 API ZwCreateToken
 API ZwCreateTokenEx
-API NtCreateTransaction ; -> ZwCreateTransaction
-API NtCreateTransactionManager ; -> ZwCreateTransactionManager
+API NtCreateTransaction
+API NtCreateTransactionManager
 API ZwCreateUserProcess
 API ZwCreateWaitCompletionPacket
-API NtCreateWaitablePort ; -> ZwCreateWaitablePort
+API NtCreateWaitablePort
 API ZwCreateWnfStateName
-API NtCreateWorkerFactory ; -> ZwCreateWorkerFactory
+API NtCreateWorkerFactory
 API ZwDebugActiveProcess
 API ZwDebugContinue
-API NtDelayExecution ; -> ZwDelayExecution
-API NtDeleteAtom ; -> ZwDeleteAtom
+API NtDelayExecution
+API NtDeleteAtom
 API ZwDeleteBootEntry
 API ZwDeleteDriverEntry
 API ZwDeleteFile
-API NtDeleteKey ; -> ZwDeleteKey
+API NtDeleteKey
 API ZwDeleteObjectAuditAlarm
 API ZwDeletePrivateNamespace
-API NtDeleteValueKey ; -> ZwDeleteValueKey
+API NtDeleteValueKey
 API ZwDeleteWnfStateData
 API ZwDeleteWnfStateName
-API NtDeviceIoControlFile ; -> ZwDeviceIoControlFile
-API NtDirectGraphicsCall ; -> ZwDirectGraphicsCall
+API NtDeviceIoControlFile
+API NtDirectGraphicsCall
 API ZwDisableLastKnownGood
-API NtDisplayString ; -> ZwDisplayString
+API NtDisplayString
 API ZwDrawText
-API NtDuplicateObject ; -> ZwDuplicateObject
-API NtDuplicateToken ; -> ZwDuplicateToken
-API NtEnableLastKnownGood ; -> ZwEnableLastKnownGood
-API NtEnumerateBootEntries ; -> ZwEnumerateBootEntries
+API NtDuplicateObject
+API NtDuplicateToken
+API NtEnableLastKnownGood
+API NtEnumerateBootEntries
 API ZwEnumerateDriverEntries
-API NtEnumerateKey ; -> ZwEnumerateKey
+API NtEnumerateKey
 API ZwEnumerateSystemEnvironmentValuesEx
 API ZwEnumerateTransactionObject
 API ZwEnumerateValueKey
 API ZwExtendSection
-API NtFilterBootOption ; -> ZwFilterBootOption
+API NtFilterBootOption
 API ZwFilterToken
 API ZwFilterTokenEx
 API ZwFindAtom
-API NtFlushBuffersFile ; -> ZwFlushBuffersFile
+API NtFlushBuffersFile
 API ZwFlushBuffersFileEx
-API NtFlushInstallUILanguage ; -> ZwFlushInstallUILanguage
-API NtFlushInstructionCache ; -> ZwFlushInstructionCache
-API NtFlushKey ; -> ZwFlushKey
-API NtFlushProcessWriteBuffers ; -> ZwFlushProcessWriteBuffers
+API NtFlushInstallUILanguage
+API NtFlushInstructionCache
+API NtFlushKey
+API NtFlushProcessWriteBuffers
 API ZwFlushVirtualMemory
 API ZwFlushWriteBuffer
-API NtFreeUserPhysicalPages ; -> ZwFreeUserPhysicalPages
-API NtFreeVirtualMemory ; -> ZwFreeVirtualMemory
-API NtFreezeRegistry ; -> ZwFreezeRegistry
-API NtFreezeTransactions ; -> ZwFreezeTransactions
+API NtFreeUserPhysicalPages
+API NtFreeVirtualMemory
+API NtFreezeRegistry
+API NtFreezeTransactions
 API ZwFsControlFile
 API ZwGetCachedSigningLevel
 API ZwGetCompleteWnfStateSubscription
-API NtGetContextThread ; -> ZwGetContextThread
-API NtGetCurrentProcessorNumber ; -> ZwGetCurrentProcessorNumber
+API NtGetContextThread
+API NtGetCurrentProcessorNumber
 API ZwGetCurrentProcessorNumberEx
 API ZwGetDevicePowerState
-API NtGetMUIRegistryInfo ; -> ZwGetMUIRegistryInfo
-API NtGetNextProcess ; -> ZwGetNextProcess
+API NtGetMUIRegistryInfo
+API NtGetNextProcess
 API ZwGetNextThread
-API NtGetNlsSectionPtr ; -> ZwGetNlsSectionPtr
-API NtGetNotificationResourceManager ; -> ZwGetNotificationResourceManager
+API NtGetNlsSectionPtr
+API NtGetNotificationResourceManager
 API ZwGetWriteWatch
 API ZwImpersonateAnonymousToken
-API NtImpersonateClientOfPort ; -> ZwImpersonateClientOfPort
-API NtImpersonateThread ; -> ZwImpersonateThread
+API NtImpersonateClientOfPort
+API NtImpersonateThread
 API ZwInitializeEnclave
-API NtInitializeNlsFiles ; -> ZwInitializeNlsFiles
-API NtInitializeRegistry ; -> ZwInitializeRegistry
+API NtInitializeNlsFiles
+API NtInitializeRegistry
 API ZwInitiatePowerAction
 API ZwIsProcessInJob
-API NtIsSystemResumeAutomatic ; -> ZwIsSystemResumeAutomatic
-API NtIsUILanguageComitted ; -> ZwIsUILanguageComitted
-API NtListenPort ; -> ZwListenPort
-API NtLoadDriver ; -> ZwLoadDriver
-API NtLoadEnclaveData ; -> ZwLoadEnclaveData
-API NtLoadKey ; -> ZwLoadKey
+API NtIsSystemResumeAutomatic
+API NtIsUILanguageComitted
+API NtListenPort
+API NtLoadDriver
+API NtLoadEnclaveData
+API NtLoadKey
 API ZwLoadKey2
 API ZwLoadKey3
 API ZwLoadKeyEx
-API NtLockFile ; -> ZwLockFile
+API NtLockFile
 API ZwLockProductActivationKeys
-API NtLockRegistryKey ; -> ZwLockRegistryKey
-API NtLockVirtualMemory ; -> ZwLockVirtualMemory
+API NtLockRegistryKey
+API NtLockVirtualMemory
 API ZwMakePermanentObject
-API NtMakeTemporaryObject ; -> ZwMakeTemporaryObject
-API NtManageHotPatch ; -> ZwManageHotPatch
+API NtMakeTemporaryObject
+API NtManageHotPatch
 API ZwManagePartition
 API ZwMapCMFModule
 API ZwMapUserPhysicalPages
 API ZwMapUserPhysicalPagesScatter
 API ZwMapViewOfSection
-API NtMapViewOfSectionEx ; -> ZwMapViewOfSectionEx
-API NtModifyBootEntry ; -> ZwModifyBootEntry
-API NtModifyDriverEntry ; -> ZwModifyDriverEntry
+API NtMapViewOfSectionEx
+API NtModifyBootEntry
+API NtModifyDriverEntry
 API ZwNotifyChangeDirectoryFile
 API ZwNotifyChangeDirectoryFileEx
-API NtNotifyChangeKey ; -> ZwNotifyChangeKey
-API NtNotifyChangeMultipleKeys ; -> ZwNotifyChangeMultipleKeys
-API NtNotifyChangeSession ; -> ZwNotifyChangeSession
+API NtNotifyChangeKey
+API NtNotifyChangeMultipleKeys
+API NtNotifyChangeSession
 API ZwOpenCpuPartition
-API NtOpenDirectoryObject ; -> ZwOpenDirectoryObject
+API NtOpenDirectoryObject
 API ZwOpenEnlistment
 API ZwOpenEvent
-API NtOpenEventPair ; -> ZwOpenEventPair
-API NtOpenFile ; -> ZwOpenFile
+API NtOpenEventPair
+API NtOpenFile
 API ZwOpenIoCompletion
-API NtOpenJobObject ; -> ZwOpenJobObject
+API NtOpenJobObject
 API ZwOpenKey
 API ZwOpenKeyEx
-API NtOpenKeyTransacted ; -> ZwOpenKeyTransacted
-API NtOpenKeyTransactedEx ; -> ZwOpenKeyTransactedEx
-API NtOpenKeyedEvent ; -> ZwOpenKeyedEvent
-API NtOpenMutant ; -> ZwOpenMutant
-API NtOpenObjectAuditAlarm ; -> ZwOpenObjectAuditAlarm
-API NtOpenPartition ; -> ZwOpenPartition
+API NtOpenKeyTransacted
+API NtOpenKeyTransactedEx
+API NtOpenKeyedEvent
+API NtOpenMutant
+API NtOpenObjectAuditAlarm
+API NtOpenPartition
 API ZwOpenPrivateNamespace
-API NtOpenProcess ; -> ZwOpenProcess
-API NtOpenProcessToken ; -> ZwOpenProcessToken
+API NtOpenProcess
+API NtOpenProcessToken
 API ZwOpenProcessTokenEx
 API ZwOpenRegistryTransaction
-API NtOpenResourceManager ; -> ZwOpenResourceManager
+API NtOpenResourceManager
 API ZwOpenSection
-API NtOpenSemaphore ; -> ZwOpenSemaphore
+API NtOpenSemaphore
 API ZwOpenSession
 API ZwOpenSymbolicLinkObject
 API ZwOpenThread
-API NtOpenThreadToken ; -> ZwOpenThreadToken
+API NtOpenThreadToken
 API ZwOpenThreadTokenEx
 API ZwOpenTimer
 API ZwOpenTransaction
-API NtOpenTransactionManager ; -> ZwOpenTransactionManager
-API NtPlugPlayControl ; -> ZwPlugPlayControl
+API NtOpenTransactionManager
+API NtPlugPlayControl
 API ZwPowerInformation
-API NtPrePrepareComplete ; -> ZwPrePrepareComplete
+API NtPrePrepareComplete
 API ZwPrePrepareEnlistment
 API ZwPrepareComplete
-API NtPrepareEnlistment ; -> ZwPrepareEnlistment
+API NtPrepareEnlistment
 API ZwPrivilegeCheck
 API ZwPrivilegeObjectAuditAlarm
-API NtPrivilegedServiceAuditAlarm ; -> ZwPrivilegedServiceAuditAlarm
-API NtPropagationComplete ; -> ZwPropagationComplete
-API NtPropagationFailed ; -> ZwPropagationFailed
+API NtPrivilegedServiceAuditAlarm
+API NtPropagationComplete
+API NtPropagationFailed
 API ZwProtectVirtualMemory
-API NtPssCaptureVaSpaceBulk ; -> ZwPssCaptureVaSpaceBulk
+API NtPssCaptureVaSpaceBulk
 API ZwPulseEvent
 API ZwQueryAttributesFile
 API ZwQueryAuxiliaryCounterFrequency
 API ZwQueryBootEntryOrder
-API NtQueryBootOptions ; -> ZwQueryBootOptions
+API NtQueryBootOptions
 API ZwQueryDebugFilterState
 API ZwQueryDefaultLocale
 API ZwQueryDefaultUILanguage
 API ZwQueryDirectoryFile
-API NtQueryDirectoryFileEx ; -> ZwQueryDirectoryFileEx
+API NtQueryDirectoryFileEx
 API ZwQueryDirectoryObject
-API NtQueryDriverEntryOrder ; -> ZwQueryDriverEntryOrder
-API NtQueryEaFile ; -> ZwQueryEaFile
+API NtQueryDriverEntryOrder
+API NtQueryEaFile
 API ZwQueryEvent
-API NtQueryFullAttributesFile ; -> ZwQueryFullAttributesFile
-API NtQueryInformationAtom ; -> ZwQueryInformationAtom
-API NtQueryInformationByName ; -> ZwQueryInformationByName
-API NtQueryInformationCpuPartition ; -> ZwQueryInformationCpuPartition
+API NtQueryFullAttributesFile
+API NtQueryInformationAtom
+API NtQueryInformationByName
+API NtQueryInformationCpuPartition
 API ZwQueryInformationEnlistment
-API NtQueryInformationFile ; -> ZwQueryInformationFile
-API NtQueryInformationJobObject ; -> ZwQueryInformationJobObject
-API NtQueryInformationPort ; -> ZwQueryInformationPort
+API NtQueryInformationFile
+API NtQueryInformationJobObject
+API NtQueryInformationPort
 API ZwQueryInformationProcess
 API ZwQueryInformationResourceManager
 API ZwQueryInformationThread
-API NtQueryInformationToken ; -> ZwQueryInformationToken
-API NtQueryInformationTransaction ; -> ZwQueryInformationTransaction
+API NtQueryInformationToken
+API NtQueryInformationTransaction
 API ZwQueryInformationTransactionManager
-API NtQueryInformationWorkerFactory ; -> ZwQueryInformationWorkerFactory
+API NtQueryInformationWorkerFactory
 API ZwQueryInstallUILanguage
-API NtQueryIntervalProfile ; -> ZwQueryIntervalProfile
+API NtQueryIntervalProfile
 API ZwQueryIoCompletion
 API ZwQueryIoRingCapabilities
-API NtQueryKey ; -> ZwQueryKey
+API NtQueryKey
 API ZwQueryLicenseValue
 API ZwQueryMultipleValueKey
-API NtQueryMutant ; -> ZwQueryMutant
+API NtQueryMutant
 API ZwQueryObject
 API ZwQueryOpenSubKeys
-API NtQueryOpenSubKeysEx ; -> ZwQueryOpenSubKeysEx
+API NtQueryOpenSubKeysEx
 API ZwQueryPerformanceCounter
 API ZwQueryPortInformationProcess
 API ZwQueryQuotaInformationFile
@@ -2138,172 +2138,172 @@ API ZwQuerySection
 API ZwQuerySecurityAttributesToken
 API ZwQuerySecurityObject
 API ZwQuerySecurityPolicy
-API NtQuerySemaphore ; -> ZwQuerySemaphore
-API NtQuerySymbolicLinkObject ; -> ZwQuerySymbolicLinkObject
+API NtQuerySemaphore
+API NtQuerySymbolicLinkObject
 API ZwQuerySystemEnvironmentValue
-API NtQuerySystemEnvironmentValueEx ; -> ZwQuerySystemEnvironmentValueEx
+API NtQuerySystemEnvironmentValueEx
 API ZwQuerySystemInformation
-API NtQuerySystemInformationEx ; -> ZwQuerySystemInformationEx
-API NtQuerySystemTime ; -> ZwQuerySystemTime
-API NtQueryTimer ; -> ZwQueryTimer
-API NtQueryTimerResolution ; -> ZwQueryTimerResolution
-API NtQueryValueKey ; -> ZwQueryValueKey
-API NtQueryVirtualMemory ; -> ZwQueryVirtualMemory
-API NtQueryVolumeInformationFile ; -> ZwQueryVolumeInformationFile
+API NtQuerySystemInformationEx
+API NtQuerySystemTime
+API NtQueryTimer
+API NtQueryTimerResolution
+API NtQueryValueKey
+API NtQueryVirtualMemory
+API NtQueryVolumeInformationFile
 API ZwQueryWnfStateData
-API NtQueryWnfStateNameInformation ; -> ZwQueryWnfStateNameInformation
+API NtQueryWnfStateNameInformation
 API ZwQueueApcThread
 API ZwQueueApcThreadEx
 API ZwQueueApcThreadEx2
-API NtRaiseException ; -> ZwRaiseException
-API NtRaiseHardError ; -> ZwRaiseHardError
+API NtRaiseException
+API NtRaiseHardError
 API ZwReadFile
-API NtReadFileScatter ; -> ZwReadFileScatter
-API NtReadOnlyEnlistment ; -> ZwReadOnlyEnlistment
+API NtReadFileScatter
+API NtReadOnlyEnlistment
 API ZwReadRequestData
 API ZwReadVirtualMemory
-API NtReadVirtualMemoryEx ; -> ZwReadVirtualMemoryEx
+API NtReadVirtualMemoryEx
 API ZwRecoverEnlistment
 API ZwRecoverResourceManager
-API NtRecoverTransactionManager ; -> ZwRecoverTransactionManager
+API NtRecoverTransactionManager
 API ZwRegisterProtocolAddressInformation
-API NtRegisterThreadTerminatePort ; -> ZwRegisterThreadTerminatePort
+API NtRegisterThreadTerminatePort
 API ZwReleaseKeyedEvent
-API NtReleaseMutant ; -> ZwReleaseMutant
+API NtReleaseMutant
 API ZwReleaseSemaphore
 API ZwReleaseWorkerFactoryWorker
 API ZwRemoveIoCompletion
 API ZwRemoveIoCompletionEx
 API ZwRemoveProcessDebug
-API NtRenameKey ; -> ZwRenameKey
+API NtRenameKey
 API ZwRenameTransactionManager
-API NtReplaceKey ; -> ZwReplaceKey
-API NtReplacePartitionUnit ; -> ZwReplacePartitionUnit
-API NtReplyPort ; -> ZwReplyPort
-API NtReplyWaitReceivePort ; -> ZwReplyWaitReceivePort
-API NtReplyWaitReceivePortEx ; -> ZwReplyWaitReceivePortEx
-API NtReplyWaitReplyPort ; -> ZwReplyWaitReplyPort
+API NtReplaceKey
+API NtReplacePartitionUnit
+API NtReplyPort
+API NtReplyWaitReceivePort
+API NtReplyWaitReceivePortEx
+API NtReplyWaitReplyPort
 API ZwRequestPort
 API ZwRequestWaitReplyPort
 API ZwResetEvent
 API ZwResetWriteWatch
 API ZwRestoreKey
-API NtResumeProcess ; -> ZwResumeProcess
-API NtResumeThread ; -> ZwResumeThread
+API NtResumeProcess
+API NtResumeThread
 API ZwRevertContainerImpersonation
 API ZwRollbackComplete
 API ZwRollbackEnlistment
-API NtRollbackRegistryTransaction ; -> ZwRollbackRegistryTransaction
-API NtRollbackTransaction ; -> ZwRollbackTransaction
+API NtRollbackRegistryTransaction
+API NtRollbackTransaction
 API ZwRollforwardTransactionManager
-API NtSaveKey ; -> ZwSaveKey
+API NtSaveKey
 API ZwSaveKeyEx
-API NtSaveMergedKeys ; -> ZwSaveMergedKeys
-API NtSecureConnectPort ; -> ZwSecureConnectPort
+API NtSaveMergedKeys
+API NtSecureConnectPort
 API ZwSerializeBoot
-API NtSetBootEntryOrder ; -> ZwSetBootEntryOrder
-API NtSetBootOptions ; -> ZwSetBootOptions
+API NtSetBootEntryOrder
+API NtSetBootOptions
 API ZwSetCachedSigningLevel
-API NtSetCachedSigningLevel2 ; -> ZwSetCachedSigningLevel2
-API NtSetContextThread ; -> ZwSetContextThread
-API NtSetDebugFilterState ; -> ZwSetDebugFilterState
+API NtSetCachedSigningLevel2
+API NtSetContextThread
+API NtSetDebugFilterState
 API ZwSetDefaultHardErrorPort
 API ZwSetDefaultLocale
 API ZwSetDefaultUILanguage
 API ZwSetDriverEntryOrder
 API ZwSetEaFile
 API ZwSetEvent
-API NtSetEventBoostPriority ; -> ZwSetEventBoostPriority
+API NtSetEventBoostPriority
 API ZwSetHighEventPair
 API ZwSetHighWaitLowEventPair
-API NtSetIRTimer ; -> ZwSetIRTimer
-API NtSetInformationCpuPartition ; -> ZwSetInformationCpuPartition
-API NtSetInformationDebugObject ; -> ZwSetInformationDebugObject
+API NtSetIRTimer
+API NtSetInformationCpuPartition
+API NtSetInformationDebugObject
 API ZwSetInformationEnlistment
 API ZwSetInformationFile
 API ZwSetInformationIoRing
 API ZwSetInformationJobObject
 API ZwSetInformationKey
 API ZwSetInformationObject
-API NtSetInformationProcess ; -> ZwSetInformationProcess
-API NtSetInformationResourceManager ; -> ZwSetInformationResourceManager
+API NtSetInformationProcess
+API NtSetInformationResourceManager
 API ZwSetInformationSymbolicLink
 API ZwSetInformationThread
 API ZwSetInformationToken
-API NtSetInformationTransaction ; -> ZwSetInformationTransaction
-API NtSetInformationTransactionManager ; -> ZwSetInformationTransactionManager
-API NtSetInformationVirtualMemory ; -> ZwSetInformationVirtualMemory
+API NtSetInformationTransaction
+API NtSetInformationTransactionManager
+API NtSetInformationVirtualMemory
 API ZwSetInformationWorkerFactory
 API ZwSetIntervalProfile
-API NtSetIoCompletion ; -> ZwSetIoCompletion
-API NtSetIoCompletionEx ; -> ZwSetIoCompletionEx
+API NtSetIoCompletion
+API NtSetIoCompletionEx
 API ZwSetLdtEntries
-API NtSetLowEventPair ; -> ZwSetLowEventPair
+API NtSetLowEventPair
 API ZwSetLowWaitHighEventPair
-API NtSetQuotaInformationFile ; -> ZwSetQuotaInformationFile
+API NtSetQuotaInformationFile
 API ZwSetSecurityObject
-API NtSetSystemEnvironmentValue ; -> ZwSetSystemEnvironmentValue
-API NtSetSystemEnvironmentValueEx ; -> ZwSetSystemEnvironmentValueEx
-API NtSetSystemInformation ; -> ZwSetSystemInformation
-API NtSetSystemPowerState ; -> ZwSetSystemPowerState
+API NtSetSystemEnvironmentValue
+API NtSetSystemEnvironmentValueEx
+API NtSetSystemInformation
+API NtSetSystemPowerState
 API ZwSetSystemTime
-API NtSetThreadExecutionState ; -> ZwSetThreadExecutionState
-API NtSetTimer ; -> ZwSetTimer
+API NtSetThreadExecutionState
+API NtSetTimer
 API ZwSetTimer2
-API NtSetTimerEx ; -> ZwSetTimerEx
-API NtSetTimerResolution ; -> ZwSetTimerResolution
+API NtSetTimerEx
+API NtSetTimerResolution
 API ZwSetUuidSeed
 API ZwSetValueKey
-API NtSetVolumeInformationFile ; -> ZwSetVolumeInformationFile
-API NtSetWnfProcessNotificationEvent ; -> ZwSetWnfProcessNotificationEvent
-API NtShutdownSystem ; -> ZwShutdownSystem
+API NtSetVolumeInformationFile
+API NtSetWnfProcessNotificationEvent
+API NtShutdownSystem
 API ZwShutdownWorkerFactory
-API NtSignalAndWaitForSingleObject ; -> ZwSignalAndWaitForSingleObject
-API NtSinglePhaseReject ; -> ZwSinglePhaseReject
-API NtStartProfile ; -> ZwStartProfile
-API NtStopProfile ; -> ZwStopProfile
-API NtSubmitIoRing ; -> ZwSubmitIoRing
+API NtSignalAndWaitForSingleObject
+API NtSinglePhaseReject
+API NtStartProfile
+API NtStopProfile
+API NtSubmitIoRing
 API ZwSubscribeWnfStateChange
-API NtSuspendProcess ; -> ZwSuspendProcess
+API NtSuspendProcess
 API ZwSuspendThread
 API ZwSystemDebugControl
-API NtTerminateEnclave ; -> ZwTerminateEnclave
+API NtTerminateEnclave
 API ZwTerminateJobObject
 API ZwTerminateProcess
 API ZwTerminateThread
-API NtTestAlert ; -> ZwTestAlert
+API NtTestAlert
 API ZwThawRegistry
-API NtThawTransactions ; -> ZwThawTransactions
-API NtTraceControl ; -> ZwTraceControl
-API NtTraceEvent ; -> ZwTraceEvent
+API NtThawTransactions
+API NtTraceControl
+API NtTraceEvent
 API ZwTranslateFilePath
 API ZwUmsThreadYield
-API NtUnloadDriver ; -> ZwUnloadDriver
+API NtUnloadDriver
 API ZwUnloadKey
-API NtUnloadKey2 ; -> ZwUnloadKey2
+API NtUnloadKey2
 API ZwUnloadKeyEx
 API ZwUnlockFile
 API ZwUnlockVirtualMemory
 API ZwUnmapViewOfSection
 API ZwUnmapViewOfSectionEx
-API NtUnsubscribeWnfStateChange ; -> ZwUnsubscribeWnfStateChange
-API NtUpdateWnfStateData ; -> ZwUpdateWnfStateData
-API NtVdmControl ; -> ZwVdmControl
-API NtWaitForAlertByThreadId ; -> ZwWaitForAlertByThreadId
+API NtUnsubscribeWnfStateChange
+API NtUpdateWnfStateData
+API NtVdmControl
+API NtWaitForAlertByThreadId
 API ZwWaitForDebugEvent
 API ZwWaitForKeyedEvent
 API ZwWaitForMultipleObjects
 API ZwWaitForMultipleObjects32
 API ZwWaitForSingleObject
 API ZwWaitForWorkViaWorkerFactory
-API NtWaitHighEventPair ; -> ZwWaitHighEventPair
+API NtWaitHighEventPair
 API ZwWaitLowEventPair
 API ZwWorkerFactoryWorkerReady
 API ZwWriteFile
 API ZwWriteFileGather
-API NtWriteRequestData ; -> ZwWriteRequestData
+API NtWriteRequestData
 API ZwWriteVirtualMemory
-API NtYieldExecution ; -> ZwYieldExecution
+API NtYieldExecution
 API __C_specific_handler
 API __chkstk
 API __isascii
@@ -2319,7 +2319,7 @@ API _i64toa_s
 API _i64tow
 API _i64tow_s
 API _itoa
-API _ltoa_s ; -> _itoa_s
+API _ltoa_s
 API _itow
 API _itow_s
 API _lfind
@@ -2327,7 +2327,7 @@ API _local_unwind
 API _ltoa
 API _ltoa_s
 API _ltow
-API _itow_s ; -> _ltow_s
+API _itow_s
 API _makepath_s
 API _memccpy
 API _memicmp
@@ -2341,7 +2341,7 @@ API _snwprintf_s
 API _snwscanf_s
 API _splitpath
 API _splitpath_s
-API _stricmp ; -> _strcmpi
+API _stricmp
 API _stricmp
 API _strlwr
 API _strlwr_s
@@ -2390,7 +2390,7 @@ API bsearch
 API bsearch_s
 API ceil
 API cos
-;API fabs
+API $fabs
 API floor
 API isalnum
 API isalpha
@@ -2421,9 +2421,9 @@ API memchr
 API memcmp
 API memcpy
 API memcpy_s
-API memcpy ; -> memmove
+API memcpy
 API memmove_s
-API memset$thunk$772440563353939046 ; -> memset
+API memset$thunk$772440563353939046
 API pow
 API qsort
 API qsort_s
@@ -2454,7 +2454,7 @@ API strstr
 API strtok_s
 API strtol
 API strtoul
-API _swprintf ; -> swprintf
+API _swprintf
 API swprintf_s
 API swscanf_s
 API tan

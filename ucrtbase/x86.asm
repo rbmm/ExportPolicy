@@ -26,7 +26,7 @@ API __CIsqrt
 API __CItan
 API __CItanh
 API __Cbuild
-API __LCmulcc ; -> _Cmulcc
+API __LCmulcc
 API __Cmulcr
 API __CreateFrameInfo
 API __CxxThrowException@8
@@ -40,10 +40,10 @@ API __Getdays
 API __Getmonths
 API __Gettnames
 API __IsExceptionObjectToBeDestroyed
-API __Cbuild ; -> _LCbuild
+API __Cbuild
 API __LCmulcc
-API __Cmulcr ; -> _LCmulcr
-API __NLG_Dispatch ; -> _NLG_Dispatch2
+API __Cmulcr
+API __NLG_Dispatch
 API __NLG_Return
 API __NLG_Return2
 API __SetWinRTOutOfMemoryExceptionCallback
@@ -57,8 +57,8 @@ API ___BuildCatchObject
 API ___BuildCatchObjectHelper
 API ___CxxDetectRethrow
 API ___CxxExceptionFilter
-API ___CxxFrameHandler3 ; -> __CxxFrameHandler
-API ___CxxFrameHandler3 ; -> __CxxFrameHandler2
+API ___CxxFrameHandler3
+API ___CxxFrameHandler3
 API ___CxxFrameHandler3
 API ___CxxLongjmpUnwind@4
 API ___CxxQueryExceptionSize
@@ -90,7 +90,7 @@ API ___current_exception
 API ___current_exception_context
 API ___daylight
 API ___dcrt_get_wide_environment_from_os
-API ___dcrt_initial_narrow_environment
+API __dcrt_initial_narrow_environment
 API ___doserrno
 API ___dstbias
 API ___fpe_flt_rounds
@@ -102,7 +102,7 @@ API ___isascii
 API ___iscsym
 API ___iscsymf
 API ___iswcsym
-API __iswcsymf_l ; -> __iswcsymf
+API __iswcsymf_l
 API ___libm_sse2_acos
 API ___libm_sse2_acosf
 API ___libm_sse2_asin
@@ -202,11 +202,11 @@ API __atoflt
 API __atoflt_l
 API __atoi64
 API __atoi64_l
-API __atol_l ; -> _atoi_l
+API __atol_l
 API __atol_l
 API __atoldbl
 API __atoldbl_l
-API __atoi64_l ; -> _atoll_l
+API __atoi64_l
 API __beep
 API __beginthread
 API __beginthreadex
@@ -260,8 +260,8 @@ API __difftime32
 API __difftime64
 API __dlog
 API __dnorm
-API __ldpcomp ; -> _dpcomp
-API __ldpoly ; -> _dpoly
+API __ldpcomp
+API __ldpoly
 API __dscale
 API __dsign
 API __dsin
@@ -289,7 +289,7 @@ API __execv
 API __execve
 API __execvp
 API __execvpe
-API __Exit ; -> _exit
+API __Exit
 API __expand
 API __fclose_nolock
 API __fcloseall
@@ -310,7 +310,7 @@ API __fdtest
 API __fdunscale
 API __fflush_nolock
 API __fgetc_nolock
-API _getchar ; -> _fgetchar
+API _getchar
 API __fgetwc_nolock
 API __fgetwchar
 API __filelength
@@ -333,7 +333,7 @@ API __fpreset
 API __fputc_nolock
 API __fputchar
 API __fputwc_nolock
-API _putwchar ; -> _fputwchar
+API _putwchar
 API __fread_nolock
 API __fread_nolock_s
 API __free_base
@@ -350,9 +350,9 @@ API __ftell_nolock
 API __ftelli64
 API __ftelli64_nolock
 API __ftime32
-API __ftime32 ; -> _ftime32_s
+API __ftime32
 API __ftime64
-API __ftime64 ; -> _ftime64_s
+API __ftime64
 API __ftol
 API __fullpath
 API __futime32
@@ -510,20 +510,20 @@ API __isupper_l
 API __iswalnum_l
 API __iswalpha_l
 API __iswblank_l
-API _iswcntrl ; -> _iswcntrl_l
-API ___iswcsym ; -> _iswcsym_l
+API _iswcntrl
+API ___iswcsym
 API __iswcsymf_l
 API __iswctype_l
-API _iswdigit ; -> _iswdigit_l
-API _iswgraph ; -> _iswgraph_l
+API _iswdigit
+API _iswgraph
 API __iswlower_l
 API __iswprint_l
 API __iswpunct_l
 API __iswspace_l
-API _iswupper ; -> _iswupper_l
-API _iswxdigit ; -> _iswxdigit_l
+API _iswupper
+API _iswxdigit
 API __isxdigit_l
-API __ltoa ; -> _itoa
+API __ltoa
 API __itoa_s
 API __itow
 API __itow_s
@@ -532,13 +532,13 @@ API __j1
 API __jn
 API __kbhit
 API __ld_int
-API __dclass ; -> _ldclass
+API __dclass
 API __ldexp
 API __ldlog
 API __ldpcomp
 API __ldpoly
 API __ldscale
-API __dsign ; -> _ldsign
+API __dsign
 API __ldsin
 API __ldtest
 API __ldunscale
@@ -568,14 +568,14 @@ API __locking
 API __logb
 API __longjmpex
 API __lrotl
-API __rotr ; -> _lrotr
+API __rotr
 API __lsearch
 API __lsearch_s
 API __lseek
 API __lseeki64
 API __ltoa
-API __itoa_s ; -> _ltoa_s
-API __itow ; -> _ltow
+API __itoa_s
+API __itow
 API __ltow_s
 API __makepath
 API __makepath_s
@@ -584,7 +584,7 @@ API __mbbtombc
 API __mbbtombc_l
 API __mbbtype
 API __mbbtype_l
-API __mbcasemap
+API _mbcasemap
 API __mbccpy
 API __mbccpy_l
 API __mbccpy_s
@@ -622,7 +622,7 @@ API __mbscspn
 API __mbscspn_l
 API __mbsdec
 API __mbsdec_l
-API __strdup ; -> _mbsdup
+API __strdup
 API __mbsicmp
 API __mbsicmp_l
 API __mbsicoll
@@ -844,10 +844,10 @@ API __o__atodbl_l
 API __o__atof_l
 API __o__atoflt
 API __o__atoflt_l
-API __o_atoll ; -> _o__atoi64
-API __o__atoll_l ; -> _o__atoi64_l
+API __o_atoll
+API __o__atoll_l
 API __o__atoi_l
-API __o__atoi_l ; -> _o__atol_l
+API __o__atoi_l
 API __o__atoldbl
 API __o__atoldbl_l
 API __o__atoll_l
@@ -882,12 +882,12 @@ API __o__ctime32_s
 API __o__ctime64_s
 API __o__cwait
 API __o__d_int
-API __o__ldclass ; -> _o__dclass
+API __o__ldclass
 API __o__difftime32
 API __o__difftime64
 API __o__dlog
 API __o__dnorm
-API __o__ldpcomp ; -> _o__dpcomp
+API __o__ldpcomp
 API __o__dpoly
 API __o__dscale
 API __o__dsign
@@ -1110,7 +1110,7 @@ API __o__ldclass
 API __o__ldexp
 API __o__ldlog
 API __o__ldpcomp
-API __o__dpoly ; -> _o__ldpoly
+API __o__dpoly
 API __o__ldscale
 API __o__ldsign
 API __o__ldsin
@@ -1142,7 +1142,7 @@ API __o__lsearch_s
 API __o__lseek
 API __o__lseeki64
 API __o__ltoa
-API __o__itoa_s ; -> _o__ltoa_s
+API __o__itoa_s
 API __o__ltow
 API __o__ltow_s
 API __o__makepath
@@ -1292,7 +1292,7 @@ API __o__mktemp_s
 API __o__mktime32
 API __o__mktime64
 API __o__msize
-API __o_nextafter ; -> _o__nextafter
+API __o_nextafter
 API __o__open_osfhandle
 API __o__pclose
 API __o__pipe
@@ -1372,15 +1372,15 @@ API __o__strnset_s
 API __o__strset_s
 API __o__strtime
 API __o__strtime_s
-API __o__strtold_l ; -> _o__strtod_l
+API __o__strtold_l
 API __o__strtof_l
 API __o__strtoi64
-API __o__strtoll_l ; -> _o__strtoi64_l
+API __o__strtoll_l
 API __o__strtol_l
 API __o__strtold_l
 API __o__strtoll_l
 API __o__strtoui64
-API __o__strtoull_l ; -> _o__strtoui64_l
+API __o__strtoull_l
 API __o__strtoul_l
 API __o__strtoull_l
 API __o__strupr
@@ -1454,15 +1454,15 @@ API __o__wcsset
 API __o__wcsset_s
 API __o__wcstod_l
 API __o__wcstof_l
-API __o_wcstoll ; -> _o__wcstoi64
+API __o_wcstoll
 API __o__wcstoi64_l
 API __o__wcstol_l
-API __o__wcstod_l ; -> _o__wcstold_l
-API __o__wcstoi64_l ; -> _o__wcstoll_l
+API __o__wcstod_l
+API __o__wcstoi64_l
 API __o__wcstombs_l
 API __o__wcstombs_s_l
 API __o__wcstoui64
-API __o__wcstoull_l ; -> _o__wcstoui64_l
+API __o__wcstoull_l
 API __o__wcstoul_l
 API __o__wcstoull_l
 API __o__wcsupr
@@ -1539,11 +1539,11 @@ API __o__wtof_l
 API __o__wtoi
 API __o__wtoi64
 API __o__wtoi64_l
-API __o__wtol_l ; -> _o__wtoi_l
+API __o__wtol_l
 API __o__wtol
 API __o__wtol_l
-API __o__wtoi64 ; -> _o__wtoll
-API __o__wtoi64_l ; -> _o__wtoll_l
+API __o__wtoi64
+API __o__wtoi64_l
 API __o__wunlink
 API __o__wutime32
 API __o__wutime64
@@ -1624,13 +1624,13 @@ API __o_fsetpos
 API __o_ftell
 API __o_fwrite
 API __o_getc
-API __o__fgetchar ; -> _o_getchar
+API __o__fgetchar
 API __o_getenv
 API __o_getenv_s
 API __o_gets
 API __o_gets_s
 API __o_getwc
-API __o__fgetwchar ; -> _o_getwchar
+API __o__fgetwchar
 API __o_hypot
 API __o_is_wctype
 API __o_isalnum
@@ -1666,8 +1666,8 @@ API __o_lgammaf
 API __o_lgammal
 API __o_llrint
 API __o_llrintf
-API __o_llrint ; -> _o_llrintl
-API __o_llroundl ; -> _o_llround
+API __o_llrint
+API __o_llroundl
 API __o_llroundf
 API __o_llroundl
 API __o_localeconv
@@ -1684,8 +1684,8 @@ API __o_logbf
 API __o_logbl
 API __o_lrint
 API __o_lrintf
-API __o_lrint ; -> _o_lrintl
-API __o_lroundl ; -> _o_lround
+API __o_lrint
+API __o_lroundl
 API __o_lroundf
 API __o_lroundl
 API __o_malloc
@@ -1700,7 +1700,7 @@ API __o_mbstowcs
 API __o_mbstowcs_s
 API __o_mbtowc
 API __o_memcpy_s
-API _memset ; -> _o_memset
+API _memset
 API __o_modf
 API __o_nan
 API __o_nanf
@@ -1710,30 +1710,30 @@ API __o_nearbyintf
 API __o_nearbyintl
 API __o_nextafter
 API __o_nextafterf
-API __o_nextafter ; -> _o_nextafterl
+API __o_nextafter
 API __o_nexttoward
 API __o_nexttowardf
 API __o_nexttowardl
 API __o_pow
 API __o_powf
 API __o_putc
-API __o__fputchar ; -> _o_putchar
+API __o__fputchar
 API __o_puts
 API __o_putwc
-API __o__fputwchar ; -> _o_putwchar
+API __o__fputwchar
 API __o_qsort
 API __o_qsort_s
 API __o_raise
 API __o_rand
 API __o_rand_s
 API __o_realloc
-API __o_remainderl ; -> _o_remainder
+API __o_remainderl
 API __o_remainderf
 API __o_remainderl
 API __o_remove
 API __o_remquo
 API __o_remquof
-API __o_remquo ; -> _o_remquol
+API __o_remquo
 API __o_rename
 API __o_rewind
 API __o_rint
@@ -1745,9 +1745,9 @@ API __o_roundl
 API __o_scalbln
 API __o_scalblnf
 API __o_scalblnl
-API __o_scalbln ; -> _o_scalbn
+API __o_scalbln
 API __o_scalbnf
-API __o_scalbln ; -> _o_scalbnl
+API __o_scalbln
 API __o_set_terminate
 API __o_setbuf
 API __o_setlocale
@@ -1770,7 +1770,7 @@ API __o_strtok
 API __o_strtok_s
 API __o_strtol
 API __o_strtold
-API __o__strtoi64 ; -> _o_strtoll
+API __o__strtoi64
 API __o_strtoul
 API __o_strtoull
 API __o_system
@@ -1842,7 +1842,7 @@ API __register_thread_local_exe_atexit_callback
 API __resetstkoflw
 API __rmdir
 API __rmtmp
-API __lrotl ; -> _rotl
+API __lrotl
 API __rotl64
 API __rotr
 API __rotr64
@@ -1924,17 +1924,17 @@ API __strtime
 API __strtime_s
 API __strtod_l
 API __strtof_l
-API _strtoll ; -> _strtoi64
+API _strtoll
 API __strtoi64_l
-API __strtoi64_l ; -> _strtoimax_l
+API __strtoi64_l
 API __strtol_l
-API __strtod_l ; -> _strtold_l
-API __strtoi64_l ; -> _strtoll_l
-API _strtoumax ; -> _strtoui64
-API __strtoull_l ; -> _strtoui64_l
+API __strtod_l
+API __strtoi64_l
+API _strtoumax
+API __strtoull_l
 API __strtoul_l
 API __strtoull_l
-API __strtoull_l ; -> _strtoumax_l
+API __strtoull_l
 API __strupr
 API __strupr_l
 API __strupr_s
@@ -2010,20 +2010,20 @@ API __wcsnset_s
 API __wcsrev
 API __wcsset
 API __wcsset_s
-API __wcstold_l ; -> _wcstod_l
+API __wcstold_l
 API __wcstof_l
-API _wcstoll ; -> _wcstoi64
-API __wcstoimax_l ; -> _wcstoi64_l
+API _wcstoll
+API __wcstoimax_l
 API __wcstoimax_l
 API __wcstol_l
 API __wcstold_l
-API __wcstoimax_l ; -> _wcstoll_l
+API __wcstoimax_l
 API __wcstombs_l
 API __wcstombs_s_l
-API _wcstoumax ; -> _wcstoui64
-API __wcstoumax_l ; -> _wcstoui64_l
+API _wcstoumax
+API __wcstoumax_l
 API __wcstoul_l
-API __wcstoumax_l ; -> _wcstoull_l
+API __wcstoumax_l
 API __wcstoumax_l
 API __wcsupr
 API __wcsupr_l
@@ -2112,11 +2112,11 @@ API __wtof_l
 API __wtoi
 API __wtoi64
 API __wtoi64_l
-API __wtol_l ; -> _wtoi_l
+API __wtol_l
 API __wtol
 API __wtol_l
-API __wtoi64 ; -> _wtoll
-API __wtoi64_l ; -> _wtoll_l
+API __wtoi64
+API __wtoi64_l
 API __wunlink
 API __wutime32
 API __wutime64
@@ -2124,26 +2124,26 @@ API __y0
 API __y1
 API __yn
 API _abort
-API _labs ; -> abs
+API _labs
 API _acos
 API _acosh
 API _acoshf
-API _acosh ; -> acoshl
+API _acosh
 API _asctime
 API _asctime_s
 API _asin
-API _asinhl ; -> asinh
+API _asinhl
 API _asinhf
 API _asinhl
 API _atan
 API _atan2
 API _atanh
 API _atanhf
-API _atanh ; -> atanhl
+API _atanh
 API _atof
-API _atol ; -> atoi
 API _atol
-API __atoi64 ; -> atoll
+API _atol
+API __atoi64
 API _bsearch
 API _bsearch_s
 API _btowc
@@ -2152,31 +2152,31 @@ API _c32rtomb
 API _cabs
 API _cabsf
 API _cabsl
-API _cacosl ; -> cacos
+API _cacosl
 API _cacosf
 API _cacosh
 API _cacoshf
-API _cacosh ; -> cacoshl
+API _cacosh
 API _cacosl
 API _calloc
-API _cargl ; -> carg
+API _cargl
 API _cargf
 API _cargl
-API _casinl ; -> casin
+API _casinl
 API _casinf
 API _casinh
 API _casinhf
-API _casinh ; -> casinhl
+API _casinh
 API _casinl
-API _catanl ; -> catan
+API _catanl
 API _catanf
 API _catanh
 API _catanhf
-API _catanh ; -> catanhl
+API _catanh
 API _catanl
 API _cbrt
 API _cbrtf
-API _cbrt ; -> cbrtl
+API _cbrt
 API _ccos
 API _ccosf
 API _ccosh
@@ -2189,20 +2189,20 @@ API _cexpf
 API _cexpl
 API _cimag
 API _cimagf
-API _cimag ; -> cimagl
+API _cimag
 API _clearerr
 API _clearerr_s
 API _clock
 API _clog
 API _clog10
 API _clog10f
-API _clog10 ; -> clog10l
+API _clog10
 API _clogf
-API _clog ; -> clogl
-API _conjl ; -> conj
+API _clog
+API _conjl
 API _conjf
 API _conjl
-API _copysignl ; -> copysign
+API _copysignl
 API _copysignf
 API _copysignl
 API _cos
@@ -2212,8 +2212,8 @@ API _cpowf
 API _cpowl
 API _cproj
 API _cprojf
-API _cproj ; -> cprojl
-API _creall ; -> creal
+API _cproj
+API _creall
 API _crealf
 API _creall
 API _csin
@@ -2222,16 +2222,16 @@ API _csinh
 API _csinhf
 API _csinhl
 API _csinl
-API _csqrtl ; -> csqrt
+API _csqrtl
 API _csqrtf
 API _csqrtl
-API _ctanl ; -> ctan
+API _ctanl
 API _ctanf
 API _ctanh
 API _ctanhf
-API _ctanh ; -> ctanhl
+API _ctanh
 API _ctanl
-API _ldiv ; -> div
+API _ldiv
 API _erf
 API _erfc
 API _erfcf
@@ -2243,14 +2243,14 @@ API _exp
 API _exp2
 API _exp2f
 API _exp2l
-API _expm1l ; -> expm1
+API _expm1l
 API _expm1f
 API _expm1l
 API _fabs
 API _fclose
 API _fdim
 API _fdimf
-API _fdim ; -> fdiml
+API _fdim
 API _feclearexcept
 API _fegetenv
 API _fegetexceptflag
@@ -2272,12 +2272,12 @@ API _floor
 API _fma
 API _fmaf
 API _fmal
-API _fmaxl ; -> fmax
+API _fmaxl
 API _fmaxf
 API _fmaxl
 API _fmin
 API _fminf
-API _fmin ; -> fminl
+API _fmin
 API _fmod
 API _fopen
 API _fopen_s
@@ -2302,12 +2302,12 @@ API _getenv_s
 API _gets
 API _gets_s
 API _getwc
-API __fgetwchar ; -> getwchar
+API __fgetwchar
 API _hypot
 API _ilogb
 API _ilogbf
-API _ilogb ; -> ilogbl
-API __abs64 ; -> imaxabs
+API _ilogb
+API __abs64
 API _imaxdiv
 API _is_wctype
 API _isalnum
@@ -2322,17 +2322,17 @@ API _isprint
 API _ispunct
 API _isspace
 API _isupper
-API __iswalnum_l ; -> iswalnum
-API __iswalpha_l ; -> iswalpha
+API __iswalnum_l
+API __iswalpha_l
 API _iswascii
-API __iswblank_l ; -> iswblank
+API __iswblank_l
 API _iswcntrl
 API _iswctype
 API _iswdigit
 API _iswgraph
-API __iswlower_l ; -> iswlower
-API __iswprint_l ; -> iswprint
-API __iswpunct_l ; -> iswpunct
+API __iswlower_l
+API __iswprint_l
+API __iswpunct_l
 API _iswspace
 API _iswupper
 API _iswxdigit
@@ -2343,18 +2343,18 @@ API _ldiv
 API _lgamma
 API _lgammaf
 API _lgammal
-API __abs64 ; -> llabs
+API __abs64
 API _lldiv
 API _llrint
 API _llrintf
-API _llrint ; -> llrintl
+API _llrint
 API _llround
 API _llroundf
-API _llround ; -> llroundl
+API _llround
 API _localeconv
 API _log
 API _log10
-API _log1pl ; -> log1p
+API _log1pl
 API _log1pf
 API _log1pl
 API _log2
@@ -2362,14 +2362,14 @@ API _log2f
 API _log2l
 API _logb
 API _logbf
-API _logb ; -> logbl
+API _logb
 API _longjmp
 API _lrint
 API _lrintf
-API _lrint ; -> lrintl
+API _lrint
 API _lround
 API _lroundf
-API _lround ; -> lroundl
+API _lround
 API _malloc
 API _mblen
 API _mbrlen
@@ -2389,26 +2389,26 @@ API _memmove
 API _memmove_s
 API _memset
 API _modf
-API _nanl ; -> nan
+API _nanl
 API _nanf
 API _nanl
 API _nearbyint
 API _nearbyintf
-API _nearbyint ; -> nearbyintl
-API __nextafter ; -> nextafter
+API _nearbyint
+API __nextafter
 API _nextafterf
-API __nextafter ; -> nextafterl
-API _nexttowardl ; -> nexttoward
+API __nextafter
+API _nexttowardl
 API _nexttowardf
 API _nexttowardl
 API _norm
 API _normf
-API _norm ; -> norml
+API _norm
 API _perror
 API _pow
 API _powf
 API _putc
-API __fputchar ; -> putchar
+API __fputchar
 API _puts
 API _putwc
 API _putwchar
@@ -2419,25 +2419,25 @@ API _raise
 API _rand
 API _rand_s
 API _realloc
-API _remainderl ; -> remainder
+API _remainderl
 API _remainderf
 API _remainderl
 API _remove
 API _remquo
 API _remquof
-API _remquo ; -> remquol
+API _remquo
 API _rename
 API _rewind
-API _rintl ; -> rint
+API _rintl
 API _rintf
 API _rintl
 API _round
 API _roundf
-API _round ; -> roundl
-API _scalbnl ; -> scalbln
-API _scalbnf ; -> scalblnf
-API _scalbnl ; -> scalblnl
-API _scalbnl ; -> scalbn
+API _round
+API _scalbnl
+API _scalbnf
+API _scalbnl
+API _scalbnl
 API _scalbnf
 API _scalbnl
 API _set_terminate
@@ -2474,11 +2474,11 @@ API _strspn
 API _strstr
 API _strtod
 API _strtof
-API _strtoll ; -> strtoimax
+API _strtoll
 API _strtok
 API _strtok_s
 API _strtol
-API _strtod ; -> strtold
+API _strtod
 API _strtoll
 API _strtoul
 API _strtoull
@@ -2500,7 +2500,7 @@ API _toupper
 API _towctrans
 API _towlower
 API _towupper
-API _truncl ; -> trunc
+API _truncl
 API _truncf
 API _truncl
 API _unexpected
@@ -2530,9 +2530,9 @@ API _wcsrtombs
 API _wcsrtombs_s
 API _wcsspn
 API _wcsstr
-API _wcstold ; -> wcstod
+API _wcstold
 API _wcstof
-API _wcstoll ; -> wcstoimax
+API _wcstoll
 API _wcstok
 API _wcstok_s
 API _wcstol

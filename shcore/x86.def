@@ -31,7 +31,7 @@ IUnknown_SetSite
 IsOS
 IsProcessInIsolatedContainer
 IsProcessInWDAGContainer
-RecordFeatureError = ?WilApiImpl_RecordFeatureError@details@wil@@YGXIPBUFEATURE_ERROR@@@Z
+RecordFeatureError = WilApiImpl_RecordFeatureError
 RecordFeatureUsage
 RegisterScaleChangeEvent
 RegisterScaleChangeNotifications

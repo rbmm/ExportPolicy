@@ -12,94 +12,94 @@ ENDM
 API _AbortDoc@4
 API _AbortPath@4
 API _AddFontMemResourceEx@16
-API _AddFontResourceAStub@4 ; -> AddFontResourceA
+API _AddFontResourceAStub@4
 API _AddFontResourceExA@12
 API _AddFontResourceExW@12
 API _AddFontResourceTracking@8
 API _AddFontResourceW@4
 API _AngleArc@24
-API _AnimatePaletteStub@16 ; -> AnimatePalette
+API _AnimatePaletteStub@16
 API _AnyLinkedFonts@0
-API _ArcStub@36 ; -> Arc
+API _ArcStub@36
 API _ArcTo@36
-API _NtGdiBRUSHOBJ_hGetColorTransform@4 ; -> BRUSHOBJ_hGetColorTransform
-API _NtGdiBRUSHOBJ_pvAllocRbrush@8 ; -> BRUSHOBJ_pvAllocRbrush
-API _NtGdiBRUSHOBJ_pvGetRbrush@4 ; -> BRUSHOBJ_pvGetRbrush
-API _NtGdiBRUSHOBJ_ulGetBrushColor@4 ; -> BRUSHOBJ_ulGetBrushColor
-API _NtGdiBeginGdiRendering@12 ; -> BeginGdiRendering
+API _NtGdiBRUSHOBJ_hGetColorTransform@4
+API _NtGdiBRUSHOBJ_pvAllocRbrush@8
+API _NtGdiBRUSHOBJ_pvGetRbrush@4
+API _NtGdiBRUSHOBJ_ulGetBrushColor@4
+API _NtGdiBeginGdiRendering@12
 API _BeginPath@4
-API _BitBltStub@36 ; -> BitBlt
-API _NtGdiCLIPOBJ_bEnum@12 ; -> CLIPOBJ_bEnum
-API _NtGdiCLIPOBJ_cEnumStart@20 ; -> CLIPOBJ_cEnumStart
-API _NtGdiCLIPOBJ_ppoGetPath@4 ; -> CLIPOBJ_ppoGetPath
+API _BitBltStub@36
+API _NtGdiCLIPOBJ_bEnum@12
+API _NtGdiCLIPOBJ_cEnumStart@20
+API _NtGdiCLIPOBJ_ppoGetPath@4
 API _CancelDC@4
 API _CheckColorsInGamut@16
 API _ChoosePixelFormat@8
 API _Chord@36
 API _ClearBitmapAttributes@8
 API _ClearBrushAttributes@8
-API _CloseEnhMetaFileStub@4 ; -> CloseEnhMetaFile
+API _CloseEnhMetaFileStub@4
 API _CloseFigure@4
-API _CloseMetaFileStub@4 ; -> CloseMetaFile
+API _CloseMetaFileStub@4
 API _ColorCorrectPalette@16
 API _ColorMatchToTarget@12
 API _CombineRgn@16
 API _CombineTransform@12
-API _NtGdiConfigureOPMProtectedOutput@16 ; -> ConfigureOPMProtectedOutput
+API _NtGdiConfigureOPMProtectedOutput@16
 API _CopyEnhMetaFileA@8
 API _CopyEnhMetaFileW@8
 API _CopyMetaFileA@8
 API _CopyMetaFileW@8
-API _CreateBitmapStub@20 ; -> CreateBitmap
-API _NtGdiCreateBitmapFromDxSurface@20 ; -> CreateBitmapFromDxSurface
-API _NtGdiCreateBitmapFromDxSurface2@28 ; -> CreateBitmapFromDxSurface2
-API _CreateBitmapIndirectStub@4 ; -> CreateBitmapIndirect
-API _CreateBrushIndirectStub@4 ; -> CreateBrushIndirect
+API _CreateBitmapStub@20
+API _NtGdiCreateBitmapFromDxSurface@20
+API _NtGdiCreateBitmapFromDxSurface2@28
+API _CreateBitmapIndirectStub@4
+API _CreateBrushIndirectStub@4
 API _CreateColorSpaceA@4
 API _CreateColorSpaceW@4
-API _CreateCompatibleBitmapStub@12 ; -> CreateCompatibleBitmap
-API _CreateCompatibleDCStub@4 ; -> CreateCompatibleDC
+API _CreateCompatibleBitmapStub@12
+API _CreateCompatibleDCStub@4
 API _CreateDCA@16
 API _CreateDCExW@20
 API _CreateDCW@16
 API _CreateDIBPatternBrush@8
 API _CreateDIBPatternBrushPt@8
-API _CreateDIBSectionStub@24 ; -> CreateDIBSection
-API _CreateDIBitmapStub@24 ; -> CreateDIBitmap
+API _CreateDIBSectionStub@24
+API _CreateDIBitmapStub@24
 API _CreateDPIScaledDIBSection@28
 API _CreateDiscardableBitmap@12
 API _CreateEllipticRgn@16
-API _CreateEllipticRgnIndirectStub@4 ; -> CreateEllipticRgnIndirect
-API _CreateEnhMetaFileAStub@16 ; -> CreateEnhMetaFileA
+API _CreateEllipticRgnIndirectStub@4
+API _CreateEnhMetaFileAStub@16
 API _CreateEnhMetaFileW@16
-API _CreateFontAStub@56 ; -> CreateFontA
-API _CreateFontIndirectAStub@4 ; -> CreateFontIndirectA
+API _CreateFontAStub@56
+API _CreateFontIndirectAStub@4
 API _CreateFontIndirectExA@4
 API _CreateFontIndirectExW@4
 API _CreateFontIndirectW@4
-API _CreateFontWStub@56 ; -> CreateFontW
+API _CreateFontWStub@56
 API _CreateHalftonePalette@4
 API _CreateHatchBrush@8
 API _CreateICA@16
 API _CreateICW@16
-API _CreateMetaFileAStub@4 ; -> CreateMetaFileA
+API _CreateMetaFileAStub@4
 API _CreateMetaFileW@4
-API _NtGdiCreateOPMProtectedOutput@8 ; -> CreateOPMProtectedOutput
-API _NtGdiCreateOPMProtectedOutputs@20 ; -> CreateOPMProtectedOutputs
-API _CreatePaletteStub@4 ; -> CreatePalette
-API _CreatePatternBrushStub@4 ; -> CreatePatternBrush
-API _CreatePenStub@12 ; -> CreatePen
-API _CreatePenIndirectStub@4 ; -> CreatePenIndirect
-API _CreatePolyPolygonRgnStub@16 ; -> CreatePolyPolygonRgn
+API _NtGdiCreateOPMProtectedOutput@8
+API _NtGdiCreateOPMProtectedOutputs@20
+API _CreatePaletteStub@4
+API _CreatePatternBrushStub@4
+API _CreatePenStub@12
+API _CreatePenIndirectStub@4
+API _CreatePolyPolygonRgnStub@16
 API _CreatePolygonRgn@12
 API _CreateRectRgn@16
 API _CreateRectRgnIndirect@4
-API _CreateRoundRectRgnStub@24 ; -> CreateRoundRectRgn
+API _CreateRoundRectRgnStub@24
 API _CreateScalableFontResourceA@16
 API _CreateScalableFontResourceW@16
 API _CreateScaledCompatibleBitmap@16
 API _CreateSessionMappedDIBSection@20
-API _CreateSolidBrushStub@4 ; -> CreateSolidBrush
+API _CreateSolidBrushStub@4
 API D3DKMTAbandonSwapChain
 API D3DKMTAcquireKeyedMutex
 API D3DKMTAcquireKeyedMutex2
@@ -126,7 +126,7 @@ API D3DKMTCreateAllocation2
 API D3DKMTCreateBundleObject
 API D3DKMTCreateContext
 API D3DKMTCreateContextVirtual
-API NtGdiDdDDICreateDCFromMemory
+API _NtGdiDdDDICreateDCFromMemory@4
 API D3DKMTCreateDevice
 API D3DKMTCreateDoorbell
 API D3DKMTCreateHwContext
@@ -146,7 +146,7 @@ API D3DKMTDDisplayEnum
 API D3DKMTDestroyAllocation
 API D3DKMTDestroyAllocation2
 API D3DKMTDestroyContext
-API NtGdiDdDDIDestroyDCFromMemory
+API _NtGdiDdDDIDestroyDCFromMemory@4
 API D3DKMTDestroyDevice
 API D3DKMTDestroyDoorbell
 API D3DKMTDestroyHwContext
@@ -259,7 +259,7 @@ API D3DKMTQueryFSEBlock
 API D3DKMTQueryProcessOfferInfo
 API D3DKMTQueryProtectedSessionInfoFromNtHandle
 API D3DKMTQueryProtectedSessionStatus
-API NtGdiDdDDIQueryRemoteVidPnSourceFromGdiDisplayName
+API _NtGdiDdDDIQueryRemoteVidPnSourceFromGdiDisplayName@4
 API D3DKMTQueryResourceInfo
 API D3DKMTQueryResourceInfoFromNtHandle
 API D3DKMTQueryStatistics
@@ -336,149 +336,149 @@ API D3DKMTWaitForSynchronizationObjectFromCpu
 API D3DKMTWaitForSynchronizationObjectFromGpu
 API D3DKMTWaitForVerticalBlankEvent
 API D3DKMTWaitForVerticalBlankEvent2
-API _NtGdiDDCCIGetCapabilitiesString@12 ; -> DDCCIGetCapabilitiesString
-API _NtGdiDDCCIGetCapabilitiesStringLength@8 ; -> DDCCIGetCapabilitiesStringLength
-API _NtGdiDDCCIGetTimingReport@8 ; -> DDCCIGetTimingReport
-API _NtGdiDDCCIGetVCPFeature@20 ; -> DDCCIGetVCPFeature
-API _NtGdiDDCCISaveCurrentSettings@4 ; -> DDCCISaveCurrentSettings
-API _NtGdiDDCCISetVCPFeature@12 ; -> DDCCISetVCPFeature
-API _DPtoLPStub@12 ; -> DPtoLP
-API _NtGdiDdCreateFullscreenSprite@16 ; -> DdCreateFullscreenSprite
-API _NtGdiDdDestroyFullscreenSprite@8 ; -> DdDestroyFullscreenSprite
-API _NtGdiDxgGenericThunk@24 ; -> DdEntry0
-API _NtGdiD3dContextCreate@16 ; -> DdEntry1
-API _NtGdiDdBeginMoCompFrame@8 ; -> DdEntry10
-API _NtGdiDdBlt@12 ; -> DdEntry11
-API _NtGdiDdCanCreateSurface@8 ; -> DdEntry12
-API _NtGdiDdCanCreateD3DBuffer@8 ; -> DdEntry13
-API _NtGdiDdColorControl@8 ; -> DdEntry14
-API _NtGdiDdCreateDirectDrawObject@4 ; -> DdEntry15
-API _NtGdiDdCreateSurface@32 ; -> DdEntry16
-API _NtGdiDdCreateD3DBuffer@32 ; -> DdEntry17
-API _NtGdiDdCreateMoComp@8 ; -> DdEntry18
-API _NtGdiDdCreateSurfaceObject@24 ; -> DdEntry19
-API _NtGdiD3dContextDestroy@4 ; -> DdEntry2
-API _NtGdiDdDeleteDirectDrawObject@4 ; -> DdEntry20
-API _NtGdiDdDeleteSurfaceObject@4 ; -> DdEntry21
-API _NtGdiDdDestroyMoComp@8 ; -> DdEntry22
-API _NtGdiDdDestroySurface@8 ; -> DdEntry23
-API _NtGdiDdDestroyD3DBuffer@4 ; -> DdEntry24
-API _NtGdiDdEndMoCompFrame@8 ; -> DdEntry25
-API _NtGdiDdFlip@20 ; -> DdEntry26
-API _NtGdiDdFlipToGDISurface@8 ; -> DdEntry27
-API _NtGdiDdGetAvailDriverMemory@8 ; -> DdEntry28
-API _NtGdiDdGetBltStatus@8 ; -> DdEntry29
-API _NtGdiD3dContextDestroyAll@4 ; -> DdEntry3
-API _NtGdiDdGetDC@8 ; -> DdEntry30
-API _NtGdiDdGetDriverInfo@8 ; -> DdEntry31
-API _NtGdiDdGetDxHandle@12 ; -> DdEntry32
-API _NtGdiDdGetFlipStatus@8 ; -> DdEntry33
-API _NtGdiDdGetInternalMoCompInfo@8 ; -> DdEntry34
-API _NtGdiDdGetMoCompBuffInfo@8 ; -> DdEntry35
-API _NtGdiDdGetMoCompGuids@8 ; -> DdEntry36
-API _NtGdiDdGetMoCompFormats@8 ; -> DdEntry37
-API _NtGdiDdGetScanLine@8 ; -> DdEntry38
-API _NtGdiDdLock@12 ; -> DdEntry39
-API _NtGdiD3dValidateTextureStageState@4 ; -> DdEntry4
-API _NtGdiDdLockD3D@8 ; -> DdEntry40
-API _NtGdiDdQueryDirectDrawObject@44 ; -> DdEntry41
-API _NtGdiDdQueryMoCompStatus@8 ; -> DdEntry42
-API _NtGdiDdReenableDirectDrawObject@8 ; -> DdEntry43
-API _NtGdiDdReleaseDC@4 ; -> DdEntry44
-API _NtGdiDdRenderMoComp@8 ; -> DdEntry45
-API _NtGdiDdResetVisrgn@8 ; -> DdEntry46
-API _NtGdiDdSetColorKey@8 ; -> DdEntry47
-API _NtGdiDdSetExclusiveMode@8 ; -> DdEntry48
-API _NtGdiDdSetGammaRamp@12 ; -> DdEntry49
-API _NtGdiD3dDrawPrimitives2@28 ; -> DdEntry5
-API _NtGdiDdCreateSurfaceEx@12 ; -> DdEntry50
-API _NtGdiDdSetOverlayPosition@12 ; -> DdEntry51
-API _NtGdiDdUnattachSurface@8 ; -> DdEntry52
-API _NtGdiDdUnlock@8 ; -> DdEntry53
-API _NtGdiDdUnlockD3D@8 ; -> DdEntry54
-API _NtGdiDdUpdateOverlay@12 ; -> DdEntry55
-API _NtGdiDdWaitForVerticalBlank@8 ; -> DdEntry56
-API _NtGdiDdGetDriverState@4 ; -> DdEntry6
-API _NtGdiDdAddAttachedSurface@12 ; -> DdEntry7
-API _NtGdiDdAlphaBlt@12 ; -> DdEntry8
-API _NtGdiDdAttachSurface@8 ; -> DdEntry9
-API _NtGdiDdNotifyFullscreenSpriteUpdate@8 ; -> DdNotifyFullscreenSpriteUpdate
-API _NtGdiDdQueryVisRgnUniqueness@0 ; -> DdQueryVisRgnUniqueness
+API _NtGdiDDCCIGetCapabilitiesString@12
+API _NtGdiDDCCIGetCapabilitiesStringLength@8
+API _NtGdiDDCCIGetTimingReport@8
+API _NtGdiDDCCIGetVCPFeature@20
+API _NtGdiDDCCISaveCurrentSettings@4
+API _NtGdiDDCCISetVCPFeature@12
+API _DPtoLPStub@12
+API _NtGdiDdCreateFullscreenSprite@16
+API _NtGdiDdDestroyFullscreenSprite@8
+API _NtGdiDxgGenericThunk@24
+API _NtGdiD3dContextCreate@16
+API _NtGdiDdBeginMoCompFrame@8
+API _NtGdiDdBlt@12
+API _NtGdiDdCanCreateSurface@8
+API _NtGdiDdCanCreateD3DBuffer@8
+API _NtGdiDdColorControl@8
+API _NtGdiDdCreateDirectDrawObject@4
+API _NtGdiDdCreateSurface@32
+API _NtGdiDdCreateD3DBuffer@32
+API _NtGdiDdCreateMoComp@8
+API _NtGdiDdCreateSurfaceObject@24
+API _NtGdiD3dContextDestroy@4
+API _NtGdiDdDeleteDirectDrawObject@4
+API _NtGdiDdDeleteSurfaceObject@4
+API _NtGdiDdDestroyMoComp@8
+API _NtGdiDdDestroySurface@8
+API _NtGdiDdDestroyD3DBuffer@4
+API _NtGdiDdEndMoCompFrame@8
+API _NtGdiDdFlip@20
+API _NtGdiDdFlipToGDISurface@8
+API _NtGdiDdGetAvailDriverMemory@8
+API _NtGdiDdGetBltStatus@8
+API _NtGdiD3dContextDestroyAll@4
+API _NtGdiDdGetDC@8
+API _NtGdiDdGetDriverInfo@8
+API _NtGdiDdGetDxHandle@12
+API _NtGdiDdGetFlipStatus@8
+API _NtGdiDdGetInternalMoCompInfo@8
+API _NtGdiDdGetMoCompBuffInfo@8
+API _NtGdiDdGetMoCompGuids@8
+API _NtGdiDdGetMoCompFormats@8
+API _NtGdiDdGetScanLine@8
+API _NtGdiDdLock@12
+API _NtGdiD3dValidateTextureStageState@4
+API _NtGdiDdLockD3D@8
+API _NtGdiDdQueryDirectDrawObject@44
+API _NtGdiDdQueryMoCompStatus@8
+API _NtGdiDdReenableDirectDrawObject@8
+API _NtGdiDdReleaseDC@4
+API _NtGdiDdRenderMoComp@8
+API _NtGdiDdResetVisrgn@8
+API _NtGdiDdSetColorKey@8
+API _NtGdiDdSetExclusiveMode@8
+API _NtGdiDdSetGammaRamp@12
+API _NtGdiD3dDrawPrimitives2@28
+API _NtGdiDdCreateSurfaceEx@12
+API _NtGdiDdSetOverlayPosition@12
+API _NtGdiDdUnattachSurface@8
+API _NtGdiDdUnlock@8
+API _NtGdiDdUnlockD3D@8
+API _NtGdiDdUpdateOverlay@12
+API _NtGdiDdWaitForVerticalBlank@8
+API _NtGdiDdGetDriverState@4
+API _NtGdiDdAddAttachedSurface@12
+API _NtGdiDdAlphaBlt@12
+API _NtGdiDdAttachSurface@8
+API _NtGdiDdNotifyFullscreenSpriteUpdate@8
+API _NtGdiDdQueryVisRgnUniqueness@0
 API _DeleteColorSpace@4
 API _DeleteDC@4
-API _DeleteEnhMetaFileStub@4 ; -> DeleteEnhMetaFile
-API _DeleteMetaFileStub@4 ; -> DeleteMetaFile
+API _DeleteEnhMetaFileStub@4
+API _DeleteMetaFileStub@4
 API _DeleteObject@4
 API _DescribePixelFormat@16
-API _NtGdiDestroyOPMProtectedOutput@4 ; -> DestroyOPMProtectedOutput
-API _NtGdiDestroyPhysicalMonitor@4 ; -> DestroyPhysicalMonitorInternal
+API _NtGdiDestroyOPMProtectedOutput@4
+API _NtGdiDestroyPhysicalMonitor@4
 API _DeviceCapabilitiesExA@24
-API DeviceCapabilitiesExA
+API DeviceCapabilitiesExW
 API _DrawEscape@16
 API _DwmCreatedBitmapRemotingOutput@0
-API _EllipseStub@20 ; -> Ellipse
-API _NtGdiEnableEudc@4 ; -> EnableEUDC
+API _EllipseStub@20
+API _NtGdiEnableEudc@4
 API _EndDoc@4
 API _EndFormPage@4
-API _NtGdiEndGdiRendering@16 ; -> EndGdiRendering
+API _NtGdiEndGdiRendering@16
 API _EndPage@4
 API _EndPath@4
 API _EngAcquireSemaphore@4
-API _NtGdiEngAlphaBlend@28 ; -> EngAlphaBlend
-API _NtGdiEngAssociateSurface@12 ; -> EngAssociateSurface
-API _NtGdiEngBitBlt@44 ; -> EngBitBlt
-API _NtGdiEngCheckAbort@4 ; -> EngCheckAbort
+API _NtGdiEngAlphaBlend@28
+API _NtGdiEngAssociateSurface@12
+API _NtGdiEngBitBlt@44
+API _NtGdiEngCheckAbort@4
 API _EngComputeGlyphSet@12
-API _NtGdiEngCopyBits@24 ; -> EngCopyBits
-API _NtGdiEngCreateBitmap@24 ; -> EngCreateBitmap
-API _NtGdiEngCreateClip@0 ; -> EngCreateClip
-API _NtGdiEngCreateDeviceBitmap@16 ; -> EngCreateDeviceBitmap
-API _NtGdiEngCreateDeviceSurface@16 ; -> EngCreateDeviceSurface
-API _NtGdiEngCreatePalette@24 ; -> EngCreatePalette
+API _NtGdiEngCopyBits@24
+API _NtGdiEngCreateBitmap@24
+API _NtGdiEngCreateClip@0
+API _NtGdiEngCreateDeviceBitmap@16
+API _NtGdiEngCreateDeviceSurface@16
+API _NtGdiEngCreatePalette@24
 API _EngCreateSemaphore@0
-API _NtGdiEngDeleteClip@4 ; -> EngDeleteClip
-API _NtGdiEngDeletePalette@4 ; -> EngDeletePalette
-API _NtGdiEngDeletePath@4 ; -> EngDeletePath
+API _NtGdiEngDeleteClip@4
+API _NtGdiEngDeletePalette@4
+API _NtGdiEngDeletePath@4
 API _EngDeleteSemaphore@4
-API _NtGdiEngDeleteSurface@4 ; -> EngDeleteSurface
-API _NtGdiEngEraseSurface@12 ; -> EngEraseSurface
-API _NtGdiEngFillPath@28 ; -> EngFillPath
+API _NtGdiEngDeleteSurface@4
+API _NtGdiEngEraseSurface@12
+API _NtGdiEngFillPath@28
 API _EngFindResource@16
 API _EngFreeModule@4
 API _EngGetCurrentCodePage@8
 API _EngGetDriverName@4
 API _EngGetPrinterDataFileName@4
-API _NtGdiEngGradientFill@40 ; -> EngGradientFill
-API _NtGdiEngLineTo@36 ; -> EngLineTo
+API _NtGdiEngGradientFill@40
+API _NtGdiEngLineTo@36
 API _EngLoadModule@4
-API _NtGdiEngLockSurface@4 ; -> EngLockSurface
-API _NtGdiEngMarkBandingSurface@4 ; -> EngMarkBandingSurface
+API _NtGdiEngLockSurface@4
+API _NtGdiEngMarkBandingSurface@4
 API _EngMultiByteToUnicodeN@20
 API _EngMultiByteToWideChar@20
-API _NtGdiEngPaint@20 ; -> EngPaint
-API _NtGdiEngPlgBlt@44 ; -> EngPlgBlt
+API _NtGdiEngPaint@20
+API _NtGdiEngPlgBlt@44
 API _EngQueryEMFInfo@8
 API _EngQueryLocalTime@4
 API _EngReleaseSemaphore@4
-API _NtGdiEngStretchBlt@44 ; -> EngStretchBlt
-API _NtGdiEngStretchBltROP@52 ; -> EngStretchBltROP
-API _NtGdiEngStrokeAndFillPath@40 ; -> EngStrokeAndFillPath
-API _NtGdiEngStrokePath@32 ; -> EngStrokePath
-API _NtGdiEngTextOut@40 ; -> EngTextOut
-API _NtGdiEngTransparentBlt@32 ; -> EngTransparentBlt
+API _NtGdiEngStretchBlt@44
+API _NtGdiEngStretchBltROP@52
+API _NtGdiEngStrokeAndFillPath@40
+API _NtGdiEngStrokePath@32
+API _NtGdiEngTextOut@40
+API _NtGdiEngTransparentBlt@32
 API _EngUnicodeToMultiByteN@20
-API _NtGdiEngUnlockSurface@4 ; -> EngUnlockSurface
+API _NtGdiEngUnlockSurface@4
 API _EngWideCharToMultiByte@20
-API _EnumEnhMetaFileStub@20 ; -> EnumEnhMetaFile
-API _EnumFontFamiliesAStub@16 ; -> EnumFontFamiliesA
-API _EnumFontFamiliesExAStub@20 ; -> EnumFontFamiliesExA
+API _EnumEnhMetaFileStub@20
+API _EnumFontFamiliesAStub@16
+API _EnumFontFamiliesExAStub@20
 API _EnumFontFamiliesExW@20
 API _EnumFontFamiliesW@16
 API _EnumFontsA@16
 API _EnumFontsW@16
 API _EnumICMProfilesA@12
 API _EnumICMProfilesW@12
-API _EnumMetaFileStub@16 ; -> EnumMetaFile
+API _EnumMetaFileStub@16
 API _EnumObjects@16
 API _EqualRgn@8
 API _Escape@20
@@ -492,21 +492,21 @@ API _ExtFloodFill@20
 API _ExtSelectClipRgn@12
 API _ExtTextOutA@32
 API _ExtTextOutW@32
-API _NtGdiFONTOBJ_cGetAllGlyphHandles@8 ; -> FONTOBJ_cGetAllGlyphHandles
-API _NtGdiFONTOBJ_cGetGlyphs@20 ; -> FONTOBJ_cGetGlyphs
-API _NtGdiFONTOBJ_pQueryGlyphAttrs@8 ; -> FONTOBJ_pQueryGlyphAttrs
-API _NtGdiFONTOBJ_pfdg@4 ; -> FONTOBJ_pfdg
-API _NtGdiFONTOBJ_pifi@4 ; -> FONTOBJ_pifi
-API _NtGdiFONTOBJ_pvTrueTypeFontFile@8 ; -> FONTOBJ_pvTrueTypeFontFile
-API _NtGdiFONTOBJ_pxoGetXform@4 ; -> FONTOBJ_pxoGetXform
-API _NtGdiFONTOBJ_vGetInfo@12 ; -> FONTOBJ_vGetInfo
+API _NtGdiFONTOBJ_cGetAllGlyphHandles@8
+API _NtGdiFONTOBJ_cGetGlyphs@20
+API _NtGdiFONTOBJ_pQueryGlyphAttrs@8
+API _NtGdiFONTOBJ_pfdg@4
+API _NtGdiFONTOBJ_pifi@4
+API _NtGdiFONTOBJ_pvTrueTypeFontFile@8
+API _NtGdiFONTOBJ_pxoGetXform@4
+API _NtGdiFONTOBJ_vGetInfo@12
 API _FillPath@4
-API _FillRgnStub@12 ; -> FillRgn
+API _FillRgnStub@12
 API _FixBrushOrgEx@16
 API _FlattenPath@4
 API _FloodFill@16
 API _FontIsLinked@4
-API _FrameRgnStub@20 ; -> FrameRgn
+API _FrameRgnStub@20
 API _Gdi32DllInitialize@12
 API _GdiAddFontResourceW@12
 API _GdiAddGlsBounds@8
@@ -514,9 +514,9 @@ API _GdiAddGlsRecord@16
 API _GdiAddInitialFonts@0
 API _GdiAlphaBlend@44
 API _GdiArtificialDecrementDriver@8
-API _GdiBatchLimit
+API GdiBatchLimit
 API _GdiCleanCacheDC@4
-API _GdiCommentStub@12 ; -> GdiComment
+API _GdiCommentStub@12
 API _GdiConsoleTextOut@16
 API _GdiConvertAndCheckDC@4
 API _GdiConvertBitmap@4
@@ -544,7 +544,7 @@ API _GdiEntry1@8
 API _GdiEntry10@8
 API _GdiEntry11@8
 API _GdiEntry12@8
-API _DdQueryDisplaySettingsUniqueness@0 ; -> GdiEntry13
+API _DdQueryDisplaySettingsUniqueness@0
 API _GdiEntry14@12
 API _GdiEntry15@12
 API _GdiEntry16@12
@@ -558,11 +558,11 @@ API _GdiEntry8@4
 API _GdiEntry9@24
 API _GdiFixUpHandle@4
 API _GdiFlush@0
-API _NtGdiFullscreenControl@20 ; -> GdiFullscreenControl
+API _NtGdiFullscreenControl@20
 API _GdiGetBatchLimit@0
 API _GdiGetBitmapBitsSize@4
 API _GdiGetCharDimensions@12
-API _GetCodePage@4 ; -> GdiGetCodePage
+API _GetCodePage@4
 API _GdiGetDC@4
 API _GdiGetDevmodeForPage@16
 API _GdiGetEntry@8
@@ -572,10 +572,10 @@ API _GdiGetLocalFont@4
 API _GdiGetPageCount@4
 API _GdiGetPageHandle@12
 API _GdiGetSpoolFileHandle@12
-API _NtGdiGetSpoolMessage@16 ; -> GdiGetSpoolMessage
+API _NtGdiGetSpoolMessage@16
 API _GdiGetVariationStoreDelta@24
 API _GdiGradientFill@24
-API _NtGdiInitSpool@0 ; -> GdiInitSpool
+API _NtGdiInitSpool@0
 API _GdiInitializeLanguagePack@4
 API _GdiIsMetaFileDC@4
 API _GdiIsMetaPrintDC@4
@@ -592,7 +592,7 @@ API _GdiPlayPrivatePageEMF@12
 API _GdiPlayScript@28
 API _GdiPrinterThunk@16
 API _GdiProcessSetup@0
-API _NtGdiQueryFonts@12 ; -> GdiQueryFonts
+API _NtGdiQueryFonts@12
 API _GdiQueryTable@0
 API _GdiRealizationInfo@8
 API _GdiReleaseDC@4
@@ -618,19 +618,19 @@ API _GditPushCallerInfo@4
 API _GetArcDirection@4
 API _GetAspectRatioFilterEx@8
 API _GetBitmapAttributes@4
-API _GetBitmapBitsStub@12 ; -> GetBitmapBits
+API _GetBitmapBitsStub@12
 API _GetBitmapDimensionEx@8
-API _NtGdiGetBitmapDpiScaleValue@4 ; -> GetBitmapDpiScaleValue
-API _GetBkColorStub@4 ; -> GetBkColor
+API _NtGdiGetBitmapDpiScaleValue@4
+API _GetBkColorStub@4
 API _GetBkMode@4
 API _GetBoundsRect@12
 API _GetBrushAttributes@4
 API _GetBrushOrgEx@8
-API _NtGdiGetCOPPCompatibleOPMInformation@12 ; -> GetCOPPCompatibleOPMInformation
-API _NtGdiGetCertificate@16 ; -> GetCertificate
-API _NtGdiGetCertificateByHandle@16 ; -> GetCertificateByHandle
-API _NtGdiGetCertificateSize@12 ; -> GetCertificateSize
-API _NtGdiGetCertificateSizeByHandle@12 ; -> GetCertificateSizeByHandle
+API _NtGdiGetCOPPCompatibleOPMInformation@12
+API _NtGdiGetCertificate@16
+API _NtGdiGetCertificateByHandle@16
+API _NtGdiGetCertificateSize@12
+API _NtGdiGetCertificateSizeByHandle@12
 API _GetCharABCWidthsA@16
 API _GetCharABCWidthsFloatA@16
 API _GetCharABCWidthsFloatI@20
@@ -639,35 +639,35 @@ API _GetCharABCWidthsI@20
 API _GetCharABCWidthsW@16
 API _GetCharWidth32A@16
 API _GetCharWidth32W@16
-API _GetCharWidthAStub@16 ; -> GetCharWidthA
+API _GetCharWidthAStub@16
 API _GetCharWidthFloatA@16
 API _GetCharWidthFloatW@16
 API _GetCharWidthI@20
-API _NtGdiGetCharWidthInfo@8 ; -> GetCharWidthInfo
+API _NtGdiGetCharWidthInfo@8
 API _GetCharWidthW@16
 API _GetCharacterPlacementA@24
 API _GetCharacterPlacementW@24
 API _GetClipBox@8
-API _GetClipRgnStub@8 ; -> GetClipRgn
+API _GetClipRgnStub@8
 API _GetColorAdjustment@8
 API _GetColorSpace@4
 API _GetCurrentDpiInfo@8
-API _GetCurrentObjectStub@8 ; -> GetCurrentObject
-API _GetCurrentPositionExStub@8 ; -> GetCurrentPositionEx
+API _GetCurrentObjectStub@8
+API _GetCurrentPositionExStub@8
 API _GetDCBrushColor@4
 API _GetDCDpiScaleValue@4
 API _GetDCOrgEx@8
 API _GetDCPenColor@4
 API _GetDIBColorTable@16
-API _GetDIBitsStub@28 ; -> GetDIBits
+API _GetDIBitsStub@28
 API _GetDeviceCaps@8
 API _GetDeviceGammaRamp@8
 API _GetETM@8
 API _GetEUDCTimeStamp@0
 API _GetEUDCTimeStampExW@4
-API _GetEnhMetaFileAStub@4 ; -> GetEnhMetaFileA
-API _GetEnhMetaFileBitsStub@12 ; -> GetEnhMetaFileBits
-API _GetEnhMetaFileDescriptionAStub@12 ; -> GetEnhMetaFileDescriptionA
+API _GetEnhMetaFileAStub@4
+API _GetEnhMetaFileBitsStub@12
+API _GetEnhMetaFileDescriptionAStub@12
 API _GetEnhMetaFileDescriptionW@12
 API _GetEnhMetaFileHeader@12
 API _GetEnhMetaFilePaletteEntries@12
@@ -680,108 +680,108 @@ API _GetFontFileInfo@20
 API _GetFontLanguageInfo@4
 API _GetFontRealizationInfo@8
 API _GetFontResourceInfoW@16
-API _NtGdiGetFontUnicodeRanges@8 ; -> GetFontUnicodeRanges
+API _NtGdiGetFontUnicodeRanges@8
 API _GetGlyphIndicesA@20
 API _GetGlyphIndicesW@20
 API _GetGlyphOutline@28
-API _GetGlyphOutlineAStub@28 ; -> GetGlyphOutlineA
-API _GetGlyphOutlineWStub@28 ; -> GetGlyphOutlineW
+API _GetGlyphOutlineAStub@28
+API _GetGlyphOutlineWStub@28
 API _GetGlyphOutlineWow@28
 API _GetGraphicsMode@4
 API _GetHFONT@4
 API _GetICMProfileA@12
 API _GetICMProfileW@12
-API _GetKerningPairsAStub@12 ; -> GetKerningPairs
-API _GetKerningPairsAStub@12 ; -> GetKerningPairsA
+API _GetKerningPairsAStub@12
+API _GetKerningPairsAStub@12
 API _GetKerningPairsW@12
 API _GetLayout@4
 API _GetLogColorSpaceA@12
 API _GetLogColorSpaceW@12
 API _GetMapMode@4
 API _GetMetaFileA@4
-API _GetMetaFileBitsExStub@12 ; -> GetMetaFileBitsEx
+API _GetMetaFileBitsExStub@12
 API _GetMetaFileW@4
 API _GetMetaRgn@8
 API _GetMiterLimit@8
 API _GetNearestColor@8
-API _GetNearestPaletteIndexStub@8 ; -> GetNearestPaletteIndex
-API _NtGdiGetNumberOfPhysicalMonitors@8 ; -> GetNumberOfPhysicalMonitors
-API _NtGdiGetOPMInformation@12 ; -> GetOPMInformation
-API _NtGdiGetOPMRandomNumber@8 ; -> GetOPMRandomNumber
-API _GetObjectAStub@12 ; -> GetObjectA
-API _GetObjectTypeStub@4 ; -> GetObjectType
-API _GetObjectWStub@12 ; -> GetObjectW
-API _GetOutlineTextMetricsAStub@12 ; -> GetOutlineTextMetricsA
+API _GetNearestPaletteIndexStub@8
+API _NtGdiGetNumberOfPhysicalMonitors@8
+API _NtGdiGetOPMInformation@12
+API _NtGdiGetOPMRandomNumber@8
+API _GetObjectAStub@12
+API _GetObjectTypeStub@4
+API _GetObjectWStub@12
+API _GetOutlineTextMetricsAStub@12
 API _GetOutlineTextMetricsW@12
-API _GetPaletteEntriesStub@16 ; -> GetPaletteEntries
+API _GetPaletteEntriesStub@16
 API _GetPath@16
-API _NtGdiGetPhysicalMonitorDescription@12 ; -> GetPhysicalMonitorDescription
-API _NtGdiGetPhysicalMonitors@16 ; -> GetPhysicalMonitors
-API _GetPixelStub@12 ; -> GetPixel
+API _NtGdiGetPhysicalMonitorDescription@12
+API _NtGdiGetPhysicalMonitors@16
+API _GetPixelStub@12
 API _GetPixelFormat@4
 API _GetPolyFillMode@4
 API _GetProcessSessionFonts@20
-API _GetROP2Stub@4 ; -> GetROP2
+API _GetROP2Stub@4
 API _GetRandomRgn@12
-API _GetRasterizerCapsStub@8 ; -> GetRasterizerCaps
+API _GetRasterizerCapsStub@8
 API _GetRegionData@12
 API _GetRelAbs@8
 API _GetRgnBox@8
-API _GetStockObjectStub@4 ; -> GetStockObject
+API _GetStockObjectStub@4
 API _GetStretchBltMode@4
 API _GetStringBitmapA@20
-API _NtGdiGetStringBitmapW@20 ; -> GetStringBitmapW
-API _NtGdiGetSuggestedOPMProtectedOutputArraySize@8 ; -> GetSuggestedOPMProtectedOutputArraySize
-API _GetSystemPaletteEntriesStub@16 ; -> GetSystemPaletteEntries
+API _NtGdiGetStringBitmapW@20
+API _NtGdiGetSuggestedOPMProtectedOutputArraySize@8
+API _GetSystemPaletteEntriesStub@16
 API _GetSystemPaletteUse@4
-API _GetTextAlignStub@4 ; -> GetTextAlign
-API _GetTextCharacterExtraStub@4 ; -> GetTextCharacterExtra
+API _GetTextAlignStub@4
+API _GetTextCharacterExtraStub@4
 API _GetTextCharset@4
-API _NtGdiGetTextCharsetInfo@12 ; -> GetTextCharsetInfo
-API _GetTextColorStub@4 ; -> GetTextColor
-API _GetTextExtentExPointAStub@28 ; -> GetTextExtentExPointA
-API _GetTextExtentExPointIStub@28 ; -> GetTextExtentExPointI
-API _GetTextExtentExPointWStub@28 ; -> GetTextExtentExPointW
+API _NtGdiGetTextCharsetInfo@12
+API _GetTextColorStub@4
+API _GetTextExtentExPointAStub@28
+API _GetTextExtentExPointIStub@28
+API _GetTextExtentExPointWStub@28
 API _GetTextExtentExPointWPri@28
-API _GetTextExtentPoint32AStub@16 ; -> GetTextExtentPoint32A
-API _GetTextExtentPoint32WStub@16 ; -> GetTextExtentPoint32W
-API _GetTextExtentPointAStub@16 ; -> GetTextExtentPointA
-API _GetTextExtentPointIStub@16 ; -> GetTextExtentPointI
-API _GetTextExtentPointWStub@16 ; -> GetTextExtentPointW
-API _GetTextFaceAStub@12 ; -> GetTextFaceA
+API _GetTextExtentPoint32AStub@16
+API _GetTextExtentPoint32WStub@16
+API _GetTextExtentPointAStub@16
+API _GetTextExtentPointIStub@16
+API _GetTextExtentPointWStub@16
+API _GetTextFaceAStub@12
 API _GetTextFaceAliasW@12
 API _GetTextFaceW@12
 API _GetTextMetricsA@8
-API _GetTextMetricsWStub@8 ; -> GetTextMetricsW
+API _GetTextMetricsWStub@8
 API _GetTransform@12
 API _GetViewportExtEx@8
-API _GetViewportOrgExStub@8 ; -> GetViewportOrgEx
+API _GetViewportOrgExStub@8
 API _GetWinMetaFileBits@20
 API _GetWindowExtEx@8
 API _GetWindowOrgEx@8
 API _GetWorldTransform@8
-API _NtGdiHT_Get8BPPFormatPalette@16 ; -> HT_Get8BPPFormatPalette
-API _NtGdiHT_Get8BPPMaskPalette@24 ; -> HT_Get8BPPMaskPalette
+API _NtGdiHT_Get8BPPFormatPalette@16
+API _NtGdiHT_Get8BPPMaskPalette@24
 API _InternalDeleteDC@8
 API _InternalDeleteObject@4
 API _IntersectClipRect@20
-API _InvertRgnStub@8 ; -> InvertRgn
+API _InvertRgnStub@8
 API _IsValidEnhMetaRecord@8
 API _IsValidEnhMetaRecordOffExt@16
-API _LPtoDPStub@12 ; -> LPtoDP
+API _LPtoDPStub@12
 API _LineDDA@24
 API _LineTo@12
-API LpkDrawTextEx
-API _LpkEditControl
-API LpkExtTextOut
-API LpkGetCharacterPlacement
+API _LpkDrawTextEx@40
+API LpkEditControl
+API _LpkExtTextOut@36
+API _LpkGetCharacterPlacement@28
 API _LpkGetEditControl@0
-API LpkGetTextExtentExPoint
-API LpkInitialize
-API LpkPSMTextOut
-API LpkPresent
-API LpkTabbedTextOut
-API LpkUseGDIWidthCache
+API _LpkGetTextExtentExPoint@36
+API _LpkInitialize@4
+API _LpkPSMTextOut@24
+API ?destroy@?$__func@V<lambda_4b29d149b8821cfbae4eba16ce6a2849>@@$$A6G_NPAXI0II@Z@__function@wistd@@UAEXXZ
+API _LpkTabbedTextOut@48
+API _LpkUseGDIWidthCache@20
 API _LpkpEditControlSize
 API _LpkpInitializeEditControl@8
 API _MaskBlt@48
@@ -796,111 +796,111 @@ API _OffsetClipRgn@12
 API _OffsetRgn@12
 API _OffsetViewportOrgEx@16
 API _OffsetWindowOrgEx@16
-API _NtGdiPATHOBJ_bEnum@8 ; -> PATHOBJ_bEnum
-API _NtGdiPATHOBJ_bEnumClipLines@12 ; -> PATHOBJ_bEnumClipLines
-API _NtGdiPATHOBJ_vEnumStart@4 ; -> PATHOBJ_vEnumStart
-API _NtGdiPATHOBJ_vEnumStartClipLines@16 ; -> PATHOBJ_vEnumStartClipLines
-API _NtGdiPATHOBJ_vGetBounds@8 ; -> PATHOBJ_vGetBounds
+API _NtGdiPATHOBJ_bEnum@8
+API _NtGdiPATHOBJ_bEnumClipLines@12
+API _NtGdiPATHOBJ_vEnumStart@4
+API _NtGdiPATHOBJ_vEnumStartClipLines@16
+API _NtGdiPATHOBJ_vGetBounds@8
 API _PaintRgn@8
-API _PatBltStub@24 ; -> PatBlt
+API _PatBltStub@24
 API _PathToRegion@4
-API _PieStub@36 ; -> Pie
-API _PlayEnhMetaFileStub@12 ; -> PlayEnhMetaFile
+API _PieStub@36
+API _PlayEnhMetaFileStub@12
 API _PlayEnhMetaFileRecord@16
-API _PlayMetaFileStub@8 ; -> PlayMetaFile
+API _PlayMetaFileStub@8
 API _PlayMetaFileRecord@16
 API _PlgBlt@40
-API _PolyBezierStub@12 ; -> PolyBezier
+API _PolyBezierStub@12
 API _PolyBezierTo@12
 API _PolyDraw@16
 API _PolyPatBlt@20
-API _PolyPolygonStub@16 ; -> PolyPolygon
+API _PolyPolygonStub@16
 API _PolyPolyline@16
 API _PolyTextOutA@12
 API _PolyTextOutW@12
-API _PolygonStub@12 ; -> Polygon
-API _PolylineStub@12 ; -> Polyline
+API _PolygonStub@12
+API _PolylineStub@12
 API _PolylineTo@12
 API _PtInRegion@12
 API _PtVisible@12
 API _QueryFontAssocStatus@0
-API _RealizePaletteStub@4 ; -> RealizePalette
+API _RealizePaletteStub@4
 API _RectInRegion@8
-API _RectVisibleStub@8 ; -> RectVisible
+API _RectVisibleStub@8
 API _Rectangle@20
 API _RemoveFontMemResourceEx@4
-API _RemoveFontResourceAStub@4 ; -> RemoveFontResourceA
+API _RemoveFontResourceAStub@4
 API _RemoveFontResourceExA@12
 API _RemoveFontResourceExW@12
 API _RemoveFontResourceTracking@8
 API _RemoveFontResourceW@4
 API _ResetDCA@8
 API _ResetDCW@8
-API _ResizePaletteStub@8 ; -> ResizePalette
+API _ResizePaletteStub@8
 API _RestoreDC@8
-API _RoundRectStub@28 ; -> RoundRect
-API _NtGdiSTROBJ_bEnum@12 ; -> STROBJ_bEnum
-API _NtGdiSTROBJ_bEnumPositionsOnly@12 ; -> STROBJ_bEnumPositionsOnly
-API _NtGdiSTROBJ_bGetAdvanceWidths@16 ; -> STROBJ_bGetAdvanceWidths
-API _NtGdiSTROBJ_dwGetCodePage@4 ; -> STROBJ_dwGetCodePage
-API _NtGdiSTROBJ_vEnumStart@4 ; -> STROBJ_vEnumStart
+API _RoundRectStub@28
+API _NtGdiSTROBJ_bEnum@12
+API _NtGdiSTROBJ_bEnumPositionsOnly@12
+API _NtGdiSTROBJ_bGetAdvanceWidths@16
+API _NtGdiSTROBJ_dwGetCodePage@4
+API _NtGdiSTROBJ_vEnumStart@4
 API _SaveDC@4
-API _NtGdiScaleRgn@8 ; -> ScaleRgn
-API _NtGdiScaleValues@12 ; -> ScaleValues
+API _NtGdiScaleRgn@8
+API _NtGdiScaleValues@12
 API _ScaleViewportExtEx@24
 API _ScaleWindowExtEx@24
-API ScriptApplyDigitSubstitution
-API ScriptApplyLogicalWidth
-API ScriptBreak
-API ScriptCPtoX
-API ScriptCacheGetHeight
-API ScriptFreeCache
-API ScriptGetCMap
-API ScriptGetFontAlternateGlyphs
-API ScriptGetFontFeatureTags
-API ScriptGetFontLanguageTags
-API ScriptGetFontProperties
-API ScriptGetFontScriptTags
-API ScriptGetGlyphABCWidth
-API ScriptGetLogicalWidths
-API ScriptGetProperties
-API ScriptIsComplex
-API ScriptItemize
-API ScriptItemizeOpenType
-API ScriptJustify
-API ScriptLayout
-API ScriptPlace
-API ScriptPlaceOpenType
-API ScriptPositionSingleGlyph
-API ScriptRecordDigitSubstitution
-API ScriptShape
-API ScriptShapeOpenType
-API ScriptStringAnalyse
-API ScriptStringCPtoX
-API ScriptStringFree
-API ScriptStringGetLogicalWidths
-API ScriptStringGetOrder
-API ScriptStringOut
-API ScriptStringValidate
-API ScriptStringXtoCP
-API ScriptString_pLogAttr
-API ScriptString_pSize
-API ScriptString_pcOutChars
-API ScriptSubstituteSingleGlyph
-API ScriptTextOut
-API ScriptXtoCP
+API _ScriptApplyDigitSubstitution@12
+API _ScriptApplyLogicalWidth@36
+API _ScriptBreak@16
+API _ScriptCPtoX@36
+API _ScriptCacheGetHeight@12
+API _ScriptFreeCache@4
+API _ScriptGetCMap@24
+API _ScriptGetFontAlternateGlyphs@40
+API _ScriptGetFontFeatureTags@32
+API _ScriptGetFontLanguageTags@28
+API _ScriptGetFontProperties@12
+API _ScriptGetFontScriptTags@24
+API _ScriptGetGlyphABCWidth@16
+API _ScriptGetLogicalWidths@28
+API _ScriptGetProperties@8
+API _ScriptIsComplex@12
+API _ScriptItemize@28
+API _ScriptItemizeOpenType@32
+API _ScriptJustify@24
+API _ScriptLayout@16
+API _ScriptPlace@36
+API _ScriptPlaceOpenType@72
+API _ScriptPositionSingleGlyph@52
+API _ScriptRecordDigitSubstitution@8
+API _ScriptShape@40
+API _ScriptShapeOpenType@64
+API _ScriptStringAnalyse@52
+API _ScriptStringCPtoX@16
+API _ScriptStringFree@4
+API _ScriptStringGetLogicalWidths@8
+API _ScriptStringGetOrder@8
+API _ScriptStringOut@32
+API _ScriptStringValidate@4
+API _ScriptStringXtoCP@16
+API _ScriptString_pLogAttr@4
+API _ScriptString_pSize@4
+API _ScriptString_pcOutChars@4
+API _ScriptSubstituteSingleGlyph@36
+API _ScriptTextOut@56
+API _ScriptXtoCP@36
 API _SelectBrushLocal@8
 API _SelectClipPath@8
 API _SelectClipRgn@8
 API _SelectFontLocal@8
 API _SelectObject@8
-API _SelectPaletteStub@12 ; -> SelectPalette
+API _SelectPaletteStub@12
 API _SetAbortProc@8
 API _SetArcDirection@8
 API _SetBitmapAttributes@8
-API _SetBitmapBitsStub@12 ; -> SetBitmapBits
+API _SetBitmapBitsStub@12
 API _SetBitmapDimensionEx@16
-API _SetBkColorStub@8 ; -> SetBkColor
+API _SetBkColorStub@8
 API _SetBkMode@8
 API _SetBoundsRect@12
 API _SetBrushAttributes@8
@@ -910,8 +910,8 @@ API _SetColorSpace@8
 API _SetDCBrushColor@8
 API _SetDCPenColor@8
 API _SetDIBColorTable@16
-API _SetDIBitsStub@28 ; -> SetDIBits
-API _SetDIBitsToDeviceStub@48 ; -> SetDIBitsToDevice
+API _SetDIBitsStub@28
+API _SetDIBitsToDeviceStub@48
 API _SetDeviceGammaRamp@8
 API _SetEnhMetaFileBits@8
 API _SetFontEnumeration@4
@@ -921,19 +921,19 @@ API _SetICMProfileA@8
 API _SetICMProfileW@8
 API _SetLayout@8
 API _SetLayoutWidth@12
-API _NtGdiSetMagicColors@12 ; -> SetMagicColors
-API _SetMapModeStub@8 ; -> SetMapMode
+API _NtGdiSetMagicColors@12
+API _SetMapModeStub@8
 API _SetMapperFlags@8
-API _SetMetaFileBitsExStub@8 ; -> SetMetaFileBitsEx
+API _SetMetaFileBitsExStub@8
 API _SetMetaRgn@4
 API _SetMiterLimit@12
-API _NtGdiSetOPMSigningKeyAndSequenceNumbers@8 ; -> SetOPMSigningKeyAndSequenceNumbers
-API _SetPaletteEntriesStub@16 ; -> SetPaletteEntries
-API _SetPixelStub@16 ; -> SetPixel
+API _NtGdiSetOPMSigningKeyAndSequenceNumbers@8
+API _SetPaletteEntriesStub@16
+API _SetPixelStub@16
 API _SetPixelFormat@12
 API _SetPixelV@16
 API _SetPolyFillMode@8
-API _SetROP2Stub@8 ; -> SetROP2
+API _SetROP2Stub@8
 API _SetRectRgn@20
 API _SetRelAbs@8
 API _SetStretchBltMode@8
@@ -942,57 +942,57 @@ API _SetTextAlign@8
 API _SetTextCharacterExtra@8
 API _SetTextColor@8
 API _SetTextJustification@12
-API _SetViewportExtExStub@16 ; -> SetViewportExtEx
-API _SetViewportOrgExStub@16 ; -> SetViewportOrgEx
+API _SetViewportExtExStub@16
+API _SetViewportOrgExStub@16
 API _SetVirtualResolution@20
 API _SetWinMetaFileBits@16
-API _SetWindowExtExStub@16 ; -> SetWindowExtEx
-API _SetWindowOrgExStub@16 ; -> SetWindowOrgEx
+API _SetWindowExtExStub@16
+API _SetWindowOrgExStub@16
 API _SetWorldTransform@8
-API _StartDocAStub@8 ; -> StartDocA
+API _StartDocAStub@8
 API _StartDocW@8
 API _StartFormPage@4
 API _StartPage@4
-API _StretchBltStub@44 ; -> StretchBlt
+API _StretchBltStub@44
 API _StretchDIBits@52
 API _StrokeAndFillPath@4
 API _StrokePath@4
 API _SwapBuffers@4
-API _TextOutAStub@20 ; -> TextOutA
+API _TextOutAStub@20
 API _TextOutW@20
-API _TranslateCharsetInfoStub@12 ; -> TranslateCharsetInfo
+API _TranslateCharsetInfoStub@12
 API _UnloadNetworkFonts@4
-API _UnrealizeObjectStub@4 ; -> UnrealizeObject
-API _UpdateColorsStub@4 ; -> UpdateColors
+API _UnrealizeObjectStub@4
+API _UpdateColorsStub@4
 API _UpdateICMRegKeyA@16
 API _UpdateICMRegKeyW@16
-API UspAllocCache
-API UspAllocTemp
-API UspFreeMem
+API _UspAllocCache@8
+API _UspAllocTemp@8
+API _UspFreeMem@4
 API _WidenPath@4
-API _NtGdiXFORMOBJ_bApplyXform@20 ; -> XFORMOBJ_bApplyXform
-API _NtGdiXFORMOBJ_iGetXform@8 ; -> XFORMOBJ_iGetXform
-API _NtGdiXLATEOBJ_cGetPalette@16 ; -> XLATEOBJ_cGetPalette
-API _NtGdiXLATEOBJ_hGetColorTransform@4 ; -> XLATEOBJ_hGetColorTransform
-API _NtGdiXLATEOBJ_iXlate@8 ; -> XLATEOBJ_iXlate
+API _NtGdiXFORMOBJ_bApplyXform@20
+API _NtGdiXFORMOBJ_iGetXform@8
+API _NtGdiXLATEOBJ_cGetPalette@16
+API _NtGdiXLATEOBJ_hGetColorTransform@4
+API _NtGdiXLATEOBJ_iXlate@8
 API _XLATEOBJ_piVector@4
 API _bCreateDCW@24
 API _bDeleteLDC@4
 API _bInitSystemAndFontsDirectoriesW@8
 API _bMakePathNameW@16
 API _cGetTTFFromFOT@28
-API _fpClosePrinter
-API ftsWordBreak
-API _gCookie
-API _gMaxGdiHandleCount
-API _gW32PID
-API _g_systemCallFilterId
+API fpClosePrinter
+API _ftsWordBreak@20
+API gCookie
+API gMaxGdiHandleCount
+API gW32PID
+API g_systemCallFilterId
 API _gdiPlaySpoolStream@24
-API _ghICM
+API ghICM
 API _hGetPEBHandle@8
-API _pGdiDevCaps
-API _pGdiSharedHandleTable
-API _pGdiSharedMemory
+API pGdiDevCaps
+API pGdiSharedHandleTable
+API pGdiSharedMemory
 API @pldcGet@4
 API _vSetPldc@8
 API _DrvQueryMonitorUniqueness@0

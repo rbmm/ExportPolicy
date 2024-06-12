@@ -22,15 +22,15 @@ API _CStdAsyncStubBuffer2_Disconnect@4
 API _CStdAsyncStubBuffer2_Release@4
 API _CStdAsyncStubBuffer_AddRef@4
 API _CStdAsyncStubBuffer_Connect@8
-API _CStdStubBuffer_Disconnect@4 ; -> CStdAsyncStubBuffer_Disconnect
+API _CStdStubBuffer_Disconnect@4
 API _CStdAsyncStubBuffer_Invoke@12
 API _CStdAsyncStubBuffer_QueryInterface@12
 API _CStdAsyncStubBuffer_Release@4
 API _CStdStubBuffer2_Connect@8
 API _CStdStubBuffer2_CountRefs@4
-API _CStdAsyncStubBuffer2_Disconnect@4 ; -> CStdStubBuffer2_Disconnect
+API _CStdAsyncStubBuffer2_Disconnect@4
 API _CStdStubBuffer2_QueryInterface@12
-API _CStdAsyncStubBuffer_AddRef@4 ; -> CStdStubBuffer_AddRef
+API _CStdAsyncStubBuffer_AddRef@4
 API _CStdStubBuffer_Connect@8
 API _CStdStubBuffer_CountRefs@4
 API _CStdStubBuffer_DebugServerQueryInterface@8
@@ -152,7 +152,7 @@ API _CoVrfGetThreadState@4
 API _CoVrfReleaseThreadState@4
 API _CoWaitForMultipleHandles@20
 API _CoWaitForMultipleObjects@20
-API _CoCreateErrorInfo@4 ; -> CreateErrorInfo
+API _CoCreateErrorInfo@4
 API _CreateStreamOnHGlobal@12
 API _DcomChannelSetHResult@12
 API _DllDebugObjectRPCHook@8
@@ -162,63 +162,63 @@ API _EnableHookObject@8
 API _FreePropVariantArray@8
 API _FreePropVariantArrayWorker@12
 API _GetCatalogHelper@8
-API _CoGetErrorInfo@8 ; -> GetErrorInfo
+API _CoGetErrorInfo@8
 API _GetFuncDescs@8
 API _GetHGlobalFromStream@8
 API _GetHookInterface@4
 API _GetRestrictedErrorInfo@4
-API _CStdStubBuffer_DebugServerRelease@8 ; -> HACCEL_UserFree
+API _CStdStubBuffer_DebugServerRelease@8
 API _HACCEL_UserMarshal@12
-API _HDC_UserSize@12 ; -> HACCEL_UserSize
-API _HDC_UserUnmarshal@12 ; -> HACCEL_UserUnmarshal
+API _HDC_UserSize@12
+API _HDC_UserUnmarshal@12
 API _HBITMAP_UserFree@8
 API _HBITMAP_UserMarshal@12
 API _HBITMAP_UserSize@12
 API _HBITMAP_UserUnmarshal@12
-API _CStdStubBuffer_DebugServerRelease@8 ; -> HBRUSH_UserFree
-API _HACCEL_UserMarshal@12 ; -> HBRUSH_UserMarshal
-API _HDC_UserSize@12 ; -> HBRUSH_UserSize
-API _HDC_UserUnmarshal@12 ; -> HBRUSH_UserUnmarshal
-API ?HRGN_UserFree@@YGXPAKPAPAUHRGN__@@@Z ; -> HDC_UserFree
-API _HACCEL_UserMarshal@12 ; -> HDC_UserMarshal
+API _CStdStubBuffer_DebugServerRelease@8
+API _HACCEL_UserMarshal@12
+API _HDC_UserSize@12
+API _HDC_UserUnmarshal@12
+API ?HRGN_UserFree@@YGXPAKPAPAUHRGN__@@@Z
+API _HACCEL_UserMarshal@12
 API _HDC_UserSize@12
 API _HDC_UserUnmarshal@12
 API _HGLOBAL_UserFree@8
 API _HGLOBAL_UserMarshal@12
 API _HGLOBAL_UserSize@12
 API _HGLOBAL_UserUnmarshal@12
-API _CStdStubBuffer_DebugServerRelease@8 ; -> HICON_UserFree
-API _HACCEL_UserMarshal@12 ; -> HICON_UserMarshal
-API _HDC_UserSize@12 ; -> HICON_UserSize
-API _HDC_UserUnmarshal@12 ; -> HICON_UserUnmarshal
-API _CStdStubBuffer_DebugServerRelease@8 ; -> HMENU_UserFree
-API _HACCEL_UserMarshal@12 ; -> HMENU_UserMarshal
-API _HDC_UserSize@12 ; -> HMENU_UserSize
-API _HDC_UserUnmarshal@12 ; -> HMENU_UserUnmarshal
-API _CStdStubBuffer_DebugServerRelease@8 ; -> HMONITOR_UserFree
+API _CStdStubBuffer_DebugServerRelease@8
+API _HACCEL_UserMarshal@12
+API _HDC_UserSize@12
+API _HDC_UserUnmarshal@12
+API _CStdStubBuffer_DebugServerRelease@8
+API _HACCEL_UserMarshal@12
+API _HDC_UserSize@12
+API _HDC_UserUnmarshal@12
+API _CStdStubBuffer_DebugServerRelease@8
 API _HMONITOR_UserMarshal@12
 API _HMONITOR_UserSize@12
-API _HWND_UserUnmarshal@12 ; -> HMONITOR_UserUnmarshal
+API _HWND_UserUnmarshal@12
 API _HPALETTE_UserFree@8
 API _HPALETTE_UserMarshal@12
 API _HPALETTE_UserSize@12
 API _HPALETTE_UserUnmarshal@12
 API ?HRGN_UserFree@@YGXPAKPAPAUHRGN__@@@Z
-API _HACCEL_UserMarshal@12 ; -> HRGN_UserMarshal
-API _HDC_UserSize@12 ; -> HRGN_UserSize
-API _HDC_UserUnmarshal@12 ; -> HRGN_UserUnmarshal
+API _HACCEL_UserMarshal@12
+API _HDC_UserSize@12
+API _HDC_UserUnmarshal@12
 API _HSTRING_UserFree@8
 API _HSTRING_UserMarshal@12
 API _HSTRING_UserSize@12
 API _HSTRING_UserUnmarshal@12
-API _CStdStubBuffer_DebugServerRelease@8 ; -> HWND_UserFree
-API _HMONITOR_UserMarshal@12 ; -> HWND_UserMarshal
-API _HMONITOR_UserSize@12 ; -> HWND_UserSize
+API _CStdStubBuffer_DebugServerRelease@8
+API _HMONITOR_UserMarshal@12
+API _HMONITOR_UserSize@12
 API _HWND_UserUnmarshal@12
 API _HkOleRegisterObject@16
 API _IIDFromString@8
 API _InternalAppInvokeExceptionFilter@16
-API ?NdrExtFreeInterfacePointer@@YGXPAE@Z ; -> InternalCAggIdRelease
+API ?NdrExtFreeInterfacePointer@@YGXPAE@Z
 API _InternalCAggIdSetHandler@8
 API _InternalCCFreeUnused@4
 API _InternalCCGetClassInformationForDde@8
@@ -229,39 +229,39 @@ API _InternalCMLSendReceive2@12
 API _InternalCStdIdentityGetIProxyManager@4
 API _InternalCStdIdentityGetInternalUnk@4
 API _InternalCStdIdentityUpdateFlags@8
-API _InternalServerExceptionFilter@4 ; -> InternalCallAsProxyExceptionFilter
+API _InternalServerExceptionFilter@4
 API _InternalCallFrameExceptionFilter@8
 API _InternalCallerIsAppContainer@4
-API _InternalReleaseMarshalObjRef@4 ; -> InternalCanMakeOutCall
+API _InternalReleaseMarshalObjRef@4
 API _InternalCanMakeOutCall2@4
 API _InternalCoIsSurrogateProcess@0
 API _InternalCoRegisterDisconnectCallback@20
 API _InternalCoRegisterSurrogatedObject@4
 API _InternalCoStdMarshalObject@28
 API _InternalCoUnregisterDisconnectCallback@4
-API _InternalCMLSendReceive@16 ; -> InternalCompleteObjRef
+API _InternalCMLSendReceive@16
 API _InternalCreateCAggId@8
 API _InternalCreateIdentityHandler@12
 API _InternalDoATClassCreate@16
 API _InternalFillLocalOXIDInfo@8
-API ?CleanupIdentity@@YGXPAUSHashChain@@@Z ; -> InternalFreeObjRef
-API _InternalRegisterWindowPropInterface@20 ; -> InternalGetWindowPropInterface
+API ?CleanupIdentity@@YGXPAUSHashChain@@@Z
+API _InternalRegisterWindowPropInterface@20
 API _InternalGetWindowPropInterface2@24
 API _InternalIrotEnumRunning@4
 API _InternalIrotEnumRunning2@8
 API _InternalIrotGetObject@20
-API ?CopyTo@?$GenericStreamBase@UIMarshalingStream@@VAllocationWrapper@@@@UAGJPAUIStream@@T_ULARGE_INTEGER@@PAT3@2@Z ; -> InternalIrotGetObject2
+API ?CopyTo@?$GenericStreamBase@UIMarshalingStream@@VAllocationWrapper@@@@UAGJPAUIStream@@T_ULARGE_INTEGER@@PAT3@2@Z
 API _InternalIrotGetObject3@28
-API ?ReleaseMarshalData@?$HandleWrapperImpl@URegistryKeyHandleWrapperTraits@@@@UAGJPAUIStream@@@Z ; -> InternalIrotGetTimeOfLastChange
+API ?ReleaseMarshalData@?$HandleWrapperImpl@URegistryKeyHandleWrapperTraits@@@@UAGJPAUIStream@@@Z
 API _InternalIrotGetTimeOfLastChange2@12
-API _InternalIrotEnumRunning@4 ; -> InternalIrotIsRunning
+API _InternalIrotEnumRunning@4
 API _InternalIrotIsRunning2@8
 API _InternalIrotNoteChangeTime@8
 API _InternalIrotRegister@28
 API _InternalIrotRevoke@16
 API _InternalIsApartmentInitialized@0
 API _InternalIsProcessInitialized@0
-API _InternalStubInvoke@24 ; -> InternalMarshalObjRef
+API _InternalStubInvoke@24
 API _InternalNotifyDDStartOrStop@4
 API _InternalOle1ClassFromCLSID2@12
 API _InternalOleModalLoopBlockFn@0
@@ -383,7 +383,7 @@ API _RoTransformErrorW@16
 API _RoUninitialize@0
 API _RoUnregisterForApartmentShutdown@4
 API _SetCleanupFlag@4
-API _CoSetErrorInfo@8 ; -> SetErrorInfo
+API _CoSetErrorInfo@8
 API _SetRestrictedErrorInfo@4
 API _StringFromCLSID@8
 API _StringFromGUID2@12

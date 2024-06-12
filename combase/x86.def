@@ -170,7 +170,7 @@ HBRUSH_UserFree = CStdStubBuffer_DebugServerRelease
 HBRUSH_UserMarshal = HACCEL_UserMarshal
 HBRUSH_UserSize = HDC_UserSize
 HBRUSH_UserUnmarshal = HDC_UserUnmarshal
-HDC_UserFree = ?HRGN_UserFree@@YGXPAKPAPAUHRGN__@@@Z
+HDC_UserFree = HRGN_UserFree
 HDC_UserMarshal = HACCEL_UserMarshal
 HDC_UserSize
 HDC_UserUnmarshal
@@ -209,7 +209,7 @@ HWND_UserUnmarshal
 HkOleRegisterObject
 IIDFromString
 InternalAppInvokeExceptionFilter
-InternalCAggIdRelease = ?NdrExtFreeInterfacePointer@@YGXPAE@Z
+InternalCAggIdRelease = NdrExtFreeInterfacePointer
 InternalCAggIdSetHandler
 InternalCCFreeUnused
 InternalCCGetClassInformationForDde
@@ -235,15 +235,15 @@ InternalCreateCAggId
 InternalCreateIdentityHandler
 InternalDoATClassCreate
 InternalFillLocalOXIDInfo
-InternalFreeObjRef = ?CleanupIdentity@@YGXPAUSHashChain@@@Z
+InternalFreeObjRef = CleanupIdentity
 InternalGetWindowPropInterface = InternalRegisterWindowPropInterface
 InternalGetWindowPropInterface2
 InternalIrotEnumRunning
 InternalIrotEnumRunning2
 InternalIrotGetObject
-InternalIrotGetObject2 = ?CopyTo@?$GenericStreamBase@UIMarshalingStream@@VAllocationWrapper@@@@UAGJPAUIStream@@T_ULARGE_INTEGER@@PAT3@2@Z
+InternalIrotGetObject2 = CopyTo
 InternalIrotGetObject3
-InternalIrotGetTimeOfLastChange = ?ReleaseMarshalData@?$HandleWrapperImpl@URegistryKeyHandleWrapperTraits@@@@UAGJPAUIStream@@@Z
+InternalIrotGetTimeOfLastChange = ReleaseMarshalData
 InternalIrotGetTimeOfLastChange2
 InternalIrotIsRunning = InternalIrotEnumRunning
 InternalIrotIsRunning2
@@ -431,7 +431,7 @@ HENHMETAFILE_UserUnmarshal @187 NONAME
 HENHMETAFILE_UserMarshal @186 NONAME
 HENHMETAFILE_UserSize @185 NONAME
 CoGetCallLocality @184 NONAME
-?CoTestDcomContainerProtocolVersionNumber@@3IB @183 NONAME
+CoTestDcomContainerProtocolVersionNumber @183 NONAME
 CoTestSetUseContainerErrorInformationLocalPropagation @182 NONAME
 CoDoesOtherSideSupportUDTMarshaling @181 NONAME
 CoDoesOtherSideVariantMarshalingNeedTrailingPadding @180 NONAME
@@ -470,8 +470,8 @@ RoGetActivationFactoryAsUser @148 NONAME
 RoActivateInstanceAsUser @147 NONAME
 CoVrfSetMockApplicationVerifierStop @146 NONAME
 CoVrfComVerifierIsEnabled @145 NONAME
-?CoGetSystemSecurityPermissionsTestHook@@YGJQAKPAKPAPAE@Z @143 NONAME
-?CleanupIdentity@@YGXPAUSHashChain@@@Z @142 NONAME
+CoGetSystemSecurityPermissionsTestHook @143 NONAME
+CleanupIdentity @142 NONAME
 CoSetAsyncCallCancelListenerTestHook @141 NONAME
 CoAllowSetForegroundWindow @140 NONAME
 RoGetMachineGlobalObjectTable @139 NONAME
@@ -495,10 +495,10 @@ CoRegisterForApartmentShutdown @120 NONAME
 CoRegisterChannelHook @112 NONAME
 CoHandlePriorityEventsFromMessagePump @111 NONAME
 CoSetMessageDispatcher @110 NONAME
-?CoVrfNotifyExtraOleUninit@@YGXXZ @104 NONAME
-?CoVrfShouldCallOleInit@@YGXPBD@Z @103 NONAME
-?CoVrfNotifyOleUninit@@YGXXZ @102 NONAME
-?CoVrfNotifyOleInit@@YGXXZ @101 NONAME
+CoVrfNotifyExtraOleUninit @104 NONAME
+CoVrfShouldCallOleInit @103 NONAME
+CoVrfNotifyOleUninit @102 NONAME
+CoVrfNotifyOleInit @101 NONAME
 CoSetASTATestMode @100 NONAME
 CoEnableASTACallReentrancyGuardForSTAByDefault @99 NONAME
 CoSetRetryForReentrancyGuardTimeout @98 NONAME

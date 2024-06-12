@@ -1087,11 +1087,11 @@ cosh
 coshf
 ctime
 difftime
-;div
+div = $div
 exit
 exp
 expf
-;fabs
+fabs = $fabs
 fclose
 feof
 ferror

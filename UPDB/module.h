@@ -8,6 +8,7 @@ class CModule : LIST_ENTRY
 	PVOID _ImageBase;
 	ULONG _size;
 	BOOL _b = FALSE;
+	NTSTATUS _status = 0;
 	ULONG _nSymbols;
 	RVAOFS _Symbols[];
 	//CHAR Names[];
@@ -29,6 +30,7 @@ public:
 	~CModule();
 
 	ULONG SymbolsCount() { return _nSymbols; }
+	NTSTATUS GetStatus() { return _status; }
 	PCUNICODE_STRING Name() { return &_Name; }
 
 	PVOID GetVaFromName(_In_ PCSTR Name);

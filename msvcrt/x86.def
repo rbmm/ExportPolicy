@@ -82,7 +82,7 @@ _CItanh
 _CallMemberFunction0
 _CallMemberFunction1
 _CallMemberFunction2
-_CrtCheckMemory = ?length@charNode@@UBEHXZ
+_CrtCheckMemory = length
 _CrtDbgBreak = _CrtDoForAllClientObjects
 _CrtDbgReport = _crtBreakAlloc
 _CrtDbgReportV = _crtBreakAlloc
@@ -91,8 +91,8 @@ _CrtDbgReportWV = _crtBreakAlloc
 _CrtDoForAllClientObjects
 _CrtDumpMemoryLeaks = _crtBreakAlloc
 _CrtIsMemoryBlock = _crtBreakAlloc
-_CrtIsValidHeapPointer = ?length@charNode@@UBEHXZ
-_CrtIsValidPointer = ?_ValidateRead@@YAHPBXI@Z
+_CrtIsValidHeapPointer = length
+_CrtIsValidPointer = _ValidateRead
 _CrtMemCheckpoint = _CrtDoForAllClientObjects
 _CrtMemDifference = _crtBreakAlloc
 _CrtMemDumpAllObjectsSince = _CrtDoForAllClientObjects
@@ -157,8 +157,8 @@ ___lc_handle_func
 ___mb_cur_max_func
 ___setlc_active_func
 ___unguarded_readlc_active_add_func
-__argc
-__argv
+_argc
+_argv
 __badioinfo
 __crtCompareStringA
 __crtCompareStringW
@@ -173,7 +173,7 @@ __dstbias
 __fpecode
 __freefls@4
 __getmainargs
-__initenv
+_initenv
 __iob_func = __p__iob
 __isascii
 __iscsym
@@ -234,11 +234,11 @@ __p__winminor
 __p__winver
 __p__wpgmptr
 __pctype_func
-__pioinfo
+_pioinfo
 __pwctype_func
 __pxcptinfoptrs
 __set_app_type
-__setlc_active
+_setlc_active
 __setusermatherr
 __strncnt
 __threadhandle
@@ -247,13 +247,13 @@ __toascii
 __unDName
 __unDNameEx
 __uncaught_exception
-__unguarded_readlc_active
-__wargv
+_unguarded_readlc_active
+_wargv
 __wcserror
 __wcserror_s
 __wcsncnt
 __wgetmainargs
-__winitenv
+_winitenv
 _abnormal_termination
 _abs64
 _access
@@ -272,7 +272,7 @@ _adj_fpatan
 _adj_fprem
 _adj_fprem1
 _adj_fptan
-_adjust_fdiv
+adjust_fdiv
 _aexit_rtn
 _aligned_free
 _aligned_free_dbg
@@ -320,7 +320,7 @@ _chvalidator_l
 _clearfp
 _close
 _commit
-_commode
+commode
 _control87
 _controlfp
 _controlfp_s
@@ -368,7 +368,7 @@ _ecvt
 _ecvt_s
 _endthread
 _endthreadex
-_environ
+environ
 _eof
 _errno
 _except_handler2
@@ -793,14 +793,14 @@ _nextafter
 _onexit
 _open
 _open_osfhandle
-_osplatform
-_osver
+osplatform
+osver
 _outp
 _outpd
 _outpw
 _pclose
 _pctype
-_pgmptr
+pgmptr
 _pipe
 _popen
 _printf_l
@@ -1091,7 +1091,7 @@ _wctime64_s
 _wctomb_l
 _wctomb_s_l
 _wctype
-_wenviron
+wenviron
 _wexecl
 _wexecle
 _wexeclp
@@ -1118,10 +1118,10 @@ _wgetcwd
 _wgetdcwd
 _wgetenv
 _wgetenv_s
-_winmajor
-_winminor
+winmajor
+winminor
 _winput_s
-_winver
+winver
 _wmakepath
 _wmakepath_s
 _wmkdir
@@ -1130,7 +1130,7 @@ _wmktemp_s
 _wopen
 _woutput_s
 _wperror
-_wpgmptr
+wpgmptr
 _wpopen
 _wprintf_l
 _wprintf_p

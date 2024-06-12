@@ -7,7 +7,7 @@ ENDM
 
 API BindMoniker
 API CLIPFORMAT_UserFree
-API CLIPFORMAT_UserFree64
+API CLIPFORMAT_UserFree
 API ?CLIPFORMAT_UserFreeExt@@YAXPEAKPEAG@Z
 API CLIPFORMAT_UserMarshal
 API CLIPFORMAT_UserMarshal64
@@ -23,11 +23,11 @@ API CLSIDFromProgID
 API CLSIDFromProgIDEx
 API CLSIDFromString
 API CStdAsyncStubBuffer2_Connect
-API CStdAsyncStubBuffer2_Disconnect
+API CStdStubBuffer2_Disconnect
 API CStdAsyncStubBuffer2_Release
-API CStdAsyncStubBuffer_AddRef
+API ?AddRef@DeviceCatalogs@@UEAAKXZ
 API CStdAsyncStubBuffer_Connect
-API CStdAsyncStubBuffer_Disconnect
+API CStdStubBuffer_Disconnect
 API CStdAsyncStubBuffer_Invoke
 API CStdAsyncStubBuffer_QueryInterface
 API CStdAsyncStubBuffer_Release
@@ -171,7 +171,7 @@ API CreateDataCache
 API CoCreateErrorInfo
 API CreateFileMoniker
 API CreateGenericComposite
-API CreateILockBytesOnHGlobalStub ; -> CreateILockBytesOnHGlobal
+API CreateILockBytesOnHGlobalStub
 API CreateItemMoniker
 API CreateObjrefMoniker
 API CreateOleAdviseHolder
@@ -184,56 +184,56 @@ API DeletePatternAndExtensionTables
 API DestroyRunningObjectTable
 API DllDebugObjectRPCHook
 API DllGetClassObject
-API DllGetClassObject ; -> DllGetClassObjectWOW
+API DllGetClassObject
 API DllRegisterServer
 API DoDragDrop
 API DragDropSetFDT
 API EnableHookObject
 API FindExt
-API FmtIdToPropStgNameStub ; -> FmtIdToPropStgName
+API FmtIdToPropStgNameStub
 API FreePropVariantArray
 API GetActiveObjectExt
 API GetClassFile
-API GetConvertStgStub ; -> GetConvertStg
-API GetDocumentBitStgStub ; -> GetDocumentBitStg
+API GetConvertStgStub
+API GetDocumentBitStgStub
 API CoGetErrorInfo
-API GetHGlobalFromILockBytesStub ; -> GetHGlobalFromILockBytes
+API GetHGlobalFromILockBytesStub
 API GetHGlobalFromStream
 API GetHookInterface
 API GetObjectFromRotByPath
 API GetRunningObjectTable
 API HACCEL_UserFree
-API HACCEL_UserFree64
-API HACCEL_UserMarshal
+API HACCEL_UserFree
+API HACCEL_UserMarshal64
 API HACCEL_UserMarshal64
 API HACCEL_UserSize
-API HACCEL_UserSize64
-API HACCEL_UserUnmarshal
+API HACCEL_UserSize
+API HACCEL_UserUnmarshal64
 API HACCEL_UserUnmarshal64
 API HBITMAP_UserFree
-API HBITMAP_UserFree64
+API HBITMAP_UserFree
 API HBITMAP_UserMarshal
 API HBITMAP_UserMarshal64
 API HBITMAP_UserSize
 API HBITMAP_UserSize64
 API HBITMAP_UserUnmarshal
 API HBITMAP_UserUnmarshal64
-API HBRUSH_UserFree
 API HBRUSH_UserFree64
-API HBRUSH_UserMarshal
+API HBRUSH_UserFree64
 API HBRUSH_UserMarshal64
-API HBRUSH_UserSize
+API HBRUSH_UserMarshal64
+API HBRUSH_UserSize64
 API HBRUSH_UserSize64
 API HBRUSH_UserUnmarshal
-API HBRUSH_UserUnmarshal64
+API HBRUSH_UserUnmarshal
 API HDC_UserFree
 API HDC_UserFree64
-API HDC_UserMarshal
+API HDC_UserMarshal64
 API HDC_UserMarshal64
 API HDC_UserSize
-API HDC_UserSize64
+API HDC_UserSize
 API HDC_UserUnmarshal
-API HDC_UserUnmarshal64
+API HDC_UserUnmarshal
 API HENHMETAFILE_UserFree
 API HENHMETAFILE_UserFree64
 API HENHMETAFILE_UserMarshal
@@ -251,20 +251,20 @@ API HGLOBAL_UserSize64
 API HGLOBAL_UserUnmarshal
 API HGLOBAL_UserUnmarshal64
 API HICON_UserFree
-API HICON_UserFree64
-API HICON_UserMarshal
+API HICON_UserFree
 API HICON_UserMarshal64
-API HICON_UserSize
+API HICON_UserMarshal64
 API HICON_UserSize64
-API HICON_UserUnmarshal
+API HICON_UserSize64
+API HICON_UserUnmarshal64
 API HICON_UserUnmarshal64
 API HMENU_UserFree
-API HMENU_UserFree64
+API HMENU_UserFree
 API HMENU_UserMarshal
-API HMENU_UserMarshal64
+API HMENU_UserMarshal
 API HMENU_UserSize
-API HMENU_UserSize64
-API HMENU_UserUnmarshal
+API HMENU_UserSize
+API HMENU_UserUnmarshal64
 API HMENU_UserUnmarshal64
 API HMETAFILEPICT_UserFree
 API HMETAFILEPICT_UserFree64
@@ -282,7 +282,7 @@ API HMETAFILE_UserSize
 API HMETAFILE_UserSize64
 API HMETAFILE_UserUnmarshal
 API HMETAFILE_UserUnmarshal64
-API HMONITOR_UserFree
+API HMONITOR_UserFree64
 API HMONITOR_UserFree64
 API HMONITOR_UserMarshal
 API HMONITOR_UserMarshal64
@@ -291,7 +291,7 @@ API HMONITOR_UserSize64
 API HMONITOR_UserUnmarshal
 API HMONITOR_UserUnmarshal64
 API HPALETTE_UserFree
-API HPALETTE_UserFree64
+API HPALETTE_UserFree
 API ?HPALETTE_UserFreeExt@@YAXPEAKPEAPEAUHPALETTE__@@@Z
 API HPALETTE_UserMarshal
 API HPALETTE_UserMarshal64
@@ -302,24 +302,24 @@ API ?HPALETTE_UserSizeExt@@YAKPEAKKPEAPEAUHPALETTE__@@@Z
 API HPALETTE_UserUnmarshal
 API HPALETTE_UserUnmarshal64
 API ?HPALETTE_UserUnmarshalExt@@YAPEAEPEAKPEAEPEAPEAUHPALETTE__@@@Z
-API HRGN_UserFree
-API HRGN_UserMarshal
-API HRGN_UserSize
-API HRGN_UserUnmarshal
+API ?HRGN_UserFree@@YAXPEAKPEAPEAUHRGN__@@@Z
+API ?HRGN_UserMarshal@@YAPEAEPEAKPEAEPEAPEAUHRGN__@@@Z
+API ?HRGN_UserSize@@YAKPEAKKPEAPEAUHRGN__@@@Z
+API ?HRGN_UserUnmarshal64@@YAPEAEPEAKPEAEPEAPEAUHRGN__@@@Z
 API HWND_UserFree
-API HWND_UserFree64
+API HWND_UserFree
 API ?HWND_UserFree64Ext@@YAXPEAKPEAPEAUHWND__@@@Z
 API ?HWND_UserFreeExt@@YAXPEAKPEAPEAUHWND__@@@Z
 API HWND_UserMarshal
-API HWND_UserMarshal64
+API HWND_UserMarshal
 API ?HWND_UserMarshal64Ext@@YAPEAEPEAKPEAEPEAPEAUHWND__@@@Z
 API ?HWND_UserMarshalExt@@YAPEAEPEAKPEAEPEAPEAUHWND__@@@Z
 API HWND_UserSize
-API HWND_UserSize64
+API HWND_UserSize
 API ?HWND_UserSize64Ext@@YAKPEAKKPEAPEAUHWND__@@@Z
 API ?HWND_UserSizeExt@@YAKPEAKKPEAPEAUHWND__@@@Z
 API HWND_UserUnmarshal
-API HWND_UserUnmarshal64
+API HWND_UserUnmarshal
 API ?HWND_UserUnmarshal64Ext@@YAPEAEPEAKPEAEPEAPEAUHWND__@@@Z
 API ?HWND_UserUnmarshalExt@@YAPEAEPEAKPEAEPEAPEAUHWND__@@@Z
 API HkOleRegisterObject
@@ -329,13 +329,13 @@ API IsEqualGUID
 API IsRoInitializeASTAAllowedInDesktop
 API IsValidIid
 API IsValidInterface
-API ExportedIsValidPtrIn ; -> IsValidPtrIn
-API ExportedIsValidPtrIn ; -> IsValidPtrOut
+API ExportedIsValidPtrIn
+API ExportedIsValidPtrIn
 API MkParseDisplayName
 API MonikerCommonPrefixWith
 API ?MonikerLoadTypeLib@@YAJPEBGPEAPEAUITypeLib@@@Z
 API MonikerRelativePathTo
-API NdrOleInitializeExtension
+API ?NdrOleInitializeExtension@@YAJPEAPEBU_NDROLE_EXTENSION_ROUTINES_TABLE@@PEAPEBU_NDR_FWD_ROUTINES@@@Z
 API NdrProxyForwardingFunction10
 API NdrProxyForwardingFunction11
 API NdrProxyForwardingFunction12
@@ -397,7 +397,7 @@ API ObjectStublessClient7
 API ObjectStublessClient8
 API ObjectStublessClient9
 API Ole32DllGetClassObject
-API CoBuildVersion ; -> OleBuildVersion
+API CoBuildVersion
 API OleConvertIStorageToOLESTREAM
 API OleConvertIStorageToOLESTREAMEx
 API OleConvertOLESTREAMToIStorage
@@ -465,17 +465,17 @@ API OleTranslateColorExt
 API OleUninitialize
 API OpenOrCreateStream
 API ProgIDFromCLSID
-API PropStgNameToFmtIdStub ; -> PropStgNameToFmtId
-API PropSysAllocStringStub ; -> PropSysAllocString
-API PropSysFreeStringStub ; -> PropSysFreeString
-API PropVariantChangeTypeStub ; -> PropVariantChangeType
+API PropStgNameToFmtIdStub
+API PropSysAllocStringStub
+API PropSysFreeStringStub
+API PropVariantChangeTypeStub
 API PropVariantClear
 API PropVariantCopy
-API ReadClassStgStub ; -> ReadClassStg
-API ReadClassStmStub ; -> ReadClassStm
+API ReadClassStgStub
+API ReadClassStmStub
 API ReadFmtUserTypeStg
 API ReadOleStg
-API ReadClassStgStub ; -> ReadStorageProperties
+API ReadClassStgStub
 API ReadStringStream
 API RegisterActiveObjectExt
 API RegisterDragDrop
@@ -510,35 +510,35 @@ API ?SetOleautModule@@YAXPEAUHINSTANCE__@@@Z
 API SetWOWThunkGlobalPtr
 API ?StdTypesGetClassObject@@YAJAEBU_GUID@@0PEAPEAX@Z
 API ?StdTypesRegisterServer@@YAJXZ
-API StgConvertPropertyToVariantStub ; -> StgConvertPropertyToVariant
-API StgConvertVariantToPropertyStub ; -> StgConvertVariantToProperty
-API StgCreateDocfileStub ; -> StgCreateDocfile
-API StgCreateDocfileOnILockBytesStub ; -> StgCreateDocfileOnILockBytes
-API StgCreatePropSetStgStub ; -> StgCreatePropSetStg
-API StgCreatePropStgStub ; -> StgCreatePropStg
-API StgCreateStorageExStub ; -> StgCreateStorageEx
-API StgGetIFillLockBytesOnFileStub ; -> StgGetIFillLockBytesOnFile
-API StgGetIFillLockBytesOnILockBytesStub ; -> StgGetIFillLockBytesOnILockBytes
-API StgIsStorageFileStub ; -> StgIsStorageFile
-API StgIsStorageILockBytesStub ; -> StgIsStorageILockBytes
-API StgOpenAsyncDocfileOnIFillLockBytesStub ; -> StgOpenAsyncDocfileOnIFillLockBytes
-API StgOpenPropStgStub ; -> StgOpenPropStg
-API StgOpenStorageStub ; -> StgOpenStorage
-API StgOpenStorageExStub ; -> StgOpenStorageEx
-API StgOpenStorageOnHandleStub ; -> StgOpenStorageOnHandle
-API StgOpenStorageOnILockBytesStub ; -> StgOpenStorageOnILockBytes
-API StgPropertyLengthAsVariantStub ; -> StgPropertyLengthAsVariant
-API StgSetTimesStub ; -> StgSetTimes
+API StgConvertPropertyToVariantStub
+API StgConvertVariantToPropertyStub
+API StgCreateDocfileStub
+API StgCreateDocfileOnILockBytesStub
+API StgCreatePropSetStgStub
+API StgCreatePropStgStub
+API StgCreateStorageExStub
+API StgGetIFillLockBytesOnFileStub
+API StgGetIFillLockBytesOnILockBytesStub
+API StgIsStorageFileStub
+API StgIsStorageILockBytesStub
+API StgOpenAsyncDocfileOnIFillLockBytesStub
+API StgOpenPropStgStub
+API StgOpenStorageStub
+API StgOpenStorageExStub
+API StgOpenStorageOnHandleStub
+API StgOpenStorageOnILockBytesStub
+API StgPropertyLengthAsVariantStub
+API StgSetTimesStub
 API StringFromCLSID
 API StringFromGUID2
 API StringFromIID
 API UpdateDCOMSettings
-API UpdateProcessTracing
+API ?UpdateProcessTracing@@YAJKH@Z
 API UtConvertDvtd16toDvtd32
 API UtConvertDvtd32toDvtd16
 API UtGetDvtd16Info
 API UtGetDvtd32Info
-API WdtpInterfacePointer_UserFree
+API WdtpInterfacePointer_UserFree64
 API WdtpInterfacePointer_UserFree64
 API WdtpInterfacePointer_UserMarshal
 API WdtpInterfacePointer_UserMarshal64
@@ -546,8 +546,8 @@ API WdtpInterfacePointer_UserSize
 API WdtpInterfacePointer_UserSize64
 API WdtpInterfacePointer_UserUnmarshal
 API WdtpInterfacePointer_UserUnmarshal64
-API WriteClassStgStub ; -> WriteClassStg
-API WriteClassStmStub ; -> WriteClassStm
+API WriteClassStgStub
+API WriteClassStmStub
 API WriteFmtUserTypeStg
 API WriteOleStg
 API ?WriteStorageProperties@@YAJPEAUIStorage@@AEBU_GUID@@GPEAG@Z
