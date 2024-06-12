@@ -106,7 +106,8 @@ DECLSPEC_IMPORT
 long myCryptStringToBinaryA(char const *,unsigned long,unsigned long,unsigned char * *,unsigned long *,unsigned long *,unsigned long *);
 
 DECLSPEC_IMPORT
-?myDoesDSExist@209@@YAJH@Z;
+//?myDoesDSExist@209@@YAJH@Z; !! manual fix !!
+long __cdecl myDoesDSExist_209(int);
 
 DECLSPEC_IMPORT
 long myEnablePrivilege(long,int);
