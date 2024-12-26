@@ -106,8 +106,6 @@ NTSTATUS DoInject(_In_ PCWSTR lpLibFileName)
 	return status;
 }
 
-#include <conio.h>
-
 void WINAPI ep(BOOLEAN b)
 {
 	InitPrintf();
@@ -122,6 +120,7 @@ void WINAPI ep(BOOLEAN b)
 				{
 					if (RtlDoesFileExists_U(FileName))
 					{
+						;
 						RtlAdjustPrivilege(SE_DEBUG_PRIVILEGE, TRUE, FALSE, &b);
 						DoInject(FileName);
 					}

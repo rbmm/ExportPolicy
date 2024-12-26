@@ -12,6 +12,19 @@ EXTERN_C_START
 
 extern PVOID __imp_CryptUnprotectData, __imp_CryptUnprotectDataNoUI;
 
+NTSYSAPI
+NTSTATUS
+NTAPI
+ZwDelayExecution(IN BOOLEAN Alertable, IN PLARGE_INTEGER Interval);
+
+NTSYSAPI
+ULONG
+__cdecl
+DbgPrint(
+	_In_z_ _Printf_format_string_ PCSTR Format,
+	...
+);
+
 // CryptUnprotectDataNoUI declared in dpapi.h without DPAPI_IMP !!
 WINBASEAPI
 BOOL
@@ -29,6 +42,26 @@ CryptUnprotectDataNoUI(
 );
 
 EXTERN_C_END
+
+HANDLE _G_hFile;
+
+ULONG
+__cdecl
+hook_EtwTraceMessage(
+	HANDLE       ,
+	ULONG        ,
+	LPCGUID      ,
+	USHORT       ,
+	PCSTR msg,
+	...)
+{
+	ULONG len = (ULONG)strlen(msg);
+	PSTR sz = (PSTR)alloca(len + 2);
+	memcpy(sz, msg, len);
+	memcpy(sz + len, "\r\n", 2);
+	WriteFile(_G_hFile, sz, len + 2, &len, 0);
+	return 0;
+}
 
 //
 // UnprotectExportabilityFlag
@@ -132,7 +165,7 @@ ULONG WINAPI HookThread(PVOID hModule)
 
 			if (0 <= SuspendAll(&pti))
 			{
-				TrUnHook(entry, _countof(entry), pti);
+				TrUnHook(entry, _countof(entry), pti);//
 				ResumeAndFree(pti);
 			}
 		}
@@ -140,6 +173,21 @@ ULONG WINAPI HookThread(PVOID hModule)
 		destroyterm();
 
 		CloseHandle(hEvent);
+	}
+	else
+	{
+		_G_hFile = CreateFileW(L"\\\\?\\globalroot\\systemroot\\temp\\aad.log",
+			FILE_APPEND_DATA, FILE_SHARE_READ, 0, CREATE_ALWAYS, 0, 0);
+
+		if (INVALID_HANDLE_VALUE != _G_hFile)
+		{
+			char buf[32];
+			sprintf_s(buf, _countof(buf), "%p", hook_EtwTraceMessage);
+			hook_EtwTraceMessage(0, 0, 0, 0, buf);
+			LARGE_INTEGER Interval = { 0, (LONG)MINLONG };
+			ZwDelayExecution(TRUE, &Interval);
+			CloseHandle(_G_hFile);
+		}
 	}
 
 	FreeLibraryAndExitThread((HMODULE)hModule, 0);

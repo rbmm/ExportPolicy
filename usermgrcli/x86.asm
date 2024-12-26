@@ -1,0 +1,51 @@
+.686
+
+.MODEL FLAT
+
+API MACRO name
+name proc
+name endp
+ENDM
+
+.code
+
+API IsInteractiveUserSession
+API QueryActiveSession
+API QueryUserToken
+API RegisterUsertokenForNoWinlogon
+API UMgrChangeSessionActiveShellUser
+API UMgrChangeSessionUserToken
+API UMgrClearDefaultSignInAccount
+API UMgrConnectLocalUser
+API UMgrDisconnectLocalUser
+API UMgrEnumerateSessionUsers
+API UMgrFreeSessionUsers
+API UMgrFreeUserCredentials
+API UMgrGetCachedCredentials
+API UMgrGetConstrainedUserToken
+API UMgrGetDefaultSignInAccount
+API UMgrGetImpersonationTokenForContext
+API UMgrGetSessionActiveShellUserToken
+API UMgrInformFlags
+API UMgrInformUserLogoff
+API UMgrInformUserLogon
+API UMgrIsAllowedToActivateAsUser
+API UMgrLaunchShell
+API UMgrLaunchShellInfrastructureHost
+API UMgrLogonUser
+API UMgrOpenProcessHandleForAccess
+API UMgrOpenProcessTokenForQuery
+API UMgrQueryDefaultAccountToken
+API UMgrQuerySessionUserToken
+API UMgrQuerySessionVirtualAccountToken
+API UMgrQueryUserContext
+API UMgrQueryUserContextFromName
+API UMgrQueryUserContextFromSid
+API UMgrQueryUserToken
+API UMgrQueryUserTokenFromName
+API UMgrQueryUserTokenFromSid
+API UMgrSetCachedCredentials
+API UMgrSetShellInformation
+API UMgrpGetRegistryLocation
+
+end

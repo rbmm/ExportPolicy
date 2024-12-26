@@ -1,0 +1,5 @@
+EXPORTS
+
+CloudAPPluginInitialize
+DllRegisterServer PRIVATE
+DllUnregisterServer = DllRegisterServer PRIVATE

@@ -1,0 +1,19 @@
+API MACRO name
+name proc
+name endp
+ENDM
+
+.code
+
+API CloseFidoAuthenticationSession
+API CreateAuthBuffer
+API CreateResourceAccountAuthBuffer
+API CreateTokenAuthBuffer
+API CreateTokenAuthBufferEx
+API GetFidoAuthenticationSessionStatus
+API GetSerializedAuthBuffer
+API StartChangingFidoPin
+API StartFidoAuthenticationSession
+API StartSigningFidoClientData
+
+end
