@@ -14,9 +14,9 @@ CLSIDFromProgID
 CLSIDFromProgIDEx
 CLSIDFromString
 CStdAsyncStubBuffer2_Connect
-CStdAsyncStubBuffer2_Disconnect
+CStdAsyncStubBuffer2_Disconnect = CStdStubBuffer2_Disconnect
 CStdAsyncStubBuffer2_Release
-CStdAsyncStubBuffer_AddRef
+CStdAsyncStubBuffer_AddRef = Allocation_SealedClassDeleteSelfLayer<CPolicySet,ObjectLibrary
 CStdAsyncStubBuffer_Connect
 CStdAsyncStubBuffer_Disconnect = CStdStubBuffer_Disconnect
 CStdAsyncStubBuffer_Invoke
@@ -24,7 +24,7 @@ CStdAsyncStubBuffer_QueryInterface
 CStdAsyncStubBuffer_Release
 CStdStubBuffer2_Connect
 CStdStubBuffer2_CountRefs
-CStdStubBuffer2_Disconnect = CStdAsyncStubBuffer2_Disconnect
+CStdStubBuffer2_Disconnect
 CStdStubBuffer2_QueryInterface
 CheckInitDde
 CleanROTForApartment
@@ -54,7 +54,7 @@ CoDosDateTimeToFileTime
 CoEnableCallCancellation
 CoFileTimeNow
 CoFileTimeToDosDateTime
-CoFreeAllLibraries = _guard_check_icall_nop
+CoFreeAllLibraries
 CoFreeLibrary
 CoFreeUnusedLibraries
 CoFreeUnusedLibrariesEx
@@ -133,7 +133,7 @@ CoRevokeMallocSpy
 CoSetCancelObject
 CoSetMessageDispatcher
 CoSetProxyBlanket
-CoSetState
+CoSetState = GetServerObjectContext
 CoSuspendClassObjects
 CoSwitchCallContext
 CoTaskMemAlloc
@@ -151,7 +151,7 @@ CoVrfGetThreadState
 CoVrfReleaseThreadState
 CoWaitForMultipleHandles
 CoWaitForMultipleObjects
-ComPs_NdrDllCanUnloadNow = Release
+ComPs_NdrDllCanUnloadNow = IsDirty
 ComPs_NdrDllGetClassObject
 ComPs_NdrDllRegisterProxy
 ComPs_NdrDllUnregisterProxy
@@ -177,7 +177,7 @@ DestroyRunningObjectTable
 DllDebugObjectRPCHook
 DllGetClassObject PRIVATE
 DllGetClassObjectWOW = DllGetClassObject
-DllRegisterServer PRIVATE
+DllRegisterServer = RaiseEvent PRIVATE
 DoDragDrop
 DragDropSetFDT
 EnableHookObject
@@ -194,22 +194,22 @@ GetHGlobalFromStream
 GetHookInterface
 GetObjectFromRotByPath
 GetRunningObjectTable
-HACCEL_UserFree = CStdStubBuffer_DebugServerRelease
-HACCEL_UserMarshal
-HACCEL_UserSize = HDC_UserSize
-HACCEL_UserUnmarshal = HDC_UserUnmarshal
+HACCEL_UserFree = ReportStubInvokeFailure
+HACCEL_UserMarshal = HDC_UserMarshal
+HACCEL_UserSize = HWND_UserSize
+HACCEL_UserUnmarshal = HMENU_UserUnmarshal
 HBITMAP_UserFree
 HBITMAP_UserMarshal
 HBITMAP_UserSize
 HBITMAP_UserUnmarshal
-HBRUSH_UserFree = CStdStubBuffer_DebugServerRelease
-HBRUSH_UserMarshal = HACCEL_UserMarshal
-HBRUSH_UserSize = HDC_UserSize
-HBRUSH_UserUnmarshal = HDC_UserUnmarshal
-HDC_UserFree = HRGN_UserFree
-HDC_UserMarshal = HACCEL_UserMarshal
-HDC_UserSize
-HDC_UserUnmarshal
+HBRUSH_UserFree = ReportStubInvokeFailure
+HBRUSH_UserMarshal = HDC_UserMarshal
+HBRUSH_UserSize = HWND_UserSize
+HBRUSH_UserUnmarshal = HMENU_UserUnmarshal
+HDC_UserFree
+HDC_UserMarshal
+HDC_UserSize = HWND_UserSize
+HDC_UserUnmarshal = HMENU_UserUnmarshal
 HENHMETAFILE_UserFree
 HENHMETAFILE_UserMarshal
 HENHMETAFILE_UserSize
@@ -218,14 +218,14 @@ HGLOBAL_UserFree
 HGLOBAL_UserMarshal
 HGLOBAL_UserSize
 HGLOBAL_UserUnmarshal
-HICON_UserFree = CStdStubBuffer_DebugServerRelease
-HICON_UserMarshal = HACCEL_UserMarshal
-HICON_UserSize = HDC_UserSize
-HICON_UserUnmarshal = HDC_UserUnmarshal
-HMENU_UserFree = CStdStubBuffer_DebugServerRelease
-HMENU_UserMarshal = HACCEL_UserMarshal
-HMENU_UserSize = HDC_UserSize
-HMENU_UserUnmarshal = HDC_UserUnmarshal
+HICON_UserFree = ReportStubInvokeFailure
+HICON_UserMarshal = HDC_UserMarshal
+HICON_UserSize = HWND_UserSize
+HICON_UserUnmarshal = HMENU_UserUnmarshal
+HMENU_UserFree = ReportStubInvokeFailure
+HMENU_UserMarshal = HDC_UserMarshal
+HMENU_UserSize = HWND_UserSize
+HMENU_UserUnmarshal
 HMETAFILEPICT_UserFree
 HMETAFILEPICT_UserMarshal
 HMETAFILEPICT_UserSize
@@ -234,10 +234,10 @@ HMETAFILE_UserFree
 HMETAFILE_UserMarshal
 HMETAFILE_UserSize
 HMETAFILE_UserUnmarshal
-HMONITOR_UserFree = CStdStubBuffer_DebugServerRelease
-HMONITOR_UserMarshal
-HMONITOR_UserSize
-HMONITOR_UserUnmarshal = HWND_UserUnmarshal
+HMONITOR_UserFree = ReportStubInvokeFailure
+HMONITOR_UserMarshal = HDC_UserMarshal
+HMONITOR_UserSize = HWND_UserSize
+HMONITOR_UserUnmarshal = HMENU_UserUnmarshal
 HPALETTE_UserFree
 HPALETTE_UserFreeExt
 HPALETTE_UserMarshal
@@ -246,24 +246,24 @@ HPALETTE_UserSize
 HPALETTE_UserSizeExt
 HPALETTE_UserUnmarshal
 HPALETTE_UserUnmarshalExt
-HRGN_UserFree
-HRGN_UserMarshal = HACCEL_UserMarshal
-HRGN_UserSize = HDC_UserSize
-HRGN_UserUnmarshal = HDC_UserUnmarshal
-HWND_UserFree = CStdStubBuffer_DebugServerRelease
+HRGN_UserFree = HDC_UserFree
+HRGN_UserMarshal = HDC_UserMarshal
+HRGN_UserSize = HWND_UserSize
+HRGN_UserUnmarshal = HMENU_UserUnmarshal
+HWND_UserFree = ReportStubInvokeFailure
 HWND_UserFreeExt
-HWND_UserMarshal = HMONITOR_UserMarshal
+HWND_UserMarshal = HDC_UserMarshal
 HWND_UserMarshalExt
-HWND_UserSize = HMONITOR_UserSize
+HWND_UserSize
 HWND_UserSizeExt
-HWND_UserUnmarshal
+HWND_UserUnmarshal = HMENU_UserUnmarshal
 HWND_UserUnmarshalExt
 HkOleRegisterObject
 IIDFromString
 IsAccelerator
 IsEqualGUID
 IsRoInitializeASTAAllowedInDesktop
-IsValidIid = Release
+IsValidIid = IsDirty
 IsValidInterface
 IsValidPtrIn = ExportedIsValidPtrIn
 IsValidPtrOut = ExportedIsValidPtrIn
@@ -337,7 +337,9 @@ OleBuildVersion = CoBuildVersion
 OleConvertIStorageToOLESTREAM
 OleConvertIStorageToOLESTREAMEx
 OleConvertOLESTREAMToIStorage
+OleConvertOLESTREAMToIStorage2
 OleConvertOLESTREAMToIStorageEx
+OleConvertOLESTREAMToIStorageEx2
 OleCreate
 OleCreateDefaultHandler
 OleCreateEmbeddingHelper
@@ -407,11 +409,11 @@ PropSysFreeString = PropSysFreeStringStub
 PropVariantChangeType = PropVariantChangeTypeStub
 PropVariantClear
 PropVariantCopy
-ReadClassStg = ReadClassStgStub
+ReadClassStg = ReadStorageProperties
 ReadClassStm = ReadClassStmStub
 ReadFmtUserTypeStg
 ReadOleStg
-ReadStorageProperties = ReadClassStgStub
+ReadStorageProperties
 ReadStringStream
 RegisterActiveObjectExt
 RegisterDragDrop

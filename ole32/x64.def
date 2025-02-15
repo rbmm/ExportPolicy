@@ -1,8 +1,8 @@
 EXPORTS
 
 BindMoniker
-CLIPFORMAT_UserFree
-CLIPFORMAT_UserFree64 = CLIPFORMAT_UserFree
+CLIPFORMAT_UserFree = CLIPFORMAT_UserFree64
+CLIPFORMAT_UserFree64
 CLIPFORMAT_UserFreeExt
 CLIPFORMAT_UserMarshal
 CLIPFORMAT_UserMarshal64
@@ -18,17 +18,17 @@ CLSIDFromProgID
 CLSIDFromProgIDEx
 CLSIDFromString
 CStdAsyncStubBuffer2_Connect
-CStdAsyncStubBuffer2_Disconnect = CStdStubBuffer2_Disconnect
+CStdAsyncStubBuffer2_Disconnect
 CStdAsyncStubBuffer2_Release
-CStdAsyncStubBuffer_AddRef = AddRef
+CStdAsyncStubBuffer_AddRef = PerUserCacheInformation,Ob
 CStdAsyncStubBuffer_Connect
-CStdAsyncStubBuffer_Disconnect = CStdStubBuffer_Disconnect
+CStdAsyncStubBuffer_Disconnect
 CStdAsyncStubBuffer_Invoke
 CStdAsyncStubBuffer_QueryInterface
 CStdAsyncStubBuffer_Release
 CStdStubBuffer2_Connect
 CStdStubBuffer2_CountRefs
-CStdStubBuffer2_Disconnect
+CStdStubBuffer2_Disconnect = CStdAsyncStubBuffer2_Disconnect
 CStdStubBuffer2_QueryInterface
 CheckInitDde
 CleanROTForApartment
@@ -57,7 +57,7 @@ CoDosDateTimeToFileTime
 CoEnableCallCancellation
 CoFileTimeNow
 CoFileTimeToDosDateTime
-CoFreeAllLibraries
+CoFreeAllLibraries = __empty_global_delete
 CoFreeLibrary
 CoFreeUnusedLibraries
 CoFreeUnusedLibrariesEx
@@ -114,7 +114,7 @@ CoPushServiceDomain
 CoQueryAuthenticationServices
 CoQueryClientBlanket
 CoQueryProxyBlanket
-CoQueryReleaseObject
+CoQueryReleaseObject = ExportedIsValidPtrIn
 CoReactivateObject
 CoRegisterActivationFilter
 CoRegisterChannelHook
@@ -136,7 +136,7 @@ CoRevokeMallocSpy
 CoSetCancelObject
 CoSetMessageDispatcher
 CoSetProxyBlanket
-CoSetState
+CoSetState = GetPriority
 CoSuspendClassObjects
 CoSwitchCallContext
 CoTaskMemAlloc
@@ -154,7 +154,7 @@ CoVrfGetThreadState
 CoVrfReleaseThreadState
 CoWaitForMultipleHandles
 CoWaitForMultipleObjects
-ComPs_NdrDllCanUnloadNow
+ComPs_NdrDllCanUnloadNow = ExportedIsValidPtrIn
 ComPs_NdrDllGetClassObject
 ComPs_NdrDllRegisterProxy
 ComPs_NdrDllUnregisterProxy
@@ -180,7 +180,7 @@ DestroyRunningObjectTable
 DllDebugObjectRPCHook
 DllGetClassObject PRIVATE
 DllGetClassObjectWOW = DllGetClassObject
-DllRegisterServer PRIVATE
+DllRegisterServer = GetPriority PRIVATE
 DoDragDrop
 DragDropSetFDT
 EnableHookObject
@@ -197,38 +197,38 @@ GetHGlobalFromStream
 GetHookInterface
 GetObjectFromRotByPath
 GetRunningObjectTable
-HACCEL_UserFree
-HACCEL_UserFree64 = HACCEL_UserFree
-HACCEL_UserMarshal = HACCEL_UserMarshal64
-HACCEL_UserMarshal64
-HACCEL_UserSize
-HACCEL_UserSize64 = HACCEL_UserSize
-HACCEL_UserUnmarshal = HACCEL_UserUnmarshal64
-HACCEL_UserUnmarshal64
+HACCEL_UserFree = OnSyncCallCompletedWithOutstandingRpcCancel
+HACCEL_UserFree64 = OnSyncCallCompletedWithOutstandingRpcCancel
+HACCEL_UserMarshal = HRGN_UserMarshal64
+HACCEL_UserMarshal64 = HRGN_UserMarshal64
+HACCEL_UserSize = HWND_UserSize64
+HACCEL_UserSize64 = HWND_UserSize64
+HACCEL_UserUnmarshal = HWND_UserUnmarshal64
+HACCEL_UserUnmarshal64 = HWND_UserUnmarshal64
 HBITMAP_UserFree
-HBITMAP_UserFree64 = HBITMAP_UserFree
+HBITMAP_UserFree64
 HBITMAP_UserMarshal
 HBITMAP_UserMarshal64
 HBITMAP_UserSize
 HBITMAP_UserSize64
 HBITMAP_UserUnmarshal
 HBITMAP_UserUnmarshal64
-HBRUSH_UserFree = HBRUSH_UserFree64
-HBRUSH_UserFree64
-HBRUSH_UserMarshal = HBRUSH_UserMarshal64
-HBRUSH_UserMarshal64
-HBRUSH_UserSize = HBRUSH_UserSize64
-HBRUSH_UserSize64
-HBRUSH_UserUnmarshal
-HBRUSH_UserUnmarshal64 = HBRUSH_UserUnmarshal
+HBRUSH_UserFree = OnSyncCallCompletedWithOutstandingRpcCancel
+HBRUSH_UserFree64 = OnSyncCallCompletedWithOutstandingRpcCancel
+HBRUSH_UserMarshal = HRGN_UserMarshal64
+HBRUSH_UserMarshal64 = HRGN_UserMarshal64
+HBRUSH_UserSize = HWND_UserSize64
+HBRUSH_UserSize64 = HWND_UserSize64
+HBRUSH_UserUnmarshal = HWND_UserUnmarshal64
+HBRUSH_UserUnmarshal64 = HWND_UserUnmarshal64
 HDC_UserFree
-HDC_UserFree64
-HDC_UserMarshal = HDC_UserMarshal64
-HDC_UserMarshal64
-HDC_UserSize
-HDC_UserSize64 = HDC_UserSize
-HDC_UserUnmarshal
-HDC_UserUnmarshal64 = HDC_UserUnmarshal
+HDC_UserFree64 = OnSyncCallCompletedWithOutstandingRpcCancel
+HDC_UserMarshal = HRGN_UserMarshal64
+HDC_UserMarshal64 = HRGN_UserMarshal64
+HDC_UserSize = HWND_UserSize64
+HDC_UserSize64 = HWND_UserSize64
+HDC_UserUnmarshal = HWND_UserUnmarshal64
+HDC_UserUnmarshal64 = HWND_UserUnmarshal64
 HENHMETAFILE_UserFree
 HENHMETAFILE_UserFree64
 HENHMETAFILE_UserMarshal
@@ -238,29 +238,29 @@ HENHMETAFILE_UserSize64
 HENHMETAFILE_UserUnmarshal
 HENHMETAFILE_UserUnmarshal64
 HGLOBAL_UserFree
-HGLOBAL_UserFree64
+HGLOBAL_UserFree64 = HGLOBAL_UserFree
 HGLOBAL_UserMarshal
 HGLOBAL_UserMarshal64
 HGLOBAL_UserSize
 HGLOBAL_UserSize64
 HGLOBAL_UserUnmarshal
 HGLOBAL_UserUnmarshal64
-HICON_UserFree
-HICON_UserFree64 = HICON_UserFree
-HICON_UserMarshal = HICON_UserMarshal64
-HICON_UserMarshal64
-HICON_UserSize = HICON_UserSize64
-HICON_UserSize64
-HICON_UserUnmarshal = HICON_UserUnmarshal64
-HICON_UserUnmarshal64
-HMENU_UserFree
-HMENU_UserFree64 = HMENU_UserFree
-HMENU_UserMarshal
-HMENU_UserMarshal64 = HMENU_UserMarshal
-HMENU_UserSize
-HMENU_UserSize64 = HMENU_UserSize
-HMENU_UserUnmarshal = HMENU_UserUnmarshal64
-HMENU_UserUnmarshal64
+HICON_UserFree = OnSyncCallCompletedWithOutstandingRpcCancel
+HICON_UserFree64 = OnSyncCallCompletedWithOutstandingRpcCancel
+HICON_UserMarshal = HRGN_UserMarshal64
+HICON_UserMarshal64 = HRGN_UserMarshal64
+HICON_UserSize = HWND_UserSize64
+HICON_UserSize64 = HWND_UserSize64
+HICON_UserUnmarshal = HWND_UserUnmarshal64
+HICON_UserUnmarshal64 = HWND_UserUnmarshal64
+HMENU_UserFree = OnSyncCallCompletedWithOutstandingRpcCancel
+HMENU_UserFree64 = OnSyncCallCompletedWithOutstandingRpcCancel
+HMENU_UserMarshal = HRGN_UserMarshal64
+HMENU_UserMarshal64 = HRGN_UserMarshal64
+HMENU_UserSize = HWND_UserSize64
+HMENU_UserSize64 = HWND_UserSize64
+HMENU_UserUnmarshal = HWND_UserUnmarshal64
+HMENU_UserUnmarshal64 = HWND_UserUnmarshal64
 HMETAFILEPICT_UserFree
 HMETAFILEPICT_UserFree64
 HMETAFILEPICT_UserMarshal
@@ -277,14 +277,14 @@ HMETAFILE_UserSize
 HMETAFILE_UserSize64
 HMETAFILE_UserUnmarshal
 HMETAFILE_UserUnmarshal64
-HMONITOR_UserFree = HMONITOR_UserFree64
-HMONITOR_UserFree64
-HMONITOR_UserMarshal
-HMONITOR_UserMarshal64
-HMONITOR_UserSize
-HMONITOR_UserSize64
-HMONITOR_UserUnmarshal
-HMONITOR_UserUnmarshal64
+HMONITOR_UserFree = OnSyncCallCompletedWithOutstandingRpcCancel
+HMONITOR_UserFree64 = OnSyncCallCompletedWithOutstandingRpcCancel
+HMONITOR_UserMarshal = HRGN_UserMarshal64
+HMONITOR_UserMarshal64 = HRGN_UserMarshal64
+HMONITOR_UserSize = HWND_UserSize64
+HMONITOR_UserSize64 = HWND_UserSize64
+HMONITOR_UserUnmarshal = HWND_UserUnmarshal64
+HMONITOR_UserUnmarshal64 = HWND_UserUnmarshal64
 HPALETTE_UserFree
 HPALETTE_UserFree64 = HPALETTE_UserFree
 HPALETTE_UserFreeExt
@@ -297,24 +297,24 @@ HPALETTE_UserSizeExt
 HPALETTE_UserUnmarshal
 HPALETTE_UserUnmarshal64
 HPALETTE_UserUnmarshalExt
-HRGN_UserFree
-HRGN_UserMarshal
-HRGN_UserSize
-HRGN_UserUnmarshal = HRGN_UserUnmarshal64
-HWND_UserFree
-HWND_UserFree64 = HWND_UserFree
+HRGN_UserFree = HDC_UserFree
+HRGN_UserMarshal = HRGN_UserMarshal64
+HRGN_UserSize = HWND_UserSize64
+HRGN_UserUnmarshal = HWND_UserUnmarshal64
+HWND_UserFree = OnSyncCallCompletedWithOutstandingRpcCancel
+HWND_UserFree64 = OnSyncCallCompletedWithOutstandingRpcCancel
 HWND_UserFree64Ext
 HWND_UserFreeExt
-HWND_UserMarshal
-HWND_UserMarshal64 = HWND_UserMarshal
+HWND_UserMarshal = HRGN_UserMarshal64
+HWND_UserMarshal64 = HRGN_UserMarshal64
 HWND_UserMarshal64Ext
 HWND_UserMarshalExt
-HWND_UserSize
-HWND_UserSize64 = HWND_UserSize
+HWND_UserSize = HWND_UserSize64
+HWND_UserSize64
 HWND_UserSize64Ext
 HWND_UserSizeExt
-HWND_UserUnmarshal
-HWND_UserUnmarshal64 = HWND_UserUnmarshal
+HWND_UserUnmarshal = HWND_UserUnmarshal64
+HWND_UserUnmarshal64
 HWND_UserUnmarshal64Ext
 HWND_UserUnmarshalExt
 HkOleRegisterObject
@@ -322,7 +322,7 @@ IIDFromString
 IsAccelerator
 IsEqualGUID
 IsRoInitializeASTAAllowedInDesktop
-IsValidIid
+IsValidIid = ExportedIsValidPtrIn
 IsValidInterface
 IsValidPtrIn = ExportedIsValidPtrIn
 IsValidPtrOut = ExportedIsValidPtrIn
@@ -396,7 +396,9 @@ OleBuildVersion = CoBuildVersion
 OleConvertIStorageToOLESTREAM
 OleConvertIStorageToOLESTREAMEx
 OleConvertOLESTREAMToIStorage
+OleConvertOLESTREAMToIStorage2
 OleConvertOLESTREAMToIStorageEx
+OleConvertOLESTREAMToIStorageEx2
 OleCreate
 OleCreateDefaultHandler
 OleCreateEmbeddingHelper
@@ -466,11 +468,11 @@ PropSysFreeString = PropSysFreeStringStub
 PropVariantChangeType = PropVariantChangeTypeStub
 PropVariantClear
 PropVariantCopy
-ReadClassStg = ReadClassStgStub
+ReadClassStg = ReadStorageProperties
 ReadClassStm = ReadClassStmStub
 ReadFmtUserTypeStg
 ReadOleStg
-ReadStorageProperties = ReadClassStgStub
+ReadStorageProperties
 ReadStringStream
 RegisterActiveObjectExt
 RegisterDragDrop
@@ -502,7 +504,7 @@ SetConvertStg
 SetDocumentBitStg
 SetErrorInfo = CoSetErrorInfo
 SetOleautModule
-SetWOWThunkGlobalPtr
+SetWOWThunkGlobalPtr = __empty_global_delete
 StdTypesGetClassObject
 StdTypesRegisterServer
 StgConvertPropertyToVariant = StgConvertPropertyToVariantStub
@@ -533,7 +535,7 @@ UtConvertDvtd16toDvtd32
 UtConvertDvtd32toDvtd16
 UtGetDvtd16Info
 UtGetDvtd32Info
-WdtpInterfacePointer_UserFree = WdtpInterfacePointer_UserFree64
+WdtpInterfacePointer_UserFree
 WdtpInterfacePointer_UserFree64
 WdtpInterfacePointer_UserMarshal
 WdtpInterfacePointer_UserMarshal64
