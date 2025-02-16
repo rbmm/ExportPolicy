@@ -31,7 +31,7 @@ IUnknown_SetSite
 IsOS
 IsProcessInIsolatedContainer
 IsProcessInWDAGContainer
-RecordFeatureError = WilApiImpl_RecordFeatureError
+RecordFeatureError
 RecordFeatureUsage
 RegisterScaleChangeEvent
 RegisterScaleChangeNotifications

@@ -89,7 +89,7 @@ long myGetTargetMachineDomainDnsName(unsigned short const *,unsigned short * *,u
 
 // #851
 DECLSPEC_IMPORT
-long AddOrRemoveOCSPISAPIExtension(int,int *);
+long IsISAPIExtensionEnabled(unsigned short const *,bool &);
 
 // #850
 DECLSPEC_IMPORT
@@ -97,11 +97,11 @@ long SplitConfigString(unsigned short const *,unsigned short * *,unsigned short 
 
 // #849
 DECLSPEC_IMPORT
-long RemoveVDir(unsigned short const *,int *);
+long IsISAPIExtensionEnabled(unsigned short const *,bool &);
 
 // #848
 DECLSPEC_IMPORT
-long RemoveISAPIExtension(unsigned short const *);
+long IsISAPIExtensionEnabled(unsigned short const *,bool &);
 
 // #847
 DECLSPEC_IMPORT
@@ -157,7 +157,7 @@ long mySanitizeName(unsigned short const *,unsigned short * *);
 
 // #830
 DECLSPEC_IMPORT
-long IsASPEnabledInIIS(bool &);
+long IsISAPIExtensionEnabled(unsigned short const *,bool &);
 
 // #829
 DECLSPEC_IMPORT
@@ -165,7 +165,7 @@ unsigned long myGetSidFromDomain(unsigned short *,void * *);
 
 // #828
 DECLSPEC_IMPORT
-long RemoveVDir(unsigned short const *,int *);
+long IsISAPIExtensionEnabled(unsigned short const *,bool &);
 
 // #827
 DECLSPEC_IMPORT
@@ -173,11 +173,11 @@ long IsISAPIExtensionEnabled(unsigned short const *,bool &);
 
 // #826
 DECLSPEC_IMPORT
-long EnableASPInIIS(int *);
+long IsISAPIExtensionEnabled(unsigned short const *,bool &);
 
 // #825
 DECLSPEC_IMPORT
-long IsASPEnabledInIIS(bool &);
+long IsISAPIExtensionEnabled(unsigned short const *,bool &);
 
 // #824
 DECLSPEC_IMPORT
@@ -229,7 +229,7 @@ void DbgLogStringInit(void (*)(char const *));
 
 // #810
 DECLSPEC_IMPORT
-long myAddShare(unsigned short const *,unsigned short const *,unsigned short const *,int,int *);
+long IsISAPIExtensionEnabled(unsigned short const *,bool &);
 
 // #809
 DECLSPEC_IMPORT
@@ -241,7 +241,7 @@ long DecodeFileW(unsigned short const *,unsigned char * *,unsigned long *,unsign
 
 // #807
 DECLSPEC_IMPORT
-long myModifyVirtualRootsAndFileShares(unsigned long,enum ENUM_CATYPES,unsigned long,unsigned long *,unsigned long *);
+long IsISAPIExtensionEnabled(unsigned short const *,bool &);
 
 // #806
 DECLSPEC_IMPORT

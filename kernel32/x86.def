@@ -23,6 +23,7 @@ AddVectoredContinueHandler = RtlAddVectoredContinueHandler
 AddVectoredExceptionHandler = RtlAddVectoredExceptionHandler
 AdjustCalendarDate
 AllocConsole
+AllocConsoleWithOptions
 AllocateUserPhysicalPages = AllocateUserPhysicalPagesStub
 AllocateUserPhysicalPagesNuma = AllocateUserPhysicalPagesNumaStub
 AppPolicyGetClrCompat
@@ -41,8 +42,10 @@ AreShortNamesEnabled
 AssignProcessToJobObject
 AttachConsole
 BackupRead
+BackupReadEx
 BackupSeek
 BackupWrite
+BackupWriteEx
 BaseCheckAppcompatCache = BaseCheckAppcompatCacheStub
 BaseCheckAppcompatCacheEx = BaseCheckAppcompatCacheExStub
 BaseCheckAppcompatCacheExWorker
@@ -53,17 +56,17 @@ BaseCleanupAppcompatCacheSupportWorker
 BaseDestroyVDMEnvironment
 BaseDllReadWriteIniFile
 BaseDumpAppcompatCache = BaseDumpAppcompatCacheStub
-BaseDumpAppcompatCacheWorker
+BaseDumpAppcompatCacheWorker = _guard_check_icall_nop
 BaseElevationPostProcessing
 BaseFlushAppcompatCache = BaseFlushAppcompatCacheStub
 BaseFlushAppcompatCacheWorker
 BaseFormatObjectAttributes
 BaseFormatTimeOut
-BaseFreeAppCompatDataForProcessWorker
+BaseFreeAppCompatDataForProcessWorker = SortCloseHandle
 BaseGenerateAppCompatData
 BaseGetNamedObjectDirectory = BaseGetNamedObjectDirectoryStub
 BaseInitAppcompatCacheSupport = BaseInitAppcompatCacheSupportStub
-BaseInitAppcompatCacheSupportWorker = LZStart
+BaseInitAppcompatCacheSupportWorker = get_FirstMonthInThisYear
 BaseIsAppcompatInfrastructureDisabled = BaseIsAppcompatInfrastructureDisabledWorker
 BaseIsAppcompatInfrastructureDisabledWorker
 BaseIsDosApplication
@@ -74,7 +77,6 @@ BaseThreadInitThunk
 BaseUpdateAppcompatCache = BaseUpdateAppcompatCacheStub
 BaseUpdateAppcompatCacheWorker
 BaseUpdateVDMEntry
-BaseVerifyUnicodeString
 BaseWriteErrorElevationRequiredEvent
 Basep8BitStringToDynamicUnicodeString
 BasepAllocateActivationContextActivationBlock
@@ -82,6 +84,7 @@ BasepAnsiStringToDynamicUnicodeString
 BasepAppContainerEnvironmentExtension
 BasepAppXExtension
 BasepCheckAppCompat
+BasepCheckPplSupport
 BasepCheckWebBladeHashes
 BasepCheckWinSaferRestrictions
 BasepConstructSxsCreateProcessMessage
@@ -89,12 +92,15 @@ BasepCopyEncryption
 BasepFinishPackageActivation
 BasepFinishPackageActivationForSxS
 BasepFreeActivationContextActivationBlock
+BasepFreeActivationTokenInfo
 BasepFreeAppCompatData
 BasepGetAppCompatData
 BasepGetComputerNameFromNtPath
 BasepGetExeArchType
-BasepGetPackageActivationTokenForFilePath
+BasepGetPackageActivationTokenForFilePath = BasepGetPackageActivationTokenForSxS
+BasepGetPackageActivationTokenForFilePath2
 BasepGetPackageActivationTokenForSxS
+BasepGetPackageActivationTokenForSxS2
 BasepGetPackagedAppInfoForFile
 BasepInitAppCompatData
 BasepIsProcessAllowed
@@ -120,13 +126,15 @@ BuildCommDCBW
 BuildIoRingCancelRequest
 BuildIoRingFlushFile
 BuildIoRingReadFile
+BuildIoRingReadFileScatter
 BuildIoRingRegisterBuffers
 BuildIoRingRegisterFileHandles
 BuildIoRingWriteFile
+BuildIoRingWriteFileGather
 CallNamedPipeA
 CallNamedPipeW
 CallbackMayRunLong = CallbackMayRunLongStub
-CancelDeviceWakeupRequest = RequestWakeupLatency
+CancelDeviceWakeupRequest
 CancelIo = CancelIoStub
 CancelIoEx = CancelIoExStub
 CancelSynchronousIo = CancelSynchronousIoStub
@@ -152,7 +160,7 @@ CloseHandle
 CloseIoRing
 ClosePackageInfo
 ClosePrivateNamespace = ClosePrivateNamespaceStub
-CloseProfileUserMapping = LZStart
+CloseProfileUserMapping = get_FirstMonthInThisYear
 ClosePseudoConsole
 CloseState
 CloseThreadpool = TpReleasePool
@@ -296,7 +304,7 @@ DeleteFileA
 DeleteFileTransactedA
 DeleteFileTransactedW
 DeleteFileW
-DeleteProcThreadAttributeList = WerpAuxmdFree
+DeleteProcThreadAttributeList = sqlite3_mutex_enter
 DeleteSynchronizationBarrier = DeleteSynchronizationBarrierStub
 DeleteTimerQueue
 DeleteTimerQueueEx = DeleteTimerQueueExStub
@@ -432,7 +440,8 @@ FindVolumeClose
 FindVolumeMountPointClose
 FlsAlloc = FlsAllocStub
 FlsFree = FlsFreeStub
-FlsGetValue = FlsGetValueStub
+FlsGetValue
+FlsGetValue2 = RtlFlsGetValue2
 FlsSetValue = FlsSetValueStub
 FlushConsoleInputBuffer
 FlushFileBuffers
@@ -606,6 +615,7 @@ GetFileAttributesW
 GetFileBandwidthReservation
 GetFileInformationByHandle
 GetFileInformationByHandleEx = GetFileInformationByHandleExStub
+GetFileInformationByName = GetFileInformationByNameStub
 GetFileMUIInfo = GetFileMUIInfoStub
 GetFileMUIPath = GetFileMUIPathStub
 GetFileSize
@@ -631,7 +641,7 @@ GetHandleInformation
 GetIoRingInfo
 GetLargePageMinimum = GetLargePageMinimumStub
 GetLargestConsoleWindowSize
-GetLastError = GetLastErrorStub
+GetLastError
 GetLocalTime = GetLocalTimeStub
 GetLocaleInfoA = GetLocaleInfoAStub
 GetLocaleInfoEx = GetLocaleInfoExStub
@@ -717,7 +727,7 @@ GetProcessDefaultCpuSetMasks
 GetProcessDefaultCpuSets
 GetProcessGroupAffinity = GetProcessGroupAffinityStub
 GetProcessHandleCount = GetProcessHandleCountStub
-GetProcessHeap = GetProcessHeapStub
+GetProcessHeap
 GetProcessHeaps = GetProcessHeapsStub
 GetProcessId = GetProcessIdStub
 GetProcessIdOfThread = GetProcessIdOfThreadStub
@@ -806,7 +816,7 @@ GetThreadSelectorEntry
 GetThreadTimes = GetThreadTimesStub
 GetThreadUILanguage = GetThreadUILanguageStub
 GetTickCount = GetTickCountStub
-GetTickCount64 = GetTickCount64Kernel32
+GetTickCount64
 GetTimeFormatA = GetTimeFormatAStub
 GetTimeFormatAWorker
 GetTimeFormatEx = GetTimeFormatExStub
@@ -854,15 +864,15 @@ GlobalFree = GlobalFreeStub
 GlobalGetAtomNameA
 GlobalGetAtomNameW
 GlobalHandle = GlobalHandleStub
-GlobalLock = GlobalWire
+GlobalLock = GlobalLockStub
 GlobalMemoryStatus
 GlobalMemoryStatusEx = GlobalMemoryStatusExStub
 GlobalReAlloc = GlobalReAllocStub
 GlobalSize = GlobalSizeStub
-GlobalUnWire
+GlobalUnWire = GlobalUnlockStub
 GlobalUnfix
-GlobalUnlock = GlobalUnWire
-GlobalWire
+GlobalUnlock = GlobalUnlockStub
+GlobalWire = GlobalLockStub
 Heap32First
 Heap32ListFirst
 Heap32ListNext
@@ -888,8 +898,8 @@ InitAtomTable
 InitOnceBeginInitialize
 InitOnceComplete
 InitOnceExecuteOnce
-InitOnceInitialize = RtlInitializeConditionVariable
-InitializeConditionVariable = RtlInitializeConditionVariable
+InitOnceInitialize = RtlRunOnceInitialize
+InitializeConditionVariable = RtlRunOnceInitialize
 InitializeContext = InitializeContextStub
 InitializeContext2 = InitializeContext2Stub
 InitializeCriticalSection = RtlInitializeCriticalSection
@@ -898,7 +908,7 @@ InitializeCriticalSectionEx
 InitializeEnclave
 InitializeProcThreadAttributeList
 InitializeSListHead = RtlInitializeSListHead
-InitializeSRWLock = RtlInitializeConditionVariable
+InitializeSRWLock = RtlRunOnceInitialize
 InitializeSynchronizationBarrier = InitializeSynchronizationBarrierStub
 InstallELAMCertificateInfo
 InterlockedCompareExchange = InterlockedCompareExchangeStub
@@ -937,7 +947,7 @@ IsProcessorFeaturePresent = IsProcessorFeaturePresentStub
 IsSystemResumeAutomatic
 IsThreadAFiber
 IsThreadpoolTimerSet = TpIsTimerSet
-IsUserCetAvailableInEnvironment = IsNetDrive
+IsUserCetAvailableInEnvironment = sqlite3_value_bytes
 IsValidCalDateTime
 IsValidCodePage = IsValidCodePageStub
 IsValidLanguageGroup = IsValidLanguageGroupStub
@@ -978,17 +988,17 @@ LCIDToLocaleName = LCIDToLocaleNameStub
 LCMapStringA = LCMapStringAStub
 LCMapStringEx = LCMapStringExStub
 LCMapStringW = LCMapStringWStub
-LZClose
-LZCloseFile = LZClose
+LZClose = LZCloseFile
+LZCloseFile
 LZCopy
 LZCreateFileW
-LZDone = BaseDumpAppcompatCacheWorker
+LZDone = _guard_check_icall_nop
 LZInit
 LZOpenFileA
 LZOpenFileW
 LZRead
 LZSeek
-LZStart
+LZStart = get_FirstMonthInThisYear
 LeaveCriticalSection = RtlLeaveCriticalSection
 LeaveCriticalSectionWhenCallbackReturns = TpCallbackLeaveCriticalSectionOnCompletion
 LoadAppInitDlls = LoadAppInitDllsImplementation
@@ -1020,6 +1030,7 @@ LocateXStateFeature = LocateXStateFeatureStub
 LockFile
 LockFileEx
 LockResource = LockResourceStub
+LogUnexpectedCodepath = RtlLogUnexpectedCodepath
 MapUserPhysicalPages = MapUserPhysicalPagesStub
 MapUserPhysicalPagesScatter
 MapViewOfFile = MapViewOfFileStub
@@ -1069,7 +1080,7 @@ OpenPrivateNamespaceA
 OpenPrivateNamespaceW = OpenPrivateNamespaceWStub
 OpenProcess = OpenProcessStub
 OpenProcessToken
-OpenProfileUserMapping = LZStart
+OpenProfileUserMapping = get_FirstMonthInThisYear
 OpenSemaphoreA
 OpenSemaphoreW
 OpenState
@@ -1222,7 +1233,7 @@ RegUnLoadKeyW = RegUnLoadKeyWStub
 RegisterApplicationRecoveryCallback
 RegisterApplicationRestart = RegisterApplicationRestartStub
 RegisterBadMemoryNotification = RegisterBadMemoryNotificationStub
-RegisterConsoleIME
+RegisterConsoleIME = SetHandleContext
 RegisterConsoleOS2
 RegisterConsoleVDM
 RegisterWaitForInputIdle
@@ -1236,6 +1247,7 @@ ReleaseActCtxWorker
 ReleaseMutex
 ReleaseMutexWhenCallbackReturns = TpCallbackReleaseMutexOnCompletion
 ReleasePackageVirtualizationContext
+ReleasePseudoConsole
 ReleaseSRWLockExclusive = RtlReleaseSRWLockExclusive
 ReleaseSRWLockShared = RtlReleaseSRWLockShared
 ReleaseSemaphore
@@ -1254,8 +1266,8 @@ ReplaceFile = ReplaceFileWStub
 ReplaceFileA
 ReplaceFileW = ReplaceFileWStub
 ReplacePartitionUnit
-RequestDeviceWakeup = RequestWakeupLatency
-RequestWakeupLatency
+RequestDeviceWakeup = CancelDeviceWakeupRequest
+RequestWakeupLatency = CancelDeviceWakeupRequest
 ResetEvent
 ResetWriteWatch = ResetWriteWatchStub
 ResizePseudoConsole
@@ -1358,7 +1370,7 @@ SetFirmwareEnvironmentVariableA
 SetFirmwareEnvironmentVariableExA
 SetFirmwareEnvironmentVariableExW
 SetFirmwareEnvironmentVariableW
-SetHandleContext = RegisterConsoleIME
+SetHandleContext
 SetHandleCount
 SetHandleInformation
 SetInformationJobObject
@@ -1448,7 +1460,7 @@ Sleep = SleepStub
 SleepConditionVariableCS
 SleepConditionVariableSRW
 SleepEx
-SortCloseHandle = BaseFreeAppCompatDataForProcessWorker
+SortCloseHandle
 SortGetHandle
 StartThreadpoolIo = TpStartAsyncIoOperation
 SubmitIoRing
@@ -1480,7 +1492,8 @@ Thread32First
 Thread32Next
 TlsAlloc = TlsAllocStub
 TlsFree = TlsFreeStub
-TlsGetValue = TlsGetValueStub
+TlsGetValue
+TlsGetValue2
 TlsSetValue = TlsSetValueStub
 Toolhelp32ReadProcessMemory
 TransactNamedPipe = TransactNamedPipeStub
@@ -1545,8 +1558,8 @@ WaitNamedPipeA
 WaitNamedPipeW = WaitNamedPipeWStub
 WakeAllConditionVariable = RtlWakeAllConditionVariable
 WakeConditionVariable = RtlWakeConditionVariable
-WerGetFlags = WerGetFlagsWorker
-WerGetFlagsWorker
+WerGetFlags
+WerGetFlagsWorker = WerGetFlags
 WerRegisterAdditionalProcess = WerRegisterAdditionalProcessStub
 WerRegisterAppLocalDump = WerRegisterAppLocalDumpStub
 WerRegisterCustomMetadata = WerRegisterCustomMetadataStub
@@ -1626,8 +1639,8 @@ lstrcatW
 lstrcmp = lstrcmpStub
 lstrcmpA = lstrcmpStub
 lstrcmpW = lstrcmpWStub
-lstrcmpi = lstrcmpiAStub
-lstrcmpiA = lstrcmpiAStub
+lstrcmpi = lstrcmpiStub
+lstrcmpiA = lstrcmpiStub
 lstrcmpiW = lstrcmpiWStub
 lstrcpy = lstrcpyA
 lstrcpyA

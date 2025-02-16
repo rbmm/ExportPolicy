@@ -30,9 +30,9 @@ CsrClientCallServer
 CsrClientConnectToServer
 CsrFreeCaptureBuffer
 CsrGetProcessId
-CsrIdentifyAlertableThread
+CsrIdentifyAlertableThread = WinSqmGetEscalationRuleStatus
 CsrSetPriorityClass
-CsrVerifyRegion
+CsrVerifyRegion = RtlIsEcCode
 DbgBreakPoint
 DbgPrint
 DbgPrintEx
@@ -96,9 +96,9 @@ ExpInterlockedPopEntrySListEnd
 ExpInterlockedPopEntrySListFault
 ExpInterlockedPopEntrySListResume
 KiRaiseUserExceptionDispatcher
-KiUserApcDispatcher = KiUserApcDispatch
+KiUserApcDispatcher
 KiUserCallbackDispatcher = KiUserCallbackDispatch
-KiUserExceptionDispatcher = KiUserExceptionDispatch
+KiUserExceptionDispatcher
 KiUserInvertedFunctionTable = LdrpInvertedFunctionTables
 LdrAccessResource
 LdrAddDllDirectory
@@ -162,7 +162,7 @@ LdrResSearchResource
 LdrResolveDelayLoadedAPI
 LdrResolveDelayLoadsFromDll
 LdrRscIsTypeExist
-LdrSetAppCompatDllRedirectionCallback
+LdrSetAppCompatDllRedirectionCallback = WinSqmGetEscalationRuleStatus
 LdrSetDefaultDllDirectories
 LdrSetDllDirectory
 LdrSetDllManifestProber
@@ -170,7 +170,7 @@ LdrSetImplicitPathOptions
 LdrSetMUICacheType
 LdrShutdownProcess
 LdrShutdownThread
-LdrStandardizeSystemPath
+LdrStandardizeSystemPath = WinSqmAddToStreamEx
 LdrSystemDllInitBlock
 LdrUnloadAlternateResourceModule
 LdrUnloadAlternateResourceModuleEx
@@ -193,134 +193,136 @@ NlsAnsiCodePage
 NlsMbCodePageTag
 NlsMbOemCodePageTag
 NtAcceptConnectPort = ZwAcceptConnectPort
-NtAccessCheck
-NtAccessCheckAndAuditAlarm = ZwAccessCheckAndAuditAlarm
-NtAccessCheckByType
+NtAccessCheck = ZwAccessCheck
+NtAccessCheckAndAuditAlarm
+NtAccessCheckByType = ZwAccessCheckByType
 NtAccessCheckByTypeAndAuditAlarm
 NtAccessCheckByTypeResultList
 NtAccessCheckByTypeResultListAndAuditAlarm
 NtAccessCheckByTypeResultListAndAuditAlarmByHandle = ZwAccessCheckByTypeResultListAndAuditAlarmByHandle
 NtAcquireCrossVmMutant
 NtAcquireProcessActivityReference
-NtAddAtom
-NtAddAtomEx = ZwAddAtomEx
-NtAddBootEntry
-NtAddDriverEntry = ZwAddDriverEntry
-NtAdjustGroupsToken
+NtAddAtom = ZwAddAtom
+NtAddAtomEx
+NtAddBootEntry = ZwAddBootEntry
+NtAddDriverEntry
+NtAdjustGroupsToken = ZwAdjustGroupsToken
 NtAdjustPrivilegesToken = ZwAdjustPrivilegesToken
 NtAdjustTokenClaimsAndDeviceGroups
+NtAlertMultipleThreadByThreadId = ZwAlertMultipleThreadByThreadId
 NtAlertResumeThread = ZwAlertResumeThread
 NtAlertThread = ZwAlertThread
 NtAlertThreadByThreadId
+NtAlertThreadByThreadIdEx
 NtAllocateLocallyUniqueId
 NtAllocateReserveObject = ZwAllocateReserveObject
 NtAllocateUserPhysicalPages
 NtAllocateUserPhysicalPagesEx
-NtAllocateUuids = ZwAllocateUuids
+NtAllocateUuids
 NtAllocateVirtualMemory = ZwAllocateVirtualMemory
 NtAllocateVirtualMemoryEx
-NtAlpcAcceptConnectPort
+NtAlpcAcceptConnectPort = ZwAlpcAcceptConnectPort
 NtAlpcCancelMessage = ZwAlpcCancelMessage
 NtAlpcConnectPort = ZwAlpcConnectPort
 NtAlpcConnectPortEx
-NtAlpcCreatePort
+NtAlpcCreatePort = ZwAlpcCreatePort
 NtAlpcCreatePortSection
-NtAlpcCreateResourceReserve = ZwAlpcCreateResourceReserve
+NtAlpcCreateResourceReserve
 NtAlpcCreateSectionView
-NtAlpcCreateSecurityContext
-NtAlpcDeletePortSection
-NtAlpcDeleteResourceReserve = ZwAlpcDeleteResourceReserve
-NtAlpcDeleteSectionView = ZwAlpcDeleteSectionView
-NtAlpcDeleteSecurityContext
+NtAlpcCreateSecurityContext = ZwAlpcCreateSecurityContext
+NtAlpcDeletePortSection = ZwAlpcDeletePortSection
+NtAlpcDeleteResourceReserve
+NtAlpcDeleteSectionView
+NtAlpcDeleteSecurityContext = ZwAlpcDeleteSecurityContext
 NtAlpcDisconnectPort = ZwAlpcDisconnectPort
 NtAlpcImpersonateClientContainerOfPort = ZwAlpcImpersonateClientContainerOfPort
-NtAlpcImpersonateClientOfPort = ZwAlpcImpersonateClientOfPort
+NtAlpcImpersonateClientOfPort
 NtAlpcOpenSenderProcess
 NtAlpcOpenSenderThread
-NtAlpcQueryInformation
-NtAlpcQueryInformationMessage
+NtAlpcQueryInformation = ZwAlpcQueryInformation
+NtAlpcQueryInformationMessage = ZwAlpcQueryInformationMessage
 NtAlpcRevokeSecurityContext
 NtAlpcSendWaitReceivePort
 NtAlpcSetInformation = ZwAlpcSetInformation
 NtApphelpCacheControl
 NtAreMappedFilesTheSame
-NtAssignProcessToJobObject = ZwAssignProcessToJobObject
+NtAssignProcessToJobObject
 NtAssociateWaitCompletionPacket
-NtCallEnclave = ZwCallEnclave
+NtCallEnclave
 NtCallbackReturn
-NtCancelIoFile
-NtCancelIoFileEx
-NtCancelSynchronousIoFile
+NtCancelIoFile = ZwCancelIoFile
+NtCancelIoFileEx = ZwCancelIoFileEx
+NtCancelSynchronousIoFile = ZwCancelSynchronousIoFile
 NtCancelTimer = ZwCancelTimer
 NtCancelTimer2
 NtCancelWaitCompletionPacket
-NtChangeProcessState = ZwChangeProcessState
+NtChangeProcessState
 NtChangeThreadState
 NtClearEvent = ZwClearEvent
-NtClose
-NtCloseObjectAuditAlarm
-NtCommitComplete
-NtCommitEnlistment = ZwCommitEnlistment
-NtCommitRegistryTransaction
-NtCommitTransaction
+NtClose = ZwClose
+NtCloseObjectAuditAlarm = ZwCloseObjectAuditAlarm
+NtCommitComplete = ZwCommitComplete
+NtCommitEnlistment
+NtCommitRegistryTransaction = ZwCommitRegistryTransaction
+NtCommitTransaction = ZwCommitTransaction
 NtCompactKeys = ZwCompactKeys
 NtCompareObjects
 NtCompareSigningLevels = ZwCompareSigningLevels
 NtCompareTokens
-NtCompleteConnectPort = ZwCompleteConnectPort
+NtCompleteConnectPort
 NtCompressKey = ZwCompressKey
-NtConnectPort = ZwConnectPort
-NtContinue = ZwContinue
-NtContinueEx = ZwContinueEx
+NtConnectPort
+NtContinue
+NtContinueEx
 NtConvertBetweenAuxiliaryCounterAndPerformanceCounter = ZwConvertBetweenAuxiliaryCounterAndPerformanceCounter
 NtCopyFileChunk
 NtCreateCpuPartition = ZwCreateCpuPartition
-NtCreateCrossVmEvent = ZwCreateCrossVmEvent
-NtCreateCrossVmMutant
-NtCreateDebugObject = ZwCreateDebugObject
-NtCreateDirectoryObject
-NtCreateDirectoryObjectEx = ZwCreateDirectoryObjectEx
+NtCreateCrossVmEvent
+NtCreateCrossVmMutant = ZwCreateCrossVmMutant
+NtCreateDebugObject
+NtCreateDirectoryObject = ZwCreateDirectoryObject
+NtCreateDirectoryObjectEx
 NtCreateEnclave
 NtCreateEnlistment = ZwCreateEnlistment
-NtCreateEvent = ZwCreateEvent
-NtCreateEventPair = ZwCreateEventPair
+NtCreateEvent
+NtCreateEventPair
 NtCreateFile
 NtCreateIRTimer
-NtCreateIoCompletion = ZwCreateIoCompletion
+NtCreateIoCompletion
 NtCreateIoRing = ZwCreateIoRing
 NtCreateJobObject
-NtCreateJobSet = ZwCreateJobSet
-NtCreateKey = ZwCreateKey
+NtCreateJobSet
+NtCreateKey
 NtCreateKeyTransacted
-NtCreateKeyedEvent = ZwCreateKeyedEvent
-NtCreateLowBoxToken
-NtCreateMailslotFile
-NtCreateMutant
-NtCreateNamedPipeFile = ZwCreateNamedPipeFile
+NtCreateKeyedEvent
+NtCreateLowBoxToken = ZwCreateLowBoxToken
+NtCreateMailslotFile = ZwCreateMailslotFile
+NtCreateMutant = ZwCreateMutant
+NtCreateNamedPipeFile
 NtCreatePagingFile = ZwCreatePagingFile
 NtCreatePartition
-NtCreatePort = ZwCreatePort
+NtCreatePort
 NtCreatePrivateNamespace = ZwCreatePrivateNamespace
 NtCreateProcess
-NtCreateProcessEx = ZwCreateProcessEx
+NtCreateProcessEx
 NtCreateProcessStateChange = ZwCreateProcessStateChange
 NtCreateProfile = ZwCreateProfile
-NtCreateProfileEx = ZwCreateProfileEx
-NtCreateRegistryTransaction
+NtCreateProfileEx
+NtCreateRegistryTransaction = ZwCreateRegistryTransaction
 NtCreateResourceManager
 NtCreateSection
 NtCreateSectionEx
 NtCreateSemaphore = ZwCreateSemaphore
-NtCreateSymbolicLinkObject = ZwCreateSymbolicLinkObject
+NtCreateSymbolicLinkObject
 NtCreateThread
-NtCreateThreadEx
-NtCreateThreadStateChange = ZwCreateThreadStateChange
+NtCreateThreadEx = ZwCreateThreadEx
+NtCreateThreadStateChange
 NtCreateTimer
 NtCreateTimer2
 NtCreateToken = ZwCreateToken
-NtCreateTokenEx = ZwCreateTokenEx
+NtCreateTokenEx
 NtCreateTransaction
-NtCreateTransactionManager
+NtCreateTransactionManager = ZwCreateTransactionManager
 NtCreateUserProcess = ZwCreateUserProcess
 NtCreateWaitCompletionPacket = ZwCreateWaitCompletionPacket
 NtCreateWaitablePort
@@ -328,356 +330,357 @@ NtCreateWnfStateName = ZwCreateWnfStateName
 NtCreateWorkerFactory
 NtDebugActiveProcess = ZwDebugActiveProcess
 NtDebugContinue = ZwDebugContinue
-NtDelayExecution
-NtDeleteAtom
+NtDelayExecution = ZwDelayExecution
+NtDeleteAtom = ZwDeleteAtom
 NtDeleteBootEntry = ZwDeleteBootEntry
-NtDeleteDriverEntry = ZwDeleteDriverEntry
-NtDeleteFile = ZwDeleteFile
-NtDeleteKey
-NtDeleteObjectAuditAlarm = ZwDeleteObjectAuditAlarm
-NtDeletePrivateNamespace = ZwDeletePrivateNamespace
-NtDeleteValueKey
+NtDeleteDriverEntry
+NtDeleteFile
+NtDeleteKey = ZwDeleteKey
+NtDeleteObjectAuditAlarm
+NtDeletePrivateNamespace
+NtDeleteValueKey = ZwDeleteValueKey
 NtDeleteWnfStateData = ZwDeleteWnfStateData
 NtDeleteWnfStateName = ZwDeleteWnfStateName
 NtDeviceIoControlFile
-NtDirectGraphicsCall
-NtDisableLastKnownGood = ZwDisableLastKnownGood
-NtDisplayString
+NtDirectGraphicsCall = ZwDirectGraphicsCall
+NtDisableLastKnownGood
+NtDisplayString = ZwDisplayString
 NtDrawText = ZwDrawText
-NtDuplicateObject
+NtDuplicateObject = ZwDuplicateObject
 NtDuplicateToken
-NtEnableLastKnownGood
-NtEnumerateBootEntries
-NtEnumerateDriverEntries = ZwEnumerateDriverEntries
+NtEnableLastKnownGood = ZwEnableLastKnownGood
+NtEnumerateBootEntries = ZwEnumerateBootEntries
+NtEnumerateDriverEntries
 NtEnumerateKey
 NtEnumerateSystemEnvironmentValuesEx = ZwEnumerateSystemEnvironmentValuesEx
-NtEnumerateTransactionObject = ZwEnumerateTransactionObject
+NtEnumerateTransactionObject
 NtEnumerateValueKey = ZwEnumerateValueKey
 NtExtendSection = ZwExtendSection
-NtFilterBootOption
-NtFilterToken = ZwFilterToken
+NtFilterBootOption = ZwFilterBootOption
+NtFilterToken
 NtFilterTokenEx = ZwFilterTokenEx
 NtFindAtom = ZwFindAtom
 NtFlushBuffersFile
-NtFlushBuffersFileEx = ZwFlushBuffersFileEx
+NtFlushBuffersFileEx
 NtFlushInstallUILanguage
 NtFlushInstructionCache
 NtFlushKey
-NtFlushProcessWriteBuffers
-NtFlushVirtualMemory = ZwFlushVirtualMemory
-NtFlushWriteBuffer = ZwFlushWriteBuffer
+NtFlushProcessWriteBuffers = ZwFlushProcessWriteBuffers
+NtFlushVirtualMemory
+NtFlushWriteBuffer
 NtFreeUserPhysicalPages
-NtFreeVirtualMemory
+NtFreeVirtualMemory = ZwFreeVirtualMemory
 NtFreezeRegistry
-NtFreezeTransactions
+NtFreezeTransactions = ZwFreezeTransactions
 NtFsControlFile = ZwFsControlFile
-NtGetCachedSigningLevel = ZwGetCachedSigningLevel
-NtGetCompleteWnfStateSubscription = ZwGetCompleteWnfStateSubscription
-NtGetContextThread
+NtGetCachedSigningLevel
+NtGetCompleteWnfStateSubscription
+NtGetContextThread = ZwGetContextThread
 NtGetCurrentProcessorNumber
-NtGetCurrentProcessorNumberEx = ZwGetCurrentProcessorNumberEx
-NtGetDevicePowerState = ZwGetDevicePowerState
-NtGetMUIRegistryInfo
+NtGetCurrentProcessorNumberEx
+NtGetDevicePowerState
+NtGetMUIRegistryInfo = ZwGetMUIRegistryInfo
 NtGetNextProcess
-NtGetNextThread = ZwGetNextThread
+NtGetNextThread
 NtGetNlsSectionPtr
 NtGetNotificationResourceManager
-NtGetTickCount = RtlGetTickCount
+NtGetTickCount = NtGetTickCount_syscall_thunk
 NtGetWriteWatch = ZwGetWriteWatch
 NtImpersonateAnonymousToken = ZwImpersonateAnonymousToken
-NtImpersonateClientOfPort
+NtImpersonateClientOfPort = ZwImpersonateClientOfPort
 NtImpersonateThread
 NtInitializeEnclave = ZwInitializeEnclave
-NtInitializeNlsFiles
+NtInitializeNlsFiles = ZwInitializeNlsFiles
 NtInitializeRegistry
 NtInitiatePowerAction = ZwInitiatePowerAction
 NtIsProcessInJob = ZwIsProcessInJob
-NtIsSystemResumeAutomatic
-NtIsUILanguageComitted
-NtListenPort
-NtLoadDriver
-NtLoadEnclaveData
+NtIsSystemResumeAutomatic = ZwIsSystemResumeAutomatic
+NtIsUILanguageComitted = ZwIsUILanguageComitted
+NtListenPort = ZwListenPort
+NtLoadDriver = ZwLoadDriver
+NtLoadEnclaveData = ZwLoadEnclaveData
 NtLoadKey
 NtLoadKey2 = ZwLoadKey2
-NtLoadKey3 = ZwLoadKey3
-NtLoadKeyEx = ZwLoadKeyEx
+NtLoadKey3
+NtLoadKeyEx
 NtLockFile
 NtLockProductActivationKeys = ZwLockProductActivationKeys
-NtLockRegistryKey
+NtLockRegistryKey = ZwLockRegistryKey
 NtLockVirtualMemory
-NtMakePermanentObject = ZwMakePermanentObject
+NtMakePermanentObject
 NtMakeTemporaryObject
-NtManageHotPatch
-NtManagePartition = ZwManagePartition
+NtManageHotPatch = ZwManageHotPatch
+NtManagePartition
 NtMapCMFModule = ZwMapCMFModule
 NtMapUserPhysicalPages = ZwMapUserPhysicalPages
-NtMapUserPhysicalPagesScatter = ZwMapUserPhysicalPagesScatter
-NtMapViewOfSection = ZwMapViewOfSection
+NtMapUserPhysicalPagesScatter
+NtMapViewOfSection
 NtMapViewOfSectionEx
 NtModifyBootEntry
-NtModifyDriverEntry
+NtModifyDriverEntry = ZwModifyDriverEntry
 NtNotifyChangeDirectoryFile = ZwNotifyChangeDirectoryFile
 NtNotifyChangeDirectoryFileEx = ZwNotifyChangeDirectoryFileEx
-NtNotifyChangeKey
+NtNotifyChangeKey = ZwNotifyChangeKey
 NtNotifyChangeMultipleKeys
 NtNotifyChangeSession
-NtOpenCpuPartition = ZwOpenCpuPartition
+NtOpenCpuPartition
 NtOpenDirectoryObject
-NtOpenEnlistment = ZwOpenEnlistment
-NtOpenEvent = ZwOpenEvent
-NtOpenEventPair
-NtOpenFile
-NtOpenIoCompletion = ZwOpenIoCompletion
-NtOpenJobObject
+NtOpenEnlistment
+NtOpenEvent
+NtOpenEventPair = ZwOpenEventPair
+NtOpenFile = ZwOpenFile
+NtOpenIoCompletion
+NtOpenJobObject = ZwOpenJobObject
 NtOpenKey = ZwOpenKey
-NtOpenKeyEx = ZwOpenKeyEx
+NtOpenKeyEx
 NtOpenKeyTransacted
-NtOpenKeyTransactedEx
-NtOpenKeyedEvent
-NtOpenMutant
+NtOpenKeyTransactedEx = ZwOpenKeyTransactedEx
+NtOpenKeyedEvent = ZwOpenKeyedEvent
+NtOpenMutant = ZwOpenMutant
 NtOpenObjectAuditAlarm
-NtOpenPartition
-NtOpenPrivateNamespace = ZwOpenPrivateNamespace
+NtOpenPartition = ZwOpenPartition
+NtOpenPrivateNamespace
 NtOpenProcess
-NtOpenProcessToken
+NtOpenProcessToken = ZwOpenProcessToken
 NtOpenProcessTokenEx = ZwOpenProcessTokenEx
-NtOpenRegistryTransaction = ZwOpenRegistryTransaction
-NtOpenResourceManager
-NtOpenSection = ZwOpenSection
+NtOpenRegistryTransaction
+NtOpenResourceManager = ZwOpenResourceManager
+NtOpenSection
 NtOpenSemaphore
-NtOpenSession = ZwOpenSession
-NtOpenSymbolicLinkObject = ZwOpenSymbolicLinkObject
+NtOpenSession
+NtOpenSymbolicLinkObject
 NtOpenThread = ZwOpenThread
-NtOpenThreadToken
-NtOpenThreadTokenEx = ZwOpenThreadTokenEx
+NtOpenThreadToken = ZwOpenThreadToken
+NtOpenThreadTokenEx
 NtOpenTimer = ZwOpenTimer
 NtOpenTransaction = ZwOpenTransaction
 NtOpenTransactionManager
 NtPlugPlayControl
 NtPowerInformation = ZwPowerInformation
-NtPrePrepareComplete
+NtPrePrepareComplete = ZwPrePrepareComplete
 NtPrePrepareEnlistment = ZwPrePrepareEnlistment
-NtPrepareComplete = ZwPrepareComplete
+NtPrepareComplete
 NtPrepareEnlistment
-NtPrivilegeCheck = ZwPrivilegeCheck
+NtPrivilegeCheck
 NtPrivilegeObjectAuditAlarm = ZwPrivilegeObjectAuditAlarm
-NtPrivilegedServiceAuditAlarm
+NtPrivilegedServiceAuditAlarm = ZwPrivilegedServiceAuditAlarm
 NtPropagationComplete
 NtPropagationFailed
 NtProtectVirtualMemory = ZwProtectVirtualMemory
 NtPssCaptureVaSpaceBulk
 NtPulseEvent = ZwPulseEvent
-NtQueryAttributesFile = ZwQueryAttributesFile
-NtQueryAuxiliaryCounterFrequency = ZwQueryAuxiliaryCounterFrequency
-NtQueryBootEntryOrder = ZwQueryBootEntryOrder
+NtQueryAttributesFile
+NtQueryAuxiliaryCounterFrequency
+NtQueryBootEntryOrder
 NtQueryBootOptions
-NtQueryDebugFilterState = ZwQueryDebugFilterState
-NtQueryDefaultLocale = ZwQueryDefaultLocale
+NtQueryDebugFilterState
+NtQueryDefaultLocale
 NtQueryDefaultUILanguage = ZwQueryDefaultUILanguage
 NtQueryDirectoryFile = ZwQueryDirectoryFile
-NtQueryDirectoryFileEx
+NtQueryDirectoryFileEx = ZwQueryDirectoryFileEx
 NtQueryDirectoryObject = ZwQueryDirectoryObject
-NtQueryDriverEntryOrder
+NtQueryDriverEntryOrder = ZwQueryDriverEntryOrder
 NtQueryEaFile
-NtQueryEvent = ZwQueryEvent
+NtQueryEvent
 NtQueryFullAttributesFile
 NtQueryInformationAtom
-NtQueryInformationByName
+NtQueryInformationByName = ZwQueryInformationByName
 NtQueryInformationCpuPartition
 NtQueryInformationEnlistment = ZwQueryInformationEnlistment
-NtQueryInformationFile
-NtQueryInformationJobObject
-NtQueryInformationPort
+NtQueryInformationFile = ZwQueryInformationFile
+NtQueryInformationJobObject = ZwQueryInformationJobObject
+NtQueryInformationPort = ZwQueryInformationPort
 NtQueryInformationProcess = ZwQueryInformationProcess
-NtQueryInformationResourceManager = ZwQueryInformationResourceManager
+NtQueryInformationResourceManager
 NtQueryInformationThread = ZwQueryInformationThread
-NtQueryInformationToken
-NtQueryInformationTransaction
+NtQueryInformationToken = ZwQueryInformationToken
+NtQueryInformationTransaction = ZwQueryInformationTransaction
 NtQueryInformationTransactionManager = ZwQueryInformationTransactionManager
-NtQueryInformationWorkerFactory
+NtQueryInformationWorkerFactory = ZwQueryInformationWorkerFactory
 NtQueryInstallUILanguage = ZwQueryInstallUILanguage
 NtQueryIntervalProfile
 NtQueryIoCompletion = ZwQueryIoCompletion
-NtQueryIoRingCapabilities = ZwQueryIoRingCapabilities
-NtQueryKey
+NtQueryIoRingCapabilities
+NtQueryKey = ZwQueryKey
 NtQueryLicenseValue = ZwQueryLicenseValue
 NtQueryMultipleValueKey = ZwQueryMultipleValueKey
 NtQueryMutant
 NtQueryObject = ZwQueryObject
 NtQueryOpenSubKeys = ZwQueryOpenSubKeys
-NtQueryOpenSubKeysEx
+NtQueryOpenSubKeysEx = ZwQueryOpenSubKeysEx
 NtQueryPerformanceCounter = ZwQueryPerformanceCounter
-NtQueryPortInformationProcess = ZwQueryPortInformationProcess
+NtQueryPortInformationProcess
 NtQueryQuotaInformationFile = ZwQueryQuotaInformationFile
 NtQuerySection = ZwQuerySection
 NtQuerySecurityAttributesToken = ZwQuerySecurityAttributesToken
-NtQuerySecurityObject = ZwQuerySecurityObject
+NtQuerySecurityObject
 NtQuerySecurityPolicy = ZwQuerySecurityPolicy
-NtQuerySemaphore
+NtQuerySemaphore = ZwQuerySemaphore
 NtQuerySymbolicLinkObject
-NtQuerySystemEnvironmentValue = ZwQuerySystemEnvironmentValue
+NtQuerySystemEnvironmentValue
 NtQuerySystemEnvironmentValueEx
-NtQuerySystemInformation = ZwQuerySystemInformation
+NtQuerySystemInformation
 NtQuerySystemInformationEx
 NtQuerySystemTime
 NtQueryTimer
-NtQueryTimerResolution
+NtQueryTimerResolution = ZwQueryTimerResolution
 NtQueryValueKey
 NtQueryVirtualMemory
 NtQueryVolumeInformationFile
-NtQueryWnfStateData = ZwQueryWnfStateData
-NtQueryWnfStateNameInformation
+NtQueryWnfStateData
+NtQueryWnfStateNameInformation = ZwQueryWnfStateNameInformation
 NtQueueApcThread = ZwQueueApcThread
-NtQueueApcThreadEx = ZwQueueApcThreadEx
-NtQueueApcThreadEx2 = ZwQueueApcThreadEx2
+NtQueueApcThreadEx
+NtQueueApcThreadEx2
 NtRaiseException
-NtRaiseHardError
+NtRaiseHardError = ZwRaiseHardError
 NtReadFile = ZwReadFile
-NtReadFileScatter
-NtReadOnlyEnlistment
+NtReadFileScatter = ZwReadFileScatter
+NtReadOnlyEnlistment = ZwReadOnlyEnlistment
 NtReadRequestData = ZwReadRequestData
 NtReadVirtualMemory = ZwReadVirtualMemory
-NtReadVirtualMemoryEx
-NtRecoverEnlistment = ZwRecoverEnlistment
-NtRecoverResourceManager = ZwRecoverResourceManager
-NtRecoverTransactionManager
-NtRegisterProtocolAddressInformation = ZwRegisterProtocolAddressInformation
-NtRegisterThreadTerminatePort
+NtReadVirtualMemoryEx = ZwReadVirtualMemoryEx
+NtRecoverEnlistment
+NtRecoverResourceManager
+NtRecoverTransactionManager = ZwRecoverTransactionManager
+NtRegisterProtocolAddressInformation
+NtRegisterThreadTerminatePort = ZwRegisterThreadTerminatePort
 NtReleaseKeyedEvent = ZwReleaseKeyedEvent
-NtReleaseMutant
+NtReleaseMutant = ZwReleaseMutant
 NtReleaseSemaphore = ZwReleaseSemaphore
 NtReleaseWorkerFactoryWorker = ZwReleaseWorkerFactoryWorker
-NtRemoveIoCompletion = ZwRemoveIoCompletion
-NtRemoveIoCompletionEx = ZwRemoveIoCompletionEx
+NtRemoveIoCompletion
+NtRemoveIoCompletionEx
 NtRemoveProcessDebug = ZwRemoveProcessDebug
-NtRenameKey
-NtRenameTransactionManager = ZwRenameTransactionManager
-NtReplaceKey
+NtRenameKey = ZwRenameKey
+NtRenameTransactionManager
+NtReplaceKey = ZwReplaceKey
 NtReplacePartitionUnit
 NtReplyPort
-NtReplyWaitReceivePort
-NtReplyWaitReceivePortEx
-NtReplyWaitReplyPort
+NtReplyWaitReceivePort = ZwReplyWaitReceivePort
+NtReplyWaitReceivePortEx = ZwReplyWaitReceivePortEx
+NtReplyWaitReplyPort = ZwReplyWaitReplyPort
 NtRequestPort = ZwRequestPort
 NtRequestWaitReplyPort = ZwRequestWaitReplyPort
-NtResetEvent = ZwResetEvent
-NtResetWriteWatch = ZwResetWriteWatch
+NtResetEvent
+NtResetWriteWatch
 NtRestoreKey = ZwRestoreKey
 NtResumeProcess
-NtResumeThread
-NtRevertContainerImpersonation = ZwRevertContainerImpersonation
+NtResumeThread = ZwResumeThread
+NtRevertContainerImpersonation
 NtRollbackComplete = ZwRollbackComplete
 NtRollbackEnlistment = ZwRollbackEnlistment
-NtRollbackRegistryTransaction
+NtRollbackRegistryTransaction = ZwRollbackRegistryTransaction
 NtRollbackTransaction
 NtRollforwardTransactionManager = ZwRollforwardTransactionManager
 NtSaveKey
 NtSaveKeyEx = ZwSaveKeyEx
 NtSaveMergedKeys
 NtSecureConnectPort
-NtSerializeBoot = ZwSerializeBoot
+NtSerializeBoot
 NtSetBootEntryOrder
-NtSetBootOptions
+NtSetBootOptions = ZwSetBootOptions
 NtSetCachedSigningLevel = ZwSetCachedSigningLevel
-NtSetCachedSigningLevel2
-NtSetContextThread
+NtSetCachedSigningLevel2 = ZwSetCachedSigningLevel2
+NtSetContextThread = ZwSetContextThread
 NtSetDebugFilterState
-NtSetDefaultHardErrorPort = ZwSetDefaultHardErrorPort
+NtSetDefaultHardErrorPort
 NtSetDefaultLocale = ZwSetDefaultLocale
-NtSetDefaultUILanguage = ZwSetDefaultUILanguage
+NtSetDefaultUILanguage
 NtSetDriverEntryOrder = ZwSetDriverEntryOrder
-NtSetEaFile = ZwSetEaFile
-NtSetEvent = ZwSetEvent
-NtSetEventBoostPriority
-NtSetHighEventPair = ZwSetHighEventPair
-NtSetHighWaitLowEventPair = ZwSetHighWaitLowEventPair
+NtSetEaFile
+NtSetEvent
+NtSetEventBoostPriority = ZwSetEventBoostPriority
+NtSetEventEx
+NtSetHighEventPair
+NtSetHighWaitLowEventPair
 NtSetIRTimer
-NtSetInformationCpuPartition
+NtSetInformationCpuPartition = ZwSetInformationCpuPartition
 NtSetInformationDebugObject
 NtSetInformationEnlistment = ZwSetInformationEnlistment
-NtSetInformationFile = ZwSetInformationFile
-NtSetInformationIoRing = ZwSetInformationIoRing
+NtSetInformationFile
+NtSetInformationIoRing
 NtSetInformationJobObject = ZwSetInformationJobObject
-NtSetInformationKey = ZwSetInformationKey
+NtSetInformationKey
 NtSetInformationObject = ZwSetInformationObject
-NtSetInformationProcess
-NtSetInformationResourceManager
+NtSetInformationProcess = ZwSetInformationProcess
+NtSetInformationResourceManager = ZwSetInformationResourceManager
 NtSetInformationSymbolicLink = ZwSetInformationSymbolicLink
-NtSetInformationThread = ZwSetInformationThread
-NtSetInformationToken = ZwSetInformationToken
+NtSetInformationThread
+NtSetInformationToken
 NtSetInformationTransaction
-NtSetInformationTransactionManager
-NtSetInformationVirtualMemory
+NtSetInformationTransactionManager = ZwSetInformationTransactionManager
+NtSetInformationVirtualMemory = ZwSetInformationVirtualMemory
 NtSetInformationWorkerFactory = ZwSetInformationWorkerFactory
 NtSetIntervalProfile = ZwSetIntervalProfile
 NtSetIoCompletion
-NtSetIoCompletionEx
+NtSetIoCompletionEx = ZwSetIoCompletionEx
 NtSetLdtEntries = ZwSetLdtEntries
 NtSetLowEventPair
-NtSetLowWaitHighEventPair = ZwSetLowWaitHighEventPair
-NtSetQuotaInformationFile
+NtSetLowWaitHighEventPair
+NtSetQuotaInformationFile = ZwSetQuotaInformationFile
 NtSetSecurityObject = ZwSetSecurityObject
 NtSetSystemEnvironmentValue
 NtSetSystemEnvironmentValueEx
-NtSetSystemInformation
+NtSetSystemInformation = ZwSetSystemInformation
 NtSetSystemPowerState
 NtSetSystemTime = ZwSetSystemTime
-NtSetThreadExecutionState
-NtSetTimer
+NtSetThreadExecutionState = ZwSetThreadExecutionState
+NtSetTimer = ZwSetTimer
 NtSetTimer2 = ZwSetTimer2
 NtSetTimerEx
-NtSetTimerResolution
+NtSetTimerResolution = ZwSetTimerResolution
 NtSetUuidSeed = ZwSetUuidSeed
 NtSetValueKey = ZwSetValueKey
-NtSetVolumeInformationFile
+NtSetVolumeInformationFile = ZwSetVolumeInformationFile
 NtSetWnfProcessNotificationEvent
-NtShutdownSystem
-NtShutdownWorkerFactory = ZwShutdownWorkerFactory
-NtSignalAndWaitForSingleObject
+NtShutdownSystem = ZwShutdownSystem
+NtShutdownWorkerFactory
+NtSignalAndWaitForSingleObject = ZwSignalAndWaitForSingleObject
 NtSinglePhaseReject
 NtStartProfile
 NtStopProfile
-NtSubmitIoRing
-NtSubscribeWnfStateChange = ZwSubscribeWnfStateChange
+NtSubmitIoRing = ZwSubmitIoRing
+NtSubscribeWnfStateChange
 NtSuspendProcess
-NtSuspendThread = ZwSuspendThread
-NtSystemDebugControl = ZwSystemDebugControl
-NtTerminateEnclave
-NtTerminateJobObject = ZwTerminateJobObject
+NtSuspendThread
+NtSystemDebugControl
+NtTerminateEnclave = ZwTerminateEnclave
+NtTerminateJobObject
 NtTerminateProcess = ZwTerminateProcess
-NtTerminateThread = ZwTerminateThread
+NtTerminateThread
 NtTestAlert
-NtThawRegistry = ZwThawRegistry
-NtThawTransactions
-NtTraceControl
-NtTraceEvent
+NtThawRegistry
+NtThawTransactions = ZwThawTransactions
+NtTraceControl = ZwTraceControl
+NtTraceEvent = ZwTraceEvent
 NtTranslateFilePath = ZwTranslateFilePath
 NtUmsThreadYield = ZwUmsThreadYield
-NtUnloadDriver
-NtUnloadKey = ZwUnloadKey
-NtUnloadKey2
+NtUnloadDriver = ZwUnloadDriver
+NtUnloadKey
+NtUnloadKey2 = ZwUnloadKey2
 NtUnloadKeyEx = ZwUnloadKeyEx
-NtUnlockFile = ZwUnlockFile
+NtUnlockFile
 NtUnlockVirtualMemory = ZwUnlockVirtualMemory
-NtUnmapViewOfSection = ZwUnmapViewOfSection
-NtUnmapViewOfSectionEx = ZwUnmapViewOfSectionEx
+NtUnmapViewOfSection
+NtUnmapViewOfSectionEx
 NtUnsubscribeWnfStateChange
-NtUpdateWnfStateData
+NtUpdateWnfStateData = ZwUpdateWnfStateData
 NtVdmControl
-NtWaitForAlertByThreadId
+NtWaitForAlertByThreadId = ZwWaitForAlertByThreadId
 NtWaitForDebugEvent = ZwWaitForDebugEvent
-NtWaitForKeyedEvent = ZwWaitForKeyedEvent
-NtWaitForMultipleObjects = ZwWaitForMultipleObjects
-NtWaitForMultipleObjects32 = ZwWaitForMultipleObjects32
+NtWaitForKeyedEvent
+NtWaitForMultipleObjects
+NtWaitForMultipleObjects32
 NtWaitForSingleObject = ZwWaitForSingleObject
-NtWaitForWorkViaWorkerFactory = ZwWaitForWorkViaWorkerFactory
-NtWaitHighEventPair
+NtWaitForWorkViaWorkerFactory
+NtWaitHighEventPair = ZwWaitHighEventPair
 NtWaitLowEventPair = ZwWaitLowEventPair
 NtWorkerFactoryWorkerReady = ZwWorkerFactoryWorkerReady
 NtWriteFile = ZwWriteFile
 NtWriteFileGather = ZwWriteFileGather
 NtWriteRequestData
-NtWriteVirtualMemory = ZwWriteVirtualMemory
+NtWriteVirtualMemory
 NtYieldExecution
 NtdllDefWindowProc_A
 NtdllDefWindowProc_W
@@ -728,7 +731,7 @@ RtlAddIntegrityLabelToBoundaryDescriptor
 RtlAddMandatoryAce
 RtlAddProcessTrustLabelAce
 RtlAddRefActivationContext
-RtlAddRefMemoryStream
+RtlAddRefMemoryStream = WinSqmGetEscalationRuleStatus
 RtlAddResourceAttributeAce
 RtlAddSIDToBoundaryDescriptor
 RtlAddScopedPolicyIDAce
@@ -794,12 +797,12 @@ RtlClearBitEx
 RtlClearBits
 RtlClearBitsEx
 RtlClearThreadWorkOnBehalfTicket
-RtlCloneMemoryStream
+RtlCloneMemoryStream = RtlRevertMemoryStream
 RtlCloneUserProcess
 RtlCmDecodeMemIoResource
 RtlCmEncodeMemIoResource
 RtlCommitDebugInfo
-RtlCommitMemoryStream
+RtlCommitMemoryStream = RtlRevertMemoryStream
 RtlCompactHeap
 RtlCompareAltitudes
 RtlCompareExchangePointerMapping
@@ -816,8 +819,8 @@ RtlComputeImportTableHash
 RtlComputePrivatizedDllName_U
 RtlConnectToSm
 RtlConsoleMultiByteToUnicodeN
-RtlConstructCrossVmEventPath
-RtlConstructCrossVmMutexPath = RtlConstructCrossVmEventPath
+RtlConstructCrossVmEventPath = RtlConstructCrossVmMutexPath
+RtlConstructCrossVmMutexPath
 RtlContractHashTable
 RtlConvertDeviceFamilyInfoToString
 RtlConvertExclusiveToShared
@@ -835,8 +838,8 @@ RtlCopyLuidAndAttributesArray
 RtlCopyMappedMemory
 RtlCopyMemory = memcpy
 RtlCopyMemoryNonTemporal
-RtlCopyMemoryStreamTo
-RtlCopyOutOfProcessMemoryStreamTo = RtlCopyMemoryStreamTo
+RtlCopyMemoryStreamTo = RtlRevertMemoryStream
+RtlCopyOutOfProcessMemoryStreamTo = RtlRevertMemoryStream
 RtlCopySecurityDescriptor
 RtlCopySid
 RtlCopySidAndAttributesArray
@@ -869,8 +872,8 @@ RtlCreateSystemVolumeInformationFolder
 RtlCreateTagHeap
 RtlCreateTimer
 RtlCreateTimerQueue
-RtlCreateUmsCompletionList
-RtlCreateUmsThreadContext
+RtlCreateUmsCompletionList = RtlGetUmsCompletionListEvent
+RtlCreateUmsThreadContext = RtlGetUmsCompletionListEvent
 RtlCreateUnicodeString
 RtlCreateUnicodeStringFromAsciiz
 RtlCreateUserFiberShadowStack
@@ -887,7 +890,7 @@ RtlDeCommitDebugInfo
 RtlDeNormalizeProcessParams
 RtlDeactivateActivationContext
 RtlDeactivateActivationContextUnsafeFast
-RtlDebugPrintTimes = LdrQueryModuleInfoLocalLoaderLock32
+RtlDebugPrintTimes = WinSqmAddToStreamEx
 RtlDecodePointer
 RtlDecodeRemotePointer
 RtlDecodeSystemPointer
@@ -900,7 +903,7 @@ RtlDelete
 RtlDeleteAce
 RtlDeleteAtomFromAtomTable
 RtlDeleteBarrier
-RtlDeleteBoundaryDescriptor
+RtlDeleteBoundaryDescriptor = RtlpFreeAtom
 RtlDeleteCriticalSection
 RtlDeleteElementGenericTable
 RtlDeleteElementGenericTableAvl
@@ -915,9 +918,9 @@ RtlDeleteSecurityObject
 RtlDeleteTimer
 RtlDeleteTimerQueue
 RtlDeleteTimerQueueEx
-RtlDeleteUmsCompletionList
-RtlDeleteUmsThreadContext
-RtlDequeueUmsCompletionListItems
+RtlDeleteUmsCompletionList = RtlGetUmsCompletionListEvent
+RtlDeleteUmsThreadContext = RtlGetUmsCompletionListEvent
+RtlDequeueUmsCompletionListItems = RtlGetUmsCompletionListEvent
 RtlDeregisterSecureMemoryCacheCallback
 RtlDeregisterWait
 RtlDeregisterWaitEx
@@ -955,16 +958,16 @@ RtlDuplicateUnicodeString
 RtlEmptyAtomTable
 RtlEnableEarlyCriticalSectionEventCreation
 RtlEnableThreadProfiling
-RtlEnclaveCallDispatch = RtlEnclaveCallDispatcher
+RtlEnclaveCallDispatch
 RtlEnclaveCallDispatchReturn
 RtlEncodePointer
 RtlEncodeRemotePointer
 RtlEncodeSystemPointer
 RtlEndEnumerationHashTable
-RtlEndStrongEnumerationHashTable
+RtlEndStrongEnumerationHashTable = WinSqmAddToStreamEx
 RtlEndWeakEnumerationHashTable
 RtlEnterCriticalSection
-RtlEnterUmsSchedulingMode
+RtlEnterUmsSchedulingMode = RtlGetUmsCompletionListEvent
 RtlEnumProcessHeaps
 RtlEnumerateEntryHashTable
 RtlEnumerateGenericTable
@@ -985,7 +988,7 @@ RtlEthernetAddressToStringA
 RtlEthernetAddressToStringW
 RtlEthernetStringToAddressA
 RtlEthernetStringToAddressW
-RtlExecuteUmsThread = RtlDeleteUmsThreadContext
+RtlExecuteUmsThread = RtlGetUmsCompletionListEvent
 RtlExitUserProcess
 RtlExitUserThread
 RtlExpandEnvironmentStrings
@@ -998,7 +1001,7 @@ RtlExtractBitMap
 RtlFillMemory
 RtlFillMemoryNonTemporal
 RtlFillNonVolatileMemory
-RtlFinalReleaseOutOfProcessMemoryStream
+RtlFinalReleaseOutOfProcessMemoryStream = WinSqmAddToStreamEx
 RtlFindAceByType
 RtlFindActivationContextSectionGuid
 RtlFindActivationContextSectionString
@@ -1024,8 +1027,10 @@ RtlFindUnicodeSubstring
 RtlFirstEntrySList = FirstEntrySList
 RtlFirstFreeAce
 RtlFlsAlloc
+RtlFlsAllocEx
 RtlFlsFree
 RtlFlsGetValue
+RtlFlsGetValue2
 RtlFlsSetValue
 RtlFlushHeaps
 RtlFlushNonVolatileMemory
@@ -1035,7 +1040,7 @@ RtlFormatCurrentUserKeyPath
 RtlFormatMessage
 RtlFormatMessageEx
 RtlFreeActivationContextStack
-RtlFreeAnsiString
+RtlFreeAnsiString = RtlFreeUnicodeString
 RtlFreeHandle
 RtlFreeHeap
 RtlFreeMemoryBlockLookaside
@@ -1043,13 +1048,14 @@ RtlFreeNonVolatileToken
 RtlFreeOemString
 RtlFreeSid
 RtlFreeThreadActivationContextStack
-RtlFreeUTF8String
+RtlFreeUTF8String = RtlFreeUnicodeString
 RtlFreeUnicodeString
 RtlFreeUserFiberShadowStack
 RtlFreeUserStack
 RtlGUIDFromString
 RtlGenerate8dot3Name
 RtlGetAce
+RtlGetAcesBufferSize
 RtlGetActiveActivationContext
 RtlGetActiveConsoleId
 RtlGetAppContainerNamedObjectPath
@@ -1065,6 +1071,7 @@ RtlGetCurrentPeb
 RtlGetCurrentProcessorNumber
 RtlGetCurrentProcessorNumberEx
 RtlGetCurrentServiceSessionId
+RtlGetCurrentThreadPrimaryGroup
 RtlGetCurrentTransaction
 RtlGetCurrentUmsThread
 RtlGetDaclSecurityDescriptor
@@ -1076,6 +1083,8 @@ RtlGetExePath
 RtlGetExtendedContextLength
 RtlGetExtendedContextLength2
 RtlGetExtendedFeaturesMask
+RtlGetFeatureToggleConfiguration
+RtlGetFeatureTogglesChangeToken
 RtlGetFileMUIPath
 RtlGetFrame
 RtlGetFullPathName_U
@@ -1093,9 +1102,9 @@ RtlGetLengthWithoutTrailingPathSeperators
 RtlGetLocaleFileMappingAddress
 RtlGetLongestNtPathLength
 RtlGetMultiTimePrecise
-RtlGetNativeSystemInformation = ZwQuerySystemInformation
+RtlGetNativeSystemInformation = NtQuerySystemInformation
 RtlGetNextEntryHashTable
-RtlGetNextUmsListItem
+RtlGetNextUmsListItem = RtlGetUmsCompletionListEvent
 RtlGetNonVolatileToken
 RtlGetNtGlobalFlags
 RtlGetNtProductType
@@ -1153,21 +1162,21 @@ RtlInitAnsiStringEx
 RtlInitBarrier
 RtlInitCodePageTable
 RtlInitEnumerationHashTable
-RtlInitMemoryStream = RtlFinalReleaseOutOfProcessMemoryStream
-RtlInitNlsTables
-RtlInitOutOfProcessMemoryStream = RtlFinalReleaseOutOfProcessMemoryStream
+RtlInitMemoryStream = WinSqmAddToStreamEx
+RtlInitNlsTables = WinSqmAddToStreamEx
+RtlInitOutOfProcessMemoryStream = WinSqmAddToStreamEx
 RtlInitString
-RtlInitStringEx = RtlInitUTF8StringEx
+RtlInitStringEx
 RtlInitStrongEnumerationHashTable
 RtlInitUTF8String
-RtlInitUTF8StringEx
+RtlInitUTF8StringEx = RtlInitStringEx
 RtlInitUnicodeString
 RtlInitUnicodeStringEx
 RtlInitWeakEnumerationHashTable
-RtlInitializeAtomPackage
+RtlInitializeAtomPackage = WinSqmGetEscalationRuleStatus
 RtlInitializeBitMap
 RtlInitializeBitMapEx
-RtlInitializeConditionVariable
+RtlInitializeConditionVariable = RtlRunOnceInitialize
 RtlInitializeContext
 RtlInitializeCorrelationVector
 RtlInitializeCriticalSection
@@ -1181,8 +1190,8 @@ RtlInitializeHandleTable
 RtlInitializeNtUserPfn
 RtlInitializeRXact
 RtlInitializeResource
-RtlInitializeSListHead = InitializeSListHead
-RtlInitializeSRWLock
+RtlInitializeSListHead
+RtlInitializeSRWLock = RtlRunOnceInitialize
 RtlInitializeSid
 RtlInitializeSidEx
 RtlInsertElementGenericTable
@@ -1233,6 +1242,7 @@ RtlIsDosDeviceName_U
 RtlIsEcCode
 RtlIsElevatedRid
 RtlIsEnclaveFeaturePresent
+RtlIsFeatureEnabledForEnterprise
 RtlIsGenericTableEmpty
 RtlIsGenericTableEmptyAvl
 RtlIsMultiSessionSku
@@ -1278,10 +1288,11 @@ RtlLockBootStatusData
 RtlLockCurrentThread
 RtlLockHeap
 RtlLockMemoryBlockLookaside
-RtlLockMemoryStreamRegion = RtlUnlockMemoryStreamRegion
+RtlLockMemoryStreamRegion = RtlRevertMemoryStream
 RtlLockMemoryZone
 RtlLockModuleSection
 RtlLogStackBackTrace
+RtlLogUnexpectedCodepath
 RtlLookupAtomInAtomTable
 RtlLookupElementGenericTable
 RtlLookupElementGenericTableAvl
@@ -1308,6 +1319,7 @@ RtlNewSecurityObjectWithMultipleInheritance
 RtlNormalizeProcessParams
 RtlNormalizeSecurityDescriptor
 RtlNormalizeString
+RtlNotifyFeatureToggleUsage
 RtlNotifyFeatureUsage
 RtlNtPathNameToDosPathName
 RtlNtStatusToDosError
@@ -1322,7 +1334,7 @@ RtlNumberOfSetBits
 RtlNumberOfSetBitsEx
 RtlNumberOfSetBitsInRange
 RtlNumberOfSetBitsUlongPtr
-RtlOemStringToUnicodeSize = RtlxOemStringToUnicodeSize
+RtlOemStringToUnicodeSize = RtlxAnsiStringToUnicodeSize
 RtlOemStringToUnicodeString
 RtlOemToUnicodeN
 RtlOpenCrossProcessEmulatorWorkConnection
@@ -1342,6 +1354,7 @@ RtlPublishWnfStateData
 RtlPushFrame
 RtlQueryActivationContextApplicationSettings
 RtlQueryAllFeatureConfigurations
+RtlQueryAllInternalFeatureConfigurations
 RtlQueryAtomInAtomTable
 RtlQueryCriticalSectionOwner
 RtlQueryDepthSList
@@ -1357,7 +1370,7 @@ RtlQueryImageMitigationPolicy
 RtlQueryInformationAcl
 RtlQueryInformationActivationContext
 RtlQueryInformationActiveActivationContext
-RtlQueryInterfaceMemoryStream
+RtlQueryInterfaceMemoryStream = RtlRevertMemoryStream
 RtlQueryModuleInformation
 RtlQueryPackageClaims
 RtlQueryPackageIdentity
@@ -1382,7 +1395,7 @@ RtlQueryThreadPlaceholderCompatibilityMode
 RtlQueryThreadProfiling
 RtlQueryTimeZoneInformation
 RtlQueryTokenHostIdAsUlong64
-RtlQueryUmsThreadInformation
+RtlQueryUmsThreadInformation = RtlGetUmsCompletionListEvent
 RtlQueryUnbiasedInterruptTime
 RtlQueryValidationRunlevel
 RtlQueryWnfMetaNotification
@@ -1399,9 +1412,14 @@ RtlRandom = RtlRandomEx
 RtlRandomEx
 RtlRbInsertNodeEx
 RtlRbRemoveNode
+RtlRcuAllocate
+RtlRcuFree
+RtlRcuReadLock
+RtlRcuReadUnlock
+RtlRcuSynchronize
 RtlReAllocateHeap
-RtlReadMemoryStream = RtlReadOutOfProcessMemoryStream
-RtlReadOutOfProcessMemoryStream
+RtlReadMemoryStream = RtlRevertMemoryStream
+RtlReadOutOfProcessMemoryStream = RtlRevertMemoryStream
 RtlReadThreadProfilingData
 RtlRealPredecessor
 RtlRealSuccessor
@@ -1411,7 +1429,7 @@ RtlRegisterSecureMemoryCacheCallback
 RtlRegisterThreadWithCsrss
 RtlRegisterWait
 RtlReleaseActivationContext
-RtlReleaseMemoryStream = RtlAddRefMemoryStream
+RtlReleaseMemoryStream = WinSqmGetEscalationRuleStatus
 RtlReleasePath
 RtlReleasePebLock
 RtlReleasePrivilege
@@ -1431,11 +1449,11 @@ RtlReplaceSystemDirectoryInPath
 RtlReportException
 RtlReportExceptionEx
 RtlReportSilentProcessExit
-RtlReportSqmEscalation
+RtlReportSqmEscalation = WinSqmGetEscalationRuleStatus
 RtlResetMemoryBlockLookaside
 RtlResetMemoryZone
 RtlResetNtUserPfn
-RtlResetRtlTranslations
+RtlResetRtlTranslations = WinSqmAddToStreamEx
 RtlRestoreBootStatusDefaults
 RtlRestoreContext = RtlGuardRestoreContext
 RtlRestoreLastWin32Error = RtlSetLastWin32Error
@@ -1451,7 +1469,7 @@ RtlRunOnceExecuteOnce
 RtlRunOnceInitialize
 RtlSecondsSince1970ToTime
 RtlSecondsSince1980ToTime
-RtlSeekMemoryStream
+RtlSeekMemoryStream = RtlRevertMemoryStream
 RtlSelfRelativeToAbsoluteSD
 RtlSelfRelativeToAbsoluteSD2
 RtlSendMsgToSm
@@ -1481,7 +1499,7 @@ RtlSetInformationAcl
 RtlSetIoCompletionCallback
 RtlSetLastWin32Error
 RtlSetLastWin32ErrorAndNtStatusFromNtStatus
-RtlSetMemoryStreamSize
+RtlSetMemoryStreamSize = RtlRevertMemoryStream
 RtlSetOwnerSecurityDescriptor
 RtlSetPortableOperatingSystem
 RtlSetProcessDebugInformation
@@ -1500,14 +1518,14 @@ RtlSetSystemBootStatusEx
 RtlSetThreadErrorMode
 RtlSetThreadIsCritical
 RtlSetThreadPlaceholderCompatibilityMode
-RtlSetThreadPoolStartFunc
+RtlSetThreadPoolStartFunc = WinSqmGetEscalationRuleStatus
 RtlSetThreadPreferredUILanguages
 RtlSetThreadPreferredUILanguages2
 RtlSetThreadSubProcessTag
 RtlSetThreadWorkOnBehalfTicket
 RtlSetTimeZoneInformation
 RtlSetTimer
-RtlSetUmsThreadInformation
+RtlSetUmsThreadInformation = RtlGetUmsCompletionListEvent
 RtlSetUnhandledExceptionFilter
 RtlSetUserFlagsHeap
 RtlSetUserValueHeap
@@ -1522,7 +1540,7 @@ RtlSleepConditionVariableCS
 RtlSleepConditionVariableSRW
 RtlSplay
 RtlStartRXact
-RtlStatMemoryStream
+RtlStatMemoryStream = RtlRevertMemoryStream
 RtlStringFromGUID
 RtlStringFromGUIDEx
 RtlStronglyEnumerateEntryHashTable
@@ -1543,6 +1561,9 @@ RtlTimeToElapsedTimeFields
 RtlTimeToSecondsSince1970
 RtlTimeToSecondsSince1980
 RtlTimeToTimeFields
+RtlTlsAlloc
+RtlTlsFree
+RtlTlsSetValue
 RtlTraceDatabaseAdd
 RtlTraceDatabaseCreate
 RtlTraceDatabaseDestroy
@@ -1559,7 +1580,7 @@ RtlTryEnterCriticalSection
 RtlUTF8StringToUnicodeString
 RtlUTF8ToUnicodeN
 RtlUdiv128
-RtlUmsThreadYield
+RtlUmsThreadYield = RtlGetUmsCompletionListEvent
 RtlUnhandledExceptionFilter
 RtlUnhandledExceptionFilter2
 RtlUnicodeStringToAnsiSize = RtlxUnicodeStringToOemSize
@@ -1579,7 +1600,7 @@ RtlUnlockBootStatusData
 RtlUnlockCurrentThread
 RtlUnlockHeap
 RtlUnlockMemoryBlockLookaside
-RtlUnlockMemoryStreamRegion
+RtlUnlockMemoryStreamRegion = RtlRevertMemoryStream
 RtlUnlockMemoryZone
 RtlUnlockModuleSection
 RtlUnregisterFeatureConfigurationChangeNotification
@@ -1613,6 +1634,7 @@ RtlValidateCorrelationVector
 RtlValidateHeap
 RtlValidateProcessHeaps
 RtlValidateUnicodeString
+RtlValidateUserCallTarget
 RtlVerifyVersionInfo
 RtlVirtualUnwind
 RtlVirtualUnwind2
@@ -1628,13 +1650,13 @@ RtlWalkFrameChain
 RtlWalkHeap
 RtlWeaklyEnumerateEntryHashTable
 RtlWerpReportException
-RtlWnfCompareChangeStamp
 RtlWnfDllUnloadCallback
-RtlWow64CallFunction64
+RtlWow64CallFunction64 = RtlpWow64GetContextOnAmd64
 RtlWow64ChangeProcessState
 RtlWow64ChangeThreadState
-RtlWow64EnableFsRedirection
-RtlWow64EnableFsRedirectionEx
+RtlWow64EnableFsRedirection = RtlpWow64GetContextOnAmd64
+RtlWow64EnableFsRedirectionEx = RtlpWow64GetContextOnAmd64
+RtlWow64GetCpuAreaEnabledFeatures
 RtlWow64GetCpuAreaInfo
 RtlWow64GetCurrentCpuArea
 RtlWow64GetCurrentMachine
@@ -1653,9 +1675,11 @@ RtlWow64RequestCrossProcessHeavyFlush
 RtlWow64SetThreadContext
 RtlWow64SuspendProcess
 RtlWow64SuspendThread
-RtlWriteMemoryStream
+RtlWriteMemoryStream = RtlRevertMemoryStream
 RtlWriteNonVolatileMemory
 RtlWriteRegistryValue
+RtlXRestore
+RtlXSave
 RtlZeroHeap
 RtlZeroMemory
 RtlZombifyActivationContext
@@ -1694,6 +1718,7 @@ RtlpQueryDefaultUILanguage
 RtlpQueryProcessDebugInformationFromWow64
 RtlpQueryProcessDebugInformationRemote
 RtlpRefreshCachedUILanguage
+RtlpScpCfgNtdllExports
 RtlpSetInstallLanguage
 RtlpSetPreferredUILanguages
 RtlpSetUserPreferredUILanguages = RtlpSetPreferredUILanguages
@@ -1701,19 +1726,19 @@ RtlpTimeFieldsToTime
 RtlpTimeToTimeFields
 RtlpUnWaitCriticalSection
 RtlpVerifyAndCommitUILanguageSettings
-RtlpWaitForCriticalSection
+RtlpWaitForCriticalSection = WinSqmAddToStreamEx
 RtlpWow64CtxFromAmd64
 RtlpWow64GetContextOnAmd64
-RtlpWow64SetContextOnAmd64
+RtlpWow64SetContextOnAmd64 = RtlpWow64GetContextOnAmd64
 RtlxAnsiStringToUnicodeSize
-RtlxOemStringToUnicodeSize
+RtlxOemStringToUnicodeSize = RtlxAnsiStringToUnicodeSize
 RtlxUnicodeStringToAnsiSize = RtlxUnicodeStringToOemSize
 RtlxUnicodeStringToOemSize
 SbExecuteProcedure
 SbSelectProcedure
 ShipAssert
 ShipAssertGetBufferInfo
-ShipAssertMsgA
+ShipAssertMsgA = ShipAssertMsgW
 ShipAssertMsgW
 TpAllocAlpcCompletion
 TpAllocAlpcCompletionEx
@@ -1740,7 +1765,7 @@ TpCancelAsyncIoOperation
 TpCaptureCaller
 TpCheckTerminateWorker
 TpDbgDumpHeapUsage
-TpDbgSetLogRoutine
+TpDbgSetLogRoutine = WinSqmAddToStreamEx
 TpDisablePoolCallbackChecks
 TpDisassociateCallback
 TpIsTimerSet
@@ -1783,165 +1808,167 @@ TpWorkOnBehalfSetTicket
 VerSetConditionMask
 WerReportExceptionWorker
 WerReportSQMEvent
-WinSqmAddToAverageDWORD = WinSqmSetIfMaxDWORD
-WinSqmAddToStream
+WinSqmAddToAverageDWORD = WinSqmAddToStreamEx
+WinSqmAddToStream = WinSqmAddToStreamEx
 WinSqmAddToStreamEx
-WinSqmCheckEscalationAddToStreamEx
-WinSqmCheckEscalationSetDWORD
-WinSqmCheckEscalationSetDWORD64
-WinSqmCheckEscalationSetString
-WinSqmCommonDatapointDelete
-WinSqmCommonDatapointSetDWORD
-WinSqmCommonDatapointSetDWORD64
-WinSqmCommonDatapointSetStreamEx
-WinSqmCommonDatapointSetString
-WinSqmEndSession
-WinSqmEventEnabled
-WinSqmEventWrite
+WinSqmCheckEscalationAddToStreamEx = WinSqmGetEscalationRuleStatus
+WinSqmCheckEscalationSetDWORD = WinSqmGetEscalationRuleStatus
+WinSqmCheckEscalationSetDWORD64 = WinSqmGetEscalationRuleStatus
+WinSqmCheckEscalationSetString = WinSqmGetEscalationRuleStatus
+WinSqmCommonDatapointDelete = WinSqmSetEscalationInfo
+WinSqmCommonDatapointSetDWORD = WinSqmSetEscalationInfo
+WinSqmCommonDatapointSetDWORD64 = WinSqmSetEscalationInfo
+WinSqmCommonDatapointSetStreamEx = WinSqmSetEscalationInfo
+WinSqmCommonDatapointSetString = WinSqmSetEscalationInfo
+WinSqmEndSession = WinSqmAddToStreamEx
+WinSqmEventEnabled = WinSqmGetEscalationRuleStatus
+WinSqmEventWrite = WinSqmGetEscalationRuleStatus
 WinSqmGetEscalationRuleStatus
 WinSqmGetInstrumentationProperty
-WinSqmIncrementDWORD = WinSqmSetIfMaxDWORD
-WinSqmIsOptedIn = SwitchedRtlGetVersion_Current
-WinSqmIsOptedInEx
-WinSqmIsSessionDisabled = WinSqmCommonDatapointDelete
-WinSqmSetDWORD = WinSqmSetIfMaxDWORD
-WinSqmSetDWORD64
+WinSqmIncrementDWORD = WinSqmAddToStreamEx
+WinSqmIsOptedIn = WinSqmGetEscalationRuleStatus
+WinSqmIsOptedInEx = WinSqmGetEscalationRuleStatus
+WinSqmIsSessionDisabled = WinSqmSetEscalationInfo
+WinSqmSetDWORD = WinSqmAddToStreamEx
+WinSqmSetDWORD64 = WinSqmAddToStreamEx
 WinSqmSetEscalationInfo
-WinSqmSetIfMaxDWORD
-WinSqmSetIfMinDWORD = WinSqmSetIfMaxDWORD
-WinSqmSetString
-WinSqmStartSession
+WinSqmSetIfMaxDWORD = WinSqmAddToStreamEx
+WinSqmSetIfMinDWORD = WinSqmAddToStreamEx
+WinSqmSetString = WinSqmAddToStreamEx
+WinSqmStartSession = WinSqmStartSessionForPartner
 WinSqmStartSessionForPartner
-WinSqmStartSqmOptinListener = CsrIdentifyAlertableThread
+WinSqmStartSqmOptinListener = WinSqmGetEscalationRuleStatus
 ZwAcceptConnectPort
-ZwAccessCheck = NtAccessCheck
-ZwAccessCheckAndAuditAlarm
-ZwAccessCheckByType = NtAccessCheckByType
+ZwAccessCheck
+ZwAccessCheckAndAuditAlarm = NtAccessCheckAndAuditAlarm
+ZwAccessCheckByType
 ZwAccessCheckByTypeAndAuditAlarm = NtAccessCheckByTypeAndAuditAlarm
 ZwAccessCheckByTypeResultList = NtAccessCheckByTypeResultList
 ZwAccessCheckByTypeResultListAndAuditAlarm = NtAccessCheckByTypeResultListAndAuditAlarm
 ZwAccessCheckByTypeResultListAndAuditAlarmByHandle
 ZwAcquireCrossVmMutant = NtAcquireCrossVmMutant
 ZwAcquireProcessActivityReference = NtAcquireProcessActivityReference
-ZwAddAtom = NtAddAtom
-ZwAddAtomEx
-ZwAddBootEntry = NtAddBootEntry
-ZwAddDriverEntry
-ZwAdjustGroupsToken = NtAdjustGroupsToken
+ZwAddAtom
+ZwAddAtomEx = NtAddAtomEx
+ZwAddBootEntry
+ZwAddDriverEntry = NtAddDriverEntry
+ZwAdjustGroupsToken
 ZwAdjustPrivilegesToken
 ZwAdjustTokenClaimsAndDeviceGroups = NtAdjustTokenClaimsAndDeviceGroups
+ZwAlertMultipleThreadByThreadId
 ZwAlertResumeThread
 ZwAlertThread
 ZwAlertThreadByThreadId = NtAlertThreadByThreadId
+ZwAlertThreadByThreadIdEx = NtAlertThreadByThreadIdEx
 ZwAllocateLocallyUniqueId = NtAllocateLocallyUniqueId
 ZwAllocateReserveObject
 ZwAllocateUserPhysicalPages = NtAllocateUserPhysicalPages
 ZwAllocateUserPhysicalPagesEx = NtAllocateUserPhysicalPagesEx
-ZwAllocateUuids
+ZwAllocateUuids = NtAllocateUuids
 ZwAllocateVirtualMemory
 ZwAllocateVirtualMemoryEx = NtAllocateVirtualMemoryEx
-ZwAlpcAcceptConnectPort = NtAlpcAcceptConnectPort
+ZwAlpcAcceptConnectPort
 ZwAlpcCancelMessage
 ZwAlpcConnectPort
 ZwAlpcConnectPortEx = NtAlpcConnectPortEx
-ZwAlpcCreatePort = NtAlpcCreatePort
+ZwAlpcCreatePort
 ZwAlpcCreatePortSection = NtAlpcCreatePortSection
-ZwAlpcCreateResourceReserve
+ZwAlpcCreateResourceReserve = NtAlpcCreateResourceReserve
 ZwAlpcCreateSectionView = NtAlpcCreateSectionView
-ZwAlpcCreateSecurityContext = NtAlpcCreateSecurityContext
-ZwAlpcDeletePortSection = NtAlpcDeletePortSection
-ZwAlpcDeleteResourceReserve
-ZwAlpcDeleteSectionView
-ZwAlpcDeleteSecurityContext = NtAlpcDeleteSecurityContext
+ZwAlpcCreateSecurityContext
+ZwAlpcDeletePortSection
+ZwAlpcDeleteResourceReserve = NtAlpcDeleteResourceReserve
+ZwAlpcDeleteSectionView = NtAlpcDeleteSectionView
+ZwAlpcDeleteSecurityContext
 ZwAlpcDisconnectPort
 ZwAlpcImpersonateClientContainerOfPort
-ZwAlpcImpersonateClientOfPort
+ZwAlpcImpersonateClientOfPort = NtAlpcImpersonateClientOfPort
 ZwAlpcOpenSenderProcess = NtAlpcOpenSenderProcess
 ZwAlpcOpenSenderThread = NtAlpcOpenSenderThread
-ZwAlpcQueryInformation = NtAlpcQueryInformation
-ZwAlpcQueryInformationMessage = NtAlpcQueryInformationMessage
+ZwAlpcQueryInformation
+ZwAlpcQueryInformationMessage
 ZwAlpcRevokeSecurityContext = NtAlpcRevokeSecurityContext
 ZwAlpcSendWaitReceivePort = NtAlpcSendWaitReceivePort
 ZwAlpcSetInformation
 ZwApphelpCacheControl = NtApphelpCacheControl
 ZwAreMappedFilesTheSame = NtAreMappedFilesTheSame
-ZwAssignProcessToJobObject
+ZwAssignProcessToJobObject = NtAssignProcessToJobObject
 ZwAssociateWaitCompletionPacket = NtAssociateWaitCompletionPacket
-ZwCallEnclave
+ZwCallEnclave = NtCallEnclave
 ZwCallbackReturn = NtCallbackReturn
-ZwCancelIoFile = NtCancelIoFile
-ZwCancelIoFileEx = NtCancelIoFileEx
-ZwCancelSynchronousIoFile = NtCancelSynchronousIoFile
+ZwCancelIoFile
+ZwCancelIoFileEx
+ZwCancelSynchronousIoFile
 ZwCancelTimer
 ZwCancelTimer2 = NtCancelTimer2
 ZwCancelWaitCompletionPacket = NtCancelWaitCompletionPacket
-ZwChangeProcessState
+ZwChangeProcessState = NtChangeProcessState
 ZwChangeThreadState = NtChangeThreadState
 ZwClearEvent
-ZwClose = NtClose
-ZwCloseObjectAuditAlarm = NtCloseObjectAuditAlarm
-ZwCommitComplete = NtCommitComplete
-ZwCommitEnlistment
-ZwCommitRegistryTransaction = NtCommitRegistryTransaction
-ZwCommitTransaction = NtCommitTransaction
+ZwClose
+ZwCloseObjectAuditAlarm
+ZwCommitComplete
+ZwCommitEnlistment = NtCommitEnlistment
+ZwCommitRegistryTransaction
+ZwCommitTransaction
 ZwCompactKeys
 ZwCompareObjects = NtCompareObjects
 ZwCompareSigningLevels
 ZwCompareTokens = NtCompareTokens
-ZwCompleteConnectPort
+ZwCompleteConnectPort = NtCompleteConnectPort
 ZwCompressKey
-ZwConnectPort
-ZwContinue
-ZwContinueEx
+ZwConnectPort = NtConnectPort
+ZwContinue = NtContinue
+ZwContinueEx = NtContinueEx
 ZwConvertBetweenAuxiliaryCounterAndPerformanceCounter
 ZwCopyFileChunk = NtCopyFileChunk
 ZwCreateCpuPartition
-ZwCreateCrossVmEvent
-ZwCreateCrossVmMutant = NtCreateCrossVmMutant
-ZwCreateDebugObject
-ZwCreateDirectoryObject = NtCreateDirectoryObject
-ZwCreateDirectoryObjectEx
+ZwCreateCrossVmEvent = NtCreateCrossVmEvent
+ZwCreateCrossVmMutant
+ZwCreateDebugObject = NtCreateDebugObject
+ZwCreateDirectoryObject
+ZwCreateDirectoryObjectEx = NtCreateDirectoryObjectEx
 ZwCreateEnclave = NtCreateEnclave
 ZwCreateEnlistment
-ZwCreateEvent
-ZwCreateEventPair
+ZwCreateEvent = NtCreateEvent
+ZwCreateEventPair = NtCreateEventPair
 ZwCreateFile = NtCreateFile
 ZwCreateIRTimer = NtCreateIRTimer
-ZwCreateIoCompletion
+ZwCreateIoCompletion = NtCreateIoCompletion
 ZwCreateIoRing
 ZwCreateJobObject = NtCreateJobObject
-ZwCreateJobSet
-ZwCreateKey
+ZwCreateJobSet = NtCreateJobSet
+ZwCreateKey = NtCreateKey
 ZwCreateKeyTransacted = NtCreateKeyTransacted
-ZwCreateKeyedEvent
-ZwCreateLowBoxToken = NtCreateLowBoxToken
-ZwCreateMailslotFile = NtCreateMailslotFile
-ZwCreateMutant = NtCreateMutant
-ZwCreateNamedPipeFile
+ZwCreateKeyedEvent = NtCreateKeyedEvent
+ZwCreateLowBoxToken
+ZwCreateMailslotFile
+ZwCreateMutant
+ZwCreateNamedPipeFile = NtCreateNamedPipeFile
 ZwCreatePagingFile
 ZwCreatePartition = NtCreatePartition
-ZwCreatePort
+ZwCreatePort = NtCreatePort
 ZwCreatePrivateNamespace
 ZwCreateProcess = NtCreateProcess
-ZwCreateProcessEx
+ZwCreateProcessEx = NtCreateProcessEx
 ZwCreateProcessStateChange
 ZwCreateProfile
-ZwCreateProfileEx
-ZwCreateRegistryTransaction = NtCreateRegistryTransaction
+ZwCreateProfileEx = NtCreateProfileEx
+ZwCreateRegistryTransaction
 ZwCreateResourceManager = NtCreateResourceManager
 ZwCreateSection = NtCreateSection
 ZwCreateSectionEx = NtCreateSectionEx
 ZwCreateSemaphore
-ZwCreateSymbolicLinkObject
+ZwCreateSymbolicLinkObject = NtCreateSymbolicLinkObject
 ZwCreateThread = NtCreateThread
-ZwCreateThreadEx = NtCreateThreadEx
-ZwCreateThreadStateChange
+ZwCreateThreadEx
+ZwCreateThreadStateChange = NtCreateThreadStateChange
 ZwCreateTimer = NtCreateTimer
 ZwCreateTimer2 = NtCreateTimer2
 ZwCreateToken
-ZwCreateTokenEx
+ZwCreateTokenEx = NtCreateTokenEx
 ZwCreateTransaction = NtCreateTransaction
-ZwCreateTransactionManager = NtCreateTransactionManager
+ZwCreateTransactionManager
 ZwCreateUserProcess
 ZwCreateWaitCompletionPacket
 ZwCreateWaitablePort = NtCreateWaitablePort
@@ -1949,362 +1976,363 @@ ZwCreateWnfStateName
 ZwCreateWorkerFactory = NtCreateWorkerFactory
 ZwDebugActiveProcess
 ZwDebugContinue
-ZwDelayExecution = NtDelayExecution
-ZwDeleteAtom = NtDeleteAtom
+ZwDelayExecution
+ZwDeleteAtom
 ZwDeleteBootEntry
-ZwDeleteDriverEntry
-ZwDeleteFile
-ZwDeleteKey = NtDeleteKey
-ZwDeleteObjectAuditAlarm
-ZwDeletePrivateNamespace
-ZwDeleteValueKey = NtDeleteValueKey
+ZwDeleteDriverEntry = NtDeleteDriverEntry
+ZwDeleteFile = NtDeleteFile
+ZwDeleteKey
+ZwDeleteObjectAuditAlarm = NtDeleteObjectAuditAlarm
+ZwDeletePrivateNamespace = NtDeletePrivateNamespace
+ZwDeleteValueKey
 ZwDeleteWnfStateData
 ZwDeleteWnfStateName
 ZwDeviceIoControlFile = NtDeviceIoControlFile
-ZwDirectGraphicsCall = NtDirectGraphicsCall
-ZwDisableLastKnownGood
-ZwDisplayString = NtDisplayString
+ZwDirectGraphicsCall
+ZwDisableLastKnownGood = NtDisableLastKnownGood
+ZwDisplayString
 ZwDrawText
-ZwDuplicateObject = NtDuplicateObject
+ZwDuplicateObject
 ZwDuplicateToken = NtDuplicateToken
-ZwEnableLastKnownGood = NtEnableLastKnownGood
-ZwEnumerateBootEntries = NtEnumerateBootEntries
-ZwEnumerateDriverEntries
+ZwEnableLastKnownGood
+ZwEnumerateBootEntries
+ZwEnumerateDriverEntries = NtEnumerateDriverEntries
 ZwEnumerateKey = NtEnumerateKey
 ZwEnumerateSystemEnvironmentValuesEx
-ZwEnumerateTransactionObject
+ZwEnumerateTransactionObject = NtEnumerateTransactionObject
 ZwEnumerateValueKey
 ZwExtendSection
-ZwFilterBootOption = NtFilterBootOption
-ZwFilterToken
+ZwFilterBootOption
+ZwFilterToken = NtFilterToken
 ZwFilterTokenEx
 ZwFindAtom
 ZwFlushBuffersFile = NtFlushBuffersFile
-ZwFlushBuffersFileEx
+ZwFlushBuffersFileEx = NtFlushBuffersFileEx
 ZwFlushInstallUILanguage = NtFlushInstallUILanguage
 ZwFlushInstructionCache = NtFlushInstructionCache
 ZwFlushKey = NtFlushKey
-ZwFlushProcessWriteBuffers = NtFlushProcessWriteBuffers
-ZwFlushVirtualMemory
-ZwFlushWriteBuffer
+ZwFlushProcessWriteBuffers
+ZwFlushVirtualMemory = NtFlushVirtualMemory
+ZwFlushWriteBuffer = NtFlushWriteBuffer
 ZwFreeUserPhysicalPages = NtFreeUserPhysicalPages
-ZwFreeVirtualMemory = NtFreeVirtualMemory
+ZwFreeVirtualMemory
 ZwFreezeRegistry = NtFreezeRegistry
-ZwFreezeTransactions = NtFreezeTransactions
+ZwFreezeTransactions
 ZwFsControlFile
-ZwGetCachedSigningLevel
-ZwGetCompleteWnfStateSubscription
-ZwGetContextThread = NtGetContextThread
+ZwGetCachedSigningLevel = NtGetCachedSigningLevel
+ZwGetCompleteWnfStateSubscription = NtGetCompleteWnfStateSubscription
+ZwGetContextThread
 ZwGetCurrentProcessorNumber = NtGetCurrentProcessorNumber
-ZwGetCurrentProcessorNumberEx
-ZwGetDevicePowerState
-ZwGetMUIRegistryInfo = NtGetMUIRegistryInfo
+ZwGetCurrentProcessorNumberEx = NtGetCurrentProcessorNumberEx
+ZwGetDevicePowerState = NtGetDevicePowerState
+ZwGetMUIRegistryInfo
 ZwGetNextProcess = NtGetNextProcess
-ZwGetNextThread
+ZwGetNextThread = NtGetNextThread
 ZwGetNlsSectionPtr = NtGetNlsSectionPtr
 ZwGetNotificationResourceManager = NtGetNotificationResourceManager
 ZwGetWriteWatch
 ZwImpersonateAnonymousToken
-ZwImpersonateClientOfPort = NtImpersonateClientOfPort
+ZwImpersonateClientOfPort
 ZwImpersonateThread = NtImpersonateThread
 ZwInitializeEnclave
-ZwInitializeNlsFiles = NtInitializeNlsFiles
+ZwInitializeNlsFiles
 ZwInitializeRegistry = NtInitializeRegistry
 ZwInitiatePowerAction
 ZwIsProcessInJob
-ZwIsSystemResumeAutomatic = NtIsSystemResumeAutomatic
-ZwIsUILanguageComitted = NtIsUILanguageComitted
-ZwListenPort = NtListenPort
-ZwLoadDriver = NtLoadDriver
-ZwLoadEnclaveData = NtLoadEnclaveData
+ZwIsSystemResumeAutomatic
+ZwIsUILanguageComitted
+ZwListenPort
+ZwLoadDriver
+ZwLoadEnclaveData
 ZwLoadKey = NtLoadKey
 ZwLoadKey2
-ZwLoadKey3
-ZwLoadKeyEx
+ZwLoadKey3 = NtLoadKey3
+ZwLoadKeyEx = NtLoadKeyEx
 ZwLockFile = NtLockFile
 ZwLockProductActivationKeys
-ZwLockRegistryKey = NtLockRegistryKey
+ZwLockRegistryKey
 ZwLockVirtualMemory = NtLockVirtualMemory
-ZwMakePermanentObject
+ZwMakePermanentObject = NtMakePermanentObject
 ZwMakeTemporaryObject = NtMakeTemporaryObject
-ZwManageHotPatch = NtManageHotPatch
-ZwManagePartition
+ZwManageHotPatch
+ZwManagePartition = NtManagePartition
 ZwMapCMFModule
 ZwMapUserPhysicalPages
-ZwMapUserPhysicalPagesScatter
-ZwMapViewOfSection
+ZwMapUserPhysicalPagesScatter = NtMapUserPhysicalPagesScatter
+ZwMapViewOfSection = NtMapViewOfSection
 ZwMapViewOfSectionEx = NtMapViewOfSectionEx
 ZwModifyBootEntry = NtModifyBootEntry
-ZwModifyDriverEntry = NtModifyDriverEntry
+ZwModifyDriverEntry
 ZwNotifyChangeDirectoryFile
 ZwNotifyChangeDirectoryFileEx
-ZwNotifyChangeKey = NtNotifyChangeKey
+ZwNotifyChangeKey
 ZwNotifyChangeMultipleKeys = NtNotifyChangeMultipleKeys
 ZwNotifyChangeSession = NtNotifyChangeSession
-ZwOpenCpuPartition
+ZwOpenCpuPartition = NtOpenCpuPartition
 ZwOpenDirectoryObject = NtOpenDirectoryObject
-ZwOpenEnlistment
-ZwOpenEvent
-ZwOpenEventPair = NtOpenEventPair
-ZwOpenFile = NtOpenFile
-ZwOpenIoCompletion
-ZwOpenJobObject = NtOpenJobObject
+ZwOpenEnlistment = NtOpenEnlistment
+ZwOpenEvent = NtOpenEvent
+ZwOpenEventPair
+ZwOpenFile
+ZwOpenIoCompletion = NtOpenIoCompletion
+ZwOpenJobObject
 ZwOpenKey
-ZwOpenKeyEx
+ZwOpenKeyEx = NtOpenKeyEx
 ZwOpenKeyTransacted = NtOpenKeyTransacted
-ZwOpenKeyTransactedEx = NtOpenKeyTransactedEx
-ZwOpenKeyedEvent = NtOpenKeyedEvent
-ZwOpenMutant = NtOpenMutant
+ZwOpenKeyTransactedEx
+ZwOpenKeyedEvent
+ZwOpenMutant
 ZwOpenObjectAuditAlarm = NtOpenObjectAuditAlarm
-ZwOpenPartition = NtOpenPartition
-ZwOpenPrivateNamespace
+ZwOpenPartition
+ZwOpenPrivateNamespace = NtOpenPrivateNamespace
 ZwOpenProcess = NtOpenProcess
-ZwOpenProcessToken = NtOpenProcessToken
+ZwOpenProcessToken
 ZwOpenProcessTokenEx
-ZwOpenRegistryTransaction
-ZwOpenResourceManager = NtOpenResourceManager
-ZwOpenSection
+ZwOpenRegistryTransaction = NtOpenRegistryTransaction
+ZwOpenResourceManager
+ZwOpenSection = NtOpenSection
 ZwOpenSemaphore = NtOpenSemaphore
-ZwOpenSession
-ZwOpenSymbolicLinkObject
+ZwOpenSession = NtOpenSession
+ZwOpenSymbolicLinkObject = NtOpenSymbolicLinkObject
 ZwOpenThread
-ZwOpenThreadToken = NtOpenThreadToken
-ZwOpenThreadTokenEx
+ZwOpenThreadToken
+ZwOpenThreadTokenEx = NtOpenThreadTokenEx
 ZwOpenTimer
 ZwOpenTransaction
 ZwOpenTransactionManager = NtOpenTransactionManager
 ZwPlugPlayControl = NtPlugPlayControl
 ZwPowerInformation
-ZwPrePrepareComplete = NtPrePrepareComplete
+ZwPrePrepareComplete
 ZwPrePrepareEnlistment
-ZwPrepareComplete
+ZwPrepareComplete = NtPrepareComplete
 ZwPrepareEnlistment = NtPrepareEnlistment
-ZwPrivilegeCheck
+ZwPrivilegeCheck = NtPrivilegeCheck
 ZwPrivilegeObjectAuditAlarm
-ZwPrivilegedServiceAuditAlarm = NtPrivilegedServiceAuditAlarm
+ZwPrivilegedServiceAuditAlarm
 ZwPropagationComplete = NtPropagationComplete
 ZwPropagationFailed = NtPropagationFailed
 ZwProtectVirtualMemory
 ZwPssCaptureVaSpaceBulk = NtPssCaptureVaSpaceBulk
 ZwPulseEvent
-ZwQueryAttributesFile
-ZwQueryAuxiliaryCounterFrequency
-ZwQueryBootEntryOrder
+ZwQueryAttributesFile = NtQueryAttributesFile
+ZwQueryAuxiliaryCounterFrequency = NtQueryAuxiliaryCounterFrequency
+ZwQueryBootEntryOrder = NtQueryBootEntryOrder
 ZwQueryBootOptions = NtQueryBootOptions
-ZwQueryDebugFilterState
-ZwQueryDefaultLocale
+ZwQueryDebugFilterState = NtQueryDebugFilterState
+ZwQueryDefaultLocale = NtQueryDefaultLocale
 ZwQueryDefaultUILanguage
 ZwQueryDirectoryFile
-ZwQueryDirectoryFileEx = NtQueryDirectoryFileEx
+ZwQueryDirectoryFileEx
 ZwQueryDirectoryObject
-ZwQueryDriverEntryOrder = NtQueryDriverEntryOrder
+ZwQueryDriverEntryOrder
 ZwQueryEaFile = NtQueryEaFile
-ZwQueryEvent
+ZwQueryEvent = NtQueryEvent
 ZwQueryFullAttributesFile = NtQueryFullAttributesFile
 ZwQueryInformationAtom = NtQueryInformationAtom
-ZwQueryInformationByName = NtQueryInformationByName
+ZwQueryInformationByName
 ZwQueryInformationCpuPartition = NtQueryInformationCpuPartition
 ZwQueryInformationEnlistment
-ZwQueryInformationFile = NtQueryInformationFile
-ZwQueryInformationJobObject = NtQueryInformationJobObject
-ZwQueryInformationPort = NtQueryInformationPort
+ZwQueryInformationFile
+ZwQueryInformationJobObject
+ZwQueryInformationPort
 ZwQueryInformationProcess
-ZwQueryInformationResourceManager
+ZwQueryInformationResourceManager = NtQueryInformationResourceManager
 ZwQueryInformationThread
-ZwQueryInformationToken = NtQueryInformationToken
-ZwQueryInformationTransaction = NtQueryInformationTransaction
+ZwQueryInformationToken
+ZwQueryInformationTransaction
 ZwQueryInformationTransactionManager
-ZwQueryInformationWorkerFactory = NtQueryInformationWorkerFactory
+ZwQueryInformationWorkerFactory
 ZwQueryInstallUILanguage
 ZwQueryIntervalProfile = NtQueryIntervalProfile
 ZwQueryIoCompletion
-ZwQueryIoRingCapabilities
-ZwQueryKey = NtQueryKey
+ZwQueryIoRingCapabilities = NtQueryIoRingCapabilities
+ZwQueryKey
 ZwQueryLicenseValue
 ZwQueryMultipleValueKey
 ZwQueryMutant = NtQueryMutant
 ZwQueryObject
 ZwQueryOpenSubKeys
-ZwQueryOpenSubKeysEx = NtQueryOpenSubKeysEx
+ZwQueryOpenSubKeysEx
 ZwQueryPerformanceCounter
-ZwQueryPortInformationProcess
+ZwQueryPortInformationProcess = NtQueryPortInformationProcess
 ZwQueryQuotaInformationFile
 ZwQuerySection
 ZwQuerySecurityAttributesToken
-ZwQuerySecurityObject
+ZwQuerySecurityObject = NtQuerySecurityObject
 ZwQuerySecurityPolicy
-ZwQuerySemaphore = NtQuerySemaphore
+ZwQuerySemaphore
 ZwQuerySymbolicLinkObject = NtQuerySymbolicLinkObject
-ZwQuerySystemEnvironmentValue
+ZwQuerySystemEnvironmentValue = NtQuerySystemEnvironmentValue
 ZwQuerySystemEnvironmentValueEx = NtQuerySystemEnvironmentValueEx
-ZwQuerySystemInformation
+ZwQuerySystemInformation = NtQuerySystemInformation
 ZwQuerySystemInformationEx = NtQuerySystemInformationEx
 ZwQuerySystemTime = NtQuerySystemTime
 ZwQueryTimer = NtQueryTimer
-ZwQueryTimerResolution = NtQueryTimerResolution
+ZwQueryTimerResolution
 ZwQueryValueKey = NtQueryValueKey
 ZwQueryVirtualMemory = NtQueryVirtualMemory
 ZwQueryVolumeInformationFile = NtQueryVolumeInformationFile
-ZwQueryWnfStateData
-ZwQueryWnfStateNameInformation = NtQueryWnfStateNameInformation
+ZwQueryWnfStateData = NtQueryWnfStateData
+ZwQueryWnfStateNameInformation
 ZwQueueApcThread
-ZwQueueApcThreadEx
-ZwQueueApcThreadEx2
+ZwQueueApcThreadEx = NtQueueApcThreadEx
+ZwQueueApcThreadEx2 = NtQueueApcThreadEx2
 ZwRaiseException = NtRaiseException
-ZwRaiseHardError = NtRaiseHardError
+ZwRaiseHardError
 ZwReadFile
-ZwReadFileScatter = NtReadFileScatter
-ZwReadOnlyEnlistment = NtReadOnlyEnlistment
+ZwReadFileScatter
+ZwReadOnlyEnlistment
 ZwReadRequestData
 ZwReadVirtualMemory
-ZwReadVirtualMemoryEx = NtReadVirtualMemoryEx
-ZwRecoverEnlistment
-ZwRecoverResourceManager
-ZwRecoverTransactionManager = NtRecoverTransactionManager
-ZwRegisterProtocolAddressInformation
-ZwRegisterThreadTerminatePort = NtRegisterThreadTerminatePort
+ZwReadVirtualMemoryEx
+ZwRecoverEnlistment = NtRecoverEnlistment
+ZwRecoverResourceManager = NtRecoverResourceManager
+ZwRecoverTransactionManager
+ZwRegisterProtocolAddressInformation = NtRegisterProtocolAddressInformation
+ZwRegisterThreadTerminatePort
 ZwReleaseKeyedEvent
-ZwReleaseMutant = NtReleaseMutant
+ZwReleaseMutant
 ZwReleaseSemaphore
 ZwReleaseWorkerFactoryWorker
-ZwRemoveIoCompletion
-ZwRemoveIoCompletionEx
+ZwRemoveIoCompletion = NtRemoveIoCompletion
+ZwRemoveIoCompletionEx = NtRemoveIoCompletionEx
 ZwRemoveProcessDebug
-ZwRenameKey = NtRenameKey
-ZwRenameTransactionManager
-ZwReplaceKey = NtReplaceKey
+ZwRenameKey
+ZwRenameTransactionManager = NtRenameTransactionManager
+ZwReplaceKey
 ZwReplacePartitionUnit = NtReplacePartitionUnit
 ZwReplyPort = NtReplyPort
-ZwReplyWaitReceivePort = NtReplyWaitReceivePort
-ZwReplyWaitReceivePortEx = NtReplyWaitReceivePortEx
-ZwReplyWaitReplyPort = NtReplyWaitReplyPort
+ZwReplyWaitReceivePort
+ZwReplyWaitReceivePortEx
+ZwReplyWaitReplyPort
 ZwRequestPort
 ZwRequestWaitReplyPort
-ZwResetEvent
-ZwResetWriteWatch
+ZwResetEvent = NtResetEvent
+ZwResetWriteWatch = NtResetWriteWatch
 ZwRestoreKey
 ZwResumeProcess = NtResumeProcess
-ZwResumeThread = NtResumeThread
-ZwRevertContainerImpersonation
+ZwResumeThread
+ZwRevertContainerImpersonation = NtRevertContainerImpersonation
 ZwRollbackComplete
 ZwRollbackEnlistment
-ZwRollbackRegistryTransaction = NtRollbackRegistryTransaction
+ZwRollbackRegistryTransaction
 ZwRollbackTransaction = NtRollbackTransaction
 ZwRollforwardTransactionManager
 ZwSaveKey = NtSaveKey
 ZwSaveKeyEx
 ZwSaveMergedKeys = NtSaveMergedKeys
 ZwSecureConnectPort = NtSecureConnectPort
-ZwSerializeBoot
+ZwSerializeBoot = NtSerializeBoot
 ZwSetBootEntryOrder = NtSetBootEntryOrder
-ZwSetBootOptions = NtSetBootOptions
+ZwSetBootOptions
 ZwSetCachedSigningLevel
-ZwSetCachedSigningLevel2 = NtSetCachedSigningLevel2
-ZwSetContextThread = NtSetContextThread
+ZwSetCachedSigningLevel2
+ZwSetContextThread
 ZwSetDebugFilterState = NtSetDebugFilterState
-ZwSetDefaultHardErrorPort
+ZwSetDefaultHardErrorPort = NtSetDefaultHardErrorPort
 ZwSetDefaultLocale
-ZwSetDefaultUILanguage
+ZwSetDefaultUILanguage = NtSetDefaultUILanguage
 ZwSetDriverEntryOrder
-ZwSetEaFile
-ZwSetEvent
-ZwSetEventBoostPriority = NtSetEventBoostPriority
-ZwSetHighEventPair
-ZwSetHighWaitLowEventPair
+ZwSetEaFile = NtSetEaFile
+ZwSetEvent = NtSetEvent
+ZwSetEventBoostPriority
+ZwSetEventEx = NtSetEventEx
+ZwSetHighEventPair = NtSetHighEventPair
+ZwSetHighWaitLowEventPair = NtSetHighWaitLowEventPair
 ZwSetIRTimer = NtSetIRTimer
-ZwSetInformationCpuPartition = NtSetInformationCpuPartition
+ZwSetInformationCpuPartition
 ZwSetInformationDebugObject = NtSetInformationDebugObject
 ZwSetInformationEnlistment
-ZwSetInformationFile
-ZwSetInformationIoRing
+ZwSetInformationFile = NtSetInformationFile
+ZwSetInformationIoRing = NtSetInformationIoRing
 ZwSetInformationJobObject
-ZwSetInformationKey
+ZwSetInformationKey = NtSetInformationKey
 ZwSetInformationObject
-ZwSetInformationProcess = NtSetInformationProcess
-ZwSetInformationResourceManager = NtSetInformationResourceManager
+ZwSetInformationProcess
+ZwSetInformationResourceManager
 ZwSetInformationSymbolicLink
-ZwSetInformationThread
-ZwSetInformationToken
+ZwSetInformationThread = NtSetInformationThread
+ZwSetInformationToken = NtSetInformationToken
 ZwSetInformationTransaction = NtSetInformationTransaction
-ZwSetInformationTransactionManager = NtSetInformationTransactionManager
-ZwSetInformationVirtualMemory = NtSetInformationVirtualMemory
+ZwSetInformationTransactionManager
+ZwSetInformationVirtualMemory
 ZwSetInformationWorkerFactory
 ZwSetIntervalProfile
 ZwSetIoCompletion = NtSetIoCompletion
-ZwSetIoCompletionEx = NtSetIoCompletionEx
+ZwSetIoCompletionEx
 ZwSetLdtEntries
 ZwSetLowEventPair = NtSetLowEventPair
-ZwSetLowWaitHighEventPair
-ZwSetQuotaInformationFile = NtSetQuotaInformationFile
+ZwSetLowWaitHighEventPair = NtSetLowWaitHighEventPair
+ZwSetQuotaInformationFile
 ZwSetSecurityObject
 ZwSetSystemEnvironmentValue = NtSetSystemEnvironmentValue
 ZwSetSystemEnvironmentValueEx = NtSetSystemEnvironmentValueEx
-ZwSetSystemInformation = NtSetSystemInformation
+ZwSetSystemInformation
 ZwSetSystemPowerState = NtSetSystemPowerState
 ZwSetSystemTime
-ZwSetThreadExecutionState = NtSetThreadExecutionState
-ZwSetTimer = NtSetTimer
+ZwSetThreadExecutionState
+ZwSetTimer
 ZwSetTimer2
 ZwSetTimerEx = NtSetTimerEx
-ZwSetTimerResolution = NtSetTimerResolution
+ZwSetTimerResolution
 ZwSetUuidSeed
 ZwSetValueKey
-ZwSetVolumeInformationFile = NtSetVolumeInformationFile
+ZwSetVolumeInformationFile
 ZwSetWnfProcessNotificationEvent = NtSetWnfProcessNotificationEvent
-ZwShutdownSystem = NtShutdownSystem
-ZwShutdownWorkerFactory
-ZwSignalAndWaitForSingleObject = NtSignalAndWaitForSingleObject
+ZwShutdownSystem
+ZwShutdownWorkerFactory = NtShutdownWorkerFactory
+ZwSignalAndWaitForSingleObject
 ZwSinglePhaseReject = NtSinglePhaseReject
 ZwStartProfile = NtStartProfile
 ZwStopProfile = NtStopProfile
-ZwSubmitIoRing = NtSubmitIoRing
-ZwSubscribeWnfStateChange
+ZwSubmitIoRing
+ZwSubscribeWnfStateChange = NtSubscribeWnfStateChange
 ZwSuspendProcess = NtSuspendProcess
-ZwSuspendThread
-ZwSystemDebugControl
-ZwTerminateEnclave = NtTerminateEnclave
-ZwTerminateJobObject
+ZwSuspendThread = NtSuspendThread
+ZwSystemDebugControl = NtSystemDebugControl
+ZwTerminateEnclave
+ZwTerminateJobObject = NtTerminateJobObject
 ZwTerminateProcess
-ZwTerminateThread
+ZwTerminateThread = NtTerminateThread
 ZwTestAlert = NtTestAlert
-ZwThawRegistry
-ZwThawTransactions = NtThawTransactions
-ZwTraceControl = NtTraceControl
-ZwTraceEvent = NtTraceEvent
+ZwThawRegistry = NtThawRegistry
+ZwThawTransactions
+ZwTraceControl
+ZwTraceEvent
 ZwTranslateFilePath
 ZwUmsThreadYield
-ZwUnloadDriver = NtUnloadDriver
-ZwUnloadKey
-ZwUnloadKey2 = NtUnloadKey2
+ZwUnloadDriver
+ZwUnloadKey = NtUnloadKey
+ZwUnloadKey2
 ZwUnloadKeyEx
-ZwUnlockFile
+ZwUnlockFile = NtUnlockFile
 ZwUnlockVirtualMemory
-ZwUnmapViewOfSection
-ZwUnmapViewOfSectionEx
+ZwUnmapViewOfSection = NtUnmapViewOfSection
+ZwUnmapViewOfSectionEx = NtUnmapViewOfSectionEx
 ZwUnsubscribeWnfStateChange = NtUnsubscribeWnfStateChange
-ZwUpdateWnfStateData = NtUpdateWnfStateData
+ZwUpdateWnfStateData
 ZwVdmControl = NtVdmControl
-ZwWaitForAlertByThreadId = NtWaitForAlertByThreadId
+ZwWaitForAlertByThreadId
 ZwWaitForDebugEvent
-ZwWaitForKeyedEvent
-ZwWaitForMultipleObjects
-ZwWaitForMultipleObjects32
+ZwWaitForKeyedEvent = NtWaitForKeyedEvent
+ZwWaitForMultipleObjects = NtWaitForMultipleObjects
+ZwWaitForMultipleObjects32 = NtWaitForMultipleObjects32
 ZwWaitForSingleObject
-ZwWaitForWorkViaWorkerFactory
-ZwWaitHighEventPair = NtWaitHighEventPair
+ZwWaitForWorkViaWorkerFactory = NtWaitForWorkViaWorkerFactory
+ZwWaitHighEventPair
 ZwWaitLowEventPair
 ZwWorkerFactoryWorkerReady
 ZwWriteFile
 ZwWriteFileGather
 ZwWriteRequestData = NtWriteRequestData
-ZwWriteVirtualMemory
+ZwWriteVirtualMemory = NtWriteVirtualMemory
 ZwYieldExecution = NtYieldExecution
 __C_specific_handler
 __chkstk
 __isascii
 __iscsym
 __iscsymf
-__misaligned_access
+__misaligned_access = WinSqmAddToStreamEx
 __toascii
 _atoi64
 _errno
@@ -2314,15 +2342,15 @@ _i64toa_s
 _i64tow
 _i64tow_s
 _itoa
-_itoa_s = _ltoa_s
-_itow
-_itow_s
+_itoa_s
+_itow = _ltow
+_itow_s = _ltow_s
 _lfind
 _local_unwind
-_ltoa
-_ltoa_s
+_ltoa = _itoa
+_ltoa_s = _itoa_s
 _ltow
-_ltow_s = _itow_s
+_ltow_s
 _makepath_s
 _memccpy
 _memicmp
@@ -2345,7 +2373,7 @@ _strnset_s
 _strset_s
 _strupr
 _strupr_s
-_swprintf
+_swprintf = swprintf
 _ui64toa
 _ui64toa_s
 _ui64tow
@@ -2376,7 +2404,7 @@ _wsplitpath_s
 _wtoi
 _wtoi64
 _wtol
-abs
+abs = labs
 atan
 atan2
 atoi
@@ -2449,7 +2477,7 @@ strstr
 strtok_s
 strtol
 strtoul
-swprintf = _swprintf
+swprintf
 swprintf_s
 swscanf_s
 tan

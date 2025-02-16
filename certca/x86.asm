@@ -125,9 +125,9 @@ API ?myEnablePrivilege@@YGJJH@Z
 API ?myGetHashAlgorithmOIDInfoFromSignatureAlgorithm@@YGJPBU_CRYPT_ALGORITHM_IDENTIFIER@@PAPBU_CRYPT_OID_INFO@@@Z
 API _myNetLogonUser@16
 API ?myGetTargetMachineDomainDnsName@@YGJPBGPAPAG11@Z
-API ?IsISAPIExtensionEnabled@@YGJPBGAA_N@Z
+API ?AddOrRemoveOCSPISAPIExtension@@YGJHPAH@Z
 API ?SplitConfigString@@YGJPBGPAPAG1@Z
-API ?IsISAPIExtensionEnabled@@YGJPBGAA_N@Z
+API ?AddOrRemoveOCSPISAPIExtension@@YGJHPAH@Z
 API ?EnableASPInIIS@@YGJPAH@Z
 API ?DbgLogStringInit2@@YG?AW4LogPriority@@P6GXPBD@ZW41@@Z
 API _CAIsCertTypeValid@8
@@ -148,8 +148,8 @@ API ?mySanitizedNameToDSName@@YGJPBGPAPAG@Z
 API ?mySanitizeName@@YGJPBGPAPAG@Z
 API ?EnableASPInIIS@@YGJPAH@Z
 API ?myGetSidFromDomain@@YGKPAGPAPAX@Z
-API ?IsISAPIExtensionEnabled@@YGJPBGAA_N@Z
-API ?IsISAPIExtensionEnabled@@YGJPBGAA_N@Z
+API ?AddOrRemoveOCSPISAPIExtension@@YGJHPAH@Z
+API ?AddOrRemoveOCSPISAPIExtension@@YGJHPAH@Z
 API ?EnableASPInIIS@@YGJPAH@Z
 API ?EnableASPInIIS@@YGJPAH@Z
 API ?DbgPrintfW@@YAHKPBGZZ

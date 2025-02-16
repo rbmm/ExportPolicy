@@ -1,7 +1,7 @@
 EXPORTS
 
-_Cbuild
-_Cmulcc
+_Cbuild = _LCbuild
+_Cmulcc = _LCmulcc
 _Cmulcr
 _CreateFrameInfo
 _CxxThrowException
@@ -18,7 +18,7 @@ _Gettnames
 _IsExceptionObjectToBeDestroyed
 _LCbuild
 _LCmulcc
-_LCmulcr
+_LCmulcr = _Cmulcr
 _SetImageBase
 _SetThrowImageBase
 _SetWinRTOutOfMemoryExceptionCallback
@@ -34,8 +34,8 @@ __C_specific_handler
 __C_specific_handler_noexcept
 __CxxDetectRethrow
 __CxxExceptionFilter
-__CxxFrameHandler = __CxxFrameHandler2
-__CxxFrameHandler2
+__CxxFrameHandler
+__CxxFrameHandler2 = __CxxFrameHandler
 __CxxFrameHandler3
 __CxxFrameHandler4
 __CxxQueryExceptionSize
@@ -79,8 +79,8 @@ __intrinsic_setjmpex
 __isascii
 __iscsym
 __iscsymf
-__iswcsym
-__iswcsymf
+__iswcsym = _iswcsym_l
+__iswcsymf = _iswcsymf_l
 __p___argc
 __p___argv
 __p___wargv
@@ -140,7 +140,7 @@ __uncaught_exceptions
 __wcserror
 __wcserror_s
 __wcsncnt
-_abs64
+_abs64 = llabs
 _access
 _access_s
 _aligned_free
@@ -159,7 +159,7 @@ _atoflt
 _atoflt_l
 _atoi64
 _atoi64_l
-_atoi_l
+_atoi_l = _atol_l
 _atol_l
 _atoldbl
 _atoldbl_l
@@ -209,18 +209,18 @@ _ctime64
 _ctime64_s
 _cwait
 _d_int
-_dclass = _ldclass
+_dclass
 _dexp
 _difftime32
 _difftime64
 _dlog
 _dnorm
 _dpcomp
-_dpoly = _ldpoly
+_dpoly
 _dscale
 _dsign = _ldsign
 _dsin
-_dtest
+_dtest = _ldtest
 _dunscale
 _dup
 _dup2
@@ -262,9 +262,9 @@ _fdtest
 _fdunscale
 _fflush_nolock
 _fgetc_nolock
-_fgetchar
+_fgetchar = getchar
 _fgetwc_nolock
-_fgetwchar
+_fgetwchar = getwchar
 _filelength
 _filelengthi64
 _fileno
@@ -304,8 +304,8 @@ _ftell_nolock
 _ftelli64
 _ftelli64_nolock
 _ftime32
-_ftime32_s
-_ftime64
+_ftime32_s = _ftime32
+_ftime64 = _ftime64_s
 _ftime64_s
 _fullpath
 _futime32
@@ -463,11 +463,11 @@ _isspace_l
 _isupper_l
 _iswalnum_l
 _iswalpha_l
-_iswblank_l
-_iswcntrl_l
+_iswblank_l = iswblank
+_iswcntrl_l = iswcntrl
 _iswcsym_l
 _iswcsymf_l
-_iswctype_l
+_iswctype_l = is_wctype
 _iswdigit_l
 _iswgraph_l
 _iswlower_l
@@ -486,10 +486,10 @@ _j1
 _jn
 _kbhit
 _ld_int
-_ldclass
+_ldclass = _dclass
 _ldexp
 _ldlog
-_ldpcomp = _dpcomp
+_ldpcomp
 _ldpoly
 _ldscale
 _ldsign
@@ -509,7 +509,7 @@ _lock_locales
 _locking
 _logb
 _logbf
-_lrotl
+_lrotl = _rotl
 _lrotr
 _lsearch
 _lsearch_s
@@ -517,7 +517,7 @@ _lseek
 _lseeki64
 _ltoa
 _ltoa_s
-_ltow
+_ltow = _itow
 _ltow_s
 _makepath
 _makepath_s
@@ -564,7 +564,7 @@ _mbscspn
 _mbscspn_l
 _mbsdec
 _mbsdec_l
-_mbsdup
+_mbsdup = _strdup
 _mbsicmp
 _mbsicmp_l
 _mbsicoll
@@ -750,9 +750,9 @@ _o__atodbl_l
 _o__atof_l
 _o__atoflt
 _o__atoflt_l
-_o__atoi64 = _o_atoll
+_o__atoi64
 _o__atoi64_l
-_o__atoi_l
+_o__atoi_l = _o__atol_l
 _o__atol_l
 _o__atoldbl
 _o__atoldbl_l
@@ -788,7 +788,7 @@ _o__ctime32_s
 _o__ctime64_s
 _o__cwait
 _o__d_int
-_o__dclass
+_o__dclass = _o__ldclass
 _o__difftime32
 _o__difftime64
 _o__dlog
@@ -835,7 +835,7 @@ _o__fflush_nolock
 _o__fgetc_nolock
 _o__fgetchar = _o_getchar
 _o__fgetwc_nolock
-_o__fgetwchar = _o_getwchar
+_o__fgetwchar
 _o__filelength
 _o__filelengthi64
 _o__fileno
@@ -1016,12 +1016,12 @@ _o__ld_int
 _o__ldclass
 _o__ldexp
 _o__ldlog
-_o__ldpcomp = _o__dpcomp
-_o__ldpoly = _o__dpoly
+_o__ldpcomp
+_o__ldpoly
 _o__ldscale
 _o__ldsign
 _o__ldsin
-_o__ldtest
+_o__ldtest = _o__dtest
 _o__ldunscale
 _o__lfind
 _o__lfind_s
@@ -1190,7 +1190,7 @@ _o__mktime32
 _o__mktime64
 _o__msize
 _o__nextafter
-_o__nextafterf
+_o__nextafterf = _o_nextafterf
 _o__open_osfhandle
 _o__pclose
 _o__pipe
@@ -1273,12 +1273,12 @@ _o__strtime
 _o__strtime_s
 _o__strtod_l = _o__strtold_l
 _o__strtof_l
-_o__strtoi64
-_o__strtoi64_l
+_o__strtoi64 = _o_strtoll
+_o__strtoi64_l = _o__strtoll_l
 _o__strtol_l
 _o__strtold_l
-_o__strtoll_l = _o__strtoi64_l
-_o__strtoui64
+_o__strtoll_l
+_o__strtoui64 = _o_strtoull
 _o__strtoui64_l
 _o__strtoul_l
 _o__strtoull_l = _o__strtoui64_l
@@ -1353,17 +1353,17 @@ _o__wcsset
 _o__wcsset_s
 _o__wcstod_l
 _o__wcstof_l
-_o__wcstoi64 = _o_wcstoll
-_o__wcstoi64_l = _o__wcstoll_l
+_o__wcstoi64
+_o__wcstoi64_l
 _o__wcstol_l
 _o__wcstold_l = _o__wcstod_l
-_o__wcstoll_l
+_o__wcstoll_l = _o__wcstoi64_l
 _o__wcstombs_l
 _o__wcstombs_s_l
 _o__wcstoui64 = _o_wcstoull
-_o__wcstoui64_l
+_o__wcstoui64_l = _o__wcstoull_l
 _o__wcstoul_l
-_o__wcstoull_l = _o__wcstoui64_l
+_o__wcstoull_l
 _o__wcsupr
 _o__wcsupr_l
 _o__wcsupr_s
@@ -1437,12 +1437,12 @@ _o__wtof
 _o__wtof_l
 _o__wtoi
 _o__wtoi64 = _o__wtoll
-_o__wtoi64_l = _o__wtoll_l
-_o__wtoi_l
+_o__wtoi64_l
+_o__wtoi_l = _o__wtol_l
 _o__wtol
 _o__wtol_l
 _o__wtoll
-_o__wtoll_l
+_o__wtoll_l = _o__wtoi64_l
 _o__wunlink
 _o__wutime32
 _o__wutime64
@@ -1472,7 +1472,7 @@ _o_atanhl
 _o_atof
 _o_atoi
 _o_atol
-_o_atoll
+_o_atoll = _o__atoi64
 _o_bsearch
 _o_bsearch_s
 _o_btowc
@@ -1539,7 +1539,7 @@ _o_getenv_s
 _o_gets
 _o_gets_s
 _o_getwc
-_o_getwchar
+_o_getwchar = _o__fgetwchar
 _o_hypot
 _o_is_wctype
 _o_isalnum
@@ -1576,7 +1576,7 @@ _o_lgammal
 _o_llrint
 _o_llrintf
 _o_llrintl
-_o_llround
+_o_llround = _o_llroundl
 _o_llroundf
 _o_llroundl
 _o_localeconv
@@ -1598,7 +1598,7 @@ _o_lrintf
 _o_lrintl
 _o_lround
 _o_lroundf
-_o_lroundl
+_o_lroundl = _o_lround
 _o_malloc
 _o_mblen
 _o_mbrlen
@@ -1617,12 +1617,12 @@ _o_modff
 _o_nan
 _o_nanf
 _o_nanl
-_o_nearbyint = _o_nearbyintl
+_o_nearbyint
 _o_nearbyintf
 _o_nearbyintl
-_o_nextafter
+_o_nextafter = _o__nextafter
 _o_nextafterf
-_o_nextafterl
+_o_nextafterl = _o_nexttowardl
 _o_nexttoward
 _o_nexttowardf
 _o_nexttowardl
@@ -1648,18 +1648,18 @@ _o_remquof
 _o_remquol
 _o_rename
 _o_rewind
-_o_rint = _o_rintl
+_o_rint
 _o_rintf
 _o_rintl
 _o_round
 _o_roundf
-_o_roundl = _o_round
+_o_roundl
 _o_scalbln
 _o_scalblnf
 _o_scalblnl
-_o_scalbn = _o_scalbnl
+_o_scalbn
 _o_scalbnf
-_o_scalbnl
+_o_scalbnl = _o_scalbn
 _o_set_terminate
 _o_setbuf
 _o_setlocale
@@ -1684,10 +1684,10 @@ _o_strtof
 _o_strtok
 _o_strtok_s
 _o_strtol
-_o_strtold
-_o_strtoll = _o__strtoi64
+_o_strtold = _o_strtod
+_o_strtoll
 _o_strtoul
-_o_strtoull = _o__strtoui64
+_o_strtoull
 _o_system
 _o_tan
 _o_tanf
@@ -1716,13 +1716,13 @@ _o_wcsncat_s
 _o_wcsncpy_s
 _o_wcsrtombs
 _o_wcsrtombs_s
-_o_wcstod
+_o_wcstod = _o_wcstold
 _o_wcstof
 _o_wcstok
 _o_wcstok_s
 _o_wcstol
 _o_wcstold
-_o_wcstoll
+_o_wcstoll = _o__wcstoi64
 _o_wcstombs
 _o_wcstombs_s
 _o_wcstoul
@@ -1761,7 +1761,7 @@ _rmdir
 _rmtmp
 _rotl
 _rotl64
-_rotr
+_rotr = _lrotr
 _rotr64
 _scalb
 _scalbf
@@ -1811,7 +1811,7 @@ _statusfp
 _strcoll_l
 _strdate
 _strdate_s
-_strdup = _mbsdup
+_strdup
 _strerror
 _strerror_s
 _strftime_l
@@ -1836,19 +1836,19 @@ _strset
 _strset_s
 _strtime
 _strtime_s
-_strtod_l = _strtold_l
+_strtod_l
 _strtof_l
-_strtoi64 = strtoll
-_strtoi64_l
-_strtoimax_l = _strtoi64_l
+_strtoi64
+_strtoi64_l = _strtoimax_l
+_strtoimax_l
 _strtol_l
-_strtold_l
-_strtoll_l = _strtoi64_l
-_strtoui64
-_strtoui64_l
+_strtold_l = _strtod_l
+_strtoll_l = _strtoimax_l
+_strtoui64 = strtoumax
+_strtoui64_l = _strtoumax_l
 _strtoul_l
-_strtoull_l = _strtoui64_l
-_strtoumax_l = _strtoui64_l
+_strtoull_l = _strtoumax_l
+_strtoumax_l
 _strupr
 _strupr_l
 _strupr_s
@@ -1924,21 +1924,21 @@ _wcsnset_s
 _wcsrev
 _wcsset
 _wcsset_s
-_wcstod_l = _wcstold_l
+_wcstod_l
 _wcstof_l
-_wcstoi64 = wcstoll
-_wcstoi64_l
-_wcstoimax_l = _wcstoi64_l
+_wcstoi64
+_wcstoi64_l = _wcstoimax_l
+_wcstoimax_l
 _wcstol_l
-_wcstold_l
-_wcstoll_l = _wcstoi64_l
+_wcstold_l = _wcstod_l
+_wcstoll_l = _wcstoimax_l
 _wcstombs_l
 _wcstombs_s_l
-_wcstoui64
-_wcstoui64_l = _wcstoull_l
+_wcstoui64 = wcstoull
+_wcstoui64_l
 _wcstoul_l
-_wcstoull_l
-_wcstoumax_l = _wcstoull_l
+_wcstoull_l = _wcstoui64_l
+_wcstoumax_l = _wcstoui64_l
 _wcsupr
 _wcsupr_l
 _wcsupr_s
@@ -2025,12 +2025,12 @@ _wtof
 _wtof_l
 _wtoi
 _wtoi64 = _wtoll
-_wtoi64_l = _wtoll_l
+_wtoi64_l
 _wtoi_l
-_wtol
-_wtol_l
+_wtol = _wtoi
+_wtol_l = _wtoi_l
 _wtoll
-_wtoll_l
+_wtoll_l = _wtoi64_l
 _wunlink
 _wutime32
 _wutime64
@@ -2038,7 +2038,7 @@ _y0
 _y1
 _yn
 abort
-abs
+abs = labs
 acos
 acosf
 acosh
@@ -2059,7 +2059,7 @@ atanh
 atanhf
 atanhl
 atof
-atoi
+atoi = atol
 atol
 atoll = _atoi64
 bsearch
@@ -2067,7 +2067,7 @@ bsearch_s
 btowc
 c16rtomb
 c32rtomb
-cabs
+cabs = cabsl
 cabsf
 cabsl
 cacos
@@ -2079,7 +2079,7 @@ cacosl
 calloc
 carg
 cargf
-cargl
+cargl = carg
 casin
 casinf
 casinh
@@ -2094,19 +2094,19 @@ catanhl
 catanl
 cbrt
 cbrtf
-cbrtl = cbrt
+cbrtl
 ccos
 ccosf
 ccosh
 ccoshf
 ccoshl
 ccosl
-ceil
-ceilf
+ceil = ceil$thunk$15678464688766418568
+ceilf = ceilf$thunk$2726837621825121898
 cexp
 cexpf
 cexpl
-cimag
+cimag = cimagl
 cimagf
 cimagl
 clearerr
@@ -2120,10 +2120,10 @@ clogf
 clogl
 conj
 conjf
-conjl
-copysign = copysignl
+conjl = conj
+copysign
 copysignf
-copysignl
+copysignl = copysign
 cos
 cosf
 cosh
@@ -2133,10 +2133,10 @@ cpowf
 cpowl
 cproj
 cprojf
-cprojl
+cprojl = cproj
 creal
 crealf
-creall
+creall = creal
 csin
 csinf
 csinh
@@ -2150,8 +2150,8 @@ ctan
 ctanf
 ctanh
 ctanhf
-ctanhl
-ctanl
+ctanhl = ctanh
+ctanl = ctan
 div = $div
 erf
 erfc
@@ -2167,10 +2167,10 @@ exp2l
 expf
 expm1
 expm1f
-expm1l = expm1
+expm1l
 fabs = $fabs
 fclose
-fdim = fdiml
+fdim
 fdimf
 fdiml
 feclearexcept
@@ -2190,17 +2190,17 @@ fgetpos
 fgets
 fgetwc
 fgetws
-floor
-floorf
+floor = floor$thunk$11545668865037648829
+floorf = floorf$thunk$2204536879461977377
 fma
 fmaf
 fmal
 fmax
 fmaxf
-fmaxl = fmax
+fmaxl
 fmin
 fminf
-fminl = fmin
+fminl
 fmod
 fmodf
 fopen
@@ -2220,18 +2220,18 @@ fsetpos
 ftell
 fwrite
 getc
-getchar = _fgetchar
+getchar
 getenv
 getenv_s
 gets
 gets_s
 getwc
-getwchar = _fgetwchar
+getwchar
 hypot
-ilogb = ilogbl
+ilogb
 ilogbf
 ilogbl
-imaxabs = _abs64
+imaxabs = llabs
 imaxdiv
 is_wctype
 isalnum
@@ -2253,23 +2253,23 @@ iswblank
 iswcntrl
 iswctype
 iswdigit
-iswgraph
-iswlower
-iswprint
-iswpunct
+iswgraph = _iswgraph_l
+iswlower = _iswlower_l
+iswprint = _iswprint_l
+iswpunct = _iswpunct_l
 iswspace
 iswupper
 iswxdigit
 isxdigit
 labs
 ldexp
-ldiv
+ldiv = $div
 lgamma
 lgammaf
 lgammal
-llabs = _abs64
+llabs
 lldiv
-llrint = llrintl
+llrint
 llrintf
 llrintl
 llround
@@ -2292,7 +2292,7 @@ logf
 longjmp
 lrint
 lrintf
-lrintl = lrint
+lrintl
 lround = lroundl
 lroundf
 lroundl
@@ -2309,26 +2309,26 @@ mbstowcs_s
 mbtowc
 memchr
 memcmp
-memcpy = memmove
+memcpy
 memcpy_s
-memmove
+memmove = memcpy
 memmove_s
 memset
 modf
 modff
 nan
 nanf
-nanl
-nearbyint
-nearbyintf
-nearbyintl = nearbyint
-nextafter = nextafterl
-nextafterf
-nextafterl
-nexttoward = nexttowardl
+nanl = nan
+nearbyint = nearbyint$thunk$15389465438769538195
+nearbyintf = nearbyintf$thunk$16868643247987199055
+nearbyintl = nearbyintl$thunk$16868654243103481165
+nextafter = _nextafter
+nextafterf = _nextafterf
+nextafterl = _nextafter
+nexttoward
 nexttowardf
-nexttowardl
-norm
+nexttowardl = _nextafter
+norm = norml
 normf
 norml
 perror
@@ -2355,15 +2355,15 @@ remquof
 remquol
 rename
 rewind
-rint = rintl
-rintf
-rintl
-round = roundl
+rint = rint$thunk$12852249828505253870
+rintf = rintf$thunk$13000138761707592728
+rintl = rintl$thunk$13000132164637823462
+round
 roundf
 roundl
-scalbln = scalblnl
+scalbln
 scalblnf
-scalblnl
+scalblnl = scalbnl
 scalbn = scalbnl
 scalbnf
 scalbnl
@@ -2405,15 +2405,15 @@ strspn
 strstr
 strtod
 strtof
-strtoimax = strtoll
+strtoimax = _strtoi64
 strtok
 strtok_s
 strtol
-strtold
-strtoll
+strtold = strtod
+strtoll = _strtoi64
 strtoul
-strtoull = _strtoui64
-strtoumax = _strtoui64
+strtoull = strtoumax
+strtoumax
 strxfrm
 system
 tan
@@ -2433,9 +2433,9 @@ toupper
 towctrans
 towlower
 towupper
-trunc
-truncf
-truncl = trunc
+trunc = trunc$thunk$10099503202201981093
+truncf = truncf$thunk$6080012361523673945
+truncl = truncl$thunk$6080018958593443211
 unexpected
 ungetc
 ungetwc
@@ -2465,17 +2465,17 @@ wcsspn
 wcsstr
 wcstod = wcstold
 wcstof
-wcstoimax = wcstoll
+wcstoimax = _wcstoi64
 wcstok
 wcstok_s
 wcstol
 wcstold
-wcstoll
+wcstoll = _wcstoi64
 wcstombs
 wcstombs_s
 wcstoul
-wcstoull = _wcstoui64
-wcstoumax = _wcstoui64
+wcstoull
+wcstoumax = wcstoull
 wcsxfrm
 wctob
 wctomb

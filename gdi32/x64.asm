@@ -122,7 +122,7 @@ API D3DKMTCreateAllocation2
 API D3DKMTCreateBundleObject
 API D3DKMTCreateContext
 API D3DKMTCreateContextVirtual
-API NtGdiDdDDICreateDCFromMemory
+API ZwGdiDdDDICreateDCFromMemory
 API D3DKMTCreateDevice
 API D3DKMTCreateDoorbell
 API D3DKMTCreateHwContext
@@ -158,6 +158,9 @@ API D3DKMTDispMgrCreate
 API D3DKMTDispMgrOperation
 API D3DKMTDispMgrSourceOperation
 API D3DKMTDispMgrTargetOperation
+API D3DKMTDisplayMuxSwitchExecute
+API D3DKMTDisplayMuxSwitchFinish
+API D3DKMTDisplayMuxSwitchPrepare
 API D3DKMTDisplayPortOperation
 API D3DKMTDuplicateHandle
 API D3DKMTEnumAdapters
@@ -181,6 +184,7 @@ API D3DKMTGetDisplayModeList
 API D3DKMTGetMemoryBudgetTarget
 API D3DKMTGetMultiPlaneOverlayCaps
 API D3DKMTGetMultisampleMethodList
+API D3DKMTGetNativeFenceLogDetail
 API D3DKMTGetOverlayState
 API D3DKMTGetPostCompositionCaps
 API D3DKMTGetPresentHistory
@@ -201,6 +205,7 @@ API D3DKMTGetTrackedWorkloadStatistics
 API D3DKMTGetYieldPercentage
 API D3DKMTInvalidateActiveVidPn
 API D3DKMTInvalidateCache
+API D3DKMTIsFeatureEnabled
 API D3DKMTLock
 API D3DKMTLock2
 API D3DKMTMakeResident
@@ -255,7 +260,7 @@ API D3DKMTQueryFSEBlock
 API D3DKMTQueryProcessOfferInfo
 API D3DKMTQueryProtectedSessionInfoFromNtHandle
 API D3DKMTQueryProtectedSessionStatus
-API ZwGdiDdDDIQueryRemoteVidPnSourceFromGdiDisplayName
+API NtGdiDdDDIQueryRemoteVidPnSourceFromGdiDisplayName
 API D3DKMTQueryResourceInfo
 API D3DKMTQueryResourceInfoFromNtHandle
 API D3DKMTQueryStatistics
@@ -426,17 +431,17 @@ API NtGdiEngBitBlt
 API NtGdiEngCheckAbort
 API EngComputeGlyphSet
 API NtGdiEngCopyBits
-API NtGdiEngCreateBitmap
+API EngCreateBitmap
 API NtGdiEngCreateClip
-API NtGdiEngCreateDeviceBitmap
-API NtGdiEngCreateDeviceSurface
-API NtGdiEngCreatePalette
+API EngCreateDeviceBitmap
+API EngCreateDeviceSurface
+API EngCreatePalette
 API EngCreateSemaphore
 API NtGdiEngDeleteClip
-API NtGdiEngDeletePalette
+API EngDeletePalette
 API NtGdiEngDeletePath
 API EngDeleteSemaphore
-API NtGdiEngDeleteSurface
+API EngDeleteSurface
 API NtGdiEngEraseSurface
 API NtGdiEngFillPath
 API EngFindResource
@@ -571,13 +576,13 @@ API GdiGetSpoolFileHandle
 API NtGdiGetSpoolMessage
 API GdiGetVariationStoreDelta
 API GdiGradientFill
+API GdiHandleBeingTracked
 API NtGdiInitSpool
 API GdiInitializeLanguagePack
 API GdiIsMetaFileDC
 API GdiIsMetaPrintDC
 API GdiIsPlayMetafileDC
 API GdiIsScreenDC
-API GdiIsTrackingEnabled
 API GdiIsUMPDSandboxingEnabled
 API GdiLoadType1Fonts
 API GdiPlayDCScript
@@ -608,6 +613,7 @@ API GdiTrackHDelete
 API GdiTransparentBlt
 API GdiValidateHandle
 API GdiWaitForTextReady
+API GdipIsAssertEnabled
 API GditGetCallerTLStorage
 API GditPopCallerInfo
 API GditPushCallerInfo
@@ -712,6 +718,7 @@ API GetOutlineTextMetricsW
 API GetPaletteEntriesStub
 API GetPath
 API NtGdiGetPhysicalMonitorDescription
+API NtGdiGetPhysicalMonitorFromTarget
 API NtGdiGetPhysicalMonitors
 API GetPixelStub
 API GetPixelFormat
@@ -775,7 +782,7 @@ API LpkGetEditControl
 API LpkGetTextExtentExPoint
 API LpkInitialize
 API LpkPSMTextOut
-API GdiDllInitializeWrapper
+API GdiDisableUMPDSandboxing
 API LpkTabbedTextOut
 API LpkUseGDIWidthCache
 API LpkpEditControlSize

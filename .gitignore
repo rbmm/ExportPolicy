@@ -5,3 +5,5 @@ tmp
 *.lib
 *.exp
 *.aps
+*.dll
+*.exe

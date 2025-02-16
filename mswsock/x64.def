@@ -27,7 +27,7 @@ Tcpip4_WSHEnumProtocols
 Tcpip4_WSHGetBroadcastSockaddr
 Tcpip4_WSHGetProviderGuid
 Tcpip4_WSHGetSockaddrType
-Tcpip4_WSHGetSocketInformation = Tcpip6_WSHGetSocketInformation
+Tcpip4_WSHGetSocketInformation
 Tcpip4_WSHGetWSAProtocolInfo
 Tcpip4_WSHGetWildcardSockaddr
 Tcpip4_WSHGetWinsockMapping
@@ -59,8 +59,8 @@ WSPStartup
 dn_expand
 getnetbyname
 inet_network
-rcmd = rexec
-rexec
-rresvport
+rcmd
+rexec = rcmd
+rresvport = rcmd
 s_perror
 sethostname

@@ -15,7 +15,7 @@ InetPtonW
 ProcessSocketNotifications
 SetAddrInfoExA
 SetAddrInfoExW
-WEP = _guard_check_icall_nop
+WEP
 WPUCompleteOverlappedRequest
 WPUGetProviderPathEx
 WSAAccept
@@ -164,7 +164,7 @@ getservbyport
 getsockname
 getsockopt
 htonl = ntohl
-htons
+htons = ntohs
 inet_addr
 inet_ntoa
 inet_ntop
@@ -172,7 +172,7 @@ inet_pton
 ioctlsocket
 listen
 ntohl
-ntohs = htons
+ntohs
 recv
 recvfrom
 select

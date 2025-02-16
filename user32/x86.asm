@@ -22,6 +22,7 @@ API _AnimateWindow@12
 API _AnyPopup@0
 API _AppendMenuA@16
 API _AppendMenuW@16
+API _NtUserApplyWindowAction@8
 API _AreDpiAwarenessContextsEqual@8
 API _ArrangeIconicWindows@4
 API _NtUserAttachThreadInput@12
@@ -96,6 +97,7 @@ API _CloseWindow@4
 API _NtUserCloseWindowStation@4
 API _ConsoleControl@12
 API _NtUserMagControl@8
+API _NtUserConvertToInterceptWindow@4
 API _CopyAcceleratorTableA@12
 API _NtUserCopyAcceleratorTable@12
 API _CopyIcon@4
@@ -125,6 +127,7 @@ API _CreateMDIWindowW@40
 API _CreateMenu@0
 API _CreatePopupMenu@0
 API _CreateSyntheticPointerDevice@12
+API _CreateSyntheticPointerDevice2@4
 API _CreateSystemThreads@4
 API _CreateWindowExA@48
 API _CreateWindowExW@48
@@ -240,6 +243,7 @@ API _NtUserDwmKernelShutdown@0
 API _NtUserDwmKernelStartup@0
 API _DwmLockScreenUpdates@4
 API _NtUserDwmValidateWindow@8
+API _NtUserDwmWindowNotificationsEnabled@4
 API _EditWndProc@20
 API _EmptyClipboardStub@0
 API _EnableMenuItem@12
@@ -249,12 +253,14 @@ API _NtEnableOneCoreTransformMode@0
 API _EnableScrollBar@12
 API _EnableSessionForMMCSS@4
 API _EnableWindow@8
+API _NtUserEnableWindowShellWindowManagementBehavior@12
 API _EndDeferWindowPos@4
 API _NtUserEndDeferWindowPosEx@8
 API _EndDialog@8
 API _NtUserEndMenu@0
 API _NtUserEndPaint@8
 API _EndTask@12
+API _NtUserEnterMoveSizeLoop@16
 API _EnterReaderModeHelper@4
 API _EnumChildWindows@12
 API _EnumClipboardFormats@4
@@ -326,6 +332,7 @@ API _GetClipboardSequenceNumberStub@0
 API _GetClipboardViewerStub@0
 API _NtUserGetComboBoxInfo@8
 API _NtUserGetCurrentInputMessageSource@4
+API _GetCurrentMonitorTopologyId@0
 API _NtUserGetCursor@0
 API _GetCursorFrameInfo@20
 API _NtUserGetCursorInfo@4
@@ -353,7 +360,7 @@ API _GetDpiForWindow@4
 API _GetDpiFromDpiAwarenessContext@4
 API _NtUserGetExtendedPointerDeviceProperty@8
 API _GetFocus@0
-API _NtUserGetForegroundWindow@0
+API _GetForegroundWindow@0
 API _NtUserGetGUIThreadInfo@8
 API _NtUserGetGestureConfig@24
 API _GetGestureExtraArgs@12
@@ -365,7 +372,7 @@ API _GetIconInfoExW@8
 API _GetInputDesktop@0
 API _NtUserGetInputLocaleInfo@8
 API _GetInputState@0
-API _NtUserGetInternalWindowPos@12
+API _GetInternalWindowPos@12
 API _GetKBCodePage@0
 API _GetKeyNameTextA@12
 API _GetKeyNameTextW@12
@@ -427,6 +434,8 @@ API _GetPointerFramePenInfoHistory@16
 API _NtUserGetPointerFrameTimes@12
 API _GetPointerFrameTouchInfo@12
 API _GetPointerFrameTouchInfoHistory@16
+API _GetPointerFrameTouchpadInfo@12
+API _GetPointerFrameTouchpadInfoHistory@16
 API _GetPointerInfo@8
 API _GetPointerInfoHistory@12
 API _NtUserGetPointerInputTransform@12
@@ -434,6 +443,8 @@ API _GetPointerPenInfo@8
 API _GetPointerPenInfoHistory@12
 API _GetPointerTouchInfo@8
 API _GetPointerTouchInfoHistory@12
+API _GetPointerTouchpadInfo@8
+API _GetPointerTouchpadInfoHistory@12
 API _NtUserGetPointerType@8
 API _GetPriorityClipboardFormatStub@8
 API _GetProcessDefaultLayout@4
@@ -452,7 +463,7 @@ API _NtUserGetRawInputDeviceList@12
 API _NtUserGetRawPointerDeviceData@20
 API _GetReasonTitleFromReasonCode@12
 API _NtUserGetRegisteredRawInputDevices@12
-API _NtUserGetScrollBarInfo@12
+API _GetScrollBarInfo@12
 API _GetScrollInfo@12
 API _GetScrollPos@8
 API _GetScrollRange@16
@@ -485,8 +496,8 @@ API _NtUserGetObjectInformation@20
 API _GetUserObjectSecurity@20
 API _GetWinStationInfo@4
 API _GetWindow@8
-API _NtUserGetWindowBand@8
-API _NtUserGetWindowCompositionAttribute@8
+API _GetWindowBand@8
+API _GetWindowCompositionAttribute@8
 API _NtUserGetWindowCompositionInfo@8
 API _GetWindowContextHelpId@4
 API _NtUserGetWindowDC@4
@@ -535,8 +546,8 @@ API _InitDManipHook@0
 API _NtUserInitializeGenericHidInjection@8
 API _NtUserInitializeInputDeviceInjection@28
 API _InitializeLpkHooks@4
-API _NtUserInitializePointerDeviceInjection@20
-API _NtUserInitializePointerDeviceInjectionEx@24
+API _InitializePointerDeviceInjection@20
+API _InitializePointerDeviceInjectionEx@24
 API _NtUserInitializeTouchInjection@8
 API _NtUserInjectDeviceInput@12
 API _NtUserInjectGenericHidInput@12
@@ -575,6 +586,7 @@ API _IsHungAppWindow@4
 API _IsIconic@4
 API _IsImmersiveProcess@4
 API _IsInDesktopWindowBand@4
+API _NtUserIsInterceptWindow@8
 API _IsMenu@4
 API _NtUserIsMouseInPointerEnabled@0
 API _NtIsOneCoreTransformMode@0
@@ -591,6 +603,7 @@ API _IsValidDpiAwarenessContext@4
 API _IsWinEventHookInstalled@4
 API _IsWindow@4
 API _IsWindowArranged@4
+API _NtUserIsWindowDisplayChangeSuppressed@4
 API _IsWindowEnabled@4
 API _IsWindowInDestroy@4
 API _IsWindowRedirectedForPrint@4
@@ -729,6 +742,7 @@ API _NtRIMSetExtendedDeviceProperty@12
 API _NtRIMSetTestModeStatus@4
 API _NtRIMUnregisterForInput@4
 API _NtRIMUpdateInputObserverRegistration@16
+API _NtUserRaiseLowerShellWindow@8
 API _NtUserRealChildWindowFromPoint@12
 API _RealGetWindowClassA@12
 API _RealGetWindowClassA@12
@@ -744,6 +758,7 @@ API _RegisterClassExW@4
 API _RegisterClassW@4
 API _RegisterWindowMessageA@4
 API _RegisterWindowMessageW@4
+API _NtUserRegisterCloakedNotification@8
 API _NtUserRegisterDManipHook@0
 API _RegisterDeviceNotificationA@12
 API _RegisterDeviceNotificationW@12
@@ -768,6 +783,8 @@ API _RegisterSystemThread@8
 API _NtUserRegisterTasklist@4
 API _NtUserRegisterTouchHitTestingWindow@8
 API _RegisterTouchWindow@8
+API _RegisterTouchpadCapableThread@4
+API _NtUserRegisterTouchpadCapableWindow@8
 API _RegisterUserApiHook@4
 API _RegisterWindowMessageA@4
 API _RegisterWindowMessageW@4
@@ -783,6 +800,7 @@ API _RemoveThreadTSFEventAwareness@4
 API _NtUserRemoveVisualIdentifier@4
 API _ReplyMessage@4
 API _ReportInertia@20
+API _ReportPointerDeviceInertia@16
 API _NtUserResolveDesktopForWOW@4
 API _ReuseDDElParam@20
 API _ScreenToClient@8
@@ -815,6 +833,7 @@ API _SetClipboardData@8
 API _SetClipboardViewerStub@4
 API _NtUserSetTimer@20
 API _NtUserSetCoreWindow@8
+API _NtUserSetCoveredWindowStates@12
 API _SetCursorStub@4
 API _SetCursorContents@8
 API _NtUserSetCursorPos@8
@@ -886,6 +905,7 @@ API _SetThreadDpiAwarenessContext@4
 API _SetThreadDpiHostingBehavior@4
 API _NtUserSetThreadInputBlocked@8
 API _SetTimer@16
+API _NtUserSetUserObjectCapability@16
 API _SetUserObjectInformationA@16
 API _SetUserObjectInformationW@16
 API _SetUserObjectSecurity@12
@@ -898,6 +918,7 @@ API _NtUserSetWindowDisplayAffinity@8
 API _NtUserSetWindowFeedbackSetting@20
 API _SetWindowLongA@12
 API _SetWindowLongW@12
+API _NtUserSetWindowMessageCapability@16
 API _NtUserSetWindowPlacement@8
 API _NtUserSetWindowPos@28
 API _SetWindowRgn@12
@@ -911,12 +932,17 @@ API _SetWindowsHookExA@16
 API _SetWindowsHookExAW@20
 API _SetWindowsHookExW@16
 API _SetWindowsHookW@8
+API _NtUserShellForegroundBoostProcess@8
+API _NtUserShellHandwritingDelegateInput@12
+API _NtUserShellHandwritingHandleDelegatedInput@8
+API _NtUserShellHandwritingUndelegateInput@8
 API _NtUserShellMigrateWindow@12
+API _NtUserShellRegisterHotKey@20
 API _NtUserShellSetWindowPos@24
 API _ShowCaretStub@4
 API _NtUserShowCursor@4
 API _ShowOwnedPopups@8
-API _NtUserShowScrollBar@12
+API _ShowScrollBar@12
 API _ShowStartGlass@4
 API _NtUserShowSystemCursor@4
 API _NtUserShowWindow@8
@@ -929,6 +955,7 @@ API _NtUserDiscardPointerFrameMessages@4
 API _SoftModalMessageBox@4
 API _NtUserSoundSentry@0
 API _SubtractRect@12
+API _NtUserSuppressWindowDisplayChange@8
 API _SwapMouseButton@4
 API _SwitchDesktop@4
 API _SwitchDesktopWithFade@12
@@ -1006,7 +1033,7 @@ API _WinHelpW@16
 API _NtUserWindowFromDC@4
 API _NtUserWindowFromPhysicalPoint@8
 API _NtUserWindowFromPoint@8
-API Wow64Transition
+API _Wow64Transition
 API __UserTestTokenForInteractive@8
 API gSharedInfo
 API _gapfnScSendMessage
@@ -1016,6 +1043,8 @@ API _wsprintfA
 API _wsprintfW
 API _wvsprintfA@12
 API _wvsprintfW@12
+API _NtUserForceMaxTouchpadSensitivityForCurrentProcess@4
+API _NtUserSetAdditionalPowerThrottlingProcess@12
 API _NtUserPhysicalToLogicalDpiPointForWindow@8
 API _NtUserLogicalToPhysicalDpiPointForWindow@8
 API _GetOemCheckboxSize@0
@@ -1031,6 +1060,8 @@ API _NtUserIsChildWindowDpiMessageEnabled@4
 API _NtUserEnableChildWindowDpiMessage@8
 API _NtUserIsNonClientDpiScalingEnabled@4
 API _GetDialogBaseUnits96@0
+API _NtUserDrainThreadCoreMessagingCompletions2@4
+API _NtUserInitThreadCoreMessagingIocp2@8
 API _NtUserSetDpiForWindow@8
 API _SetOCTBannedApiExemption@4
 API _NtUserSetDesktopVisualInputSink@8
@@ -1066,8 +1097,8 @@ API _NtUserIsResizeLayoutSynchronizationEnabled@4
 API _NtUserBeginLayoutUpdate@4
 API _NtUserEnableResizeLayoutSynchronization@8
 API _NtUserGetResizeDCompositionSynchronizationObject@8
-API _DrainThreadCoreMessagingCompletions@0
-API _InitThreadCoreMessagingIocp@4
+API _NtUserDrainThreadCoreMessagingCompletions@0
+API _NtUserInitThreadCoreMessagingIocp@4
 API _NtUserEnableWindowResizeOptimization@12
 API _NtUserCompositionInputSinkViewInstanceIdFromPoint@8
 API _NtUserGetInteractiveCtrlSupportedWaveforms@12
@@ -1117,12 +1148,11 @@ API _PostUIActions@12
 API _ToUnicodeExNonDestructive@32
 API _RegisterKeyboardCorrectionCallout@8
 API _NtUserCompositionInputSinkLuidFromPoint@20
-API _NtUserSetPrecisionTouchPadConfiguration@4
-API _NtUserGetPrecisionTouchPadConfiguration@4
+API ?SetPrecisionTouchPadConfiguration@@YGHPAUTOUCHPAD_PARAMETERS@@@Z
+API ?GetPrecisionTouchPadConfiguration@@YGHPAUTOUCHPAD_PARAMETERS@@@Z
 API _NtUserRegisterTouchPadCapable@4
 API _NtUserGetPhysicalDeviceRect@8
 API _NtUserEnableTouchPad@4
-API _NtUserRegisterShellPTPListener@8
 API _NtUserGetQueueStatusReadonly@4
 API _SetCancelRotationDelayHintWindow@4
 API _NtUserHidePointerContactVisualization@4

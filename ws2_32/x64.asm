@@ -100,7 +100,7 @@ API WSAStringToAddressW
 API WSAUnadvertiseProvider
 API WSAUnhookBlockingHook
 API WSAWaitForMultipleEvents
-API ?WSApSetPostRoutine@@YAHPEAX@Z
+API WSApSetPostRoutine
 API WSCDeinstallProvider
 API WSCDeinstallProvider32
 API WSCDeinstallProviderEx
@@ -115,7 +115,7 @@ API WSCGetApplicationCategory
 API WSCGetApplicationCategoryEx
 API WSCGetProviderInfo
 API WSCGetProviderInfo32
-API WPUGetProviderPath
+API WSCGetProviderPath
 API WSCGetProviderPath32
 API WSCInstallNameSpace
 API WSCInstallNameSpace32

@@ -28,6 +28,9 @@ AddDllDirectory
 AddExtensionProgId
 AddMandatoryAce
 AddPackageDependency
+AddPackageDependency2
+AddPackageNameAliasesByPackageDependency
+AddPackageNameAliasesByPackageFullName
 AddRefActCtx
 AddResourceAttributeAce
 AddSIDToBoundaryDescriptor
@@ -37,6 +40,7 @@ AddVectoredExceptionHandler = RtlAddVectoredExceptionHandler
 AdjustTokenGroups
 AdjustTokenPrivileges
 AllocConsole
+AllocConsoleWithOptions
 AllocateAndInitializeSid
 AllocateLocallyUniqueId
 AllocateUserPhysicalPages
@@ -56,11 +60,12 @@ AppPolicyGetProcessTerminationMethod
 AppPolicyGetShowDeveloperDiagnostic
 AppPolicyGetThreadInitializationType
 AppPolicyGetWindowingModel
+AppXCheckPplSupport
 AppXFreeMemory = AppContainerFreeMemory
 AppXGetApplicationData
 AppXGetDevelopmentMode
 AppXGetOSMaxVersionTested
-AppXGetOSMinVersion = MFCreateMFByteStreamOnStream
+AppXGetOSMinVersion = MFCreatePathFromURL
 AppXGetPackageCapabilities
 AppXGetPackageSid
 AppXLookupDisplayName
@@ -68,7 +73,7 @@ AppXLookupMoniker
 AppXPostSuccessExtension
 AppXPreCreationExtension
 AppXReleaseAppXContext
-AppXUpdatePackageCapabilities = MFGetConfigurationString
+AppXUpdatePackageCapabilities = RtwqScheduleWorkItem
 ApplicationUserModelIdFromProductId = PackageRelativeApplicationIdFromProductId
 AreAllAccessesGranted
 AreAnyAccessesGranted
@@ -102,9 +107,11 @@ Beep
 BuildIoRingCancelRequest
 BuildIoRingFlushFile
 BuildIoRingReadFile
+BuildIoRingReadFileScatter
 BuildIoRingRegisterBuffers
 BuildIoRingRegisterFileHandles
 BuildIoRingWriteFile
+BuildIoRingWriteFileGather
 CLOSE_LOCAL_HANDLE_INTERNAL
 CallEnclave
 CallNamedPipeW
@@ -185,6 +192,7 @@ CopySid
 CouldMultiUserAppsBehaviorBePossibleForPackage
 CreateActCtxW
 CreateAppContainerToken
+CreateAppSiloToken
 CreateBoundaryDescriptorW
 CreateConsoleScreenBuffer
 CreateDirectoryA
@@ -258,7 +266,7 @@ CveEventWrite
 DeactivateActCtx
 DebugActiveProcess
 DebugActiveProcessStop
-DebugBreak
+DebugBreak = DebugBreak
 DecodePointer = RtlDecodePointer
 DecodeRemotePointer = RtlDecodeRemotePointer
 DecodeSystemPointer = RtlDecodeSystemPointer
@@ -274,11 +282,12 @@ DeleteFileA
 DeleteFileFromAppW
 DeleteFileW
 DeletePackageDependency
-DeleteProcThreadAttributeList = WerpAuxmdFree
+DeletePersistedRegistryValue
+DeleteProcThreadAttributeList = sqlite3_mutex_enter
 DeleteStateAtomValue
 DeleteStateContainer
 DeleteStateContainerValue
-DeleteSynchronizationBarrier = RtlDeleteBarrier
+DeleteSynchronizationBarrier
 DeleteTimerQueue
 DeleteTimerQueueEx
 DeleteTimerQueueTimer
@@ -371,7 +380,7 @@ ExpandEnvironmentStringsA
 ExpandEnvironmentStringsW
 ExpungeConsoleCommandHistoryA
 ExpungeConsoleCommandHistoryW
-ExtensionProgIdExists
+ExtensionProgIdExists = __FC_Query_Config
 FatalAppExitA
 FatalAppExitW
 FileTimeToLocalFileTime
@@ -402,6 +411,7 @@ FindNextFileNameW
 FindNextFileW
 FindNextStreamW
 FindNextVolumeW
+FindPackageDependency
 FindPackagesByPackageFamily
 FindResourceExW
 FindResourceW
@@ -410,6 +420,7 @@ FindVolumeClose
 FlsAlloc
 FlsFree
 FlsGetValue
+FlsGetValue2 = RtlFlsGetValue2
 FlsSetValue
 FlushConsoleInputBuffer
 FlushFileBuffers
@@ -423,14 +434,14 @@ FormatApplicationUserModelIdA
 FormatMessageA
 FormatMessageW
 FreeConsole
-FreeEnvironmentStringsA = RtlFreeProcessHeap
-FreeEnvironmentStringsW = RtlFreeProcessHeap
+FreeEnvironmentStringsA
+FreeEnvironmentStringsW = FreeEnvironmentStringsA
 FreeGPOListInternalA
 FreeGPOListInternalW
 FreeLibrary
 FreeLibraryAndExitThread
 FreeLibraryWhenCallbackReturns = TpCallbackUnloadDllOnCompletion
-FreeResource = IsNetDrive
+FreeResource = sqlite3_value_bytes
 FreeSid
 FreeUserPhysicalPages
 GenerateConsoleCtrlEvent
@@ -441,7 +452,7 @@ GetAcceptLanguagesW
 GetAce
 GetAclInformation
 GetAdjustObjectAttributesForPrivateNamespaceRoutine
-GetAlternatePackageRoots = SaveStateRootFolderPath
+GetAlternatePackageRoots
 GetAppContainerAce
 GetAppContainerNamedObjectPath
 GetAppDataFolder
@@ -523,11 +534,12 @@ GetCurrentPackageId
 GetCurrentPackageInfo
 GetCurrentPackageInfo2
 GetCurrentPackageInfo3
+GetCurrentPackageInfo_PackageNameAliases
 GetCurrentPackagePath
 GetCurrentPackagePath2
 GetCurrentPackageResourcesContext
 GetCurrentPackageSecurityContext
-GetCurrentProcess = ubrk_previous
+GetCurrentProcess = ubrk_current
 GetCurrentProcessId
 GetCurrentProcessorNumber = RtlGetCurrentProcessorNumber
 GetCurrentProcessorNumberEx = RtlGetCurrentProcessorNumberEx
@@ -538,6 +550,7 @@ GetCurrentThreadStackLimits
 GetDateFormatA
 GetDateFormatEx
 GetDateFormatW
+GetDeveloperDriveEnablementState
 GetDeviceDriverBaseNameA = K32GetDeviceDriverBaseNameA
 GetDeviceDriverBaseNameW = K32GetDeviceDriverBaseNameW
 GetDeviceDriverFileNameA = K32GetDeviceDriverFileNameA
@@ -569,10 +582,12 @@ GetErrorMode
 GetExitCodeProcess
 GetExitCodeThread
 GetExtensionApplicationUserModelId
-GetExtensionProgIds
+GetExtensionProgIds = SetEnrollState
 GetExtensionProperty
 GetExtensionProperty2
 GetFallbackDisplayName
+GetFeatureToggleConfiguration = RtlGetFeatureToggleConfiguration
+GetFeatureTogglesChangeToken = RtlGetFeatureTogglesChangeToken
 GetFileAttributesA
 GetFileAttributesExA
 GetFileAttributesExFromAppW
@@ -580,6 +595,7 @@ GetFileAttributesExW
 GetFileAttributesW
 GetFileInformationByHandle
 GetFileInformationByHandleEx
+GetFileInformationByName
 GetFileMUIInfo
 GetFileMUIPath
 GetFileSecurityW
@@ -632,6 +648,8 @@ GetMachineTypeAttributes
 GetMappedFileNameA = K32GetMappedFileNameA
 GetMappedFileNameW = K32GetMappedFileNameW
 GetMemoryErrorHandlingCapabilities
+GetMemoryNumaClosestInitiatorNode
+GetMemoryNumaPerformanceInformation
 GetModuleBaseNameA = K32GetModuleBaseNameA
 GetModuleBaseNameW = K32GetModuleBaseNameW
 GetModuleFileNameA
@@ -671,9 +689,10 @@ GetPackageApplicationProperty
 GetPackageApplicationPropertyString
 GetPackageApplicationResourcesContext
 GetPackageContext
+GetPackageDependencyInformation
 GetPackageFamilyName
 GetPackageFamilyNameFromFilePath
-GetPackageFamilyNameFromProgId
+GetPackageFamilyNameFromProgId = __FC_Query_Config
 GetPackageFamilyNameFromToken
 GetPackageFullName
 GetPackageFullNameFromToken
@@ -684,6 +703,7 @@ GetPackageId
 GetPackageInfo
 GetPackageInfo2
 GetPackageInfo3
+GetPackageNameAliasesByPackageFullName
 GetPackageOSMaxVersionTested
 GetPackagePath
 GetPackagePathByFullName
@@ -732,6 +752,7 @@ GetProcessTimes
 GetProcessVersion
 GetProcessWorkingSetSize
 GetProcessWorkingSetSizeEx
+GetProcessesUsingPackageDependency
 GetProcessorSystemCycleTime
 GetProductInfo
 GetProtocolAumid
@@ -745,6 +766,7 @@ GetQueuedCompletionStatusEx
 GetRegistryExtensionFlags
 GetRegistryValueWithFallbackW
 GetResolvedPackageFullNameForPackageDependency
+GetResolvedPackageFullNameForPackageDependency2
 GetRoamingLastObservedChangeTime
 GetSecureSystemAppDataFolder
 GetSecurityDescriptorControl
@@ -814,7 +836,7 @@ GetTempPath2A
 GetTempPath2W
 GetTempPathA
 GetTempPathW
-GetThreadContext = Wow64GetThreadContext
+GetThreadContext
 GetThreadDescription
 GetThreadEnabledXStateFeatures
 GetThreadErrorMode
@@ -909,9 +931,9 @@ IncrementPackageStatusVersion
 InitOnceBeginInitialize
 InitOnceComplete
 InitOnceExecuteOnce
-InitOnceInitialize = RtlInitializeConditionVariable
+InitOnceInitialize = RtlRunOnceInitialize
 InitializeAcl
-InitializeConditionVariable = RtlInitializeConditionVariable
+InitializeConditionVariable = RtlRunOnceInitialize
 InitializeContext
 InitializeContext2
 InitializeCriticalSection = RtlInitializeCriticalSection
@@ -921,7 +943,7 @@ InitializeEnclave
 InitializeProcThreadAttributeList
 InitializeProcessForWsWatch = K32InitializeProcessForWsWatch
 InitializeSListHead = RtlInitializeSListHead
-InitializeSRWLock = RtlInitializeConditionVariable
+InitializeSRWLock = RtlRunOnceInitialize
 InitializeSecurityDescriptor
 InitializeSid
 InitializeSynchronizationBarrier
@@ -989,7 +1011,7 @@ IsThreadAFiber
 IsThreadpoolTimerSet = TpIsTimerSet
 IsTimeZoneRedirectionEnabled
 IsTokenRestricted
-IsUserCetAvailableInEnvironment = IsNetDrive
+IsUserCetAvailableInEnvironment = sqlite3_value_bytes
 IsValidAcl
 IsValidCodePage
 IsValidLanguageGroup
@@ -1039,7 +1061,7 @@ LCMapStringW
 LeaveCriticalPolicySectionInternal
 LeaveCriticalSection = RtlLeaveCriticalSection
 LeaveCriticalSectionWhenCallbackReturns = TpCallbackLeaveCriticalSectionOnCompletion
-LoadAppInitDlls = WerpSetExitListeners
+LoadAppInitDlls = ObjectStublessClient20
 LoadEnclaveData
 LoadEnclaveImageA
 LoadEnclaveImageW
@@ -1067,7 +1089,7 @@ LocaleNameToLCID
 LocateXStateFeature
 LockFile
 LockFileEx
-LockResource = SetHandleCount
+LockResource
 LogStagedFeatureUsage
 MakeAbsoluteSD
 MakeAbsoluteSD2
@@ -1086,6 +1108,8 @@ MoveFileExW
 MoveFileFromAppW
 MoveFileWithProgressTransactedW
 MoveFileWithProgressW
+MsixIsSystemPackageByAppUserModelId = __FC_Query_Config
+MsixIsSystemPackageByPackageFullName = MsixIsSystemPackageByPackageFullName
 MulDiv
 MultiByteToWideChar
 NamedPipeEventEnum
@@ -1101,6 +1125,7 @@ NlsUpdateLocale
 NlsUpdateSystemLocale
 NlsValidateLocale
 NormalizeString
+NotifyFeatureToggleUsage = RtlNotifyFeatureToggleUsage
 NotifyMountMgr
 NotifyRedirectedStringChange
 ObjectCloseAuditAlarmW
@@ -1150,6 +1175,7 @@ PackageIdFromProductId
 PackageIsEffectiveSupportedUsersMultiple
 PackageNameAndPublisherIdFromFamilyName
 PackageNameAndPublisherIdFromFamilyNameA
+PackagePublisherAddUserIfNecessary
 PackagePublisherIdFromPublisher
 PackageRelativeApplicationIdFromProductId
 PackageSidFromFamilyName
@@ -1481,6 +1507,7 @@ ReleaseActCtx
 ReleaseMutex
 ReleaseMutexWhenCallbackReturns = TpCallbackReleaseMutexOnCompletion
 ReleasePackagedDataForFile
+ReleasePseudoConsole
 ReleaseSRWLockExclusive = RtlReleaseSRWLockExclusive
 ReleaseSRWLockShared = RtlReleaseSRWLockShared
 ReleaseSemaphore
@@ -1544,7 +1571,7 @@ SHRegWriteUSValueA
 SHRegWriteUSValueW
 SHTruncateString
 SaveAlternatePackageRootPath
-SaveStateRootFolderPath
+SaveStateRootFolderPath = GetAlternatePackageRoots
 ScrollConsoleScreenBufferA
 ScrollConsoleScreenBufferW
 SearchPathA
@@ -1609,7 +1636,7 @@ SetFilePointerEx
 SetFileSecurityW
 SetFileTime
 SetFileValidData
-SetHandleCount
+SetHandleCount = LockResource
 SetHandleInformation
 SetIoRingCompletionEvent
 SetIsDeveloperModeEnabled
@@ -1620,6 +1647,10 @@ SetLastError = RtlSetLastWin32Error
 SetLocalTime
 SetLocaleInfoW
 SetNamedPipeHandleState
+SetPersistedRegistryBOOL = SetPersistedRegistryDWORD
+SetPersistedRegistryDWORD
+SetPersistedRegistryString
+SetPersistedRegistryValue
 SetPriorityClass
 SetPrivateObjectSecurity
 SetPrivateObjectSecurityEx
@@ -1695,7 +1726,7 @@ Sleep
 SleepConditionVariableCS
 SleepConditionVariableSRW
 SleepEx
-SpecialMBToWC
+SpecialMBToWC = ImageList_MirroredDraw
 StartThreadpoolIo = TpStartAsyncIoOperation
 StrCSpnA
 StrCSpnIA
@@ -1778,11 +1809,13 @@ TestControlReporting
 TestCreate
 TestOpen
 TestQueryData
+TestRecoverResults
 TestReport
 TestUnlockData
 TlsAlloc
 TlsFree
 TlsGetValue
+TlsGetValue2
 TlsSetValue
 TraceEvent = EtwLogTraceEvent
 TraceMessage = EtwTraceMessage
@@ -1792,6 +1825,7 @@ TransmitCommChar
 TryAcquireSRWLockExclusive = RtlTryAcquireSRWLockExclusive
 TryAcquireSRWLockShared = RtlTryAcquireSRWLockShared
 TryCreatePackageDependency
+TryCreatePackageDependency2
 TryEnterCriticalSection = RtlTryEnterCriticalSection
 TrySubmitThreadpoolCallback
 TzSpecificLocalTimeToSystemTime
@@ -1809,10 +1843,10 @@ UnregisterStateChangeNotification
 UnregisterStateLock
 UnregisterTraceGuids = EtwUnregisterTraceGuids
 UnregisterWaitEx
-UnsubscribeEdpEnabledStateChange
+UnsubscribeEdpEnabledStateChange = UnsubscribeWdagEnabledStateChange
 UnsubscribeFeatureUsageFlush
 UnsubscribeStateChangeNotification
-UnsubscribeWdagEnabledStateChange = UnsubscribeEdpEnabledStateChange
+UnsubscribeWdagEnabledStateChange
 UpdatePackageStatus
 UpdatePackageStatusForUser
 UpdatePackageStatusForUserSid
@@ -1859,6 +1893,8 @@ VerifyPackageFullName
 VerifyPackageFullNameA
 VerifyPackageId
 VerifyPackageIdA
+VerifyPackageName
+VerifyPackageNameA
 VerifyPackagePublisher
 VerifyPackagePublisherA
 VerifyPackageRelativeApplicationId
@@ -1918,8 +1954,8 @@ WerUnregisterExcludedMemoryBlock
 WerUnregisterFile
 WerUnregisterMemoryBlock
 WerUnregisterRuntimeExceptionModule
-WerpNotifyLoadStringResource = MFGetConfigurationString
-WerpNotifyUseStringResource = RtwqInvokeCallback
+WerpNotifyLoadStringResource = RtwqScheduleWorkItem
+WerpNotifyUseStringResource = FhServiceUnblockBackup
 WideCharToMultiByte
 WilFailureNotifyWatchers
 WilFailureWatcherResume
@@ -1928,7 +1964,7 @@ WilFailureWatcherSuspend
 WilFailureWatcherUnsubscribe
 Wow64DisableWow64FsRedirection
 Wow64EnableWow64FsRedirection
-Wow64GetThreadContext
+Wow64GetThreadContext = GetThreadContext
 Wow64RevertWow64FsRedirection
 Wow64SetThreadContext = SetThreadContext
 Wow64SetThreadDefaultGuestMachine
@@ -1953,9 +1989,14 @@ ZombifyActCtx
 _AddMUIStringToCache
 _GetMUIStringFromCache
 _OpenMuiStringCache
+__FC_Query_Config
+__FC_Query_System = MFGetPlatformFlags
+__FC_Report = WerpTraceDuration
+__FC_Subscribe = sqlite3_create_module
+__FC_Unsubscribe = sqlite3_mutex_enter
 __dllonexit3
 __wgetmainargs
-_amsg_exit = WerpSetExitListeners
+_amsg_exit = ObjectStublessClient20
 _c_exit
 _cexit
 _exit

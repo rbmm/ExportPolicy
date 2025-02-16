@@ -24,7 +24,7 @@ API _InetPtonW@12
 API _ProcessSocketNotifications@28
 API _SetAddrInfoExA@48
 API _SetAddrInfoExW@48
-API @_guard_check_icall_nop@4
+API _WEP@0
 API _WPUCompleteOverlappedRequest@20
 API _WPUGetProviderPathEx@20
 API _WSAAccept@20
@@ -104,7 +104,7 @@ API _WSAStringToAddressW@20
 API _WSAUnadvertiseProvider@4
 API _WSAUnhookBlockingHook@0
 API _WSAWaitForMultipleEvents@20
-API ?WSApSetPostRoutine@@YGHPAX@Z
+API _WSApSetPostRoutine@4
 API _WSCDeinstallProvider@8
 API _WSCDeinstallProviderEx@12
 API _WSCEnableNSProvider@8
@@ -173,7 +173,7 @@ API _getservbyport@8
 API _getsockname@12
 API _getsockopt@20
 API _ntohl@4
-API _htons@4
+API _ntohs@4
 API _inet_addr@4
 API _inet_ntoa@4
 API _inet_ntop@16
@@ -181,7 +181,7 @@ API _inet_pton@12
 API _ioctlsocket@12
 API _listen@8
 API _ntohl@4
-API _htons@4
+API _ntohs@4
 API _recv@16
 API _recvfrom@24
 API _select@20

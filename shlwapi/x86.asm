@@ -211,7 +211,7 @@ API _SHGetValueAStub@24
 API _SHGetValueWStub@24
 API _SHGetViewStatePropertyBag@20
 API _SHIsChildOrSelf@8
-API ?endDocument@CStubSaxParser2@CXMLPropStoreSaxParser@@UAGJXZ
+API _SHIsLowMemoryMachine@4
 API _SHLoadIndirectStringStub@16
 API _SHLockSharedStub@8
 API _SHMessageBoxCheckA@24
@@ -585,9 +585,9 @@ API _AssocMakeProgid@16
 API _RETIRED_MLBuildResURLW@24
 API _RETIRED_MLBuildResURLA@24
 API _RETIRED_IShellFolder_EnumObjects@16
-API _GetOpenFileNameW@4
-API _PrintDlgW@4
-API _PageSetupDlgW@4
+API SHLWAPI_NONAME_403
+API SHLWAPI_NONAME_402
+API SHLWAPI_NONAME_401
 API _StrCpyNXWStub@12
 API _StrCpyNXAStub@12
 API _RETIRED_MLHtmlHelpW@20
@@ -599,7 +599,7 @@ API _CreateDialogIndirectParamW@20
 API _EndDialog@8
 API _WNetGetLastErrorW@20
 API _RETIRED_WNetRestoreConnectionWrapW@8
-API _GetSaveFileNameW@4
+API SHLWAPI_NONAME_389
 API _RETIRED_SHQueryRawAcceleratorMsg@12
 API _RETIRED_SHQueryRawAccelerator@20
 API _RETIRED_SHLoadRawAccelerators@8
@@ -692,7 +692,7 @@ API _RETIRED_SHCancelUserWorkItems@8
 API _SHMessageBoxCheckExW@28
 API _SHMessageBoxCheckExA@28
 API _RETIRED_SHMirrorIcon@8
-API _PlaySoundW@12
+API SHLWAPI_NONAME_289
 API _IUnknown_CPContainerInvokeIndirect@12
 API _IUnknown_CPContainerOnChanged@8
 API _IUnknown_CPContainerInvokeParam

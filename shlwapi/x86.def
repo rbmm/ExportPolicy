@@ -202,7 +202,7 @@ SHGetValueA = SHGetValueAStub
 SHGetValueW = SHGetValueWStub
 SHGetViewStatePropertyBag
 SHIsChildOrSelf
-SHIsLowMemoryMachine = endDocument
+SHIsLowMemoryMachine
 SHLoadIndirectString = SHLoadIndirectStringStub
 SHLockShared = SHLockSharedStub
 SHMessageBoxCheckA
@@ -576,9 +576,9 @@ AssocMakeProgid @407 NONAME
 RETIRED_MLBuildResURLW @406 NONAME
 RETIRED_MLBuildResURLA @405 NONAME
 RETIRED_IShellFolder_EnumObjects @404 NONAME
-GetOpenFileNameW @403 NONAME
-PrintDlgW @402 NONAME
-PageSetupDlgW @401 NONAME
+SHLWAPI_NONAME_403 @403 NONAME
+SHLWAPI_NONAME_402 @402 NONAME
+SHLWAPI_NONAME_401 @401 NONAME
 StrCpyNXWStub @400 NONAME
 StrCpyNXAStub @399 NONAME
 RETIRED_MLHtmlHelpW @398 NONAME
@@ -590,7 +590,7 @@ CreateDialogIndirectParamW @393 NONAME
 EndDialog @392 NONAME
 WNetGetLastErrorW @391 NONAME
 RETIRED_WNetRestoreConnectionWrapW @390 NONAME
-GetSaveFileNameW @389 NONAME
+SHLWAPI_NONAME_389 @389 NONAME
 RETIRED_SHQueryRawAcceleratorMsg @387 NONAME
 RETIRED_SHQueryRawAccelerator @386 NONAME
 RETIRED_SHLoadRawAccelerators @385 NONAME
@@ -683,7 +683,7 @@ RETIRED_SHCancelUserWorkItems @293 NONAME
 SHMessageBoxCheckExW @292 NONAME
 SHMessageBoxCheckExA @291 NONAME
 RETIRED_SHMirrorIcon @290 NONAME
-PlaySoundW @289 NONAME
+SHLWAPI_NONAME_289 @289 NONAME
 IUnknown_CPContainerInvokeIndirect @288 NONAME
 IUnknown_CPContainerOnChanged @287 NONAME
 IUnknown_CPContainerInvokeParam @286 NONAME

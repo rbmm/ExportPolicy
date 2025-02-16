@@ -207,7 +207,7 @@ API SHGetValueAStub
 API SHGetValueWStub
 API SHGetViewStatePropertyBag
 API SHIsChildOrSelf
-API SHIsLowMemoryMachine
+API ?endPrefixMapping@CXMLPropStoreSaxParser@@UEAAJPEBGH@Z
 API SHLoadIndirectStringStub
 API SHLockSharedStub
 API SHMessageBoxCheckA
@@ -693,7 +693,7 @@ API RETIRED_SHCancelUserWorkItems
 API SHMessageBoxCheckExW
 API SHMessageBoxCheckExA
 API RETIRED_SHMirrorIcon
-API PlaySoundW
+API SHLWAPI_NONAME_289
 API IUnknown_CPContainerInvokeIndirect
 API IUnknown_CPContainerOnChanged
 API IUnknown_CPContainerInvokeParam

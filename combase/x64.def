@@ -1,7 +1,7 @@
 EXPORTS
 
-CLIPFORMAT_UserFree
-CLIPFORMAT_UserFree64 = CLIPFORMAT_UserFree
+CLIPFORMAT_UserFree = CLIPFORMAT_UserFree64
+CLIPFORMAT_UserFree64
 CLIPFORMAT_UserMarshal
 CLIPFORMAT_UserMarshal64
 CLIPFORMAT_UserSize
@@ -13,24 +13,24 @@ CLSIDFromProgID
 CLSIDFromProgIDEx
 CLSIDFromString
 CStdAsyncStubBuffer2_Connect
-CStdAsyncStubBuffer2_Disconnect = CStdStubBuffer2_Disconnect
+CStdAsyncStubBuffer2_Disconnect
 CStdAsyncStubBuffer2_Release
-CStdAsyncStubBuffer_AddRef = AddRef
+CStdAsyncStubBuffer_AddRef = PerUserCacheInformation,Ob
 CStdAsyncStubBuffer_Connect
-CStdAsyncStubBuffer_Disconnect = CStdStubBuffer_Disconnect
+CStdAsyncStubBuffer_Disconnect
 CStdAsyncStubBuffer_Invoke
 CStdAsyncStubBuffer_QueryInterface
 CStdAsyncStubBuffer_Release
 CStdStubBuffer2_Connect
 CStdStubBuffer2_CountRefs
-CStdStubBuffer2_Disconnect
+CStdStubBuffer2_Disconnect = CStdAsyncStubBuffer2_Disconnect
 CStdStubBuffer2_QueryInterface
-CStdStubBuffer_AddRef = AddRef
+CStdStubBuffer_AddRef = PerUserCacheInformation,Ob
 CStdStubBuffer_Connect
 CStdStubBuffer_CountRefs
 CStdStubBuffer_DebugServerQueryInterface
-CStdStubBuffer_DebugServerRelease
-CStdStubBuffer_Disconnect
+CStdStubBuffer_DebugServerRelease = OnSyncCallCompletedWithOutstandingRpcCancel
+CStdStubBuffer_Disconnect = CStdAsyncStubBuffer_Disconnect
 CStdStubBuffer_Invoke
 CStdStubBuffer_IsIIDSupported
 CStdStubBuffer_QueryInterface
@@ -139,7 +139,7 @@ CoTaskMemRealloc
 CoTestCancel
 CoTreatAsClass
 CoUninitialize
-CoUnloadingWOW
+CoUnloadingWOW = ForwardedBa
 CoUnmarshalHresult
 CoUnmarshalInterface
 CoVrfCheckThreadState
@@ -162,70 +162,70 @@ GetFuncDescs
 GetHGlobalFromStream
 GetHookInterface
 GetRestrictedErrorInfo
-HACCEL_UserFree
-HACCEL_UserFree64 = HACCEL_UserFree
-HACCEL_UserMarshal = HACCEL_UserMarshal64
-HACCEL_UserMarshal64
-HACCEL_UserSize
-HACCEL_UserSize64 = HACCEL_UserSize
-HACCEL_UserUnmarshal = HACCEL_UserUnmarshal64
-HACCEL_UserUnmarshal64
+HACCEL_UserFree = OnSyncCallCompletedWithOutstandingRpcCancel
+HACCEL_UserFree64 = OnSyncCallCompletedWithOutstandingRpcCancel
+HACCEL_UserMarshal = HRGN_UserMarshal64
+HACCEL_UserMarshal64 = HRGN_UserMarshal64
+HACCEL_UserSize = HWND_UserSize64
+HACCEL_UserSize64 = HWND_UserSize64
+HACCEL_UserUnmarshal = HWND_UserUnmarshal64
+HACCEL_UserUnmarshal64 = HWND_UserUnmarshal64
 HBITMAP_UserFree
-HBITMAP_UserFree64 = HBITMAP_UserFree
+HBITMAP_UserFree64
 HBITMAP_UserMarshal
 HBITMAP_UserMarshal64
 HBITMAP_UserSize
 HBITMAP_UserSize64
 HBITMAP_UserUnmarshal
 HBITMAP_UserUnmarshal64
-HBRUSH_UserFree = HBRUSH_UserFree64
-HBRUSH_UserFree64
-HBRUSH_UserMarshal = HBRUSH_UserMarshal64
-HBRUSH_UserMarshal64
-HBRUSH_UserSize = HBRUSH_UserSize64
-HBRUSH_UserSize64
-HBRUSH_UserUnmarshal
-HBRUSH_UserUnmarshal64 = HBRUSH_UserUnmarshal
+HBRUSH_UserFree = OnSyncCallCompletedWithOutstandingRpcCancel
+HBRUSH_UserFree64 = OnSyncCallCompletedWithOutstandingRpcCancel
+HBRUSH_UserMarshal = HRGN_UserMarshal64
+HBRUSH_UserMarshal64 = HRGN_UserMarshal64
+HBRUSH_UserSize = HWND_UserSize64
+HBRUSH_UserSize64 = HWND_UserSize64
+HBRUSH_UserUnmarshal = HWND_UserUnmarshal64
+HBRUSH_UserUnmarshal64 = HWND_UserUnmarshal64
 HDC_UserFree
-HDC_UserFree64
-HDC_UserMarshal = HDC_UserMarshal64
-HDC_UserMarshal64
-HDC_UserSize
-HDC_UserSize64 = HDC_UserSize
-HDC_UserUnmarshal
-HDC_UserUnmarshal64 = HDC_UserUnmarshal
+HDC_UserFree64 = OnSyncCallCompletedWithOutstandingRpcCancel
+HDC_UserMarshal = HRGN_UserMarshal64
+HDC_UserMarshal64 = HRGN_UserMarshal64
+HDC_UserSize = HWND_UserSize64
+HDC_UserSize64 = HWND_UserSize64
+HDC_UserUnmarshal = HWND_UserUnmarshal64
+HDC_UserUnmarshal64 = HWND_UserUnmarshal64
 HGLOBAL_UserFree
-HGLOBAL_UserFree64
+HGLOBAL_UserFree64 = HGLOBAL_UserFree
 HGLOBAL_UserMarshal
 HGLOBAL_UserMarshal64
 HGLOBAL_UserSize
 HGLOBAL_UserSize64
 HGLOBAL_UserUnmarshal
 HGLOBAL_UserUnmarshal64
-HICON_UserFree
-HICON_UserFree64 = HICON_UserFree
-HICON_UserMarshal = HICON_UserMarshal64
-HICON_UserMarshal64
-HICON_UserSize = HICON_UserSize64
-HICON_UserSize64
-HICON_UserUnmarshal = HICON_UserUnmarshal64
-HICON_UserUnmarshal64
-HMENU_UserFree
-HMENU_UserFree64 = HMENU_UserFree
-HMENU_UserMarshal
-HMENU_UserMarshal64 = HMENU_UserMarshal
-HMENU_UserSize
-HMENU_UserSize64 = HMENU_UserSize
-HMENU_UserUnmarshal = HMENU_UserUnmarshal64
-HMENU_UserUnmarshal64
-HMONITOR_UserFree = HMONITOR_UserFree64
-HMONITOR_UserFree64
-HMONITOR_UserMarshal
-HMONITOR_UserMarshal64
-HMONITOR_UserSize
-HMONITOR_UserSize64
-HMONITOR_UserUnmarshal
-HMONITOR_UserUnmarshal64
+HICON_UserFree = OnSyncCallCompletedWithOutstandingRpcCancel
+HICON_UserFree64 = OnSyncCallCompletedWithOutstandingRpcCancel
+HICON_UserMarshal = HRGN_UserMarshal64
+HICON_UserMarshal64 = HRGN_UserMarshal64
+HICON_UserSize = HWND_UserSize64
+HICON_UserSize64 = HWND_UserSize64
+HICON_UserUnmarshal = HWND_UserUnmarshal64
+HICON_UserUnmarshal64 = HWND_UserUnmarshal64
+HMENU_UserFree = OnSyncCallCompletedWithOutstandingRpcCancel
+HMENU_UserFree64 = OnSyncCallCompletedWithOutstandingRpcCancel
+HMENU_UserMarshal = HRGN_UserMarshal64
+HMENU_UserMarshal64 = HRGN_UserMarshal64
+HMENU_UserSize = HWND_UserSize64
+HMENU_UserSize64 = HWND_UserSize64
+HMENU_UserUnmarshal = HWND_UserUnmarshal64
+HMENU_UserUnmarshal64 = HWND_UserUnmarshal64
+HMONITOR_UserFree = OnSyncCallCompletedWithOutstandingRpcCancel
+HMONITOR_UserFree64 = OnSyncCallCompletedWithOutstandingRpcCancel
+HMONITOR_UserMarshal = HRGN_UserMarshal64
+HMONITOR_UserMarshal64 = HRGN_UserMarshal64
+HMONITOR_UserSize = HWND_UserSize64
+HMONITOR_UserSize64 = HWND_UserSize64
+HMONITOR_UserUnmarshal = HWND_UserUnmarshal64
+HMONITOR_UserUnmarshal64 = HWND_UserUnmarshal64
 HPALETTE_UserFree
 HPALETTE_UserFree64 = HPALETTE_UserFree
 HPALETTE_UserMarshal
@@ -234,45 +234,45 @@ HPALETTE_UserSize
 HPALETTE_UserSize64
 HPALETTE_UserUnmarshal
 HPALETTE_UserUnmarshal64
-HRGN_UserFree
-HRGN_UserFree64
-HRGN_UserMarshal
-HRGN_UserMarshal64 = HRGN_UserMarshal
-HRGN_UserSize
-HRGN_UserSize64 = HRGN_UserSize
-HRGN_UserUnmarshal = HRGN_UserUnmarshal64
-HRGN_UserUnmarshal64
+HRGN_UserFree = HDC_UserFree
+HRGN_UserFree64 = OnSyncCallCompletedWithOutstandingRpcCancel
+HRGN_UserMarshal = HRGN_UserMarshal64
+HRGN_UserMarshal64
+HRGN_UserSize = HWND_UserSize64
+HRGN_UserSize64 = HWND_UserSize64
+HRGN_UserUnmarshal = HWND_UserUnmarshal64
+HRGN_UserUnmarshal64 = HWND_UserUnmarshal64
 HSTRING_UserFree
-HSTRING_UserFree64
+HSTRING_UserFree64 = HSTRING_UserFree
 HSTRING_UserMarshal
 HSTRING_UserMarshal64
 HSTRING_UserSize
 HSTRING_UserSize64
 HSTRING_UserUnmarshal
 HSTRING_UserUnmarshal64
-HWND_UserFree
-HWND_UserFree64 = HWND_UserFree
-HWND_UserMarshal
-HWND_UserMarshal64 = HWND_UserMarshal
-HWND_UserSize
-HWND_UserSize64 = HWND_UserSize
-HWND_UserUnmarshal
-HWND_UserUnmarshal64 = HWND_UserUnmarshal
+HWND_UserFree = OnSyncCallCompletedWithOutstandingRpcCancel
+HWND_UserFree64 = OnSyncCallCompletedWithOutstandingRpcCancel
+HWND_UserMarshal = HRGN_UserMarshal64
+HWND_UserMarshal64 = HRGN_UserMarshal64
+HWND_UserSize = HWND_UserSize64
+HWND_UserSize64
+HWND_UserUnmarshal = HWND_UserUnmarshal64
+HWND_UserUnmarshal64
 HkOleRegisterObject
 IIDFromString
 InternalAppInvokeExceptionFilter
-InternalCAggIdRelease
+InternalCAggIdRelease = NdrExtFreeInterfacePointer
 InternalCAggIdSetHandler
 InternalCCFreeUnused
 InternalCCGetClassInformationForDde
 InternalCCGetClassInformationFromKey
 InternalCCSetDdeServerWindow
-InternalCMLSendReceive
+InternalCMLSendReceive = InternalCanMakeOutCall
 InternalCMLSendReceive2
 InternalCStdIdentityGetIProxyManager
 InternalCStdIdentityGetInternalUnk
 InternalCStdIdentityUpdateFlags
-InternalCallAsProxyExceptionFilter
+InternalCallAsProxyExceptionFilter = InternalServerExceptionFilter
 InternalCallFrameExceptionFilter
 InternalCallerIsAppContainer
 InternalCanMakeOutCall
@@ -282,47 +282,47 @@ InternalCoRegisterDisconnectCallback
 InternalCoRegisterSurrogatedObject
 InternalCoStdMarshalObject
 InternalCoUnregisterDisconnectCallback
-InternalCompleteObjRef
+InternalCompleteObjRef = InternalCanMakeOutCall
 InternalCreateCAggId
 InternalCreateIdentityHandler
 InternalDoATClassCreate
-InternalFillLocalOXIDInfo
-InternalFreeObjRef
-InternalGetWindowPropInterface
+InternalFillLocalOXIDInfo = InternalCanMakeOutCall
+InternalFreeObjRef = OnSyncCallCompletedWithOutstandingRpcCancel
+InternalGetWindowPropInterface = InternalCanMakeOutCall
 InternalGetWindowPropInterface2
-InternalIrotEnumRunning
+InternalIrotEnumRunning = CopyProxy
 InternalIrotEnumRunning2
-InternalIrotGetObject
-InternalIrotGetObject2
+InternalIrotGetObject = CopyProxy
+InternalIrotGetObject2 = CopyProxy
 InternalIrotGetObject3
-InternalIrotGetTimeOfLastChange
+InternalIrotGetTimeOfLastChange = CopyProxy
 InternalIrotGetTimeOfLastChange2
-InternalIrotIsRunning
+InternalIrotIsRunning = CopyProxy
 InternalIrotIsRunning2
 InternalIrotNoteChangeTime
 InternalIrotRegister
 InternalIrotRevoke
 InternalIsApartmentInitialized
 InternalIsProcessInitialized
-InternalMarshalObjRef
+InternalMarshalObjRef = InternalCanMakeOutCall
 InternalNotifyDDStartOrStop
 InternalOle1ClassFromCLSID2
 InternalOleModalLoopBlockFn
 InternalRegOpenClassKey
-InternalRegisterWindowPropInterface
+InternalRegisterWindowPropInterface = InternalCanMakeOutCall
 InternalRegisterWindowPropInterface2
-InternalReleaseMarshalObjRef
+InternalReleaseMarshalObjRef = InternalCanMakeOutCall
 InternalRevokeWindowPropInterface
 InternalSTAInvoke
-InternalServerExceptionFilter = InternalCallAsProxyExceptionFilter
+InternalServerExceptionFilter
 InternalSetAptCallCtrlOnTlsIfRequired
-InternalSetOleThunkWowPtr
-InternalStubInvoke
+InternalSetOleThunkWowPtr = OnSyncCallCompletedWithOutstandingRpcCancel
+InternalStubInvoke = InternalCanMakeOutCall
 InternalTlsAllocData
-InternalUnmarshalObjRef
+InternalUnmarshalObjRef = InternalCanMakeOutCall
 IsErrorPropagationEnabled
 NdrCStdStubBuffer2_Release
-NdrCStdStubBuffer_Release
+NdrCStdStubBuffer_Release = NdrCStdStubBuffer2_Release
 NdrExtStubInitialize
 NdrOleDllGetClassObject
 NdrOleInitializeExtension
@@ -412,7 +412,7 @@ RoInspectThreadErrorInfo
 RoOriginateError
 RoOriginateErrorW
 RoOriginateLanguageException
-RoParameterizedTypeExtraGetTypeSignature
+RoParameterizedTypeExtraGetTypeSignature = NdrExtGetServerObject
 RoRegisterActivationFactories
 RoRegisterForApartmentShutdown
 RoReportCapabilityCheckFailure
@@ -433,7 +433,7 @@ StringFromGUID2
 StringFromIID
 UpdateDCOMSettings
 UpdateProcessTracing
-WdtpInterfacePointer_UserFree = WdtpInterfacePointer_UserFree64
+WdtpInterfacePointer_UserFree
 WdtpInterfacePointer_UserFree64
 WdtpInterfacePointer_UserMarshal
 WdtpInterfacePointer_UserMarshal64
@@ -461,6 +461,7 @@ WindowsSubstring
 WindowsSubstringWithSpecifiedLength
 WindowsTrimStringEnd
 WindowsTrimStringStart
+RoSetActivationRedirectionFilter @230 NONAME
 CoTestDisableCatalogPackageRegistrationChecks @229 NONAME
 CoTestSetExtensionsDestCtxOverrideForActivation @228 NONAME
 CoGetClassObjectOfPackagedImplementationClass @227 NONAME
@@ -478,11 +479,11 @@ HMETAFILE_UserFree @216 NONAME
 HMETAFILE_UserUnmarshal64 @215 NONAME
 HMETAFILE_UserMarshal64 @214 NONAME
 HMETAFILE_UserSize64 @213 NONAME
-HMETAFILEPICT_UserFree64 @212 NONAME
+HMETAFILEPICT_UserFree @212 NONAME
 HMETAFILEPICT_UserUnmarshal64 @211 NONAME
 HMETAFILEPICT_UserMarshal64 @210 NONAME
 HMETAFILEPICT_UserSize64 @209 NONAME
-HENHMETAFILE_UserFree64 @208 NONAME
+HENHMETAFILE_UserFree @208 NONAME
 HENHMETAFILE_UserUnmarshal64 @207 NONAME
 HENHMETAFILE_UserMarshal64 @206 NONAME
 HENHMETAFILE_UserSize64 @205 NONAME
@@ -498,11 +499,11 @@ HMETAFILE_UserFree @196 NONAME
 HMETAFILE_UserUnmarshal @195 NONAME
 HMETAFILE_UserMarshal @194 NONAME
 HMETAFILE_UserSize @193 NONAME
-HMETAFILEPICT_UserFree64 @192 NONAME
+HMETAFILEPICT_UserFree @192 NONAME
 HMETAFILEPICT_UserUnmarshal @191 NONAME
 HMETAFILEPICT_UserMarshal @190 NONAME
 HMETAFILEPICT_UserSize @189 NONAME
-HENHMETAFILE_UserFree64 @188 NONAME
+HENHMETAFILE_UserFree @188 NONAME
 HENHMETAFILE_UserUnmarshal @187 NONAME
 HENHMETAFILE_UserMarshal @186 NONAME
 HENHMETAFILE_UserSize @185 NONAME
@@ -547,7 +548,7 @@ RoActivateInstanceAsUser @147 NONAME
 CoVrfSetMockApplicationVerifierStop @146 NONAME
 CoVrfComVerifierIsEnabled @145 NONAME
 CoGetSystemSecurityPermissionsTestHook @143 NONAME
-CoSetContainerIdListenerTestHook @142 NONAME
+WinrtAsyncChannelOperation::OnSyncCallCompletedWithOutstandingRpcCancel @142 NONAME
 CoSetAsyncCallCancelListenerTestHook @141 NONAME
 CoAllowSetForegroundWindow @140 NONAME
 RoGetMachineGlobalObjectTable @139 NONAME

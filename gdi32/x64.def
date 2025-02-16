@@ -117,7 +117,7 @@ D3DKMTCreateAllocation2
 D3DKMTCreateBundleObject
 D3DKMTCreateContext
 D3DKMTCreateContextVirtual
-D3DKMTCreateDCFromMemory = NtGdiDdDDICreateDCFromMemory
+D3DKMTCreateDCFromMemory = ZwGdiDdDDICreateDCFromMemory
 D3DKMTCreateDevice
 D3DKMTCreateDoorbell
 D3DKMTCreateHwContext
@@ -153,6 +153,9 @@ D3DKMTDispMgrCreate
 D3DKMTDispMgrOperation
 D3DKMTDispMgrSourceOperation
 D3DKMTDispMgrTargetOperation
+D3DKMTDisplayMuxSwitchExecute
+D3DKMTDisplayMuxSwitchFinish
+D3DKMTDisplayMuxSwitchPrepare
 D3DKMTDisplayPortOperation
 D3DKMTDuplicateHandle
 D3DKMTEnumAdapters
@@ -176,6 +179,7 @@ D3DKMTGetDisplayModeList
 D3DKMTGetMemoryBudgetTarget
 D3DKMTGetMultiPlaneOverlayCaps
 D3DKMTGetMultisampleMethodList
+D3DKMTGetNativeFenceLogDetail
 D3DKMTGetOverlayState
 D3DKMTGetPostCompositionCaps
 D3DKMTGetPresentHistory
@@ -196,6 +200,7 @@ D3DKMTGetTrackedWorkloadStatistics
 D3DKMTGetYieldPercentage
 D3DKMTInvalidateActiveVidPn
 D3DKMTInvalidateCache
+D3DKMTIsFeatureEnabled
 D3DKMTLock
 D3DKMTLock2
 D3DKMTMakeResident
@@ -250,7 +255,7 @@ D3DKMTQueryFSEBlock
 D3DKMTQueryProcessOfferInfo
 D3DKMTQueryProtectedSessionInfoFromNtHandle
 D3DKMTQueryProtectedSessionStatus
-D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName = ZwGdiDdDDIQueryRemoteVidPnSourceFromGdiDisplayName
+D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName = NtGdiDdDDIQueryRemoteVidPnSourceFromGdiDisplayName
 D3DKMTQueryResourceInfo
 D3DKMTQueryResourceInfoFromNtHandle
 D3DKMTQueryStatistics
@@ -421,17 +426,17 @@ EngBitBlt = NtGdiEngBitBlt
 EngCheckAbort = NtGdiEngCheckAbort
 EngComputeGlyphSet
 EngCopyBits = NtGdiEngCopyBits
-EngCreateBitmap = NtGdiEngCreateBitmap
+EngCreateBitmap
 EngCreateClip = NtGdiEngCreateClip
-EngCreateDeviceBitmap = NtGdiEngCreateDeviceBitmap
-EngCreateDeviceSurface = NtGdiEngCreateDeviceSurface
-EngCreatePalette = NtGdiEngCreatePalette
+EngCreateDeviceBitmap
+EngCreateDeviceSurface
+EngCreatePalette
 EngCreateSemaphore
 EngDeleteClip = NtGdiEngDeleteClip
-EngDeletePalette = NtGdiEngDeletePalette
+EngDeletePalette
 EngDeletePath = NtGdiEngDeletePath
 EngDeleteSemaphore
-EngDeleteSurface = NtGdiEngDeleteSurface
+EngDeleteSurface
 EngEraseSurface = NtGdiEngEraseSurface
 EngFillPath = NtGdiEngFillPath
 EngFindResource
@@ -566,13 +571,13 @@ GdiGetSpoolFileHandle
 GdiGetSpoolMessage = NtGdiGetSpoolMessage
 GdiGetVariationStoreDelta
 GdiGradientFill
+GdiHandleBeingTracked
 GdiInitSpool = NtGdiInitSpool
 GdiInitializeLanguagePack
 GdiIsMetaFileDC
 GdiIsMetaPrintDC
 GdiIsPlayMetafileDC
 GdiIsScreenDC
-GdiIsTrackingEnabled
 GdiIsUMPDSandboxingEnabled
 GdiLoadType1Fonts
 GdiPlayDCScript
@@ -603,6 +608,7 @@ GdiTrackHDelete
 GdiTransparentBlt
 GdiValidateHandle
 GdiWaitForTextReady
+GdipIsAssertEnabled
 GditGetCallerTLStorage
 GditPopCallerInfo
 GditPushCallerInfo
@@ -707,6 +713,7 @@ GetOutlineTextMetricsW
 GetPaletteEntries = GetPaletteEntriesStub
 GetPath
 GetPhysicalMonitorDescription = NtGdiGetPhysicalMonitorDescription
+GetPhysicalMonitorFromTargetInternal = NtGdiGetPhysicalMonitorFromTarget
 GetPhysicalMonitors = NtGdiGetPhysicalMonitors
 GetPixel = GetPixelStub
 GetPixelFormat
@@ -770,7 +777,7 @@ LpkGetEditControl
 LpkGetTextExtentExPoint
 LpkInitialize
 LpkPSMTextOut
-LpkPresent = GdiDllInitializeWrapper
+LpkPresent = GdiDisableUMPDSandboxing
 LpkTabbedTextOut
 LpkUseGDIWidthCache
 LpkpEditControlSize

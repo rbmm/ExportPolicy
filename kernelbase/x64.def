@@ -28,6 +28,9 @@ AddDllDirectory
 AddExtensionProgId
 AddMandatoryAce
 AddPackageDependency
+AddPackageDependency2
+AddPackageNameAliasesByPackageDependency
+AddPackageNameAliasesByPackageFullName
 AddRefActCtx
 AddResourceAttributeAce
 AddSIDToBoundaryDescriptor
@@ -37,6 +40,7 @@ AddVectoredExceptionHandler = RtlAddVectoredExceptionHandler
 AdjustTokenGroups
 AdjustTokenPrivileges
 AllocConsole
+AllocConsoleWithOptions
 AllocateAndInitializeSid
 AllocateLocallyUniqueId
 AllocateUserPhysicalPages
@@ -56,11 +60,12 @@ AppPolicyGetProcessTerminationMethod
 AppPolicyGetShowDeveloperDiagnostic
 AppPolicyGetThreadInitializationType
 AppPolicyGetWindowingModel
+AppXCheckPplSupport
 AppXFreeMemory = AppContainerFreeMemory
 AppXGetApplicationData
 AppXGetDevelopmentMode
 AppXGetOSMaxVersionTested
-AppXGetOSMinVersion
+AppXGetOSMinVersion = MFGetTopoNodeCurrentType
 AppXGetPackageCapabilities
 AppXGetPackageSid
 AppXLookupDisplayName
@@ -68,8 +73,8 @@ AppXLookupMoniker
 AppXPostSuccessExtension
 AppXPreCreationExtension
 AppXReleaseAppXContext
-AppXUpdatePackageCapabilities
-ApplicationUserModelIdFromProductId = PackageRelativeApplicationIdFromProductId
+AppXUpdatePackageCapabilities = MFGetTopoNodeCurrentType
+ApplicationUserModelIdFromProductId = PackageIdFromProductId
 AreAllAccessesGranted
 AreAnyAccessesGranted
 AreFileApisANSI
@@ -102,9 +107,11 @@ Beep
 BuildIoRingCancelRequest
 BuildIoRingFlushFile
 BuildIoRingReadFile
+BuildIoRingReadFileScatter
 BuildIoRingRegisterBuffers
 BuildIoRingRegisterFileHandles
 BuildIoRingWriteFile
+BuildIoRingWriteFileGather
 CLOSE_LOCAL_HANDLE_INTERNAL
 CallEnclave
 CallNamedPipeW
@@ -186,6 +193,7 @@ CopySid
 CouldMultiUserAppsBehaviorBePossibleForPackage
 CreateActCtxW
 CreateAppContainerToken
+CreateAppSiloToken
 CreateBoundaryDescriptorW
 CreateConsoleScreenBuffer
 CreateDirectoryA
@@ -275,11 +283,12 @@ DeleteFileA
 DeleteFileFromAppW
 DeleteFileW
 DeletePackageDependency
-DeleteProcThreadAttributeList
+DeletePersistedRegistryValue
+DeleteProcThreadAttributeList = HGLOBAL_UserFree64
 DeleteStateAtomValue
 DeleteStateContainer
 DeleteStateContainerValue
-DeleteSynchronizationBarrier = RtlDeleteBarrier
+DeleteSynchronizationBarrier
 DeleteTimerQueue
 DeleteTimerQueueEx
 DeleteTimerQueueTimer
@@ -372,7 +381,7 @@ ExpandEnvironmentStringsA
 ExpandEnvironmentStringsW
 ExpungeConsoleCommandHistoryA
 ExpungeConsoleCommandHistoryW
-ExtensionProgIdExists
+ExtensionProgIdExists = MFGetTopoNodeCurrentType
 FatalAppExitA
 FatalAppExitW
 FileTimeToLocalFileTime
@@ -403,6 +412,7 @@ FindNextFileNameW
 FindNextFileW
 FindNextStreamW
 FindNextVolumeW
+FindPackageDependency
 FindPackagesByPackageFamily
 FindResourceExW
 FindResourceW
@@ -411,11 +421,12 @@ FindVolumeClose
 FlsAlloc
 FlsFree
 FlsGetValue
+FlsGetValue2 = RtlFlsGetValue2
 FlsSetValue
 FlushConsoleInputBuffer
 FlushFileBuffers
 FlushInstructionCache
-FlushProcessWriteBuffers = NtFlushProcessWriteBuffers
+FlushProcessWriteBuffers = ZwFlushProcessWriteBuffers
 FlushViewOfFile
 FoldStringW
 ForceSyncFgPolicyInternal
@@ -424,14 +435,14 @@ FormatApplicationUserModelIdA
 FormatMessageA
 FormatMessageW
 FreeConsole
-FreeEnvironmentStringsA
-FreeEnvironmentStringsW
+FreeEnvironmentStringsA = FreePredefinedHandleUnit
+FreeEnvironmentStringsW = FreePredefinedHandleUnit
 FreeGPOListInternalA
 FreeGPOListInternalW
 FreeLibrary
 FreeLibraryAndExitThread
 FreeLibraryWhenCallbackReturns = TpCallbackUnloadDllOnCompletion
-FreeResource = PAL_BluetoothFindDeviceClose
+FreeResource = sqlite3_value_encoding
 FreeSid
 FreeUserPhysicalPages
 GenerateConsoleCtrlEvent
@@ -524,11 +535,12 @@ GetCurrentPackageId
 GetCurrentPackageInfo
 GetCurrentPackageInfo2
 GetCurrentPackageInfo3
+GetCurrentPackageInfo_PackageNameAliases
 GetCurrentPackagePath
 GetCurrentPackagePath2
 GetCurrentPackageResourcesContext
 GetCurrentPackageSecurityContext
-GetCurrentProcess
+GetCurrentProcess = DiffTimeInMSec
 GetCurrentProcessId
 GetCurrentProcessorNumber = RtlGetCurrentProcessorNumber
 GetCurrentProcessorNumberEx = RtlGetCurrentProcessorNumberEx
@@ -539,6 +551,7 @@ GetCurrentThreadStackLimits
 GetDateFormatA
 GetDateFormatEx
 GetDateFormatW
+GetDeveloperDriveEnablementState
 GetDeviceDriverBaseNameA = K32GetDeviceDriverBaseNameA
 GetDeviceDriverBaseNameW = K32GetDeviceDriverBaseNameW
 GetDeviceDriverFileNameA = K32GetDeviceDriverFileNameA
@@ -570,10 +583,12 @@ GetErrorMode
 GetExitCodeProcess
 GetExitCodeThread
 GetExtensionApplicationUserModelId
-GetExtensionProgIds
+GetExtensionProgIds = MFGetTopoNodeCurrentType
 GetExtensionProperty
 GetExtensionProperty2
 GetFallbackDisplayName
+GetFeatureToggleConfiguration = RtlGetFeatureToggleConfiguration
+GetFeatureTogglesChangeToken = RtlGetFeatureTogglesChangeToken
 GetFileAttributesA
 GetFileAttributesExA
 GetFileAttributesExFromAppW
@@ -581,6 +596,7 @@ GetFileAttributesExW
 GetFileAttributesW
 GetFileInformationByHandle
 GetFileInformationByHandleEx
+GetFileInformationByName
 GetFileMUIInfo
 GetFileMUIPath
 GetFileSecurityW
@@ -633,6 +649,8 @@ GetMachineTypeAttributes
 GetMappedFileNameA = K32GetMappedFileNameA
 GetMappedFileNameW = K32GetMappedFileNameW
 GetMemoryErrorHandlingCapabilities
+GetMemoryNumaClosestInitiatorNode
+GetMemoryNumaPerformanceInformation = GetMemoryNumaClosestInitiatorNode
 GetModuleBaseNameA = K32GetModuleBaseNameA
 GetModuleBaseNameW = K32GetModuleBaseNameW
 GetModuleFileNameA
@@ -672,9 +690,10 @@ GetPackageApplicationProperty
 GetPackageApplicationPropertyString
 GetPackageApplicationResourcesContext
 GetPackageContext
+GetPackageDependencyInformation
 GetPackageFamilyName
 GetPackageFamilyNameFromFilePath
-GetPackageFamilyNameFromProgId
+GetPackageFamilyNameFromProgId = MFGetTopoNodeCurrentType
 GetPackageFamilyNameFromToken
 GetPackageFullName
 GetPackageFullNameFromToken
@@ -685,6 +704,7 @@ GetPackageId
 GetPackageInfo
 GetPackageInfo2
 GetPackageInfo3
+GetPackageNameAliasesByPackageFullName
 GetPackageOSMaxVersionTested
 GetPackagePath
 GetPackagePathByFullName
@@ -733,6 +753,7 @@ GetProcessTimes
 GetProcessVersion
 GetProcessWorkingSetSize
 GetProcessWorkingSetSizeEx
+GetProcessesUsingPackageDependency
 GetProcessorSystemCycleTime
 GetProductInfo
 GetProtocolAumid
@@ -746,6 +767,7 @@ GetQueuedCompletionStatusEx
 GetRegistryExtensionFlags
 GetRegistryValueWithFallbackW
 GetResolvedPackageFullNameForPackageDependency
+GetResolvedPackageFullNameForPackageDependency2
 GetRoamingLastObservedChangeTime
 GetSecureSystemAppDataFolder
 GetSecurityDescriptorControl
@@ -795,7 +817,7 @@ GetSystemMetadataPath
 GetSystemMetadataPathForPackage
 GetSystemMetadataPathForPackageFamily
 GetSystemPreferredUILanguages
-GetSystemStateRootFolder
+GetSystemStateRootFolder = GetAlternatePackageRoots
 GetSystemTime
 GetSystemTimeAdjustment
 GetSystemTimeAdjustmentPrecise
@@ -912,7 +934,7 @@ InitOnceComplete
 InitOnceExecuteOnce
 InitOnceInitialize = RtlRunOnceInitialize
 InitializeAcl
-InitializeConditionVariable = RtlInitializeConditionVariable
+InitializeConditionVariable = RtlRunOnceInitialize
 InitializeContext
 InitializeContext2
 InitializeCriticalSection = RtlInitializeCriticalSection
@@ -921,8 +943,8 @@ InitializeCriticalSectionEx
 InitializeEnclave
 InitializeProcThreadAttributeList
 InitializeProcessForWsWatch = K32InitializeProcessForWsWatch
-InitializeSListHead
-InitializeSRWLock = RtlInitializeSRWLock
+InitializeSListHead = RtlInitializeSListHead
+InitializeSRWLock = RtlRunOnceInitialize
 InitializeSecurityDescriptor
 InitializeSid
 InitializeSynchronizationBarrier
@@ -1034,7 +1056,7 @@ LCMapStringW
 LeaveCriticalPolicySectionInternal
 LeaveCriticalSection = RtlLeaveCriticalSection
 LeaveCriticalSectionWhenCallbackReturns = TpCallbackLeaveCriticalSectionOnCompletion
-LoadAppInitDlls = NdrProxyForwardingFunction15
+LoadAppInitDlls = HGLOBAL_UserFree64
 LoadEnclaveData
 LoadEnclaveImageA
 LoadEnclaveImageW
@@ -1052,7 +1074,7 @@ LocalAlloc
 LocalFileTimeToFileTime
 LocalFileTimeToLocalSystemTime
 LocalFlags
-LocalFree
+LocalFree = GlobalFree
 LocalLock
 LocalReAlloc
 LocalSize
@@ -1081,6 +1103,8 @@ MoveFileExW
 MoveFileFromAppW
 MoveFileWithProgressTransactedW
 MoveFileWithProgressW
+MsixIsSystemPackageByAppUserModelId = MFGetTopoNodeCurrentType
+MsixIsSystemPackageByPackageFullName = MsixIsSystemPackageByPackageFullName
 MulDiv
 MultiByteToWideChar
 NamedPipeEventEnum
@@ -1096,6 +1120,7 @@ NlsUpdateLocale
 NlsUpdateSystemLocale
 NlsValidateLocale
 NormalizeString
+NotifyFeatureToggleUsage = RtlNotifyFeatureToggleUsage
 NotifyMountMgr
 NotifyRedirectedStringChange
 ObjectCloseAuditAlarmW
@@ -1118,7 +1143,7 @@ OpenPackageInfoByFullNameForUser
 OpenPrivateNamespaceW
 OpenProcess
 OpenProcessToken
-OpenRegKey
+OpenRegKey = OpenRegKeyForUser
 OpenSemaphoreW
 OpenState
 OpenStateAtom
@@ -1131,22 +1156,23 @@ OpenWaitableTimerW
 OutputDebugStringA
 OutputDebugStringW
 OverrideRoamingDataModificationTimesInRange
-PackageFamilyNameFromFullName
+PackageFamilyNameFromFullName = PackageFamilyNameFromFullName
 PackageFamilyNameFromFullNameA
 PackageFamilyNameFromId
 PackageFamilyNameFromIdA
 PackageFamilyNameFromProductId
 PackageFullNameFromId
 PackageFullNameFromIdA
-PackageFullNameFromProductId
+PackageFullNameFromProductId = PackageIdFromProductId
 PackageIdFromFullName
 PackageIdFromFullNameA
 PackageIdFromProductId
 PackageIsEffectiveSupportedUsersMultiple
 PackageNameAndPublisherIdFromFamilyName
 PackageNameAndPublisherIdFromFamilyNameA
+PackagePublisherAddUserIfNecessary
 PackagePublisherIdFromPublisher
-PackageRelativeApplicationIdFromProductId
+PackageRelativeApplicationIdFromProductId = PackageIdFromProductId
 PackageSidFromFamilyName
 PackageSidFromProductId = PackageSidFromProductId
 ParseApplicationUserModelId
@@ -1300,7 +1326,7 @@ PrivCopyFileExW
 PrivilegeCheck
 PrivilegedServiceAuditAlarmW
 ProcessIdToSessionId
-ProductIdFromPackageFamilyName
+ProductIdFromPackageFamilyName = PackageIdFromProductId
 PsmCreateKey
 PsmCreateKeyWithDynamicId
 PsmEqualApplication
@@ -1439,7 +1465,7 @@ RegLoadAppKeyA
 RegLoadAppKeyW
 RegLoadKeyA
 RegLoadKeyW
-RegLoadMUIStringA
+RegLoadMUIStringA = DnsSetZtSettings
 RegLoadMUIStringW
 RegNotifyChangeKeyValue
 RegOpenCurrentUser
@@ -1476,6 +1502,7 @@ ReleaseActCtx
 ReleaseMutex
 ReleaseMutexWhenCallbackReturns = TpCallbackReleaseMutexOnCompletion
 ReleasePackagedDataForFile
+ReleasePseudoConsole
 ReleaseSRWLockExclusive = RtlReleaseSRWLockExclusive
 ReleaseSRWLockShared = RtlReleaseSRWLockShared
 ReleaseSemaphore
@@ -1538,8 +1565,8 @@ SHRegSetUSValueW
 SHRegWriteUSValueA
 SHRegWriteUSValueW
 SHTruncateString
-SaveAlternatePackageRootPath
-SaveStateRootFolderPath
+SaveAlternatePackageRootPath = GetAlternatePackageRoots
+SaveStateRootFolderPath = GetAlternatePackageRoots
 ScrollConsoleScreenBufferA
 ScrollConsoleScreenBufferW
 SearchPathA
@@ -1615,6 +1642,10 @@ SetLastError = RtlSetLastWin32Error
 SetLocalTime
 SetLocaleInfoW
 SetNamedPipeHandleState
+SetPersistedRegistryBOOL = SetPersistedRegistryDWORD
+SetPersistedRegistryDWORD
+SetPersistedRegistryString
+SetPersistedRegistryValue
 SetPriorityClass
 SetPrivateObjectSecurity
 SetPrivateObjectSecurityEx
@@ -1690,7 +1721,7 @@ Sleep
 SleepConditionVariableCS
 SleepConditionVariableSRW
 SleepEx
-SpecialMBToWC
+SpecialMBToWC = sqlite3_value_encoding
 StartThreadpoolIo = TpStartAsyncIoOperation
 StrCSpnA
 StrCSpnIA
@@ -1773,11 +1804,13 @@ TestControlReporting
 TestCreate
 TestOpen
 TestQueryData
+TestRecoverResults
 TestReport
 TestUnlockData
 TlsAlloc
 TlsFree
 TlsGetValue
+TlsGetValue2
 TlsSetValue
 TraceEvent = EtwLogTraceEvent
 TraceMessage = EtwTraceMessage
@@ -1787,6 +1820,7 @@ TransmitCommChar
 TryAcquireSRWLockExclusive = RtlTryAcquireSRWLockExclusive
 TryAcquireSRWLockShared = RtlTryAcquireSRWLockShared
 TryCreatePackageDependency
+TryCreatePackageDependency2
 TryEnterCriticalSection = RtlTryEnterCriticalSection
 TrySubmitThreadpoolCallback
 TzSpecificLocalTimeToSystemTime
@@ -1854,6 +1888,8 @@ VerifyPackageFullName
 VerifyPackageFullNameA
 VerifyPackageId
 VerifyPackageIdA
+VerifyPackageName
+VerifyPackageNameA
 VerifyPackagePublisher
 VerifyPackagePublisherA
 VerifyPackageRelativeApplicationId
@@ -1913,8 +1949,8 @@ WerUnregisterExcludedMemoryBlock
 WerUnregisterFile
 WerUnregisterMemoryBlock
 WerUnregisterRuntimeExceptionModule
-WerpNotifyLoadStringResource
-WerpNotifyUseStringResource
+WerpNotifyLoadStringResource = MFGetTopoNodeCurrentType
+WerpNotifyUseStringResource = MFGetTopoNodeCurrentType
 WideCharToMultiByte
 WilFailureNotifyWatchers
 WilFailureWatcherResume
@@ -1948,13 +1984,18 @@ _AddMUIStringToCache
 _GetMUIStringFromCache
 _OpenMuiStringCache
 __C_specific_handler
+__FC_Query_Config = MFGetTopoNodeCurrentType
+__FC_Query_System = sqlite3_value_encoding
+__FC_Report = HGLOBAL_UserFree64
+__FC_Subscribe = sqlite3_value_encoding
+__FC_Unsubscribe = HGLOBAL_UserFree64
 __argc
 __chkstk
 __dllonexit3
-__misaligned_access
+__misaligned_access = WinSqmAddToStreamEx
 __wargv
 __wgetmainargs
-_amsg_exit = glClearStencil
+_amsg_exit = HGLOBAL_UserFree64
 _c_exit
 _cexit
 _exit

@@ -32,7 +32,7 @@ API Tcpip4_WSHEnumProtocols
 API Tcpip4_WSHGetBroadcastSockaddr
 API Tcpip4_WSHGetProviderGuid
 API Tcpip4_WSHGetSockaddrType
-API Tcpip6_WSHGetSocketInformation
+API Tcpip4_WSHGetSocketInformation
 API Tcpip4_WSHGetWSAProtocolInfo
 API Tcpip4_WSHGetWildcardSockaddr
 API Tcpip4_WSHGetWinsockMapping
@@ -64,9 +64,9 @@ API WSPStartup
 API dn_expand
 API getnetbyname
 API inet_network
-API rexec
-API rexec
-API rresvport
+API rcmd
+API rcmd
+API rcmd
 API s_perror
 API sethostname
 

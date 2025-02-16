@@ -116,9 +116,9 @@ myEnablePrivilege @855 NONAME
 myGetHashAlgorithmOIDInfoFromSignatureAlgorithm @854 NONAME
 myNetLogonUser @853 NONAME
 myGetTargetMachineDomainDnsName @852 NONAME
-IsISAPIExtensionEnabled @851 NONAME
+AddOrRemoveOCSPISAPIExtension @851 NONAME
 SplitConfigString @850 NONAME
-IsISAPIExtensionEnabled @849 NONAME
+AddOrRemoveOCSPISAPIExtension @849 NONAME
 EnableASPInIIS @848 NONAME
 DbgLogStringInit2 @847 NONAME
 CAIsCertTypeValid @846 NONAME
@@ -139,8 +139,8 @@ mySanitizedNameToDSName @832 NONAME
 mySanitizeName @831 NONAME
 EnableASPInIIS @830 NONAME
 myGetSidFromDomain @829 NONAME
-IsISAPIExtensionEnabled @828 NONAME
-IsISAPIExtensionEnabled @827 NONAME
+AddOrRemoveOCSPISAPIExtension @828 NONAME
+AddOrRemoveOCSPISAPIExtension @827 NONAME
 EnableASPInIIS @826 NONAME
 EnableASPInIIS @825 NONAME
 DbgPrintfW @824 NONAME

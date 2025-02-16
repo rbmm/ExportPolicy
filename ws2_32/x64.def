@@ -110,7 +110,7 @@ WSCGetApplicationCategory
 WSCGetApplicationCategoryEx
 WSCGetProviderInfo
 WSCGetProviderInfo32
-WSCGetProviderPath = WPUGetProviderPath
+WSCGetProviderPath
 WSCGetProviderPath32
 WSCInstallNameSpace
 WSCInstallNameSpace32

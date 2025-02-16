@@ -9,9 +9,9 @@ CLSIDFromProgID
 CLSIDFromProgIDEx
 CLSIDFromString
 CStdAsyncStubBuffer2_Connect
-CStdAsyncStubBuffer2_Disconnect
+CStdAsyncStubBuffer2_Disconnect = CStdStubBuffer2_Disconnect
 CStdAsyncStubBuffer2_Release
-CStdAsyncStubBuffer_AddRef
+CStdAsyncStubBuffer_AddRef = Allocation_SealedClassDeleteSelfLayer<CPolicySet,ObjectLibrary
 CStdAsyncStubBuffer_Connect
 CStdAsyncStubBuffer_Disconnect = CStdStubBuffer_Disconnect
 CStdAsyncStubBuffer_Invoke
@@ -19,13 +19,13 @@ CStdAsyncStubBuffer_QueryInterface
 CStdAsyncStubBuffer_Release
 CStdStubBuffer2_Connect
 CStdStubBuffer2_CountRefs
-CStdStubBuffer2_Disconnect = CStdAsyncStubBuffer2_Disconnect
+CStdStubBuffer2_Disconnect
 CStdStubBuffer2_QueryInterface
-CStdStubBuffer_AddRef = CStdAsyncStubBuffer_AddRef
+CStdStubBuffer_AddRef = Allocation_SealedClassDeleteSelfLayer<CPolicySet,ObjectLibrary
 CStdStubBuffer_Connect
 CStdStubBuffer_CountRefs
 CStdStubBuffer_DebugServerQueryInterface
-CStdStubBuffer_DebugServerRelease
+CStdStubBuffer_DebugServerRelease = ReportStubInvokeFailure
 CStdStubBuffer_Disconnect
 CStdStubBuffer_Invoke
 CStdStubBuffer_IsIIDSupported
@@ -158,54 +158,54 @@ GetFuncDescs
 GetHGlobalFromStream
 GetHookInterface
 GetRestrictedErrorInfo
-HACCEL_UserFree = CStdStubBuffer_DebugServerRelease
-HACCEL_UserMarshal
-HACCEL_UserSize = HDC_UserSize
-HACCEL_UserUnmarshal = HDC_UserUnmarshal
+HACCEL_UserFree = ReportStubInvokeFailure
+HACCEL_UserMarshal = HDC_UserMarshal
+HACCEL_UserSize = HWND_UserSize
+HACCEL_UserUnmarshal = HMENU_UserUnmarshal
 HBITMAP_UserFree
 HBITMAP_UserMarshal
 HBITMAP_UserSize
 HBITMAP_UserUnmarshal
-HBRUSH_UserFree = CStdStubBuffer_DebugServerRelease
-HBRUSH_UserMarshal = HACCEL_UserMarshal
-HBRUSH_UserSize = HDC_UserSize
-HBRUSH_UserUnmarshal = HDC_UserUnmarshal
-HDC_UserFree = HRGN_UserFree
-HDC_UserMarshal = HACCEL_UserMarshal
-HDC_UserSize
-HDC_UserUnmarshal
+HBRUSH_UserFree = ReportStubInvokeFailure
+HBRUSH_UserMarshal = HDC_UserMarshal
+HBRUSH_UserSize = HWND_UserSize
+HBRUSH_UserUnmarshal = HMENU_UserUnmarshal
+HDC_UserFree
+HDC_UserMarshal
+HDC_UserSize = HWND_UserSize
+HDC_UserUnmarshal = HMENU_UserUnmarshal
 HGLOBAL_UserFree
 HGLOBAL_UserMarshal
 HGLOBAL_UserSize
 HGLOBAL_UserUnmarshal
-HICON_UserFree = CStdStubBuffer_DebugServerRelease
-HICON_UserMarshal = HACCEL_UserMarshal
-HICON_UserSize = HDC_UserSize
-HICON_UserUnmarshal = HDC_UserUnmarshal
-HMENU_UserFree = CStdStubBuffer_DebugServerRelease
-HMENU_UserMarshal = HACCEL_UserMarshal
-HMENU_UserSize = HDC_UserSize
-HMENU_UserUnmarshal = HDC_UserUnmarshal
-HMONITOR_UserFree = CStdStubBuffer_DebugServerRelease
-HMONITOR_UserMarshal
-HMONITOR_UserSize
-HMONITOR_UserUnmarshal = HWND_UserUnmarshal
+HICON_UserFree = ReportStubInvokeFailure
+HICON_UserMarshal = HDC_UserMarshal
+HICON_UserSize = HWND_UserSize
+HICON_UserUnmarshal = HMENU_UserUnmarshal
+HMENU_UserFree = ReportStubInvokeFailure
+HMENU_UserMarshal = HDC_UserMarshal
+HMENU_UserSize = HWND_UserSize
+HMENU_UserUnmarshal
+HMONITOR_UserFree = ReportStubInvokeFailure
+HMONITOR_UserMarshal = HDC_UserMarshal
+HMONITOR_UserSize = HWND_UserSize
+HMONITOR_UserUnmarshal = HMENU_UserUnmarshal
 HPALETTE_UserFree
 HPALETTE_UserMarshal
 HPALETTE_UserSize
 HPALETTE_UserUnmarshal
-HRGN_UserFree
-HRGN_UserMarshal = HACCEL_UserMarshal
-HRGN_UserSize = HDC_UserSize
-HRGN_UserUnmarshal = HDC_UserUnmarshal
+HRGN_UserFree = HDC_UserFree
+HRGN_UserMarshal = HDC_UserMarshal
+HRGN_UserSize = HWND_UserSize
+HRGN_UserUnmarshal = HMENU_UserUnmarshal
 HSTRING_UserFree
 HSTRING_UserMarshal
 HSTRING_UserSize
 HSTRING_UserUnmarshal
-HWND_UserFree = CStdStubBuffer_DebugServerRelease
-HWND_UserMarshal = HMONITOR_UserMarshal
-HWND_UserSize = HMONITOR_UserSize
-HWND_UserUnmarshal
+HWND_UserFree = ReportStubInvokeFailure
+HWND_UserMarshal = HDC_UserMarshal
+HWND_UserSize
+HWND_UserUnmarshal = HMENU_UserUnmarshal
 HkOleRegisterObject
 IIDFromString
 InternalAppInvokeExceptionFilter
@@ -223,9 +223,9 @@ InternalCStdIdentityUpdateFlags
 InternalCallAsProxyExceptionFilter = InternalServerExceptionFilter
 InternalCallFrameExceptionFilter
 InternalCallerIsAppContainer
-InternalCanMakeOutCall = InternalReleaseMarshalObjRef
+InternalCanMakeOutCall
 InternalCanMakeOutCall2
-InternalCoIsSurrogateProcess
+InternalCoIsSurrogateProcess = CoIsSurrogateProcess
 InternalCoRegisterDisconnectCallback
 InternalCoRegisterSurrogatedObject
 InternalCoStdMarshalObject
@@ -235,37 +235,37 @@ InternalCreateCAggId
 InternalCreateIdentityHandler
 InternalDoATClassCreate
 InternalFillLocalOXIDInfo
-InternalFreeObjRef = CleanupIdentity
-InternalGetWindowPropInterface = InternalRegisterWindowPropInterface
+InternalFreeObjRef
+InternalGetWindowPropInterface
 InternalGetWindowPropInterface2
-InternalIrotEnumRunning
+InternalIrotEnumRunning = InternalIrotIsRunning
 InternalIrotEnumRunning2
-InternalIrotGetObject
-InternalIrotGetObject2 = CopyTo
+InternalIrotGetObject = InvokeProgressDelegateWithMarshaledData
+InternalIrotGetObject2 = GetRetQueueInfo
 InternalIrotGetObject3
-InternalIrotGetTimeOfLastChange = ReleaseMarshalData
+InternalIrotGetTimeOfLastChange = get_UnconsumedBufferLength
 InternalIrotGetTimeOfLastChange2
-InternalIrotIsRunning = InternalIrotEnumRunning
+InternalIrotIsRunning
 InternalIrotIsRunning2
 InternalIrotNoteChangeTime
 InternalIrotRegister
 InternalIrotRevoke
 InternalIsApartmentInitialized
 InternalIsProcessInitialized
-InternalMarshalObjRef = InternalStubInvoke
+InternalMarshalObjRef
 InternalNotifyDDStartOrStop
 InternalOle1ClassFromCLSID2
 InternalOleModalLoopBlockFn
 InternalRegOpenClassKey
-InternalRegisterWindowPropInterface
+InternalRegisterWindowPropInterface = InternalGetWindowPropInterface
 InternalRegisterWindowPropInterface2
-InternalReleaseMarshalObjRef
+InternalReleaseMarshalObjRef = InternalCanMakeOutCall
 InternalRevokeWindowPropInterface
 InternalSTAInvoke
 InternalServerExceptionFilter
 InternalSetAptCallCtrlOnTlsIfRequired
 InternalSetOleThunkWowPtr
-InternalStubInvoke
+InternalStubInvoke = InternalMarshalObjRef
 InternalTlsAllocData
 InternalUnmarshalObjRef
 IsErrorPropagationEnabled
@@ -360,7 +360,7 @@ RoInspectThreadErrorInfo
 RoOriginateError
 RoOriginateErrorW
 RoOriginateLanguageException
-RoParameterizedTypeExtraGetTypeSignature
+RoParameterizedTypeExtraGetTypeSignature = NdrExtGetServerObject
 RoRegisterActivationFactories
 RoRegisterForApartmentShutdown
 RoReportCapabilityCheckFailure
@@ -405,6 +405,7 @@ WindowsSubstring
 WindowsSubstringWithSpecifiedLength
 WindowsTrimStringEnd
 WindowsTrimStringStart
+RoSetActivationRedirectionFilter @230 NONAME
 CoTestDisableCatalogPackageRegistrationChecks @229 NONAME
 CoTestSetExtensionsDestCtxOverrideForActivation @228 NONAME
 CoGetClassObjectOfPackagedImplementationClass @227 NONAME
@@ -471,7 +472,7 @@ RoActivateInstanceAsUser @147 NONAME
 CoVrfSetMockApplicationVerifierStop @146 NONAME
 CoVrfComVerifierIsEnabled @145 NONAME
 CoGetSystemSecurityPermissionsTestHook @143 NONAME
-CleanupIdentity @142 NONAME
+InternalFreeObjRef @142 NONAME
 CoSetAsyncCallCancelListenerTestHook @141 NONAME
 CoAllowSetForegroundWindow @140 NONAME
 RoGetMachineGlobalObjectTable @139 NONAME

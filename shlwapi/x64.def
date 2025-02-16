@@ -202,7 +202,7 @@ SHGetValueA = SHGetValueAStub
 SHGetValueW = SHGetValueWStub
 SHGetViewStatePropertyBag
 SHIsChildOrSelf
-SHIsLowMemoryMachine
+SHIsLowMemoryMachine = endPrefixMapping
 SHLoadIndirectString = SHLoadIndirectStringStub
 SHLockShared = SHLockSharedStub
 SHMessageBoxCheckA
@@ -688,7 +688,7 @@ RETIRED_SHCancelUserWorkItems @293 NONAME
 SHMessageBoxCheckExW @292 NONAME
 SHMessageBoxCheckExA @291 NONAME
 RETIRED_SHMirrorIcon @290 NONAME
-PlaySoundW @289 NONAME
+SHLWAPI_NONAME_289 @289 NONAME
 IUnknown_CPContainerInvokeIndirect @288 NONAME
 IUnknown_CPContainerOnChanged @287 NONAME
 IUnknown_CPContainerInvokeParam @286 NONAME

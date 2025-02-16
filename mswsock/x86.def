@@ -22,14 +22,14 @@ SetServiceA
 SetServiceW
 StartWsdpService
 StopWsdpService
-Tcpip4_WSHAddressToString = Tcpip6_WSHAddressToString
+Tcpip4_WSHAddressToString
 Tcpip4_WSHEnumProtocols
 Tcpip4_WSHGetBroadcastSockaddr
 Tcpip4_WSHGetProviderGuid
 Tcpip4_WSHGetSockaddrType
 Tcpip4_WSHGetSocketInformation
 Tcpip4_WSHGetWSAProtocolInfo
-Tcpip4_WSHGetWildcardSockaddr
+Tcpip4_WSHGetWildcardSockaddr = Tcpip6_WSHGetWildcardSockaddr
 Tcpip4_WSHGetWinsockMapping
 Tcpip4_WSHIoctl = Tcpip6_WSHIoctl
 Tcpip4_WSHJoinLeaf
@@ -38,13 +38,13 @@ Tcpip4_WSHOpenSocket
 Tcpip4_WSHOpenSocket2
 Tcpip4_WSHSetSocketInformation
 Tcpip4_WSHStringToAddress
-Tcpip6_WSHAddressToString
+Tcpip6_WSHAddressToString = Tcpip4_WSHAddressToString
 Tcpip6_WSHEnumProtocols
 Tcpip6_WSHGetProviderGuid
 Tcpip6_WSHGetSockaddrType
 Tcpip6_WSHGetSocketInformation
 Tcpip6_WSHGetWSAProtocolInfo
-Tcpip6_WSHGetWildcardSockaddr = Tcpip4_WSHGetWildcardSockaddr
+Tcpip6_WSHGetWildcardSockaddr
 Tcpip6_WSHGetWinsockMapping
 Tcpip6_WSHIoctl
 Tcpip6_WSHJoinLeaf
@@ -59,8 +59,8 @@ WSPStartup
 dn_expand
 getnetbyname
 inet_network
-rcmd = rexec
-rexec
+rcmd
+rexec = rcmd
 rresvport
 s_perror
 sethostname

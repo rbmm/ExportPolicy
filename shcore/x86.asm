@@ -40,7 +40,7 @@ API _IUnknown_SetSite@8
 API _IsOS@4
 API _IsProcessInIsolatedContainer@4
 API _IsProcessInWDAGContainer@8
-API ?WilApiImpl_RecordFeatureError@details@wil@@YGXIPBUFEATURE_ERROR@@@Z
+API _RecordFeatureError@8
 API _RecordFeatureUsage@16
 API _RegisterScaleChangeEvent@8
 API _RegisterScaleChangeNotifications@16

@@ -13,6 +13,7 @@ AnimateWindow
 AnyPopup
 AppendMenuA
 AppendMenuW
+ApplyWindowAction = NtUserApplyWindowAction
 AreDpiAwarenessContextsEqual
 ArrangeIconicWindows
 AttachThreadInput = NtUserAttachThreadInput
@@ -64,7 +65,7 @@ CharUpperA = CharUpperAStub
 CharUpperBuffA = CharUpperBuffAStub
 CharUpperBuffW = CharUpperBuffWStub
 CharUpperW = CharUpperWStub
-CheckBannedOneCoreTransformApi
+CheckBannedOneCoreTransformApi = dummyCtfImmRestoreToolbarWnd
 CheckDBCSEnabledExt
 CheckDlgButton
 CheckMenuItem
@@ -87,6 +88,7 @@ CloseWindow
 CloseWindowStation = NtUserCloseWindowStation
 ConsoleControl
 ControlMagnification = NtUserMagControl
+ConvertToInterceptWindow = NtUserConvertToInterceptWindow
 CopyAcceleratorTableA
 CopyAcceleratorTableW = NtUserCopyAcceleratorTable
 CopyIcon
@@ -116,6 +118,7 @@ CreateMDIWindowW
 CreateMenu
 CreatePopupMenu
 CreateSyntheticPointerDevice
+CreateSyntheticPointerDevice2
 CreateSystemThreads
 CreateWindowExA
 CreateWindowExW
@@ -155,7 +158,7 @@ DdeQueryNextServer
 DdeQueryStringA
 DdeQueryStringW
 DdeReconnect
-DdeSetQualityOfService
+DdeSetQualityOfService = DdeGetQualityOfService
 DdeSetUserHandle
 DdeUnaccessData
 DdeUninitialize
@@ -223,7 +226,7 @@ DrawTextA
 DrawTextExA
 DrawTextExW
 DrawTextW
-DwmGetDxRgn
+DwmGetDxRgn = VTagOutput
 DwmGetDxSharedSurface
 DwmGetRemoteSessionOcclusionEvent = NtUserDwmGetRemoteSessionOcclusionEvent
 DwmGetRemoteSessionOcclusionState = NtUserDwmGetRemoteSessionOcclusionState
@@ -231,6 +234,7 @@ DwmKernelShutdown = NtUserDwmKernelShutdown
 DwmKernelStartup = NtUserDwmKernelStartup
 DwmLockScreenUpdates
 DwmValidateWindow = NtUserDwmValidateWindow
+DwmWindowNotificationsEnabled = NtUserDwmWindowNotificationsEnabled
 EditWndProc
 EmptyClipboard = EmptyClipboardStub
 EnableMenuItem
@@ -240,12 +244,14 @@ EnableOneCoreTransformMode = NtEnableOneCoreTransformMode
 EnableScrollBar
 EnableSessionForMMCSS
 EnableWindow
+EnableWindowShellWindowManagementBehavior = NtUserEnableWindowShellWindowManagementBehavior
 EndDeferWindowPos
 EndDeferWindowPosEx = NtUserEndDeferWindowPosEx
 EndDialog
 EndMenu = NtUserEndMenu
 EndPaint = NtUserEndPaint
 EndTask
+EnterMoveSizeLoop = NtUserEnterMoveSizeLoop
 EnterReaderModeHelper
 EnumChildWindows
 EnumClipboardFormats
@@ -319,6 +325,7 @@ GetClipboardSequenceNumber = GetClipboardSequenceNumberStub
 GetClipboardViewer = GetClipboardViewerStub
 GetComboBoxInfo = NtUserGetComboBoxInfo
 GetCurrentInputMessageSource = NtUserGetCurrentInputMessageSource
+GetCurrentMonitorTopologyId
 GetCursor = NtUserGetCursor
 GetCursorFrameInfo
 GetCursorInfo = NtUserGetCursorInfo
@@ -346,7 +353,7 @@ GetDpiForWindow
 GetDpiFromDpiAwarenessContext
 GetExtendedPointerDeviceProperty = NtUserGetExtendedPointerDeviceProperty
 GetFocus
-GetForegroundWindow = NtUserGetForegroundWindow
+GetForegroundWindow
 GetGUIThreadInfo = NtUserGetGUIThreadInfo
 GetGestureConfig = NtUserGetGestureConfig
 GetGestureExtraArgs
@@ -358,7 +365,7 @@ GetIconInfoExW
 GetInputDesktop
 GetInputLocaleInfo = NtUserGetInputLocaleInfo
 GetInputState
-GetInternalWindowPos = NtUserGetInternalWindowPos
+GetInternalWindowPos
 GetKBCodePage
 GetKeyNameTextA
 GetKeyNameTextW
@@ -412,7 +419,7 @@ GetPointerDeviceOrientation = NtUserGetPointerDeviceOrientation
 GetPointerDeviceProperties = NtUserGetPointerDeviceProperties
 GetPointerDeviceRects = NtUserGetPointerDeviceRects
 GetPointerDevices = NtUserGetPointerDevices
-GetPointerFrameArrivalTimes
+GetPointerFrameArrivalTimes = RegisterPointerInputTargetEx
 GetPointerFrameInfo
 GetPointerFrameInfoHistory
 GetPointerFramePenInfo
@@ -420,6 +427,8 @@ GetPointerFramePenInfoHistory
 GetPointerFrameTimes = NtUserGetPointerFrameTimes
 GetPointerFrameTouchInfo
 GetPointerFrameTouchInfoHistory
+GetPointerFrameTouchpadInfo
+GetPointerFrameTouchpadInfoHistory
 GetPointerInfo
 GetPointerInfoHistory
 GetPointerInputTransform = NtUserGetPointerInputTransform
@@ -427,6 +436,8 @@ GetPointerPenInfo
 GetPointerPenInfoHistory
 GetPointerTouchInfo
 GetPointerTouchInfoHistory
+GetPointerTouchpadInfo
+GetPointerTouchpadInfoHistory
 GetPointerType = NtUserGetPointerType
 GetPriorityClipboardFormat = GetPriorityClipboardFormatStub
 GetProcessDefaultLayout
@@ -445,7 +456,7 @@ GetRawInputDeviceList = NtUserGetRawInputDeviceList
 GetRawPointerDeviceData = NtUserGetRawPointerDeviceData
 GetReasonTitleFromReasonCode
 GetRegisteredRawInputDevices = NtUserGetRegisteredRawInputDevices
-GetScrollBarInfo = NtUserGetScrollBarInfo
+GetScrollBarInfo
 GetScrollInfo
 GetScrollPos
 GetScrollRange
@@ -478,8 +489,8 @@ GetUserObjectInformationW = NtUserGetObjectInformation
 GetUserObjectSecurity
 GetWinStationInfo
 GetWindow
-GetWindowBand = NtUserGetWindowBand
-GetWindowCompositionAttribute = NtUserGetWindowCompositionAttribute
+GetWindowBand
+GetWindowCompositionAttribute
 GetWindowCompositionInfo = NtUserGetWindowCompositionInfo
 GetWindowContextHelpId
 GetWindowDC = NtUserGetWindowDC
@@ -530,8 +541,8 @@ InitDManipHook
 InitializeGenericHidInjection = NtUserInitializeGenericHidInjection
 InitializeInputDeviceInjection = NtUserInitializeInputDeviceInjection
 InitializeLpkHooks
-InitializePointerDeviceInjection = NtUserInitializePointerDeviceInjection
-InitializePointerDeviceInjectionEx = NtUserInitializePointerDeviceInjectionEx
+InitializePointerDeviceInjection
+InitializePointerDeviceInjectionEx
 InitializeTouchInjection = NtUserInitializeTouchInjection
 InjectDeviceInput = NtUserInjectDeviceInput
 InjectGenericHidInput = NtUserInjectGenericHidInput
@@ -570,6 +581,7 @@ IsHungAppWindow
 IsIconic
 IsImmersiveProcess
 IsInDesktopWindowBand
+IsInterceptWindow = NtUserIsInterceptWindow
 IsMenu
 IsMouseInPointerEnabled = NtUserIsMouseInPointerEnabled
 IsOneCoreTransformMode = NtIsOneCoreTransformMode
@@ -586,6 +598,7 @@ IsValidDpiAwarenessContext
 IsWinEventHookInstalled
 IsWindow
 IsWindowArranged
+IsWindowDisplayChangeSuppressed = NtUserIsWindowDisplayChangeSuppressed
 IsWindowEnabled
 IsWindowInDestroy
 IsWindowRedirectedForPrint
@@ -724,6 +737,7 @@ RIMSetExtendedDeviceProperty = NtRIMSetExtendedDeviceProperty
 RIMSetTestModeStatus = NtRIMSetTestModeStatus
 RIMUnregisterForInput = NtRIMUnregisterForInput
 RIMUpdateInputObserverRegistration = NtRIMUpdateInputObserverRegistration
+RaiseLowerShellWindow = NtUserRaiseLowerShellWindow
 RealChildWindowFromPoint = NtUserRealChildWindowFromPoint
 RealGetWindowClass = RealGetWindowClassA
 RealGetWindowClassA
@@ -739,6 +753,7 @@ RegisterClassExW
 RegisterClassW
 RegisterClipboardFormatA = RegisterWindowMessageA
 RegisterClipboardFormatW = RegisterWindowMessageW
+RegisterCloakedNotification = NtUserRegisterCloakedNotification
 RegisterDManipHook = NtUserRegisterDManipHook
 RegisterDeviceNotificationA
 RegisterDeviceNotificationW
@@ -763,6 +778,8 @@ RegisterSystemThread
 RegisterTasklist = NtUserRegisterTasklist
 RegisterTouchHitTestingWindow = NtUserRegisterTouchHitTestingWindow
 RegisterTouchWindow
+RegisterTouchpadCapableThread
+RegisterTouchpadCapableWindow = NtUserRegisterTouchpadCapableWindow
 RegisterUserApiHook
 RegisterWindowMessageA
 RegisterWindowMessageW
@@ -778,6 +795,7 @@ RemoveThreadTSFEventAwareness
 RemoveVisualIdentifier = NtUserRemoveVisualIdentifier
 ReplyMessage
 ReportInertia
+ReportPointerDeviceInertia
 ResolveDesktopForWOW = NtUserResolveDesktopForWOW
 ReuseDDElParam
 ScreenToClient
@@ -812,8 +830,9 @@ SetClipboardData
 SetClipboardViewer = SetClipboardViewerStub
 SetCoalescableTimer = NtUserSetTimer
 SetCoreWindow = NtUserSetCoreWindow
+SetCoveredWindowStates = NtUserSetCoveredWindowStates
 SetCursor = SetCursorStub
-SetCursorContents
+SetCursorContents = VTagOutput
 SetCursorPos = NtUserSetCursorPos
 SetDebugErrorLevel = dummyCtfImmRestoreToolbarWnd
 SetDeskWallpaper
@@ -849,7 +868,7 @@ SetMenuItemBitmaps
 SetMenuItemInfoA
 SetMenuItemInfoW
 SetMessageExtraInfo
-SetMessageQueue
+SetMessageQueue = DdeGetQualityOfService
 SetMirrorRendering = NtUserSetMirrorRendering
 SetParent = SetParentStub
 SetPhysicalCursorPos = NtUserSetCursorPos
@@ -883,6 +902,7 @@ SetThreadDpiAwarenessContext
 SetThreadDpiHostingBehavior
 SetThreadInputBlocked = NtUserSetThreadInputBlocked
 SetTimer
+SetUserObjectCapability = NtUserSetUserObjectCapability
 SetUserObjectInformationA
 SetUserObjectInformationW
 SetUserObjectSecurity
@@ -897,6 +917,7 @@ SetWindowLongA
 SetWindowLongPtrA
 SetWindowLongPtrW
 SetWindowLongW
+SetWindowMessageCapability = NtUserSetWindowMessageCapability
 SetWindowPlacement = NtUserSetWindowPlacement
 SetWindowPos = NtUserSetWindowPos
 SetWindowRgn
@@ -910,12 +931,17 @@ SetWindowsHookExA
 SetWindowsHookExAW
 SetWindowsHookExW
 SetWindowsHookW
+ShellForegroundBoostProcess = NtUserShellForegroundBoostProcess
+ShellHandwritingDelegateInput = NtUserShellHandwritingDelegateInput
+ShellHandwritingHandleDelegatedInput = NtUserShellHandwritingHandleDelegatedInput
+ShellHandwritingUndelegateInput = NtUserShellHandwritingUndelegateInput
 ShellMigrateWindow = NtUserShellMigrateWindow
+ShellRegisterHotKey = NtUserShellRegisterHotKey
 ShellSetWindowPos = NtUserShellSetWindowPos
 ShowCaret = ShowCaretStub
 ShowCursor = NtUserShowCursor
 ShowOwnedPopups
-ShowScrollBar = NtUserShowScrollBar
+ShowScrollBar
 ShowStartGlass
 ShowSystemCursor = NtUserShowSystemCursor
 ShowWindow = NtUserShowWindow
@@ -928,6 +954,7 @@ SkipPointerFrameMessages = NtUserDiscardPointerFrameMessages
 SoftModalMessageBox
 SoundSentry = NtUserSoundSentry
 SubtractRect
+SuppressWindowDisplayChange = NtUserSuppressWindowDisplayChange
 SwapMouseButton
 SwitchDesktop
 SwitchDesktopWithFade
@@ -966,7 +993,7 @@ UnregisterDeviceNotification
 UnregisterHotKey = NtUserUnregisterHotKey
 UnregisterMessagePumpHook
 UnregisterPointerInputTarget
-UnregisterPointerInputTargetEx
+UnregisterPointerInputTargetEx = RegisterPointerInputTargetEx
 UnregisterPowerSettingNotification
 UnregisterSessionPort = NtUserUnregisterSessionPort
 UnregisterSuspendResumeNotification
@@ -985,7 +1012,7 @@ UserLpkPSMTextOut
 UserLpkTabbedTextOut
 UserRealizePalette
 UserRegisterWowHandlers
-VRipOutput
+VRipOutput = VTagOutput
 VTagOutput
 ValidateRect = NtUserValidateRect
 ValidateRgn
@@ -996,7 +1023,7 @@ VkKeyScanW
 WCSToMBEx
 WINNLSEnableIME
 WINNLSGetEnableStatus
-WINNLSGetIMEHotkey
+WINNLSGetIMEHotkey = VTagOutput
 WaitForInputIdle
 WaitForRedirectionStartComplete = NtUserWaitForRedirectionStartComplete
 WaitMessage = NtUserWaitMessage
@@ -1014,6 +1041,8 @@ wsprintfA
 wsprintfW
 wvsprintfA
 wvsprintfW
+NtUserForceMaxTouchpadSensitivityForCurrentProcess @2806 NONAME
+NtUserSetAdditionalPowerThrottlingProcess @2805 NONAME
 NtUserPhysicalToLogicalDpiPointForWindow @2716 NONAME
 NtUserLogicalToPhysicalDpiPointForWindow @2715 NONAME
 GetOemCheckboxSize @2714 NONAME
@@ -1029,8 +1058,10 @@ NtUserIsChildWindowDpiMessageEnabled @2705 NONAME
 NtUserEnableChildWindowDpiMessage @2704 NONAME
 NtUserIsNonClientDpiScalingEnabled @2703 NONAME
 GetDialogBaseUnits96 @2700 NONAME
+NtUserDrainThreadCoreMessagingCompletions2 @2670 NONAME
+NtUserInitThreadCoreMessagingIocp2 @2669 NONAME
 NtUserSetDpiForWindow @2661 NONAME
-SetOCTBannedApiExemption @2659 NONAME
+dummyCtfImmRestoreToolbarWnd @2659 NONAME
 NtUserSetDesktopVisualInputSink @2658 NONAME
 NtUserSetProcessMousewheelRoutingMode @2657 NONAME
 NtUserEnableMouseInPointerForWindow @2656 NONAME
@@ -1064,8 +1095,8 @@ NtUserIsResizeLayoutSynchronizationEnabled @2617 NONAME
 NtUserBeginLayoutUpdate @2616 NONAME
 NtUserEnableResizeLayoutSynchronization @2615 NONAME
 NtUserGetResizeDCompositionSynchronizationObject @2614 NONAME
-DrainThreadCoreMessagingCompletions @2613 NONAME
-InitThreadCoreMessagingIocp @2612 NONAME
+NtUserDrainThreadCoreMessagingCompletions @2613 NONAME
+NtUserInitThreadCoreMessagingIocp @2612 NONAME
 NtUserEnableWindowResizeOptimization @2611 NONAME
 NtUserCompositionInputSinkViewInstanceIdFromPoint @2610 NONAME
 NtUserGetInteractiveCtrlSupportedWaveforms @2609 NONAME
@@ -1115,12 +1146,11 @@ PostUIActions @2554 NONAME
 ToUnicodeExNonDestructive @2553 NONAME
 RegisterKeyboardCorrectionCallout @2552 NONAME
 NtUserCompositionInputSinkLuidFromPoint @2550 NONAME
-NtUserSetPrecisionTouchPadConfiguration @2549 NONAME
-NtUserGetPrecisionTouchPadConfiguration @2548 NONAME
+SetPrecisionTouchPadConfiguration @2549 NONAME
+GetPrecisionTouchPadConfiguration @2548 NONAME
 NtUserRegisterTouchPadCapable @2546 NONAME
 NtUserGetPhysicalDeviceRect @2545 NONAME
 NtUserEnableTouchPad @2544 NONAME
-NtUserRegisterShellPTPListener @2542 NONAME
 NtUserGetQueueStatusReadonly @2541 NONAME
 SetCancelRotationDelayHintWindow @2540 NONAME
 NtUserHidePointerContactVisualization @2539 NONAME
@@ -1159,7 +1189,7 @@ NtUserSlicerControl @2010 NONAME
 NtUserSetChildWindowNoActivate @2005 NONAME
 GetMagnificationInputTransform @2002 NONAME
 SetMagnificationInputTransform @2001 NONAME
-DwmHintDxUpdate @1554 NONAME
+VTagOutput @1554 NONAME
 DwmGetRedirSurfacePresentFlags @1552 NONAME
 DwmSetRedirSurfacePresentFlags @1551 NONAME
 DwmGetRedirSurfaceUpdateId @1550 NONAME

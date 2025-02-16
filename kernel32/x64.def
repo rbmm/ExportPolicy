@@ -23,6 +23,7 @@ AddVectoredContinueHandler = RtlAddVectoredContinueHandler
 AddVectoredExceptionHandler = RtlAddVectoredExceptionHandler
 AdjustCalendarDate
 AllocConsole
+AllocConsoleWithOptions
 AllocateUserPhysicalPages = AllocateUserPhysicalPagesStub
 AllocateUserPhysicalPagesNuma = AllocateUserPhysicalPagesNumaStub
 AppPolicyGetClrCompat
@@ -41,31 +42,33 @@ AreShortNamesEnabled
 AssignProcessToJobObject
 AttachConsole
 BackupRead
+BackupReadEx
 BackupSeek
 BackupWrite
+BackupWriteEx
 BaseCheckAppcompatCache = BaseCheckAppcompatCacheStub
 BaseCheckAppcompatCacheEx = BaseCheckAppcompatCacheExStub
-BaseCheckAppcompatCacheExWorker
-BaseCheckAppcompatCacheWorker
+BaseCheckAppcompatCacheExWorker = _purecall
+BaseCheckAppcompatCacheWorker = _purecall
 BaseCheckElevation
 BaseCleanupAppcompatCacheSupport = BaseCleanupAppcompatCacheSupportStub
 BaseCleanupAppcompatCacheSupportWorker
 BaseDestroyVDMEnvironment
 BaseDllReadWriteIniFile
 BaseDumpAppcompatCache = BaseDumpAppcompatCacheStub
-BaseDumpAppcompatCacheWorker
+BaseDumpAppcompatCacheWorker = _guard_check_icall_nop
 BaseElevationPostProcessing
 BaseFlushAppcompatCache = BaseFlushAppcompatCacheStub
 BaseFlushAppcompatCacheWorker
 BaseFormatObjectAttributes
 BaseFormatTimeOut
-BaseFreeAppCompatDataForProcessWorker
+BaseFreeAppCompatDataForProcessWorker = BaseConvertCharFree
 BaseGenerateAppCompatData
 BaseGetNamedObjectDirectory = BaseGetNamedObjectDirectoryStub
 BaseInitAppcompatCacheSupport = BaseInitAppcompatCacheSupportStub
-BaseInitAppcompatCacheSupportWorker = CloseProfileUserMapping
-BaseIsAppcompatInfrastructureDisabled = BaseIsAppcompatInfrastructureDisabledStub
-BaseIsAppcompatInfrastructureDisabledWorker = BaseIsAppcompatInfrastructureDisabledStub
+BaseInitAppcompatCacheSupportWorker = BaseCleanupAppcompatCacheSupportWorker
+BaseIsAppcompatInfrastructureDisabled = _purecall
+BaseIsAppcompatInfrastructureDisabledWorker = _purecall
 BaseIsDosApplication
 BaseQueryModuleData
 BaseReadAppCompatDataForProcessWorker
@@ -74,7 +77,6 @@ BaseThreadInitThunk
 BaseUpdateAppcompatCache = BaseUpdateAppcompatCacheStub
 BaseUpdateAppcompatCacheWorker
 BaseUpdateVDMEntry
-BaseVerifyUnicodeString
 BaseWriteErrorElevationRequiredEvent
 Basep8BitStringToDynamicUnicodeString
 BasepAllocateActivationContextActivationBlock
@@ -82,6 +84,7 @@ BasepAnsiStringToDynamicUnicodeString
 BasepAppContainerEnvironmentExtension
 BasepAppXExtension
 BasepCheckAppCompat
+BasepCheckPplSupport
 BasepCheckWebBladeHashes
 BasepCheckWinSaferRestrictions
 BasepConstructSxsCreateProcessMessage
@@ -89,17 +92,20 @@ BasepCopyEncryption
 BasepFinishPackageActivation
 BasepFinishPackageActivationForSxS
 BasepFreeActivationContextActivationBlock
+BasepFreeActivationTokenInfo
 BasepFreeAppCompatData
 BasepGetAppCompatData
 BasepGetComputerNameFromNtPath
 BasepGetExeArchType
 BasepGetPackageActivationTokenForFilePath
-BasepGetPackageActivationTokenForSxS
+BasepGetPackageActivationTokenForFilePath2
+BasepGetPackageActivationTokenForSxS = BasepGetPackageActivationTokenForFilePath
+BasepGetPackageActivationTokenForSxS2
 BasepGetPackagedAppInfoForFile
 BasepInitAppCompatData
 BasepIsProcessAllowed
 BasepMapModuleHandle
-BasepNotifyLoadStringResource
+BasepNotifyLoadStringResource = WerpNotifyUseStringResourceWorker
 BasepPostSuccessAppXExtension
 BasepProcessInvalidImage
 BasepQueryAppCompat
@@ -120,13 +126,15 @@ BuildCommDCBW
 BuildIoRingCancelRequest
 BuildIoRingFlushFile
 BuildIoRingReadFile
+BuildIoRingReadFileScatter
 BuildIoRingRegisterBuffers
 BuildIoRingRegisterFileHandles
 BuildIoRingWriteFile
+BuildIoRingWriteFileGather
 CallNamedPipeA
 CallNamedPipeW
 CallbackMayRunLong = CallbackMayRunLongStub
-CancelDeviceWakeupRequest
+CancelDeviceWakeupRequest = RequestDeviceWakeup
 CancelIo = CancelIoStub
 CancelIoEx = CancelIoExStub
 CancelSynchronousIo = CancelSynchronousIoStub
@@ -152,7 +160,7 @@ CloseHandle
 CloseIoRing
 ClosePackageInfo
 ClosePrivateNamespace = ClosePrivateNamespaceStub
-CloseProfileUserMapping
+CloseProfileUserMapping = BaseCleanupAppcompatCacheSupportWorker
 ClosePseudoConsole
 CloseState
 CloseThreadpool = TpReleasePool
@@ -269,8 +277,8 @@ CreateThreadpoolWork = CreateThreadpoolWorkStub
 CreateTimerQueue = CreateTimerQueueStub
 CreateTimerQueueTimer = CreateTimerQueueTimerStub
 CreateToolhelp32Snapshot
-CreateUmsCompletionList = CreateUmsThreadContext
-CreateUmsThreadContext
+CreateUmsCompletionList = QueryUmsThreadInformation
+CreateUmsThreadContext = QueryUmsThreadInformation
 CreateWaitableTimerA
 CreateWaitableTimerExA
 CreateWaitableTimerExW
@@ -297,16 +305,16 @@ DeleteFileA
 DeleteFileTransactedA
 DeleteFileTransactedW
 DeleteFileW
-DeleteProcThreadAttributeList
+DeleteProcThreadAttributeList = HGLOBAL_UserFree64
 DeleteSynchronizationBarrier = DeleteSynchronizationBarrierStub
 DeleteTimerQueue
 DeleteTimerQueueEx = DeleteTimerQueueExStub
 DeleteTimerQueueTimer = DeleteTimerQueueTimerStub
-DeleteUmsCompletionList
-DeleteUmsThreadContext = DeleteUmsCompletionList
+DeleteUmsCompletionList = QueryUmsThreadInformation
+DeleteUmsThreadContext = QueryUmsThreadInformation
 DeleteVolumeMountPointA
 DeleteVolumeMountPointW
-DequeueUmsCompletionListItems
+DequeueUmsCompletionListItems = QueryUmsThreadInformation
 DeviceIoControl = DeviceIoControlImplementation
 DisableThreadLibraryCalls = DisableThreadLibraryCallsStub
 DisableThreadProfiling
@@ -331,7 +339,7 @@ EndUpdateResourceA
 EndUpdateResourceW
 EnterCriticalSection = RtlEnterCriticalSection
 EnterSynchronizationBarrier = EnterSynchronizationBarrierStub
-EnterUmsSchedulingMode
+EnterUmsSchedulingMode = QueryUmsThreadInformation
 EnumCalendarInfoA
 EnumCalendarInfoExA
 EnumCalendarInfoExEx = EnumCalendarInfoExExStub
@@ -375,7 +383,7 @@ EnumerateLocalComputerNamesA
 EnumerateLocalComputerNamesW
 EraseTape
 EscapeCommFunction
-ExecuteUmsThread = UmsThreadYield
+ExecuteUmsThread
 ExitProcess = ExitProcessImplementation
 ExitThread = RtlExitUserThread
 ExitVDM
@@ -385,7 +393,7 @@ ExpungeConsoleCommandHistoryA
 ExpungeConsoleCommandHistoryW
 FatalAppExitA = FatalAppExitAStub
 FatalAppExitW = FatalAppExitWStub
-FatalExit
+FatalExit = ExitProcessImplementation
 FileTimeToDosDateTime
 FileTimeToLocalFileTime
 FileTimeToSystemTime
@@ -438,12 +446,13 @@ FindVolumeClose
 FindVolumeMountPointClose
 FlsAlloc = FlsAllocStub
 FlsFree = FlsFreeStub
-FlsGetValue = FlsGetValueStub
+FlsGetValue
+FlsGetValue2 = RtlFlsGetValue2
 FlsSetValue = FlsSetValueStub
 FlushConsoleInputBuffer
 FlushFileBuffers
 FlushInstructionCache = FlushInstructionCacheStub
-FlushProcessWriteBuffers = NtFlushProcessWriteBuffers
+FlushProcessWriteBuffers = ZwFlushProcessWriteBuffers
 FlushViewOfFile = FlushViewOfFileStub
 FoldStringA
 FoldStringW = FoldStringWStub
@@ -569,7 +578,7 @@ GetCurrentProcessorNumberEx = RtlGetCurrentProcessorNumberEx
 GetCurrentThread
 GetCurrentThreadId
 GetCurrentThreadStackLimits
-GetCurrentUmsThread
+GetCurrentUmsThread = QueryUmsThreadInformation
 GetDateFormatA = GetDateFormatAStub
 GetDateFormatAWorker
 GetDateFormatEx = GetDateFormatExStub
@@ -613,6 +622,7 @@ GetFileAttributesW
 GetFileBandwidthReservation
 GetFileInformationByHandle
 GetFileInformationByHandleEx = GetFileInformationByHandleExStub
+GetFileInformationByName = GetFileInformationByNameStub
 GetFileMUIInfo = GetFileMUIInfoStub
 GetFileMUIPath = GetFileMUIPathStub
 GetFileSize
@@ -637,7 +647,7 @@ GetHandleInformation
 GetIoRingInfo
 GetLargePageMinimum = GetLargePageMinimumStub
 GetLargestConsoleWindowSize
-GetLastError = GetLastErrorStub
+GetLastError
 GetLocalTime = GetLocalTimeStub
 GetLocaleInfoA = GetLocaleInfoAStub
 GetLocaleInfoEx = GetLocaleInfoExStub
@@ -675,7 +685,7 @@ GetNamedPipeInfo
 GetNamedPipeServerProcessId
 GetNamedPipeServerSessionId
 GetNativeSystemInfo = GetNativeSystemInfoStub
-GetNextUmsListItem
+GetNextUmsListItem = QueryUmsThreadInformation
 GetNextVDMCommand
 GetNumaAvailableMemoryNode
 GetNumaAvailableMemoryNodeEx
@@ -724,7 +734,7 @@ GetProcessDefaultCpuSetMasks
 GetProcessDefaultCpuSets
 GetProcessGroupAffinity = GetProcessGroupAffinityStub
 GetProcessHandleCount = GetProcessHandleCountStub
-GetProcessHeap = GetProcessHeapStub
+GetProcessHeap
 GetProcessHeaps = GetProcessHeapsStub
 GetProcessId = GetProcessIdStub
 GetProcessIdOfThread = GetProcessIdOfThreadStub
@@ -757,8 +767,8 @@ GetStartupInfoW = GetStartupInfoWStub
 GetStateFolder
 GetStdHandle = GetStdHandleStub
 GetStringScripts = GetStringScriptsStub
-GetStringTypeA = GetStringTypeExA
-GetStringTypeExA
+GetStringTypeA = GetStringTypeAStub
+GetStringTypeExA = GetStringTypeAStub
 GetStringTypeExW = GetStringTypeExWStub
 GetStringTypeW = GetStringTypeWStub
 GetSystemAppDataKey
@@ -812,8 +822,8 @@ GetThreadSelectedCpuSets
 GetThreadSelectorEntry
 GetThreadTimes = GetThreadTimesStub
 GetThreadUILanguage = GetThreadUILanguageStub
-GetTickCount = GetTickCountKernel32
-GetTickCount64 = GetTickCount64Kernel32
+GetTickCount
+GetTickCount64
 GetTimeFormatA = GetTimeFormatAStub
 GetTimeFormatAWorker
 GetTimeFormatEx = GetTimeFormatExStub
@@ -822,8 +832,8 @@ GetTimeFormatWWorker
 GetTimeZoneInformation = GetTimeZoneInformationStub
 GetTimeZoneInformationForYear = GetTimeZoneInformationForYearStub
 GetUILanguageInfo = GetUILanguageInfoStub
-GetUmsCompletionListEvent
-GetUmsSystemThreadInformation
+GetUmsCompletionListEvent = QueryUmsThreadInformation
+GetUmsSystemThreadInformation = QueryUmsThreadInformation
 GetUserDefaultGeoName
 GetUserDefaultLCID = GetUserDefaultLCIDStub
 GetUserDefaultLangID = GetUserDefaultLangIDStub
@@ -853,7 +863,7 @@ GlobalAddAtomExA
 GlobalAddAtomExW
 GlobalAddAtomW
 GlobalAlloc = GlobalAllocStub
-GlobalCompact
+GlobalCompact = LocalCompact
 GlobalDeleteAtom
 GlobalFindAtomA
 GlobalFindAtomW
@@ -898,7 +908,7 @@ InitOnceBeginInitialize
 InitOnceComplete
 InitOnceExecuteOnce
 InitOnceInitialize = RtlRunOnceInitialize
-InitializeConditionVariable = RtlInitializeConditionVariable
+InitializeConditionVariable = RtlRunOnceInitialize
 InitializeContext = InitializeContextStub
 InitializeContext2 = InitializeContext2Stub
 InitializeCriticalSection = RtlInitializeCriticalSection
@@ -906,8 +916,8 @@ InitializeCriticalSectionAndSpinCount
 InitializeCriticalSectionEx
 InitializeEnclave
 InitializeProcThreadAttributeList
-InitializeSListHead
-InitializeSRWLock = RtlInitializeSRWLock
+InitializeSListHead = RtlInitializeSListHead
+InitializeSRWLock = RtlRunOnceInitialize
 InitializeSynchronizationBarrier = InitializeSynchronizationBarrierStub
 InstallELAMCertificateInfo
 InterlockedFlushSList = RtlInterlockedFlushSList
@@ -985,13 +995,13 @@ LZClose
 LZCloseFile
 LZCopy
 LZCreateFileW
-LZDone = BaseDumpAppcompatCacheWorker
+LZDone = _guard_check_icall_nop
 LZInit
 LZOpenFileA
 LZOpenFileW
 LZRead
 LZSeek
-LZStart = CloseProfileUserMapping
+LZStart = BaseCleanupAppcompatCacheSupportWorker
 LeaveCriticalSection = RtlLeaveCriticalSection
 LeaveCriticalSectionWhenCallbackReturns = TpCallbackLeaveCriticalSectionOnCompletion
 LoadAppInitDlls = LoadAppInitDllsImplementation
@@ -1014,7 +1024,7 @@ LocalFree = LocalFreeStub
 LocalHandle
 LocalLock = LocalLockStub
 LocalReAlloc = LocalReAllocStub
-LocalShrink
+LocalShrink = LocalCompact
 LocalSize = LocalSizeStub
 LocalSystemTimeToLocalFileTime
 LocalUnlock = LocalUnlockStub
@@ -1023,6 +1033,7 @@ LocateXStateFeature = LocateXStateFeatureStub
 LockFile
 LockFileEx
 LockResource = LockResourceStub
+LogUnexpectedCodepath = RtlLogUnexpectedCodepath
 MapUserPhysicalPages = MapUserPhysicalPagesStub
 MapUserPhysicalPagesScatter
 MapViewOfFile = MapViewOfFileStub
@@ -1072,7 +1083,7 @@ OpenPrivateNamespaceA
 OpenPrivateNamespaceW = OpenPrivateNamespaceWStub
 OpenProcess = OpenProcessStub
 OpenProcessToken
-OpenProfileUserMapping = CloseProfileUserMapping
+OpenProfileUserMapping = BaseCleanupAppcompatCacheSupportWorker
 OpenSemaphoreA
 OpenSemaphoreW
 OpenState
@@ -1083,7 +1094,7 @@ OpenWaitableTimerA
 OpenWaitableTimerW
 OutputDebugStringA = OutputDebugStringAStub
 OutputDebugStringW = OutputDebugStringWStub
-PackageFamilyNameFromFullName
+PackageFamilyNameFromFullName = PackageFamilyNameFromFullName
 PackageFamilyNameFromId
 PackageFullNameFromId
 PackageIdFromFullName
@@ -1226,7 +1237,7 @@ RegUnLoadKeyW = RegUnLoadKeyWStub
 RegisterApplicationRecoveryCallback
 RegisterApplicationRestart = RegisterApplicationRestartStub
 RegisterBadMemoryNotification = RegisterBadMemoryNotificationStub
-RegisterConsoleIME
+RegisterConsoleIME = UnregisterConsoleIME
 RegisterConsoleOS2
 RegisterConsoleVDM
 RegisterWaitForInputIdle
@@ -1240,6 +1251,7 @@ ReleaseActCtxWorker
 ReleaseMutex
 ReleaseMutexWhenCallbackReturns = TpCallbackReleaseMutexOnCompletion
 ReleasePackageVirtualizationContext
+ReleasePseudoConsole
 ReleaseSRWLockExclusive = RtlReleaseSRWLockExclusive
 ReleaseSRWLockShared = RtlReleaseSRWLockShared
 ReleaseSemaphore
@@ -1258,8 +1270,8 @@ ReplaceFile = ReplaceFileWStub
 ReplaceFileA
 ReplaceFileW = ReplaceFileWStub
 ReplacePartitionUnit
-RequestDeviceWakeup = CancelDeviceWakeupRequest
-RequestWakeupLatency
+RequestDeviceWakeup
+RequestWakeupLatency = RequestDeviceWakeup
 ResetEvent
 ResetWriteWatch = ResetWriteWatchStub
 ResizePseudoConsole
@@ -1321,7 +1333,7 @@ SetConsoleInputExeNameA
 SetConsoleInputExeNameW
 SetConsoleKeyShortcuts
 SetConsoleLocalEUDC
-SetConsoleMaximumWindowSize
+SetConsoleMaximumWindowSize = BaseCleanupAppcompatCacheSupportWorker
 SetConsoleMenuClose
 SetConsoleMode
 SetConsoleNlsMode
@@ -1387,7 +1399,7 @@ SetLocalTime = SetLocalTimeStub
 SetLocaleInfoA
 SetLocaleInfoW = SetLocaleInfoWStub
 SetMailslotInfo
-SetMessageWaitingIndicator
+SetMessageWaitingIndicator = RequestDeviceWakeup
 SetNamedPipeAttribute
 SetNamedPipeHandleState = SetNamedPipeHandleStateStub
 SetPriorityClass = SetPriorityClassStub
@@ -1443,7 +1455,7 @@ SetThreadpoolWait = TpSetWait
 SetThreadpoolWaitEx = TpSetWaitEx
 SetTimeZoneInformation = SetTimeZoneInformationStub
 SetTimerQueueTimer
-SetUmsThreadInformation
+SetUmsThreadInformation = QueryUmsThreadInformation
 SetUnhandledExceptionFilter = SetUnhandledExceptionFilterStub
 SetUserGeoID
 SetUserGeoName
@@ -1496,7 +1508,8 @@ Thread32First
 Thread32Next
 TlsAlloc = TlsAllocStub
 TlsFree = TlsFreeStub
-TlsGetValue = TlsGetValueStub
+TlsGetValue
+TlsGetValue2
 TlsSetValue = TlsSetValueStub
 Toolhelp32ReadProcessMemory
 TransactNamedPipe = TransactNamedPipeStub
@@ -1508,8 +1521,8 @@ TrySubmitThreadpoolCallback = TrySubmitThreadpoolCallbackStub
 TzSpecificLocalTimeToSystemTime = TzSpecificLocalTimeToSystemTimeStub
 TzSpecificLocalTimeToSystemTimeEx
 UTRegister
-UTUnRegister
-UmsThreadYield
+UTUnRegister = _guard_check_icall_nop
+UmsThreadYield = ExecuteUmsThread
 UnhandledExceptionFilter = UnhandledExceptionFilterStub
 UnlockFile
 UnlockFileEx
@@ -1531,7 +1544,7 @@ VDMOperationStarted
 VerLanguageNameA = VerLanguageNameAStub
 VerLanguageNameW = VerLanguageNameWStub
 VerSetConditionMask
-VerifyConsoleIoHandle
+VerifyConsoleIoHandle = _purecall
 VerifyScripts = VerifyScriptsStub
 VerifyVersionInfoA
 VerifyVersionInfoW
@@ -1574,8 +1587,8 @@ WerRegisterMemoryBlock = WerRegisterMemoryBlockStub
 WerRegisterMemoryBlockWorker
 WerRegisterRuntimeExceptionModule = WerRegisterRuntimeExceptionModuleStub
 WerRegisterRuntimeExceptionModuleWorker
-WerSetFlags
-WerSetFlagsWorker = WerSetFlags
+WerSetFlags = WerSetFlagsWorker
+WerSetFlagsWorker
 WerUnregisterAdditionalProcess = WerUnregisterAdditionalProcessStub
 WerUnregisterAppLocalDump = WerUnregisterAppLocalDumpStub
 WerUnregisterCustomMetadata = WerUnregisterCustomMetadataStub
@@ -1589,7 +1602,7 @@ WerUnregisterRuntimeExceptionModuleWorker
 WerpGetDebugger
 WerpInitiateRemoteRecovery
 WerpLaunchAeDebug
-WerpNotifyLoadStringResourceWorker
+WerpNotifyLoadStringResourceWorker = WerpNotifyUseStringResourceWorker
 WerpNotifyUseStringResourceWorker
 WideCharToMultiByte = WideCharToMultiByteStub
 WinExec
@@ -1630,7 +1643,7 @@ ZombifyActCtx = ZombifyActCtxStub
 ZombifyActCtxWorker
 __C_specific_handler
 __chkstk
-__misaligned_access
+__misaligned_access = WinSqmAddToStreamEx
 _hread = _lread
 _hwrite = _lwrite
 _lclose
@@ -1643,8 +1656,8 @@ _lwrite
 lstrcat = lstrcatA
 lstrcatA
 lstrcatW
-lstrcmp = lstrcmpStub
-lstrcmpA = lstrcmpStub
+lstrcmp = lstrcmpAStub
+lstrcmpA = lstrcmpAStub
 lstrcmpW = uaw_lstrcmpW
 lstrcmpi = lstrcmpiAStub
 lstrcmpiA = lstrcmpiAStub
