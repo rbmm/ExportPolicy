@@ -7,7 +7,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>16.0</VCProjectVersion>
+    <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{e0ce93ff-7766-39f0-4662-d1cdb543e492}</ProjectGuid>
     <RootNamespace>MakeLib</RootNamespace>
@@ -23,17 +23,9 @@
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-  <ImportGroup Label="ExtensionSettings">
-  </ImportGroup>
-  <ImportGroup Label="Shared">
-  </ImportGroup>
   <ImportGroup Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <PropertyGroup Label="UserMacros" />
-  <PropertyGroup>
-    <LinkIncremental>false</LinkIncremental>
-  </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
@@ -45,7 +37,7 @@
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
       <EntryPointSymbol>ep</EntryPointSymbol>
       <AdditionalDependencies>updb.lib;bcrypt.lib;cabinet.lib;ucrtbase.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -58,8 +50,6 @@
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="zip.h" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="lib.cpp" />
     <ClCompile Include="libutil.cpp" />
     <ClCompile Include="print.cpp" />
@@ -68,18 +58,19 @@
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="zip.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <CustomBuild Include="x64.asm">
       <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ml64 /c /Cp %(Identity)</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).obj</Outputs>
+      <Command>ml64 /c /Cp %(Identity)</Command>
+      <Outputs>%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(PlatformTarget)'!='x64'">true</ExcludedFromBuild>
     </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
+    <CustomBuild Condition="exists('$(TargetPath)')" Include="t.vcxproj">
+      <FileType>Document</FileType>
+      <Command>"$(TargetPath)" *vcx.asm*%(Identity)*tozasm*nowait</Command>
+      <Outputs>vcx.asm</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"..\NewScProj.exe" *vcx.asm*%(Identity)*tozasm*nowait</Command>
+    </CustomBuild>
     <ResourceCompile Include="MakeLib.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-  <ImportGroup Label="ExtensionTargets">
-  </ImportGroup>
 </Project>

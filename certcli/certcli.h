@@ -1,7 +1,7 @@
 #pragma once
 
 DECLSPEC_IMPORT
-long AddOrRemoveOCSPISAPIExtension(int,int *);
+long AddOrRemoveOCSPISAPIExtension(unsigned short const *,bool &);
 
 DECLSPEC_IMPORT
 long CAGetConfigStringFromUIPicker(struct HWND__ *,unsigned short * *);
@@ -49,28 +49,28 @@ DECLSPEC_IMPORT
 long DecodeFileW(unsigned short const *,unsigned char * *,unsigned long *,unsigned long);
 
 DECLSPEC_IMPORT
-long EnableASPInIIS(int *);
+long EnableASPInIIS(unsigned short const *,bool &);
 
 DECLSPEC_IMPORT
-long EnableISAPIExtension(unsigned short const *,int *);
+long EnableISAPIExtension(unsigned short const *,bool &);
 
 DECLSPEC_IMPORT
 long EncodeToFileW(unsigned short const *,unsigned char const *,unsigned long,unsigned long);
 
 DECLSPEC_IMPORT
-long IsASPEnabledInIIS(bool &);
+long IsASPEnabledInIIS(unsigned short const *,bool &);
 
 DECLSPEC_IMPORT
-long IsASPEnabledInIIS_New(bool &);
+long IsASPEnabledInIIS_New(unsigned short const *,bool &);
 
 DECLSPEC_IMPORT
 long IsISAPIExtensionEnabled(unsigned short const *,bool &);
 
 DECLSPEC_IMPORT
-long RemoveISAPIExtension(unsigned short const *);
+long RemoveISAPIExtension(unsigned short const *,bool &);
 
 DECLSPEC_IMPORT
-long RemoveVDir(unsigned short const *,int *);
+long RemoveVDir(unsigned short const *,bool &);
 
 DECLSPEC_IMPORT
 long SplitConfigString(unsigned short const *,unsigned short * *,unsigned short * *);
@@ -82,7 +82,7 @@ DECLSPEC_IMPORT
 long WszToMultiByteIntegerBuf(unsigned long,unsigned short const *,unsigned long *,unsigned char *);
 
 DECLSPEC_IMPORT
-long myAddShare(unsigned short const *,unsigned short const *,unsigned short const *,int,int *);
+long myAddShare(unsigned short const *,bool &);
 
 DECLSPEC_IMPORT
 long myCAPropGetDisplayName(long,unsigned short const * *);
@@ -106,8 +106,7 @@ DECLSPEC_IMPORT
 long myCryptStringToBinaryA(char const *,unsigned long,unsigned long,unsigned char * *,unsigned long *,unsigned long *,unsigned long *);
 
 DECLSPEC_IMPORT
-//?myDoesDSExist@209@@YAJH@Z; !! manual fix !!
-long __cdecl myDoesDSExist_209(int);
+?myDoesDSExist@209@@YAJH@Z;
 
 DECLSPEC_IMPORT
 long myEnablePrivilege(long,int);
@@ -164,7 +163,7 @@ DECLSPEC_IMPORT
 void myLogExceptionInit(void (*)(long,struct _EXCEPTION_POINTERS const *,char const *,unsigned long,unsigned long));
 
 DECLSPEC_IMPORT
-long myModifyVirtualRootsAndFileShares(unsigned long,enum ENUM_CATYPES,unsigned long,unsigned long *,unsigned long *);
+long myModifyVirtualRootsAndFileShares(unsigned short const *,bool &);
 
 DECLSPEC_IMPORT
 long myOIDHashOIDToString(unsigned short const *,unsigned short * *);

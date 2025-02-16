@@ -1,6 +1,6 @@
 EXPORTS
 
-AddOrRemoveOCSPISAPIExtension = IsISAPIExtensionEnabled
+AddOrRemoveOCSPISAPIExtension
 CAAccessCheck
 CAAccessCheckEx
 CAAddCACertificateType
@@ -113,16 +113,16 @@ DecodeFileW
 DllCanUnloadNow PRIVATE
 DllGetClassObject PRIVATE
 DllMain
-DllRegisterServer PRIVATE
-DllUnregisterServer = DllRegisterServer PRIVATE
+DllRegisterServer = DllUnregisterServer PRIVATE
+DllUnregisterServer PRIVATE
 EnableASPInIIS
-EnableISAPIExtension = IsISAPIExtensionEnabled
+EnableISAPIExtension = AddOrRemoveOCSPISAPIExtension
 EncodeToFileW
 IsASPEnabledInIIS = EnableASPInIIS
 IsASPEnabledInIIS_New = EnableASPInIIS
-IsISAPIExtensionEnabled
+IsISAPIExtensionEnabled = AddOrRemoveOCSPISAPIExtension
 RemoveISAPIExtension = EnableASPInIIS
-RemoveVDir = IsISAPIExtensionEnabled
+RemoveVDir = AddOrRemoveOCSPISAPIExtension
 SplitConfigString
 WszToMultiByteInteger
 WszToMultiByteIntegerBuf

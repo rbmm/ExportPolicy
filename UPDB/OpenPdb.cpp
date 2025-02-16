@@ -11,7 +11,7 @@ NTSTATUS OpenPdb(PHANDLE phFile, PCWSTR FilePath)
 	return NtOpenFile(phFile, FILE_GENERIC_READ, &oa, &iosb, FILE_SHARE_VALID_FLAGS, FILE_SYNCHRONOUS_IO_NONALERT);
 }
 
-NTSTATUS OpenPdb(PHANDLE phFile, PCSTR PdbFileName, PCWSTR NtSymbolPath, PGUID Signature, ULONG Age)
+NTSTATUS OpenPdb(PHANDLE phFile, PCSTR PdbFileName, PCWSTR NtSymbolPath, const GUID* Signature, ULONG Age)
 {
 	PWSTR FilePath = 0;
 	ULONG BytesInMultiByteString, cb = 0, rcb, BytesInUnicodeString, SymInUnicodeString;
@@ -87,7 +87,7 @@ NTSTATUS SymStore::GetSymbols(PCWSTR PdbPath)
 	return 0 > status ? status : GetSymbols(hFile, 0, 0);
 }
 
-NTSTATUS SymStore::GetSymbols(HANDLE hFile, PGUID signature, DWORD age)
+NTSTATUS SymStore::GetSymbols(HANDLE hFile, const GUID* signature, DWORD age)
 {
 	HANDLE hSection;
 
@@ -119,18 +119,18 @@ NTSTATUS SymStore::GetSymbols(HMODULE hmod, PCWSTR NtSymbolPath)
 {
 	DWORD cb;
 	BOOLEAN bMappedAsImage = !LDR_IS_DATAFILE(hmod);
-	PIMAGE_DEBUG_DIRECTORY pidd = (PIMAGE_DEBUG_DIRECTORY)RtlImageDirectoryEntryToData(hmod, bMappedAsImage, IMAGE_DIRECTORY_ENTRY_DEBUG, &cb);
+	PVOID Base = PAGE_ALIGN(hmod);
+	PIMAGE_DEBUG_DIRECTORY pidd = (PIMAGE_DEBUG_DIRECTORY)RtlImageDirectoryEntryToData(Base, bMappedAsImage, IMAGE_DIRECTORY_ENTRY_DEBUG, &cb);
 
 	if (!pidd || !cb || (cb % sizeof(IMAGE_DEBUG_DIRECTORY))) return STATUS_NOT_FOUND;
 
 	do 
 	{
-
 		if (pidd->Type == IMAGE_DEBUG_TYPE_CODEVIEW && pidd->SizeOfData > sizeof(CV_INFO_PDB))
 		{
 			if (DWORD PointerToRawData = bMappedAsImage ? pidd->AddressOfRawData : pidd->PointerToRawData)
 			{
-				CV_INFO_PDB* lpcvh = (CV_INFO_PDB*)RtlOffsetToPointer(PAGE_ALIGN(hmod), PointerToRawData);
+				CV_INFO_PDB* lpcvh = (CV_INFO_PDB*)RtlOffsetToPointer(Base, PointerToRawData);
 
 				if (lpcvh->CvSignature == 'SDSR')
 				{

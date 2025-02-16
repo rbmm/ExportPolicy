@@ -98,7 +98,7 @@ PCSTR CModule::s_GetNameFromVa(PVOID pv, PULONG pdisp, PCWSTR* ppname)
 	return 0;
 }
 
-PVOID CModule::GetVaFromName(PCSTR Name)
+ULONG CModule::GetRVAFromName(PCSTR Name)
 {
 	if (ULONG n = _nSymbols)
 	{
@@ -108,9 +108,19 @@ PVOID CModule::GetVaFromName(PCSTR Name)
 		{
 			if (!strcmp(Name, RtlOffsetToPointer(this, Symbols->ofs)))
 			{
-				return (PBYTE)_ImageBase + Symbols->rva;
+				return Symbols->rva;
 			}
 		} while (Symbols++, --n);
+	}
+
+	return 0;
+}
+
+PVOID CModule::GetVaFromName(PCSTR Name)
+{
+	if (ULONG rva = GetRVAFromName( Name))
+	{
+		return (PBYTE)_ImageBase + rva;
 	}
 
 	return 0;
@@ -279,7 +289,7 @@ __1:
 			ReleaseSRWLockExclusive(&_SRWLock);
 			*ppmod = pModule;
 
-			return STATUS_SUCCESS;
+			return status;
 		}
 
 		return STATUS_UNSUCCESSFUL;

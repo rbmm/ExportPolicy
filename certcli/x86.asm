@@ -9,7 +9,7 @@ ENDM
 
 .code
 
-API ?IsISAPIExtensionEnabled@@YGJPBGAA_N@Z
+API ?AddOrRemoveOCSPISAPIExtension@@YGJHPAH@Z
 API _CAAccessCheck@8
 API _CAAccessCheckEx@12
 API _CAAddCACertificateType@8
@@ -122,16 +122,16 @@ API ?DecodeFileW@@YGJPBGPAPAEPAKK@Z
 API _DllCanUnloadNow@0
 API _DllGetClassObject@12
 API _DllMain@12
-API _DllRegisterServer@0
-API _DllRegisterServer@0
+API _DllUnregisterServer@0
+API _DllUnregisterServer@0
 API ?EnableASPInIIS@@YGJPAH@Z
-API ?IsISAPIExtensionEnabled@@YGJPBGAA_N@Z
+API ?AddOrRemoveOCSPISAPIExtension@@YGJHPAH@Z
 API ?EncodeToFileW@@YGJPBGPBEKK@Z
 API ?EnableASPInIIS@@YGJPAH@Z
 API ?EnableASPInIIS@@YGJPAH@Z
-API ?IsISAPIExtensionEnabled@@YGJPBGAA_N@Z
+API ?AddOrRemoveOCSPISAPIExtension@@YGJHPAH@Z
 API ?EnableASPInIIS@@YGJPAH@Z
-API ?IsISAPIExtensionEnabled@@YGJPBGAA_N@Z
+API ?AddOrRemoveOCSPISAPIExtension@@YGJHPAH@Z
 API ?SplitConfigString@@YGJPBGPAPAG1@Z
 API ?WszToMultiByteInteger@@YGJKPBGPAKPAPAE@Z
 API ?WszToMultiByteIntegerBuf@@YGJKPBGPAKPAE@Z

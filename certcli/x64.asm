@@ -5,7 +5,7 @@ ENDM
 
 .code
 
-API ?AddOrRemoveOCSPISAPIExtension@@YAJHPEAH@Z
+API ?IsISAPIExtensionEnabled@@YAJPEBGAEA_N@Z
 API CAAccessCheck
 API CAAccessCheckEx
 API CAAddCACertificateType
@@ -118,21 +118,21 @@ API ?DecodeFileW@@YAJPEBGPEAPEAEPEAKK@Z
 API DllCanUnloadNow
 API DllGetClassObject
 API DllMain
-API DllRegisterServer
-API DllRegisterServer
-API ?EnableASPInIIS@@YAJPEAH@Z
-API ?RemoveVDir@@YAJPEBGPEAH@Z
-API ?EncodeToFileW@@YAJPEBGPEBEKK@Z
-API ?IsASPEnabledInIIS@@YAJAEA_N@Z
-API ?IsASPEnabledInIIS@@YAJAEA_N@Z
+API DllUnregisterServer
+API DllUnregisterServer
 API ?IsISAPIExtensionEnabled@@YAJPEBGAEA_N@Z
-API ?RemoveISAPIExtension@@YAJPEBG@Z
-API ?RemoveVDir@@YAJPEBGPEAH@Z
+API ?IsISAPIExtensionEnabled@@YAJPEBGAEA_N@Z
+API ?EncodeToFileW@@YAJPEBGPEBEKK@Z
+API ?IsISAPIExtensionEnabled@@YAJPEBGAEA_N@Z
+API ?IsISAPIExtensionEnabled@@YAJPEBGAEA_N@Z
+API ?IsISAPIExtensionEnabled@@YAJPEBGAEA_N@Z
+API ?IsISAPIExtensionEnabled@@YAJPEBGAEA_N@Z
+API ?IsISAPIExtensionEnabled@@YAJPEBGAEA_N@Z
 API ?SplitConfigString@@YAJPEBGPEAPEAG1@Z
 API ?WszToMultiByteInteger@@YAJKPEBGPEAKPEAPEAE@Z
 API ?WszToMultiByteIntegerBuf@@YAJKPEBGPEAKPEAE@Z
 API caTranslateFileTimePeriodToPeriodUnits
-API ?myAddShare@@YAJPEBG00HPEAH@Z
+API ?IsISAPIExtensionEnabled@@YAJPEBGAEA_N@Z
 API ?myCAPropGetDisplayName@@YAJJPEAPEBG@Z
 API ?myCAPropInfoLookup@@YAJPEBU_CAPROP@@JJPEAPEBU1@@Z
 API ?myCAPropInfoUnmarshal@@YAJPEBU_CATRANSPROP@@JKPEAPEAU_CAPROP@@@Z
@@ -159,7 +159,7 @@ API ?myHResultToString_old@@YAPEBGPEAGJ@Z
 API ?myIsDelayLoadHResult@@YAHJ@Z
 API ?myJetHResult@@YAJJ@Z
 API ?myLogExceptionInit@@YAXP6AXJPEBU_EXCEPTION_POINTERS@@PEBDKK@Z@Z
-API ?myModifyVirtualRootsAndFileShares@@YAJKW4ENUM_CATYPES@@KPEAK1@Z
+API ?IsISAPIExtensionEnabled@@YAJPEBGAEA_N@Z
 API myNetLogonUser
 API ?myOIDHashOIDToString@@YAJPEBGPEAPEAG@Z
 API ?myRevertSanitizeName@@YAJPEBGPEAPEAG@Z

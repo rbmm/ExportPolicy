@@ -1,4 +1,4 @@
-.code
+_TEXT segment 'CODE'
 
 ?strnlen@NT@@YA_K_KPEBD@Z proc
 	xor eax,eax
@@ -16,4 +16,5 @@
 	ret
 ?strnlen@NT@@YA_K_KPEBD@Z endp
 
+_TEXT ENDS
 END

@@ -33,6 +33,7 @@ public:
 	NTSTATUS GetStatus() { return _status; }
 	PCUNICODE_STRING Name() { return &_Name; }
 
+	ULONG GetRVAFromName(_In_ PCSTR Name);
 	PVOID GetVaFromName(_In_ PCSTR Name);
 	PCSTR GetNameFromVa(_In_ PVOID pv, _Out_ PULONG pdisp);
 	PCSTR GetNameFromRva(_In_ ULONG rva, _Out_ PULONG pdisp);
@@ -63,6 +64,5 @@ public:
 };
 
 void WINAPI DumpStack(_In_ ULONG FramesToSkip, _In_ PCSTR txt = 0, ULONG (__cdecl * print) ( PCSTR Format, ...) = DbgPrint);
-
 PSTR WINAPI _unDName(_Out_ PSTR buffer, _In_ PCSTR mangled, _In_ DWORD cb, _In_ DWORD flags);
 PCSTR WINAPI unDNameEx(_Out_ PSTR buffer, _In_ PCSTR mangled, _In_ DWORD cb, _In_ DWORD flags);

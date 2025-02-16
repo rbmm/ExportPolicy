@@ -35,7 +35,7 @@ PCSTR __cdecl GetParameter(long /*i*/)
 	return const_cast<PSTR>("");
 }
 
-PSTR WINAPI _unDName(PSTR buffer, PCSTR mangled, DWORD cb, DWORD flags)
+PSTR _unDName(PSTR buffer, PCSTR mangled, DWORD cb, DWORD flags)
 {
 	PSTR psz = 0;
 	if (PUCHAR pbData = new UCHAR[32*PAGE_SIZE])
@@ -49,7 +49,7 @@ PSTR WINAPI _unDName(PSTR buffer, PCSTR mangled, DWORD cb, DWORD flags)
 	return psz;
 }
 
-PCSTR WINAPI unDNameEx(_Out_ PSTR buffer, _In_ PCSTR mangled, _In_ DWORD cb, _In_ DWORD flags)
+PCSTR unDNameEx(_Out_ PSTR buffer, _In_ PCSTR mangled, _In_ DWORD cb, _In_ DWORD flags)
 {
 	if (*mangled != '?')
 	{

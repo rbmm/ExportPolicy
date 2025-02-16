@@ -21,7 +21,7 @@
 public ?vcxproj_begin@NT@@3QBDB, ?vcxproj_end@NT@@3QBDB
 
 ?vcxproj_begin@NT@@3QBDB:
-INCLUDE <t.vcxproj.asm>
+INCLUDE <vcx.asm>
 ?vcxproj_end@NT@@3QBDB:
 
 end

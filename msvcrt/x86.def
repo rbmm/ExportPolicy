@@ -82,31 +82,31 @@ _CItanh
 _CallMemberFunction0
 _CallMemberFunction1
 _CallMemberFunction2
-_CrtCheckMemory = length
-_CrtDbgBreak = _CrtDoForAllClientObjects
-_CrtDbgReport = _crtBreakAlloc
-_CrtDbgReportV = _crtBreakAlloc
-_CrtDbgReportW = _crtBreakAlloc
-_CrtDbgReportWV = _crtBreakAlloc
-_CrtDoForAllClientObjects
-_CrtDumpMemoryLeaks = _crtBreakAlloc
-_CrtIsMemoryBlock = _crtBreakAlloc
-_CrtIsValidHeapPointer = length
-_CrtIsValidPointer = _ValidateRead
-_CrtMemCheckpoint = _CrtDoForAllClientObjects
-_CrtMemDifference = _crtBreakAlloc
-_CrtMemDumpAllObjectsSince = _CrtDoForAllClientObjects
-_CrtMemDumpStatistics = _CrtDoForAllClientObjects
-_CrtReportBlockType = _crtBreakAlloc
-_CrtSetAllocHook = _crtBreakAlloc
-_CrtSetBreakAlloc = _crtBreakAlloc
-_CrtSetDbgBlockType = _CrtDoForAllClientObjects
-_CrtSetDbgFlag = _crtBreakAlloc
-_CrtSetDumpClient = _crtBreakAlloc
-_CrtSetReportFile = _crtBreakAlloc
-_CrtSetReportHook = _crtBreakAlloc
-_CrtSetReportHook2 = _crtBreakAlloc
-_CrtSetReportMode = _crtBreakAlloc
+_CrtCheckMemory = _CrtIsValidHeapPointer
+_CrtDbgBreak = _CrtMemCheckpoint
+_CrtDbgReport = _CrtSetReportMode
+_CrtDbgReportV = _CrtSetReportMode
+_CrtDbgReportW = _CrtSetReportMode
+_CrtDbgReportWV = _CrtSetReportMode
+_CrtDoForAllClientObjects = _CrtMemCheckpoint
+_CrtDumpMemoryLeaks = _CrtSetReportMode
+_CrtIsMemoryBlock = _CrtSetReportMode
+_CrtIsValidHeapPointer
+_CrtIsValidPointer = _ValidateExecute
+_CrtMemCheckpoint
+_CrtMemDifference = _CrtSetReportMode
+_CrtMemDumpAllObjectsSince = _CrtMemCheckpoint
+_CrtMemDumpStatistics = _CrtMemCheckpoint
+_CrtReportBlockType = _CrtSetReportMode
+_CrtSetAllocHook = _CrtSetReportMode
+_CrtSetBreakAlloc = _CrtSetReportMode
+_CrtSetDbgBlockType = _CrtMemCheckpoint
+_CrtSetDbgFlag = _CrtSetReportMode
+_CrtSetDumpClient = _CrtSetReportMode
+_CrtSetReportFile = _CrtSetReportMode
+_CrtSetReportHook = _CrtSetReportMode
+_CrtSetReportHook2 = _CrtSetReportMode
+_CrtSetReportMode
 _CxxThrowException
 _EH_prolog
 _Getdays
@@ -166,7 +166,7 @@ __crtGetLocaleInfoW
 __crtGetStringTypeW
 __crtLCMapStringA
 __crtLCMapStringW
-__daylight = __p__daylight
+__daylight
 __dllonexit
 __doserrno
 __dstbias
@@ -174,7 +174,7 @@ __fpecode
 __freefls@4
 __getmainargs
 _initenv
-__iob_func = __p__iob
+__iob_func
 __isascii
 __iscsym
 __iscsymf
@@ -213,12 +213,12 @@ __p___winitenv
 __p__acmdln
 __p__amblksiz
 __p__commode
-__p__daylight
+__p__daylight = __daylight
 __p__dstbias = __dstbias
 __p__environ
 __p__fileinfo
 __p__fmode
-__p__iob
+__p__iob = __iob_func
 __p__mbcasemap
 __p__mbctype
 __p__osver
@@ -335,9 +335,9 @@ _cputs
 _cputws
 _creat
 _create_locale
-_crtAssertBusy = _crtBreakAlloc
-_crtBreakAlloc
-_crtDbgFlag = _crtBreakAlloc
+_crtAssertBusy = _CrtSetReportMode
+_crtBreakAlloc = _CrtSetReportMode
+_crtDbgFlag = _CrtSetReportMode
 _cscanf
 _cscanf_l
 _cscanf_s
@@ -389,8 +389,8 @@ _fcloseall
 _fcvt
 _fcvt_s
 _fdopen
-_fgetchar
-_fgetwchar = getwchar
+_fgetchar = getchar
+_fgetwchar
 _filbuf
 _fileinfo
 _filelength
@@ -427,8 +427,8 @@ _fsopen
 _fstat
 _fstat64
 _fstati64
-_ftime
-_ftime32 = _ftime
+_ftime = _ftime32
+_ftime32
 _ftime32_s
 _ftime64
 _ftime64_s
@@ -593,7 +593,7 @@ _iswspace_l
 _iswupper_l
 _iswxdigit_l
 _isxdigit_l
-_itoa = _ltoa
+_itoa
 _itoa_s
 _itow
 _itow_s = _ltow_s
@@ -625,13 +625,13 @@ _lock
 _locking
 _logb
 _longjmpex
-_lrotl
+_lrotl = _rotl
 _lrotr
 _lsearch
 _lsearch_s
 _lseek
 _lseeki64
-_ltoa
+_ltoa = _itoa
 _ltoa_s = _itoa_s
 _ltow = _itow
 _ltow_s
@@ -820,7 +820,7 @@ _realloc_dbg
 _resetstkoflw
 _rmdir
 _rmtmp
-_rotl = _lrotl
+_rotl
 _rotl64
 _rotr = _lrotr
 _rotr64
@@ -1210,7 +1210,7 @@ cos
 cosh
 ctime
 difftime
-div
+div = ldiv
 exit
 exp
 fabs
@@ -1218,7 +1218,7 @@ fclose
 feof
 ferror
 fflush
-fgetc = getc
+fgetc
 fgetpos
 fgets
 fgetwc
@@ -1248,13 +1248,13 @@ fwprintf_s
 fwrite
 fwscanf
 fwscanf_s
-getc
-getchar = _fgetchar
+getc = fgetc
+getchar
 getenv
 getenv_s
 gets
 getwc
-getwchar
+getwchar = _fgetwchar
 gmtime
 is_wctype
 isalnum
@@ -1284,7 +1284,7 @@ iswxdigit
 isxdigit
 labs = abs
 ldexp
-ldiv = div
+ldiv
 localeconv
 localtime
 log
@@ -1387,7 +1387,7 @@ towlower
 towupper
 ungetc
 ungetwc
-utime
+utime = _utime
 vfprintf
 vfprintf_s
 vfwprintf
@@ -1397,7 +1397,7 @@ vprintf_s
 vsnprintf = _vsnprintf
 vsprintf
 vsprintf_s
-vswprintf
+vswprintf = _vswprintf
 vswprintf_s
 vwprintf
 vwprintf_s

@@ -74,7 +74,7 @@ class PdbReader
 		return TRUE;
 	}
 
-	BOOL ValidatePdbHeader(PGUID signature = 0)
+	BOOL ValidatePdbHeader(const GUID* signature = 0)
 	{
 		PdbHeader psh;
 		return _StreamSizes[PDB_STREAM_PDB] > sizeof(PdbHeader) && 
@@ -176,7 +176,7 @@ public:
 		return offset;
 	}
 
-	NTSTATUS Init(PdbFileHeader* header, SIZE_T ViewSize, PGUID signature, ULONG Age)
+	NTSTATUS Init(PdbFileHeader* header, SIZE_T ViewSize, const GUID* signature, ULONG Age)
 	{
 		ULONG pageSize = header->pageSize, pagesUsed = header->pagesUsed;
 
@@ -380,6 +380,7 @@ public:
 	}
 };
 
+#include "../../lib/winz/str.h"
 #include "pdb_util.h"
 
 size_t __fastcall strnlen(_In_ size_t numberOfElements, _In_ const char *str);
@@ -798,7 +799,7 @@ NTSTATUS LoadPublicSymbols(PdbReader* pdb, PVOID stream, ULONG size, SymStore* p
 	return STATUS_NOT_FOUND;
 }
 
-NTSTATUS ParsePDB(PdbFileHeader* header, SIZE_T ViewSize, PGUID signature, DWORD age, SymStore* pss)
+NTSTATUS ParsePDB(PdbFileHeader* header, SIZE_T ViewSize, const GUID* signature, DWORD age, SymStore* pss)
 {
 	PdbReader pdb{};
 

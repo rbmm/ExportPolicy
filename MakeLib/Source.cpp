@@ -78,9 +78,9 @@ HRESULT DropVcxProj(void* pv,
 
 	if (0 < i)
 	{
-		PCSTR aa[] = { pcszTargetName, pcszTargetName, szGuid };
+		PCSTR aa[] = { pcszTargetName, szGuid };
 		ULONG l = (ULONG)strlen(pcszTargetName);
-		ULONG len[] = { l, l, (ULONG)i };
+		ULONG len[] = { l, (ULONG)i };
 
 		if (PSTR buf = new char[cb + (l << 1) + i])
 		{

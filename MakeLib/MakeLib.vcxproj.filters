@@ -55,6 +55,7 @@
     <CustomBuild Include="x64.asm">
       <Filter>Source Files</Filter>
     </CustomBuild>
+    <CustomBuild Include="t.vcxproj" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="MakeLib.rc">

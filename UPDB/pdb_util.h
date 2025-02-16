@@ -11,6 +11,8 @@ struct CV_INFO_PDB
 	char PdbFileName[];
 };
 
+struct PdbFileHeader;
+
 #endif
 
 struct RVAOFS
@@ -35,7 +37,9 @@ struct __declspec(novtable) SymStore
 
 private:
 
-	NTSTATUS GetSymbols(HANDLE hFile, PGUID signature, DWORD age);
+	NTSTATUS GetSymbols(HANDLE hFile, const GUID* signature, DWORD age);
 };
 
 PCSTR WINAPI unDNameEx(_Out_ PSTR buffer, _In_ PCSTR mangled, _In_ DWORD cb, _In_ DWORD flags);
+
+NTSTATUS ParsePDB(PdbFileHeader* header, SIZE_T ViewSize, const GUID* signature, DWORD age, SymStore* pss);

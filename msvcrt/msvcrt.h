@@ -58,6 +58,15 @@ DECLSPEC_IMPORT
 public: virtual char const * exception::what(void)const ;
 
 DECLSPEC_IMPORT
+public: virtual int charNode::_CrtCheckMemory(void)const ;
+
+DECLSPEC_IMPORT
+public: virtual int charNode::_CrtIsValidHeapPointer(void)const ;
+
+DECLSPEC_IMPORT
+int _CrtIsValidPointer(void *,unsigned int);
+
+DECLSPEC_IMPORT
 void __ExceptionPtrAssign(void *,void const *);
 
 DECLSPEC_IMPORT

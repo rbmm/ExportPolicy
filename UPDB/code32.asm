@@ -1,6 +1,6 @@
 .686
-.MODEL FLAT
-.code
+
+_TEXT segment
 
 ?strnlen@NT@@YIIIPBD@Z proc
 	xor eax,eax
@@ -18,4 +18,5 @@
 	ret
 ?strnlen@NT@@YIIIPBD@Z endp
 
+_TEXT ends
 end

@@ -13,8 +13,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{1B80A58D-b0b3-3BAA-7F0B-7DC0E60D566C}</ProjectGuid>
-    <RootNamespace>ole32</RootNamespace>
+    <ProjectGuid>{B0A7C71C-01cd-0CDE-526C-7F277F2C33B5}</ProjectGuid>
+    <RootNamespace>certcli</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

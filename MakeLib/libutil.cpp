@@ -130,7 +130,7 @@ CModule* getSymbols(HMODULE hmod, PCWSTR lpLibFileName)
 		}
 	}
 
-	if (0 > status)
+	if (0 > status || (0 > (status = mod->GetStatus())))
 	{
 		DbgPrint("!! load PDB fail (%x) for %s !!\r\n", status, lpLibFileName);
 	}

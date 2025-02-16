@@ -21,7 +21,7 @@ EXPORTS
 ??1type_info@@UEAA@XZ
 ??2@YAPEAX_K@Z
 ??2@YAPEAX_KHPEBDH@Z
-??3@YAXPEAX@Z
+??3@YAXPEAX@Z = _free_dbg
 ??4__non_rtti_object@@QEAAAEAV0@AEBV0@@Z
 ??4bad_cast@@QEAAAEAV0@AEBV0@@Z
 ??4bad_typeid@@QEAAAEAV0@AEBV0@@Z
@@ -56,31 +56,31 @@ EXPORTS
 ?terminate@@YAXXZ
 ?unexpected@@YAXXZ
 ?what@exception@@UEBAPEBDXZ
-_CrtCheckMemory
-_CrtDbgBreak = _fpclear
-_CrtDbgReport
+_CrtCheckMemory = length
+_CrtDbgBreak = _CrtMemDumpStatistics
+_CrtDbgReport = _CrtDbgReportV
 _CrtDbgReportV
-_CrtDbgReportW
-_CrtDbgReportWV
-_CrtDoForAllClientObjects
-_CrtDumpMemoryLeaks
-_CrtIsMemoryBlock
-_CrtIsValidHeapPointer
-_CrtIsValidPointer
-_CrtMemCheckpoint
-_CrtMemDifference
+_CrtDbgReportW = _CrtDbgReportV
+_CrtDbgReportWV = _CrtDbgReportV
+_CrtDoForAllClientObjects = _CrtMemDumpStatistics
+_CrtDumpMemoryLeaks = _CrtDbgReportV
+_CrtIsMemoryBlock = _CrtDbgReportV
+_CrtIsValidHeapPointer = length
+_CrtIsValidPointer = _ValidateWrite
+_CrtMemCheckpoint = _CrtMemDumpStatistics
+_CrtMemDifference = _CrtDbgReportV
 _CrtMemDumpAllObjectsSince = _CrtMemDumpStatistics
 _CrtMemDumpStatistics
-_CrtReportBlockType
-_CrtSetAllocHook
-_CrtSetBreakAlloc
-_CrtSetDbgBlockType
-_CrtSetDbgFlag
-_CrtSetDumpClient
-_CrtSetReportFile
-_CrtSetReportHook
-_CrtSetReportHook2
-_CrtSetReportMode
+_CrtReportBlockType = _CrtDbgReportV
+_CrtSetAllocHook = _CrtDbgReportV
+_CrtSetBreakAlloc = _CrtDbgReportV
+_CrtSetDbgBlockType = _CrtMemDumpStatistics
+_CrtSetDbgFlag = _CrtDbgReportV
+_CrtSetDumpClient = _CrtDbgReportV
+_CrtSetReportFile = _CrtDbgReportV
+_CrtSetReportHook = _CrtDbgReportV
+_CrtSetReportHook2 = _CrtDbgReportV
+_CrtSetReportMode = _CrtDbgReportV
 _CxxThrowException
 _Getdays
 _Getmonths
@@ -176,13 +176,13 @@ _acmdln
 _aexit_rtn
 _aligned_free
 _aligned_free_dbg
-_aligned_malloc
+_aligned_malloc = _aligned_malloc_dbg
 _aligned_malloc_dbg
 _aligned_offset_malloc
 _aligned_offset_malloc_dbg
 _aligned_offset_realloc
 _aligned_offset_realloc_dbg
-_aligned_realloc
+_aligned_realloc = _aligned_realloc_dbg
 _aligned_realloc_dbg
 _amsg_exit
 _assert
@@ -192,7 +192,7 @@ _atof_l
 _atoflt_l
 _atoi64
 _atoi64_l
-_atoi_l
+_atoi_l = _atol_l
 _atol_l
 _atoldbl
 _atoldbl_l
@@ -236,9 +236,9 @@ _cputs
 _cputws
 _creat
 _create_locale
-_crtAssertBusy
-_crtBreakAlloc = _crtAssertBusy
-_crtDbgFlag
+_crtAssertBusy = _CrtDbgReportV
+_crtBreakAlloc = _CrtDbgReportV
+_crtDbgFlag = _CrtDbgReportV
 _cscanf
 _cscanf_l
 _cscanf_s
@@ -287,8 +287,8 @@ _fcloseall
 _fcvt
 _fcvt_s
 _fdopen
-_fgetchar
-_fgetwchar = getwchar
+_fgetchar = getchar
+_fgetwchar
 _filbuf
 _fileinfo
 _filelength
@@ -314,7 +314,7 @@ _fprintf_p
 _fprintf_p_l
 _fprintf_s_l
 _fputchar = putchar
-_fputwchar = putwchar
+_fputwchar
 _free_dbg
 _free_locale
 _freea
@@ -327,7 +327,7 @@ _fsopen
 _fstat
 _fstat64
 _fstati64
-_ftime
+_ftime = _ftime64
 _ftime32
 _ftime32_s
 _ftime64
@@ -357,7 +357,7 @@ _get_osplatform
 _get_osver
 _get_output_format
 _get_pgmptr
-_get_sbh_threshold
+_get_sbh_threshold = _CrtDbgReportV
 _get_terminate
 _get_unexpected
 _get_wenviron
@@ -484,9 +484,9 @@ _iswspace_l
 _iswupper_l
 _iswxdigit_l
 _isxdigit_l
-_itoa
-_itoa_s
-_itow
+_itoa = _ltoa
+_itoa_s = _ltoa_s
+_itow = _ltow
 _itow_s
 _j0
 _j1
@@ -504,7 +504,7 @@ _locking
 _logb
 _logbf
 _lrotl
-_lrotr
+_lrotr = _rotr
 _lsearch
 _lsearch_s
 _lseek
@@ -512,7 +512,7 @@ _lseeki64
 _ltoa
 _ltoa_s
 _ltow
-_ltow_s
+_ltow_s = _itow_s
 _makepath
 _makepath_s
 _malloc_dbg
@@ -696,7 +696,7 @@ _realloc_dbg
 _resetstkoflw
 _rmdir
 _rmtmp
-_rotl
+_rotl = _lrotl
 _rotl64
 _rotr
 _rotr64
@@ -895,7 +895,7 @@ _vsprintf_l
 _vsprintf_p
 _vsprintf_p_l
 _vsprintf_s_l
-_vswprintf
+_vswprintf = vswprintf
 _vswprintf_c
 _vswprintf_c_l
 _vswprintf_l
@@ -1046,7 +1046,7 @@ _wtof_l
 _wtoi
 _wtoi64
 _wtoi64_l
-_wtoi_l
+_wtoi_l = _wtol_l
 _wtol
 _wtol_l
 _wunlink
@@ -1087,7 +1087,7 @@ cosh
 coshf
 ctime
 difftime
-div = $div
+div = ldiv
 exit
 exp
 expf
@@ -1096,7 +1096,7 @@ fclose
 feof
 ferror
 fflush
-fgetc = getc
+fgetc
 fgetpos
 fgets
 fgetwc
@@ -1109,7 +1109,7 @@ fopen
 fopen_s
 fprintf
 fprintf_s
-fputc
+fputc = putc
 fputs
 fputwc
 fputws
@@ -1128,13 +1128,13 @@ fwprintf_s
 fwrite
 fwscanf
 fwscanf_s
-getc
-getchar = _fgetchar
+getc = fgetc
+getchar
 getenv
 getenv_s
 gets
 getwc
-getwchar
+getwchar = _fgetwchar
 gmtime
 is_wctype
 isalnum
@@ -1162,7 +1162,7 @@ iswspace
 iswupper
 iswxdigit
 isxdigit
-labs
+labs = abs
 ldexp
 ldiv
 localeconv
@@ -1184,9 +1184,9 @@ mbstowcs_s
 mbtowc
 memchr
 memcmp
-memcpy = memmove
+memcpy
 memcpy_s
-memmove
+memmove = memcpy
 memmove_s
 memset = memset$thunk$772440563353939046
 mktime
@@ -1197,11 +1197,11 @@ pow
 powf
 printf
 printf_s
-putc = fputc
+putc
 putchar
 puts
 putwc
-putwchar
+putwchar = _fputwchar
 qsort
 qsort_s
 raise
@@ -1277,7 +1277,7 @@ towlower
 towupper
 ungetc
 ungetwc
-utime
+utime = _utime
 vfprintf
 vfprintf_s
 vfwprintf
@@ -1287,7 +1287,7 @@ vprintf_s
 vsnprintf = _vsnprintf
 vsprintf
 vsprintf_s
-vswprintf = _vswprintf
+vswprintf
 vswprintf_s
 vwprintf
 vwprintf_s

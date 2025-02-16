@@ -1,6 +1,6 @@
 EXPORTS
 
-AddOrRemoveOCSPISAPIExtension
+AddOrRemoveOCSPISAPIExtension = IsISAPIExtensionEnabled
 CAAccessCheck
 CAAccessCheckEx
 CAAddCACertificateType
@@ -113,21 +113,21 @@ DecodeFileW
 DllCanUnloadNow PRIVATE
 DllGetClassObject PRIVATE
 DllMain
-DllRegisterServer PRIVATE
-DllUnregisterServer = DllRegisterServer PRIVATE
-EnableASPInIIS
-EnableISAPIExtension = RemoveVDir
+DllRegisterServer = DllUnregisterServer PRIVATE
+DllUnregisterServer PRIVATE
+EnableASPInIIS = IsISAPIExtensionEnabled
+EnableISAPIExtension = IsISAPIExtensionEnabled
 EncodeToFileW
-IsASPEnabledInIIS
-IsASPEnabledInIIS_New = IsASPEnabledInIIS
+IsASPEnabledInIIS = IsISAPIExtensionEnabled
+IsASPEnabledInIIS_New = IsISAPIExtensionEnabled
 IsISAPIExtensionEnabled
-RemoveISAPIExtension
-RemoveVDir
+RemoveISAPIExtension = IsISAPIExtensionEnabled
+RemoveVDir = IsISAPIExtensionEnabled
 SplitConfigString
 WszToMultiByteInteger
 WszToMultiByteIntegerBuf
 caTranslateFileTimePeriodToPeriodUnits
-myAddShare
+myAddShare = IsISAPIExtensionEnabled
 myCAPropGetDisplayName
 myCAPropInfoLookup
 myCAPropInfoUnmarshal
@@ -154,7 +154,7 @@ myHResultToString_old
 myIsDelayLoadHResult
 myJetHResult
 myLogExceptionInit
-myModifyVirtualRootsAndFileShares
+myModifyVirtualRootsAndFileShares = IsISAPIExtensionEnabled
 myNetLogonUser
 myOIDHashOIDToString
 myRevertSanitizeName
